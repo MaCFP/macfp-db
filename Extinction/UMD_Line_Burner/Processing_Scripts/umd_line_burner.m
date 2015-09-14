@@ -11,10 +11,16 @@ pltdir = '../Plots/';
 addpath '../../../Utilities/'
 plot_style
 
-filename = {'Exp_O2_p18_T_z_p125m.csv','Exp_O2_p18_T_z_p250m.csv','Exp_O2_p18_O2_z_p125m.csv','Exp_O2_p18_O2_z_p250m.csv'};
-xhdr = {'x (m)','x (m)','x (m)','x (m)'};
-yhdr = {'T (C)','T (C)','O2 (vol frac)','O2 (vol frac)'};
-marker_style = {'ksq','ksq','ko','ko'};
+expfilename = {'Exp_O2_p18_T_z_p125.csv','Exp_O2_p18_T_z_p250.csv','Exp_O2_p18_O2_z_p125.csv','Exp_O2_p18_O2_z_p250.csv'};
+expxhdr = {'x (m)','x (m)','x (m)','x (m)'};
+expyhdr = {'T (C)','T (C)','O2 (vol frac)','O2 (vol frac)'};
+exp_marker_style = {'ksq','ksq','ko','ko'};
+
+cmpfilename = {'methane_O2_p18_TC_z_p125_example.csv','methane_O2_p18_TC_z_p250_example.csv','methane_O2_p18_O2_z_p125_example.csv','methane_O2_p18_O2_z_p250_example.csv'};
+cmpxhdr = {'x (m)','x (m)','x (m)','x (m)'};
+cmpyhdr = {'T (C)','T (C)','O2 (vol frac)','O2 (vol frac)'};
+cmp_marker_style = {'b-','b-','r-','r-'};
+
 title1 = {'UMD Line Burner, CH4','UMD Line Burner, CH4','UMD Line Burner, CH4','UMD Line Burner, CH4'};
 title2 = {'18 % O2, z = 0.125 m','18 % O2, z = 0.250 m','18 % O2, z = 0.125 m','18 % O2, z = 0.250 m'};
 xlbl = {'Position (m)','Position (m)','Position (m)','Position (m)'};
@@ -24,17 +30,33 @@ xmin = [-.25,-.25,-.25,-.25];
 xmax = [ .25, .25, .25, .25];
 ymin = [0,0,.05,.05];
 ymax = [1200,1200,.25,.25];
+legloc = {'northeast','northeast','southeast','southeast'};
 
-for i=1:length(filename)
+for i=1:length(expfilename)
 
     figure
 
-    M1 = importdata([expdir,filename{i}],',',1);
+    % plot experimental data
 
-    x1 = M1.data(:,find(strcmp(M1.colheaders,xhdr{i})));
-    y1 = M1.data(:,find(strcmp(M1.colheaders,yhdr{i})));
+    E1 = importdata([expdir,expfilename{i}],',',1);
 
-    H(1)=plot(x1,y1,marker_style{i},'MarkerSize',Marker_Size); % hold on
+    x1 = E1.data(:,find(strcmp(E1.colheaders,expxhdr{i})));
+    y1 = E1.data(:,find(strcmp(E1.colheaders,expyhdr{i})));
+
+    H(1)=plot(x1,y1,exp_marker_style{i},'MarkerSize',Marker_Size);
+
+    % plot computational results *********************************
+    
+    % add your results here!
+
+    hold on
+    C1 = importdata([cmpdir,cmpfilename{i}],',',1);
+    x1 = C1.data(:,find(strcmp(C1.colheaders,cmpxhdr{i})));
+    y1 = C1.data(:,find(strcmp(C1.colheaders,cmpyhdr{i})));
+
+    H(2)=plot(x1,y1,cmp_marker_style{i},'MarkerSize',Marker_Size);
+
+    % ************************************************************
 
     xt = xmin(i) + .03*(xmax(i)-xmin(i));
     yt = ymin(i) + .92*(ymax(i)-ymin(i));
@@ -48,7 +70,7 @@ for i=1:length(filename)
     set(gca,'FontSize',Font_Size)
     xlabel(xlbl{i},'FontSize',Font_Size)
     ylabel(ylbl{i},'FontSize',Font_Size)
-    lh = legend(H,'Exp');
+    lh = legend(H,'Exp','Cmp','Location',legloc{i});
     set(lh,'FontSize',Font_Size)
 
     loose_inset
