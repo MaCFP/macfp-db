@@ -34,33 +34,33 @@ Figure 1: Plan view of UMD Line Burner
 
 Available experimental data include:
 
-*	XO2 at extinction, tabulated
+* XO2 at extinction, tabulated
   - methane
-	- propane
+  - propane
 * Flame height vs. XO2
   - methane
-	- propane
+  - propane
 * Heat flux vs. XO2
-	- methane
-	- propane
+  - methane
+  - propane
 * Mean thermocouple temperature profiles
-	- methane, XO2=0.18, z = 0.125 m
-	-	methane, XO2=0.18, z = 0.250 m
+  - methane, XO2=0.18, z = 0.125 m
+  - methane, XO2=0.18, z = 0.250 m
 
 Pending/planned experimental data include:
 
 * HRR / combustion efficiency vs. XO2
-	- methane
-	- propane
+  - methane
+  - propane
 * HRR / combustion efficiency vs. spray density
-	- methane
-	- propane
+  - methane
+  - propane
 * Mean thermocouple profile/centerline data
-	- methane, XO2 = 0.21
-	- propane, XO2 = 0.21
+  - methane, XO2 = 0.21
+  - propane, XO2 = 0.21
 * RMS thermocouple profile/centerline data
-	-	methane, XO2 = 0.21
-	-	propane, XO2 = 0.21
+  - methane, XO2 = 0.21
+  - propane, XO2 = 0.21
 
 ####References
 
