@@ -30,6 +30,7 @@ Boundary conditions [Tieszen et al., 2004]
 |Facility ceiling temperature (K)f             | 318 ± 5 | 322 ± 5 | 349 ± 15 | 358 ± 9 |
 
 (a) Commercial grade, 95% purity.
+
 (b) Fuel inlet spatial uniformity is ±6% of inlet velocity in all cases [Blanchat, 2001].
 
 (c) Quadrant to quadrant spatial variability ±10% or less, small features ±37% [Blanchat, 2001]; puffing-induced temporal fluctuation 4% or less for all cases.
