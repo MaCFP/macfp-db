@@ -10,7 +10,7 @@ Figure 1: Schematic of PIV setup in FLAME facility.
 
 ####Test Matrix
 
-Boundary conditions [Tieszen et al., 2004]
+Table 1: Boundary conditions [Tieszen et al., 2004]
 
 |Test No.                                      | 14  | 24  | 17  | 35  |
 | -------------------------------------------- | --- | --- | --- | --- |
