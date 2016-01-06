@@ -13,10 +13,10 @@ Figure 1: Schematic of PIV setup in FLAME facility. The excimer laser light shee
 Table 1
 Boundary conditions
 
-|Test No.                                 | 14 | 24 | 17 | 35 |
+|Test No.                                 | 14  | 24  | 17  | 35  |
 | --------------------------------------- | --- | --- | --- | --- |
-|Fuela                                    | CH4 | CH4 | CH4 | H2 |
-|Fuel inlet velocity (m/s)b               | 0.074 ± 4% | 0.097 ± 3% | 0.117 ± 3% | 0.336 ± 2% |
+|Fuel^a                                   | CH4 | CH4 | CH4 | H2  |
+|Fuel inlet velocity (m/s)^b              | 0.074 ± 4% | 0.097 ± 3% | 0.117 ± 3% | 0.336 ± 2% |
 |Fuel mass flux (kg/m2 s)                 | 0.040 ± 4% | 0.053 ± 3% | 0.066 ± 3% | 0.022 ± 1% |
 |Heat release rate (MW)                   | 1.59 ± 9% | 2.07 ± 8% | 2.61 ± 8% | 2.12 ± 6% |
 |Inlet fuel temperature (K)               | 284 ± 3 | 286 ± 3 | 274 ± 3 | 297±3 |
