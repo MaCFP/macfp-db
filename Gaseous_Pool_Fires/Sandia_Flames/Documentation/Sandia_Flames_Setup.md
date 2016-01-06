@@ -2,9 +2,11 @@
 
 ####Introduction
 
-FLAME facility
+The experimental FLAME facility at Sandia National Laboratory in Albuquerque, New Mexico, is described in the references below.
 
 <img src="https://github.com/MaCFP/macfp-db/blob/master/Gaseous_Pool_Fires/Sandia_Flames/Documentation/Sandia_FLAME_2.png" width="400">
+
+Figure 1: Schematic of PIV setup in FLAME facility. The excimer laser light sheet bisects the plume inlet surface. Two 35-mm motion cameras, one recording the ultraviolet image for PIV, the other the visible image, view the fire through a mirror. Seed particle injectors are located in the methane and in the surrounding air.
 
 ####References
 
