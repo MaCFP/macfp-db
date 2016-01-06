@@ -10,21 +10,21 @@ The Fire Laboratory for Accreditation of Models by Experimentation (FLAME) facil
 
 Table 1: Run conditions and results summary for each of the 10 repeat tests and theiraverages. Uncertainties listed are ± one standard deviation [O'Hern et al., 2005].
 
-| Run number | Helium inlet velocity | Test type | Re    | Ri    | Meas. puffing freq. | Corr. puffing freq. |
+| Run numb| Helium inlet velocity | Test type | Re    | Ri    | Meas. puffing freq. | Corr. puffing freq. |
 | ------- |:-------:| ------- |:------:|:------:|:-------:|:-------:|
-|            | (m/s) ± 1.3%          |           |± 0.6% |± 6.5% | (Hz)  | (Hz)  |    
-| 20         | 0.314                 | PIV       | 3344  | 80.57 | 1.20  | 1.33  |
-| 22         | 0.319                 | PIV       | 3300  | 78.06 | 1.41  | 1.34  |
-| 23         | 0.303                 | PIV       | 3198  | 86.72 | 1.36  | 1.32  |
-| 25         | 0.340                 | PIV/PLIF  | 3306  | 68.75 | 1.53  | 1.36  |
-| 26         | 0.315                 | PIV       | 3253  | 80.20 | 1.39  | 1.33  |
-| 27         | 0.305                 | PIV       | 3242  | 85.32 | 1.37  | 1.32  |
-| 29         | 0.352                 | PIV/PLIF  | 3256  | 64.32 | 1.42  | 1.37  |
-| 30         | 0.337                 | PIV       | 3176  | 70.20 | 1.19  | 1.36  |
-| 32         | 0.349                 | PIV/PLIF  | 3275  | 65.32 | 1.42  | 1.37  |
-| 36         | 0.316                 | PIV/PLIF  | 2933  | 79.74 | 1.41  | 1.33  |
-| 10 test ave | 0.325                |           | 3228  | 75.74 | 1.37  | 1.34  |
-| 4 Favre ave | 0.339                |           | 3194  | 69.53 | 1.45  | 1.36  |
+|         | (m/s) ± 1.3% |           |± 0.6% |± 6.5% | (Hz)  | (Hz)  |    
+| 20      | 0.314        | PIV       | 3344  | 80.57 | 1.20  | 1.33  |
+| 22      | 0.319        | PIV       | 3300  | 78.06 | 1.41  | 1.34  |
+| 23      | 0.303        | PIV       | 3198  | 86.72 | 1.36  | 1.32  |
+| 25      | 0.340        | PIV/PLIF  | 3306  | 68.75 | 1.53  | 1.36  |
+| 26      | 0.315        | PIV       | 3253  | 80.20 | 1.39  | 1.33  |
+| 27      | 0.305        | PIV       | 3242  | 85.32 | 1.37  | 1.32  |
+| 29      | 0.352        | PIV/PLIF  | 3256  | 64.32 | 1.42  | 1.37  |
+| 30      | 0.337        | PIV       | 3176  | 70.20 | 1.19  | 1.36  |
+| 32      | 0.349        | PIV/PLIF  | 3275  | 65.32 | 1.42  | 1.37  |
+| 36      | 0.316        | PIV/PLIF  | 2933  | 79.74 | 1.41  | 1.33  |
+| 10 test ave | 0.325    |           | 3228  | 75.74 | 1.37  | 1.34  |
+| 4 Favre ave | 0.339    |           | 3194  | 69.53 | 1.45  | 1.36  |
 
 
 ####References
