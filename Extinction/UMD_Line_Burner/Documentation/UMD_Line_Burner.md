@@ -32,4 +32,4 @@ Figure 1: Plan view of UMD Line Burner
 
 ####References####
 
-[White, 2015] J.P. White, E.D. Link, A.C. Trouve, P.B. Sunderland, A.W. Marshall, J.A. Sheffel, M.L. Corn, M.B. Colket, M. Chaos, and H.-Z. Yu. Radiative emissions measurements from a buoyant, turbulent line flame under oxdizer-dilution quenching conditions, _Fire Safety Journal_ 76:74-84, 2015.
+[White, 2015] J.P. White, E.D. Link, A.C. Trouve, P.B. Sunderland, A.W. Marshall, J.A. Sheffel, M.L. Corn, M.B. Colket, M. Chaos, and H.-Z. Yu. Radiative emissions measurements from a buoyant, turbulent line flame under oxdizer-dilution quenching conditions, _Fire Safety Journal_, 76:74-84, 2015.
