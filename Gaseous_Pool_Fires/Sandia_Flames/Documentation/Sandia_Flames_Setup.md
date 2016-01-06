@@ -4,9 +4,7 @@
 
 FLAME facility
 
-<img src="https://github.com/MaCFP/macfp-db/blob/master/Gaseous_Pool_Fires/Sandia_Flames/Documentation/Sandia_FLAME_2.png" width="200">
-
-![FLAME facility](https://github.com/MaCFP/macfp-db/blob/master/Gaseous_Pool_Fires/Sandia_Flames/Documentation/Sandia_FLAME_2.png)
+<img src="https://github.com/MaCFP/macfp-db/blob/master/Gaseous_Pool_Fires/Sandia_Flames/Documentation/Sandia_FLAME_2.png" width="400">
 
 ####References
 
