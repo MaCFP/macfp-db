@@ -8,7 +8,7 @@ The UMD Line Burner experimental facility provides for the study of a low-strain
 
 ####Experimental Description####
 
-A plan view illustration of the burner and oxidizer assembly is presented in Fig. 1.  The burner features a sand-filled, stainless-steel fuel port, measuring 5 cm wide by 50 cm long, with 1.5 mm thick side walls. Methane gas (99.5 % purity) or propane gas (99.5 % purity) are the primary burner fuels. A methane flow rate of 1.00 $\pm$0.02 g/s (nominal 5.4 cm/s) or a propane flow rate of 1.08 +/- 0.02 g/s (nominal 2.1 cm/s) is utilized, measured using a mass flow controller. Assuming complete combustion, the total heat-release rate is roughly 50 kW for either fuel.
+A plan view illustration of the burner and oxidizer assembly is presented in Fig. 1.  The burner features a sand-filled, stainless-steel fuel port, measuring 5 cm wide by 50 cm long, with 1.5 mm thick side walls. Methane gas (99.5 % purity) or propane gas (99.5 % purity) are the primary burner fuels. A methane flow rate of 1.00 +/- 0.02 g/s (nominal 5.4 cm/s) or a propane flow rate of 1.08 +/- 0.02 g/s (nominal 2.1 cm/s) is utilized, measured using a mass flow controller. Assuming complete combustion, the total heat-release rate is roughly 50 kW for either fuel.
 
 The burner is centrally located at the mouth of a surrounding oxidizer port, measuring 50 cm wide by 75 cm long, with 10 cm thick side walls. Flow conditioning elements ensure that the oxidizer is well-mixed and exits the oxidizer port with a uniform, flat velocity profile. The co-flowing oxidizer is provided at a fixed flow rate of 75$\pm$5 g/s (total, including variable suppressant flow, nominal 22 cm/s), measured using a calibrated pitot-static probe.
 
