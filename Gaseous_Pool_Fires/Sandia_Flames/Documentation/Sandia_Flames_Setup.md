@@ -15,16 +15,16 @@ Boundary conditions [Tieszen et al., 2004]
 |Test No.                                      | 14  | 24  | 17  | 35  |
 | -------------------------------------------- | --- | --- | --- | --- |
 |Fuel (a)                                      | CH4 | CH4 | CH4 | H2  |
-|Fuel inlet velocity (m/s) (b)                 | 0.074 ±4% | 0.097 ±3% | 0.117 ±3% | 0.336 ±2% |
-|Fuel mass flux (kg/m2 s)                      | 0.040 ±4% | 0.053 ±3% | 0.066 ±3% | 0.022 ±1% |
-|Heat release rate (MW)                        | 1.59 ±9% | 2.07 ±8% | 2.61 ±8% | 2.12 ±6% |
-|Inlet fuel temperature (K)                    | 284 ±3 | 286 ±3 | 274 ±3 | 297 ±3 |
-|Ambient pressure (kPa)                        | 80.6 ±0.2 | 81.0 ±0.2 | 81.1 ±0.2 | 82.2 ±0.2 |
-|Inlet air velocity (m/s) (c)                  | 0.323 ±8% | 0.327 ±9% | 0.299 ± 9% | 0.343 ± 4% |
-|Inlet air temperature (K)                     | 285 ±3 | 290 ±3 | 278 ± 3 | 299 ± 3 |
-|Inlet air humidity (%)                        | 22 ±3 | 10 ±3 | 29 ± 3 | 8 ± 3 |
-|Burner ground plane temperature (K)           | 315 ±4 | 310 ±4 | 318 ± 8 | 354 ± 9 |
-|Cylindrical shield wall temperature (K) (d)   | 308 ±15 | 309 ±11 | 320 ± 25 | 338 ± 25 |
+|Fuel inlet velocity (m/s) (b)                 | 0.074 ± 4% | 0.097 ± 3% | 0.117 ± 3% | 0.336 ± 2% |
+|Fuel mass flux (kg/m2 s)                      | 0.040 ± 4% | 0.053 ± 3% | 0.066 ± 3% | 0.022 ± 1% |
+|Heat release rate (MW)                        | 1.59 ± 9% | 2.07 ± 8% | 2.61 ± 8% | 2.12 ± 6% |
+|Inlet fuel temperature (K)                    | 284 ± 3 | 286 ± 3 | 274 ± 3 | 297 ± 3 |
+|Ambient pressure (kPa)                        | 80.6 ± 0.2 | 81.0 ± 0.2 | 81.1 ± 0.2 | 82.2 ± 0.2 |
+|Inlet air velocity (m/s) (c)                  | 0.323 ± 8% | 0.327 ± 9% | 0.299 ± 9% | 0.343 ± 4% |
+|Inlet air temperature (K)                     | 285 ± 3 | 290 ± 3 | 278 ± 3 | 299 ± 3 |
+|Inlet air humidity (%)                        | 22 ± 3 | 10 ± 3 | 29 ± 3 | 8 ± 3 |
+|Burner ground plane temperature (K)           | 315 ± 4 | 310 ± 4 | 318 ± 8 | 354 ± 9 |
+|Cylindrical shield wall temperature (K) (d)   | 308 ± 15 | 309 ± 11 | 320 ± 25 | 338 ± 25 |
 |Facility wall temperature (K) (e)             | 301 ±4 | 302 ±4 | 306 ± 12 | 323 ± 8 |
 |Facility ceiling temperature (K) (f)          | 318 ±5 | 322 ±5 | 349 ± 15 | 358 ± 9 |
 
