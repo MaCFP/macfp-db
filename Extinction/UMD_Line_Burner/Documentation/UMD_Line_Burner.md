@@ -27,3 +27,5 @@ Heat flux data are converted to radiative loss fraction, Xr, using a weighted mu
 Mean and rms temperature data are recorded using an array of R-Type thermocouple probes positioned at selected locations along the centerline of the flame. These probes are constructed using 50 um diameter wires with exposed, bead-welded junctions. Combustion products are collected in an exhaust evacuation system, wherein a gas sampling system provides measurement of the molar concentrations of oxygen (+/- 0.25 mol % O2), carbon dioxide (+/- 1000 ppm CO2), carbon monoxide (+/- 100 ppm CO), water vapor (+/- 3 % RH), and total hydrocarbons (+/- 10 ppm THC) in the exhaust stream. From these measurements, integral heat release rate and combustion efficiency measurements are derived using species-based calorimetry techniques.
 
 ![alt text](https://github.com/MaCFP/macfp-db/blob/master/Extinction/UMD_Line_Burner/Documentation/LaTeX_Source/umd_line_burner_plan_view.png)
+Figure 1: Plan view of UMD Line Burner
+
