@@ -18,7 +18,7 @@ For nitrogen-dilution suppression experiments, the flame is suppressed via the i
 
 For water-mist suppression experiments, the flame is suppressed via the introduction of a fine water mist into the oxidizer.
 
-Visible flame height is measured using a video camera, defined based on the 50 % intermittent flame height \cite{White:2015}. These image-based measurements rely on visible flame emissions, including the incandescence of soot particles, and do not strictly locate the stoichiometric flame sheet. The uncertainty in each flame height measurement is less than +/- 1.5 cm.
+Visible flame height is measured using a video camera, defined based on the 50 % intermittent flame height [White, 2015]. These image-based measurements rely on visible flame emissions, including the incandescence of soot particles, and do not strictly locate the stoichiometric flame sheet. The uncertainty in each flame height measurement is less than +/- 1.5 cm.
 
 Infrared radiative emissions are measured using a water-cooled Schmidt-Boelter heat-flux transducer. The sensor is positioned 100 cm radially outward from the burner centroid, 18 cm above the fuel port, facing perpendicular to the long axis of the burner. This device has a hemispherical absorptance of 0.94 for a spectral range between 0.6-15.0 micrometers, a maximum viewing angle of 90 degrees, and a response time of 0.25 s. Measurement accuracy is +/- 3 %. The convective portion of the measured heat flux is neglected and sans-flame measurements are applied to correct for background irradiation.
 
