@@ -10,7 +10,7 @@ The Fire Laboratory for Accreditation of Models by Experimentation (FLAME) facil
 
 Table 1: Run conditions and results summary for each of the 10 repeat tests and theiraverages. Uncertainties listed are ± one standard deviation [O'Hern et al., 2005].
 
-| Run no. | Helium inlet velocity | Test type | Re | Ri | Meas. puffing freq. | Corr. puffing freq. (a) |
+| Run no. | Helium inlet velocity | Test type | Re | Ri | Meas. puffing freq. | Puffing freq. (a) |
 | ------- |:-------:| ------- |:------:|:------:|:-------:|:-------:|
 |         | (m/s) ± 1.3% |           |± 0.6% |± 6.5% | (Hz)  | (Hz)  |    
 | 20      | 0.314        | PIV       | 3344  | 80.57 | 1.20  | 1.33  |
@@ -29,6 +29,8 @@ Table 1: Run conditions and results summary for each of the 10 repeat tests and 
 (a) given by f = V0 (0.8 Ri^(0.38))/D [Cetegen & Kasper, 1996]
 
 ####References
+
+[Cetegen & Kasper, 1996] B.M. Cetegen and K.D. Kasper. Experiments on the oscillatory behaviour of buoyant plumes of helium and helium-air mixtures. _Phys. Fluids_, 8:2974-2984, 1996.
 
 [Blanchat, 2001] T.K. Blanchat. Characterization of the air source and plume source at FLAME.  Technical Report SAND01-2227, Sandia National Laboratory, Albuquerque, New Mexico, 2001.
 
