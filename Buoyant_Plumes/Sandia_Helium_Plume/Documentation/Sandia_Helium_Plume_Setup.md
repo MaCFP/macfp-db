@@ -11,7 +11,7 @@ The Fire Laboratory for Accreditation of Models by Experimentation (FLAME) facil
 Table 1: Run conditions and results summary for each of the 10 repeat tests and theiraverages. Uncertainties listed are ± one standard deviation [O'Hern et al., 2005].
 
 | Run number | Helium inlet velocity | Test type | Re    | Ri    | Meas. puffing freq. | Corr. puffing freq. |
-| ---------- | --------------------- | --------- | ----- | ----- | ------------------- | ------------------- |
+| ---------- |:---------------------:| --------- |:-----:|:-----:|:-------------------:|:-------------------:|
 | 20         | 0.314                 | PIV       | 3344  | 80.57 | 1.20                | 1.33                |
 | 22         | 0.319                 | PIV       | 3300  | 78.06 | 1.41                | 1.34                |
 | 23         | 0.303                 | PIV       | 3198  | 86.72 | 1.36                | 1.32                |
