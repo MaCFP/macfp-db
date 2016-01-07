@@ -34,4 +34,6 @@ Table 1: Run conditions and results summary for each of the 10 repeat tests and 
 
 [Blanchat, 2001] T.K. Blanchat. Characterization of the air source and plume source at FLAME.  Technical Report SAND01-2227, Sandia National Laboratory, Albuquerque, New Mexico, 2001.
 
+[DesJardin et al., 2004] P. E. DesJardin, T. J. O’Hern, and S. R. Tieszen. Large eddy simulation and experimental measurements of the near-field of a large turbulent helium plume. _Phys. Fluids_, 16(6):1866–1883, 2004.
+
 [O'Hern et al., 2005] T.J. O'Hern, E.J. Weckman, A.L. Gerhart, S.R. Tieszen, and R.W. Schefer.  Experimental study of a turbulent buoyant helium plume. _J. Fluid Mech._, 544:143-171, 2005.
