@@ -1,10 +1,4 @@
-The data in this directory is organized into files by test series and height, z, above the fire source.
-
-_p3 indicates z = 0.301 m above source
-
-_p5 indicates z = 0.502 m above source
-
-_p9 indicates z = 0.903 m above source
+The data in this directory is organized into files by test series and height, z, above the fire source, nominally, p3 indicates z = 0.301 m, p5 indicates z = 0.502 m, and p9 indicates z = 0.903 m above the source.
 
 Data is presented in columns as follows:
 
