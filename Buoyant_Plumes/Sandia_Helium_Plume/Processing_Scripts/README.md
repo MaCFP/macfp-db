@@ -2,4 +2,4 @@ To generate plots of the experimental data, run the Matlab script within this di
 ```
 >> sandia_helium_plume
 ```
-The plots are created a put in the Sandia_Helium_Plume/Plots/ directory.
+The plots are created and put in the Sandia_Helium_Plume/Plots/ directory.
