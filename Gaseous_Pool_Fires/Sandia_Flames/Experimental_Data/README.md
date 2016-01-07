@@ -1,5 +1,9 @@
 The data in this directory is organized into files by test series and height, z, above the fire source.
 
+*_p3 --> z = 0.301 m above source
+*_p5 --> z = 0.502 m above source
+*_p9 --> z = 0.903 m above source
+
 Data is presented in columns as follows:
 
 | x (m) | U mean (m/s) | W mean (m/s) | TKE (m2/s2) |
