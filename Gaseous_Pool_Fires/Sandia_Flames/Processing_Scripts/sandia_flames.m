@@ -22,7 +22,7 @@ expyhdr = {'U mean (m/s)','W mean (m/s)','TKE (m2/s2)'};
 exp_marker_style = {'ro','bo','mo'};
 
 title1 = {'Sandia 1 m Methane','Sandia 1 m Methane','Sandia 1 m Methane','Sandia 1 m Hydrogen'};
-title2 = {'Test 14 (low flowrate)','Test 17 (high flowrate)','Test 24 (medium flowrate)','Test 35'};
+title2 = {'Test 14 (low flow rate)','Test 17 (high flow rate)','Test 24 (medium flow rate)','Test 35'};
 title3 = {'z = 0.3 m','z = 0.5 m','z = 0.9 m'};
 xlbl = {'x (m)','x (m)','x (m)'};
 ylbl = {'Mean Radial Velocity (m/s)','Mean Vertical Velocity (m/s)','TKE (m2/s2)'};
