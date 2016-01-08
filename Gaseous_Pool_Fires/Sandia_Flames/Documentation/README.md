@@ -46,11 +46,11 @@ Table 2: PIV data uncertainty summary [Tieszen et al., 2004]
 
 |Test No.       | 14  | 24  | 17  | 35  |
 | --------------| --- | --- | --- | --- |
-|W mean (a) (%) | 20  | 45  | 70  | 37  |
-|U mean (a) (%) | 31  | 40  | 45  | 55  |
-|u'u' (a) (%)   | 28  | 46  | 78  | 40  |
+|W mean (a) (%) | 7.0 | 17  | 21  | 8.0 |
+|U mean (a) (%) | 13  | 17  | 23  | 16  |
+|u'u' (a) (%)   | 10  | 16  | 28  | 16  |
 
-(a) Right-to-left (symmetry test) +/-(|Difference| + 2 Sigma)
+(a) Right-to-left (symmetry test) +/-|Difference|/Mean
 
 ####References
 
