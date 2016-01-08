@@ -58,21 +58,31 @@ end
 figure(1)
 xlabel('z/Q^{2/5}','FontSize',Font_Size)
 ylabel('V/Q^{1/5}','FontSize',Font_Size)
+title('McCaffrey Centerline Velocity Correlation','FontSize',Font_Size)
 
-axis([.01 1 .3 2.5])
+xmin = 0.01;
+xmax = 1;
+ymin = 0.3;
+ymax = 2.5;
+axis([xmin xmax ymin ymax])
 
 lh = legend(h1,'14.4 kW','21.7 kW','33.0 kW','44.9 kW','57.5 kW','(z/Q^{2/5})^\eta','Location','SouthEast');
 set(lh,'FontSize',Font_Size)
 legend 'boxoff'
 
+text(.04,1.2,'\eta=1/2','FontSize',Font_Size)
+text(.10,1.7,'\eta=0','FontSize',Font_Size)
+text(.295,1.25,'\eta=-1/3','FontSize',Font_Size)
+
 loose_inset
-print(gcf,'-dpdf',[pltdir,chid{i},'_V'])
+print(gcf,'-dpdf',[pltdir,'McCaffrey_Velocity_Correlation'])
 
 % format and print temperature correlation
 
 figure(2)
 xlabel('z/Q^{2/5}','FontSize',Font_Size)
 ylabel('\DeltaT (^\circC)','FontSize',Font_Size)
+title('McCaffrey Centerline Temperature Correlation','FontSize',Font_Size)
 
 axis([.008 1 40 1000])
 
@@ -80,8 +90,12 @@ lh = legend(h2,'14.4 kW','21.7 kW','33.0 kW','44.9 kW','57.5 kW','(z/Q^{2/5})^\e
 set(lh,'FontSize',Font_Size)
 legend 'boxoff'
 
+text(.03,650,'\eta=0','FontSize',Font_Size)
+text(.08,425,'\eta=-1','FontSize',Font_Size)
+text(.18,125,'\eta=-5/3','FontSize',Font_Size)
+
 loose_inset
-print(gcf,'-dpdf',[pltdir,chid{i},'_T'])
+print(gcf,'-dpdf',[pltdir,'McCaffrey_Temperature_Correlation'])
 
 return
 
