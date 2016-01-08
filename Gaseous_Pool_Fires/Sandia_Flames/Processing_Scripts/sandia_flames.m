@@ -28,10 +28,10 @@ xlbl = {'x (m)','x (m)','x (m)'};
 ylbl = {'Mean Radial Velocity (m/s)','Mean Vertical Velocity (m/s)','TKE (m2/s2)'};
 pltid = {'_U','_W','_TKE'};
 
-rel_error(1,:) =[.31,.20,.28]; % Test 14, see [Tieszen et al., 2004] 
-rel_error(2,:) =[.45,.70,.78]; % Test 17
-rel_error(3,:) =[.40,.45,.46]; % Test 24
-rel_error(4,:) =[.55,.37,.40]; % Test 35
+rel_error(1,:) =[.13,.07,.10]; % Test 14, see [Tieszen et al., 2004] 
+rel_error(2,:) =[.23,.21,.28]; % Test 17
+rel_error(3,:) =[.17,.17,.16]; % Test 24
+rel_error(4,:) =[.16,.08,.16]; % Test 35
 
 % format axis range and ticks
 
