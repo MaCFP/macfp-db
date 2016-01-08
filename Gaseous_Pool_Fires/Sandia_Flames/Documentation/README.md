@@ -40,6 +40,12 @@ Table 1: Boundary conditions [Tieszen et al., 2004]
 
 (f) Spatially varying, cooler near the facility wall, hotter near the chimney entrance; see [Tieszen et al., 2002] for geometry.
 
+Table 2: PIV data uncertainty summary [Tieszen et al., 2004]
+
+|Test No.             | 14  | 24  | 17  | 35  |
+| ------------------- | --- | --- | --- | --- |
+|Sigma W mean (a) (%) | 6.5 | 14  | 25  | 15  |
+
 ####References
 
 [Blanchat, 2001] T. K. Blanchat. Characterization of the air source and plume source at FLAME. Technical Report SAND01-2227, Sandia National Laboratory, Albuquerque, New Mexico, 2001.
