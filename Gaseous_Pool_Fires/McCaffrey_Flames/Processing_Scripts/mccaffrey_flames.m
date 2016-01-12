@@ -11,6 +11,14 @@ pltdir = '../Plots/';
 addpath '../../../Utilities/'
 plot_style
 
+figure(1)
+reset(gcf)
+reset(gca)
+
+figure(2)
+reset(gcf)
+reset(gca)
+
 Q = [14.4 21.7 33.0 44.9 57.5]; % kW [14.4 21.7 33.0 44.9 57.5]
 g = 9.8;
 rho = 1.18;
@@ -62,7 +70,7 @@ title('McCaffrey Centerline Velocity Correlation','FontSize',Font_Size)
 
 xmin = 0.01;
 xmax = 1;
-ymin = 0.3;
+ymin = .5;
 ymax = 2.5;
 axis([xmin xmax ymin ymax])
 
