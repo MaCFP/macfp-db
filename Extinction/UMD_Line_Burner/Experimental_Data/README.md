@@ -16,7 +16,7 @@ C3H8_A contains the same for the propane, anchored condition.
 
 The variables contained within each structure include:
 
-* O2_Data
+####O2_Data
 
 | header | units | description |
 | ----- | --- | ----------------------------------------------------------|
@@ -27,7 +27,7 @@ The variables contained within each structure include:
 | S_x | [m] | Uncertainty for position data |
 | S_XO2 | [mol frac] | Uncertainty for XO2 data |
 
-* TC_Data
+####TC_Data
 
 | header | units | description |
 | ----- | --- | ----------------------------------------------------------|
@@ -38,26 +38,19 @@ The variables contained within each structure include:
 | S_x  | [m] | Uncertainty for position data |
 | S_TC | [C] | Uncertainty for TC temperature data |
 
-* CH4_NA, CH4_A, C3H8_NA, and C3H8_A
+####CH4_NA, CH4_A, C3H8_NA, and C3H8_A
 
-  - XO2                        [mol/]                   Oxidizer oxygen mole fraction
-
-  - q_R                        [kW/m2]              Radiative heat flux
-
-  - Chi_R                    [-]                           Radiative loss fraction
-
-  - Q_f                        [kW]                      Fuel flow based heat release rate (mdot_fuel * dH_comb,fuel)
-
-  - Q_O2                    [kW]                      OC calorimetry based heat release rate
-
-  - Q_CO2                  [kW]                      CDG calorimetry based heat release rate
-
-  - eta                         [-]                           Combustion efficiency (Q_CO2 / Q_f)
-
-  - XO2_Lf                 [mol/]                   Oxidizer oxygen mole fraction (for use with Lf data)
-
-  - Lf                            [m]                         Flame height
-
-  - S_’data’               [varies]                 Uncertainty for ‘data’ in same units as ‘data’
+| header   | units      | description |
+| -------- | ---------- | ----------- |
+| XO2      | [mol frac] | Oxidizer oxygen mole fraction |
+| q_R      | [kW/m2]    | Radiative heat flux |
+| Chi_R    | [-]        | Radiative loss fraction |
+| Q_f      | [kW]       | Fuel flow based heat release rate (mdot_fuel * dH_comb,fuel) |
+| Q_O2     | [kW]       | OC calorimetry based heat release rate |
+| Q_CO2    | [kW]       | CDG calorimetry based heat release rate |
+| eta      | [-]        | Combustion efficiency (Q_CO2 / Q_f) |
+| XO2_Lf   | [mol frac] | Oxidizer oxygen mole fraction (for use with Lf data) |
+| Lf       | [m]        | Flame height |
+| S_'data' | [varies]   | Uncertainty for 'data' in same units as 'data' |
   
   
