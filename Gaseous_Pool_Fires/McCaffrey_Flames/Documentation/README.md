@@ -6,7 +6,7 @@ In [McCaffrey, 1979], a burner using natural gas (35 kJ/L [45 MJ/kg assuming 19 
 
 Radiant fraction measurements for natural gas were made in [McCaffrey, 1981].  For convenience, we have extracted the data from that report for the heat release rates reported in [McCaffrey, 1979].
 
-| Q (kW) | Q*    | D*    |HRRPUA (kW/m^2) |   X_r  |
+| Q (kW) | Q*    | D* (m)|HRRPUA (kW/m^2) |   X_r  |
 |:------:|:-----:|:-----:|:--------------:|:------:|
 | 14.4   | 0.270 | 0.178 | 160            | 0.17   |
 | 21.7   | 0.407 | 0.209 | 241            | 0.21   |
