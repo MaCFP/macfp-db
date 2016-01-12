@@ -77,7 +77,7 @@ M(:,1) = D.C3H8_A.Lf;
 M(:,2) = D.C3H8_A.S_Lf;
 M(:,3) = D.C3H8_A.XO2_Lf;
 
-header = {'Lf','XO2_Lf'};
+header = {'Lf','S_Lf','XO2_Lf'};
 filename = [expdir,'C3H8_A_Lf_Data.csv'];
 
 fid = fopen(filename,'wt');
@@ -122,7 +122,7 @@ M(:,1) = D.C3H8_NA.Lf;
 M(:,2) = D.C3H8_NA.S_Lf;
 M(:,3) = D.C3H8_NA.XO2_Lf;
 
-header = {'Lf','XO2_Lf'};
+header = {'Lf','S_Lf','XO2_Lf'};
 filename = [expdir,'C3H8_NA_Lf_Data.csv'];
 
 fid = fopen(filename,'wt');
@@ -167,7 +167,7 @@ M(:,1) = D.CH4_A.Lf;
 M(:,2) = D.CH4_A.S_Lf;
 M(:,3) = D.CH4_A.XO2_Lf;
 
-header = {'Lf','XO2_Lf'};
+header = {'Lf','S_Lf','XO2_Lf'};
 filename = [expdir,'CH4_A_Lf_Data.csv'];
 
 fid = fopen(filename,'wt');
@@ -212,7 +212,7 @@ M(:,1) = D.CH4_NA.Lf;
 M(:,2) = D.CH4_NA.S_Lf;
 M(:,3) = D.CH4_NA.XO2_Lf;
 
-header = {'Lf','XO2_Lf'};
+header = {'Lf','S_Lf','XO2_Lf'};
 filename = [expdir,'CH4_NA_Lf_Data.csv'];
 
 fid = fopen(filename,'wt');
