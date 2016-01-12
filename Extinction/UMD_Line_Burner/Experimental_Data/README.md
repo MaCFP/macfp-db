@@ -18,8 +18,9 @@ The variables contained within each structure include:
 
 * O2_Data
 
-| x_125 | [m] | Position vector for XO2 measurements at 12.5 cm elevation |
+| header | units | description |
 | ----- | --- | ----------------------------------------------------------|
+| x_125 | [m] | Position vector for XO2 measurements at 12.5 cm elevation |
 | x_250 | [m] | Position vector for XO2 measurements at 25.0 cm elevation |
 | XO2_125 | [mol/] | Local time-mean oxygen mole fraction at 12.5 cm elevation |
 | XO2_250 | [mol/] | Local time-mean oxygen mole fraction at 25.0 cm elevation |
