@@ -2,7 +2,7 @@
 
 ####Introduction
 
-In [McCaffrey, 1979], a burner using natural gas (35 kJ/L [45,068 kJ/kg assuming 19 g/gmol]) at various controlled rates was constructed of a porous refractory material 0.3 m square.  Along the centerline of the burner, velocity and temperature were measuered using bi-directional probe and thermocouple, respectively.  The centerline data collapses when scaled by the Froude number as shown in the plots below.
+In [McCaffrey, 1979], a burner using natural gas (35 kJ/L [45 MJ/kg assuming 19 g/gmol]) at various controlled rates was constructed of a porous refractory material 0.3 m square.  Along the centerline of the burner, velocity and temperature were measuered using bi-directional probe and thermocouple, respectively.  The centerline data collapses when scaled by the Froude number as shown in the plots below.
 
 Radiant fraction measurements for natural gas were made in [McCaffrey, 1981].  For convenience, we have extracted the data from that report for the heat release rates reported in [McCaffrey, 1979].
 
