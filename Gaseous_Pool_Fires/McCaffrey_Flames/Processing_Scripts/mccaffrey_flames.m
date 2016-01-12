@@ -20,11 +20,13 @@ reset(gcf)
 reset(gca)
 
 Q = [14.4 21.7 33.0 44.9 57.5]; % kW [14.4 21.7 33.0 44.9 57.5]
-g = 9.8;
-rho = 1.18;
-cp = 1;
-T0 = 273.15 + 20;
+g = 9.8; % m/s2
+rho = 1.18; % kg/m3
+cp = 1; % kJ/(kg*K)
+T0 = 273.15 + 20; % K
+D = 0.3; % m
 
+QS = (Q/(rho*cp*T0*sqrt(g)*D^(5/2)));
 DS = (Q/(rho*cp*T0*sqrt(g))).^(2/5); % m
 
 chid = {'McCaffrey_14kW','McCaffrey_22kW','McCaffrey_33kW','McCaffrey_45kW','McCaffrey_57kW'};
