@@ -14,7 +14,7 @@ Radiant fraction measurements for natural gas were made in [McCaffrey, 1981].  F
 | 44.9   | 0.27   |
 | 57.5   | 0.27   |
 
-Within the Processing_Scripts directory of this repository you can find the scripts used to create the plots below.
+Within the Processing_Scripts directory of this repository you can find the scripts used to create the plots below.  The data from [McCaffrey, 1979] is digitized and provides a rough estimate of the uncertainty in the correlation.
 
 <img src="https://github.com/MaCFP/macfp-db/blob/master/Gaseous_Pool_Fires/McCaffrey_Flames/Documentation/McCaffrey_Velocity_Correlation.png" width="600">
 
