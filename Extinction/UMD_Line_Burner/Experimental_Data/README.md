@@ -18,25 +18,25 @@ The variables contained within each structure include:
 
 ######O2_Data
 
-| header | units | description |
-| ----- | --- | ----------------------------------------------------------|
-| x_125 | [m] | Position vector for XO2 measurements at 12.5 cm elevation |
-| x_250 | [m] | Position vector for XO2 measurements at 25.0 cm elevation |
+| header  | units      | description |
+| ------- | ---------- | ----------- |
+| x_125   | [m]        | Position vector for XO2 measurements at 12.5 cm elevation |
+| x_250   | [m]        | Position vector for XO2 measurements at 25.0 cm elevation |
 | XO2_125 | [mol frac] | Local time-mean oxygen mole fraction at 12.5 cm elevation |
 | XO2_250 | [mol frac] | Local time-mean oxygen mole fraction at 25.0 cm elevation |
-| S_x | [m] | Uncertainty for position data |
-| S_XO2 | [mol frac] | Uncertainty for XO2 data |
+| S_x     | [m]        | Uncertainty for position data |
+| S_XO2   | [mol frac] | Uncertainty for XO2 data |
 
 ######TC_Data
 
 | header | units | description |
-| ----- | --- | ----------------------------------------------------------|
-| x_125 | [m] | Position vector for TC measurements at 12.5 cm elevation  |
-| x_250 | [m] | Position vector for TC measurements at 25.0 cm elevation  |
-| TC_125 | [C] | Local time-mean TC temperature at 12.5 cm elevation |
-| TC_250 | [C] | Local time-mean TC temperature at 25.0 cm elevation |
-| S_x  | [m] | Uncertainty for position data |
-| S_TC | [C] | Uncertainty for TC temperature data |
+| ------ | ----- | ----------- |
+| x_125  | [m]   | Position vector for TC measurements at 12.5 cm elevation  |
+| x_250  | [m]   | Position vector for TC measurements at 25.0 cm elevation  |
+| TC_125 | [C]   | Local time-mean TC temperature at 12.5 cm elevation |
+| TC_250 | [C]   | Local time-mean TC temperature at 25.0 cm elevation |
+| S_x    | [m]   | Uncertainty for position data |
+| S_TC   | [C]   | Uncertainty for TC temperature data |
 
 ######CH4_NA, CH4_A, C3H8_NA, and C3H8_A
 
