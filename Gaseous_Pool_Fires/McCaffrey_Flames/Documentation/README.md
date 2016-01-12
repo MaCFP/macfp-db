@@ -26,3 +26,5 @@ Within the Processing_Scripts directory of this repository you can find the scri
 [McCaffrey, 1979] B. J. McCaffrey. Purely Buoyant Diffusion Flames: Some Experimental Results. National Bureau of Standards, NBSIR 79-1910, 1979.
 
 [McCaffrey, 1981] B. J. McCaffrey. Some Measurements of the Radiative Power Output of Diffusion Flames. In Western-States Section of the Combustion Institute, Paper No. WSS/CT 81-15, 1981.
+
+[Baum and McCaffrey, 1989] H R. Baum and B. J. McCaffrey. Fire Induced Flow Field--Theory and Experiment. In Proceedings of the 2nd International Symposium on Fire Safety Science, 1989.
