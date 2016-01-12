@@ -1,32 +1,30 @@
 ##UMD Line Burner Experimental Data
 
-O2_Data contains the local O2 mole fraction data for the methane at 18 vol% O2 in coflow, non-anchored flame at 12.5 and 25.0 cm elevations
+Within this directory you will find a set of .csv files which have been extracted from the Matlab `Data.mat` workbook.
 
-TC_Data contains the local TC temperature data for the methaneat 18 vol% O2 in coflow, non-anchored flame at 12.5 and 25.0 cm elevations
+O2_Data contains the local O2 mole fraction data for the methane at 18 vol % O2 in coflow, non-anchored flame at 12.5 and 25.0 cm elevations.
 
-CH4_NA contains calorimetry, radiative emissions, and flame height data for the methane, non-anchored testing condition
+TC_Data contains the local TC temperature data for the methaneat 18 vol % O2 in coflow, non-anchored flame at 12.5 and 25.0 cm elevations.
 
-CH4_A contains the same for the methane, anchored condition
+CH4_NA contains calorimetry, radiative emissions, and flame height data for the methane, non-anchored testing condition.
 
-C3H8_NA contains the same for the propane, non-anchored condition
+CH4_A contains the same for the methane, anchored condition.
 
-C3H8_A contains the same for the propane, anchored condition
+C3H8_NA contains the same for the propane, non-anchored condition.
+
+C3H8_A contains the same for the propane, anchored condition.
 
 The variables contained within each structure include:
 
 * O2_Data
 
-  - x_125                    [m]                         Position vector for XO2 measurements at 12.5 cm elevation
-
-  - x_250                    [m]                         Position vector for XO2 measurements at 25.0 cm elevation
-
-  - XO2_125              [mol/]                   Local time-mean oxygen mole fraction at 12.5 cm elevation
-
-  - XO2_250              [mol/]                   Local time-mean oxygen mole fraction at 25.0 cm elevation
-
-  - S_x                         [m]                         Uncertainty for position data
-
-  -S_XO2                   [mol/]                   Uncertainty for XO2 data
+| x_125 | [m] | Position vector for XO2 measurements at 12.5 cm elevation |
+| ----- | --- | ----------------------------------------------------------|
+| x_250 | [m] | Position vector for XO2 measurements at 25.0 cm elevation |
+| XO2_125 | [mol/] | Local time-mean oxygen mole fraction at 12.5 cm elevation |
+| XO2_250 | [mol/] | Local time-mean oxygen mole fraction at 25.0 cm elevation |
+| S_x | [m] | Uncertainty for position data |
+| S_XO2 | [mol/] | Uncertainty for XO2 data |
 
 * TC_Data
 
