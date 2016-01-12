@@ -6,13 +6,13 @@ In [McCaffrey, 1979], a burner using natural gas (35 kJ/L [45 MJ/kg assuming 19 
 
 Radiant fraction measurements for natural gas were made in [McCaffrey, 1981].  For convenience, we have extracted the data from that report for the heat release rates reported in [McCaffrey, 1979].
 
-| Q (kW) |   X_r  |
-|:------:|:------:|
-| 14.4   | 0.17   |
-| 21.7   | 0.21   |
-| 33.0   | 0.25   |
-| 44.9   | 0.27   |
-| 57.5   | 0.27   |
+| Q (kW) | HRRPUA (kW/m^2) |   X_r  |
+|:------:|:---------------:|:------:|
+| 14.4   | 160             | 0.17   |
+| 21.7   | 241             | 0.21   |
+| 33.0   | 367             | 0.25   |
+| 44.9   | 499             | 0.27   |
+| 57.5   | 639             | 0.27  |
 
 Within the Processing_Scripts directory of this repository you can find the scripts used to create the plots below.  The data from [McCaffrey, 1979] is digitized and provides a rough estimate of the uncertainty in the correlation.
 
