@@ -16,7 +16,7 @@ C3H8_A contains the same for the propane, anchored condition.
 
 The variables contained within each structure include:
 
-######O2_Data
+#####O2_Data
 
 | header  | units      | description |
 | ------- | ---------- | ----------- |
@@ -27,7 +27,7 @@ The variables contained within each structure include:
 | S_x     | [m]        | Uncertainty for position data |
 | S_XO2   | [mol frac] | Uncertainty for XO2 data |
 
-######TC_Data
+#####TC_Data
 
 | header | units | description |
 | ------ | ----- | ----------- |
@@ -38,7 +38,7 @@ The variables contained within each structure include:
 | S_x    | [m]   | Uncertainty for position data |
 | S_TC   | [C]   | Uncertainty for TC temperature data |
 
-######CH4_NA, CH4_A, C3H8_NA, and C3H8_A
+#####CH4_NA, CH4_A, C3H8_NA, and C3H8_A
 
 | header   | units      | description |
 | -------- | ---------- | ----------- |
