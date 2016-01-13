@@ -4,7 +4,7 @@ Within this directory you will find a set of .csv files which have been extracte
 
 O2_Data contains the local O2 mole fraction data for the methane at 18 vol % O2 in coflow, non-anchored flame at 12.5 and 25.0 cm elevations.
 
-TC_Data contains the local TC temperature data for the methaneat 18 vol % O2 in coflow, non-anchored flame at 12.5 and 25.0 cm elevations.
+TC_Data contains the local TC temperature data for the methane at 18 vol % O2 in coflow, non-anchored flame at 12.5 and 25.0 cm elevations.
 
 CH4_NA contains calorimetry, radiative emissions, and flame height data for the methane, non-anchored testing condition.
 
