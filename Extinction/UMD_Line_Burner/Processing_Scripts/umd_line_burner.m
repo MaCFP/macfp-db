@@ -11,9 +11,9 @@ pltdir = '../Plots/';
 addpath '../../../Utilities/'
 plot_style
 
-expfilename = {'Exp_O2_p18_T_z_p125.csv','Exp_O2_p18_T_z_p250.csv','Exp_O2_p18_O2_z_p125.csv','Exp_O2_p18_O2_z_p250.csv'};
-expxhdr = {'x (m)','x (m)','x (m)','x (m)'};
-expyhdr = {'T (C)','T (C)','O2 (vol frac)','O2 (vol frac)'};
+expfilename = {'TC_Data.csv','TC_Data.csv','O2_Data.csv','O2_Data.csv'};
+expxhdr = {'x_125','x_250','x_125','x_250'};
+expyhdr = {'TC_125','TC_250','XO2_125','XO2_250'};
 exp_marker_style = {'ksq','ksq','ko','ko'};
 
 cmpfilename = {'methane_O2_p18_TC_z_p125_example.csv','methane_O2_p18_TC_z_p250_example.csv','methane_O2_p18_O2_z_p125_example.csv','methane_O2_p18_O2_z_p250_example.csv'};
