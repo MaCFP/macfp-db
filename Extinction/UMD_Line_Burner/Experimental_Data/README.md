@@ -6,11 +6,7 @@ O2_Data contains the local O2 mole fraction data for the methane at 18 vol % O2 
 
 TC_Data contains the local TC temperature data for the methane at 18 vol % O2 in coflow, non-anchored flame at 12.5 and 25.0 cm elevations.
 
-CH4_NA contains calorimetry, radiative emissions, and flame height data for the methane, non-anchored testing condition.
-
-CH4_A contains the same for the methane, anchored condition.
-
-C3H8_NA contains the same for the propane, non-anchored condition.
+CH4_A contains calorimetry, radiative emissions, and flame height data for the methane, anchored testing condition.
 
 C3H8_A contains the same for the propane, anchored condition.
 
