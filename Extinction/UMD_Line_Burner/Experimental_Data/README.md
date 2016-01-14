@@ -38,7 +38,7 @@ The variables contained within each structure include:
 | S_x    | [m]   | Uncertainty for position data |
 | S_TC   | [C]   | Uncertainty for TC temperature data |
 
-#####CH4_NA, CH4_A, C3H8_NA, and C3H8_A
+#####CH4_A and C3H8_A
 
 | header   | units      | description |
 | -------- | ---------- | ----------- |
@@ -46,7 +46,6 @@ The variables contained within each structure include:
 | q_R      | [kW/m2]    | Radiative heat flux |
 | Chi_R    | [-]        | Radiative loss fraction |
 | Q_f      | [kW]       | Fuel flow based heat release rate (mdot_fuel * dH_comb,fuel) |
-| Q_O2     | [kW]       | OC calorimetry based heat release rate |
 | Q_CO2    | [kW]       | CDG calorimetry based heat release rate |
 | eta      | [-]        | Combustion efficiency (Q_CO2 / Q_f) |
 | XO2_Lf   | [mol frac] | Oxidizer oxygen mole fraction (for use with Lf data) |
