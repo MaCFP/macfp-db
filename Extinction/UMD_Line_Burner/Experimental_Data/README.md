@@ -1,6 +1,6 @@
 ##UMD Line Burner Experimental Data
 
-Within this directory you will find a set of .csv files which have been extracted from the Matlab `Data.mat` workbook.  The script to process this data is in `../Processing_Scripts/extract_data.m`.
+Within this directory you will find a set of .csv files which have been extracted from the Matlab `Data.mat` workbook.  The script to process this data is in `../Scripts/extract_data.m`.
 
 O2_Data contains the local O2 mole fraction data for the methane at 18 vol % O2 in coflow, non-anchored flame at 12.5 and 25.0 cm elevations.
 
