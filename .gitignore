@@ -1,0 +1,30 @@
+# mac file
+.DS_Store
+._*
+
+# compiler output files
+*.exe
+*.o
+*.mod
+*.obj
+*.pdb
+*.exp
+*.lib
+*.i90
+
+# latex output files
+*.aux
+*.bak
+*.bbl
+*.blg
+*.brf
+*.err
+*.lof
+*.log
+*.lot
+*.out
+*.pdfsync
+*.toc
+*.gz
+*.pdf
+
