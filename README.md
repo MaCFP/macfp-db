@@ -1,4 +1,4 @@
-# macfp-db
+## macfp-db
 Measurement and Computation of Fire Phenomena Database
 
 Welcome to the MaCFP database!
