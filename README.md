@@ -11,5 +11,3 @@ Please visit our [wiki pages](https://github.com/MaCFP/macfp-db/wiki) for detail
 
 If you find problems with the database or if you have suggestions for improvement, please submit an [Issue](https://github.com/MaCFP/macfp-db/issues).
 
-Test submodule commit.
-Test submodule commit 2.
