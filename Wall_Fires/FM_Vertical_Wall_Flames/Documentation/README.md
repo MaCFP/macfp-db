@@ -10,7 +10,7 @@ The FM wall fire experimental study [1] targets at characterizing the turbulent,
 
 An elevation view of the apparatus is illustrated in Fig. 1. The burner was assembled by an array of 132 mm high × 380 m wide, water cooled, porous, sintered bonze panels. Each of the sintered metal panels was individually supplied with gaseous fuel and individually measured for heat feedback from the flames by the temperature rise of the cooling water. The forward heat transfer zone was simulated by a 660 mm high solid metal, water cooled heat transfer plate, which was divided into five 132 mm thermal segments to measure the distribution of forward heat transfer. The height of the pyrolysis zone can be adjusted by varying the number of individual panels supplied with gaseous fuel. 
 
-![alt text](https://github.com/NingRen/macfp-db/tree/Wall_Fires/FM_Vertical_Wall_Flames/Documentation/Wall_Fire_Burner.png)
+![alt text](https://github.com/NingRen/macfp-db/blob/wallFire-FM/Wall_Fires/FM_Vertical_Wall_Flames/Documentation/Wall_Fire_Burner.png)
 
 Figure 1: Elevation view of FM vertical gas burner apparatus [1], unit in mm
 
@@ -28,7 +28,7 @@ A scanning radiometer was employed to measure vertical distribution of outward r
 
 ####Experimental data
 
-Available [experimental data](https://github.com/NingRen/macfp-db/tree/Wall_Fires/FM_Vertical_Wall_Flames/Experimental_Data) include:
+Available [experimental data](https://github.com/NingRen/macfp-db/tree/wallFire-FM/Wall_Fires/FM_Vertical_Wall_Flames/Experimental_Data) include:
 
 * Soot depth, δs, for propylene wall fire, tabulated
   - At z = 365 mm, fuel flow rate ranges from 6.99 to 29.29 g/m2/s
