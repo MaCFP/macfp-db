@@ -16,9 +16,9 @@ Figure 1: Elevation view of FM vertical gas burner apparatus [1], units in mm
 
 In the fuel-inlet zone, gaseous fuel was supplied by an electronic mass flow controller with an accurate measure of the fuel flow rate. A horizontal flame anchor consisting of a 1 mm high × 5 mm deep × 380 mm wide strip of ceramic material, was placed normal to the surface at the leading edge of the lowest active panel. The flame anchor encouraged tripping of the boundary layer and was important for anchoring the flames at low mass flow rate.
 
-Four fuels were used in the experiments: methane, ethane, ethylene and propylene. The minimum fuel mass flux rate is 4 g/m2/s, below which flame becomes non-luminous and blue.
+Four fuels were used in the experiments: methane, ethane, ethylene and propylene. The minimum fuel mass flux rate is 4 g/m<sup>2</sup>/s, below which flame becomes non-luminous and blue.
 
-The flame thickness, characterized by the soot depth, δs, was measured by inserting arrays of 5 mm diameter glass rods into the flame perpendicular to the wall surface and rapidly withdrawing them after a two second exposure. The soot depth, δs, is then defined as the distance where the soot deposit is visually judged to have decreased to 50% of the maximum deposit on that rod. 
+The flame thickness, characterized by the soot depth, δ<sub>s</sub>, was measured by inserting arrays of 5 mm diameter glass rods into the flame perpendicular to the wall surface and rapidly withdrawing them after a two second exposure. The soot depth, δs, is then defined as the distance where the soot deposit is visually judged to have decreased to 50% of the maximum deposit on that rod. 
 
 Temperature profiles across the flame boundary were measured by a thermocouple rake, which consisted of 15 ungrounded Chromel-Alumel thermocouples inside 1.6 mm Inconel sheaths spaced 12.6 mm on center and protruding 1.5 cm downwards into the rising flow. The rake was angled 56° from the normal to the burner surface in a horizontal plane. Temperature was measured at two locations: 365 and 771 mm downstream from the flame leading edge.
 
@@ -31,8 +31,8 @@ A scanning radiometer was employed to measure the vertical distribution of outwa
 Available [experimental data](https://github.com/NingRen/macfp-db/tree/wallFire-FM/Wall_Fires/FM_Vertical_Wall_Flames/Experimental_Data) include:
 
 #####Soot depth for propylene wall fires
-| Vertical measurement location (mm) | Mass flux rate range (g/m<sup>2</sup>/s) |
-| ---------------------------------- | ----------------------------- |
+| Vertical measurement location (mm) | Mass flux range (g/m<sup>2</sup>/s) |
+| ---------------------------------- | ------------------------ |
 | 365 | 6.99 - 29.29 |
 | 527 | 6.17 - 62.18 |
 | 771 | 5.67 - 22.37 |
@@ -41,28 +41,28 @@ Available [experimental data](https://github.com/NingRen/macfp-db/tree/wallFire-
 
 
 #####Uncorrected (raw) and corrected thermocouple temperature for propylene wall fires
-| Vertical measurement location (mm) | Mass flux rate range (g/m<sup>2</sup>/s) |
-| ---------------------------------- | ----------------------------- |
+| Vertical measurement location (mm) | Mass flux range (g/m<sup>2</sup>/s) |
+| ---------------------------------- | ------------------------ |
 | 771 | 8.75 - 22.49 |
 
 #####Outward radiance for propylene wall fire wall fires
-| Vertical measurement location (mm) | Mass flux rate range (g/m<sup>2</sup>/s) |
-| ---------------------------------- | ----------------------------- |
+| Vertical measurement location (mm) | Mass flux range (g/m<sup>2</sup>/s) |
+| ---------------------------------- | ------------------------ |
 | 66 | 5.35 - 24.74 |
 | 330 | 5.35 - 24.74 |
 | 594 | 5.35 - 24.74 |
 | 990 | 5.35 - 14.58 |
 
 #####Total flame-to-wall heat flux for propylene wall fires (some reported measurements were interpolated to match the fuel flow rate condition used in temperature measurements)
-| Mass flux rate (g/m<sup>2</sup>/s) |
-| ----------------------- |
+| Mass flux (g/m<sup>2</sup>/s) |
+| ------------------ |
 | 12.68 |
 | 17.05 |
 | 22.27 |
 
 #####Total flame-to-wall heat flux for other fuels: methane, ethane and ethylene (some reported measurements were interpolated to match the fuel flow rate condition used in temperature measurements)
-| Fuels | Mass flux rate (g/m<sup>2</sup>/s) |
-| ----- | ----------------------- |
+| Fuels | Mass flux (g/m<sup>2</sup>/s) |
+| ----- | ------------------ |
 | Methane | 10.6 |
 | Ethane | 10.2 |
 | Ethylene | 11.5 |
