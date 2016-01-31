@@ -34,10 +34,10 @@ Estimated turbulence intensity for axial and radial velocity and temperature all
 
 Estimated correlations between axial-radial velocity, axial velocity-temperature and radial velocity-temperature for all measurement locations.
 
-####Data to come:
+####Data To Come
 The same set of data for an acetone pool fire which has significantly higher radiation effects than the methanol fire here.
 
-####Key References
+####References
 [Weckman, 1987]  E.J. Weckman  (1987)  The structure of the flowfield near the base of a medium-scale pool fire, PhD Thesis,University of Waterloo.
 
 [Weckman and Strong, 1996]  E.J. Weckman and A.B. Strong (1996)  Experimental Investigation of the Turbulence Structure of Medium-Scale Methanol Pool Fires, Combustion and Flame, 105:245-266.
