@@ -17,7 +17,7 @@ Four channels of velocity and temperature data were collected simultaneously to 
 
 An error analysis indicates that mean and rms values of velocity and mean values of temperature are accurate to ± 5% at 95% confidence [Weckman, 1987]. The error in Reynolds stress is estimated as ± 15% at 95% confidence [Weckman, 1987].  Errors in rms temperature and velocity-temperature correlations are very difficult to estimate, since they depend not only on standard instrument error, but also on an unquantifiable error due to the method of compensation for thermal inertia of the thermocouple bead. Thus, no in situ compensation was applied to the data here, but rather to permit formulation of velocity-temperature correlations, the temperature data is digitally compensated using several different techniques.  The results are compared and the final method chosen so as to provide consistent determinations of derived temperature statistics throughout the fire flow field.  No correction is made to temperature data for effects of catalytic action or for the effects of radiation on measured temperature as these were estimated to be less than 5%.
 
-![alt text](https://github.com/MaCFP/macfp-db/blob/master/ Liquid_Pool_Fires/Waterloo_Methanol/Documentation/uwaterloo_pan_burner.png)
+<img src="https://github.com/MaCFP/macfp-db/blob/master/Liquid_Pool_Fires/Waterloo_Methanol/Documentation/waterloo_pan_burner.png" width="400">
 
 Figure 1:  Photograph of UW Pool Fire Facility
 
