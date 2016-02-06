@@ -15,11 +15,11 @@ The Fire Laboratory for Accreditation of Models by Experimentation (FLAME) facil
 
 **NOTE** that the pressure in the facility is 81.1 ±  0.4 kPa, approximately 20% below one standard atmosphere, because of the altitude of the facility.
 
-<img src="https://github.com/MaCFP/macfp-db/blob/master/Gaseous_Pool_Fires/Sandia_Flames/Documentation/Sandia_FLAME_elevation.png" width="400">
+<img src="https://github.com/MaCFP/macfp-db/blob/master/Gaseous_Pool_Fires/Sandia_Flames/Documentation/Sandia_FLAME_elevation.png" width="451">
 
 Figure 2: Elevation view of FLAME facility.
 
-<img src="https://github.com/MaCFP/macfp-db/blob/master/Gaseous_Pool_Fires/Sandia_Flames/Documentation/Sandia_FLAME_plan.png" width="400">
+<img src="https://github.com/MaCFP/macfp-db/blob/master/Gaseous_Pool_Fires/Sandia_Flames/Documentation/Sandia_FLAME_plan.png" width="408">
 
 Figure 3: Horizontal plan view of FLAME facility.
 
@@ -61,7 +61,7 @@ Table 1: Boundary conditions [Tieszen et al., 2004].  All reported uncertainties
 
 ####Available Measurements
 
-Particle image velocimetry was used to obtain vertical and radial velocities at a plane across the plume approximately 1 m wide by 0.9 m high; the laser sheet thickness was approximately 8 mm.  In the [Experimental_Data folder] (http://github.com/MaCFP/macfp-db/tree/master/Buoyant_Plumes/Experimental_Data/README.md) files contain average vertical and radial velocity for the four cases listed in Table 1.  For Tests 24 and 35 the turbulent kinetic energy has also been postprocessed and is included; in processing the turbulent kinetic energy, the plane-normal velocity fluctuations have been assumed to be equal to the horizontal fluctuations.  This data is provided as radial profiles with the approximate height above the ground plane indicated by the file name:  p3 indicates z = 0.301 m, p5 indicates z = 0.502 m, and p9 indicates z = 0.903 m above the source.  The 
+Particle image velocimetry was used to obtain vertical and radial velocities at a plane across the plume approximately 1 m wide by 0.9 m high; the laser sheet thickness was approximately 8 mm.  In the [Experimental_Data folder] (https://github.com/MaCFP/macfp-db/blob/master/Buoyant_Plumes/Experimental_Data/README.md) files contain average vertical and radial velocity for the four cases listed in Table 1.  For Tests 24 and 35 the turbulent kinetic energy has also been postprocessed and is included; in processing the turbulent kinetic energy, the plane-normal velocity fluctuations have been assumed to be equal to the horizontal fluctuations.  This data is provided as radial profiles with the approximate height above the ground plane indicated by the file name:  p3 indicates z = 0.301 m, p5 indicates z = 0.502 m, and p9 indicates z = 0.903 m above the source.  The 
 
 
 
