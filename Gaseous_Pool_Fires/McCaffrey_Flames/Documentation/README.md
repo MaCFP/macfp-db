@@ -1,6 +1,6 @@
-##McCaffrey Centerline Plume Correlations
+## McCaffrey Centerline Plume Correlations
 
-####Introduction
+#### Introduction
 
 In [McCaffrey, 1979], a burner using natural gas (35 kJ/L [45 MJ/kg assuming 19 kg/kgmol as mole weight for natural gas]) at various controlled rates was constructed of a porous refractory material 0.3 m square.  Along the centerline of the burner, velocity and temperature were measuered using bi-directional probe and thermocouple, respectively.  The centerline data collapses when scaled by the Froude number as shown in the plots below.
 
@@ -21,7 +21,7 @@ Within the Processing_Scripts directory of this repository you can find the scri
 <img src="https://github.com/MaCFP/macfp-db/blob/master/Gaseous_Pool_Fires/McCaffrey_Flames/Documentation/McCaffrey_Temperature_Correlation.png" width="600">
 
 
-####References
+#### References
 
 [McCaffrey, 1979] B. J. McCaffrey. Purely Buoyant Diffusion Flames: Some Experimental Results. National Bureau of Standards, NBSIR 79-1910, 1979.
 
