@@ -1,12 +1,12 @@
-##FM Global vertical wall fire configuration
+## FM Global vertical wall fire configuration
 
 Summarized by Ning Ren
 
-####Introduction
+#### Introduction
 
 The FM Global wall fire experimental study [1] targets characterizing turbulent, vertical wall flames produced by an array of vertically stacked porous wall burners supplied with gaseous fuels. The wall burners were water cooled with carefully adjusted fuel supply rates. This experimental configuration represents meter-scale, buoyancy-driven, diffusion flames as in typical upward fire spread scenarios. For fire growth and spread problems, flame heat transfer is of central importance. In this study, the flame-to-wall heat fluxes were characterized at different elevations, fuels and fuel flow rates. Other flame characterizations included soot depth, flame temperature profiles, and outward flame radiances. These data are useful for developing physics based heat transfer models as well as for CFD model validation [2]. 
 
-####Experimental design
+#### Experimental design
 
 An elevation view of the apparatus is illustrated in Fig. 1. The burner was assembled by an array of 132 mm high × 380 m wide, water cooled, porous, sintered bonze panels. Each of the sintered metal panels was individually supplied with gaseous fuel and individually measured for heat feedback from the flames by the temperature rise of the cooling water. The forward heat transfer zone was simulated by a 660 mm high solid metal, water cooled heat transfer plate, which was divided into five 132 mm thermal segments to measure the distribution of forward heat transfer. The height of the fuel-inlet zone can be adjusted by varying the number of individual panels supplied with gaseous fuel. 
 
@@ -26,11 +26,11 @@ Thermocouples are often used to measure local gas temperatures both inside and n
 
 A scanning radiometer was employed to measure the vertical distribution of outward radiance emitted from the flame. The outward radiance is defined as the radiant flux per unit solid angle in the outward normal direction. Scanning radiometer measurements were averaged at the mid-height of each 132-mm high burner segment.
 
-####Experimental data
+#### Experimental data
 
 Available [experimental data](https://github.com/NingRen/macfp-db/tree/wallFire-FM/Wall_Fires/FM_Vertical_Wall_Flames/Experimental_Data) include:
 
-#####Soot depth for propylene wall fires
+##### Soot depth for propylene wall fires
 | Vertical measurement location (mm) | Mass flux range (g/m<sup>2</sup>/s) |
 | ---------------------------------- | ------------------------ |
 | 365 | 6.99 - 29.29 |
@@ -40,12 +40,12 @@ Available [experimental data](https://github.com/NingRen/macfp-db/tree/wallFire-
 | 1317 | 4.41 - 17.51 |
 
 
-#####Uncorrected (raw) and corrected thermocouple temperature for propylene wall fires
+##### Uncorrected (raw) and corrected thermocouple temperature for propylene wall fires
 | Vertical measurement location (mm) | Mass flux range (g/m<sup>2</sup>/s) |
 | ---------------------------------- | ------------------------ |
 | 771 | 8.75 - 22.49 |
 
-#####Outward radiance for propylene wall fire wall fires
+##### Outward radiance for propylene wall fire wall fires
 | Vertical measurement location (mm) | Mass flux range (g/m<sup>2</sup>/s) |
 | ---------------------------------- | ------------------------ |
 | 66 | 5.35 - 24.74 |
@@ -53,21 +53,21 @@ Available [experimental data](https://github.com/NingRen/macfp-db/tree/wallFire-
 | 594 | 5.35 - 24.74 |
 | 990 | 5.35 - 14.58 |
 
-#####Total flame-to-wall heat flux for propylene wall fires (some reported measurements were interpolated to match the fuel flow rate condition used in temperature measurements)
+##### Total flame-to-wall heat flux for propylene wall fires (some reported measurements were interpolated to match the fuel flow rate condition used in temperature measurements)
 | Mass flux (g/m<sup>2</sup>/s) |
 | ------------------ |
 | 12.68 |
 | 17.05 |
 | 22.27 |
 
-#####Total flame-to-wall heat flux for other fuels: methane, ethane and ethylene (some reported measurements were interpolated to match the fuel flow rate condition used in temperature measurements)
+##### Total flame-to-wall heat flux for other fuels: methane, ethane and ethylene (some reported measurements were interpolated to match the fuel flow rate condition used in temperature measurements)
 | Fuels | Mass flux (g/m<sup>2</sup>/s) |
 | ----- | ------------------ |
 | Methane | 10.6 |
 | Ethane | 10.2 |
 | Ethylene | 11.5 |
 
-####Reference
+#### Reference
 [1] J.L. de Ris, G.H. Markstein, L. Orloff, and P.A. Beaulieu, “Similarity of Turbulent Wall Fires,” Fire Safety Science, Vol. 7, pp. 259-270.
 
 [2] N. Ren, Y. Wang, S. Vilfayeau and A. Trouvé, “Large Eddy Simulation of Turbulent Vertical Wall Fires Supplied with Gaseous Fuel through Porous Burners,” Combustion and Flame, Article in Press.
