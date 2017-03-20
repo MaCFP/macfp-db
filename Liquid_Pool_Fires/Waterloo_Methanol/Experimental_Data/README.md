@@ -1,4 +1,4 @@
-##Warterloo Methanol Pool Fire Experimental Data
+## Warterloo Methanol Pool Fire Experimental Data
 
 The data for the Warterloo methanol pool fire is organized into four .csv files.
 
