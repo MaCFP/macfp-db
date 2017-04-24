@@ -9,7 +9,7 @@ Experimentalists and modelers may participate in the group by submitting pull re
 
 Please visit our [wiki pages](https://github.com/MaCFP/macfp-db/wiki) for detailed instructions.
 
-[SUBMIT COMPUTATIONAL RESULTS FOR MaCFP 2017](https://github.com/MaCFP/macfp-db/wiki/Submitting-Compuational-Results)
+[SUBMIT COMPUTATIONAL RESULTS FOR MaCFP 2017](https://github.com/MaCFP/macfp-db/wiki/Submitting-Computational-Results)
 
 If you find problems with the database or if you have suggestions for improvement, please submit an [Issue](https://github.com/MaCFP/macfp-db/issues).
 
