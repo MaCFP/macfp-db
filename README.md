@@ -7,7 +7,7 @@ The central objective of the MaCFP working group is to target fundamental progre
 
 Experimentalists and modelers may participate in the group by submitting pull requests to this repository or by sending data via email to [Randy McDermott](mailto:randall.mcdermott@nist.gov).
 
-<span style="color:red">NEW!</span> [SUBMIT COMPUTATIONAL RESULTS FOR MaCFP 2017]()
+[SUBMIT COMPUTATIONAL RESULTS FOR MaCFP 2017]()
 
 Please visit our [wiki pages](https://github.com/MaCFP/macfp-db/wiki) for detailed instructions.
 
