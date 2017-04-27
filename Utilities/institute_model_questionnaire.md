@@ -66,13 +66,18 @@ Pressure-velocity coupling:
 
 ------------------
 
-### Averaging period:
+### Averaging
+Time period:
 
 ------------------
 
-### Special issues/problems:
+### Special issues/problems
+Comments:
 
 ------------------
 
-### Relevant publications:
+### Relevant publications
+1. Pub 1
+
+2. Pub 2
  
