@@ -1,86 +1,43 @@
-Contributor
+## Contributor
+Name:
+Institution:
+Country:
 
-Name
+## Test case:
 
-Institution
+## CFD package
+Code:
+Version:
 
-Country
+## Mesh
+Domain:
+Cell size:
+Cell type:
+Total cells:
+Comments:
 
+## Initial conditions
+Comments:
 
+## Boundary conditions
+Comments:
 
-Test case
+## Models (include parameters)
+Turbulence model:
+Combustion model:
+Radiation model:
+Soot model:
+Comments:
 
+## Discretization
+Time:
+Advection:
+Diffusion:
+Pressure-velocity coupling:
 
+## Averaging period:
 
-CFD package
+## Special issues/problems:
 
-Code
-
-Version
-
-
-
-Mesh
-
-Domain
-
-Cell size
- 
-Cell type
-
-Total cells
-
-Comments
-
-
-
-Initial conditions
-
-Comments
-
-
-
-Boundary conditions
-
-Comments
-
-
-
-Models (incl. parameters)
-
-Turbulence model
-
-Combustion model
-
-Radiation model
-
-Soot model
-
-Comments
-
-
-
-Discretization
-
-Time
-
-Divergence
-
-Laplacian
-
-Gradients
-
-Pressure-velocity coupling
-
-
-
-Averaging period
-
-
-
-Special issues/problems
-
-
-
-Relevant publications
+## Relevant publications:
  
