@@ -1,9 +1,9 @@
 ### Contributor
-Name:
-
-Institution:
-
-Country:
+|     |            |
+|-----|------------|
+|Name:|            |
+|Institution:|     |
+|Country:|         |
 
 ### Test case:
 
