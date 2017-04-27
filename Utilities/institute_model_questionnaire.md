@@ -1,6 +1,6 @@
-### Contributor
-|     |            |
-|-----|------------|
+
+| **Contributor**  |            |
+|--------------|------------|
 |Name:|            |
 |Institution:|     |
 |Country:|         |
