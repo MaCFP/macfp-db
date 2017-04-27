@@ -6,14 +6,18 @@ Institution:
 
 Country:                    
 
----
+------------------
 
 ### Test case:
+
+------------------
 
 ### CFD package
 Code:
 
 Version:
+
+------------------
 
 ### Mesh
 Domain:
@@ -26,11 +30,17 @@ Total cells:
 
 Comments:
 
+------------------
+
 ### Initial conditions
 Comments:
 
+------------------
+
 ### Boundary conditions
 Comments:
+
+------------------
 
 ### Models (include parameters)
 Turbulence model:
@@ -43,6 +53,8 @@ Soot model:
 
 Comments:
 
+------------------
+
 ### Discretization
 Time:
 
@@ -52,9 +64,15 @@ Diffusion:
 
 Pressure-velocity coupling:
 
+------------------
+
 ### Averaging period:
 
+------------------
+
 ### Special issues/problems:
+
+------------------
 
 ### Relevant publications:
  
