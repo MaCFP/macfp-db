@@ -1,5 +1,5 @@
 |Contributor|      |
-|:----------|      |
+|:----------|------|
 |Name:|            |
 |Institution:|     |
 |Country:|         |
