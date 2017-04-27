@@ -1,43 +1,57 @@
-## Contributor
+### Contributor
 Name:
+
 Institution:
+
 Country:
 
-## Test case:
+### Test case:
 
-## CFD package
+### CFD package
 Code:
+
 Version:
 
-## Mesh
+### Mesh
 Domain:
+
 Cell size:
+
 Cell type:
+
 Total cells:
+
 Comments:
 
-## Initial conditions
+### Initial conditions
 Comments:
 
-## Boundary conditions
+### Boundary conditions
 Comments:
 
-## Models (include parameters)
+### Models (include parameters)
 Turbulence model:
+
 Combustion model:
+
 Radiation model:
+
 Soot model:
+
 Comments:
 
-## Discretization
+### Discretization
 Time:
+
 Advection:
+
 Diffusion:
+
 Pressure-velocity coupling:
 
-## Averaging period:
+### Averaging period:
 
-## Special issues/problems:
+### Special issues/problems:
 
-## Relevant publications:
+### Relevant publications:
  
