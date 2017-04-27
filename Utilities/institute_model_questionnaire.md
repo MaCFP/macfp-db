@@ -9,7 +9,6 @@ Country:
 ------------------
 
 ### Test case
-MaCFP designation (e.g., Buoyant Plumes/Sandia Helium Plume)
 
 ------------------
 
@@ -67,13 +66,11 @@ Pressure-velocity coupling:
 
 ------------------
 
-### Averaging
-Time period:
+### Averaging period
 
 ------------------
 
 ### Special issues/problems
-Comments:
 
 ------------------
 
