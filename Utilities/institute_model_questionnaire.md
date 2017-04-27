@@ -1,9 +1,9 @@
 
-| **Contributor**  |            |
-|--------------|------------|
-|Name:|            |
-|Institution:|     |
-|Country:|         |
+| **Contributor**  | ============================================ |
+|------------------|------------|
+|Name:|                         |
+|Institution:|                  |
+|Country:|                      |
 
 ### Test case:
 
