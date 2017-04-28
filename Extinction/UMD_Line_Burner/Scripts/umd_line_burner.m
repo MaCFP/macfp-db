@@ -6,7 +6,7 @@ close all
 clear all
 
 expdir = '../Experimental_Data/';
-cmpdir = '../Computational_Results/';
+cmpdir = '../Computational_Results/Example/';
 pltdir = '../Plots/';
 addpath '../../../Utilities/'
 plot_style
@@ -46,7 +46,7 @@ for i=1:length(expfilename)
     H(1)=plot(x1,y1,exp_marker_style{i},'MarkerSize',Marker_Size);
 
     % plot computational results *********************************
-    
+
     % add your results here!
 
     hold on
