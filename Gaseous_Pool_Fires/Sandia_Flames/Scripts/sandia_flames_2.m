@@ -37,28 +37,28 @@ for i=2:n_plots
     P = textscan(Exp{i},'%q','delimiter',',');
     Exp_params = P{:}';
 
-    Exp_Filename      = char(Exp_params(find(strcmp(Exp_headers,'Data_Filename'))));
-    Exp_x_Col_Name    = char(Exp_params(find(strcmp(Exp_headers,'x_Col_Name'))));
-    Exp_y_Col_Name    = char(Exp_params(find(strcmp(Exp_headers,'y_Col_Name'))));
-    Exp_Legend_Key    = char(Exp_params(find(strcmp(Exp_headers,'Legend_Key'))));
-    Exp_Plot_Style    = char(Exp_params(find(strcmp(Exp_headers,'Plot_Style'))));
+    Exp_Filename      = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Data_Filename')))));
+    Exp_x_Col_Name    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'x_Col_Name')))));
+    Exp_y_Col_Name    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'y_Col_Name')))));
+    Exp_Legend_Key    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Legend_Key')))));
+    Exp_Plot_Style    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Plot_Style')))));
 
-    xLabel            = char(Exp_params(find(strcmp(Exp_headers,'xLabel'))));
-    yLabel            = char(Exp_params(find(strcmp(Exp_headers,'yLabel'))));
+    xLabel            = strtrim(char(Exp_params(find(strcmp(Exp_headers,'xLabel')))));
+    yLabel            = strtrim(char(Exp_params(find(strcmp(Exp_headers,'yLabel')))));
     xMin              = str2num(char(Exp_params(find(strcmp(Exp_headers,'xMin')))));
     xMax              = str2num(char(Exp_params(find(strcmp(Exp_headers,'xMax')))));
     yMin              = str2num(char(Exp_params(find(strcmp(Exp_headers,'yMin')))));
     yMax              = str2num(char(Exp_params(find(strcmp(Exp_headers,'yMax')))));
     xTick             = str2num(char(Exp_params(find(strcmp(Exp_headers,'xTick')))));
     yTick             = str2num(char(Exp_params(find(strcmp(Exp_headers,'yTick')))));
-    Legend_Location   = char(Exp_params(find(strcmp(Exp_headers,'Legend_Location'))));
-    Plot_Filename     = char(Exp_params(find(strcmp(Exp_headers,'Plot_Filename'))));
-    Plot_Title        = char(Exp_params(find(strcmp(Exp_headers,'Plot_Title'))));
+    Legend_Location   = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Legend_Location')))));
+    Plot_Filename     = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Plot_Filename')))));
+    Plot_Title        = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Plot_Title')))));
 
     E = importdata([expdir,Exp_Filename],',',1);
 
-    X1 = E.data(:,find(strcmp(E.colheaders,Exp_x_Col_Name)));
-    Y1 = E.data(:,find(strcmp(E.colheaders,Exp_y_Col_Name)));
+    X1 = E.data(:,find(strcmp(strtrim(E.colheaders),Exp_x_Col_Name)));
+    Y1 = E.data(:,find(strcmp(strtrim(E.colheaders),Exp_y_Col_Name)));
 
     H(1)=plot(X1,Y1,Exp_Plot_Style,'MarkerSize',Marker_Size); hold on
     n_key=1;
@@ -70,25 +70,25 @@ for i=2:n_plots
 
         % scan the Cmp list associated with Exp_Filename and Exp_y_Col_Name
 
-        Exp_Filename_Col = find(strcmp(Cmp_headers{n},'Exp_Filename'));
-        Cmp_Filename_Col = find(strcmp(Cmp_headers{n},'Cmp_Filename'));
-        Cmp_y_Col        = find(strcmp(Cmp_headers{n},'y_Col_Name'));
+        Exp_Filename_Col = find(strcmp(strtrim(Cmp_headers{n}),'Exp_Filename'));
+        Cmp_Filename_Col = find(strcmp(strtrim(Cmp_headers{n}),'Cmp_Filename'));
+        Cmp_y_Col        = find(strcmp(strtrim(Cmp_headers{n}),'y_Col_Name'));
 
         for k=2:length(Cmp{n})
             M = textscan(Cmp{n}{k},'%q','delimiter',',');
             Cmp_params = M{:}';
-            if strcmp(Cmp_params(Exp_Filename_Col),Exp_Filename) & strcmp(Cmp_params(Cmp_y_Col),Exp_y_Col_Name)
-                Cmp_Filename   = [cmpdir,inst{n},'/',char(Cmp_params(Cmp_Filename_Col))];
-                Cmp_x_Col_Name = char(Cmp_params(find(strcmp(Cmp_headers{n},'x_Col_Name'))));
-                Cmp_y_Col_Name = char(Cmp_params(find(strcmp(Cmp_headers{n},'y_Col_Name'))));
-                Cmp_Plot_Style = char(Cmp_params(find(strcmp(Cmp_headers{n},'Plot_Style'))));
+            if strcmp(strtrim(Cmp_params(Exp_Filename_Col)),Exp_Filename) & strcmp(strtrim(Cmp_params(Cmp_y_Col)),Exp_y_Col_Name)
+                Cmp_Filename   = [cmpdir,inst{n},'/',strtrim(char(Cmp_params(Cmp_Filename_Col)))];
+                Cmp_x_Col_Name = strtrim(char(Cmp_params(find(strcmp(strtrim(Cmp_headers{n}),'x_Col_Name')))));
+                Cmp_y_Col_Name = strtrim(char(Cmp_params(find(strcmp(strtrim(Cmp_headers{n}),'y_Col_Name')))));
+                Cmp_Plot_Style = strtrim(char(Cmp_params(find(strcmp(strtrim(Cmp_headers{n}),'Plot_Style')))));
             end
         end
 
         if exist(Cmp_Filename)
             C = importdata(Cmp_Filename,',',1);
-            X2 = C.data(:,find(strcmp(C.colheaders,Cmp_x_Col_Name)));
-            Y2 = C.data(:,find(strcmp(C.colheaders,Cmp_y_Col_Name)));
+            X2 = C.data(:,find(strcmp(strtrim(C.colheaders),Cmp_x_Col_Name)));
+            Y2 = C.data(:,find(strcmp(strtrim(C.colheaders),Cmp_y_Col_Name)));
 
             n_key=n_key+1;
             H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'MarkerSize',Marker_Size);
