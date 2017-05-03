@@ -1,4 +1,3 @@
-
 ### Contributor
 Name: Georgios Maragkos
 
