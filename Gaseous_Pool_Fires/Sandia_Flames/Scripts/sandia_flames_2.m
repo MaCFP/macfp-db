@@ -82,17 +82,16 @@ for i=2:n_plots
                 Cmp_x_Col_Name = strtrim(char(Cmp_params(find(strcmp(strtrim(Cmp_headers{n}),'Cmp_x_Col_Name')))));
                 Cmp_y_Col_Name = strtrim(char(Cmp_params(find(strcmp(strtrim(Cmp_headers{n}),'Cmp_y_Col_Name')))));
                 Cmp_Plot_Style = strtrim(char(Cmp_params(find(strcmp(strtrim(Cmp_headers{n}),'Plot_Style')))));
+                if exist(Cmp_Filename)
+                    C = importdata(Cmp_Filename,',',1);
+                    X2 = C.data(:,find(strcmp(strtrim(C.colheaders),Cmp_x_Col_Name)));
+                    Y2 = C.data(:,find(strcmp(strtrim(C.colheaders),Cmp_y_Col_Name)));
+
+                    n_key=n_key+1;
+                    H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'MarkerSize',Marker_Size);
+                    Legend_Key{n_key} = inst{n};
+                end
             end
-        end
-
-        if exist(Cmp_Filename)
-            C = importdata(Cmp_Filename,',',1);
-            X2 = C.data(:,find(strcmp(strtrim(C.colheaders),Cmp_x_Col_Name)));
-            Y2 = C.data(:,find(strcmp(strtrim(C.colheaders),Cmp_y_Col_Name)));
-
-            n_key=n_key+1;
-            H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'MarkerSize',Marker_Size);
-            Legend_Key{n_key} = inst{n};
         end
 
     end
