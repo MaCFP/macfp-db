@@ -120,6 +120,5 @@ for i=2:n_plots
     print(gcf,'-dpdf',[pltdir,Plot_Filename])
 
     clear H Legend_Key
-    hold off
 
 end
