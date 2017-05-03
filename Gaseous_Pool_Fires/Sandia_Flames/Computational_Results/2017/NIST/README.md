@@ -59,7 +59,7 @@ Comments:
 ### Discretization
 Time: RK2
 
-Advection: velocity:central difference; scalar: CHARM limiter
+Advection: velocity: central difference; scalar: Superbee limiter
 
 Diffusion: central
 
