@@ -1,3 +1,9 @@
+INSTRUCTIONS:
+1. Fill out the form below.
+2. Delete this block of instructions
+3. Save the file to README.md
+4. Include the README.md file in the .zip file you email to the team leaders.
+---- delete from here up ----
 
 ### Contributor
 Name:
