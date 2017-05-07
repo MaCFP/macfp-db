@@ -26,7 +26,9 @@ Version:
 
 ------------------
 
-### Mesh
+### Resolution
+
+#### Computational domain discretization (flow solver)
 Domain:
 
 Cell size:
@@ -34,6 +36,11 @@ Cell size:
 Cell type:
 
 Total cells:
+
+Comments:
+
+#### Angular space discretization (radiation solver)
+Number of solid angles:
 
 Comments:
 
@@ -64,7 +71,7 @@ Comments:
 
 ------------------
 
-### Discretization
+### Discretization methods
 Time:
 
 Advection:
