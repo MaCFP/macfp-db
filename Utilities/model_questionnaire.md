@@ -56,6 +56,8 @@ Combustion model:
 
 Radiation model:
 
+Radiative fraction: (predicted or prescribed; if prescribed, what value)
+
 Soot model:
 
 Comments:
@@ -70,6 +72,17 @@ Advection:
 Diffusion:
 
 Pressure-velocity coupling:
+
+------------------
+
+### Computational Cost (hhh:mm:ss)
+Wall clock time:
+
+Simulation time:
+
+Number of cores:
+
+CPU cost (Number of cores * Wall clock time / Simulation time / Total cells):
 
 ------------------
 
