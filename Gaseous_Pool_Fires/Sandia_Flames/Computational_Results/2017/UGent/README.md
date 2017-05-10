@@ -3,7 +3,7 @@ Name: Georgios Maragkos
 
 Institution: Ghent University
 
-Country: Belgium                  
+Country: Belgium
 
 ------------------
 
@@ -19,16 +19,23 @@ Version: 2.2.x
 
 ------------------
 
-### Mesh
+### Resolution
+
+#### Computational domain discretization (flow solver)
 Domain: 4 m x 6 m (cylindrical)
 
-Cell size: ?1.5 cm (around centerline), ?3.0 cm (outside refinement), ?6.0 cm (sides)
+Cell size: 1.5 cm (around centerline), 3.0 cm (outside refinement), 6.0 cm (sides)
 
 Cell type: Non-uniform
 
-Total cells: ?2.38 million
+Total cells: 2.38 million
 
-Comments: Mesh refinement around the centerline (half an inlet diameter outside the fire source and up to the outlet). Plate surrounding the fuel inlet included. Patches: Inlet (fuel inlet), Plate (wall surrounding fuel inlet), Coflow (area outside Plate), Sides (sides of domain), Outlet (top of domain)
+Comments: Mesh refinement around the centerline (half an inlet diameter outside the fire source and up to the outlet). Plate surrounding the fuel inlet included. Patches: Inlet (fuel inlet), Plate (wall surrounding fuel inlet), Coflow (area outside Plate), Sides (sides of domain), Outlet (top of domain
+
+#### Angular space discretization (radiation solver)
+Number of solid angles: 48
+
+Comments: -
 
 ------------------
 
@@ -57,18 +64,21 @@ Turbulence model: constant Smagorinsky (cs=0.1, Prt=0.7)
 
 Combustion model: Eddy Dissipation Model (EDM) (cEDM=4, cdiff=2)
 
-Radiation model: fvDOM - grey gas model (48 solid angles)
+Radiation model: fvDOM
 
-Soot model: None
+Radiative fraction: (predicted or prescribed; if prescribed, what value) 
+Predicted radiative fraction (24.8%)- Grey gas model (considered species CH4, H2O, CO2)
+
+Soot model: -
 
 Comments: The code employs a unity Lewis number assumption. The time scale in the EDM combustion model considers laminar and turbulent mixing. The calculation of sub-grid scale kinetic energy is based on local equilibrium.
 
 ------------------
 
-### Discretization
+### Discretization methods
 Time: First order Euler (Euler)
 
-Advection: Velocity: Second order, unbounded central difference (Gauss linear), Scalars: First/second order, bounded  TVD with a Sweby limiter (species: limitedLinear01 1.0, enthalpy: limitedLinear 1.0)
+Advection: Velocity - Second order, unbounded central difference (Gauss linear), Scalars - First/second order, bounded  TVD with a Sweby limiter (species: limitedLinear01 1.0, enthalpy: limitedLinear 1.0)
 
 Diffusion: Unbounded, second order, conservative Gaussian integration (Gauss linear corrected;)
 
@@ -76,16 +86,25 @@ Pressure-velocity coupling: PISO algorithm
 
 ------------------
 
-### Averaging period
-45 sec
+### Computational Cost (hhh:mm:ss)
+Wall clock time: Did not keep record. Estimated time 7 days.
+
+Simulation time: 50 sec
+
+Number of cores: 16
+
+CPU cost (Number of cores * Wall clock time / Simulation time / Total cells): -
 
 ------------------
 
-### Special issues/problems
-None
+### Averaging period
+45 sec
+------------------
 
+### Special issues/problems
+-
 ------------------
 
 ### Relevant publications
 1. G. Maragkos, B. Merci, Large Eddy Simulations of CH4 Fire Plumes, Flow Turbul. Combust. (2017) - DOI: 10.1007/s10494-017-9803-4
- 
+
