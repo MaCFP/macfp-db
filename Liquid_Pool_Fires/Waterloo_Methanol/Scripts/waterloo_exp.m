@@ -7,7 +7,7 @@
 close all
 clear all
 
-filename = 'Estimated_Turbulence_Intensity';
+filename = '../Experimental_Data/Estimated_correlations';
 M = importdata([filename,'.csv'],',',1);
 M.colheaders{1} = 'z (cm)';
 M.colheaders{2} = 'r (cm)';
