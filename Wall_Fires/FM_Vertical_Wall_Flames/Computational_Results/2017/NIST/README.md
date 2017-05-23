@@ -1,11 +1,3 @@
-INSTRUCTIONS:
-1. Fill out the form below.
-2. Delete this block of instructions
-3. Save the file to README.md
-4. Include the README.md file in the .zip file you email to the team leaders.
-
----- delete from here up ----
-
 ### Contributor
 Name: Kevin McGrattan
 
@@ -104,5 +96,5 @@ CPU cost (Number of cores * Wall clock time / Simulation time / Total cells):
 ### Relevant publications
 1. Pub 1
 
-2. Pub 2
+2. de Ris et al., "Similarity of Turbulent Wall Fires," Fire Safety Science--Proceedings of the Seventh International Symposium, pp 259-270.
 
