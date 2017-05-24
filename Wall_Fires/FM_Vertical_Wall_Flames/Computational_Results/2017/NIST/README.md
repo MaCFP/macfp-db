@@ -7,8 +7,17 @@ Country: USA
 
 ------------------
 
-### Test case
+### Test cases
 
+[propylene](https://github.com/firemodels/fds/tree/master/Validation/FM_Vertical_Wall_Flames/FDS_Input_Files/propylene.fds)
+
+[ethane](https://github.com/firemodels/fds/tree/master/Validation/FM_Vertical_Wall_Flames/FDS_Input_Files/ethane.fds)
+
+[ethylene](https://github.com/firemodels/fds/tree/master/Validation/FM_Vertical_Wall_Flames/FDS_Input_Files/ethylene.fds)
+
+[methane](https://github.com/firemodels/fds/tree/master/Validation/FM_Vertical_Wall_Flames/FDS_Input_Files/methane.fds)
+
+Comment: The case `propylene.fds` runs for 65 s, spanning fuel mass rates from 0 to 65 g/m^2/s. The other fuels only run for 20 s.
 ------------------
 
 ### CFD package
@@ -55,9 +64,9 @@ Combustion model: Single step fast reaction; Eddy dissipation concept (EDC)
 
 Radiation model: Finite-Volume Method (FVM)
 
-Radiative fraction: (predicted or prescribed; if prescribed, what value)
+Radiative fraction: Predicted
 
-Soot model: Specified soot yield based on Tewarson's chapter of SFPE Handbook, 4th edition
+Soot model: Specified soot yield based on Tewarson's chapter of SFPE Handbook, 4th edition. Soot is tracked as a passive scalar.
 
 Comments:
 
@@ -66,26 +75,28 @@ Comments:
 ### Discretization methods
 Time: Explicit, second-order Runge-Kutta
 
-Advection: 
+Advection: Superbee flux limiter
 
-Diffusion:
+Diffusion: Explicit, central difference
 
-Pressure-velocity coupling:
+Pressure-velocity coupling: Low-Mach number formulation of Navier-Stokes equations. Solution of Poisson equation for pressure using Crayfishpak, a direct FFT-based elliptic solver.
 
 ------------------
 
 ### Computational Cost (hhh:mm:ss)
 Wall clock time:
 
-Simulation time:
+Simulation time: 65 s
 
-Number of cores:
+Number of cores: 160
 
 CPU cost (Number of cores * Wall clock time / Simulation time / Total cells):
 
 ------------------
 
 ### Averaging period
+
+10 s averaging for ethane, ethylene and methane heat flux calculation. 2 s averaging for all else.
 
 ------------------
 
@@ -94,7 +105,7 @@ CPU cost (Number of cores * Wall clock time / Simulation time / Total cells):
 ------------------
 
 ### Relevant publications
-1. Pub 1
+1. McGrattan, et al., FDS Technical Reference Guide, NIST Special Publication 1018-1, sixth ed., January 2017.
 
 2. de Ris et al., "Similarity of Turbulent Wall Fires," Fire Safety Science--Proceedings of the Seventh International Symposium, pp 259-270.
 
