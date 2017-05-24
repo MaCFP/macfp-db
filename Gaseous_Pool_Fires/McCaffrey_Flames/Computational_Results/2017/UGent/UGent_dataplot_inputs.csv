@@ -1,0 +1,11 @@
+Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style
+cCaffrey_14kW_T.csv,Z/Q^0.4,dT (C),UGent_McCaffrey_14kW.csv,Z/Q^0.4,dT (C),-
+cCaffrey_14kW_V.csv,Z/Q^0.4,V/Q^0.2,UGent_McCaffrey_14kW.csv,Z/Q^0.4,V/Q^0.2,-
+cCaffrey_22kW_T.csv,Z/Q^0.4,dT (C),UGent_McCaffrey_22kW.csv,Z/Q^0.4,dT (C),-
+cCaffrey_22kW_V.csv,Z/Q^0.4,V/Q^0.2,UGent_McCaffrey_22kW.csv,Z/Q^0.4,V/Q^0.2,-
+cCaffrey_33kW_T.csv,Z/Q^0.4,dT (C),UGent_McCaffrey_33kW.csv,Z/Q^0.4,dT (C),-
+cCaffrey_33kW_V.csv,Z/Q^0.4,V/Q^0.2,UGent_McCaffrey_33kW.csv,Z/Q^0.4,V/Q^0.2,-
+cCaffrey_45kW_T.csv,Z/Q^0.4,dT (C),UGent_McCaffrey_45kW.csv,Z/Q^0.4,dT (C),-
+cCaffrey_45kW_V.csv,Z/Q^0.4,V/Q^0.2,UGent_McCaffrey_45kW.csv,Z/Q^0.4,V/Q^0.2,-
+cCaffrey_57kW_T.csv,Z/Q^0.4,dT (C),UGent_McCaffrey_57kW.csv,Z/Q^0.4,dT (C),-
+cCaffrey_57kW_V.csv,Z/Q^0.4,V/Q^0.2,UGent_McCaffrey_57kW.csv,Z/Q^0.4,V/Q^0.2,-
