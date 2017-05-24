@@ -17,7 +17,7 @@ Country: USA
 
 [methane](https://github.com/firemodels/fds/tree/master/Validation/FM_Vertical_Wall_Flames/FDS_Input_Files/methane.fds)
 
-Comment: The case `propylene.fds` runs for 65 s, spanning fuel mass rates from 0 to 65 g/m^2/s. The other fuels only run for 20 s.
+Comments: The case `propylene.fds` runs for 65 s, spanning fuel mass rates from 0 to 65 g/m<sup>2</sup>/s. The other fuels only run for 20 s.
 ------------------
 
 ### CFD package
