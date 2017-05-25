@@ -1,5 +1,5 @@
 INSTRUCTIONS:
-1. Fill out the form below (view as "raw", cut and past into a plain text editor).
+1. Fill out the form below (view as "Raw" [see button upper-right], cut and past into a plain text editor).
 2. Delete this block of instructions
 3. Save the file to README.md
 4. Include the README.md file in the .zip file you email to the team leaders.
