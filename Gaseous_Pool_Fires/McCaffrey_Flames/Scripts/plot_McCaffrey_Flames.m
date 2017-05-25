@@ -83,10 +83,10 @@ for i=2:n_plots
 
         for n=1:n_inst
 
-            % comment this if block to suppress data points or edit to only plot specific institutions
-            if strcmp(inst{n},'Data')
-                continue
-            end
+            % % uncomment this if block to suppress data points or edit to only plot specific institutions
+            % if strcmp(inst{n},'Data')
+            %     continue
+            % end
 
             % scan the Cmp list associated with Exp_Filename and Exp_y_Col_Name
 
