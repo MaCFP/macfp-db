@@ -1,0 +1,1 @@
+This directory houses the McCaffrey experimental data so that is may be included or excluded easily when comparing computational results against the correlations.  The column spreadsheet files for the correlations are stored in the Experimental_Data directory.
