@@ -1,6 +1,6 @@
 % McDermott
 % 25 May 2017
-% plot_McCaffrey_Flames.m
+% plot_UMD_Line_Burner.m
 
 close all
 clear all
