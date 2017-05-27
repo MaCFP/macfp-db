@@ -1,0 +1,5 @@
+Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style,Key_Label
+TC_Data.csv,x_125,TC_125,NIST_TC_Data.csv,X_125,TC_125,-,NIST
+TC_Data.csv,x_250,TC_250,NIST_TC_Data.csv,X_250,TC_250,-,NIST
+O2_Data.csv,x_125,XO2_125,NIST_O2_Data.csv,X_125,XO2_125,-,NIST
+O2_Data.csv,x_250,XO2_250,NIST_O2_Data.csv,X_250,XO2_250,-,NIST
