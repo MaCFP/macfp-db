@@ -1,0 +1,5 @@
+switch_id,Data_Filename,Plot_Type,Plot_Title,x_Col_Name,y_Col_Name,xLabel,yLabel,xMin,xMax,xTick,yMin,yMax,yTick,Legend_Key,Legend_Location,Plot_Style,Plot_Filename
+d,TC_Data.csv,linear,Methane XO2=0.18 z=0.125 m,x_125, TC_125, x (m), TC (\circC),-0.25,0.25,0.05,0,1200,200,Exp,NorthEast,ko,UMD_Line_Burner_Methane_XO2_p18_z_p125_TC
+d,TC_Data.csv,linear,Methane XO2=0.18 z=0.250 m,x_250, TC_250, x (m), TC (\circC),-0.25,0.25,0.05,0,1200,200,Exp,NorthEast,ko,UMD_Line_Burner_Methane_XO2_p18_z_p250_TC
+d,O2_Data.csv,linear,Methane XO2=0.18 z=0.125 m,x_125, XO2_125, x (m), O2 vol frac,-0.25,0.25,0.05,0.05,0.25,0.05,Exp,NorthEast,ko,UMD_Line_Burner_Methane_XO2_p18_z_p125_XO2
+d,O2_Data.csv,linear,Methane XO2=0.18 z=0.250 m,x_250, XO2_250, x (m), O2 vol frac,-0.25,0.25,0.05,0.05,0.25,0.05,Exp,NorthEast,ko,UMD_Line_Burner_Methane_XO2_p18_z_p250_XO2
