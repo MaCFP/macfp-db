@@ -1,0 +1,19 @@
+switch_id,Data_Filename,Plot_Title,x_Col_Name,y_Col_Name,xLabel,yLabel,xMin,xMax,xTick,yMin,yMax,yTick,Legend_Key,Legend_Location,Plot_Style,Plot_Filename
+d,Sandia_He_1m_p2.csv,Sandia Helium Plume z=0.2 m,x (m),Y He,x (m),Mean He Mass Fraction,-0.5,0.5,0.1,0,1,0.2,Exp,NorthEast,ko,Sandia_He_1m_p2_Ymean
+d,Sandia_He_1m_p4.csv,Sandia Helium Plume z=0.4 m,x (m),Y He,x (m),Mean He Mass Fraction,-0.5,0.5,0.1,0,1,0.2,Exp,NorthEast,ko,Sandia_He_1m_p4_Ymean
+d,Sandia_He_1m_p6.csv,Sandia Helium Plume z=0.6 m,x (m),Y He,x (m),Mean He Mass Fraction,-0.5,0.5,0.1,0,1,0.2,Exp,NorthEast,ko,Sandia_He_1m_p6_Ymean
+d,Sandia_He_1m_p2.csv,Sandia Helium Plume z=0.2 m,x (m),Y He rms,x (m),RMS He Mass Fraction,-0.5,0.5,0.1,0,0.25,0.05,Exp,NorthEast,ko,Sandia_He_1m_p2_Yrms
+d,Sandia_He_1m_p4.csv,Sandia Helium Plume z=0.4 m,x (m),Y He rms,x (m),RMS He Mass Fraction,-0.5,0.5,0.1,0,0.25,0.05,Exp,NorthEast,ko,Sandia_He_1m_p4_Yrms
+d,Sandia_He_1m_p6.csv,Sandia Helium Plume z=0.6 m,x (m),Y He rms,x (m),RMS He Mass Fraction,-0.5,0.5,0.1,0,0.25,0.05,Exp,NorthEast,ko,Sandia_He_1m_p6_Yrms
+d,Sandia_He_1m_p2.csv,Sandia Helium Plume z=0.2 m,x (m),U (m/s),x (m),Radial Velocity (m/s),-0.5,0.5,0.1,-1,1,0.5,Exp,NorthEast,ro,Sandia_He_1m_p2_Umean
+d,Sandia_He_1m_p4.csv,Sandia Helium Plume z=0.4 m,x (m),U (m/s),x (m),Radial Velocity (m/s),-0.5,0.5,0.1,-1,1,0.5,Exp,NorthEast,ro,Sandia_He_1m_p4_Umean
+d,Sandia_He_1m_p6.csv,Sandia Helium Plume z=0.6 m,x (m),U (m/s),x (m),Radial Velocity (m/s),-0.5,0.5,0.1,-1,1,0.5,Exp,NorthEast,ro,Sandia_He_1m_p6_Umean
+d,Sandia_He_1m_p2.csv,Sandia Helium Plume z=0.2 m,x (m),U rms (m/s),x (m),RMS Radial Velocity (m/s),-0.5,0.5,0.1,0,1,0.2,Exp,NorthEast,ro,Sandia_He_1m_p2_Urms
+d,Sandia_He_1m_p4.csv,Sandia Helium Plume z=0.4 m,x (m),U rms (m/s),x (m),RMS Radial Velocity (m/s),-0.5,0.5,0.1,0,1,0.2,Exp,NorthEast,ro,Sandia_He_1m_p4_Urms
+d,Sandia_He_1m_p6.csv,Sandia Helium Plume z=0.6 m,x (m),U rms (m/s),x (m),RMS Radial Velocity (m/s),-0.5,0.5,0.1,0,1,0.2,Exp,NorthEast,ro,Sandia_He_1m_p6_Urms
+d,Sandia_He_1m_p2.csv,Sandia Helium Plume z=0.2 m,x (m),W (m/s),x (m),Vertical Velocity (m/s),-0.5,0.5,0.1,0,5,1,Exp,NorthEast,bo,Sandia_He_1m_p2_Wmean
+d,Sandia_He_1m_p4.csv,Sandia Helium Plume z=0.4 m,x (m),W (m/s),x (m),Vertical Velocity (m/s),-0.5,0.5,0.1,0,5,1,Exp,NorthEast,bo,Sandia_He_1m_p4_Wmean
+d,Sandia_He_1m_p6.csv,Sandia Helium Plume z=0.6 m,x (m),W (m/s),x (m),Vertical Velocity (m/s),-0.5,0.5,0.1,0,5,1,Exp,NorthEast,bo,Sandia_He_1m_p6_Wmean
+d,Sandia_He_1m_p2.csv,Sandia Helium Plume z=0.2 m,x (m),W rms (m/s),x (m),RMS Vertical Velocity (m/s),-0.5,0.5,0.1,0,2,0.5,Exp,NorthEast,bo,Sandia_He_1m_p2_Wrms
+d,Sandia_He_1m_p4.csv,Sandia Helium Plume z=0.4 m,x (m),W rms (m/s),x (m),RMS Vertical Velocity (m/s),-0.5,0.5,0.1,0,2,0.5,Exp,NorthEast,bo,Sandia_He_1m_p4_Wrms
+d,Sandia_He_1m_p6.csv,Sandia Helium Plume z=0.6 m,x (m),W rms (m/s),x (m),RMS Vertical Velocity (m/s),-0.5,0.5,0.1,0,2,0.5,Exp,NorthEast,bo,Sandia_He_1m_p6_Wrms
