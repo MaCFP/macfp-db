@@ -68,7 +68,7 @@ Radiative fraction: Predicted
 
 Soot model: Specified soot yield based on Tewarson's chapter of SFPE Handbook, 4th edition. Soot is tracked as a passive scalar.
 
-Comments:
+Comments: The soot depth is defined as the distance from the burner surface beyond which the soot mass fraction drops below 0.0025.
 
 ------------------
 
@@ -95,12 +95,12 @@ CPU cost (Number of cores * Wall clock time / Simulation time / Total cells):
 ------------------
 
 ### Averaging period
-
 10 s averaging for ethane, ethylene and methane heat flux calculation. 2 s averaging for all else.
 
 ------------------
 
 ### Special issues/problems
+The heat flux to the burner surface is over-predicted for all four fuels. We believe that this is caused by the effective absorption coefficient calculated by RadCal for the six chosen wavelength bands. 
 
 ------------------
 

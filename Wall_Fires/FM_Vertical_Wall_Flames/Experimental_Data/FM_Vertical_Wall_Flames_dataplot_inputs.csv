@@ -1,13 +1,13 @@
 Data_Filename,Plot_Title,x_Col_Name,y_Col_Name,xLabel,yLabel,xMin,xMax,xTick,yMin,yMax,yTick,Legend_Key,Legend_Location,Plot_Style,Plot_Filename
-C3H6_Flame_Radiance.csv,"FM Wall Flames, z=66 mm",Mass_Flux,Z=66mm,Mass Flux (g/m^2/s),Radiance (kW/m^2/sr),0,30,5,float,float,float,Exp,SouthEast,ko,C3H6_Flame_Radiance_066
-C3H6_Flame_Radiance.csv,"FM Wall Flames, z=330 mm",Mass_Flux,Z=330mm,Mass Flux (g/m^2/s),Radiance (kW/m^2/sr),0,30,5,float,float,float,Exp,SouthEast,ko,C3H6_Flame_Radiance_330
-C3H6_Flame_Radiance.csv,"FM Wall Flames, z=594 mm",Mass_Flux,Z=594mm,Mass Flux (g/m^2/s),Radiance (kW/m^2/sr),0,30,5,float,float,float,Exp,SouthEast,ko,C3H6_Flame_Radiance_594
-C3H6_Flame_Radiance.csv,"FM Wall Flames, z=990 mm",Mass_Flux,Z=990mm,Mass Flux (g/m^2/s),Radiance (kW/m^2/sr),0,30,5,float,float,float,Exp,SouthEast,ko,C3H6_Flame_Radiance_990
-C3H6_Soot_Depth.csv,"FM Wall Flames, z=365 mm",Mass_Flux_365,Z=365mm,Mass Flux (g/m^2/s),Soot Depth (mm),0,40,10,0,100,20,Exp,SouthEast,ko,C3H6_Flame_Radiance_365
-C3H6_Soot_Depth.csv,"FM Wall Flames, z=537 mm",Mass_Flux_537,Z=537mm,Mass Flux (g/m^2/s),Soot Depth (mm),0,80,20,0,100,20,Exp,SouthEast,ko,C3H6_Flame_Radiance_537
-C3H6_Soot_Depth.csv,"FM Wall Flames, z=771 mm",Mass_Flux_771,Z=771mm,Mass Flux (g/m^2/s),Soot Depth (mm),0,40,10,0,100,20,Exp,SouthEast,ko,C3H6_Flame_Radiance_771
-C3H6_Soot_Depth.csv,"FM Wall Flames, z=1022 mm",Mass_Flux_1022,Z=1022mm,Mass Flux (g/m^2/s),Soot Depth (mm),0,40,10,0,100,20,Exp,SouthEast,ko,C3H6_Flame_Radiance_1022
-C3H6_Soot_Depth.csv,"FM Wall Flames, z=1317 mm",Mass_Flux_1317,Z=1317mm,Mass Flux (g/m^2/s),Soot Depth (mm),0,40,10,0,100,20,Exp,SouthEast,ko,C3H6_Flame_Radiance_1317
+C3H6_Flame_Radiance.csv,"FM Wall Flames, z=66 mm",Mass_Flux,Z=66mm,Mass Flux (g/m^2/s),Radiance (kW/m^2/sr),0,30,5,0,12,2,Exp,SouthEast,ko,C3H6_Flame_Radiance_066
+C3H6_Flame_Radiance.csv,"FM Wall Flames, z=330 mm",Mass_Flux,Z=330mm,Mass Flux (g/m^2/s),Radiance (kW/m^2/sr),0,30,5,0,12,2,Exp,SouthEast,ko,C3H6_Flame_Radiance_330
+C3H6_Flame_Radiance.csv,"FM Wall Flames, z=594 mm",Mass_Flux,Z=594mm,Mass Flux (g/m^2/s),Radiance (kW/m^2/sr),0,30,5,0,12,2,Exp,SouthEast,ko,C3H6_Flame_Radiance_594
+C3H6_Flame_Radiance.csv,"FM Wall Flames, z=990 mm",Mass_Flux,Z=990mm,Mass Flux (g/m^2/s),Radiance (kW/m^2/sr),0,30,5,0,12,2,Exp,SouthEast,ko,C3H6_Flame_Radiance_990
+C3H6_Soot_Depth.csv,"FM Wall Flames, z=365 mm",Mass_Flux_365,Z=365mm,Mass Flux (g/m^2/s),Soot Depth (mm),0,40,10,0,100,20,Exp,SouthEast,ko,C3H6_Soot_Depth_365
+C3H6_Soot_Depth.csv,"FM Wall Flames, z=537 mm",Mass_Flux_537,Z=537mm,Mass Flux (g/m^2/s),Soot Depth (mm),0,80,20,0,100,20,Exp,SouthEast,ko,C3H6_Soot_Depth_537
+C3H6_Soot_Depth.csv,"FM Wall Flames, z=771 mm",Mass_Flux_771,Z=771mm,Mass Flux (g/m^2/s),Soot Depth (mm),0,40,10,0,100,20,Exp,SouthEast,ko,C3H6_Soot_Depth_771
+C3H6_Soot_Depth.csv,"FM Wall Flames, z=1022 mm",Mass_Flux_1022,Z=1022mm,Mass Flux (g/m^2/s),Soot Depth (mm),0,40,10,0,100,20,Exp,SouthEast,ko,C3H6_Soot_Depth_1022
+C3H6_Soot_Depth.csv,"FM Wall Flames, z=1317 mm",Mass_Flux_1317,Z=1317mm,Mass Flux (g/m^2/s),Soot Depth (mm),0,40,10,0,100,20,Exp,SouthEast,ko,C3H6_Soot_Depth_1317
 C3H6_T_Gas_at_771mm.csv,"FM Wall Flames, 22.49 g/m^2/s",Y,m=22.49,y (mm),Gas Temperature (K),0,120,20,0,2000,400,Exp,SouthWest,ko,C3H6_T_Gas_22p49
 C3H6_T_Gas_at_771mm.csv,"FM Wall Flames, 22.37 g/m^2/s",Y,m=22.37,y (mm),Gas Temperature (K),0,120,20,0,2000,400,Exp,SouthWest,ko,C3H6_T_Gas_22p37
 C3H6_T_Gas_at_771mm.csv,"FM Wall Flames, 17.05 g/m^2/s",Y,m=17.05,y (mm),Gas Temperature (K),0,120,20,0,2000,400,Exp,SouthWest,ko,C3H6_T_Gas_17p05
@@ -20,9 +20,9 @@ C3H6_T_Thermocouple_at_771mm.csv,"FM Wall Flames, 17.05 g/m^2/s",Y,m=17.05,y (mm
 C3H6_T_Thermocouple_at_771mm.csv,"FM Wall Flames, 12.68 g/m^2/s",Y,m=12.68,y (mm),TC Temperature (K),0,120,20,0,2000,400,Exp,SouthWest,ko,C3H6_T_TC_12p68
 C3H6_T_Thermocouple_at_771mm.csv,"FM Wall Flames, 11.85 g/m^2/s",Y,m=11.85,y (mm),TC Temperature (K),0,120,20,0,2000,400,Exp,SouthWest,ko,C3H6_T_TC_11p85
 C3H6_T_Thermocouple_at_771mm.csv,"FM Wall Flames, 8.75 g/m^2/s",Y,m=8.75,y (mm),TC Temperature (K),0,120,20,0,2000,400,Exp,SouthWest,ko,C3H6_T_TC_8p75
-C3H6_Total_Heat_Flux.csv,"FM Wall Flames, C_3H_6, 12.68 g/m^2/s",Z,m=12.68,z (m),Heat Flux (kW/m^2),0,1,0.2,float,float,float,Exp,SouthEast,ko,C3H6_Heat_Flux_12p68
-C3H6_Total_Heat_Flux.csv,"FM Wall Flames, C_3H_6, 17.05 g/m^2/s",Z,m=17.05,z (m),Heat Flux (kW/m^2),0,1,0.2,float,float,float,Exp,SouthEast,ko,C3H6_Heat_Flux_17p05
-C3H6_Total_Heat_Flux.csv,"FM Wall Flames, C_3H_6, 22.37 g/m^2/s",Z,m=22.37,z (m),Heat Flux (kW/m^2),0,1,0.2,float,float,float,Exp,SouthEast,ko,C3H6_Heat_Flux_22p37
-Other_Fuel_Total_Heat_Flux.csv,"FM Wall Flames, CH_4, 10.6 g/m^2/s",Z,CH4_m=10.6,z (m),Heat Flux (kW/m^2),0,1,0.2,float,float,float,Exp,SouthEast,ko,CH4_Heat_Flux_10p6
-Other_Fuel_Total_Heat_Flux.csv,"FM Wall Flames, C_2H_6, 10.2 g/m^2/s",Z,C2H6_m=10.2,z (m),Heat Flux (kW/m^2),0,1,0.2,float,float,float,Exp,SouthEast,ko,C2H6_Heat_Flux_10p2
-Other_Fuel_Total_Heat_Flux.csv,"FM Wall Flames, C_2H_4, 11.5 g/m^2/s",Z,C2H4_m=11.5,z (m),Heat Flux (kW/m^2),0,1,0.2,float,float,float,Exp,SouthEast,ko,C2H4_Heat_Flux_11p5
+C3H6_Total_Heat_Flux.csv,"FM Wall Flames, C_3H_6, 12.68 g/m^2/s",Z,m=12.68,z (m),Heat Flux (kW/m^2),0,1,0.2,0,50,5,Exp,SouthEast,ko,C3H6_Heat_Flux_12p68
+C3H6_Total_Heat_Flux.csv,"FM Wall Flames, C_3H_6, 17.05 g/m^2/s",Z,m=17.05,z (m),Heat Flux (kW/m^2),0,1,0.2,0,50,5,Exp,SouthEast,ko,C3H6_Heat_Flux_17p05
+C3H6_Total_Heat_Flux.csv,"FM Wall Flames, C_3H_6, 22.37 g/m^2/s",Z,m=22.37,z (m),Heat Flux (kW/m^2),0,1,0.2,0,50,5,Exp,SouthEast,ko,C3H6_Heat_Flux_22p37
+Other_Fuel_Total_Heat_Flux.csv,"FM Wall Flames, CH_4, 10.6 g/m^2/s",Z,CH4_m=10.6,z (m),Heat Flux (kW/m^2),0,1,0.2,0,50,5,Exp,SouthEast,ko,CH4_Heat_Flux_10p6
+Other_Fuel_Total_Heat_Flux.csv,"FM Wall Flames, C_2H_6, 10.2 g/m^2/s",Z,C2H6_m=10.2,z (m),Heat Flux (kW/m^2),0,1,0.2,0,50,5,Exp,SouthEast,ko,C2H6_Heat_Flux_10p2
+Other_Fuel_Total_Heat_Flux.csv,"FM Wall Flames, C_2H_4, 11.5 g/m^2/s",Z,C2H4_m=11.5,z (m),Heat Flux (kW/m^2),0,1,0.2,0,50,5,Exp,SouthEast,ko,C2H4_Heat_Flux_11p5
