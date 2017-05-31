@@ -82,14 +82,14 @@ Pressure-velocity coupling:
 
 ------------------
 
-### Computational Cost (hhh:mm:ss)
+### Computational Cost (hh:mm:ss)
 Wall clock time:
 
 Simulation time:
 
-Number of cores:
+Number of CPUs (MPI Processes):
 
-CPU cost (Number of cores * Wall clock time / Simulation time / Total cells):
+CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):
 
 ------------------
 
