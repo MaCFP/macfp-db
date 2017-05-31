@@ -66,7 +66,7 @@ Combustion model: Eddy Dissipation Model (EDM) (cEDM=4, cdiff=2)
 
 Radiation model: fvDOM
 
-Radiative fraction: (predicted or prescribed; if prescribed, what value) 
+Radiative fraction: (predicted or prescribed; if prescribed, what value)
 Predicted radiative fraction (24.8%)- Grey gas model (considered species CH4, H2O, CO2)
 
 Soot model: -
@@ -93,7 +93,7 @@ Simulation time: 50 sec
 
 Number of cores: 16
 
-CPU cost (Number of cores * Wall clock time / Simulation time / Total cells): -
+CPU cost (Number of cores * Wall clock time / Simulation time / Total cells): 0.0813
 
 ------------------
 

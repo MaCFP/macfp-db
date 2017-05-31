@@ -30,7 +30,7 @@ Cell type: Non-uniform
 
 Total cells: 0.54 million
 
-Comments: Local mesh refinement employed when constructing the mesh having different mesh resolutions. 
+Comments: Local mesh refinement employed when constructing the mesh having different mesh resolutions.
 
 #### Angular space discretization (radiation solver)
 Number of solid angles: 48
@@ -82,7 +82,7 @@ Simulation time: 50 sec
 
 Number of cores: 24
 
-CPU cost (Number of cores * Wall clock time / Simulation time / Total cells):
+CPU cost (Number of cores * Wall clock time / Simulation time / Total cells): 0.0256
 
 ------------------
 
