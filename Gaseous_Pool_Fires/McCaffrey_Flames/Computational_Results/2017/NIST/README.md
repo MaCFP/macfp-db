@@ -80,7 +80,7 @@ Pressure-velocity coupling: Exact projection
 ------------------
 
 ### Computational Cost (hhh:mm:ss)
-Wall clock time: [4:28:17  5:57:39  5:11:2  6:16:51  7:3:51]
+Wall clock time: [4:28:17  5:57:39  5:11:2  6:16:51  7:03:51]
 
 Simulation time: 30 s
 

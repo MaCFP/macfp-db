@@ -30,12 +30,12 @@ Cell type: Non-uniform
 
 Total cells: 0.39 million
 
-Comments: Experiments showed negligible floor effects; for simplicity, a floor inlet configuration was used in these simulations. Finest mesh zone covered continuous and intermittent flame regions. This essentially reproduces the simulations in the 2011 publication cited below, using an updated version of FireFOAM. 
+Comments: Experiments showed negligible floor effects; for simplicity, a floor inlet configuration was used in these simulations. Finest mesh zone covered continuous and intermittent flame regions. This essentially reproduces the simulations in the 2011 publication cited below, using an updated version of FireFOAM.
 
 #### Angular space discretization (radiation solver)
 Number of solid angles: -
 
-Comments: - Radiation was not predicted; constant radiative fractions were prescribed as listed in the experimental data section. 
+Comments: - Radiation was not predicted; constant radiative fractions were prescribed as listed in the experimental data section.
 
 ------------------
 
@@ -90,7 +90,7 @@ Simulation time: 100 sec
 
 Number of cores: 96
 
-CPU cost (Number of cores * Wall clock time / Simulation time / Total cells): -
+CPU cost (Number of cores * Wall clock time / Simulation time / Total cells): 0.1772 - 0.3190
 
 ------------------
 
