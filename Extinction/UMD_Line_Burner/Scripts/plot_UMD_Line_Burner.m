@@ -5,10 +5,13 @@
 close all
 clear all
 
+restoredefaultpath
+addpath '../../../Utilities/'
+
 expdir = '../Experimental_Data/';
 cmpdir = '../Computational_Results/2017/';
 pltdir = '../Plots/';
-run('../../../Utilities/plot_style')
+plot_style
 
 % read exp data configuration file
 Exp = importdata([expdir,'UMD_Line_Burner_dataplot_inputs.csv']);
