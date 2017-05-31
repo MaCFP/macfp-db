@@ -3,3 +3,9 @@ TC_Data.csv,x_125,TC_125,NIST_TC_Data.csv,X_125,TC_125,-,NIST
 TC_Data.csv,x_250,TC_250,NIST_TC_Data.csv,X_250,TC_250,-,NIST
 O2_Data.csv,x_125,XO2_125,NIST_O2_Data.csv,X_125,XO2_125,-,NIST
 O2_Data.csv,x_250,XO2_250,NIST_O2_Data.csv,X_250,XO2_250,-,NIST
+CH4_A_Data.csv,XO2,eta,NIST_CH4_A_Data.csv,XO2,ETA,-,NIST
+CH4_A_Data.csv,XO2,q_R,NIST_CH4_A_Data.csv,XO2,QR,-,NIST
+CH4_A_Lf_Data.csv,XO2_Lf,Lf,NIST_CH4_A_Lf_Data.csv,XO2,Lf,-,NIST
+C3H8_A_Data.csv,XO2,eta,NIST_C3H8_A_Data.csv,XO2,ETA,-,NIST
+C3H8_A_Data.csv,XO2,q_R,NIST_C3H8_A_Data.csv,XO2,QR,-,NIST
+C3H8_A_Lf_Data.csv,XO2_Lf,Lf,NIST_C3H8_A_Lf_Data.csv,XO2,Lf,-,NIST
