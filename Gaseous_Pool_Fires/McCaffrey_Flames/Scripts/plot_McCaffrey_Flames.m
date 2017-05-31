@@ -150,18 +150,30 @@ for i=2:n_plots
                 set(gca,'XTick',xMin:xTick:xMax)
                 set(gca,'XMinorTick','on')
             end
+        else
+            Pos = get(gca,'Position');
+            xMin = Pos(1);
+            xMax = Pos(1)+Pos(3);
+            yMin = Pos(2);
+            yMax = Pos(2)+Pos(4);
         end
+
+        Title_Position = [0.05 0.92];
+        if strcmp(Exp_Plot_Type,'loglog')
+            xt = 10^(log10(xMin)+Title_Position(1)*(log10(xMax)-log10(xMin)));
+            yt = 10^(log10(yMin)+Title_Position(2)*(log10(yMax)-log10(yMin)));
+        else
+            xt = xMin + Title_Position(1)*(xMax-xMin);
+            yt = yMin + Title_Position(2)*(yMax-yMin);
+        end
+        text(xt,yt,Plot_Title,'FontSize',Font_Size)
+
         set(gca,'FontSize',Font_Size)
         xlabel(xLabel,'FontSize',Font_Size)
         ylabel(yLabel,'FontSize',Font_Size)
         lh=legend(H,Legend_Key,'Location',Legend_Location);
         set(lh,'FontSize',Font_Size)
         legend 'boxon'
-
-        axPos = get(gca,'Position');
-        xt = 0.3*axPos(1);
-        yt = axPos(2) + axPos(4);
-        text(xt,yt,Plot_Title,'FontSize',Font_Size,'Units','Normalized')
 
         % print to vector output
 
