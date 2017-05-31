@@ -63,7 +63,7 @@ RTE updated completely once every 0.2 s
 
 ### Initial conditions
 
-random velocity perturbation
+small random velocity perturbation
 
 Comments:
 
@@ -82,7 +82,7 @@ For cases 2 and 3, the N2 mass flux is ramped to achieve linear variation in XO2
 
 Turbulence model: modified Deardorff (C_DEARDORFF = 0.1), SC_T = 0.5, PR_T = 0.5
 
-Combustion model: EDC with thermal extinction model, simple AIT threshold for reignition, 0.6 m x 0.15 m x 0.15 m pilot region (AIT = 0 K) above burner
+Combustion model: EDC with thermal extinction model (CFT from SFPE Handbook), simple AIT threshold for reignition, 0.6 m x 0.15 m x 0.15 m pilot region (AIT = 0 K) above burner
 
 Radiation model: DO-FVM
 
@@ -138,6 +138,8 @@ CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):
 ### Special issues/problems
 
 Discovered problem with RTE_SOURCE_CORRECTION for high resolution cases, global CHI_R was overpredicted.  Reverted to using simple CHI_R*Q radiative source term.
+
+Weak approximation of Lf.  HRRPUV was not spatially averaged because this is difficult to do in FDS across mesh boundaries.
 
 ------------------
 
