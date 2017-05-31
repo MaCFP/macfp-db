@@ -1,6 +1,6 @@
 % McDermott
 % 02 May 2017
-% sandia_flames_2.m
+% plot_Sandia_Flames.m
 
 close all
 clear all
