@@ -90,7 +90,7 @@ CPU cost (Number of cores * Wall clock time / Simulation time / Total cells): [0
 
 Comments:
 
-Performance is enhanced on these cases by running across 3 nodes each with 12 cores, minimizing MPI communication across the network.
+Performance is enhanced in these cases by running across 3 nodes each with 12 cores, minimizing MPI communication across the network.
 
 ------------------
 
