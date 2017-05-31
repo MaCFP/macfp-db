@@ -1,0 +1,9 @@
+Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style,Key_Label
+C3H8_A_Data.csv,XO2,eta,FM_C3H8_Combustion_Efficiency_Data.csv,XO2,eta,-,FM
+C3H8_A_Lf_Data.csv,XO2_Lf,Lf,FM_C3H8_Lf_Data.csv,XO2,Lf,-,FM
+CH4_A_Data.csv,XO2,eta,FM_CH4_Combustion_Efficiency_Data.csv,XO2,eta,-,FM
+CH4_A_Lf_Data.csv,XO2_Lf,Lf,FM_CH4_Lf_Data.csv,XO2,Lf,-,FM
+TC_Data.csv,x_125,TC_125,FM_CH4_TC_Data.csv,x,TC_125,-,FM
+TC_Data.csv,x_250,TC_250,FM_CH4_TC_Data.csv,x,TC_250,-,FM
+O2_Data.csv,x_125,XO2_125,FM_CH4_O2_Data.csv,x,XO2_125,-,FM
+O2_Data.csv,x_250,XO2_250,FM_CH4_O2_Data.csv,x,XO2_250,-,FM
