@@ -5,6 +5,12 @@ C3H6_T_Thermocouple_at_771mm.csv,Y,m=12.68,NIST_C3H6_T_Thermocouple_at_771mm.csv
 C3H6_T_Thermocouple_at_771mm.csv,Y,m=17.05,NIST_C3H6_T_Thermocouple_at_771mm.csv,Y,m=17.05,-
 C3H6_T_Thermocouple_at_771mm.csv,Y,m=22.37,NIST_C3H6_T_Thermocouple_at_771mm.csv,Y,m=22.37,-
 C3H6_T_Thermocouple_at_771mm.csv,Y,m=22.49,NIST_C3H6_T_Thermocouple_at_771mm.csv,Y,m=22.49,-
+C3H6_T_Gas_at_771mm.csv,Y,m=8.75,NIST_C3H6_T_Gas_at_771mm.csv,Y,m=8.75,-
+C3H6_T_Gas_at_771mm.csv,Y,m=11.85,NIST_C3H6_T_Gas_at_771mm.csv,Y,m=11.85,-
+C3H6_T_Gas_at_771mm.csv,Y,m=12.68,NIST_C3H6_T_Gas_at_771mm.csv,Y,m=12.68,-
+C3H6_T_Gas_at_771mm.csv,Y,m=17.05,NIST_C3H6_T_Gas_at_771mm.csv,Y,m=17.05,-
+C3H6_T_Gas_at_771mm.csv,Y,m=22.37,NIST_C3H6_T_Gas_at_771mm.csv,Y,m=22.37,-
+C3H6_T_Gas_at_771mm.csv,Y,m=22.49,NIST_C3H6_T_Gas_at_771mm.csv,Y,m=22.49,-
 C3H6_Soot_Depth.csv,Mass_Flux_365,Z=365mm,NIST_C3H6_Soot_Depth.csv,Mass_Flux,Z=365mm,-
 C3H6_Soot_Depth.csv,Mass_Flux_537,Z=537mm,NIST_C3H6_Soot_Depth.csv,Mass_Flux,Z=537mm,-
 C3H6_Soot_Depth.csv,Mass_Flux_771,Z=771mm,NIST_C3H6_Soot_Depth.csv,Mass_Flux,Z=771mm,-
