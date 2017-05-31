@@ -24,13 +24,13 @@ Version: FDS6.5.3-1800-gdf9c12f
 ### Resolution
 
 #### Computational domain discretization (flow solver)
-Domain:  1.5 m x 1.5 m x 2.1 m
+Domain:  1.5 m x 1.5 m x 2.8 m
 
-Cell size: DX=1.4 cm
+Cell size: DX=1.43 cm
 
 Cell type: uniform cubic
 
-Total cells: 1,620,675
+Total cells: 2,160,900
 
 Comments:
 
@@ -80,13 +80,17 @@ Pressure-velocity coupling: Exact projection
 ------------------
 
 ### Computational Cost (hhh:mm:ss)
-Wall clock time: [4:28:17  5:57:39  5:11:2  6:16:51  7:03:51]
+Wall clock time: [02:04:51  02:19:55  02:35:24  02:48:27  03:00:22]
 
 Simulation time: 30 s
 
-Number of cores: 27
+Number of cores: 36
 
-CPU cost (Number of cores * Wall clock time / Simulation time / Total cells): [0.0089    0.0119    0.0104    0.0126    0.0141]
+CPU cost (Number of cores * Wall clock time / Simulation time / Total cells): [0.0042    0.0047    0.0052    0.0056    0.0060]
+
+Comments:
+
+Performance is enhanced on these cases by running across 3 nodes each with 12 cores, minimizing MPI communication across the network.
 
 ------------------
 
@@ -98,7 +102,7 @@ CPU cost (Number of cores * Wall clock time / Simulation time / Total cells): [0
 
 ### Special issues/problems
 
-I did not have time to explore affect of domain size on plume velocity decay.
+I did not have time to explore affect of domain width on plume velocity decay.
 
 ------------------
 
