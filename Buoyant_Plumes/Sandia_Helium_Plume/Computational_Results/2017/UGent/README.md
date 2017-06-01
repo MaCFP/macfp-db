@@ -75,7 +75,7 @@ Comments:
 ------------------
 
 ### Discretization methods
-Time: Second order backward (Backward)
+Time: Second order backward (Backward), CFL = 0.2
 
 Advection: Velocity - Second order, unbounded central difference (Gauss linear), Scalars - First/second order, bounded  TVD with a Sweby limiter (species: limitedLinear01 1.0)
 
