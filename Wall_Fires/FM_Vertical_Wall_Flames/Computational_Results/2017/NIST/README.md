@@ -8,6 +8,7 @@ Country: USA
 ------------------
 
 ### Test cases
+The following FDS input files are available at the Github repository `firemodels/fds`. The propylene case spans mass fluxes from 0 to 65 g/m<sup>2</sup>/s in a 65 s simulation. The other cases run for 20 s at a fixed mass flux rate.
 
 [propylene](https://github.com/firemodels/fds/tree/master/Validation/FM_Vertical_Wall_Flames/FDS_Input_Files/propylene.fds)
 
@@ -17,7 +18,6 @@ Country: USA
 
 [methane](https://github.com/firemodels/fds/tree/master/Validation/FM_Vertical_Wall_Flames/FDS_Input_Files/methane.fds)
 
-Comments: The case `propylene.fds` runs for 65 s, spanning fuel mass rates from 0 to 65 g/m<sup>2</sup>/s. The other fuels only run for 20 s.
 ------------------
 
 ### CFD package
@@ -48,7 +48,7 @@ Comments: Narrow band model, 6 bands, absorption coefficient calculated by RadCa
 ------------------
 
 ### Initial conditions
-Comments: Quiescent
+Comments: Quiescent, 20 C ambient temperature
 
 ------------------
 
@@ -84,13 +84,13 @@ Pressure-velocity coupling: Low-Mach number formulation of Navier-Stokes equatio
 ------------------
 
 ### Computational Cost (hhh:mm:ss)
-Wall clock time:
+Wall clock time: 10:26:38
 
-Simulation time: 65 s
+Simulation time: 20 s
 
 Number of cores: 160
 
-CPU cost (Number of cores * Wall clock time / Simulation time / Total cells):
+CPU cost (Number of cores * Wall clock time / Simulation time / Total cells): 0.073 seconds per cell per simulated second
 
 ------------------
 
