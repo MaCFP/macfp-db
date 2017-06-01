@@ -107,4 +107,4 @@ CPU cost (Number of cores * Wall clock time / Simulation time / Total cells): 0.
 ------------------
 
 ### Relevant publications
-1. G. Maragkos, P. Rauwoens, Y. Wang, B. Merci, Large Eddy simulations of the flow in the near-field region of a turbulent buoyant helium plume, Flow Turbul. Combust. 90:511-543 (2013) - DOI: 10.1007/s10494-012-9437-5
+1. G. Maragkos, P. Rauwoens, Y. Wang, B. Merci, Large Eddy simulations of the flow in the near-field region of a turbulent buoyant helium plume, Flow Turbul. Combust. 90:511-543 (2013) - [DOI: 10.1007/s10494-012-9437-5](DOI: 10.1007/s10494-012-9437-5)
