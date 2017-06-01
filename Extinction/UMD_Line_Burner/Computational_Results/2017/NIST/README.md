@@ -139,7 +139,7 @@ CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):
 
 Discovered problem with RTE_SOURCE_CORRECTION for high resolution cases, global CHI_R was overpredicted.  Reverted to using simple CHI_R*Q radiative source term.
 
-Weak approximation of Lf.  HRRPUV was not spatially averaged because this is difficult to do in FDS across mesh boundaries.
+Weak approximation of Lf.  Height at 99% HRRPUV was used from a vertical line of point devices in the center of the burner. HRRPUV was not spatially averaged (planar) because this is difficult to do in FDS across mesh boundaries.
 
 ------------------
 
