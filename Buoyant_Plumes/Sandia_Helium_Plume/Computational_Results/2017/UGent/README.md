@@ -97,11 +97,13 @@ CPU cost (Number of cores * Wall clock time / Simulation time / Total cells): 0.
 ------------------
 
 ### Averaging period
+
 10 sec
+
 ------------------
 
 ### Special issues/problems
--
+
 ------------------
 
 ### Relevant publications
