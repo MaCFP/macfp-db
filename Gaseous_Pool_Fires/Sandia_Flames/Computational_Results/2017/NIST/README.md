@@ -57,13 +57,13 @@ Comments:
 ------------------
 
 ### Discretization
-Time: RK2
+Time: RK2, CFL=0.8-1.0
 
 Advection: velocity: central difference; scalar: Superbee limiter
 
 Diffusion: central
 
-Pressure-velocity coupling: Low-Mach projection
+Pressure-velocity coupling: Low-Mach exact projection
 
 ------------------
 
