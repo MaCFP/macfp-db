@@ -100,6 +100,8 @@ CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):
 
 ### Averaging period
 
+10 s
+
 ------------------
 
 ### Special issues/problems
