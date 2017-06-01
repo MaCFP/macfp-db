@@ -75,7 +75,7 @@ Comments:
 ------------------
 
 ### Discretization methods
-Time: Second order backward (Backward)
+Time: Second order backward (Backward), CFL = 0.2
 
 Advection: Velocity - Second order, unbounded central difference (Gauss linear), Scalars - First/second order, bounded  TVD with a Sweby limiter (species: limitedLinear01 1.0)
 
@@ -97,12 +97,15 @@ CPU cost (Number of cores * Wall clock time / Simulation time / Total cells): 0.
 ------------------
 
 ### Averaging period
+
 10 sec
+
 ------------------
 
 ### Special issues/problems
--
+
 ------------------
 
 ### Relevant publications
+
 1. G. Maragkos, P. Rauwoens, Y. Wang, B. Merci, Large Eddy simulations of the flow in the near-field region of a turbulent buoyant helium plume, Flow Turbul. Combust. 90:511-543 (2013) - DOI: 10.1007/s10494-012-9437-5

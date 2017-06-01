@@ -90,12 +90,12 @@ Case 24: 212:32:20
 
 Simulation time: 50 seconds
 
-Number of cores: 16
+Number of cores: 1
 
 CPU cost (Number of cores * Wall clock time / Simulation time / Total cells):
-Case 14: 0,111
-Case 17: 0,117
-Case 24: 0,107
+Case 14: 0,006
+Case 17: 0,007
+Case 24: 0,006
 
 ------------------
 

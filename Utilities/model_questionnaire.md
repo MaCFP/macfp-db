@@ -74,6 +74,8 @@ Comments:
 ### Discretization methods
 Time:
 
+CFL:
+
 Advection:
 
 Diffusion:

@@ -66,7 +66,7 @@ Comments:
 ------------------
 
 ### Discretization methods
-Time: RK2
+Time: RK2, CFL=0.8-1.0
 
 Advection: Superbee flux limiter
 
