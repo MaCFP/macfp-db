@@ -76,7 +76,7 @@ Comments: The code employs a unity Lewis number assumption. The time scale in th
 ------------------
 
 ### Discretization methods
-Time: First order Euler (Euler)
+Time: First order Euler (Euler), CFL = 0.8
 
 Advection: Velocity - Second order, unbounded central difference (Gauss linear), Scalars - First/second order, bounded  TVD with a Sweby limiter (species: limitedLinear01 1.0, enthalpy: limitedLinear 1.0)
 
