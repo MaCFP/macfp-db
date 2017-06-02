@@ -80,7 +80,7 @@ hth_ad hth_m are respectively the adiabatic enthalpy and the mixing enthalpy. Th
 
 
 |..|anchored|blockage|frame|coflow|entrainment|inlet|outlet|
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|
 |B|fixedValue|zeroGradient|zeroGradient|fixedValue|inletOutlet|fixedValue|inletOutlet|
 |CH4|totalFlowRateAdvectiveDiffusive|zeroGradient|zeroGradient|fixedValue|inletOutlet|totalFlowRateAdvectiveDiffusive|inletOutlet|
 |IDefault|greyDiffusiveRadiation|greyDiffusiveRadiation|greyDiffusiveRadiation|greyDiffusiveRadiation|greyDiffusiveRadiation|greyDiffusiveRadiation|greyDiffusiveRadiation|
