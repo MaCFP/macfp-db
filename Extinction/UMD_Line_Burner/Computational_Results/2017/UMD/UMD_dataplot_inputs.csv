@@ -1,0 +1,7 @@
+Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style
+CH4_A_Data.csv,XO2,eta,UMD_methane_O2_eta.csv,XO2 (-),eta (-),-
+CH4_A_Lf_Data.csv,XO2,Lf,UMD_methane_Lf.csv,XO2 (-),Lf (m),-
+TC_Data.csv,x_125,TC_125,UMD_methane_O2_p18_TC_z_p125.csv,x (m),TC (K),-
+TC_Data.csv,x_250,TC_250,UMD_methane_O2_p18_TC_z_p250.csv,x (m),TC (K),-
+O2_Data.csv,x_125,XO2_125,UMD_methane_O2_p18_z_p125.csv,x (m),XO2 (-),-
+O2_Data.csv,x_250,XO2_250,UMD_methane_O2_p18_z_p250.csv,x (m),XO2 (-),-
