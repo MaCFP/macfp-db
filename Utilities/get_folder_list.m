@@ -1,5 +1,6 @@
 % return the directory folder list without hidden files or directories
 function folder_list = get_folder_list(indir)
+rehash
 indir_list=dir(indir);
 folder_list={};
 jj=0;
