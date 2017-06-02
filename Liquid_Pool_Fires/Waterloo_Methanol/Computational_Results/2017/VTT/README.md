@@ -96,14 +96,14 @@ Simulation time: 15 s
 
 Number of CPUs (MPI Processes): 32
 
-CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):
+CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 0.0297
 
-0.0297
 ------------------
 
 ### Averaging period
 
 10 s
+
 ------------------
 
 ### Special issues/problems
