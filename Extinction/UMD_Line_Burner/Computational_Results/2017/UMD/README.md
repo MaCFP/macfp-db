@@ -156,9 +156,9 @@ Comments:
 
 Time:
 
-| Parameter |Discretization method |
-| ---|---|
-| default | backward |
+| Parameter |Discretization method | CFL |
+| ---|---|---|
+| default | secon-order backward | 0.5 |
 
 
 Diffusion:
