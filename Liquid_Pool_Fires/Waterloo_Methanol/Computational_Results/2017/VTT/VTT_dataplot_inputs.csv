@@ -82,7 +82,27 @@ Mean_and_rms_values_z16cm.csv,r (m),T-rms (K),VTT_Waterloo_Methanol_Predicted_0p
 Mean_and_rms_values_z18cm.csv,r (m),T-rms (K),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Trms18,100,1,-
 Mean_and_rms_values_z20cm.csv,r (m),T-rms (K),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Trms20,100,1,-
 Mean_and_rms_values_z30cm.csv,r (m),T-rms (K),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Trms30,100,1,-
-
-
-
-
+s,,,,,,,,,
+Mean_and_rms_values_z2cm.csv,r (m),v-bar (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Up2,100,1,-
+Mean_and_rms_values_z4cm.csv,r (m),v-bar (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Up4,100,1,-
+Mean_and_rms_values_z6cm.csv,r (m),v-bar (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Up6,100,1,-
+Mean_and_rms_values_z8cm.csv,r (m),v-bar (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Up8,100,1,-
+Mean_and_rms_values_z10cm.csv,r (m),v-bar (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Up10,100,1,-
+Mean_and_rms_values_z12cm.csv,r (m),v-bar (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Up12,100,1,-
+Mean_and_rms_values_z14cm.csv,r (m),v-bar (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Up14,100,1,-
+Mean_and_rms_values_z16cm.csv,r (m),v-bar (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Up16,100,1,-
+Mean_and_rms_values_z18cm.csv,r (m),v-bar (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Up18,100,1,-
+Mean_and_rms_values_z20cm.csv,r (m),v-bar (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Up20,100,1,-
+Mean_and_rms_values_z30cm.csv,r (m),v-bar (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Up30,100,1,-
+s,,,,,,,,,
+Mean_and_rms_values_z2cm.csv,r (m),v-rms (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Urms2,100,1,-
+Mean_and_rms_values_z4cm.csv,r (m),v-rms (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Urms4,100,1,-
+Mean_and_rms_values_z6cm.csv,r (m),v-rms (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Urms6,100,1,-
+Mean_and_rms_values_z8cm.csv,r (m),v-rms (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Urms8,100,1,-
+Mean_and_rms_values_z10cm.csv,r (m),v-rms (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Urms10,100,1,-
+Mean_and_rms_values_z12cm.csv,r (m),v-rms (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Urms12,100,1,-
+Mean_and_rms_values_z14cm.csv,r (m),v-rms (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Urms14,100,1,-
+Mean_and_rms_values_z16cm.csv,r (m),v-rms (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Urms16,100,1,-
+Mean_and_rms_values_z18cm.csv,r (m),v-rms (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Urms18,100,1,-
+Mean_and_rms_values_z20cm.csv,r (m),v-rms (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Urms20,100,1,-
+Mean_and_rms_values_z30cm.csv,r (m),v-rms (m/s),VTT_Waterloo_Methanol_Predicted_0p25cm_line.csv,2,r,Urms30,100,1,-
