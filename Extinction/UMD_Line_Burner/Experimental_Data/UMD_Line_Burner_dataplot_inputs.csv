@@ -1,0 +1,11 @@
+switch_id,Data_Filename,Plot_Type,Plot_Title,x_Col_Name,y_Col_Name,xLabel,yLabel,xMin,xMax,xTick,yMin,yMax,yTick,Legend_Key,Legend_Location,Plot_Style,Plot_Filename
+d,TC_Data.csv,linear,Methane XO2=0.18 z=0.125 m,x_125,TC_125,x (m),TC (\circC),-0.25,0.25,0.05,0,1200,200,Exp,NorthEast,ko,UMD_Line_Burner_Methane_XO2_p18_z_p125_TC
+d,TC_Data.csv,linear,Methane XO2=0.18 z=0.250 m,x_250,TC_250,x (m),TC (\circC),-0.25,0.25,0.05,0,1200,200,Exp,NorthEast,ko,UMD_Line_Burner_Methane_XO2_p18_z_p250_TC
+d,O2_Data.csv,linear,Methane XO2=0.18 z=0.125 m,x_125,XO2_125,x (m),O2 vol frac,-0.25,0.25,0.05,0.05,0.25,0.05,Exp,SouthEast,ko,UMD_Line_Burner_Methane_XO2_p18_z_p125_XO2
+d,O2_Data.csv,linear,Methane XO2=0.18 z=0.250 m,x_250,XO2_250,x (m),O2 vol frac,-0.25,0.25,0.05,0.05,0.25,0.05,Exp,SouthEast,ko,UMD_Line_Burner_Methane_XO2_p18_z_p250_XO2
+d,CH4_A_Data.csv,linear,CH4 Combustion Efficiency,XO2,eta,O2 vol frac,\eta,0.10,0.21,0.02,0.0,1.25,0.25,Exp,SouthEast,ko,UMD_Line_Burner_Methane_Eta
+d,CH4_A_Data.csv,linear,CH4 Radiative Heat Flux,XO2,q_R,O2 vol frac,q rad (kW/m^2),0.10,0.21,0.02,0.0,1.5,0.5,Exp,SouthEast,ko,UMD_Line_Burner_Methane_qR
+d,CH4_A_Lf_Data.csv,linear,CH4 Flame Height,XO2_Lf,Lf,O2 vol frac,Lf (m),0.10,0.21,0.02,0.4,1,0.1,Exp,NorthEast,ko,UMD_Line_Burner_Methane_Lf
+d,C3H8_A_Data.csv,linear,C3H8 Combustion Efficiency,XO2,eta,O2 vol frac,\eta,0.10,0.21,0.02,0.0,1.25,0.25,Exp,SouthEast,ko,UMD_Line_Burner_Propane_Eta
+d,C3H8_A_Data.csv,linear,C3H8 Radiative Heat Flux,XO2,q_R,O2 vol frac,q rad (kW/m^2),0.10,0.21,0.02,0.0,1.5,0.5,Exp,SouthEast,ko,UMD_Line_Burner_Propane_qR
+d,C3H8_A_Lf_Data.csv,linear,C3H8 Flame Height,XO2_Lf,Lf,O2 vol frac,Lf (m),0.10,0.21,0.02,0.4,1,0.1,Exp,NorthEast,ko,UMD_Line_Burner_Propane_Lf

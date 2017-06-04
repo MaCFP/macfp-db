@@ -1,12 +1,12 @@
-##Sandia Helium Plume Setup
+## Sandia Helium Plume Setup
 
-####Introduction
+#### Introduction
 
 The Fire Laboratory for Accreditation of Models by Experimentation (FLAME) facility [Blanchat, 2001; O'Hern et al., 2005] at Sandia National Laboratory in Albuquerque, New Mexico, is designed specifically for validating models of buoyant fire plumes. The plume source is 1 m in diameter surrounded by a 0.5 m steel "ground plane". Particle Image Velocimetry (PIV) and Planar Laser-Induced Fluorescence (PLIF) techniques were used to obtain instantaneous joint scalar and velocity fields.
 
 <img src="https://github.com/MaCFP/macfp-db/blob/master/Buoyant_Plumes/Sandia_Helium_Plume/Documentation/Sandia_FLAME_facility.png" width="700">
 
-####Run Conditions
+#### Run Conditions
 
 Table 1: Run conditions and results summary for each of the 10 repeat tests and theiraverages. Uncertainties listed are ± one standard deviation [O'Hern et al., 2005].
 
@@ -28,7 +28,7 @@ Table 1: Run conditions and results summary for each of the 10 repeat tests and 
 
 (a) given by f = V0 (0.8 Ri^(0.38))/D [Cetegen & Kasper, 1996]
 
-####References
+#### References
 
 [Cetegen & Kasper, 1996] B.M. Cetegen and K.D. Kasper. Experiments on the oscillatory behaviour of buoyant plumes of helium and helium-air mixtures. _Phys. Fluids_, 8:2974-2984, 1996.
 

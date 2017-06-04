@@ -9,5 +9,9 @@ Experimentalists and modelers may participate in the group by submitting pull re
 
 Please visit our [wiki pages](https://github.com/MaCFP/macfp-db/wiki) for detailed instructions.
 
+[SUBMIT COMPUTATIONAL RESULTS FOR MaCFP 2017](https://github.com/MaCFP/macfp-db/wiki/Submitting-Computational-Results)
+
+**Please note the submission deadline is 31 May 2017**
+
 If you find problems with the database or if you have suggestions for improvement, please submit an [Issue](https://github.com/MaCFP/macfp-db/issues).
 

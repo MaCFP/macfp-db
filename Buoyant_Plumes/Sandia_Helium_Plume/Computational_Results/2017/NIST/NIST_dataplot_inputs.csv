@@ -1,0 +1,19 @@
+Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style
+Sandia_He_1m_p2.csv,x (m),Y He,NIST_Sandia_He_1m.csv,x,Yp2,-
+Sandia_He_1m_p4.csv,x (m),Y He,NIST_Sandia_He_1m.csv,x,Yp4,-
+Sandia_He_1m_p6.csv,x (m),Y He,NIST_Sandia_He_1m.csv,x,Yp6,-
+Sandia_He_1m_p2.csv,x (m),Y He rms,NIST_Sandia_He_1m.csv,x,Yp2_rms,-
+Sandia_He_1m_p4.csv,x (m),Y He rms,NIST_Sandia_He_1m.csv,x,Yp4_rms,-
+Sandia_He_1m_p6.csv,x (m),Y He rms,NIST_Sandia_He_1m.csv,x,Yp6_rms,-
+Sandia_He_1m_p2.csv,x (m),U (m/s),NIST_Sandia_He_1m.csv,x,Up2,-
+Sandia_He_1m_p4.csv,x (m),U (m/s),NIST_Sandia_He_1m.csv,x,Up4,-
+Sandia_He_1m_p6.csv,x (m),U (m/s),NIST_Sandia_He_1m.csv,x,Up6,-
+Sandia_He_1m_p2.csv,x (m),U rms (m/s),NIST_Sandia_He_1m.csv,x,Up2_rms,-
+Sandia_He_1m_p4.csv,x (m),U rms (m/s),NIST_Sandia_He_1m.csv,x,Up4_rms,-
+Sandia_He_1m_p6.csv,x (m),U rms (m/s),NIST_Sandia_He_1m.csv,x,Up6_rms,-
+Sandia_He_1m_p2.csv,x (m),W (m/s),NIST_Sandia_He_1m.csv,x,Wp2,-
+Sandia_He_1m_p4.csv,x (m),W (m/s),NIST_Sandia_He_1m.csv,x,Wp4,-
+Sandia_He_1m_p6.csv,x (m),W (m/s),NIST_Sandia_He_1m.csv,x,Wp6,-
+Sandia_He_1m_p2.csv,x (m),W rms (m/s),NIST_Sandia_He_1m.csv,x,Wp2_rms,-
+Sandia_He_1m_p4.csv,x (m),W rms (m/s),NIST_Sandia_He_1m.csv,x,Wp4_rms,-
+Sandia_He_1m_p6.csv,x (m),W rms (m/s),NIST_Sandia_He_1m.csv,x,Wp6_rms,-

@@ -1,12 +1,12 @@
-##University of Maryland Line Burner Setup
+## University of Maryland Line Burner Setup
 
 by James P. White
 
-####Introduction
+#### Introduction
 
 The UMD Line Burner experimental facility provides for the study of a low-strain, buoyancy-driven, fully-turbulent diffusion flame in a canonical line-fire configuration. This facility provides well-controlled inlet and boundary conditions, while introducing the complicating effects of buoyancy and turbulence characteristic of large-scale accidental fires. A variety of non-intrusive diagnostics are employed to measure local and integral flame characteristics. The facility comprises a slot burner centrally located within a surrounding, uniform co-flowing oxidizer. Controlled suppression of the flame is achieved via the introduction of either excess nitrogen gas or a fine water mist into the oxidizer stream. A detailed description of this facility has been presented by White et al. [White, 2015].
 
-####Experimental Description
+#### Experimental Description
 
 A plan view illustration of the burner and oxidizer assembly is presented in Fig. 1.  The burner features a sand-filled, stainless-steel fuel port, measuring 5 cm wide by 50 cm long, with 1.5 mm thick side walls. Methane gas (99.5 % purity) or propane gas (99.5 % purity) are the primary burner fuels. A methane flow rate of 1.00 +/- 0.02 g/s (nominal 5.4 cm/s) or a propane flow rate of 1.08 +/- 0.02 g/s (nominal 2.1 cm/s) is utilized, measured using a mass flow controller. Assuming complete combustion, the total heat-release rate is roughly 50 kW for either fuel.
 
@@ -30,7 +30,7 @@ Mean and rms temperature data are recorded using an array of R-Type thermocouple
 
 Figure 1: Plan view of UMD Line Burner
 
-####Simulation Targets
+#### Simulation Targets
 
 Available [experimental data](https://github.com/MaCFP/macfp-db/tree/master/Extinction/UMD_Line_Burner/Experimental_Data) include:
 
@@ -62,6 +62,6 @@ Pending/planned experimental data include:
   - methane, XO2 = 0.21
   - propane, XO2 = 0.21
 
-####References
+#### References
 
 [White, 2015] J.P. White, E.D. Link, A.C. Trouve, P.B. Sunderland, A.W. Marshall, J.A. Sheffel, M.L. Corn, M.B. Colket, M. Chaos, and H.-Z. Yu. Radiative emissions measurements from a buoyant, turbulent line flame under oxdizer-dilution quenching conditions, _Fire Safety Journal_, 76:74-84, 2015.

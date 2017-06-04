@@ -1,6 +1,6 @@
-##Sandia Flames Setup
+## Sandia Flames Setup
 
-####Introduction
+#### Introduction
 
 
 In the early 2000's Sandia undertook a series of measurements of gaseous plumes and fires.  The nonreacting plumes used helium and are described in another [section of this site](http://github.com/MaCFP/macfp-db/tree/master/Buoyant_Plumes/Sandia_Helium_Plume/Documentation/README.md).  In addition to the nonreacting case, a series of methane "pool fires" of varying heat release rates were measured along with a single hydrogen "pool fire."  All of these plumes were from 1 m diameter sources in the FLAME facility at Sandia National Laboratory in Albuquerque, New Mexico, as described below and in the cited references.   
@@ -9,7 +9,7 @@ In the early 2000's Sandia undertook a series of measurements of gaseous plumes 
 
 Figure 1: Schematic of PIV setup in FLAME facility.
 
-####FLAME facility and experimental configuration
+#### FLAME facility and experimental configuration
 
 The Fire Laboratory for Accreditation of Models by Experimentation (FLAME) facility [Blanchat, 2001;Tieszen et al., 2002] is a nominally cubic central chamber with sides 6.2 m within which a 1 m plume source is centered 2.45 m above the floor level.  The ceiling tapers upward 32 degrees into a 2.3 m square chimney; this tapered ceiling section starts 3.55 m above the plume source.  Around the plume source is a 0.51 m ground plane giving an overall diameter at the plume source level of 2.02 m.  Coflowing air is supplied by an annular source with an inner radium of 2.30 m and an outer radius of 2.91 m that is located 1.74 m below the ground plane and 0.71 m above the facility floor.  The air flow velocity through the annular ducts was approximately 0.3 m/s (see below for test-specific measurements).  To provide additional cylidrical symmetry, an approximately cylidrical shield was created with sixteen steel plates hung from 2.15 m below the ground plane and extending to 0.9 m above the ground plane; these appear in Figure 1 surrounding the coflow.  Much greater detail regarding the facility is provided in the references [Blanchat, 2001;Tieszen et al., 2002].  An  [IGES format file](http://github.com/MaCFP/macfp-db/blob/master/Gaseous_Pool_Fires/Sandia_Flames/Documentation/Flame_first.igs) is provided to assist with the generation of the geometry; unfortunately, this rendering of the geometry does not have the cylindrical shield wall described above.  In addition to the above Figure 1, we provide elevation and plan views of the facility with some dimensions in Figures 2 and 3.   
 
@@ -24,7 +24,7 @@ Figure 2: Elevation view of FLAME facility.
 Figure 3: Horizontal plan view of FLAME facility.
 
 
-####Test Matrix
+#### Test Matrix
 
 In the 2002 publication Tieszen et al., [2002] the authors describe measurements and uncertainty analysis for a single methane flow rate (0.52 kg/s).  This is followed in Tieszen et al., [2004] with measurements for two other methane flow rates, a near duplicate of the original flow rate and one hydrogen flow rate.  The conditions for all of these measurements are given in Table 1; see also Table 1 of [Tieszen et al., 2004].   
 
@@ -59,13 +59,13 @@ Table 1: Boundary conditions [Tieszen et al., 2004].  All reported uncertainties
 
 (f) Spatially varying, cooler near the facility wall, hotter near the chimney entrance; see [Tieszen et al., 2002] for geometry.
 
-####Available Measurements
+#### Available Measurements
 
-Particle image velocimetry was used to obtain vertical and radial velocities at a plane across the plume approximately 1 m wide by 0.9 m high; the laser sheet thickness was approximately 8 mm.  In the [Experimental_Data folder] (https://github.com/MaCFP/macfp-db/blob/master/Buoyant_Plumes/Experimental_Data/README.md) files contain average vertical and radial velocity for the four cases listed in Table 1.  For Tests 24 and 35 the turbulent kinetic energy has also been postprocessed and is included; in processing the turbulent kinetic energy, the plane-normal velocity fluctuations have been assumed to be equal to the horizontal fluctuations.  This data is provided as radial profiles with the approximate height above the ground plane indicated by the file name:  p3 indicates z = 0.301 m, p5 indicates z = 0.502 m, and p9 indicates z = 0.903 m above the source.  The 
+Particle image velocimetry was used to obtain vertical and radial velocities at a plane across the plume approximately 1 m wide by 0.9 m high; the laser sheet thickness was approximately 8 mm.  The [Experimental_Data] (https://github.com/MaCFP/macfp-db/tree/master/Gaseous_Pool_Fires/Sandia_Flames/Experimental_Data) files contain average vertical and radial velocity for the four cases listed in Table 1.  For Tests 24 and 35 the turbulent kinetic energy has also been postprocessed and is included; in processing the turbulent kinetic energy, the plane-normal velocity fluctuations have been assumed to be equal to the horizontal fluctuations.  This data is provided as radial profiles with the approximate height above the ground plane indicated by the file name:  p3 indicates z = 0.301 m, p5 indicates z = 0.502 m, and p9 indicates z = 0.903 m above the source.  The 
 
 
 
-####Uncertainty
+#### Uncertainty
 
 The authors have conducted an extensive analysis of potential uncertainties in [Tieszen et al., 2002; Tieszen et al., 2004].  The primary uncertainties indicated in Table 2 are derived by comparing right-to-left side results with the assumption that these should be the same.  These uncertainties are presented in the magnitude of the difference normalized by the mean values.  
 
@@ -90,11 +90,11 @@ Other items of note:
 
 + Small spatial variations of the coflow air and plume sources were measured and documented in [Blanchat, 2001]; these variations have a standard deviation of 3% but are significantly larger _at their maximum deviations from the mean_ occuring near fabrication imperfections.  Details are provded in [Blanchat, 2001]. Given the significance of the induced radial flow at the flame base, these deviations are probably less important than their magnitude suggests, but this would be an interesting uncertainty quanitification study.  
 
-#####Past simulations
+##### Past simulations
 
 In progress. 
 
-####References
+#### References
 
 [Blanchat, 2001] [T. K. Blanchat. Characterization of the air source and plume source at FLAME. Technical Report SAND01-2227, Sandia National Laboratory, Albuquerque, New Mexico, 2001.](http://github.com/MaCFP/macfp-db/tree/master/Gaseous_Pool_Fires/Sandia_Flames/Documentation/Blanchat_SAND2001-2227.pdf)
 

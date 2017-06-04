@@ -5,7 +5,7 @@
 close all
 clear all
 
-expdir = '../Experimental_Data/';
+expdir = '../Computational_Results/2017/Data/';
 cmpdir = '../Computational_Results/';
 pltdir = '../Plots/';
 addpath '../../../Utilities/'
@@ -50,6 +50,26 @@ for i=1:length(zq)
     end
 end
 
+% write correlations to a file
+
+% centerline temperature
+
+fid = fopen('../Experimental_Data/McCaffrey_Correlation_Temperature.csv','wt');
+fprintf(fid,'%s, %s\n','Z/Q^0.4','dT (C)');
+for i=1:length(zq)
+    fprintf(fid,'%f, %f\n',zq(i),Tq(i));
+end
+fclose(fid);
+
+% centerline velocity
+
+fid = fopen('../Experimental_Data/McCaffrey_Correlation_Velocity.csv','wt');
+fprintf(fid,'%s, %s\n','Z/Q^0.4','V/Q^0.2');
+for i=1:length(zq)
+    fprintf(fid,'%f, %f\n',zq(i),vq(i));
+end
+fclose(fid);
+
 h1 = zeros(1,length(chid)+1);
 h2 = zeros(1,length(chid)+1);
 
@@ -91,7 +111,7 @@ print(gcf,'-dpdf',[pltdir,'McCaffrey_Velocity_Correlation'])
 
 figure(2)
 xlabel('z/Q^{2/5}','FontSize',Font_Size)
-ylabel('\DeltaT (^\circC)','FontSize',Font_Size)
+ylabel('\DeltaT (\circC)','FontSize',Font_Size)
 title('McCaffrey Centerline Temperature Correlation','FontSize',Font_Size)
 
 axis([.008 1 40 1000])
@@ -104,7 +124,10 @@ text(.03,650,'\eta=0','FontSize',Font_Size)
 text(.08,425,'\eta=-1','FontSize',Font_Size)
 text(.18,125,'\eta=-5/3','FontSize',Font_Size)
 
-loose_inset
+set(gcf,'Visible',Figure_Visibility);
+set(gcf,'Units',Paper_Units);
+set(gcf,'PaperSize',[Paper_Width Paper_Height]);
+set(gcf,'Position',[0 0 Paper_Width Paper_Height]);
 print(gcf,'-dpdf',[pltdir,'McCaffrey_Temperature_Correlation'])
 
 return

@@ -1,0 +1,332 @@
+switch_id,Data_Filename,Plot_Title,x_Col_Name,y_Col_Name,xLabel,yLabel,xMin,xMax,xTick,yMin,yMax,yTick,Legend_Key,Legend_Location,Plot_Style,Plot_Filename
+d,Estimated_correlations_z2cm.csv,Waterloo Methanol u'v' z=2 cm,r (cm),u'v' (m/s)^2,r (cm),u'v' (m/s)^2,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_uv
+d,Estimated_correlations_z4cm.csv,Waterloo Methanol u'v' z=4 cm,r (cm),u'v' (m/s)^2,r (cm),u'v' (m/s)^2,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_uv
+d,Estimated_correlations_z6cm.csv,Waterloo Methanol u'v' z=6 cm,r (cm),u'v' (m/s)^2,r (cm),u'v' (m/s)^2,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_uv
+d,Estimated_correlations_z8cm.csv,Waterloo Methanol u'v' z=8 cm,r (cm),u'v' (m/s)^2,r (cm),u'v' (m/s)^2,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_uv
+d,Estimated_correlations_z10cm.csv,Waterloo Methanol u'v' z=10 cm,r (cm),u'v' (m/s)^2,r (cm),u'v' (m/s)^2,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_uv
+d,Estimated_correlations_z12cm.csv,Waterloo Methanol u'v' z=12 cm,r (cm),u'v' (m/s)^2,r (cm),u'v' (m/s)^2,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_uv
+d,Estimated_correlations_z14cm.csv,Waterloo Methanol u'v' z=14 cm,r (cm),u'v' (m/s)^2,r (cm),u'v' (m/s)^2,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_uv
+d,Estimated_correlations_z16cm.csv,Waterloo Methanol u'v' z=16 cm,r (cm),u'v' (m/s)^2,r (cm),u'v' (m/s)^2,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_uv
+d,Estimated_correlations_z18cm.csv,Waterloo Methanol u'v' z=18 cm,r (cm),u'v' (m/s)^2,r (cm),u'v' (m/s)^2,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_uv
+d,Estimated_correlations_z20cm.csv,Waterloo Methanol u'v' z=20 cm,r (cm),u'v' (m/s)^2,r (cm),u'v' (m/s)^2,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_uv
+d,Estimated_correlations_z30cm.csv,Waterloo Methanol u'v' z=30 cm,r (cm),u'v' (m/s)^2,r (cm),u'v' (m/s)^2,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_uv
+s,,,,,,,,,,,,,,,,
+d,Estimated_correlations_z2cm.csv,Waterloo Methanol u'T' z=2 cm,r (cm),u'T' (m/s)K,r (cm),u'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_uT
+d,Estimated_correlations_z4cm.csv,Waterloo Methanol u'T' z=4 cm,r (cm),u'T' (m/s)K,r (cm),u'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_uT
+d,Estimated_correlations_z6cm.csv,Waterloo Methanol u'T' z=6 cm,r (cm),u'T' (m/s)K,r (cm),u'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_uT
+d,Estimated_correlations_z8cm.csv,Waterloo Methanol u'T' z=8 cm,r (cm),u'T' (m/s)K,r (cm),u'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_uT
+d,Estimated_correlations_z10cm.csv,Waterloo Methanol u'T' z=10 cm,r (cm),u'T' (m/s)K,r (cm),u'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_uT
+d,Estimated_correlations_z12cm.csv,Waterloo Methanol u'T' z=12 cm,r (cm),u'T' (m/s)K,r (cm),u'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_uT
+d,Estimated_correlations_z14cm.csv,Waterloo Methanol u'T' z=14 cm,r (cm),u'T' (m/s)K,r (cm),u'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_uT
+d,Estimated_correlations_z16cm.csv,Waterloo Methanol u'T' z=16 cm,r (cm),u'T' (m/s)K,r (cm),u'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_uT
+d,Estimated_correlations_z18cm.csv,Waterloo Methanol u'T' z=18 cm,r (cm),u'T' (m/s)K,r (cm),u'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_uT
+d,Estimated_correlations_z20cm.csv,Waterloo Methanol u'T' z=20 cm,r (cm),u'T' (m/s)K,r (cm),u'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_uT
+d,Estimated_correlations_z30cm.csv,Waterloo Methanol u'T' z=30 cm,r (cm),u'T' (m/s)K,r (cm),u'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_uT
+s,,,,,,,,,,,,,,,,
+d,Estimated_correlations_z2cm.csv,Waterloo Methanol v'T' z=2 cm,r (cm),v'T' (m/s)K,r (cm),v'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_vT
+d,Estimated_correlations_z4cm.csv,Waterloo Methanol v'T' z=4 cm,r (cm),v'T' (m/s)K,r (cm),v'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_vT
+d,Estimated_correlations_z6cm.csv,Waterloo Methanol v'T' z=6 cm,r (cm),v'T' (m/s)K,r (cm),v'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_vT
+d,Estimated_correlations_z8cm.csv,Waterloo Methanol v'T' z=8 cm,r (cm),v'T' (m/s)K,r (cm),v'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_vT
+d,Estimated_correlations_z10cm.csv,Waterloo Methanol v'T' z=10 cm,r (cm),v'T' (m/s)K,r (cm),v'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_vT
+d,Estimated_correlations_z12cm.csv,Waterloo Methanol v'T' z=12 cm,r (cm),v'T' (m/s)K,r (cm),v'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_vT
+d,Estimated_correlations_z14cm.csv,Waterloo Methanol v'T' z=14 cm,r (cm),v'T' (m/s)K,r (cm),v'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_vT
+d,Estimated_correlations_z16cm.csv,Waterloo Methanol v'T' z=16 cm,r (cm),v'T' (m/s)K,r (cm),v'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_vT
+d,Estimated_correlations_z18cm.csv,Waterloo Methanol v'T' z=18 cm,r (cm),v'T' (m/s)K,r (cm),v'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_vT
+d,Estimated_correlations_z20cm.csv,Waterloo Methanol v'T' z=20 cm,r (cm),v'T' (m/s)K,r (cm),v'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_vT
+d,Estimated_correlations_z30cm.csv,Waterloo Methanol v'T' z=30 cm,r (cm),v'T' (m/s)K,r (cm),v'T' (m/s)K,-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_vT
+s,,,,,,,,,,,,,,,,
+d,Mean_and_rms_values_z2cm.csv,Waterloo Methanol u-bar z=2 cm,r (cm),u-bar (m/s),r (cm),u-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_ubar
+d,Mean_and_rms_values_z4cm.csv,Waterloo Methanol u-bar z=4 cm,r (cm),u-bar (m/s),r (cm),u-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_ubar
+d,Mean_and_rms_values_z6cm.csv,Waterloo Methanol u-bar z=6 cm,r (cm),u-bar (m/s),r (cm),u-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_ubar
+d,Mean_and_rms_values_z8cm.csv,Waterloo Methanol u-bar z=8 cm,r (cm),u-bar (m/s),r (cm),u-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_ubar
+d,Mean_and_rms_values_z10cm.csv,Waterloo Methanol u-bar z=10 cm,r (cm),u-bar (m/s),r (cm),u-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_ubar
+d,Mean_and_rms_values_z12cm.csv,Waterloo Methanol u-bar z=12 cm,r (cm),u-bar (m/s),r (cm),u-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_ubar
+d,Mean_and_rms_values_z14cm.csv,Waterloo Methanol u-bar z=14 cm,r (cm),u-bar (m/s),r (cm),u-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_ubar
+d,Mean_and_rms_values_z16cm.csv,Waterloo Methanol u-bar z=16 cm,r (cm),u-bar (m/s),r (cm),u-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_ubar
+d,Mean_and_rms_values_z18cm.csv,Waterloo Methanol u-bar z=18 cm,r (cm),u-bar (m/s),r (cm),u-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_ubar
+d,Mean_and_rms_values_z20cm.csv,Waterloo Methanol u-bar z=20 cm,r (cm),u-bar (m/s),r (cm),u-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_ubar
+d,Mean_and_rms_values_z30cm.csv,Waterloo Methanol u-bar z=30 cm,r (cm),u-bar (m/s),r (cm),u-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_ubar
+s,,,,,,,,,,,,,,,,
+d,Mean_and_rms_values_z2cm.csv,Waterloo Methanol u-rms z=2 cm,r (cm),u-rms (m/s),r (cm),u-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_urms
+d,Mean_and_rms_values_z4cm.csv,Waterloo Methanol u-rms z=4 cm,r (cm),u-rms (m/s),r (cm),u-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_urms
+d,Mean_and_rms_values_z6cm.csv,Waterloo Methanol u-rms z=6 cm,r (cm),u-rms (m/s),r (cm),u-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_urms
+d,Mean_and_rms_values_z8cm.csv,Waterloo Methanol u-rms z=8 cm,r (cm),u-rms (m/s),r (cm),u-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_urms
+d,Mean_and_rms_values_z10cm.csv,Waterloo Methanol u-rms z=10 cm,r (cm),u-rms (m/s),r (cm),u-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_urms
+d,Mean_and_rms_values_z12cm.csv,Waterloo Methanol u-rms z=12 cm,r (cm),u-rms (m/s),r (cm),u-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_urms
+d,Mean_and_rms_values_z14cm.csv,Waterloo Methanol u-rms z=14 cm,r (cm),u-rms (m/s),r (cm),u-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_urms
+d,Mean_and_rms_values_z16cm.csv,Waterloo Methanol u-rms z=16 cm,r (cm),u-rms (m/s),r (cm),u-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_urms
+d,Mean_and_rms_values_z18cm.csv,Waterloo Methanol u-rms z=18 cm,r (cm),u-rms (m/s),r (cm),u-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_urms
+d,Mean_and_rms_values_z20cm.csv,Waterloo Methanol u-rms z=20 cm,r (cm),u-rms (m/s),r (cm),u-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_urms
+d,Mean_and_rms_values_z30cm.csv,Waterloo Methanol u-rms z=30 cm,r (cm),u-rms (m/s),r (cm),u-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_urms
+s,,,,,,,,,,,,,,,,
+d,Mean_and_rms_values_z2cm.csv,Waterloo Methanol v-bar z=2 cm,r (cm),v-bar (m/s),r (cm),v-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_vbar
+d,Mean_and_rms_values_z4cm.csv,Waterloo Methanol v-bar z=4 cm,r (cm),v-bar (m/s),r (cm),v-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_vbar
+d,Mean_and_rms_values_z6cm.csv,Waterloo Methanol v-bar z=6 cm,r (cm),v-bar (m/s),r (cm),v-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_vbar
+d,Mean_and_rms_values_z8cm.csv,Waterloo Methanol v-bar z=8 cm,r (cm),v-bar (m/s),r (cm),v-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_vbar
+d,Mean_and_rms_values_z10cm.csv,Waterloo Methanol v-bar z=10 cm,r (cm),v-bar (m/s),r (cm),v-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_vbar
+d,Mean_and_rms_values_z12cm.csv,Waterloo Methanol v-bar z=12 cm,r (cm),v-bar (m/s),r (cm),v-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_vbar
+d,Mean_and_rms_values_z14cm.csv,Waterloo Methanol v-bar z=14 cm,r (cm),v-bar (m/s),r (cm),v-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_vbar
+d,Mean_and_rms_values_z16cm.csv,Waterloo Methanol v-bar z=16 cm,r (cm),v-bar (m/s),r (cm),v-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_vbar
+d,Mean_and_rms_values_z18cm.csv,Waterloo Methanol v-bar z=18 cm,r (cm),v-bar (m/s),r (cm),v-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_vbar
+d,Mean_and_rms_values_z20cm.csv,Waterloo Methanol v-bar z=20 cm,r (cm),v-bar (m/s),r (cm),v-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_vbar
+d,Mean_and_rms_values_z30cm.csv,Waterloo Methanol v-bar z=30 cm,r (cm),v-bar (m/s),r (cm),v-bar (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_vbar
+s,,,,,,,,,,,,,,,,
+d,Mean_and_rms_values_z2cm.csv,Waterloo Methanol v-rms z=2 cm,r (cm),v-rms (m/s),r (cm),v-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_vrms
+d,Mean_and_rms_values_z4cm.csv,Waterloo Methanol v-rms z=4 cm,r (cm),v-rms (m/s),r (cm),v-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_vrms
+d,Mean_and_rms_values_z6cm.csv,Waterloo Methanol v-rms z=6 cm,r (cm),v-rms (m/s),r (cm),v-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_vrms
+d,Mean_and_rms_values_z8cm.csv,Waterloo Methanol v-rms z=8 cm,r (cm),v-rms (m/s),r (cm),v-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_vrms
+d,Mean_and_rms_values_z10cm.csv,Waterloo Methanol v-rms z=10 cm,r (cm),v-rms (m/s),r (cm),v-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_vrms
+d,Mean_and_rms_values_z12cm.csv,Waterloo Methanol v-rms z=12 cm,r (cm),v-rms (m/s),r (cm),v-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_vrms
+d,Mean_and_rms_values_z14cm.csv,Waterloo Methanol v-rms z=14 cm,r (cm),v-rms (m/s),r (cm),v-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_vrms
+d,Mean_and_rms_values_z16cm.csv,Waterloo Methanol v-rms z=16 cm,r (cm),v-rms (m/s),r (cm),v-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_vrms
+d,Mean_and_rms_values_z18cm.csv,Waterloo Methanol v-rms z=18 cm,r (cm),v-rms (m/s),r (cm),v-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_vrms
+d,Mean_and_rms_values_z20cm.csv,Waterloo Methanol v-rms z=20 cm,r (cm),v-rms (m/s),r (cm),v-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_vrms
+d,Mean_and_rms_values_z30cm.csv,Waterloo Methanol v-rms z=30 cm,r (cm),v-rms (m/s),r (cm),v-rms (m/s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_vrms
+s,,,,,,,,,,,,,,,,
+d,Mean_and_rms_values_z2cm.csv,Waterloo Methanol T-bar z=2 cm,r (cm),T-bar (K),r (cm),T-bar (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_Tbar
+d,Mean_and_rms_values_z4cm.csv,Waterloo Methanol T-bar z=4 cm,r (cm),T-bar (K),r (cm),T-bar (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_Tbar
+d,Mean_and_rms_values_z6cm.csv,Waterloo Methanol T-bar z=6 cm,r (cm),T-bar (K),r (cm),T-bar (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_Tbar
+d,Mean_and_rms_values_z8cm.csv,Waterloo Methanol T-bar z=8 cm,r (cm),T-bar (K),r (cm),T-bar (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_Tbar
+d,Mean_and_rms_values_z10cm.csv,Waterloo Methanol T-bar z=10 cm,r (cm),T-bar (K),r (cm),T-bar (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_Tbar
+d,Mean_and_rms_values_z12cm.csv,Waterloo Methanol T-bar z=12 cm,r (cm),T-bar (K),r (cm),T-bar (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_Tbar
+d,Mean_and_rms_values_z14cm.csv,Waterloo Methanol T-bar z=14 cm,r (cm),T-bar (K),r (cm),T-bar (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_Tbar
+d,Mean_and_rms_values_z16cm.csv,Waterloo Methanol T-bar z=16 cm,r (cm),T-bar (K),r (cm),T-bar (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_Tbar
+d,Mean_and_rms_values_z18cm.csv,Waterloo Methanol T-bar z=18 cm,r (cm),T-bar (K),r (cm),T-bar (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_Tbar
+d,Mean_and_rms_values_z20cm.csv,Waterloo Methanol T-bar z=20 cm,r (cm),T-bar (K),r (cm),T-bar (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_Tbar
+d,Mean_and_rms_values_z30cm.csv,Waterloo Methanol T-bar z=30 cm,r (cm),T-bar (K),r (cm),T-bar (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_Tbar
+s,,,,,,,,,,,,,,,,
+d,Mean_and_rms_values_z2cm.csv,Waterloo Methanol T-rms z=2 cm,r (cm),T-rms (K),r (cm),T-rms (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_Trms
+d,Mean_and_rms_values_z4cm.csv,Waterloo Methanol T-rms z=4 cm,r (cm),T-rms (K),r (cm),T-rms (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_Trms
+d,Mean_and_rms_values_z6cm.csv,Waterloo Methanol T-rms z=6 cm,r (cm),T-rms (K),r (cm),T-rms (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_Trms
+d,Mean_and_rms_values_z8cm.csv,Waterloo Methanol T-rms z=8 cm,r (cm),T-rms (K),r (cm),T-rms (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_Trms
+d,Mean_and_rms_values_z10cm.csv,Waterloo Methanol T-rms z=10 cm,r (cm),T-rms (K),r (cm),T-rms (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_Trms
+d,Mean_and_rms_values_z12cm.csv,Waterloo Methanol T-rms z=12 cm,r (cm),T-rms (K),r (cm),T-rms (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_Trms
+d,Mean_and_rms_values_z14cm.csv,Waterloo Methanol T-rms z=14 cm,r (cm),T-rms (K),r (cm),T-rms (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_Trms
+d,Mean_and_rms_values_z16cm.csv,Waterloo Methanol T-rms z=16 cm,r (cm),T-rms (K),r (cm),T-rms (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_Trms
+d,Mean_and_rms_values_z18cm.csv,Waterloo Methanol T-rms z=18 cm,r (cm),T-rms (K),r (cm),T-rms (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_Trms
+d,Mean_and_rms_values_z20cm.csv,Waterloo Methanol T-rms z=20 cm,r (cm),T-rms (K),r (cm),T-rms (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_Trms
+d,Mean_and_rms_values_z30cm.csv,Waterloo Methanol T-rms z=30 cm,r (cm),T-rms (K),r (cm),T-rms (K),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_Trms
+s,,,,,,,,,,,,,,,,
+s,Estimated_length_scales_z2cm.csv,Waterloo Methanol U-integral time z=2 cm,r (cm),U-integral time (s),r (cm),U-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_Uintegraltime
+s,Estimated_length_scales_z4cm.csv,Waterloo Methanol U-integral time z=4 cm,r (cm),U-integral time (s),r (cm),U-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_Uintegraltime
+s,Estimated_length_scales_z6cm.csv,Waterloo Methanol U-integral time z=6 cm,r (cm),U-integral time (s),r (cm),U-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_Uintegraltime
+s,Estimated_length_scales_z8cm.csv,Waterloo Methanol U-integral time z=8 cm,r (cm),U-integral time (s),r (cm),U-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_Uintegraltime
+s,Estimated_length_scales_z10cm.csv,Waterloo Methanol U-integral time z=10 cm,r (cm),U-integral time (s),r (cm),U-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_Uintegraltime
+s,Estimated_length_scales_z12cm.csv,Waterloo Methanol U-integral time z=12 cm,r (cm),U-integral time (s),r (cm),U-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_Uintegraltime
+s,Estimated_length_scales_z14cm.csv,Waterloo Methanol U-integral time z=14 cm,r (cm),U-integral time (s),r (cm),U-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_Uintegraltime
+s,Estimated_length_scales_z16cm.csv,Waterloo Methanol U-integral time z=16 cm,r (cm),U-integral time (s),r (cm),U-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_Uintegraltime
+s,Estimated_length_scales_z18cm.csv,Waterloo Methanol U-integral time z=18 cm,r (cm),U-integral time (s),r (cm),U-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_Uintegraltime
+s,Estimated_length_scales_z20cm.csv,Waterloo Methanol U-integral time z=20 cm,r (cm),U-integral time (s),r (cm),U-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_Uintegraltime
+s,Estimated_length_scales_z30cm.csv,Waterloo Methanol U-integral time z=30 cm,r (cm),U-integral time (s),r (cm),U-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_Uintegraltime
+s,,,,,,,,,,,,,,,,
+s,Estimated_length_scales_z2cm.csv,Waterloo Methanol V-integral time z=2 cm,r (cm),V-integral time (s),r (cm),V-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_Vintegraltime
+s,Estimated_length_scales_z4cm.csv,Waterloo Methanol V-integral time z=4 cm,r (cm),V-integral time (s),r (cm),V-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_Vintegraltime
+s,Estimated_length_scales_z6cm.csv,Waterloo Methanol V-integral time z=6 cm,r (cm),V-integral time (s),r (cm),V-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_Vintegraltime
+s,Estimated_length_scales_z8cm.csv,Waterloo Methanol V-integral time z=8 cm,r (cm),V-integral time (s),r (cm),V-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_Vintegraltime
+s,Estimated_length_scales_z10cm.csv,Waterloo Methanol V-integral time z=10 cm,r (cm),V-integral time (s),r (cm),V-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_Vintegraltime
+s,Estimated_length_scales_z12cm.csv,Waterloo Methanol V-integral time z=12 cm,r (cm),V-integral time (s),r (cm),V-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_Vintegraltime
+s,Estimated_length_scales_z14cm.csv,Waterloo Methanol V-integral time z=14 cm,r (cm),V-integral time (s),r (cm),V-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_Vintegraltime
+s,Estimated_length_scales_z16cm.csv,Waterloo Methanol V-integral time z=16 cm,r (cm),V-integral time (s),r (cm),V-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_Vintegraltime
+s,Estimated_length_scales_z18cm.csv,Waterloo Methanol V-integral time z=18 cm,r (cm),V-integral time (s),r (cm),V-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_Vintegraltime
+s,Estimated_length_scales_z20cm.csv,Waterloo Methanol V-integral time z=20 cm,r (cm),V-integral time (s),r (cm),V-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_Vintegraltime
+s,Estimated_length_scales_z30cm.csv,Waterloo Methanol V-integral time z=30 cm,r (cm),V-integral time (s),r (cm),V-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_Vintegraltime
+s,,,,,,,,,,,,,,,,
+s,Estimated_length_scales_z2cm.csv,Waterloo Methanol T-integral time z=2 cm,r (cm),T-integral time (s),r (cm),T-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_Tintegraltime
+s,Estimated_length_scales_z4cm.csv,Waterloo Methanol T-integral time z=4 cm,r (cm),T-integral time (s),r (cm),T-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_Tintegraltime
+s,Estimated_length_scales_z6cm.csv,Waterloo Methanol T-integral time z=6 cm,r (cm),T-integral time (s),r (cm),T-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_Tintegraltime
+s,Estimated_length_scales_z8cm.csv,Waterloo Methanol T-integral time z=8 cm,r (cm),T-integral time (s),r (cm),T-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_Tintegraltime
+s,Estimated_length_scales_z10cm.csv,Waterloo Methanol T-integral time z=10 cm,r (cm),T-integral time (s),r (cm),T-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_Tintegraltime
+s,Estimated_length_scales_z12cm.csv,Waterloo Methanol T-integral time z=12 cm,r (cm),T-integral time (s),r (cm),T-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_Tintegraltime
+s,Estimated_length_scales_z14cm.csv,Waterloo Methanol T-integral time z=14 cm,r (cm),T-integral time (s),r (cm),T-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_Tintegraltime
+s,Estimated_length_scales_z16cm.csv,Waterloo Methanol T-integral time z=16 cm,r (cm),T-integral time (s),r (cm),T-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_Tintegraltime
+s,Estimated_length_scales_z18cm.csv,Waterloo Methanol T-integral time z=18 cm,r (cm),T-integral time (s),r (cm),T-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_Tintegraltime
+s,Estimated_length_scales_z20cm.csv,Waterloo Methanol T-integral time z=20 cm,r (cm),T-integral time (s),r (cm),T-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_Tintegraltime
+s,Estimated_length_scales_z30cm.csv,Waterloo Methanol T-integral time z=30 cm,r (cm),T-integral time (s),r (cm),T-integral time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_Tintegraltime
+s,,,,,,,,,,,,,,,,
+s,Estimated_length_scales_z2cm.csv,Waterloo Methanol U-Taylor time z=2 cm,r (cm),U-Taylor time (s),r (cm),U-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_UTaylortime
+s,Estimated_length_scales_z4cm.csv,Waterloo Methanol U-Taylor time z=4 cm,r (cm),U-Taylor time (s),r (cm),U-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_UTaylortime
+s,Estimated_length_scales_z6cm.csv,Waterloo Methanol U-Taylor time z=6 cm,r (cm),U-Taylor time (s),r (cm),U-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_UTaylortime
+s,Estimated_length_scales_z8cm.csv,Waterloo Methanol U-Taylor time z=8 cm,r (cm),U-Taylor time (s),r (cm),U-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_UTaylortime
+s,Estimated_length_scales_z10cm.csv,Waterloo Methanol U-Taylor time z=10 cm,r (cm),U-Taylor time (s),r (cm),U-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_UTaylortime
+s,Estimated_length_scales_z12cm.csv,Waterloo Methanol U-Taylor time z=12 cm,r (cm),U-Taylor time (s),r (cm),U-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_UTaylortime
+s,Estimated_length_scales_z14cm.csv,Waterloo Methanol U-Taylor time z=14 cm,r (cm),U-Taylor time (s),r (cm),U-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_UTaylortime
+s,Estimated_length_scales_z16cm.csv,Waterloo Methanol U-Taylor time z=16 cm,r (cm),U-Taylor time (s),r (cm),U-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_UTaylortime
+s,Estimated_length_scales_z18cm.csv,Waterloo Methanol U-Taylor time z=18 cm,r (cm),U-Taylor time (s),r (cm),U-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_UTaylortime
+s,Estimated_length_scales_z20cm.csv,Waterloo Methanol U-Taylor time z=20 cm,r (cm),U-Taylor time (s),r (cm),U-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_UTaylortime
+s,Estimated_length_scales_z30cm.csv,Waterloo Methanol U-Taylor time z=30 cm,r (cm),U-Taylor time (s),r (cm),U-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_UTaylortime
+s,,,,,,,,,,,,,,,,
+s,Estimated_length_scales_z2cm.csv,Waterloo Methanol V-Taylor time z=2 cm,r (cm),V-Taylor time (s),r (cm),V-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_VTaylortime
+s,Estimated_length_scales_z4cm.csv,Waterloo Methanol V-Taylor time z=4 cm,r (cm),V-Taylor time (s),r (cm),V-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_VTaylortime
+s,Estimated_length_scales_z6cm.csv,Waterloo Methanol V-Taylor time z=6 cm,r (cm),V-Taylor time (s),r (cm),V-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_VTaylortime
+s,Estimated_length_scales_z8cm.csv,Waterloo Methanol V-Taylor time z=8 cm,r (cm),V-Taylor time (s),r (cm),V-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_VTaylortime
+s,Estimated_length_scales_z10cm.csv,Waterloo Methanol V-Taylor time z=10 cm,r (cm),V-Taylor time (s),r (cm),V-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_VTaylortime
+s,Estimated_length_scales_z12cm.csv,Waterloo Methanol V-Taylor time z=12 cm,r (cm),V-Taylor time (s),r (cm),V-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_VTaylortime
+s,Estimated_length_scales_z14cm.csv,Waterloo Methanol V-Taylor time z=14 cm,r (cm),V-Taylor time (s),r (cm),V-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_VTaylortime
+s,Estimated_length_scales_z16cm.csv,Waterloo Methanol V-Taylor time z=16 cm,r (cm),V-Taylor time (s),r (cm),V-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_VTaylortime
+s,Estimated_length_scales_z18cm.csv,Waterloo Methanol V-Taylor time z=18 cm,r (cm),V-Taylor time (s),r (cm),V-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_VTaylortime
+s,Estimated_length_scales_z20cm.csv,Waterloo Methanol V-Taylor time z=20 cm,r (cm),V-Taylor time (s),r (cm),V-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_VTaylortime
+s,Estimated_length_scales_z30cm.csv,Waterloo Methanol V-Taylor time z=30 cm,r (cm),V-Taylor time (s),r (cm),V-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_VTaylortime
+s,,,,,,,,,,,,,,,,
+s,Estimated_length_scales_z2cm.csv,Waterloo Methanol T-Taylor time z=2 cm,r (cm),T-Taylor time (s),r (cm),T-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_TTaylortime
+s,Estimated_length_scales_z4cm.csv,Waterloo Methanol T-Taylor time z=4 cm,r (cm),T-Taylor time (s),r (cm),T-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_TTaylortime
+s,Estimated_length_scales_z6cm.csv,Waterloo Methanol T-Taylor time z=6 cm,r (cm),T-Taylor time (s),r (cm),T-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_TTaylortime
+s,Estimated_length_scales_z8cm.csv,Waterloo Methanol T-Taylor time z=8 cm,r (cm),T-Taylor time (s),r (cm),T-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_TTaylortime
+s,Estimated_length_scales_z10cm.csv,Waterloo Methanol T-Taylor time z=10 cm,r (cm),T-Taylor time (s),r (cm),T-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_TTaylortime
+s,Estimated_length_scales_z12cm.csv,Waterloo Methanol T-Taylor time z=12 cm,r (cm),T-Taylor time (s),r (cm),T-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_TTaylortime
+s,Estimated_length_scales_z14cm.csv,Waterloo Methanol T-Taylor time z=14 cm,r (cm),T-Taylor time (s),r (cm),T-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_TTaylortime
+s,Estimated_length_scales_z16cm.csv,Waterloo Methanol T-Taylor time z=16 cm,r (cm),T-Taylor time (s),r (cm),T-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_TTaylortime
+s,Estimated_length_scales_z18cm.csv,Waterloo Methanol T-Taylor time z=18 cm,r (cm),T-Taylor time (s),r (cm),T-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_TTaylortime
+s,Estimated_length_scales_z20cm.csv,Waterloo Methanol T-Taylor time z=20 cm,r (cm),T-Taylor time (s),r (cm),T-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_TTaylortime
+s,Estimated_length_scales_z30cm.csv,Waterloo Methanol T-Taylor time z=30 cm,r (cm),T-Taylor time (s),r (cm),T-Taylor time (s),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_TTaylortime
+s,,,,,,,,,,,,,,,,
+s,Estimated_length_scales_z2cm.csv,Waterloo Methanol U-integral length z=2 cm,r (cm),U-integral length (cm),r (cm),U-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_Uintegrallength
+s,Estimated_length_scales_z4cm.csv,Waterloo Methanol U-integral length z=4 cm,r (cm),U-integral length (cm),r (cm),U-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_Uintegrallength
+s,Estimated_length_scales_z6cm.csv,Waterloo Methanol U-integral length z=6 cm,r (cm),U-integral length (cm),r (cm),U-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_Uintegrallength
+s,Estimated_length_scales_z8cm.csv,Waterloo Methanol U-integral length z=8 cm,r (cm),U-integral length (cm),r (cm),U-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_Uintegrallength
+s,Estimated_length_scales_z10cm.csv,Waterloo Methanol U-integral length z=10 cm,r (cm),U-integral length (cm),r (cm),U-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_Uintegrallength
+s,Estimated_length_scales_z12cm.csv,Waterloo Methanol U-integral length z=12 cm,r (cm),U-integral length (cm),r (cm),U-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_Uintegrallength
+s,Estimated_length_scales_z14cm.csv,Waterloo Methanol U-integral length z=14 cm,r (cm),U-integral length (cm),r (cm),U-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_Uintegrallength
+s,Estimated_length_scales_z16cm.csv,Waterloo Methanol U-integral length z=16 cm,r (cm),U-integral length (cm),r (cm),U-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_Uintegrallength
+s,Estimated_length_scales_z18cm.csv,Waterloo Methanol U-integral length z=18 cm,r (cm),U-integral length (cm),r (cm),U-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_Uintegrallength
+s,Estimated_length_scales_z20cm.csv,Waterloo Methanol U-integral length z=20 cm,r (cm),U-integral length (cm),r (cm),U-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_Uintegrallength
+s,Estimated_length_scales_z30cm.csv,Waterloo Methanol U-integral length z=30 cm,r (cm),U-integral length (cm),r (cm),U-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_Uintegrallength
+s,,,,,,,,,,,,,,,,
+s,Estimated_length_scales_z2cm.csv,Waterloo Methanol V-integral length z=2 cm,r (cm),V-integral length (cm),r (cm),V-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_Vintegrallength
+s,Estimated_length_scales_z4cm.csv,Waterloo Methanol V-integral length z=4 cm,r (cm),V-integral length (cm),r (cm),V-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_Vintegrallength
+s,Estimated_length_scales_z6cm.csv,Waterloo Methanol V-integral length z=6 cm,r (cm),V-integral length (cm),r (cm),V-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_Vintegrallength
+s,Estimated_length_scales_z8cm.csv,Waterloo Methanol V-integral length z=8 cm,r (cm),V-integral length (cm),r (cm),V-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_Vintegrallength
+s,Estimated_length_scales_z10cm.csv,Waterloo Methanol V-integral length z=10 cm,r (cm),V-integral length (cm),r (cm),V-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_Vintegrallength
+s,Estimated_length_scales_z12cm.csv,Waterloo Methanol V-integral length z=12 cm,r (cm),V-integral length (cm),r (cm),V-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_Vintegrallength
+s,Estimated_length_scales_z14cm.csv,Waterloo Methanol V-integral length z=14 cm,r (cm),V-integral length (cm),r (cm),V-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_Vintegrallength
+s,Estimated_length_scales_z16cm.csv,Waterloo Methanol V-integral length z=16 cm,r (cm),V-integral length (cm),r (cm),V-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_Vintegrallength
+s,Estimated_length_scales_z18cm.csv,Waterloo Methanol V-integral length z=18 cm,r (cm),V-integral length (cm),r (cm),V-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_Vintegrallength
+s,Estimated_length_scales_z20cm.csv,Waterloo Methanol V-integral length z=20 cm,r (cm),V-integral length (cm),r (cm),V-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_Vintegrallength
+s,Estimated_length_scales_z30cm.csv,Waterloo Methanol V-integral length z=30 cm,r (cm),V-integral length (cm),r (cm),V-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_Vintegrallength
+s,,,,,,,,,,,,,,,,
+s,Estimated_length_scales_z2cm.csv,Waterloo Methanol T-integral length z=2 cm,r (cm),T-integral length (cm),r (cm),T-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_Tintegrallength
+s,Estimated_length_scales_z4cm.csv,Waterloo Methanol T-integral length z=4 cm,r (cm),T-integral length (cm),r (cm),T-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_Tintegrallength
+s,Estimated_length_scales_z6cm.csv,Waterloo Methanol T-integral length z=6 cm,r (cm),T-integral length (cm),r (cm),T-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_Tintegrallength
+s,Estimated_length_scales_z8cm.csv,Waterloo Methanol T-integral length z=8 cm,r (cm),T-integral length (cm),r (cm),T-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_Tintegrallength
+s,Estimated_length_scales_z10cm.csv,Waterloo Methanol T-integral length z=10 cm,r (cm),T-integral length (cm),r (cm),T-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_Tintegrallength
+s,Estimated_length_scales_z12cm.csv,Waterloo Methanol T-integral length z=12 cm,r (cm),T-integral length (cm),r (cm),T-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_Tintegrallength
+s,Estimated_length_scales_z14cm.csv,Waterloo Methanol T-integral length z=14 cm,r (cm),T-integral length (cm),r (cm),T-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_Tintegrallength
+s,Estimated_length_scales_z16cm.csv,Waterloo Methanol T-integral length z=16 cm,r (cm),T-integral length (cm),r (cm),T-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_Tintegrallength
+s,Estimated_length_scales_z18cm.csv,Waterloo Methanol T-integral length z=18 cm,r (cm),T-integral length (cm),r (cm),T-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_Tintegrallength
+s,Estimated_length_scales_z20cm.csv,Waterloo Methanol T-integral length z=20 cm,r (cm),T-integral length (cm),r (cm),T-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_Tintegrallength
+s,Estimated_length_scales_z30cm.csv,Waterloo Methanol T-integral length z=30 cm,r (cm),T-integral length (cm),r (cm),T-integral length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_Tintegrallength
+s,,,,,,,,,,,,,,,,
+s,Estimated_length_scales_z2cm.csv,Waterloo Methanol U-Taylor length z=2 cm,r (cm),U-Taylor length (cm),r (cm),U-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_UTaylorlength
+s,Estimated_length_scales_z4cm.csv,Waterloo Methanol U-Taylor length z=4 cm,r (cm),U-Taylor length (cm),r (cm),U-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_UTaylorlength
+s,Estimated_length_scales_z6cm.csv,Waterloo Methanol U-Taylor length z=6 cm,r (cm),U-Taylor length (cm),r (cm),U-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_UTaylorlength
+s,Estimated_length_scales_z8cm.csv,Waterloo Methanol U-Taylor length z=8 cm,r (cm),U-Taylor length (cm),r (cm),U-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_UTaylorlength
+s,Estimated_length_scales_z10cm.csv,Waterloo Methanol U-Taylor length z=10 cm,r (cm),U-Taylor length (cm),r (cm),U-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_UTaylorlength
+s,Estimated_length_scales_z12cm.csv,Waterloo Methanol U-Taylor length z=12 cm,r (cm),U-Taylor length (cm),r (cm),U-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_UTaylorlength
+s,Estimated_length_scales_z14cm.csv,Waterloo Methanol U-Taylor length z=14 cm,r (cm),U-Taylor length (cm),r (cm),U-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_UTaylorlength
+s,Estimated_length_scales_z16cm.csv,Waterloo Methanol U-Taylor length z=16 cm,r (cm),U-Taylor length (cm),r (cm),U-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_UTaylorlength
+s,Estimated_length_scales_z18cm.csv,Waterloo Methanol U-Taylor length z=18 cm,r (cm),U-Taylor length (cm),r (cm),U-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_UTaylorlength
+s,Estimated_length_scales_z20cm.csv,Waterloo Methanol U-Taylor length z=20 cm,r (cm),U-Taylor length (cm),r (cm),U-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_UTaylorlength
+s,Estimated_length_scales_z30cm.csv,Waterloo Methanol U-Taylor length z=30 cm,r (cm),U-Taylor length (cm),r (cm),U-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_UTaylorlength
+s,,,,,,,,,,,,,,,,
+s,Estimated_length_scales_z2cm.csv,Waterloo Methanol V-Taylor length z=2 cm,r (cm),V-Taylor length (cm),r (cm),V-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_VTaylorlength
+s,Estimated_length_scales_z4cm.csv,Waterloo Methanol V-Taylor length z=4 cm,r (cm),V-Taylor length (cm),r (cm),V-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_VTaylorlength
+s,Estimated_length_scales_z6cm.csv,Waterloo Methanol V-Taylor length z=6 cm,r (cm),V-Taylor length (cm),r (cm),V-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_VTaylorlength
+s,Estimated_length_scales_z8cm.csv,Waterloo Methanol V-Taylor length z=8 cm,r (cm),V-Taylor length (cm),r (cm),V-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_VTaylorlength
+s,Estimated_length_scales_z10cm.csv,Waterloo Methanol V-Taylor length z=10 cm,r (cm),V-Taylor length (cm),r (cm),V-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_VTaylorlength
+s,Estimated_length_scales_z12cm.csv,Waterloo Methanol V-Taylor length z=12 cm,r (cm),V-Taylor length (cm),r (cm),V-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_VTaylorlength
+s,Estimated_length_scales_z14cm.csv,Waterloo Methanol V-Taylor length z=14 cm,r (cm),V-Taylor length (cm),r (cm),V-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_VTaylorlength
+s,Estimated_length_scales_z16cm.csv,Waterloo Methanol V-Taylor length z=16 cm,r (cm),V-Taylor length (cm),r (cm),V-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_VTaylorlength
+s,Estimated_length_scales_z18cm.csv,Waterloo Methanol V-Taylor length z=18 cm,r (cm),V-Taylor length (cm),r (cm),V-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_VTaylorlength
+s,Estimated_length_scales_z20cm.csv,Waterloo Methanol V-Taylor length z=20 cm,r (cm),V-Taylor length (cm),r (cm),V-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_VTaylorlength
+s,Estimated_length_scales_z30cm.csv,Waterloo Methanol V-Taylor length z=30 cm,r (cm),V-Taylor length (cm),r (cm),V-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_VTaylorlength
+s,,,,,,,,,,,,,,,,
+s,Estimated_length_scales_z2cm.csv,Waterloo Methanol T-Taylor length z=2 cm,r (cm),T-Taylor length (cm),r (cm),T-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_TTaylorlength
+s,Estimated_length_scales_z4cm.csv,Waterloo Methanol T-Taylor length z=4 cm,r (cm),T-Taylor length (cm),r (cm),T-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_TTaylorlength
+s,Estimated_length_scales_z6cm.csv,Waterloo Methanol T-Taylor length z=6 cm,r (cm),T-Taylor length (cm),r (cm),T-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_TTaylorlength
+s,Estimated_length_scales_z8cm.csv,Waterloo Methanol T-Taylor length z=8 cm,r (cm),T-Taylor length (cm),r (cm),T-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_TTaylorlength
+s,Estimated_length_scales_z10cm.csv,Waterloo Methanol T-Taylor length z=10 cm,r (cm),T-Taylor length (cm),r (cm),T-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_TTaylorlength
+s,Estimated_length_scales_z12cm.csv,Waterloo Methanol T-Taylor length z=12 cm,r (cm),T-Taylor length (cm),r (cm),T-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_TTaylorlength
+s,Estimated_length_scales_z14cm.csv,Waterloo Methanol T-Taylor length z=14 cm,r (cm),T-Taylor length (cm),r (cm),T-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_TTaylorlength
+s,Estimated_length_scales_z16cm.csv,Waterloo Methanol T-Taylor length z=16 cm,r (cm),T-Taylor length (cm),r (cm),T-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_TTaylorlength
+s,Estimated_length_scales_z18cm.csv,Waterloo Methanol T-Taylor length z=18 cm,r (cm),T-Taylor length (cm),r (cm),T-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_TTaylorlength
+s,Estimated_length_scales_z20cm.csv,Waterloo Methanol T-Taylor length z=20 cm,r (cm),T-Taylor length (cm),r (cm),T-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_TTaylorlength
+s,Estimated_length_scales_z30cm.csv,Waterloo Methanol T-Taylor length z=30 cm,r (cm),T-Taylor length (cm),r (cm),T-Taylor length (cm),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_TTaylorlength
+s,,,,,,,,,,,,,,,,
+s,Estimated_Turbulence_Intensity_z2cm.csv,Waterloo Methanol u'/ubaro z=2 cm,r (cm),u'/ubaro (ctr),r (cm),u'/ubaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_upubarctr
+s,Estimated_Turbulence_Intensity_z4cm.csv,Waterloo Methanol u'/ubaro z=4 cm,r (cm),u'/ubaro (ctr),r (cm),u'/ubaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_upubarctr
+s,Estimated_Turbulence_Intensity_z6cm.csv,Waterloo Methanol u'/ubaro z=6 cm,r (cm),u'/ubaro (ctr),r (cm),u'/ubaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_upubarctr
+s,Estimated_Turbulence_Intensity_z8cm.csv,Waterloo Methanol u'/ubaro z=8 cm,r (cm),u'/ubaro (ctr),r (cm),u'/ubaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_upubarctr
+s,Estimated_Turbulence_Intensity_z10cm.csv,Waterloo Methanol u'/ubaro z=10 cm,r (cm),u'/ubaro (ctr),r (cm),u'/ubaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_upubarctr
+s,Estimated_Turbulence_Intensity_z12cm.csv,Waterloo Methanol u'/ubaro z=12 cm,r (cm),u'/ubaro (ctr),r (cm),u'/ubaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_upubarctr
+s,Estimated_Turbulence_Intensity_z14cm.csv,Waterloo Methanol u'/ubaro z=14 cm,r (cm),u'/ubaro (ctr),r (cm),u'/ubaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_upubarctr
+s,Estimated_Turbulence_Intensity_z16cm.csv,Waterloo Methanol u'/ubaro z=16 cm,r (cm),u'/ubaro (ctr),r (cm),u'/ubaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_upubarctr
+s,Estimated_Turbulence_Intensity_z18cm.csv,Waterloo Methanol u'/ubaro z=18 cm,r (cm),u'/ubaro (ctr),r (cm),u'/ubaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_upubarctr
+s,Estimated_Turbulence_Intensity_z20cm.csv,Waterloo Methanol u'/ubaro z=20 cm,r (cm),u'/ubaro (ctr),r (cm),u'/ubaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_upubarctr
+s,Estimated_Turbulence_Intensity_z30cm.csv,Waterloo Methanol u'/ubaro z=30 cm,r (cm),u'/ubaro (ctr),r (cm),u'/ubaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_upubarctr
+s,,,,,,,,,,,,,,,,
+s,Estimated_Turbulence_Intensity_z2cm.csv,Waterloo Methanol u'/ubarl z=2 cm,r (cm),u'/ubarl (local),r (cm),u'/ubarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_upubarlocal
+s,Estimated_Turbulence_Intensity_z4cm.csv,Waterloo Methanol u'/ubarl z=4 cm,r (cm),u'/ubarl (local),r (cm),u'/ubarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_upubarlocal
+s,Estimated_Turbulence_Intensity_z6cm.csv,Waterloo Methanol u'/ubarl z=6 cm,r (cm),u'/ubarl (local),r (cm),u'/ubarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_upubarlocal
+s,Estimated_Turbulence_Intensity_z8cm.csv,Waterloo Methanol u'/ubarl z=8 cm,r (cm),u'/ubarl (local),r (cm),u'/ubarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_upubarlocal
+s,Estimated_Turbulence_Intensity_z10cm.csv,Waterloo Methanol u'/ubarl z=10 cm,r (cm),u'/ubarl (local),r (cm),u'/ubarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_upubarlocal
+s,Estimated_Turbulence_Intensity_z12cm.csv,Waterloo Methanol u'/ubarl z=12 cm,r (cm),u'/ubarl (local),r (cm),u'/ubarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_upubarlocal
+s,Estimated_Turbulence_Intensity_z14cm.csv,Waterloo Methanol u'/ubarl z=14 cm,r (cm),u'/ubarl (local),r (cm),u'/ubarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_upubarlocal
+s,Estimated_Turbulence_Intensity_z16cm.csv,Waterloo Methanol u'/ubarl z=16 cm,r (cm),u'/ubarl (local),r (cm),u'/ubarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_upubarlocal
+s,Estimated_Turbulence_Intensity_z18cm.csv,Waterloo Methanol u'/ubarl z=18 cm,r (cm),u'/ubarl (local),r (cm),u'/ubarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_upubarlocal
+s,Estimated_Turbulence_Intensity_z20cm.csv,Waterloo Methanol u'/ubarl z=20 cm,r (cm),u'/ubarl (local),r (cm),u'/ubarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_upubarlocal
+s,Estimated_Turbulence_Intensity_z30cm.csv,Waterloo Methanol u'/ubarl z=30 cm,r (cm),u'/ubarl (local),r (cm),u'/ubarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_upubarlocal
+s,,,,,,,,,,,,,,,,
+s,Estimated_Turbulence_Intensity_z2cm.csv,Waterloo Methanol v'/vbaro z=2 cm,r (cm),v'/vbaro (ctr),r (cm),v'/vbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_vpvbarctr
+s,Estimated_Turbulence_Intensity_z4cm.csv,Waterloo Methanol v'/vbaro z=4 cm,r (cm),v'/vbaro (ctr),r (cm),v'/vbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_vpvbarctr
+s,Estimated_Turbulence_Intensity_z6cm.csv,Waterloo Methanol v'/vbaro z=6 cm,r (cm),v'/vbaro (ctr),r (cm),v'/vbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_vpvbarctr
+s,Estimated_Turbulence_Intensity_z8cm.csv,Waterloo Methanol v'/vbaro z=8 cm,r (cm),v'/vbaro (ctr),r (cm),v'/vbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_vpvbarctr
+s,Estimated_Turbulence_Intensity_z10cm.csv,Waterloo Methanol v'/vbaro z=10 cm,r (cm),v'/vbaro (ctr),r (cm),v'/vbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_vpvbarctr
+s,Estimated_Turbulence_Intensity_z12cm.csv,Waterloo Methanol v'/vbaro z=12 cm,r (cm),v'/vbaro (ctr),r (cm),v'/vbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_vpvbarctr
+s,Estimated_Turbulence_Intensity_z14cm.csv,Waterloo Methanol v'/vbaro z=14 cm,r (cm),v'/vbaro (ctr),r (cm),v'/vbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_vpvbarctr
+s,Estimated_Turbulence_Intensity_z16cm.csv,Waterloo Methanol v'/vbaro z=16 cm,r (cm),v'/vbaro (ctr),r (cm),v'/vbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_vpvbarctr
+s,Estimated_Turbulence_Intensity_z18cm.csv,Waterloo Methanol v'/vbaro z=18 cm,r (cm),v'/vbaro (ctr),r (cm),v'/vbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_vpvbarctr
+s,Estimated_Turbulence_Intensity_z20cm.csv,Waterloo Methanol v'/vbaro z=20 cm,r (cm),v'/vbaro (ctr),r (cm),v'/vbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_vpvbarctr
+s,Estimated_Turbulence_Intensity_z30cm.csv,Waterloo Methanol v'/vbaro z=30 cm,r (cm),v'/vbaro (ctr),r (cm),v'/vbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_vpvbarctr
+s,,,,,,,,,,,,,,,,
+s,Estimated_Turbulence_Intensity_z2cm.csv,Waterloo Methanol v'/vbarl z=2 cm,r (cm),v'/vbarl (local),r (cm),v'/vbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_vpvbarlocal
+s,Estimated_Turbulence_Intensity_z4cm.csv,Waterloo Methanol v'/vbarl z=4 cm,r (cm),v'/vbarl (local),r (cm),v'/vbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_vpvbarlocal
+s,Estimated_Turbulence_Intensity_z6cm.csv,Waterloo Methanol v'/vbarl z=6 cm,r (cm),v'/vbarl (local),r (cm),v'/vbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_vpvbarlocal
+s,Estimated_Turbulence_Intensity_z8cm.csv,Waterloo Methanol v'/vbarl z=8 cm,r (cm),v'/vbarl (local),r (cm),v'/vbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_vpvbarlocal
+s,Estimated_Turbulence_Intensity_z10cm.csv,Waterloo Methanol v'/vbarl z=10 cm,r (cm),v'/vbarl (local),r (cm),v'/vbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_vpvbarlocal
+s,Estimated_Turbulence_Intensity_z12cm.csv,Waterloo Methanol v'/vbarl z=12 cm,r (cm),v'/vbarl (local),r (cm),v'/vbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_vpvbarlocal
+s,Estimated_Turbulence_Intensity_z14cm.csv,Waterloo Methanol v'/vbarl z=14 cm,r (cm),v'/vbarl (local),r (cm),v'/vbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_vpvbarlocal
+s,Estimated_Turbulence_Intensity_z16cm.csv,Waterloo Methanol v'/vbarl z=16 cm,r (cm),v'/vbarl (local),r (cm),v'/vbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_vpvbarlocal
+s,Estimated_Turbulence_Intensity_z18cm.csv,Waterloo Methanol v'/vbarl z=18 cm,r (cm),v'/vbarl (local),r (cm),v'/vbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_vpvbarlocal
+s,Estimated_Turbulence_Intensity_z20cm.csv,Waterloo Methanol v'/vbarl z=20 cm,r (cm),v'/vbarl (local),r (cm),v'/vbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_vpvbarlocal
+s,Estimated_Turbulence_Intensity_z30cm.csv,Waterloo Methanol v'/vbarl z=30 cm,r (cm),v'/vbarl (local),r (cm),v'/vbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_vpvbarlocal
+s,,,,,,,,,,,,,,,,
+s,Estimated_Turbulence_Intensity_z2cm.csv,Waterloo Methanol T'/Tbaro z=2 cm,r (cm),T'/Tbaro (ctr),r (cm),T'/Tbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_TpTbarctr
+s,Estimated_Turbulence_Intensity_z4cm.csv,Waterloo Methanol T'/Tbaro z=4 cm,r (cm),T'/Tbaro (ctr),r (cm),T'/Tbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_TpTbarctr
+s,Estimated_Turbulence_Intensity_z6cm.csv,Waterloo Methanol T'/Tbaro z=6 cm,r (cm),T'/Tbaro (ctr),r (cm),T'/Tbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_TpTbarctr
+s,Estimated_Turbulence_Intensity_z8cm.csv,Waterloo Methanol T'/Tbaro z=8 cm,r (cm),T'/Tbaro (ctr),r (cm),T'/Tbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_TpTbarctr
+s,Estimated_Turbulence_Intensity_z10cm.csv,Waterloo Methanol T'/Tbaro z=10 cm,r (cm),T'/Tbaro (ctr),r (cm),T'/Tbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_TpTbarctr
+s,Estimated_Turbulence_Intensity_z12cm.csv,Waterloo Methanol T'/Tbaro z=12 cm,r (cm),T'/Tbaro (ctr),r (cm),T'/Tbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_TpTbarctr
+s,Estimated_Turbulence_Intensity_z14cm.csv,Waterloo Methanol T'/Tbaro z=14 cm,r (cm),T'/Tbaro (ctr),r (cm),T'/Tbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_TpTbarctr
+s,Estimated_Turbulence_Intensity_z16cm.csv,Waterloo Methanol T'/Tbaro z=16 cm,r (cm),T'/Tbaro (ctr),r (cm),T'/Tbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_TpTbarctr
+s,Estimated_Turbulence_Intensity_z18cm.csv,Waterloo Methanol T'/Tbaro z=18 cm,r (cm),T'/Tbaro (ctr),r (cm),T'/Tbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_TpTbarctr
+s,Estimated_Turbulence_Intensity_z20cm.csv,Waterloo Methanol T'/Tbaro z=20 cm,r (cm),T'/Tbaro (ctr),r (cm),T'/Tbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_TpTbarctr
+s,Estimated_Turbulence_Intensity_z30cm.csv,Waterloo Methanol T'/Tbaro z=30 cm,r (cm),T'/Tbaro (ctr),r (cm),T'/Tbaro (ctr),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_TpTbarctr
+s,,,,,,,,,,,,,,,,
+s,Estimated_Turbulence_Intensity_z2cm.csv,Waterloo Methanol T'/Tbarl z=2 cm,r (cm),T'/Tbarl (local),r (cm),T'/Tbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z2cm_TpTbarlocal
+s,Estimated_Turbulence_Intensity_z4cm.csv,Waterloo Methanol T'/Tbarl z=4 cm,r (cm),T'/Tbarl (local),r (cm),T'/Tbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z4cm_TpTbarlocal
+s,Estimated_Turbulence_Intensity_z6cm.csv,Waterloo Methanol T'/Tbarl z=6 cm,r (cm),T'/Tbarl (local),r (cm),T'/Tbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z6cm_TpTbarlocal
+s,Estimated_Turbulence_Intensity_z8cm.csv,Waterloo Methanol T'/Tbarl z=8 cm,r (cm),T'/Tbarl (local),r (cm),T'/Tbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z8cm_TpTbarlocal
+s,Estimated_Turbulence_Intensity_z10cm.csv,Waterloo Methanol T'/Tbarl z=10 cm,r (cm),T'/Tbarl (local),r (cm),T'/Tbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z10cm_TpTbarlocal
+s,Estimated_Turbulence_Intensity_z12cm.csv,Waterloo Methanol T'/Tbarl z=12 cm,r (cm),T'/Tbarl (local),r (cm),T'/Tbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z12cm_TpTbarlocal
+s,Estimated_Turbulence_Intensity_z14cm.csv,Waterloo Methanol T'/Tbarl z=14 cm,r (cm),T'/Tbarl (local),r (cm),T'/Tbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z14cm_TpTbarlocal
+s,Estimated_Turbulence_Intensity_z16cm.csv,Waterloo Methanol T'/Tbarl z=16 cm,r (cm),T'/Tbarl (local),r (cm),T'/Tbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z16cm_TpTbarlocal
+s,Estimated_Turbulence_Intensity_z18cm.csv,Waterloo Methanol T'/Tbarl z=18 cm,r (cm),T'/Tbarl (local),r (cm),T'/Tbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z18cm_TpTbarlocal
+s,Estimated_Turbulence_Intensity_z20cm.csv,Waterloo Methanol T'/Tbarl z=20 cm,r (cm),T'/Tbarl (local),r (cm),T'/Tbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z20cm_TpTbarlocal
+s,Estimated_Turbulence_Intensity_z30cm.csv,Waterloo Methanol T'/Tbarl z=30 cm,r (cm),T'/Tbarl (local),r (cm),T'/Tbarl (local),-5,20,5,float,float,float,Exp,NorthEast,ko,Waterloo_Methanol_z30cm_TpTbarlocal
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-##UMD Line Burner Experimental Data
+## UMD Line Burner Experimental Data
 
 Within this directory you will find a set of .csv files which have been extracted from the Matlab `Data.mat` workbook (from James White's PhD thesis [White, 2016]).  The script to process this data is in `../Scripts/extract_data.m`.
 
@@ -12,7 +12,7 @@ C3H8_A contains the same for the propane, anchored condition.
 
 The variables contained within each structure include:
 
-#####O2_Data
+##### O2_Data
 
 | header  | units      | description |
 | ------- | ---------- | ----------- |
@@ -23,7 +23,7 @@ The variables contained within each structure include:
 | S_x     | [m]        | Uncertainty for position data |
 | S_XO2   | [mol frac] | Uncertainty for XO2 data |
 
-#####TC_Data
+##### TC_Data
 
 | header | units | description |
 | ------ | ----- | ----------- |
@@ -34,7 +34,7 @@ The variables contained within each structure include:
 | S_x    | [m]   | Uncertainty for position data |
 | S_TC   | [C]   | Uncertainty for TC temperature data |
 
-#####CH4_A and C3H8_A
+##### CH4_A and C3H8_A
 
 | header   | units      | description |
 | -------- | ---------- | ----------- |
@@ -48,6 +48,6 @@ The variables contained within each structure include:
 | Lf       | [m]        | Flame height |
 | S_'data' | [varies]   | Uncertainty for 'data' in same units as 'data' |
   
-####References
+#### References
 
 [White, 2016] J. P. White, PhD Thesis, The University of Maryland, College Park, Maryland, 2016.

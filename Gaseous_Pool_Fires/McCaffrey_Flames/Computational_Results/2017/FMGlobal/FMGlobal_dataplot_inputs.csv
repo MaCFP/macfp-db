@@ -1,0 +1,11 @@
+Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style,Key_Label
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),FMGlobal_McCaffrey_14kW.csv,Z/Q^0.4,dT (C),m-,FMGlobal 14 kW
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),FMGlobal_McCaffrey_22kW.csv,Z/Q^0.4,dT (C),m-,FMGlobal 22 kW
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),FMGlobal_McCaffrey_33kW.csv,Z/Q^0.4,dT (C),m-,FMGlobal 33 kW
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),FMGlobal_McCaffrey_45kW.csv,Z/Q^0.4,dT (C),m-,FMGlobal 45 kW
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),FMGlobal_McCaffrey_57kW.csv,Z/Q^0.4,dT (C),m-,FMGlobal 57 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,FMGlobal_McCaffrey_14kW.csv,Z/Q^0.4,V/Q^0.2,m-,FMGlobal 14 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,FMGlobal_McCaffrey_22kW.csv,Z/Q^0.4,V/Q^0.2,m-,FMGlobal 22 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,FMGlobal_McCaffrey_33kW.csv,Z/Q^0.4,V/Q^0.2,m-,FMGlobal 33 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,FMGlobal_McCaffrey_45kW.csv,Z/Q^0.4,V/Q^0.2,m-,FMGlobal 45 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,FMGlobal_McCaffrey_57kW.csv,Z/Q^0.4,V/Q^0.2,m-,FMGlobal 57 kW
