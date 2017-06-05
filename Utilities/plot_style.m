@@ -36,7 +36,7 @@ Label_Font_Size = 20;
 Marker_Size = 12;
 
 % Line properties
-Line_Width      = 2; % get(gca,'linewidth')
+Line_Width      = 3; % get(gca,'linewidth')
 
 % Plot properties
 Plot_Units      = 'normalized'; %get(gca,'units')
