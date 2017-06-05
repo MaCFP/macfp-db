@@ -29,14 +29,14 @@
 % Font properties
 Font_Name = 'Helvetica'; %get(gca,'fontname')
 Font_Interpreter = 'TeX';
-Font_Size       = 16;
-Key_Font_Size   = 16;
+Font_Size       = 20;
+Key_Font_Size   = 20;
 Title_Font_Size = 20;
 Label_Font_Size = 20;
-Marker_Size = 10;
+Marker_Size = 12;
 
 % Line properties
-Line_Width      = 1; % get(gca,'linewidth')
+Line_Width      = 3; % get(gca,'linewidth')
 
 % Plot properties
 Plot_Units      = 'normalized'; %get(gca,'units')
