@@ -1,0 +1,188 @@
+Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style
+Estimated_correlations_z2cm.csv,r (cm),u'T' (m/s)K,UMD_data.csv,r (cm),u'T' 2 (m/s)K,-
+Estimated_correlations_z4cm.csv,r (cm),u'T' (m/s)K,UMD_data.csv,r (cm),u'T' 4 (m/s)K,-
+Estimated_correlations_z6cm.csv,r (cm),u'T' (m/s)K,UMD_data.csv,r (cm),u'T' 6 (m/s)K,-
+Estimated_correlations_z8cm.csv,r (cm),u'T' (m/s)K,UMD_data.csv,r (cm),u'T' 8 (m/s)K,-
+Estimated_correlations_z10cm.csv,r (cm),u'T' (m/s)K,UMD_data.csv,r (cm),u'T' 10 (m/s)K,-
+Estimated_correlations_z12cm.csv,r (cm),u'T' (m/s)K,UMD_data.csv,r (cm),u'T' 12 (m/s)K,-
+Estimated_correlations_z14cm.csv,r (cm),u'T' (m/s)K,UMD_data.csv,r (cm),u'T' 14 (m/s)K,-
+Estimated_correlations_z16cm.csv,r (cm),u'T' (m/s)K,UMD_data.csv,r (cm),u'T' 16 (m/s)K,-
+Estimated_correlations_z18cm.csv,r (cm),u'T' (m/s)K,UMD_data.csv,r (cm),u'T' 18 (m/s)K,-
+Estimated_correlations_z20cm.csv,r (cm),u'T' (m/s)K,UMD_data.csv,r (cm),u'T' 20 (m/s)K,-
+Estimated_correlations_z30cm.csv,r (cm),u'T' (m/s)K,UMD_data.csv,r (cm),u'T' 30 (m/s)K,-
+Estimated_correlations_z2cm.csv,r (cm),v'T' (m/s)K,UMD_data.csv,r (cm),v'T' 2 (m/s)K,-
+Estimated_correlations_z4cm.csv,r (cm),v'T' (m/s)K,UMD_data.csv,r (cm),v'T' 4 (m/s)K,-
+Estimated_correlations_z6cm.csv,r (cm),v'T' (m/s)K,UMD_data.csv,r (cm),v'T' 6 (m/s)K,-
+Estimated_correlations_z8cm.csv,r (cm),v'T' (m/s)K,UMD_data.csv,r (cm),v'T' 8 (m/s)K,-
+Estimated_correlations_z10cm.csv,r (cm),v'T' (m/s)K,UMD_data.csv,r (cm),v'T' 10 (m/s)K,-
+Estimated_correlations_z12cm.csv,r (cm),v'T' (m/s)K,UMD_data.csv,r (cm),v'T' 12 (m/s)K,-
+Estimated_correlations_z14cm.csv,r (cm),v'T' (m/s)K,UMD_data.csv,r (cm),v'T' 14 (m/s)K,-
+Estimated_correlations_z16cm.csv,r (cm),v'T' (m/s)K,UMD_data.csv,r (cm),v'T' 16 (m/s)K,-
+Estimated_correlations_z18cm.csv,r (cm),v'T' (m/s)K,UMD_data.csv,r (cm),v'T' 18 (m/s)K,-
+Estimated_correlations_z20cm.csv,r (cm),v'T' (m/s)K,UMD_data.csv,r (cm),v'T' 20 (m/s)K,-
+Estimated_correlations_z30cm.csv,r (cm),v'T' (m/s)K,UMD_data.csv,r (cm),v'T' 30 (m/s)K,-
+Estimated_correlations_z2cm.csv,r (cm),u'v' (m/s)^2,UMD_data.csv,r (cm),u'v' 2 (m/s)^2,-
+Estimated_correlations_z4cm.csv,r (cm),u'v' (m/s)^2,UMD_data.csv,r (cm),u'v' 4 (m/s)^2,-
+Estimated_correlations_z6cm.csv,r (cm),u'v' (m/s)^2,UMD_data.csv,r (cm),u'v' 6 (m/s)^2,-
+Estimated_correlations_z8cm.csv,r (cm),u'v' (m/s)^2,UMD_data.csv,r (cm),u'v' 8 (m/s)^2,-
+Estimated_correlations_z10cm.csv,r (cm),u'v' (m/s)^2,UMD_data.csv,r (cm),u'v' 10 (m/s)^2,-
+Estimated_correlations_z12cm.csv,r (cm),u'v' (m/s)^2,UMD_data.csv,r (cm),u'v' 12 (m/s)^2,-
+Estimated_correlations_z14cm.csv,r (cm),u'v' (m/s)^2,UMD_data.csv,r (cm),u'v' 14 (m/s)^2,-
+Estimated_correlations_z16cm.csv,r (cm),u'v' (m/s)^2,UMD_data.csv,r (cm),u'v' 16 (m/s)^2,-
+Estimated_correlations_z18cm.csv,r (cm),u'v' (m/s)^2,UMD_data.csv,r (cm),u'v' 18 (m/s)^2,-
+Estimated_correlations_z20cm.csv,r (cm),u'v' (m/s)^2,UMD_data.csv,r (cm),u'v' 20 (m/s)^2,-
+Estimated_correlations_z30cm.csv,r (cm),u'v' (m/s)^2,UMD_data.csv,r (cm),u'v' 30 (m/s)^2,-
+Estimated_Turbulence_Intensity_z2cm.csv,r (cm),T'/Tbarl (local),UMD_data.csv,r (cm),T'/Tbarl 2 (local),-
+Estimated_Turbulence_Intensity_z4cm.csv,r (cm),T'/Tbarl (local),UMD_data.csv,r (cm),T'/Tbarl 4 (local),-
+Estimated_Turbulence_Intensity_z6cm.csv,r (cm),T'/Tbarl (local),UMD_data.csv,r (cm),T'/Tbarl 6 (local),-
+Estimated_Turbulence_Intensity_z8cm.csv,r (cm),T'/Tbarl (local),UMD_data.csv,r (cm),T'/Tbarl 8 (local),-
+Estimated_Turbulence_Intensity_z10cm.csv,r (cm),T'/Tbarl (local),UMD_data.csv,r (cm),T'/Tbarl 10 (local),-
+Estimated_Turbulence_Intensity_z12cm.csv,r (cm),T'/Tbarl (local),UMD_data.csv,r (cm),T'/Tbarl 12 (local),-
+Estimated_Turbulence_Intensity_z14cm.csv,r (cm),T'/Tbarl (local),UMD_data.csv,r (cm),T'/Tbarl 14 (local),-
+Estimated_Turbulence_Intensity_z16cm.csv,r (cm),T'/Tbarl (local),UMD_data.csv,r (cm),T'/Tbarl 16 (local),-
+Estimated_Turbulence_Intensity_z18cm.csv,r (cm),T'/Tbarl (local),UMD_data.csv,r (cm),T'/Tbarl 18 (local),-
+Estimated_Turbulence_Intensity_z20cm.csv,r (cm),T'/Tbarl (local),UMD_data.csv,r (cm),T'/Tbarl 20 (local),-
+Estimated_Turbulence_Intensity_z30cm.csv,r (cm),T'/Tbarl (local),UMD_data.csv,r (cm),T'/Tbarl 30 (local),-
+Estimated_Turbulence_Intensity_z2cm.csv,r (cm),T'/Tbaro (ctr),UMD_data.csv,r (cm),T'/Tbaro 2 (ctr),-
+Estimated_Turbulence_Intensity_z4cm.csv,r (cm),T'/Tbaro (ctr),UMD_data.csv,r (cm),T'/Tbaro 4 (ctr),-
+Estimated_Turbulence_Intensity_z6cm.csv,r (cm),T'/Tbaro (ctr),UMD_data.csv,r (cm),T'/Tbaro 6 (ctr),-
+Estimated_Turbulence_Intensity_z8cm.csv,r (cm),T'/Tbaro (ctr),UMD_data.csv,r (cm),T'/Tbaro 8 (ctr),-
+Estimated_Turbulence_Intensity_z10cm.csv,r (cm),T'/Tbaro (ctr),UMD_data.csv,r (cm),T'/Tbaro 10 (ctr),-
+Estimated_Turbulence_Intensity_z12cm.csv,r (cm),T'/Tbaro (ctr),UMD_data.csv,r (cm),T'/Tbaro 12 (ctr),-
+Estimated_Turbulence_Intensity_z14cm.csv,r (cm),T'/Tbaro (ctr),UMD_data.csv,r (cm),T'/Tbaro 14 (ctr),-
+Estimated_Turbulence_Intensity_z16cm.csv,r (cm),T'/Tbaro (ctr),UMD_data.csv,r (cm),T'/Tbaro 16 (ctr),-
+Estimated_Turbulence_Intensity_z18cm.csv,r (cm),T'/Tbaro (ctr),UMD_data.csv,r (cm),T'/Tbaro 18 (ctr),-
+Estimated_Turbulence_Intensity_z20cm.csv,r (cm),T'/Tbaro (ctr),UMD_data.csv,r (cm),T'/Tbaro 20 (ctr),-
+Estimated_Turbulence_Intensity_z30cm.csv,r (cm),T'/Tbaro (ctr),UMD_data.csv,r (cm),T'/Tbaro 30 (ctr),-
+Estimated_Turbulence_Intensity_z2cm.csv,r (cm),u'/ubarl (local),UMD_data.csv,r (cm),u'/ubarl 2 (local),-
+Estimated_Turbulence_Intensity_z4cm.csv,r (cm),u'/ubarl (local),UMD_data.csv,r (cm),u'/ubarl 4 (local),-
+Estimated_Turbulence_Intensity_z6cm.csv,r (cm),u'/ubarl (local),UMD_data.csv,r (cm),u'/ubarl 6 (local),-
+Estimated_Turbulence_Intensity_z8cm.csv,r (cm),u'/ubarl (local),UMD_data.csv,r (cm),u'/ubarl 8 (local),-
+Estimated_Turbulence_Intensity_z10cm.csv,r (cm),u'/ubarl (local),UMD_data.csv,r (cm),u'/ubarl 10 (local),-
+Estimated_Turbulence_Intensity_z12cm.csv,r (cm),u'/ubarl (local),UMD_data.csv,r (cm),u'/ubarl 12 (local),-
+Estimated_Turbulence_Intensity_z14cm.csv,r (cm),u'/ubarl (local),UMD_data.csv,r (cm),u'/ubarl 14 (local),-
+Estimated_Turbulence_Intensity_z16cm.csv,r (cm),u'/ubarl (local),UMD_data.csv,r (cm),u'/ubarl 16 (local),-
+Estimated_Turbulence_Intensity_z18cm.csv,r (cm),u'/ubarl (local),UMD_data.csv,r (cm),u'/ubarl 18 (local),-
+Estimated_Turbulence_Intensity_z20cm.csv,r (cm),u'/ubarl (local),UMD_data.csv,r (cm),u'/ubarl 20 (local),-
+Estimated_Turbulence_Intensity_z30cm.csv,r (cm),u'/ubarl (local),UMD_data.csv,r (cm),u'/ubarl 30 (local),-
+Estimated_Turbulence_Intensity_z2cm.csv,r (cm),u'/ubaro (ctr),UMD_data.csv,r (cm),u'/ubaro 2 (ctr),-
+Estimated_Turbulence_Intensity_z4cm.csv,r (cm),u'/ubaro (ctr),UMD_data.csv,r (cm),u'/ubaro 4 (ctr),-
+Estimated_Turbulence_Intensity_z6cm.csv,r (cm),u'/ubaro (ctr),UMD_data.csv,r (cm),u'/ubaro 6 (ctr),-
+Estimated_Turbulence_Intensity_z8cm.csv,r (cm),u'/ubaro (ctr),UMD_data.csv,r (cm),u'/ubaro 8 (ctr),-
+Estimated_Turbulence_Intensity_z10cm.csv,r (cm),u'/ubaro (ctr),UMD_data.csv,r (cm),u'/ubaro 10 (ctr),-
+Estimated_Turbulence_Intensity_z12cm.csv,r (cm),u'/ubaro (ctr),UMD_data.csv,r (cm),u'/ubaro 12 (ctr),-
+Estimated_Turbulence_Intensity_z14cm.csv,r (cm),u'/ubaro (ctr),UMD_data.csv,r (cm),u'/ubaro 14 (ctr),-
+Estimated_Turbulence_Intensity_z16cm.csv,r (cm),u'/ubaro (ctr),UMD_data.csv,r (cm),u'/ubaro 16 (ctr),-
+Estimated_Turbulence_Intensity_z18cm.csv,r (cm),u'/ubaro (ctr),UMD_data.csv,r (cm),u'/ubaro 18 (ctr),-
+Estimated_Turbulence_Intensity_z20cm.csv,r (cm),u'/ubaro (ctr),UMD_data.csv,r (cm),u'/ubaro 20 (ctr),-
+Estimated_Turbulence_Intensity_z30cm.csv,r (cm),u'/ubaro (ctr),UMD_data.csv,r (cm),u'/ubaro 30 (ctr),-
+Estimated_Turbulence_Intensity_z2cm.csv,r (cm),v'/vbarl (local),UMD_data.csv,r (cm),v'/vbarl 2 (local),-
+Estimated_Turbulence_Intensity_z4cm.csv,r (cm),v'/vbarl (local),UMD_data.csv,r (cm),v'/vbarl 4 (local),-
+Estimated_Turbulence_Intensity_z6cm.csv,r (cm),v'/vbarl (local),UMD_data.csv,r (cm),v'/vbarl 6 (local),-
+Estimated_Turbulence_Intensity_z8cm.csv,r (cm),v'/vbarl (local),UMD_data.csv,r (cm),v'/vbarl 8 (local),-
+Estimated_Turbulence_Intensity_z10cm.csv,r (cm),v'/vbarl (local),UMD_data.csv,r (cm),v'/vbarl 10 (local),-
+Estimated_Turbulence_Intensity_z12cm.csv,r (cm),v'/vbarl (local),UMD_data.csv,r (cm),v'/vbarl 12 (local),-
+Estimated_Turbulence_Intensity_z14cm.csv,r (cm),v'/vbarl (local),UMD_data.csv,r (cm),v'/vbarl 14 (local),-
+Estimated_Turbulence_Intensity_z16cm.csv,r (cm),v'/vbarl (local),UMD_data.csv,r (cm),v'/vbarl 16 (local),-
+Estimated_Turbulence_Intensity_z18cm.csv,r (cm),v'/vbarl (local),UMD_data.csv,r (cm),v'/vbarl 18 (local),-
+Estimated_Turbulence_Intensity_z20cm.csv,r (cm),v'/vbarl (local),UMD_data.csv,r (cm),v'/vbarl 20 (local),-
+Estimated_Turbulence_Intensity_z30cm.csv,r (cm),v'/vbarl (local),UMD_data.csv,r (cm),v'/vbarl 30 (local),-
+Mean_and_rms_values_z2cm.csv,r (cm),u-bar (m/s),UMD_data.csv,r (cm),u-bar 2 (m/s),-
+Mean_and_rms_values_z4cm.csv,r (cm),u-bar (m/s),UMD_data.csv,r (cm),u-bar 4 (m/s),-
+Mean_and_rms_values_z6cm.csv,r (cm),u-bar (m/s),UMD_data.csv,r (cm),u-bar 6 (m/s),-
+Mean_and_rms_values_z8cm.csv,r (cm),u-bar (m/s),UMD_data.csv,r (cm),u-bar 8 (m/s),-
+Mean_and_rms_values_z10cm.csv,r (cm),u-bar (m/s),UMD_data.csv,r (cm),u-bar 10 (m/s),-
+Mean_and_rms_values_z12cm.csv,r (cm),u-bar (m/s),UMD_data.csv,r (cm),u-bar 12 (m/s),-
+Mean_and_rms_values_z14cm.csv,r (cm),u-bar (m/s),UMD_data.csv,r (cm),u-bar 14 (m/s),-
+Mean_and_rms_values_z16cm.csv,r (cm),u-bar (m/s),UMD_data.csv,r (cm),u-bar 16 (m/s),-
+Mean_and_rms_values_z18cm.csv,r (cm),u-bar (m/s),UMD_data.csv,r (cm),u-bar 18 (m/s),-
+Mean_and_rms_values_z20cm.csv,r (cm),u-bar (m/s),UMD_data.csv,r (cm),u-bar 20 (m/s),-
+Mean_and_rms_values_z30cm.csv,r (cm),u-bar (m/s),UMD_data.csv,r (cm),u-bar 30 (m/s),-
+Mean_and_rms_values_z2cm.csv,r (cm),u-rms (m/s),UMD_data.csv,r (cm),u-rms 2 (m/s),-
+Mean_and_rms_values_z4cm.csv,r (cm),u-rms (m/s),UMD_data.csv,r (cm),u-rms 4 (m/s),-
+Mean_and_rms_values_z6cm.csv,r (cm),u-rms (m/s),UMD_data.csv,r (cm),u-rms 6 (m/s),-
+Mean_and_rms_values_z8cm.csv,r (cm),u-rms (m/s),UMD_data.csv,r (cm),u-rms 8 (m/s),-
+Mean_and_rms_values_z10cm.csv,r (cm),u-rms (m/s),UMD_data.csv,r (cm),u-rms 10 (m/s),-
+Mean_and_rms_values_z12cm.csv,r (cm),u-rms (m/s),UMD_data.csv,r (cm),u-rms 12 (m/s),-
+Mean_and_rms_values_z14cm.csv,r (cm),u-rms (m/s),UMD_data.csv,r (cm),u-rms 14 (m/s),-
+Mean_and_rms_values_z16cm.csv,r (cm),u-rms (m/s),UMD_data.csv,r (cm),u-rms 16 (m/s),-
+Mean_and_rms_values_z18cm.csv,r (cm),u-rms (m/s),UMD_data.csv,r (cm),u-rms 18 (m/s),-
+Mean_and_rms_values_z20cm.csv,r (cm),u-rms (m/s),UMD_data.csv,r (cm),u-rms 20 (m/s),-
+Mean_and_rms_values_z30cm.csv,r (cm),u-rms (m/s),UMD_data.csv,r (cm),u-rms 30 (m/s),-
+Mean_and_rms_values_z2cm.csv,r (cm),v-bar (m/s),UMD_data.csv,r (cm),v-bar 2 (m/s),-
+Mean_and_rms_values_z4cm.csv,r (cm),v-bar (m/s),UMD_data.csv,r (cm),v-bar 4 (m/s),-
+Mean_and_rms_values_z6cm.csv,r (cm),v-bar (m/s),UMD_data.csv,r (cm),v-bar 6 (m/s),-
+Mean_and_rms_values_z8cm.csv,r (cm),v-bar (m/s),UMD_data.csv,r (cm),v-bar 8 (m/s),-
+Mean_and_rms_values_z10cm.csv,r (cm),v-bar (m/s),UMD_data.csv,r (cm),v-bar 10 (m/s),-
+Mean_and_rms_values_z12cm.csv,r (cm),v-bar (m/s),UMD_data.csv,r (cm),v-bar 12 (m/s),-
+Mean_and_rms_values_z14cm.csv,r (cm),v-bar (m/s),UMD_data.csv,r (cm),v-bar 14 (m/s),-
+Mean_and_rms_values_z16cm.csv,r (cm),v-bar (m/s),UMD_data.csv,r (cm),v-bar 16 (m/s),-
+Mean_and_rms_values_z18cm.csv,r (cm),v-bar (m/s),UMD_data.csv,r (cm),v-bar 18 (m/s),-
+Mean_and_rms_values_z20cm.csv,r (cm),v-bar (m/s),UMD_data.csv,r (cm),v-bar 20 (m/s),-
+Mean_and_rms_values_z30cm.csv,r (cm),v-bar (m/s),UMD_data.csv,r (cm),v-bar 30 (m/s),-
+Mean_and_rms_values_z2cm.csv,r (cm),v-rms (m/s),UMD_data.csv,r (cm),v-rms 2 (m/s),-
+Mean_and_rms_values_z4cm.csv,r (cm),v-rms (m/s),UMD_data.csv,r (cm),v-rms 4 (m/s),-
+Mean_and_rms_values_z6cm.csv,r (cm),v-rms (m/s),UMD_data.csv,r (cm),v-rms 6 (m/s),-
+Mean_and_rms_values_z8cm.csv,r (cm),v-rms (m/s),UMD_data.csv,r (cm),v-rms 8 (m/s),-
+Mean_and_rms_values_z10cm.csv,r (cm),v-rms (m/s),UMD_data.csv,r (cm),v-rms 10 (m/s),-
+Mean_and_rms_values_z12cm.csv,r (cm),v-rms (m/s),UMD_data.csv,r (cm),v-rms 12 (m/s),-
+Mean_and_rms_values_z14cm.csv,r (cm),v-rms (m/s),UMD_data.csv,r (cm),v-rms 14 (m/s),-
+Mean_and_rms_values_z16cm.csv,r (cm),v-rms (m/s),UMD_data.csv,r (cm),v-rms 16 (m/s),-
+Mean_and_rms_values_z18cm.csv,r (cm),v-rms (m/s),UMD_data.csv,r (cm),v-rms 18 (m/s),-
+Mean_and_rms_values_z20cm.csv,r (cm),v-rms (m/s),UMD_data.csv,r (cm),v-rms 20 (m/s),-
+Mean_and_rms_values_z30cm.csv,r (cm),v-rms (m/s),UMD_data.csv,r (cm),v-rms 30 (m/s),-
+Mean_and_rms_values_z2cm.csv,r (cm),T-bar (K),UMD_data.csv,r (cm),T-bar 2 (K),-
+Mean_and_rms_values_z4cm.csv,r (cm),T-bar (K),UMD_data.csv,r (cm),T-bar 4 (K),-
+Mean_and_rms_values_z6cm.csv,r (cm),T-bar (K),UMD_data.csv,r (cm),T-bar 6 (K),-
+Mean_and_rms_values_z8cm.csv,r (cm),T-bar (K),UMD_data.csv,r (cm),T-bar 8 (K),-
+Mean_and_rms_values_z10cm.csv,r (cm),T-bar (K),UMD_data.csv,r (cm),T-bar 10 (K),-
+Mean_and_rms_values_z12cm.csv,r (cm),T-bar (K),UMD_data.csv,r (cm),T-bar 12 (K),-
+Mean_and_rms_values_z14cm.csv,r (cm),T-bar (K),UMD_data.csv,r (cm),T-bar 14 (K),-
+Mean_and_rms_values_z16cm.csv,r (cm),T-bar (K),UMD_data.csv,r (cm),T-bar 16 (K),-
+Mean_and_rms_values_z18cm.csv,r (cm),T-bar (K),UMD_data.csv,r (cm),T-bar 18 (K),-
+Mean_and_rms_values_z20cm.csv,r (cm),T-bar (K),UMD_data.csv,r (cm),T-bar 20 (K),-
+Mean_and_rms_values_z30cm.csv,r (cm),T-bar (K),UMD_data.csv,r (cm),T-bar 30 (K),-
+Mean_and_rms_values_z2cm.csv,r (cm),T-rms (K),UMD_data.csv,r (cm),T-rms 2 (K),-
+Mean_and_rms_values_z4cm.csv,r (cm),T-rms (K),UMD_data.csv,r (cm),T-rms 4 (K),-
+Mean_and_rms_values_z6cm.csv,r (cm),T-rms (K),UMD_data.csv,r (cm),T-rms 6 (K),-
+Mean_and_rms_values_z8cm.csv,r (cm),T-rms (K),UMD_data.csv,r (cm),T-rms 8 (K),-
+Mean_and_rms_values_z10cm.csv,r (cm),T-rms (K),UMD_data.csv,r (cm),T-rms 10 (K),-
+Mean_and_rms_values_z12cm.csv,r (cm),T-rms (K),UMD_data.csv,r (cm),T-rms 12 (K),-
+Mean_and_rms_values_z14cm.csv,r (cm),T-rms (K),UMD_data.csv,r (cm),T-rms 14 (K),-
+Mean_and_rms_values_z16cm.csv,r (cm),T-rms (K),UMD_data.csv,r (cm),T-rms 16 (K),-
+Mean_and_rms_values_z18cm.csv,r (cm),T-rms (K),UMD_data.csv,r (cm),T-rms 18 (K),-
+Mean_and_rms_values_z20cm.csv,r (cm),T-rms (K),UMD_data.csv,r (cm),T-rms 20 (K),-
+Mean_and_rms_values_z30cm.csv,r (cm),T-rms (K),UMD_data.csv,r (cm),T-rms 30 (K),-
+Estimated_length_scales_z2cm.csv,r (cm),T-integral time (s),UMD_data_lengths.csv,r (cm),T-integral time 2 (s),-
+Estimated_length_scales_z4cm.csv,r (cm),T-integral time (s),UMD_data_lengths.csv,r (cm),T-integral time 4 (s),-
+Estimated_length_scales_z6cm.csv,r (cm),T-integral time (s),UMD_data_lengths.csv,r (cm),T-integral time 6 (s),-
+Estimated_length_scales_z8cm.csv,r (cm),T-integral time (s),UMD_data_lengths.csv,r (cm),T-integral time 8 (s),-
+Estimated_length_scales_z10cm.csv,r (cm),T-integral time (s),UMD_data_lengths.csv,r (cm),T-integral time 10 (s),-
+Estimated_length_scales_z12cm.csv,r (cm),T-integral time (s),UMD_data_lengths.csv,r (cm),T-integral time 12 (s),-
+Estimated_length_scales_z14cm.csv,r (cm),T-integral time (s),UMD_data_lengths.csv,r (cm),T-integral time 14 (s),-
+Estimated_length_scales_z16cm.csv,r (cm),T-integral time (s),UMD_data_lengths.csv,r (cm),T-integral time 16 (s),-
+Estimated_length_scales_z18cm.csv,r (cm),T-integral time (s),UMD_data_lengths.csv,r (cm),T-integral time 18 (s),-
+Estimated_length_scales_z20cm.csv,r (cm),T-integral time (s),UMD_data_lengths.csv,r (cm),T-integral time 20 (s),-
+Estimated_length_scales_z30cm.csv,r (cm),T-integral time (s),UMD_data_lengths.csv,r (cm),T-integral time 30 (s),-
+Estimated_length_scales_z2cm.csv,r (cm),U-integral time (s),UMD_data_lengths.csv,r (cm),U-integral time 2 (s),-
+Estimated_length_scales_z4cm.csv,r (cm),U-integral time (s),UMD_data_lengths.csv,r (cm),U-integral time 4 (s),-
+Estimated_length_scales_z6cm.csv,r (cm),U-integral time (s),UMD_data_lengths.csv,r (cm),U-integral time 6 (s),-
+Estimated_length_scales_z8cm.csv,r (cm),U-integral time (s),UMD_data_lengths.csv,r (cm),U-integral time 8 (s),-
+Estimated_length_scales_z10cm.csv,r (cm),U-integral time (s),UMD_data_lengths.csv,r (cm),U-integral time 10 (s),-
+Estimated_length_scales_z12cm.csv,r (cm),U-integral time (s),UMD_data_lengths.csv,r (cm),U-integral time 12 (s),-
+Estimated_length_scales_z14cm.csv,r (cm),U-integral time (s),UMD_data_lengths.csv,r (cm),U-integral time 14 (s),-
+Estimated_length_scales_z16cm.csv,r (cm),U-integral time (s),UMD_data_lengths.csv,r (cm),U-integral time 16 (s),-
+Estimated_length_scales_z18cm.csv,r (cm),U-integral time (s),UMD_data_lengths.csv,r (cm),U-integral time 18 (s),-
+Estimated_length_scales_z20cm.csv,r (cm),U-integral time (s),UMD_data_lengths.csv,r (cm),U-integral time 20 (s),-
+Estimated_length_scales_z30cm.csv,r (cm),U-integral time (s),UMD_data_lengths.csv,r (cm),U-integral time 30 (s),-
+Estimated_length_scales_z2cm.csv,r (cm),V-integral time (s),UMD_data_lengths.csv,r (cm),V-integral time 2 (s),-
+Estimated_length_scales_z4cm.csv,r (cm),V-integral time (s),UMD_data_lengths.csv,r (cm),V-integral time 4 (s),-
+Estimated_length_scales_z6cm.csv,r (cm),V-integral time (s),UMD_data_lengths.csv,r (cm),V-integral time 6 (s),-
+Estimated_length_scales_z8cm.csv,r (cm),V-integral time (s),UMD_data_lengths.csv,r (cm),V-integral time 8 (s),-
+Estimated_length_scales_z10cm.csv,r (cm),V-integral time (s),UMD_data_lengths.csv,r (cm),V-integral time 10 (s),-
+Estimated_length_scales_z12cm.csv,r (cm),V-integral time (s),UMD_data_lengths.csv,r (cm),V-integral time 12 (s),-
+Estimated_length_scales_z14cm.csv,r (cm),V-integral time (s),UMD_data_lengths.csv,r (cm),V-integral time 14 (s),-
+Estimated_length_scales_z16cm.csv,r (cm),V-integral time (s),UMD_data_lengths.csv,r (cm),V-integral time 16 (s),-
+Estimated_length_scales_z18cm.csv,r (cm),V-integral time (s),UMD_data_lengths.csv,r (cm),V-integral time 18 (s),-
+Estimated_length_scales_z20cm.csv,r (cm),V-integral time (s),UMD_data_lengths.csv,r (cm),V-integral time 20 (s),-
+Estimated_length_scales_z30cm.csv,r (cm),V-integral time (s),UMD_data_lengths.csv,r (cm),V-integral time 30 (s),-
