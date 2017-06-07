@@ -39,10 +39,10 @@ for i=2:n_plots
     P = textscan(Exp{i},'%q','delimiter',',');
     Exp_params = P{:}';   % These are the lines in correlation *_dataplot_inputs.csv below the header
 
-    Exp_Filename      = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Exp_Filename')))));
-    Exp_x_Col_Name    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Exp_x_Col_Name')))));
-    Exp_y_Col_Name    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Exp_y_Col_Name')))));
-    Exp_Legend_Key    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Key_Label')))));
+    Exp_Filename      = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Data_Filename')))));
+    Exp_x_Col_Name    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'x_Col_Name')))));
+    Exp_y_Col_Name    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'y_Col_Name')))));
+    Exp_Legend_Key    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Legend_Key')))));
     Exp_Plot_Style    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Plot_Style')))));
     Exp_Plot_Type     = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Plot_Type')))));
     if size(Exp_Plot_Type)==0
