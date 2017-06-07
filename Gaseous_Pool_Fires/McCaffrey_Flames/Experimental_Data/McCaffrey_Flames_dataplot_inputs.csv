@@ -1,0 +1,3 @@
+switch_id,Data_Filename,Plot_Type,Plot_Title,x_Col_Name,y_Col_Name,xLabel,yLabel,xMin,xMax,xTick,yMin,yMax,yTick,Legend_Key,Legend_Location,Plot_Style,Plot_Filename
+d,McCaffrey_Correlation_Temperature.csv,loglog,McCaffrey Centerline Temperature,Z/Q^0.4,dT (C),Z/Q^{2/5},\DeltaT (\circC),0.008,1,0.1,40,2500,200,Cor,EastOutside,k--,McCaffrey_Correlation_T
+d,McCaffrey_Correlation_Velocity.csv,loglog,McCaffrey Centerline Velocity,Z/Q^0.4,V/Q^0.2,Z/Q^{2/5},V/Q^{1/5},0.008,1,0.1,0.5,2.5,0.5,Cor,EastOutside,k--,McCaffrey_Correlation_V

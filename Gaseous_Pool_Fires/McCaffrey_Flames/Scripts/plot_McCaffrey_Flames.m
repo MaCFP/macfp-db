@@ -37,28 +37,23 @@ for i=2:n_plots
     % load experimental data for line {i} in McCaffrey_Flames_dataplot_inputs.csv
 
     P = textscan(Exp{i},'%q','delimiter',',');
-    Exp_params = P{:}';   % These are the lines in correlation *_dataplot_inputs.csv below the header
+    Exp_params = P{:}';
 
     % Check to see if d line has been activated in configuration file
-    %dtest = strcmp(Exp_params(strcmp(Exp_headers,'switch_id')),'d');
+    dtest = strcmp(Exp_params(strcmp(Exp_headers,'switch_id')),'d');
 
-    %if dtest % dtest_if (else just skip line)
+    if dtest % dtest_if (else just skip line)
 
-        Exp_Filename      = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Exp_Filename')))));
-        Exp_x_Col_Name    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Exp_x_Col_Name')))));
-        Exp_y_Col_Name    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Exp_y_Col_Name')))));
-        Exp_Legend_Key    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Key_Label')))));
+        Exp_Filename      = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Data_Filename')))));
+        Exp_x_Col_Name    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'x_Col_Name')))));
+        Exp_y_Col_Name    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'y_Col_Name')))));
+        Exp_Legend_Key    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Legend_Key')))));
         Exp_Plot_Style    = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Plot_Style')))));
-        % This isn't in the *_dataplot_inputs.csv files.  Delineates
-        % log-log, default loglog
         Exp_Plot_Type     = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Plot_Type')))));
         if size(Exp_Plot_Type)==0
             Exp_Plot_Type='loglog';
         end
 
-        % We can set the legend location and the axis limits in the
-        % *_dataplot_inputs.csv file if we add these columns.
-        % OR we can hardcode them here
         xLabel            = strtrim(char(Exp_params(find(strcmp(Exp_headers,'xLabel')))));
         yLabel            = strtrim(char(Exp_params(find(strcmp(Exp_headers,'yLabel')))));
         xMin              = str2num(char(Exp_params(find(strcmp(Exp_headers,'xMin')))));
@@ -192,12 +187,12 @@ for i=2:n_plots
 
         set(gcf,'Visible',Figure_Visibility);
         set(gcf,'Units',Paper_Units);
-        set(gcf,'PaperSize',[Paper_Width*1.25 Paper_Height]);
-        set(gcf,'Position',[0 0 Paper_Width*1.25 Paper_Height]);
+        set(gcf,'PaperSize',[Paper_Width*1.75 Paper_Height*1.5]);
+        set(gcf,'Position',[0 0 Paper_Width*1.75 Paper_Height*1.5]);
         print(gcf,'-dpdf',[pltdir,Plot_Filename])
 
         clear H Legend_Key
 
-    %end % dtest_if
+    end % dtest_if
 
 end
