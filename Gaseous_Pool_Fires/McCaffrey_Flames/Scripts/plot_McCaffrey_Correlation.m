@@ -86,6 +86,7 @@ end
 % format and print velocity correlation
 
 figure(1)
+
 xlabel('z/Q^{2/5}','FontSize',Font_Size)
 ylabel('V/Q^{1/5}','FontSize',Font_Size)
 title('McCaffrey Centerline Velocity Correlation','FontSize',Font_Size)
