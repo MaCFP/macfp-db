@@ -1,11 +1,11 @@
-Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style,Key_Label
-McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),McCaffrey_14kW.csv,Z/Q^0.4,dT (C),k-,Corr 14 kW
-McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),McCaffrey_22kW.csv,Z/Q^0.4,dT (C),k-,Corr 22 kW
-McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),McCaffrey_33kW.csv,Z/Q^0.4,dT (C),k-,Corr 33 kW
-McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),McCaffrey_45kW.csv,Z/Q^0.4,dT (C),k-,Corr 45 kW
-McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),McCaffrey_57kW.csv,Z/Q^0.4,dT (C),k-,Corr 57 kW
-McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,McCaffrey_14kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 14 kW
-McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,McCaffrey_22kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 22 kW
-McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,McCaffrey_33kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 33 kW
-McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,McCaffrey_45kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 45 kW
-McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,McCaffrey_57kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 57 kW
+Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,xLabel,yLabel,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style,Key_Label,Legend_Location,Plot_Filename,Plot_Title,Plot_Type
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),Z/Q^{2/5},\DeltaT (C),McCaffrey_14kW.csv,Z/Q^0.4,dT (C),k-,Corr 14 kW,SouthWest,McCaffrey_14kW_T,\DeltaT/Q^{1/5} 14kW,loglog
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),Z/Q^{2/5},\DeltaT (C),McCaffrey_22kW.csv,Z/Q^0.4,dT (C),k-,Corr 22 kW,SouthWest,McCaffrey_22kW_T,\DeltaT/Q^{1/5} 22kW,loglog
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),Z/Q^{2/5},\DeltaT (C),McCaffrey_33kW.csv,Z/Q^0.4,dT (C),k-,Corr 33 kW,SouthWest,McCaffrey_33kW_T,\DeltaT/Q^{1/5} 33kW,loglog
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),Z/Q^{2/5},\DeltaT (C),McCaffrey_45kW.csv,Z/Q^0.4,dT (C),k-,Corr 45 kW,SouthWest,McCaffrey_45kW_T,\DeltaT/Q^{1/5} 45kW,loglog
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),Z/Q^{2/5},\DeltaT (C),McCaffrey_57kW.csv,Z/Q^0.4,dT (C),k-,Corr 57 kW,SouthWest,McCaffrey_57kW_T,\DeltaT/Q^{1/5} 57kW,loglog
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,Z/Q^{2/5},V/Q^{1/5},McCaffrey_14kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 14 kW,SouthEast,McCaffrey_14kW_V,V/Q^{1/5} 14kW,loglog
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,Z/Q^{2/5},V/Q^{1/5},McCaffrey_22kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 22 kW,SouthEast,McCaffrey_22kW_V,V/Q^{1/5} 22kW,loglog
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,Z/Q^{2/5},V/Q^{1/5},McCaffrey_33kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 33 kW,SouthEast,McCaffrey_33kW_V,V/Q^{1/5} 33kW,loglog
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,Z/Q^{2/5},V/Q^{1/5},McCaffrey_45kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 45 kW,SouthEast,McCaffrey_45kW_V,V/Q^{1/5} 45kW,loglog
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,Z/Q^{2/5},V/Q^{1/5},McCaffrey_57kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 57 kW,SouthEast,McCaffrey_57kW_V,V/Q^{1/5} 57kW,loglog
