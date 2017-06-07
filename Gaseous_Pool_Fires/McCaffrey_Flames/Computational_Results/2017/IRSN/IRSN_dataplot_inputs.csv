@@ -1,0 +1,11 @@
+Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style,Key_Label
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),IRSN_McCaffrey_14kW_T.csv,Z/Q^0.4 (-),dT (C),-,IRSN 14 kW
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),IRSN_McCaffrey_22kW_T.csv,Z/Q^0.4 (-),dT (C),-,IRSN 22 kW
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),IRSN_McCaffrey_33kW_T.csv,Z/Q^0.4 (-),dT (C),-,IRSN 33 kW
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),IRSN_McCaffrey_45kW_T.csv,Z/Q^0.4 (-),dT (C),-,IRSN 45 kW
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),IRSN_McCaffrey_57kW_T.csv,Z/Q^0.4 (-),dT (C),-,IRSN 57 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,IRSN_McCaffrey_14kW_V.csv,Z/Q^0.4 (-),V/Q^0.2 (-),-,IRSN 14 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,IRSN_McCaffrey_22kW_V.csv,Z/Q^0.4 (-),V/Q^0.2 (-),-,IRSN 22 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,IRSN_McCaffrey_33kW_V.csv,Z/Q^0.4 (-),V/Q^0.2 (-),-,IRSN 33 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,IRSN_McCaffrey_45kW_V.csv,Z/Q^0.4 (-),V/Q^0.2 (-),-,IRSN 45 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,IRSN_McCaffrey_57kW_V.csv,Z/Q^0.4 (-),V/Q^0.2 (-),-,IRSN 57 kW
