@@ -1,0 +1,19 @@
+Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style
+Sandia_He_1m_p2.csv,x (m),Y He,IRSN_Sandia_He_1m_p2_Y_He.csv,x (m),Y_He (-),-
+Sandia_He_1m_p2.csv,x (m),Y Herms,IRSN_Sandia_He_1m_p2_Y_He_rms.csv,x (m),Y_He_rms (-),-
+Sandia_He_1m_p2.csv,x (m),U (m/s),IRSN_Sandia_He_1m_p2_U.csv,x (m),U (m/s),-
+Sandia_He_1m_p2.csv,x (m),U rms (m/s),IRSN_Sandia_He_1m_p2_U_rms.csv,x (m),U_rms (m/s) ,-
+Sandia_He_1m_p2.csv,x (m),W (m/s),IRSN_Sandia_He_1m_p2_W.csv,x (m),W (m/s) ,-
+Sandia_He_1m_p2.csv,x (m),W rms (m/s),IRSN_Sandia_He_1m_p2_W_rms.csv,x (m),W_rms (m/s),-
+Sandia_He_1m_p4.csv,x (m),Y He,IRSN_Sandia_He_1m_p4_Y_He.csv,x (m),Y_He (-),-
+Sandia_He_1m_p4.csv,x (m),Y He rms,IRSN_Sandia_He_1m_p4_Y_He_rms.csv,x (m),Y_He_rms (-),-
+Sandia_He_1m_p4.csv,x (m),U (m/s),IRSN_Sandia_He_1m_p4_U.csv,x (m),U (m/s),-
+Sandia_He_1m_p4.csv,x (m),U rms (m/s),IRSN_Sandia_He_1m_p4_U_rms.csv,x (m),U_rms (m/s) ,-
+Sandia_He_1m_p4.csv,x (m),W (m/s),IRSN_Sandia_He_1m_p4_W.csv,x (m),W (m/s) ,-
+Sandia_He_1m_p4.csv,x (m),W rms (m/s),IRSN_Sandia_He_1m_p4_W_rms.csv,x (m),W_rms (m/s),-
+Sandia_He_1m_p6.csv,x (m),Y He,IRSN_Sandia_He_1m_p6_Y_He.csv,x (m),Y_He (-),-
+Sandia_He_1m_p6.csv,x (m),Y He rms,IRSN_Sandia_He_1m_p6_Y_He_rms.csv,x (m),Y_He_rms (-),-
+Sandia_He_1m_p6.csv,x (m),U (m/s),IRSN_Sandia_He_1m_p6_U.csv,x (m),U (m/s),-
+Sandia_He_1m_p6.csv,x (m),U rms (m/s),IRSN_Sandia_He_1m_p6_U_rms.csv,x (m),U_rms (m/s) ,-
+Sandia_He_1m_p6.csv,x (m),W (m/s),IRSN_Sandia_He_1m_p6_W.csv,x (m),W (m/s) ,-
+Sandia_He_1m_p6.csv,x (m),W rms (m/s),IRSN_Sandia_He_1m_p6_W_rms.csv,x (m),W_rms (m/s),-
