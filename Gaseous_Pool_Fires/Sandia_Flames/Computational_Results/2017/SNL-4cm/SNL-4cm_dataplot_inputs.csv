@@ -11,9 +11,10 @@ Sandia_CH4_1m_Test17_p5.csv,x (m),U mean (m/s),4cm_17_0.8_z0.5.csv,Points:0,avg_
 Sandia_CH4_1m_Test17_p5.csv,x (m),W mean (m/s),4cm_17_0.8_z0.5.csv,Points:0,avg_z_vel,-
 Sandia_CH4_1m_Test17_p9.csv,x (m),U mean (m/s),4cm_17_0.8_z0.9.csv,Points:0,avg_x_vel,-
 Sandia_CH4_1m_Test17_p9.csv,x (m),W mean (m/s),4cm_17_0.8_z0.9.csv,Points:0,avg_z_vel,-
-Sandia_CH4_1m_Test24_p3.csv,x (m),U mean (m/s),4cm_24_porous0.9_z0.3.csv,Points:0,avg_x_vel,-.
-Sandia_CH4_1m_Test24_p3.csv,x (m),W mean (m/s),4cm_24_porous0.9_z0.3.csv,Points:0,avg_z_vel,-.
-Sandia_CH4_1m_Test24_p5.csv,x (m),U mean (m/s),4cm_24_porous0.9_z0.5.csv,Points:0,avg_x_vel,-.
-Sandia_CH4_1m_Test24_p5.csv,x (m),W mean (m/s),4cm_24_porous0.9_z0.5.csv,Points:0,avg_z_vel,-.
-Sandia_CH4_1m_Test24_p9.csv,x (m),U mean (m/s),4cm_24_porous0.9_z0.9.csv,Points:0,avg_x_vel,-.
-Sandia_CH4_1m_Test24_p9.csv,x (m),W mean (m/s),4cm_24_porous0.9_z0.9.csv,Points:0,avg_z_vel,-.
+Sandia_CH4_1m_Test24_p3.csv,x (m),U mean (m/s),4cm_24_0.8_z0.3.csv,Points:0,avg_x_vel,-
+Sandia_CH4_1m_Test24_p3.csv,x (m),W mean (m/s),4cm_24_0.8_z0.3.csv,Points:0,avg_z_vel,-
+Sandia_CH4_1m_Test24_p5.csv,x (m),U mean (m/s),4cm_24_0.8_z0.5.csv,Points:0,avg_x_vel,-
+Sandia_CH4_1m_Test24_p5.csv,x (m),W mean (m/s),4cm_24_0.8_z0.5.csv,Points:0,avg_z_vel,-
+Sandia_CH4_1m_Test24_p9.csv,x (m),U mean (m/s),4cm_24_0.8_z0.9.csv,Points:0,avg_x_vel,-
+Sandia_CH4_1m_Test24_p9.csv,x (m),W mean (m/s),4cm_24_0.8_z0.9.csv,Points:0,avg_z_vel,-
+
