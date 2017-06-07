@@ -1,5 +1,5 @@
 ### Contributor
-Name: A.Marchand, S. Verma and A.Trouve
+Name: A. Marchand, S. Verma and A. Trouve
 
 Institution: University of Maryland
 
