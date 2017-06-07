@@ -5,14 +5,16 @@
 close all
 clear all
 
+restoredefaultpath
+addpath '../../../Utilities/'
+
 expdir = '../Experimental_Data/';
 cmpdir = '../Computational_Results/2017/';
 pltdir = '../Plots/';
-addpath '../../../Utilities/'
 plot_style
 
 % read exp data configuration file
-Exp = importdata([expdir,'McCaffrey_Flames_dataplot_inputs.csv']);
+Exp = importdata([expdir,'McCaffrey_Flames_EachPower_dataplot_inputs.csv']);
 Exp_H = textscan(Exp{1},'%q','delimiter',',');   % scan first line for line headers
 Exp_headers = Exp_H{:}'; clear Exp_H             % store headers here
 n_plots = length(Exp);
@@ -24,7 +26,7 @@ n_inst = length(inst);
 % Skip data as necessary (right now Data is the first in the list: inst{1}
 for n = 1:n_inst
     Cmp{n} = importdata([cmpdir,inst{n},'/',inst{n},'_dataplot_inputs.csv']); % this file maps cmp data file to exp data file
-    Cmp_H = textscan(Cmp{n}{1},'%q','delimiter',',');   % scan first line for line headers 
+    Cmp_H = textscan(Cmp{n}{1},'%q','delimiter',',');   % scan first line for line headers
     Cmp_headers{n} = Cmp_H{:}'; clear Cmp_H             % store headers here for each institution
 end
 
@@ -33,7 +35,7 @@ for i=2:n_plots
     if i>n_plots; break; end
 
     % load experimental data for line {i} in McCaffrey_Flames_dataplot_inputs.csv
-    
+
     P = textscan(Exp{i},'%q','delimiter',',');
     Exp_params = P{:}';   % These are the lines in correlation *_dataplot_inputs.csv below the header
 
@@ -71,7 +73,7 @@ for i=2:n_plots
         Legend_Location   = 'NorthWest';
         if strfind(Exp_y_Col_Name,'dT')
             Plot_Filename   = sprintf('dT_%s',Exp_Legend_Key(end-4:end));
-        elseif strfind(Exp_y_Col_Name,'V/Q')                 
+        elseif strfind(Exp_y_Col_Name,'V/Q')
             Plot_Filename   = sprintf('Vstar_%s',Exp_Legend_Key(end-4:end));
         end
         Plot_Title        = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Plot_Title')))));
@@ -86,9 +88,9 @@ for i=2:n_plots
         set(gca,'Position',[Plot_X Plot_Y Plot_Width Plot_Height])
 
         if strcmp(Exp_Plot_Type,'linear')
-            H(1)=plot(X1,Y1,Exp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',2); hold on
+            H(1)=plot(X1,Y1,Exp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',Line_Width); hold on
         elseif strcmp(Exp_Plot_Type,'loglog')
-            H(1)=loglog(X1,Y1,Exp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',2); hold on
+            H(1)=loglog(X1,Y1,Exp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',Line_Width); hold on
         end
         n_key=1;
         Legend_Key{n_key} = Exp_Legend_Key;
@@ -113,7 +115,7 @@ for i=2:n_plots
                 Cmp_params = M{:}';
                 % This first test matches the experimental file name listed
                 % in the INST_dataplot_inputs.csv
-                % The second test matches the y-variable name 
+                % The second test matches the y-variable name
                 % ("dT (C)" or "V/Q^0.2")
                 % The third item matches the power in the Exp data set
                 Cmp_Key_Label  = strtrim(char(Cmp_params(find(strcmp(strtrim(Cmp_headers{n}),'Key_Label')))));
@@ -143,9 +145,9 @@ for i=2:n_plots
                         n_key=n_key+1;
 
                         if strcmp(Exp_Plot_Type,'linear')
-                            H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'LineWidth',4)
+                            H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',Line_Width)
                         elseif strcmp(Exp_Plot_Type,'loglog')
-                            H(n_key)=loglog(X2,Y2,Cmp_Plot_Style,'LineWidth',4);
+                            H(n_key)=loglog(X2,Y2,Cmp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',Line_Width);
                         end
 
                         if size(Cmp_Key_Label)==0
@@ -199,8 +201,8 @@ for i=2:n_plots
 
         set(gcf,'Visible',Figure_Visibility);
         set(gcf,'Units',Paper_Units);
-        set(gcf,'PaperSize',[Paper_Width*1.25 Paper_Height]);
-        set(gcf,'Position',[0 0 Paper_Width*1.25 Paper_Height]);
+        set(gcf,'PaperSize',[Paper_Width Paper_Height]);
+        set(gcf,'Position',[0 0 Paper_Width Paper_Height]);
         print(gcf,'-dpdf',[pltdir,Plot_Filename])
 
         clear H Legend_Key
