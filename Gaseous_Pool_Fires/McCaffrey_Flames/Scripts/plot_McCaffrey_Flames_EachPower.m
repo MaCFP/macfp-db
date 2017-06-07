@@ -157,15 +157,14 @@ for i=2:n_plots
         end
     else
         Pos = get(gca,'Position');
-        xMin = Pos(1)
-        xMax = Pos(1)+Pos(3)
-        yMin = Pos(2)
-        yMax = Pos(2)+Pos(4)
+        xMin = Pos(1);
+        xMax = Pos(1)+Pos(3);
+        yMin = Pos(2);
+        yMax = Pos(2)+Pos(4);
     end
 
     Title_Position = [0.05 0.92];
     if strcmp(Exp_Plot_Type,'loglog')
-                disp('here!')
         xt = 10^(log10(xMin)+Title_Position(1)*(log10(xMax)-log10(xMin)));
         yt = 10^(log10(yMin)+Title_Position(2)*(log10(yMax)-log10(yMin)));
     else
