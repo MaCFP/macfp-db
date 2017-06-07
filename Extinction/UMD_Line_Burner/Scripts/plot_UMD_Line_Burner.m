@@ -5,7 +5,6 @@
 close all
 clear all
 
-% demo comment
 restoredefaultpath
 addpath '../../../Utilities/'
 
