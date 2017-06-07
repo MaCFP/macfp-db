@@ -5,10 +5,12 @@
 close all
 clear all
 
+restoredefaultpath
+addpath '../../../Utilities/'
+
 expdir = '../Experimental_Data/';
 cmpdir = '../Computational_Results/2017/';
 pltdir = '../Plots/';
-addpath '../../../Utilities/'
 plot_style
 
 % read exp data configuration file
@@ -60,7 +62,7 @@ for i=2:n_plots
     X1 = E.data(:,find(strcmp(strtrim(E.colheaders),Exp_x_Col_Name)));
     Y1 = E.data(:,find(strcmp(strtrim(E.colheaders),Exp_y_Col_Name)));
 
-    H(1)=plot(X1,Y1,Exp_Plot_Style,'MarkerSize',Marker_Size); hold on
+    H(1)=plot(X1,Y1,Exp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',Line_Width); hold on
     n_key=1;
     Legend_Key{n_key} = Exp_Legend_Key;
 
@@ -88,7 +90,7 @@ for i=2:n_plots
                     Y2 = C.data(:,find(strcmp(strtrim(C.colheaders),Cmp_y_Col_Name)));
 
                     n_key=n_key+1;
-                    H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',4);
+                    H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',Line_Width);
                     Legend_Key{n_key} = inst{n};
                 end
             end
