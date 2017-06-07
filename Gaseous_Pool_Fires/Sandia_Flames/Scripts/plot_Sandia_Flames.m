@@ -88,7 +88,7 @@ for i=2:n_plots
                     Y2 = C.data(:,find(strcmp(strtrim(C.colheaders),Cmp_y_Col_Name)));
 
                     n_key=n_key+1;
-                    H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'MarkerSize',Marker_Size);
+                    H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',4);
                     Legend_Key{n_key} = inst{n};
                 end
             end

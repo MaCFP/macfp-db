@@ -59,6 +59,8 @@ for i=2:n_plots
         % OR we can hardcode them here
         xLabel            = strtrim(char(Exp_params(find(strcmp(Exp_headers,'xLabel')))));
         yLabel            = strtrim(char(Exp_params(find(strcmp(Exp_headers,'yLabel')))));
+        xLabel            = Exp_x_Col_Name;
+        yLabel            = Exp_y_Col_Name;
         xMin              = str2num(char(Exp_params(find(strcmp(Exp_headers,'xMin')))));
         xMax              = str2num(char(Exp_params(find(strcmp(Exp_headers,'xMax')))));
         yMin              = str2num(char(Exp_params(find(strcmp(Exp_headers,'yMin')))));
@@ -66,9 +68,14 @@ for i=2:n_plots
         xTick             = str2num(char(Exp_params(find(strcmp(Exp_headers,'xTick')))));
         yTick             = str2num(char(Exp_params(find(strcmp(Exp_headers,'yTick')))));
         Legend_Location   = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Legend_Location')))));
-        Plot_Filename     = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Plot_Filename')))));
+        Legend_Location   = 'NorthWest';
+        if strfind(Exp_y_Col_Name,'dT')
+            Plot_Filename   = sprintf('dT_%s',Exp_Legend_Key(end-4:end));
+        elseif strfind(Exp_y_Col_Name,'V/Q')                 
+            Plot_Filename   = sprintf('Vstar_%s',Exp_Legend_Key(end-4:end));
+        end
         Plot_Title        = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Plot_Title')))));
-
+        Plot_Title        = sprintf('%s %s',Exp_y_Col_Name,Exp_Legend_Key(end-4:end));
         E = importdata([expdir,Exp_Filename],',',1);
 
         X1 = E.data(:,find(strcmp(strtrim(E.colheaders),Exp_x_Col_Name)));
@@ -108,7 +115,9 @@ for i=2:n_plots
                 % in the INST_dataplot_inputs.csv
                 % The second test matches the y-variable name 
                 % ("dT (C)" or "V/Q^0.2")
-                if strcmp(strtrim(Cmp_params(Exp_Filename_Col)),Exp_Filename) & strcmp(strtrim(Cmp_params(Exp_y_Col_Index)),Exp_y_Col_Name)
+                % The third item matches the power in the Exp data set
+                Cmp_Key_Label  = strtrim(char(Cmp_params(find(strcmp(strtrim(Cmp_headers{n}),'Key_Label')))));
+                if strcmp(strtrim(Cmp_params(Exp_Filename_Col)),Exp_Filename) & strcmp(strtrim(Cmp_params(Exp_y_Col_Index)),Exp_y_Col_Name) & strfind(Cmp_Key_Label,Exp_Legend_Key(end-4:end))
                     Cmp_Filename   = [cmpdir,inst{n},'/',strtrim(char(Cmp_params(Cmp_Filename_Col)))];
                     Cmp_x_Col_Name = strtrim(char(Cmp_params(find(strcmp(strtrim(Cmp_headers{n}),'Cmp_x_Col_Name')))));
                     Cmp_y_Col_Name = strtrim(char(Cmp_params(find(strcmp(strtrim(Cmp_headers{n}),'Cmp_y_Col_Name')))));

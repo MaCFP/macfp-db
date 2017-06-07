@@ -1,3 +1,11 @@
-switch_id,Data_Filename,Plot_Type,Plot_Title,x_Col_Name,y_Col_Name,xLabel,yLabel,xMin,xMax,xTick,yMin,yMax,yTick,Legend_Key,Legend_Location,Plot_Style,Plot_Filename
-d,McCaffrey_Correlation_Temperature.csv,loglog,McCaffrey Centerline Temperature,Z/Q^0.4, dT (C),Z/Q^{2/5}, \DeltaT (\circC),0.008,1,1,40,2000,1,Cor,EastOutside,k--,McCaffrey_Correlation_T
-d,McCaffrey_Correlation_Velocity.csv,loglog,McCaffrey Centerline Velocity,Z/Q^0.4, V/Q^0.2,Z/Q^{2/5}, V/Q^{1/5},0.01,1,1,0.5,2.5,1,Cor,EastOutside,k--,McCaffrey_Correlation_V
+Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style,Key_Label
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),McCaffrey_14kW.csv,Z/Q^0.4,dT (C),k-,Corr 14 kW
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),McCaffrey_22kW.csv,Z/Q^0.4,dT (C),k-,Corr 22 kW
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),McCaffrey_33kW.csv,Z/Q^0.4,dT (C),k-,Corr 33 kW
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),McCaffrey_45kW.csv,Z/Q^0.4,dT (C),k-,Corr 45 kW
+McCaffrey_Correlation_Temperature.csv,Z/Q^0.4,dT (C),McCaffrey_57kW.csv,Z/Q^0.4,dT (C),k-,Corr 57 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,McCaffrey_14kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 14 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,McCaffrey_22kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 22 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,McCaffrey_33kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 33 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,McCaffrey_45kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 45 kW
+McCaffrey_Correlation_Velocity.csv,Z/Q^0.4,V/Q^0.2,McCaffrey_57kW.csv,Z/Q^0.4,V/Q^0.2,k-,Corr 57 kW
