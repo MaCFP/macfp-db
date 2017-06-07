@@ -5,10 +5,12 @@
 close all
 clear all
 
+restoredefaultpath
+addpath '../../../Utilities/'
+
 expdir = '../Experimental_Data/';
 cmpdir = '../Computational_Results/2017/';
 pltdir = '../Plots/';
-addpath '../../../Utilities/'
 plot_style
 
 % read exp data configuration file
@@ -72,9 +74,9 @@ for i=2:n_plots
         set(gca,'Position',[Plot_X Plot_Y Plot_Width Plot_Height])
 
         if strcmp(Exp_Plot_Type,'linear')
-            H(1)=plot(X1,Y1,Exp_Plot_Style,'MarkerSize',Marker_Size); hold on
+            H(1)=plot(X1,Y1,Exp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',Line_Width); hold on
         elseif strcmp(Exp_Plot_Type,'loglog')
-            H(1)=loglog(X1,Y1,Exp_Plot_Style,'MarkerSize',Marker_Size); hold on
+            H(1)=loglog(X1,Y1,Exp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',Line_Width); hold on
         end
         n_key=1;
         Legend_Key{n_key} = Exp_Legend_Key;
@@ -123,9 +125,9 @@ for i=2:n_plots
                         n_key=n_key+1;
 
                         if strcmp(Exp_Plot_Type,'linear')
-                            H(n_key)=plot(X2,Y2,Cmp_Plot_Style);
+                            H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'LineWidth',Line_Width,'MarkerSize',Marker_Size);
                         elseif strcmp(Exp_Plot_Type,'loglog')
-                            H(n_key)=loglog(X2,Y2,Cmp_Plot_Style);
+                            H(n_key)=loglog(X2,Y2,Cmp_Plot_Style,'LineWidth',Line_Width,'MarkerSize',Marker_Size);
                         end
 
                         if size(Cmp_Key_Label)==0
