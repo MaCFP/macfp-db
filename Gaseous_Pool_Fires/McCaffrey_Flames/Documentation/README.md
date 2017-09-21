@@ -4,7 +4,7 @@
 
 In [McCaffrey, 1979], a burner using natural gas (35 kJ/L [45 MJ/kg assuming 19 kg/kgmol as mole weight for natural gas]) at various controlled rates was constructed of a porous refractory material 0.3 m square.  Along the centerline of the burner, velocity and temperature were measuered using bi-directional probe and thermocouple, respectively.  The centerline data collapses when scaled by the Froude number as shown in the plots below.
 
-Radiant fraction measurements for natural gas were made in [McCaffrey, 1981].  For convenience, we have extracted the data from that report for the heat release rates reported in [McCaffrey, 1979].  The burner surface temperature, T_surf, has been approximated from a linear least squares extrapolation of the temperature data (see the script McCaffrey_Flames/Scripts/McCaffrey_Surface_Temp.m).
+Radiant fraction measurements for natural gas were made in [McCaffrey, 1981].  For convenience, we have extracted the data from that report for the heat release rates reported in [McCaffrey, 1979].  The burner surface temperature, T_surf, has been approximated from a linear least squares extrapolation of the temperature data (see [McCaffrey_Surface_Temp.m](https://github.com/MaCFP/macfp-db/blob/master/Gaseous_Pool_Fires/McCaffrey_Flames/Scripts/McCaffrey_Surface_Temp.m) for details).
 
 | Q (kW) | Q*    | D* (m)|HRRPUA (kW/m^2) |   X_r  | T_surf (C) |
 |:------:|:-----:|:-----:|:--------------:|:------:|:----------:|
