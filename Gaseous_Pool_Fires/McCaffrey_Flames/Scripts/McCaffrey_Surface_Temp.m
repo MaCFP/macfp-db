@@ -2,7 +2,7 @@
 % 21 Sep 2017
 % McCaffrey_Surface_Temp.m
 %
-% Extrapolate McCaffrey TC data to burner surface for FDS boundary condition.
+% Extrapolate McCaffrey TC data to burner surface for CFD boundary condition.
 
 close all
 clear all
