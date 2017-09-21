@@ -4,15 +4,15 @@
 
 In [McCaffrey, 1979], a burner using natural gas (35 kJ/L [45 MJ/kg assuming 19 kg/kgmol as mole weight for natural gas]) at various controlled rates was constructed of a porous refractory material 0.3 m square.  Along the centerline of the burner, velocity and temperature were measuered using bi-directional probe and thermocouple, respectively.  The centerline data collapses when scaled by the Froude number as shown in the plots below.
 
-Radiant fraction measurements for natural gas were made in [McCaffrey, 1981].  For convenience, we have extracted the data from that report for the heat release rates reported in [McCaffrey, 1979].
+Radiant fraction measurements for natural gas were made in [McCaffrey, 1981].  For convenience, we have extracted the data from that report for the heat release rates reported in [McCaffrey, 1979].  The burner surface temperature, T_surf, has been approximated from a linear least squares extrapolation of the temperature data (see the script McCaffrey_Flames/Scripts/McCaffrey_Surface_Temp.m).
 
-| Q (kW) | Q*    | D* (m)|HRRPUA (kW/m^2) |   X_r  | T_s (C) |
-|:------:|:-----:|:-----:|:--------------:|:------:|:-------:|
-| 14.4   | 0.270 | 0.178 | 160            | 0.17   | 750     |
-| 21.7   | 0.407 | 0.209 | 241            | 0.21   | 716     |
-| 33.0   | 0.618 | 0.248 | 367            | 0.25   | 630     |
-| 44.9   | 0.841 | 0.280 | 499            | 0.27   | 608     |
-| 57.5   | 1.07  | 0.309 | 639            | 0.27   | 534     |
+| Q (kW) | Q*    | D* (m)|HRRPUA (kW/m^2) |   X_r  | T_surf (C) |
+|:------:|:-----:|:-----:|:--------------:|:------:|:----------:|
+| 14.4   | 0.270 | 0.178 | 160            | 0.17   | 750        |
+| 21.7   | 0.407 | 0.209 | 241            | 0.21   | 716        |
+| 33.0   | 0.618 | 0.248 | 367            | 0.25   | 630        |
+| 44.9   | 0.841 | 0.280 | 499            | 0.27   | 608        |
+| 57.5   | 1.07  | 0.309 | 639            | 0.27   | 534        |
 
 Within the Processing_Scripts directory of this repository you can find the scripts used to create the plots below.  The data from [McCaffrey, 1979] is digitized and provides a rough estimate of the uncertainty in the correlation.
 
