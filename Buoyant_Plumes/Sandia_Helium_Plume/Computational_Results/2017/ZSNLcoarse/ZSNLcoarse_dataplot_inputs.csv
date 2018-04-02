@@ -1,0 +1,5 @@
+Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style
+Sandia_He_1m_p4.csv,x (m),Y He,ZSNLcoarse_Sandia_He_1m.csv,x1,Yp4,-
+Sandia_He_1m_p4.csv,x (m),W (m/s),ZSNLcoarse_Sandia_He_1m.csv,x2,Wp4,-
+Sandia_He_1m_p4.csv,x (m),Y He rms,ZSNLcoarse_Sandia_He_1m.csv,x3,Yp4_rms,-
+Sandia_He_1m_p4.csv,x (m),W rms (m/s),ZSNLcoarse_Sandia_He_1m.csv,x4,Wp4_rms,-
