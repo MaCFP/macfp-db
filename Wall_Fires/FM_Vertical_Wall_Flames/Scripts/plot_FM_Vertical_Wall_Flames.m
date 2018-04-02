@@ -10,7 +10,7 @@ addpath '../../../Utilities/'
 
 expdir = '../Experimental_Data/';
 cmpdir = '../Computational_Results/2017/';
-pltdir = '/Volumes/rmcdermo/tmp_plots/';
+pltdir = '../Plots/';
 plot_style
 
 % read exp data configuration file
@@ -55,21 +55,14 @@ for i=2:n_plots
     yTick             = str2num(char(Exp_params(find(strcmp(Exp_headers,'yTick')))));
     Legend_Location   = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Legend_Location')))));
     Plot_Filename     = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Plot_Filename')))));
-    Plot_Title        = ''; %strtrim(char(Exp_params(find(strcmp(Exp_headers,'Plot_Title')))));
+    Plot_Title        = strtrim(char(Exp_params(find(strcmp(Exp_headers,'Plot_Title')))));
 
     E = importdata([expdir,Exp_Filename],',',1);
 
     X1 = E.data(:,find(strcmp(strtrim(E.colheaders),Exp_x_Col_Name)));
     Y1 = E.data(:,find(strcmp(strtrim(E.colheaders),Exp_y_Col_Name)));
 
-    % H(1)=plot(X1,Y1,Exp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',Line_Width); hold on
-    Marker_Size = 10;
-    Marker_Edge_Color = 'k';
-    Marker_Face_Color = 'k';
-    H(1)=plot(X1,Y1,Exp_Plot_Style,'MarkerSize',Marker_Size, ...
-       'MarkerEdgeColor',Marker_Edge_Color, ...
-       'MarkerFaceColor',Marker_Face_Color);
-    hold on
+    H(1)=plot(X1,Y1,Exp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',Line_Width); hold on
     n_key=1;
     Legend_Key{n_key} = Exp_Legend_Key;
 
@@ -109,29 +102,7 @@ for i=2:n_plots
                     Y2 = y_Scale.*C.data(:,find(strcmp(strtrim(C.colheaders),Cmp_y_Col_Name)));
 
                     n_key=n_key+1;
-                    % H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',Line_Width);
-                    if(n_key==2)
-                       Line_Width  = 4;
-                       Color = 'k';
-                       Cmp_Plot_Style = '-';
-                    elseif(n_key==3)
-                       Line_Width  = 4;
-                       Color = 'r';
-                       Cmp_Plot_Style = '--';
-                    elseif(n_key==4)
-                       Line_Width  = 4;
-                       Color = 'b';
-                       Cmp_Plot_Style = '-.';
-                    elseif(n_key==5)
-                       Line_Width  = 4;
-                       Color = [0.5 0 0.5];
-                       Cmp_Plot_Style = ':';
-                    elseif(n_key==6)
-                       Line_Width  = 4;
-                       Color = [0 0.5 0];
-                       Cmp_Plot_Style = ':';
-                    end
-                    H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'LineWidth',Line_Width,'Color',Color);
+                    H(n_key)=plot(X2,Y2,Cmp_Plot_Style,'MarkerSize',Marker_Size,'LineWidth',Line_Width);
                     Legend_Key{n_key} = inst{n};
                 end
             end
@@ -151,9 +122,9 @@ for i=2:n_plots
     set(gca,'FontSize',Font_Size)
     xlabel(xLabel,'FontSize',Font_Size)
     ylabel(yLabel,'FontSize',Font_Size)
-    % lh=legend(H,Legend_Key,'Location',Legend_Location);
-    % set(lh,'FontSize',Font_Size)
-    % legend 'boxon'
+    lh=legend(H,Legend_Key,'Location',Legend_Location);
+    set(lh,'FontSize',Font_Size)
+    legend 'boxon'
 
     Pos = get(gca,'Position');
     xt = Pos(1);
