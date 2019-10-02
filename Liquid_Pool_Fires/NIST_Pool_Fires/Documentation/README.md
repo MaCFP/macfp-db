@@ -14,9 +14,17 @@ Notes
 
 * The measured mass loss rate for the 30 cm methanol pool, averaged over the various studies, is 13.2 ± 0.9 g/(m<sup>2</sup> s). The mass loss rate for the 100 cm methanol pool is 16.3 ± 0.2 g/(m<sup>2</sup> s). 
 
-* The measured radiative fraction in the reported studies varies between 0.18 and 0.22.
+* The measured mass loss rate for the 30 cm acetone fire is 17.6 ± 2.7 g/(m<sup>2</sup> s). 
+
+* The measured mass loss rate for the 30 cm ethanol fire is 13.9 ± 0.8 g/(m<sup>2</sup> s). 
+
+* The measured radiative fraction for the 30 cm methanol fire in the reported studies varies between 0.18 and 0.22.
 
 * For methanol, the amount of CO in the exhaust stream is below detection limits; thus, the combustion efficiency for methanol is assumed to be 1. The efficiency for the other fuels is not reported.
+
+![Pool Fire Photograph](100cm_Methanol_Pool_Fire.jpg)
+
+Photographs of the 100 cm methanol fire.
 
 
 ### Temperature
