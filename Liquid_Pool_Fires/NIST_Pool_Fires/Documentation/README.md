@@ -4,7 +4,7 @@ This directory contains experimental measurements of liquid pool fires. Two circ
 
 The 30 cm burner is 15 cm deep and has a wall thickness of 1.6 mm. The burner is fitted with legs such that the burner rim is positioned 30 cm above the floor. The bottom of the burner is maintained at a constant temperature by flowing tap water (nominally 20 °C) through a 3 cm section on the bottom of the fuel pan.
 
-The 100 cm burner is also 15 cm deep with a wall thickness of 1.6 mm. It is also water cooled at the bottom.
+The 100 cm burner is 15 cm deep with a wall thickness of 1.6 mm. It is also water cooled at the bottom.
 
 Notes
 
@@ -14,13 +14,19 @@ Notes
 
 * The heat of combustion for methanol (lower heating value) is 19940 kJ/kg (SFPE Handbook).
 
-* The measured mass loss rate for the 30 cm methanol pool, averaged over the various studies, is 13.2 ± 0.9 g/(m<sup>2</sup> s). The mass loss rate for the 100 cm methanol pool is 16.3 ± 0.2 g/(m<sup>2</sup> s). 
+* The measured mass flux for the 30 cm methanol pool fire, averaged over the various studies, is 13.2 ± 0.9 g/(m<sup>2</sup> s) (Kim et al., 2019; Buch et al. 1997; Klassen and Gore, 1994; Weckman and Strong, 1996; Hamins et al., 1994; Falkenstein-Smith et al., 2019).
 
-* The measured mass loss rate for the 30 cm acetone fire is 17.6 ± 2.7 g/(m<sup>2</sup> s). 
+* The mass flux for the 100 cm methanol pool is 16.3 ± 0.2 g/(m<sup>2</sup> s) (Sung et al., 2019). 
 
-* The measured mass loss rate for the 30 cm ethanol fire is 13.9 ± 0.8 g/(m<sup>2</sup> s). 
+* The measured mass flux for the 30 cm acetone pool fire, averaged over the various studies, is 18.3 ± 0.6 g/(m<sup>2</sup> s). 
 
-* The measured radiative fraction for the 30 cm methanol fire in the reported studies varies between 0.18 and 0.22.
+* The measured mass flux for the 30 cm ethanol pool fire, averaged over the various studies, is 14.8 ± 1.2 g/(m<sup>2</sup> s). 
+
+* The measured radiative fraction for the 30 cm methanol pool fire, averaged over the various studies, is 0.22 ± 0.02 (Kim et al., 2019; Buch et al., 1997; Klassen and Gore, 1994).
+
+* The measured radiative fraction for the 30 cm acetone pool fire is 0.31 ± 0.06 (Kim et al., 2019).
+
+* The measured radiative fraction for the 30 cm ethanol pool fire is 0.26 ± 0.07 (Kim et al., 2019).
 
 * For methanol, the amount of CO in the exhaust stream is below detection limits; thus, the combustion efficiency for methanol is assumed to be 1. The efficiency for the other fuels is not reported.
 
@@ -58,6 +64,8 @@ Radiative and total heat flux measurements were made at various locations for th
 
 ### References
 
+Buch, R., Hamins, A., Konishi, K., Mattingly, D., and Kashiwagi, T., Radiative Emission Fraction of Pool Fires Burning Silicone Fluids, Combust. Flame, 108, 118-126 (1997).
+
 Falkenstein-Smith, R., K. Sung, J. Chen, and A. Hamins (2019) The Chemical Structure of Medium-Scale Pool Fires, Interflam Conference Proceedings, p. 2059, London, England, July 1-3, 2019.
 
 Falkesntein-Smith, R., K. Sung, A. Hamins (2019) Mapping the Chemical Structure of Centerline Profiles in Medium-Scale Pool Fires, National Institute of Standards and Technology, Gaithersburg, MD, NIST Technical Note, in preparation.
@@ -73,5 +81,7 @@ Klassen, M. and J.P. Gore (1994) Structure and Radiation Properties of Pool Fire
 Sung, K., J. Chen, M. Bundy, M. Fernandez, and A. Hamins (2019) The Characteristics of a 1 m Methanol Pool Fire, National Institute of Standards and Technology, Gaithersburg, MD, NIST Technical Note, in preparation.
 
 Weckman, E.J. and A.B. Strong (1996) Experimental investigation of the turbulence structure of medium-scale methanol pool fires, Combustion and Flame, 105:245-66.
+
+SFPE Handbook of Fire Protection Engineering (5th ed.), Appendix 3, Fuel Properties and Combustion Data, (Ed.: M. Hurley) 2016.
 
 
