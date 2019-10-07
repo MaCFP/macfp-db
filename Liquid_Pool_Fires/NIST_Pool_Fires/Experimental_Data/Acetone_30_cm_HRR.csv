@@ -1,4 +1,4 @@
-s,kg/s/m2
-Time,MLRPUA
-0.,0.0183
-60.,0.0183
+s,kg/s/m2,none
+Time,MLRPUA,X_RAD
+0.,0.0183,0.31
+60.,0.0183,0.31
