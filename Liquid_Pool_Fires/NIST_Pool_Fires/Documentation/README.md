@@ -6,13 +6,13 @@ The 30 cm burner is 15 cm deep and has a wall thickness of 1.6 mm. The burner is
 
 The 100 cm burner is 15 cm deep with a wall thickness of 1.6 mm. It is also water cooled at the bottom.
 
-Notes
+#### Notes:
 
 * Weckman and Strong (1996) report a burner diameter of 30.5 cm. The burner used at NIST has a diameter of 30.1 cm.
 
 * The lip height reported by Weckman and Strong (1996) and Kim et al. (2019) is 10 mm. Hamins et al. (1994), Klassen et al. (1994), and Hamins and Lock (2016) report a lip height of 5 mm.
 
-* The heat of combustion for methanol (lower heating value) is 19940 kJ/kg (SFPE Handbook).
+* The heat of combustion for methanol (lower heating value) is 19940 kJ/kg (SFPE Handbook, 2016).
 
 * The measured mass flux for the 30 cm methanol pool fire, averaged over the various studies, is 13.2 ± 0.9 g/(m<sup>2</sup> s) (Kim et al., 2019; Buch et al. 1997; Klassen and Gore, 1994; Weckman and Strong, 1996; Hamins et al., 1994; Falkenstein-Smith et al., 2019).
 
@@ -23,6 +23,8 @@ Notes
 * The measured mass flux for the 30 cm ethanol pool fire, averaged over the various studies, is 14.8 ± 1.2 g/(m<sup>2</sup> s). 
 
 * The measured radiative fraction for the 30 cm methanol pool fire, averaged over the various studies, is 0.22 ± 0.02 (Kim et al., 2019; Buch et al., 1997; Klassen and Gore, 1994).
+
+* The measured radiative fraction for the 100 cm methanol pool fire, averaged over the various studies, is 0.21 ± 0.01 (Klassen and Gore, 1994*; Sung et al., 2019).  *Note: The radiative fraction from Klassen and Gore was recalculated using the net heat of combustion, 19940 kJ/kg (SFPE Handbook, 2016).
 
 * The measured radiative fraction for the 30 cm acetone pool fire is 0.31 ± 0.06 (Kim et al., 2019).
 
