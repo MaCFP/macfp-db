@@ -28,4 +28,15 @@ Table 1: Fuel and Oxidizer Flow Rate
 |16.8         | 0.298              | 42            | 8                  |
 |15.2         | 0.298              | 42            | 12.2               |
 
+#### Notes
 
+The temperature was measured using a two-thermocouple probe, and the reported data is corrected. This technique is mainly applied to correct the thermal inertia as the radiation correction for a small thermocouple junction is insignificant. The two thermocouples have nominal size 25 and 50 microns.
+
+#### References
+
+1. Zeng, D., Wang, Y., Effect of oxygen depletion on the radiative characteristics of buoyant turbulent diffusion flames, in: 15th Fire & Materials Conference, 2017.
+2. Zeng, D., Chatterjee, P., Wang, Y., The effect of oxy-gen depletion on soot and thermal radiation in buoyant turbulent diffusion flames, Proc Combustion Institute 37 (1) (2019) 825-832.
+3. Ren, N., Zeng, D., Meredith, K.V., Wang, Y., and Dorofeev, S.B., Modeling of flame extinction/re-ignition in oxygen-reduced environments. Proceedings of the Combustion Institute, 2019. 37(3): p. 3951-3958.
+4. Ren, X., Zeng, D., Wang, Y., Xiong, G., Agarwal, G., and Gollner, M., Temperature measurement of a turbulent buoyant ethylene diffusion flame using a dual-thermocouple technique. Submitted to IAFSS, 2019.
+5. Xiong, G., Zeng, D., Panda, P.P., and Wang, Y., Laser induced incandescence measurement of soot in ethylene buoyant turbulent diffusion flames under normal and reduced oxygen concentrations. Submitted to Proceedings of Combustion Institute, 2019.
+6. Chatterjee, P., Zeng, D., and Wang, Y., Numerical Modeling of Soot-Radiation in Optically-Thin, Buoyant Diffusion Flames of Varying Oxygen Concentrations. Submitted to Proceedings of Combustion Institute, 2019.
