@@ -1,10 +1,12 @@
 ## NIST Pool Fires
 
-This directory contains experimental measurements of liquid pool fires. Two circular pool diameters are reported, 30 cm and 100 cm. 
+This directory contains experimental measurements of liquid and gaseous pool fires. Two circular liquid pool diameters are reported, 30 cm and 100 cm. One 37 cm diameter gaseous burner is reported.
 
 The 30 cm burner is 15 cm deep and has a wall thickness of 1.6 mm. The burner is fitted with legs such that the burner rim is positioned 30 cm above the floor. The bottom of the burner is maintained at a constant temperature by flowing tap water (nominally 20 °C) through a 3 cm section on the bottom of the fuel pan.
 
 The 100 cm burner is 15 cm deep with a wall thickness of 1.6 mm. It is also water cooled at the bottom.
+
+The 37 cm burner is water-cooled and maintains a nearly ambient temperature at the surface.
 
 #### Notes:
 
@@ -21,6 +23,8 @@ The 100 cm burner is 15 cm deep with a wall thickness of 1.6 mm. It is also wate
 * The measured mass flux for the 30 cm acetone pool fire, averaged over the various studies, is 18.3 ± 0.6 g/(m<sup>2</sup> s). 
 
 * The measured mass flux for the 30 cm ethanol pool fire, averaged over the various studies, is 14.8 ± 1.2 g/(m<sup>2</sup> s). 
+
+* The measured mass flux for the 37 cm methane burner is 6.4 ± 0.1 g/(m<sup>2</sup> s). 
 
 * The measured radiative fraction for the 30 cm methanol pool fire, averaged over the various studies, is 0.22 ± 0.02 (Kim et al., 2019; Buch et al., 1997; Klassen and Gore, 1994).
 
