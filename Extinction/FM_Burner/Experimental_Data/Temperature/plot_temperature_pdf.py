@@ -80,32 +80,3 @@ fig.text(0.89, rowy5, 'z = 3.5 D', ha='left')
 fig.tight_layout(pad=1.0, h_pad=0.0, w_pad=0.0, rect=[0.05, 0.05, 0.90, 0.95])
 
 plt.show()
-
-
-
-
-
-# t = M['Time']
-# Q = M['HRR']
-
-# # plot fds results
-# plt.figure()
-# plt.subplots_adjust(left=0.15)
-# plt.subplots_adjust(right=0.95)
-# plt.subplots_adjust(bottom=0.175)
-# plt.subplots_adjust(top=0.95)
-
-# marker_style = dict(color='blue', linestyle=':', marker='*', fillstyle='none', markersize=5)
-# plt.plot(t,Q,label='HRR',**marker_style)
-
-# marker_style = dict(color='red', linestyle='--', marker='', fillstyle='none', markersize=5)
-# plt.plot(t,50*np.ones_like(t),label='exact',**marker_style)
-
-# plt.axis([min(t), max(t), min(Q), 1.1*max(Q)])
-# plt.xlabel('time (s)')
-# plt.ylabel('$\dot{Q}$ (kW)')
-# plt.legend(loc='lower right', numpoints=1, frameon=True)
-# #plt.show()
-# plt.savefig('hrr_simple.pdf', format='pdf')
-# plt.close()
-
