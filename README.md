@@ -7,7 +7,7 @@ The central objective of the MaCFP working group is to target fundamental progre
 
 Experimentalists and modelers may participate in the group by submitting pull requests to this repository or by sending data via email to [Randy McDermott](mailto:randy.mcdermott@gmail.com).
 
-Modeling guidelines for the MaCFP 2020 workshop can be found [here](https://github.com/MaCFP/macfp-db/wiki/MaCFP-2020-Modeling-Guidelines).
+Please read the [Modeling Guidelines for the MaCFP 2020 Workshop](https://github.com/MaCFP/macfp-db/wiki/MaCFP-2020-Modeling-Guidelines).
 
 Please visit our [wiki pages](https://github.com/MaCFP/macfp-db/wiki) for additional details.
 
