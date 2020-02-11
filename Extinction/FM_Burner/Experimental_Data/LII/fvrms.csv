@@ -1,7 +1,5 @@
-,fv_rms (ppm),fv_rms (ppm),fv_rms (ppm),fv_rms (ppm),fv_rms (ppm),fv_rms (ppm),fv_rms (ppm),fv_rms (ppm),fv_rms (ppm),fv_rms (ppm),fv_rms (ppm),fv_rms (ppm),fv_rms (ppm),fv_rms (ppm),fv_rms (ppm)
-Oxygen Index,15.2_OI,15.2_OI,15.2_OI,15.2_OI,15.2_OI,16.8_OI,16.8_OI,16.8_OI,16.8_OI,16.8_OI,20.9_OI,20.9_OI,20.9_OI,20.9_OI,20.9_OI
-Height above burner,0.5D,1.0D,1.5D,2.5D,3.5D,0.5D,1.0D,1.5D,2.5D,3.5D,0.5D,1.0D,1.5D,2.5D,3.5D
-distance from center (cm),,,,,,,,,,,,,,,
+cm,ppm,ppm,ppm,ppm,ppm,ppm,ppm,ppm,ppm,ppm,ppm,ppm,ppm,ppm,ppm
+distance from center,15.2_OI_0.5D,15.2_OI_1.0D,15.2_OI_1.5D,15.2_OI_2.5D,15.2_OI_3.5D,16.8_OI_0.5D,16.8_OI_1.0D,16.8_OI_1.5D,16.8_OI_2.5D,16.8_OI_3.5D,20.9_OI_0.5D,20.9_OI_1.0D,20.9_OI_1.5D,20.9_OI_2.5D,20.9_OI_3.5D
 -21.9560,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
 -21.9120,0.0050,0.0054,0.0060,0.0053,0.0068,0.0048,0.0057,0.0065,0.0059,0.0086,0.0066,0.0066,0.0077,0.0071,0.0074
 -21.8680,0.0051,0.0055,0.0057,0.0055,0.0064,0.0049,0.0058,0.0061,0.0062,0.0083,0.0067,0.0067,0.0073,0.0074,0.0070
