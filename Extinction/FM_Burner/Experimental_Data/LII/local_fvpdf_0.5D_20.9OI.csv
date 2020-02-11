@@ -1,6 +1,4 @@
- ,,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI,local pdfs 0.5D 20.9% OI
-Distance from center (cm),,0cm,1cm,2cm,3cm,4cm,5cm,6cm,7cm,8cm,9cm,10cm,11cm,12cm,13cm,14cm,15cm
-edges of bins (ppm),center of bins (ppm),,,,,,,,,,,,,,,,
+edges of bins (ppm),center of bins (ppm),pdf 0.5D 20.9% OI 0cm,pdf 0.5D 20.9% OI 1cm,pdf 0.5D 20.9% OI 2cm,pdf 0.5D 20.9% OI 3cm,pdf 0.5D 20.9% OI 4cm,pdf 0.5D 20.9% OI 5cm,pdf 0.5D 20.9% OI 6cm,pdf 0.5D 20.9% OI 7cm,pdf 0.5D 20.9% OI 8cm,pdf 0.5D 20.9% OI 9cm,pdf 0.5D 20.9% OI 10cm,pdf 0.5D 20.9% OI 11cm,pdf 0.5D 20.9% OI 12cm,pdf 0.5D 20.9% OI 13cm,pdf 0.5D 20.9% OI 14cm,pdf 0.5D 20.9% OI 15cm
 0.0000,0.0450,5.3831,3.5627,6.1211,9.4883,10.6788,10.9914,11.0825,11.1038,11.1091,11.1102,11.1111,11.1109,11.1110,11.1110,11.1111,11.1111
 0.0900,0.1000,2.9491,2.4598,1.4855,0.4801,0.1276,0.0400,0.0138,0.0023,0.0033,0.0020,0.0000,0.0008,0.0003,0.0006,0.0000,0.0000
 0.1100,0.1200,1.9424,1.7687,1.0530,0.3249,0.0883,0.0265,0.0083,0.0015,0.0001,0.0003,0.0000,0.0002,0.0000,0.0001,0.0000,0.0000
