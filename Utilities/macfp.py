@@ -18,15 +18,30 @@ def plot_to_fig(x_data,y_data,**kwargs):
     """
     # print(x_data)
     # print(y_data)
-    for key, value in kwargs.items():
-        print ("%s == %s" %(key, value))
+    # for key, value in kwargs.items():
+    #     print ("%s == %s" %(key, value))
+
+    ##### default parameters ######
+    default_figure_size = (8,6)
+    default_ticklabel_fontsize = 16
+    default_axeslabel_fontsize = 18
+    default_legend_fontsize = 16
+    default_title_fontsize = 18
+    default_subtitle_fontsize = 16
+    default_stamp_fontsize = 12
+    ###############################
+
+    if kwargs.get('figure_size'):
+        figure_size=kwargs.get('figure_size')
+    else:
+        figure_size=default_figure_size
 
     if kwargs.get('figure_handle'):
         fig = kwargs.get('figure_handle')
-        ax = kwargs.get('axes_handle')
+        ax = fig.axes[0]
         plt.figure(fig.number)
     else:
-        fig, ax = plt.subplots(nrows=1, ncols=1, sharex=True, sharey=True, gridspec_kw={'hspace': 0, 'wspace': 0}, figsize=(8,6))
+        fig, ax = plt.subplots(nrows=1, ncols=1, sharex=True, sharey=True, gridspec_kw={'hspace': 0, 'wspace': 0}, figsize=figure_size)
 
     ax.plot(x_data,y_data,label=kwargs.get('data_label'),color=kwargs.get('marker_color'),
         marker=kwargs.get('marker_style'),linestyle=kwargs.get('line_style'))
@@ -43,22 +58,59 @@ def plot_to_fig(x_data,y_data,**kwargs):
     ax.set_ylim(kwargs.get('y_min'),kwargs.get('y_max'))
     ax.set_xticks(np.linspace(start = kwargs.get('x_min'), stop = kwargs.get('x_max'), num = kwargs.get('x_nticks'), endpoint=True))
     ax.set_yticks(np.linspace(start = kwargs.get('y_min'), stop = kwargs.get('y_max'), num = kwargs.get('y_nticks'), endpoint=True))
-    plt.setp( ax.xaxis.get_majorticklabels(), rotation=0, fontsize=16 )
-    plt.setp( ax.yaxis.get_majorticklabels(), rotation=0, fontsize=16 )
 
-    plt.xlabel(kwargs.get('x_label'), fontsize=18)
-    plt.ylabel(kwargs.get('y_label'), fontsize=18)
+    if kwargs.get('ticklabel_fontsize'):
+        ticklabel_fontsize=kwargs.get('ticklabel_fontsize')
+    else:
+        ticklabel_fontsize=default_ticklabel_fontsize
+
+    plt.setp( ax.xaxis.get_majorticklabels(), rotation=0, fontsize=ticklabel_fontsize )
+    plt.setp( ax.yaxis.get_majorticklabels(), rotation=0, fontsize=ticklabel_fontsize )
+
+    if kwargs.get('axeslabel_fontsize'):
+        axeslabel_fontsize=kwargs.get('axeslabel_fontsize')
+    else:
+        axeslabel_fontsize=default_axeslabel_fontsize
+
+    plt.xlabel(kwargs.get('x_label'), fontsize=axeslabel_fontsize)
+    plt.ylabel(kwargs.get('y_label'), fontsize=axeslabel_fontsize)
+
+    if kwargs.get('legend_fontsize'):
+        legend_fontsize=kwargs.get('legend_fontsize')
+    else:
+        legend_fontsize=default_legend_fontsize
 
     if kwargs.get('show_legend'):
-        plt.legend(fontsize=16)
+        plt.legend(fontsize=legend_fontsize,loc=kwargs.get('legend_location'))
 
-    # # plot title
-    # ax.text(-0.45, 0.9, 'Sandia Helium Plume', fontsize=18)
-    # ax.text(-0.45, 0.85, '$z$ = 0.2 m', fontsize=18)
+    # plot title
+    if kwargs.get('title_fontsize'):
+        title_fontsize=kwargs.get('title_fontsize')
+    else:
+        title_fontsize=default_title_fontsize
+
+    if kwargs.get('subtitle_fontsize'):
+        subtitle_fontsize=kwargs.get('subtitle_fontsize')
+    else:
+        subtitle_fontsize=default_subtitle_fontsize
+
+    xmin=kwargs.get('x_min')
+    xmax=kwargs.get('x_max')
+    xpos=xmin+0.05*(xmax-xmin)
+    ymin=kwargs.get('y_min')
+    ymax=kwargs.get('y_max')
+    ypos1=ymin+0.900*(ymax-ymin)
+    ypos2=ymin+0.825*(ymax-ymin)
+    ax.text(xpos,ypos1, kwargs.get('plot_title'), fontsize=title_fontsize)
+    ax.text(xpos,ypos2, kwargs.get('plot_subtitle'), fontsize=subtitle_fontsize)
+
+    # plot Institute + MaCFP stamp
+    ax.text(xmin+0.025*(xmax-xmin),ymax+0.01*(ymax-ymin), kwargs.get('institute_label'), fontsize=default_stamp_fontsize)
+    ax.text(xmax-0.025*(xmax-xmin),ymax+0.01*(ymax-ymin), 'MaCFP 2020', fontsize=default_stamp_fontsize, ha='right')
 
     fig.tight_layout(pad=0, h_pad=0.0, w_pad=0.0, rect=[0.10, 0.10, 0.95, 0.95])
 
     # plt.show()
     # plt.savefig(plot_fname)
 
-    return fig, ax
+    return fig
