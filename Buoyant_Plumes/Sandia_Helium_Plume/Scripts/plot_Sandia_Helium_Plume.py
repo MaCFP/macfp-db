@@ -33,8 +33,8 @@ M = pd.read_csv(expdir+'Sandia_He_1m_p2.csv', sep=',')
 x = M['x (m)'][::2]
 y = M['Y He'][::2]
 
-f1, a1 = macfp.plot_to_fig(x_data=x, y_data=y,
-    data_label='Exp $z$=0.2 m',
+f1 = macfp.plot_to_fig(x_data=x, y_data=y,
+    data_label='Exp',
     y_error_absolute=0.08,
     x_label='Radial Position (m)',
     y_label='Helium Mass Fraction',
@@ -42,7 +42,8 @@ f1, a1 = macfp.plot_to_fig(x_data=x, y_data=y,
     line_style='None',
     x_min=-0.5,x_max=0.5,x_nticks=5,
     y_min=0.0,y_max=1.0,y_nticks=6,
-    show_legend=True
+    show_legend=True,legend_location='upper right',
+    figure_size=(8,6)
     )
 
 plt.figure(f1.number) # make f1 current
@@ -55,22 +56,22 @@ M = pd.read_csv(expdir+'Sandia_He_1m_p4.csv', sep=',')
 x = M['x (m)'][::2]
 y = M['Y He'][::2]
 
-f2, a2 = macfp.plot_to_fig(x_data=x, y_data=y,
-    data_label='Exp $z$=0.4 m',
-    figure_handle=f1,
-    axes_handle=a1,
-    y_error_absolute=0.05,
+f1 = macfp.plot_to_fig(x_data=x, y_data=y,
     x_label='Radial Position (m)',
     y_label='Helium Mass Fraction',
-    marker_color='green',
-    marker_style='o',
-    line_style='None',
+    data_label='FDS $\Delta x=1$ cm',
+    institute_label='NIST',
+    figure_handle=f1,
+    marker_style='',
+    line_style='--',
     x_min=-0.5,x_max=0.5,x_nticks=5,
     y_min=0.0,y_max=1.0,y_nticks=6,
-    show_legend=True
+    show_legend=True,legend_location='upper right',
+    plot_title='Sandia Helium Plume',
+    plot_subtitle='$z$ = 0.2 m'
     )
 
-plt.figure(f2.number) # make f1 current
+plt.figure(f1.number) # make f1 current
 plt.show()
 plt.savefig('../Plots/test3.pdf')
 
