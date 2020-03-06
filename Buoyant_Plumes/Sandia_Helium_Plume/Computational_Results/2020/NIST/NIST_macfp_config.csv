@@ -1,0 +1,4 @@
+Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style,Plot_Filename
+Sandia_He_1m_p2.csv,x (m),Y He,Sandia_He_1m_dx6cm_line.csv,x,YHEp2,-,NIST_Sandia_He_1m_p2
+Sandia_He_1m_p4.csv,x (m),Y He,Sandia_He_1m_dx6cm_line.csv,x,YHEp4,-,NIST_Sandia_He_1m_p4
+Sandia_He_1m_p6.csv,x (m),Y He,Sandia_He_1m_dx6cm_line.csv,x,YHEp6,-,NIST_Sandia_He_1m_p6

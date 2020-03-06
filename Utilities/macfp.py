@@ -16,6 +16,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
     """
     Create a simple x,y plot and return the fig handle
     """
+    # # useful debug statements
     # print(x_data)
     # print(y_data)
     # for key, value in kwargs.items():
@@ -36,6 +37,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
     else:
         figure_size=default_figure_size
 
+    # if figure handle is passed, append to current figure, else generate a new figure
     if kwargs.get('figure_handle'):
         fig = kwargs.get('figure_handle')
         ax = fig.axes[0]
@@ -43,9 +45,11 @@ def plot_to_fig(x_data,y_data,**kwargs):
     else:
         fig, ax = plt.subplots(nrows=1, ncols=1, sharex=True, sharey=True, gridspec_kw={'hspace': 0, 'wspace': 0}, figsize=figure_size)
 
+    # generate the main x,y plot
     ax.plot(x_data,y_data,label=kwargs.get('data_label'),color=kwargs.get('marker_color'),
         marker=kwargs.get('marker_style'),linestyle=kwargs.get('line_style'))
 
+    # if error range is passed, add it to the plot
     if kwargs.get('y_error_absolute'):
         ax.fill_between(x_data,y_data-kwargs.get('y_error_absolute'),y_data+kwargs.get('y_error_absolute'),
             alpha=0.1,color=kwargs.get('marker_color'))
@@ -54,6 +58,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
         ax.fill_between(x_data,y_data*(1.-kwargs.get('y_error_relative')),y_data*(1.+kwargs.get('y_error_relative')),
             alpha=0.1,color=kwargs.get('marker_color'))
 
+    # set axes and tick properties
     ax.set_xlim(kwargs.get('x_min'),kwargs.get('x_max'))
     ax.set_ylim(kwargs.get('y_min'),kwargs.get('y_max'))
     ax.set_xticks(np.linspace(start = kwargs.get('x_min'), stop = kwargs.get('x_max'), num = kwargs.get('x_nticks'), endpoint=True))
@@ -83,7 +88,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
     if kwargs.get('show_legend'):
         plt.legend(fontsize=legend_fontsize,loc=kwargs.get('legend_location'))
 
-    # plot title
+    # plot titles
     if kwargs.get('title_fontsize'):
         title_fontsize=kwargs.get('title_fontsize')
     else:
@@ -108,7 +113,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
     ax.text(xmin+0.025*(xmax-xmin),ymax+0.01*(ymax-ymin), kwargs.get('institute_label'), fontsize=default_stamp_fontsize)
     ax.text(xmax-0.025*(xmax-xmin),ymax+0.01*(ymax-ymin), 'MaCFP 2020', fontsize=default_stamp_fontsize, ha='right')
 
-    fig.tight_layout(pad=0, h_pad=0.0, w_pad=0.0, rect=[0.10, 0.10, 0.95, 0.95])
+    fig.tight_layout(pad=0, h_pad=0.0, w_pad=0.0, rect=[0.05, 0.05, 0.95, 0.95])
 
     # plt.show()
     # plt.savefig(plot_fname)
