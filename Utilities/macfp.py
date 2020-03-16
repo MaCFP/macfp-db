@@ -51,12 +51,14 @@ def plot_to_fig(x_data,y_data,**kwargs):
 
     # if error range is passed, add it to the plot
     if kwargs.get('y_error_absolute'):
-        ax.fill_between(x_data,y_data-kwargs.get('y_error_absolute'),y_data+kwargs.get('y_error_absolute'),
-            alpha=0.1,color=kwargs.get('marker_color'))
+        if kwargs.get('y_error_absolute')>0.:
+            ax.fill_between(x_data,y_data-kwargs.get('y_error_absolute'),y_data+kwargs.get('y_error_absolute'),
+                alpha=0.1,color=kwargs.get('marker_color'))
 
     if kwargs.get('y_error_relative'):
-        ax.fill_between(x_data,y_data*(1.-kwargs.get('y_error_relative')),y_data*(1.+kwargs.get('y_error_relative')),
-            alpha=0.1,color=kwargs.get('marker_color'))
+        if kwargs.get('y_error_relative')>0.:
+            ax.fill_between(x_data,y_data*(1.-kwargs.get('y_error_relative')),y_data*(1.+kwargs.get('y_error_relative')),
+                alpha=0.1,color=kwargs.get('marker_color'))
 
     # set axes and tick properties
     ax.set_xlim(kwargs.get('x_min'),kwargs.get('x_max'))
@@ -113,7 +115,8 @@ def plot_to_fig(x_data,y_data,**kwargs):
     ax.text(xmin+0.025*(xmax-xmin),ymax+0.01*(ymax-ymin), kwargs.get('institute_label'), fontsize=default_stamp_fontsize)
     ax.text(xmax-0.025*(xmax-xmin),ymax+0.01*(ymax-ymin), 'MaCFP 2020', fontsize=default_stamp_fontsize, ha='right')
 
-    fig.tight_layout(pad=0, h_pad=0.0, w_pad=0.0, rect=[0.05, 0.05, 0.95, 0.95])
+    # note: this absolute method works better than fig.tight_layout(), which may change for each call of the figure
+    fig.subplots_adjust(left=0.125, bottom=0.125, right=0.95, top=0.95, wspace=0.2, hspace=0.2)
 
     # plt.show()
     # plt.savefig(plot_fname)
