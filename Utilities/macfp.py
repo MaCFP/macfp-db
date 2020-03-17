@@ -122,3 +122,14 @@ def plot_to_fig(x_data,y_data,**kwargs):
     # plt.savefig(plot_fname)
 
     return fig
+
+
+def get_nticks(x_min,x_max,x_tick,nticks):
+    """
+    converts float x_tick, if it exists, to integer nticks
+    """
+    if x_tick!='None':
+        nticks = int((float(x_max)-float(x_min))/float(x_tick)) + 1
+
+    return nticks
+
