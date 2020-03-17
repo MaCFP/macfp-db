@@ -35,7 +35,7 @@ cmpdir = '../Computational_Results/2020/' + institute + '/'
 pltdir = '../Plots/2020/'
 
 # read the config file
-C = pd.read_csv(cmpdir+config_filename,sep=',')
+C = pd.read_csv(cmpdir+config_filename, sep=' *, *', engine='python')
 
 Plot_Filename_Last = 'None'
 
@@ -43,26 +43,43 @@ Plot_Filename_Last = 'None'
 for irow in C.index:
 
     # get parameters from config file
-    Exp_Filename   = C.values[irow,C.columns.get_loc('Exp_Filename')]
-    Exp_x_Col_Name = C.values[irow,C.columns.get_loc('Exp_x_Col_Name')]
-    Exp_y_Col_Name = C.values[irow,C.columns.get_loc('Exp_y_Col_Name')]
-    Exp_Data_Label = C.values[irow,C.columns.get_loc('Exp_Data_Label')]
+    Exp_Filename       = C.values[irow,C.columns.get_loc('Exp_Filename')]
+    Exp_x_Col_Name     = C.values[irow,C.columns.get_loc('Exp_x_Col_Name')]
+    Exp_y_Col_Name     = C.values[irow,C.columns.get_loc('Exp_y_Col_Name')]
+    Exp_Data_Label     = C.values[irow,C.columns.get_loc('Exp_Data_Label')]
+    Exp_Marker_Style   = C.values[irow,C.columns.get_loc('Exp_Marker_Style')]
+    Exp_Line_Style     = C.values[irow,C.columns.get_loc('Exp_Line_Style')]
     Exp_Error_Absolute = C.values[irow,C.columns.get_loc('Exp_Error_Absolute')]
     Exp_Error_Relative = C.values[irow,C.columns.get_loc('Exp_Error_Relative')]
 
-    Cmp_Filename   = C.values[irow,C.columns.get_loc('Cmp_Filename')]
-    Cmp_x_Col_Name = C.values[irow,C.columns.get_loc('Cmp_x_Col_Name')]
-    Cmp_y_Col_Name = C.values[irow,C.columns.get_loc('Cmp_y_Col_Name')]
+    Cmp_Filename       = C.values[irow,C.columns.get_loc('Cmp_Filename')]
+    Cmp_x_Col_Name     = C.values[irow,C.columns.get_loc('Cmp_x_Col_Name')]
+    Cmp_y_Col_Name     = C.values[irow,C.columns.get_loc('Cmp_y_Col_Name')]
+    Cmp_Data_Label     = C.values[irow,C.columns.get_loc('Cmp_Data_Label')]
+    Cmp_Marker_Style   = C.values[irow,C.columns.get_loc('Cmp_Marker_Style')]
+    Cmp_Line_Style     = C.values[irow,C.columns.get_loc('Cmp_Line_Style')]
 
-    Plot_x_Label = C.values[irow,C.columns.get_loc('Plot_x_Label')]
-    Plot_y_Label = C.values[irow,C.columns.get_loc('Plot_y_Label')]
-    Plot_Filename = C.values[irow,C.columns.get_loc('Plot_Filename')]
+    Plot_x_Label       = C.values[irow,C.columns.get_loc('Plot_x_Label')]
+    Plot_y_Label       = C.values[irow,C.columns.get_loc('Plot_y_Label')]
+    Plot_Title         = C.values[irow,C.columns.get_loc('Plot_Title')]
+    Plot_Subtitle      = C.values[irow,C.columns.get_loc('Plot_Subtitle')]
+    Plot_x_Min         = C.values[irow,C.columns.get_loc('Plot_x_Min')]
+    Plot_x_Max         = C.values[irow,C.columns.get_loc('Plot_x_Max')]
+    Plot_x_Tick        = C.values[irow,C.columns.get_loc('Plot_x_Tick')]
+    Plot_y_Min         = C.values[irow,C.columns.get_loc('Plot_y_Min')]
+    Plot_y_Max         = C.values[irow,C.columns.get_loc('Plot_y_Max')]
+    Plot_y_Tick        = C.values[irow,C.columns.get_loc('Plot_y_Tick')]
+    Plot_Filename      = C.values[irow,C.columns.get_loc('Plot_Filename')]
+
+    Plot_x_Nticks      = macfp.get_nticks(Plot_x_Min,Plot_x_Max,Plot_x_Tick,C.values[irow,C.columns.get_loc('Plot_x_Nticks')])
+    Plot_y_Nticks      = macfp.get_nticks(Plot_y_Min,Plot_y_Max,Plot_y_Tick,C.values[irow,C.columns.get_loc('Plot_y_Nticks')])
+
 
     if Plot_Filename!=Plot_Filename_Last:
 
         # read data from exp file
         # set header to the row where column names are stored (Python is 0 based)
-        E = pd.read_csv(expdir+Exp_Filename, sep=',', header=0)
+        E = pd.read_csv(expdir+Exp_Filename, header=0, sep=' *, *', engine='python')
 
         x = E[Exp_x_Col_Name][::2]
         y = E[Exp_y_Col_Name][::2]
@@ -74,10 +91,10 @@ for irow in C.index:
             y_error_relative=Exp_Error_Relative,
             x_label=Plot_x_Label,
             y_label=Plot_y_Label,
-            marker_style='o',
-            line_style='None',
-            x_min=-0.5,x_max=0.5,x_nticks=5,
-            y_min=0.0,y_max=1.0,y_nticks=6,
+            marker_style=Exp_Marker_Style,
+            line_style=Exp_Line_Style,
+            x_min=Plot_x_Min,x_max=Plot_x_Max,x_nticks=Plot_x_Nticks,
+            y_min=Plot_y_Min,y_max=Plot_y_Max,y_nticks=Plot_y_Nticks,
             show_legend=True,legend_location='upper right',
             figure_size=(8,6)
             )
@@ -88,24 +105,24 @@ for irow in C.index:
         f = f_Last
 
     # get the model results
-    M = pd.read_csv(cmpdir+Cmp_Filename, sep=',', header=1)
+    M = pd.read_csv(cmpdir+Cmp_Filename, header=1, sep=' *, *', engine='python')
 
     x = M[Cmp_x_Col_Name][::1]
     y = M[Cmp_y_Col_Name][::1]
 
     f = macfp.plot_to_fig(x_data=x, y_data=y,
-        x_label='Radial Position (m)',
-        y_label='Helium Mass Fraction',
-        data_label='FDS $\Delta x=6$ cm',
+        x_label=Plot_x_Label,
+        y_label=Plot_y_Label,
+        data_label=Cmp_Data_Label,
         institute_label=institute,
         figure_handle=f,
-        marker_style='',
-        line_style='--',
-        x_min=-0.5,x_max=0.5,x_nticks=5,
-        y_min=0.0,y_max=1.0,y_nticks=6,
+        marker_style=Cmp_Marker_Style,
+        line_style=Cmp_Line_Style,
+        x_min=Plot_x_Min,x_max=Plot_x_Max,x_nticks=Plot_x_Nticks,
+        y_min=Plot_y_Min,y_max=Plot_y_Max,y_nticks=Plot_y_Nticks,
         show_legend=True,legend_location='upper right',
-        plot_title='Sandia Helium Plume',
-        plot_subtitle='$z$ = 0.2 m',
+        plot_title=Plot_Title,
+        plot_subtitle=Plot_Subtitle,
         )
 
     plt.figure(f.number) # make figure current

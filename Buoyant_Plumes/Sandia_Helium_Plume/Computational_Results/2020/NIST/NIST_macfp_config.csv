@@ -1,8 +1,8 @@
-Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Exp_Error_Absolute,Exp_Error_Relative,Exp_Data_Label,Plot_x_Label,Plot_y_Label,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Plot_Style,Plot_Filename
-Sandia_He_1m_p2.csv,x (m),Y He,0.08,0.,Exp,Radial Position (m),Helium Mass Fraction,Sandia_He_1m_dx20cm_line.csv,x,YHEp2,-,NIST_Sandia_He_1m_p2
-Sandia_He_1m_p2.csv,x (m),Y He,0.08,0.,Exp,Radial Position (m),Helium Mass Fraction,Sandia_He_1m_dx10cm_line.csv,x,YHEp2,-,NIST_Sandia_He_1m_p2
-Sandia_He_1m_p2.csv,x (m),Y He,0.08,0.,Exp,Radial Position (m),Helium Mass Fraction,Sandia_He_1m_dx6cm_line.csv,x,YHEp2,-,NIST_Sandia_He_1m_p2
-Sandia_He_1m_p2.csv,x (m),Y He,0.08,0.,Exp,Radial Position (m),Helium Mass Fraction,Sandia_He_1m_dx3cm_line.csv,x,YHEp2,-,NIST_Sandia_He_1m_p2
-Sandia_He_1m_p2.csv,x (m),Y He,0.08,0.,Exp,Radial Position (m),Helium Mass Fraction,Sandia_He_1m_dx1p5cm_line.csv,x,YHEp2,-,NIST_Sandia_He_1m_p2
-Sandia_He_1m_p4.csv,x (m),Y He,0.08,0.,Exp,Radial Position (m),Helium Mass Fraction,Sandia_He_1m_dx6cm_line.csv,x,YHEp4,-,NIST_Sandia_He_1m_p4
-Sandia_He_1m_p6.csv,x (m),Y He,0.08,0.,Exp,Radial Position (m),Helium Mass Fraction,Sandia_He_1m_dx6cm_line.csv,x,YHEp6,-,NIST_Sandia_He_1m_p6
+Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Exp_Error_Absolute,Exp_Error_Relative,Exp_Data_Label,Exp_Marker_Style,Exp_Line_Style,Cmp_Filename,Cmp_x_Col_Name,Cmp_y_Col_Name,Cmp_Data_Label,Cmp_Marker_Style,Cmp_Line_Style,Plot_Title,Plot_Subtitle,Plot_x_Label,Plot_y_Label,Plot_x_Min,Plot_x_Max,Plot_x_Tick,Plot_x_Nticks,Plot_y_Min,Plot_y_Max,Plot_y_Tick,Plot_y_Nticks,Plot_Filename
+Sandia_He_1m_p2.csv,x (m),Y He,0.08,0.,Exp,o,None,Sandia_He_1m_dx20cm_line.csv,x,YHEp2,FDS $\Delta x=20$ cm,None,-,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Helium Mass Fraction,-0.5,0.5,None,5,0,1,None,6,NIST_Sandia_He_1m_p2
+Sandia_He_1m_p2.csv,x (m),Y He,0.08,0.,Exp,o,None,Sandia_He_1m_dx10cm_line.csv,x,YHEp2,FDS $\Delta x=10$ cm,None,-,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Helium Mass Fraction,-0.5,0.5,None,5,0,1,None,6,NIST_Sandia_He_1m_p2
+Sandia_He_1m_p2.csv,x (m),Y He,0.08,0.,Exp,o,None,Sandia_He_1m_dx6cm_line.csv,x,YHEp2,FDS $\Delta x=6$ cm,None,-,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Helium Mass Fraction,-0.5,0.5,None,5,0,1,None,6,NIST_Sandia_He_1m_p2
+Sandia_He_1m_p2.csv,x (m),Y He,0.08,0.,Exp,o,None,Sandia_He_1m_dx3cm_line.csv,x,YHEp2,FDS $\Delta x=3$ cm,None,-,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Helium Mass Fraction,-0.5,0.5,None,5,0,1,None,6,NIST_Sandia_He_1m_p2
+Sandia_He_1m_p2.csv,x (m),Y He,0.08,0.,Exp,o,None,Sandia_He_1m_dx1p5cm_line.csv,x,YHEp2,FDS $\Delta x=1.5$ cm,None,-,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Helium Mass Fraction,-0.5,0.5,None,5,0,1,None,6,NIST_Sandia_He_1m_p2
+Sandia_He_1m_p4.csv,x (m),Y He,0.08,0.,Exp,o,None,Sandia_He_1m_dx6cm_line.csv,x,YHEp4,FDS $\Delta x=6$ cm,None,-,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Helium Mass Fraction,-0.5,0.5,None,5,0,1,None,6,NIST_Sandia_He_1m_p4
+Sandia_He_1m_p6.csv,x (m),Y He,0.08,0.,Exp,o,None,Sandia_He_1m_dx6cm_line.csv,x,YHEp6,FDS $\Delta x=6$ cm,None,-,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Helium Mass Fraction,-0.5,0.5,0.1,5,0,1,0.1,6,NIST_Sandia_He_1m_p6
