@@ -2,6 +2,7 @@
 #McDermott
 #4 Feb 2020
 
+import os
 import sys
 sys.path.append('../../../Utilities/') # relative path of macfp module
 
@@ -110,7 +111,11 @@ for irow in C.index:
     plt.figure(f.number) # make figure current
     plt.show()
 
-    plt.savefig(pltdir+Plot_Filename+'.pdf')
+    isDir = os.path.isdir(pltdir)
+    if not isDir:
+        os.mkdir(pltdir)
+
+    plt.savefig(pltdir + Plot_Filename + '.pdf')
 
     Plot_Filename_Last = Plot_Filename
     f_Last = f
