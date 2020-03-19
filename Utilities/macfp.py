@@ -133,3 +133,51 @@ def get_nticks(x_min,x_max,x_tick,nticks):
 
     return nticks
 
+
+def define_plot_parameters(C,irow):
+    """
+    gathers parameters from config file
+    """
+    class plot_parameters:
+
+        Exp_Filename         = C.values[irow,C.columns.get_loc('Exp_Filename')]
+        Exp_Header_Row       = C.values[irow,C.columns.get_loc('Exp_Header_Row')]
+        Exp_x_Col_Name       = C.values[irow,C.columns.get_loc('Exp_x_Col_Name')]
+        Exp_y_Col_Name       = C.values[irow,C.columns.get_loc('Exp_y_Col_Name')]
+        Exp_Data_Skip        = C.values[irow,C.columns.get_loc('Exp_Data_Skip')]
+        Exp_Data_Label       = C.values[irow,C.columns.get_loc('Exp_Data_Label')]
+        Exp_Marker_Style     = C.values[irow,C.columns.get_loc('Exp_Marker_Style')]
+        Exp_Line_Style       = C.values[irow,C.columns.get_loc('Exp_Line_Style')]
+        Exp_Error_Absolute   = C.values[irow,C.columns.get_loc('Exp_Error_Absolute')]
+        Exp_Error_Relative   = C.values[irow,C.columns.get_loc('Exp_Error_Relative')]
+
+        Cmp_Filename         = C.values[irow,C.columns.get_loc('Cmp_Filename')]
+        Cmp_Header_Row       = C.values[irow,C.columns.get_loc('Cmp_Header_Row')]
+        Cmp_x_Col_Name       = C.values[irow,C.columns.get_loc('Cmp_x_Col_Name')]
+        Cmp_y_Col_Name       = C.values[irow,C.columns.get_loc('Cmp_y_Col_Name')]
+        Cmp_Data_Skip        = C.values[irow,C.columns.get_loc('Cmp_Data_Skip')]
+        Cmp_Data_Label       = C.values[irow,C.columns.get_loc('Cmp_Data_Label')]
+        Cmp_Marker_Style     = C.values[irow,C.columns.get_loc('Cmp_Marker_Style')]
+        Cmp_Line_Style       = C.values[irow,C.columns.get_loc('Cmp_Line_Style')]
+
+        Plot_x_Label         = C.values[irow,C.columns.get_loc('Plot_x_Label')]
+        Plot_y_Label         = C.values[irow,C.columns.get_loc('Plot_y_Label')]
+        Plot_Title           = C.values[irow,C.columns.get_loc('Plot_Title')]
+        Plot_Subtitle        = C.values[irow,C.columns.get_loc('Plot_Subtitle')]
+        Plot_x_Min           = C.values[irow,C.columns.get_loc('Plot_x_Min')]
+        Plot_x_Max           = C.values[irow,C.columns.get_loc('Plot_x_Max')]
+        Plot_x_Tick          = C.values[irow,C.columns.get_loc('Plot_x_Tick')]
+        Plot_y_Min           = C.values[irow,C.columns.get_loc('Plot_y_Min')]
+        Plot_y_Max           = C.values[irow,C.columns.get_loc('Plot_y_Max')]
+        Plot_y_Tick          = C.values[irow,C.columns.get_loc('Plot_y_Tick')]
+        Plot_Show_Legend     = C.values[irow,C.columns.get_loc('Plot_Show_Legend')]
+        Plot_Legend_Location = C.values[irow,C.columns.get_loc('Plot_Legend_Location')]
+        Plot_Filename        = C.values[irow,C.columns.get_loc('Plot_Filename')]
+        Plot_Filetype        = C.values[irow,C.columns.get_loc('Plot_Filetype')]
+
+        Plot_x_Nticks = get_nticks(Plot_x_Min,Plot_x_Max,Plot_x_Tick,C.values[irow,C.columns.get_loc('Plot_x_Nticks')])
+        Plot_y_Nticks = get_nticks(Plot_y_Min,Plot_y_Max,Plot_y_Tick,C.values[irow,C.columns.get_loc('Plot_y_Nticks')])
+        if Plot_Legend_Location.isdigit():
+            Plot_Legend_Location=int(Plot_Legend_Location)
+
+    return plot_parameters
