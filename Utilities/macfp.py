@@ -46,8 +46,16 @@ def plot_to_fig(x_data,y_data,**kwargs):
         fig, ax = plt.subplots(nrows=1, ncols=1, sharex=True, sharey=True, gridspec_kw={'hspace': 0, 'wspace': 0}, figsize=figure_size)
 
     # generate the main x,y plot
-    ax.plot(x_data,y_data,label=kwargs.get('data_label'),color=kwargs.get('marker_color'),
-        marker=kwargs.get('marker_style'),linestyle=kwargs.get('line_style'))
+    ax.plot(x_data,y_data,
+        markevery=kwargs.get('data_markevery'),
+        label=kwargs.get('data_label'),
+        markerfacecolor=kwargs.get('marker_color'),
+        markeredgecolor=kwargs.get('marker_color'),
+        marker=kwargs.get('marker_style'),
+        markersize=kwargs.get('marker_size'),
+        linestyle=kwargs.get('line_style'),
+        linewidth=kwargs.get('line_width'),
+        color=kwargs.get('line_color'))
 
     # if error range is passed, add it to the plot
     if kwargs.get('y_error_absolute'):
@@ -144,10 +152,14 @@ def define_plot_parameters(C,irow):
         Exp_Header_Row       = C.values[irow,C.columns.get_loc('Exp_Header_Row')]
         Exp_x_Col_Name       = C.values[irow,C.columns.get_loc('Exp_x_Col_Name')]
         Exp_y_Col_Name       = C.values[irow,C.columns.get_loc('Exp_y_Col_Name')]
-        Exp_Data_Skip        = C.values[irow,C.columns.get_loc('Exp_Data_Skip')]
+        Exp_Data_Markevery   = C.values[irow,C.columns.get_loc('Exp_Data_Markevery')]
         Exp_Data_Label       = C.values[irow,C.columns.get_loc('Exp_Data_Label')]
         Exp_Marker_Style     = C.values[irow,C.columns.get_loc('Exp_Marker_Style')]
+        Exp_Marker_Color     = C.values[irow,C.columns.get_loc('Exp_Marker_Color')]
+        Exp_Marker_Size      = C.values[irow,C.columns.get_loc('Exp_Marker_Size')]
         Exp_Line_Style       = C.values[irow,C.columns.get_loc('Exp_Line_Style')]
+        Exp_Line_Color       = C.values[irow,C.columns.get_loc('Exp_Line_Color')]
+        Exp_Line_Width       = C.values[irow,C.columns.get_loc('Exp_Line_Width')]
         Exp_Error_Absolute   = C.values[irow,C.columns.get_loc('Exp_Error_Absolute')]
         Exp_Error_Relative   = C.values[irow,C.columns.get_loc('Exp_Error_Relative')]
 
@@ -155,10 +167,14 @@ def define_plot_parameters(C,irow):
         Cmp_Header_Row       = C.values[irow,C.columns.get_loc('Cmp_Header_Row')]
         Cmp_x_Col_Name       = C.values[irow,C.columns.get_loc('Cmp_x_Col_Name')]
         Cmp_y_Col_Name       = C.values[irow,C.columns.get_loc('Cmp_y_Col_Name')]
-        Cmp_Data_Skip        = C.values[irow,C.columns.get_loc('Cmp_Data_Skip')]
+        Cmp_Data_Markevery   = C.values[irow,C.columns.get_loc('Cmp_Data_Markevery')]
         Cmp_Data_Label       = C.values[irow,C.columns.get_loc('Cmp_Data_Label')]
         Cmp_Marker_Style     = C.values[irow,C.columns.get_loc('Cmp_Marker_Style')]
+        Cmp_Marker_Color     = C.values[irow,C.columns.get_loc('Cmp_Marker_Color')]
+        Cmp_Marker_Size      = C.values[irow,C.columns.get_loc('Cmp_Marker_Size')]
         Cmp_Line_Style       = C.values[irow,C.columns.get_loc('Cmp_Line_Style')]
+        Cmp_Line_Color       = C.values[irow,C.columns.get_loc('Cmp_Line_Color')]
+        Cmp_Line_Width       = C.values[irow,C.columns.get_loc('Cmp_Line_Width')]
 
         Plot_x_Label         = C.values[irow,C.columns.get_loc('Plot_x_Label')]
         Plot_y_Label         = C.values[irow,C.columns.get_loc('Plot_y_Label')]
@@ -173,7 +189,6 @@ def define_plot_parameters(C,irow):
         Plot_Show_Legend     = C.values[irow,C.columns.get_loc('Plot_Show_Legend')]
         Plot_Legend_Location = C.values[irow,C.columns.get_loc('Plot_Legend_Location')]
         Plot_Filename        = C.values[irow,C.columns.get_loc('Plot_Filename')]
-        Plot_Filetype        = C.values[irow,C.columns.get_loc('Plot_Filetype')]
 
         Plot_x_Nticks = get_nticks(Plot_x_Min,Plot_x_Max,Plot_x_Tick,C.values[irow,C.columns.get_loc('Plot_x_Nticks')])
         Plot_y_Nticks = get_nticks(Plot_y_Min,Plot_y_Max,Plot_y_Tick,C.values[irow,C.columns.get_loc('Plot_y_Nticks')])
