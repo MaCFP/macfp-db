@@ -51,6 +51,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
         label=kwargs.get('data_label'),
         markerfacecolor=kwargs.get('marker_color'),
         markeredgecolor=kwargs.get('marker_color'),
+        markeredgewidth=kwargs.get('line_width'),
         marker=kwargs.get('marker_style'),
         markersize=kwargs.get('marker_size'),
         linestyle=kwargs.get('line_style'),
