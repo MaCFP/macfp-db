@@ -35,7 +35,7 @@ cmpdir = '../Computational_Results/2020/' + institute + '/'
 pltdir = '../Plots/2020/'
 
 # read the config file
-C = pd.read_csv(cmpdir+config_filename, sep=' *, *', engine='python')
+C = pd.read_csv(cmpdir+config_filename, sep=' *, *', engine='python', comment='#')
 
 Plot_Filename_Last = 'None'
 
