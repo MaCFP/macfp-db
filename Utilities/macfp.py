@@ -125,12 +125,31 @@ def plot_to_fig(x_data,y_data,**kwargs):
     ax.text(xmax-0.025*(xmax-xmin),ymax+0.01*(ymax-ymin), 'MaCFP 2020', fontsize=default_stamp_fontsize, ha='right')
 
     # note: this absolute method works better than fig.tight_layout(), which may change for each call of the figure
-    fig.subplots_adjust(left=0.125, bottom=0.125, right=0.95, top=0.95, wspace=0.2, hspace=0.2)
+    left_adjust, bottom_adjust = get_subplots_adjust_parameters(ticklabel_fontsize,axeslabel_fontsize)
+    if ymin<0:
+        left_adjust = left_adjust + 0.025 # account for negative sign
 
-    # plt.show()
-    # plt.savefig(plot_fname)
+    fig.subplots_adjust(left=left_adjust, bottom=bottom_adjust, right=0.95, top=0.95, wspace=0.2, hspace=0.2)
 
     return fig
+
+
+def get_subplots_adjust_parameters(ticklabel_fontsize,axeslabel_fontsize):
+    """
+    automatically select axes adjustments based on fontsize,
+    this is a brute force method, but I could not find a more
+    automatic way to do it since tight_layout() is not working
+    """
+    left_adjust = 0.125
+    bottom_adjust = 0.125
+
+    if ticklabel_fontsize + axeslabel_fontsize > 34:
+        # determined this adjustment by trial and error
+        left_adjust   = 0.125 + 0.006875*(ticklabel_fontsize + axeslabel_fontsize - 34)
+        bottom_adjust = 0.125 + 0.001875*(ticklabel_fontsize + axeslabel_fontsize - 34)
+
+    return left_adjust, bottom_adjust
+
 
 
 def get_nticks(x_min,x_max,x_tick,nticks):
