@@ -335,7 +335,7 @@ def dataplot(config_filename,**kwargs):
             )
 
         plt.figure(f.number) # make figure current
-        plt.show()
+        # plt.show()
 
         # create plot directory if it does not exist
         isDir = os.path.isdir(pltdir)
