@@ -1,16 +1,18 @@
 ## NIST Pool Fires
 
-This directory contains experimental measurements of liquid and gaseous pool fires. Two circular liquid pool diameters are reported, 30 cm and 100 cm. Results using a 37 cm diameter, water-cooled, gaseous burner are also reported.
+This directory contains experimental measurements of liquid and gaseous pool fires. Results using two circular, liquid pool burners are reported, 30 cm and 100 cm in diameter. Results using a 37 cm diameter, water-cooled, gaseous burner are also reported.
 
-The 30 cm burner is 15 cm deep and has a wall thickness of 1.6 mm. The burner is fitted with legs such that the burner rim is positioned 30 cm above the floor. The bottom of the burner is maintained at a constant temperature by flowing tap water (nominally 20 °C) through a 3 cm section on the bottom of the fuel pan.
+The 30 cm burner is 15 cm deep. The burner is fitted with legs such that the burner rim is positioned 30 cm above the floor. The bottom of the burner is maintained at a constant temperature by flowing tap water (nominally 20 °C) through a 3 cm section on the bottom of the fuel pan.
 
 The 100 cm burner is 15 cm deep with a wall thickness of 1.6 mm. It is also water cooled at the bottom.
 
-The 37 cm burner is water-cooled and maintains a nearly ambient temperature at the surface.
+The 37 cm gaseous burner is water-cooled and maintains a nearly ambient temperature at the surface.
 
 #### Notes:
 
-* Weckman and Strong (1996) report a burner diameter of 30.5 cm. The burner used at NIST has a diameter of 30.1 cm.
+* Kim et al (2019) report that the NIST burner has an inner diameter of 30.1 cm, a wall thickness of 0.13 cm, and a depth of 15 cm. 
+
+* Weckman and Strong (1996) report using a 30.5 cm diameter burner. Weckman (2020) reports that the outer diameter of the burner is 30.5 cm, the wall thickness is 0.15 cm, and the depth is 6.0 cm. 
 
 * The lip height reported by Weckman and Strong (1996) and Kim et al. (2019) is 10 mm. Hamins et al. (1994), Klassen et al. (1994), and Hamins and Lock (2016) report a lip height of 5 mm.
 
@@ -47,9 +49,9 @@ Hamins and Lock (2016) made mean and rms centerline and radial gas temperature m
 
 Sung et al. (2020) made mean and rms centerline and radial gas temperature measurements for a 100 cm methanol pool fire. The radial measurements were made at heights of 20, 60, 100, 140, and 180 cm.
 
-### Gas Species Concentrations
+### Gas Species and Soot Concentrations
 
-Falkenstein-Smith et al. (2020) measured the time-averaged centerline species concentrations within the flaming region of three 30 cm liquid fuel fires: acetone, ethanol, and methanol. The measurements were made using a gas chromatograph/mass spectrometer system (GC/MSD). The volume fraction of each species was calculated via the number of moles identified by the GC/MSD at each centerline point. Soot mass fractions were measured during the gas sampling process. The data is in the files `Acetone_30_cm.csv`, `Ethanol_30_cm.csv`, and `Methanol_30_cm.csv`.
+Falkenstein-Smith et al. (2020a and 2020b) measured the time-averaged centerline species concentrations within the flaming region of three 30 cm liquid fuel fires: acetone, ethanol, and methanol. Falkenstein-Smith et al. (2020b) measured the time-averaged centerline species concentrations in the 37 cm methane fire. The measurements were made using a gas chromatograph/mass spectrometer system (GC/MSD). The volume fraction of each species was calculated via the number of moles identified by the GC/MSD at each centerline point. Soot mass fractions were measured during the gas sampling process. The data is in the files `Acetone_30_cm.csv`, `Ethanol_30_cm.csv`, and `Methanol_30_cm.csv`.
 
 
 ### Heat Flux
@@ -72,9 +74,9 @@ Radiative and total heat flux measurements were made at various locations for th
 
 Buch, R., Hamins, A., Konishi, K., Mattingly, D., and Kashiwagi, T., Radiative Emission Fraction of Pool Fires Burning Silicone Fluids, Combust. Flame, 108, 118-126 (1997).
 
-Falkenstein-Smith, R., K. Sung, J. Chen, and A. Hamins, The Chemical Structure of Medium-Scale Pool Fires, Interflam Conference Proceedings, p. 2059, London, England, July 1-3, 2019.
+Falkenstein-Smith, R., K. Sung, J. Chen, and A. Hamins, Chemical Structure of Medium-Scale Liquid Pool Fires, Fire Safety Journal, available on-line 14 May 2020a, https://doi.org/10.1016/j.firesaf.2020.103099
 
-Falkesntein-Smith, R., K. Sung, Chen, J., Harris, K., A. Hamins, The Structure of Medium-Scale Pool Fires, NIST Technical Note 2082, National Institute of Standards and Technology, Gaithersburg, MD, February 2020. https://doi.org/10.6028/NIST.TN.2082
+Falkesntein-Smith, R., K. Sung, Chen, J., Harris, K., A. Hamins, The Structure of Medium-Scale Pool Fires, NIST Technical Note 2082, National Institute of Standards and Technology, Gaithersburg, MD, February 2020b. https://doi.org/10.6028/NIST.TN.2082
 
 Hamins, A., M. Klassen, J. Gore, S. Fischer, T. Kashiwagi, Heat feedback to the fuel surface in pool fires, Combustion Science and Technology, 97:37-62 (1994).
 
@@ -86,7 +88,9 @@ Klassen, M. and J.P. Gore, Structure and Radiation Properties of Pool Fires, NIS
 
 Sung, K., J. Chen, M. Bundy, M. Fernandez, and A. Hamins, The Thermal Character of a 1 m Methanol Pool Fire,  NIST Technical Note 2083, National Institute of Standards and Technology, Gaithersburg, MD, January 2020. https://doi.org/10.6028/NIST.TN.2083 
 
-Weckman, E.J. and A.B. Strong, Experimental investigation of the turbulence structure of medium-scale methanol pool fires, Combustion and Flame, 105:245-66 (1966).
+Weckman, E.J.; Personal Communication, Email to A. Hamins, 28 August 2020.  
+
+Weckman, E.J. and A.B. Strong, Experimental investigation of the turbulence structure of medium-scale methanol pool fires, Combustion and Flame, 105:245-66 (1996).
 
 SFPE Handbook of Fire Protection Engineering (5th ed.), Appendix 3, Fuel Properties and Combustion Data, (Ed.: M. Hurley) 2016.
 
