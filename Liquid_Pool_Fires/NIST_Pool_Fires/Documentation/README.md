@@ -2,6 +2,8 @@
 
 This directory contains experimental measurements of liquid and gaseous pool fires. Results using two circular, liquid pool burners are reported, 30 cm and 100 cm in diameter. Results using a 37 cm diameter, water-cooled, gaseous burner are also reported.
 
+Experimental results are reported for steadily burning fires in a well-ventilated, quiescent environment. A warm-up period of 10 min was required for the mass burning rate of the liquid fuels to be steady.   
+
 The 30 cm burner is 15 cm deep. The burner is fitted with legs such that the burner rim is positioned 30 cm above the floor. The bottom of the burner is maintained at a constant temperature by flowing tap water (nominally 20 °C) through a 3 cm section on the bottom of the fuel pan.
 
 The 100 cm burner is 15 cm deep with a wall thickness of 1.6 mm. It is also water cooled at the bottom.
