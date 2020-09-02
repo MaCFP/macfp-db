@@ -42,7 +42,11 @@ The 37 cm gaseous burner is water-cooled and maintains a nearly ambient temperat
 
 ![Pool Fire Photograph](100cm_Methanol_Pool_Fire.jpg)
 
-Photographs of the 100 cm methanol pool fire.
+Photographs of the 100 cm methanol pool fire with a 1 cm lip height.
+
+![Pool Fire Photograph](30cm_Methanol_Pool_Fire.jpg)
+
+Photographs of the 30 cm methanol pool fire with a 1 cm lip height.
 
 
 ### Temperature
