@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 """
 macfp.py
 by Randy McDermott
