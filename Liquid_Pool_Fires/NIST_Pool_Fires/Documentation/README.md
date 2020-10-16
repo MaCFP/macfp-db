@@ -5,8 +5,8 @@ This directory contains experimental measurements of liquid and gaseous pool fir
 | Diameter (m) | Fuel     | Mass Flux g/(m<sup>2</sup> s) | References         |
 |--------------|----------|--------------------|--------------------|
 | 30           | Methanol | 13.2± 0.9          | 1,2,3,4,5,6,7,9,10 |
-| 30           | Ethanol  | 18.3± 0.6          | 1,2,3,6            |
-| 30           | Acetone  | 14.8± 1.2          | 1,2,3,6            |
+| 30           | Ethanol  | 14.8± 1.2          | 1,2,3,6            |
+| 30           | Acetone  | 18.3± 0.6          | 1,2,3,6            |
 | 37           | Methane  | 6.4± 0.1           | 3                  |
 | 100          | Methanol | 16.3± 0.2          | 1,7,8              |
 
