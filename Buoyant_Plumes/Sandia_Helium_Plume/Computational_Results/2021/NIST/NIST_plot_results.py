@@ -16,6 +16,6 @@ import matplotlib.pyplot as plt
 macfp.dataplot(config_filename='NIST_macfp_config.csv',
                institute='NIST test',
                expdir='../../../Experimental_Data/',
-               pltdir='../../../Plots/2020/')
+               pltdir='./Plots/')
 
 plt.show()
