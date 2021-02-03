@@ -379,18 +379,22 @@ def define_plot_parameters(C,irow):
         except:
             Plot_x_Nticks = 5
 
-        if Plot_x_Tick.isnumeric():
+        try:
             if float(Plot_x_Tick)>0. and float(Plot_x_Tick)<1.e10 and float(Plot_x_Min)>-1.e10 and float(Plot_x_Max)<1.e10:
                 Plot_x_Nticks = get_nticks(Plot_x_Min,Plot_x_Max,Plot_x_Tick)
+        except:
+            Plot_x_Nticks = 5
 
         try:
             Plot_y_Nticks = C.values[irow,C.columns.get_loc('Plot_y_Nticks')]
         except:
             Plot_y_Nticks = 5
 
-        if Plot_y_Tick.isnumeric():
+        try:
             if float(Plot_y_Tick)>0. and float(Plot_y_Tick)<1.e10 and float(Plot_y_Min)>-1.e10 and float(Plot_y_Max)<1.e10:
                 Plot_y_Nticks = get_nticks(Plot_y_Min,Plot_y_Max,Plot_y_Tick)
+        except:
+            Plot_y_Nticks = 5
 
         if Plot_Legend_Location.isdigit():
             Plot_Legend_Location=int(Plot_Legend_Location)
