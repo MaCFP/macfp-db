@@ -122,7 +122,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
 
     # plot Institute + MaCFP stamp
     ax.text(xmin+0.025*(xmax-xmin),ymax+0.01*(ymax-ymin), kwargs.get('institute_label'), fontsize=default_stamp_fontsize)
-    ax.text(xmax-0.025*(xmax-xmin),ymax+0.01*(ymax-ymin), 'MaCFP 2020', fontsize=default_stamp_fontsize, ha='right')
+    ax.text(xmax-0.025*(xmax-xmin),ymax+0.01*(ymax-ymin), 'MaCFP 2021', fontsize=default_stamp_fontsize, ha='right')
 
     # note: this absolute method works better than fig.tight_layout(), which may change for each call of the figure
     left_adjust, bottom_adjust = get_subplots_adjust_parameters(ticklabel_fontsize,axeslabel_fontsize)
@@ -246,6 +246,7 @@ def dataplot(config_filename,**kwargs):
 
     # defaults
     institute = ''
+    configdir = ''
     expdir = ''
     cmpdir = ''
     pltdir = ''
@@ -264,7 +265,7 @@ def dataplot(config_filename,**kwargs):
         pltdir = kwargs.get('pltdir') #'../Plots/2020/'
 
     # read the config file
-    C = pd.read_csv(cmpdir+config_filename, sep=' *, *', engine='python', comment='#')
+    C = pd.read_csv(configdir+config_filename, sep=' *, *', engine='python', comment='#')
 
     Plot_Filename_Last = 'None'
 
