@@ -11,6 +11,8 @@ import sys
 sys.path.append('../../../../../../macfp-db/Utilities/')
 
 import macfp
+import importlib
+importlib.reload(macfp)
 import matplotlib.pyplot as plt
 
 macfp.dataplot(config_filename='NIST_macfp_config.csv',

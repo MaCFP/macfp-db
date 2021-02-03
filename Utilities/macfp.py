@@ -9,8 +9,10 @@ Measurement and Computation of Fire Phenomena (MaCFP)
 Collection of functions for plotting and analysis
 """
 
+import sys
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 
 def plot_to_fig(x_data,y_data,**kwargs):
     """
@@ -49,8 +51,8 @@ def plot_to_fig(x_data,y_data,**kwargs):
     ax.plot(x_data,y_data,
         markevery=kwargs.get('data_markevery'),
         label=kwargs.get('data_label'),
-        markerfacecolor=kwargs.get('marker_color'),
-        markeredgecolor=kwargs.get('marker_color'),
+        markerfacecolor=kwargs.get('marker_fill_color'),
+        markeredgecolor=kwargs.get('marker_edge_color'),
         markeredgewidth=kwargs.get('line_width'),
         marker=kwargs.get('marker_style'),
         markersize=kwargs.get('marker_size'),
@@ -62,12 +64,12 @@ def plot_to_fig(x_data,y_data,**kwargs):
     if kwargs.get('y_error_absolute'):
         if kwargs.get('y_error_absolute')>0.:
             ax.fill_between(x_data,y_data-kwargs.get('y_error_absolute'),y_data+kwargs.get('y_error_absolute'),
-                alpha=0.1,color=kwargs.get('marker_color'))
+                alpha=0.1,color=kwargs.get('marker_edge_color'))
 
     if kwargs.get('y_error_relative'):
         if kwargs.get('y_error_relative')>0.:
             ax.fill_between(x_data,y_data*(1.-kwargs.get('y_error_relative')),y_data*(1.+kwargs.get('y_error_relative')),
-                alpha=0.1,color=kwargs.get('marker_color'))
+                alpha=0.1,color=kwargs.get('marker_edge_color'))
 
     # set axes and tick properties
     ax.set_xlim(kwargs.get('x_min'),kwargs.get('x_max'))
@@ -152,12 +154,11 @@ def get_subplots_adjust_parameters(ticklabel_fontsize,axeslabel_fontsize):
 
 
 
-def get_nticks(x_min,x_max,x_tick,nticks):
+def get_nticks(x_min,x_max,x_tick):
     """
     converts float x_tick, if it exists, to integer nticks
     """
-    if x_tick!='None':
-        nticks = int((float(x_max)-float(x_min))/float(x_tick)) + 1
+    nticks = int((float(x_max)-float(x_min))/float(x_tick)) + 1
 
     return nticks
 
@@ -168,50 +169,229 @@ def define_plot_parameters(C,irow):
     """
     class plot_parameters:
 
-        Exp_Filename         = C.values[irow,C.columns.get_loc('Exp_Filename')]
-        Exp_Header_Row       = C.values[irow,C.columns.get_loc('Exp_Header_Row')]
-        Exp_x_Col_Name       = C.values[irow,C.columns.get_loc('Exp_x_Col_Name')]
-        Exp_y_Col_Name       = C.values[irow,C.columns.get_loc('Exp_y_Col_Name')]
-        Exp_Data_Markevery   = C.values[irow,C.columns.get_loc('Exp_Data_Markevery')]
-        Exp_Data_Label       = C.values[irow,C.columns.get_loc('Exp_Data_Label')]
-        Exp_Marker_Style     = C.values[irow,C.columns.get_loc('Exp_Marker_Style')]
-        Exp_Marker_Color     = C.values[irow,C.columns.get_loc('Exp_Marker_Color')]
-        Exp_Marker_Size      = C.values[irow,C.columns.get_loc('Exp_Marker_Size')]
-        Exp_Line_Style       = C.values[irow,C.columns.get_loc('Exp_Line_Style')]
-        Exp_Line_Color       = C.values[irow,C.columns.get_loc('Exp_Line_Color')]
-        Exp_Line_Width       = C.values[irow,C.columns.get_loc('Exp_Line_Width')]
-        Exp_Error_Absolute   = C.values[irow,C.columns.get_loc('Exp_Error_Absolute')]
-        Exp_Error_Relative   = C.values[irow,C.columns.get_loc('Exp_Error_Relative')]
+        try:
+            Exp_Filename          = C.values[irow,C.columns.get_loc('Exp_Filename')]
+        except:
+            sys.exit('Required column header missing: Exp_Filename')
 
-        Cmp_Filename         = C.values[irow,C.columns.get_loc('Cmp_Filename')]
-        Cmp_Header_Row       = C.values[irow,C.columns.get_loc('Cmp_Header_Row')]
-        Cmp_x_Col_Name       = C.values[irow,C.columns.get_loc('Cmp_x_Col_Name')]
-        Cmp_y_Col_Name       = C.values[irow,C.columns.get_loc('Cmp_y_Col_Name')]
-        Cmp_Data_Markevery   = C.values[irow,C.columns.get_loc('Cmp_Data_Markevery')]
-        Cmp_Data_Label       = C.values[irow,C.columns.get_loc('Cmp_Data_Label')]
-        Cmp_Marker_Style     = C.values[irow,C.columns.get_loc('Cmp_Marker_Style')]
-        Cmp_Marker_Color     = C.values[irow,C.columns.get_loc('Cmp_Marker_Color')]
-        Cmp_Marker_Size      = C.values[irow,C.columns.get_loc('Cmp_Marker_Size')]
-        Cmp_Line_Style       = C.values[irow,C.columns.get_loc('Cmp_Line_Style')]
-        Cmp_Line_Color       = C.values[irow,C.columns.get_loc('Cmp_Line_Color')]
-        Cmp_Line_Width       = C.values[irow,C.columns.get_loc('Cmp_Line_Width')]
+        try:
+            Exp_Header_Row        = C.values[irow,C.columns.get_loc('Exp_Header_Row')]
+        except:
+            Exp_Header_Row        = 1
 
-        Plot_x_Label         = C.values[irow,C.columns.get_loc('Plot_x_Label')]
-        Plot_y_Label         = C.values[irow,C.columns.get_loc('Plot_y_Label')]
-        Plot_Title           = C.values[irow,C.columns.get_loc('Plot_Title')]
-        Plot_Subtitle        = C.values[irow,C.columns.get_loc('Plot_Subtitle')]
-        Plot_x_Min           = C.values[irow,C.columns.get_loc('Plot_x_Min')]
-        Plot_x_Max           = C.values[irow,C.columns.get_loc('Plot_x_Max')]
-        Plot_x_Tick          = C.values[irow,C.columns.get_loc('Plot_x_Tick')]
-        Plot_y_Min           = C.values[irow,C.columns.get_loc('Plot_y_Min')]
-        Plot_y_Max           = C.values[irow,C.columns.get_loc('Plot_y_Max')]
-        Plot_y_Tick          = C.values[irow,C.columns.get_loc('Plot_y_Tick')]
-        Plot_Show_Legend     = C.values[irow,C.columns.get_loc('Plot_Show_Legend')]
-        Plot_Legend_Location = C.values[irow,C.columns.get_loc('Plot_Legend_Location')]
-        Plot_Filename        = C.values[irow,C.columns.get_loc('Plot_Filename')]
+        try:
+            Exp_x_Col_Name        = C.values[irow,C.columns.get_loc('Exp_x_Col_Name')]
+        except:
+            sys.exit('Required column header missing: Exp_x_Col_Name')
 
-        Plot_x_Nticks = get_nticks(Plot_x_Min,Plot_x_Max,Plot_x_Tick,C.values[irow,C.columns.get_loc('Plot_x_Nticks')])
-        Plot_y_Nticks = get_nticks(Plot_y_Min,Plot_y_Max,Plot_y_Tick,C.values[irow,C.columns.get_loc('Plot_y_Nticks')])
+        try:
+            Exp_y_Col_Name        = C.values[irow,C.columns.get_loc('Exp_y_Col_Name')]
+        except:
+            sys.exit('Required column header missing: Exp_y_Col_Name')
+
+        try:
+            Exp_Data_Markevery    = C.values[irow,C.columns.get_loc('Exp_Data_Markevery')]
+        except:
+            Exp_Data_Markevery    = 1
+
+        try:
+            Exp_Data_Label        = C.values[irow,C.columns.get_loc('Exp_Data_Label')]
+        except:
+            Exp_Data_Label        = 'Exp'
+
+        try:
+            Exp_Marker_Style      = C.values[irow,C.columns.get_loc('Exp_Marker_Style')]
+        except:
+            Exp_Marker_Style      = 'o'
+
+        try:
+            Exp_Marker_Edge_Color = C.values[irow,C.columns.get_loc('Exp_Marker_Edge_Color')]
+        except:
+            Exp_Marker_Edge_Color = 'black'
+
+        try:
+            Exp_Marker_Fill_Color = C.values[irow,C.columns.get_loc('Exp_Marker_Fill_Color')]
+        except:
+            Exp_Marker_Fill_Color = 'None'
+
+        try:
+            Exp_Marker_Size      = C.values[irow,C.columns.get_loc('Exp_Marker_Size')]
+        except:
+            Exp_Marker_Size      = 6
+
+        try:
+            Exp_Line_Style       = C.values[irow,C.columns.get_loc('Exp_Line_Style')]
+        except:
+            Exp_Line_Style       = 'None'
+
+        try:
+            Exp_Line_Color       = C.values[irow,C.columns.get_loc('Exp_Line_Color')]
+        except:
+            Exp_Line_Color       = 'None'
+
+        try:
+            Exp_Line_Width       = C.values[irow,C.columns.get_loc('Exp_Line_Width')]
+        except:
+            Exp_Line_Width       = 1.
+
+        try:
+            Exp_Error_Absolute   = C.values[irow,C.columns.get_loc('Exp_Error_Absolute')]
+        except:
+            Exp_Error_Absolute   = 0.
+
+        try:
+            Exp_Error_Relative   = C.values[irow,C.columns.get_loc('Exp_Error_Relative')]
+        except:
+            Exp_Error_Relative   = 0.
+
+        try:
+            Cmp_Filename         = C.values[irow,C.columns.get_loc('Cmp_Filename')]
+        except:
+            sys.exit('Required column header missing: Cmp_Filename')
+
+        try:
+            Cmp_Header_Row       = C.values[irow,C.columns.get_loc('Cmp_Header_Row')]
+        except:
+            Cmp_Header_Row       = 1
+
+        try:
+            Cmp_x_Col_Name       = C.values[irow,C.columns.get_loc('Cmp_x_Col_Name')]
+        except:
+            sys.exit('Required column header missing: Cmp_x_Col_Name')
+
+        try:
+            Cmp_y_Col_Name       = C.values[irow,C.columns.get_loc('Cmp_y_Col_Name')]
+        except:
+            sys.exit('Required column header missing: Cmp_y_Col_Name')
+
+        try:
+            Cmp_Data_Markevery   = C.values[irow,C.columns.get_loc('Cmp_Data_Markevery')]
+        except:
+            Cmp_Data_Markevery   = 1
+
+        try:
+            Cmp_Data_Label       = C.values[irow,C.columns.get_loc('Cmp_Data_Label')]
+        except:
+            Cmp_Data_Label       = 'Cmp'
+
+        try:
+            Cmp_Marker_Style     = C.values[irow,C.columns.get_loc('Cmp_Marker_Style')]
+        except:
+            Cmp_Marker_Style     = 'None'
+
+        try:
+            Cmp_Marker_Edge_Color= C.values[irow,C.columns.get_loc('Cmp_Marker_Edge_Color')]
+        except:
+            Cmp_Marker_Edge_Color= 'None'
+
+        try:
+            Cmp_Marker_Fill_Color= C.values[irow,C.columns.get_loc('Cmp_Marker_Fill_Color')]
+        except:
+            Cmp_Marker_Fill_Color= 'None'
+
+        try:
+            Cmp_Marker_Size      = C.values[irow,C.columns.get_loc('Cmp_Marker_Size')]
+        except:
+            Cmp_Marker_Size      = 0
+
+        try:
+            Cmp_Line_Style       = C.values[irow,C.columns.get_loc('Cmp_Line_Style')]
+        except:
+            Cmp_Line_Style       = '-'
+
+        try:
+            Cmp_Line_Color       = C.values[irow,C.columns.get_loc('Cmp_Line_Color')]
+        except:
+            Cmp_Line_Color       = 'black'
+
+        try:
+            Cmp_Line_Width       = C.values[irow,C.columns.get_loc('Cmp_Line_Width')]
+        except:
+            Cmp_Line_Width       = 1
+
+        try:
+            Plot_x_Label         = C.values[irow,C.columns.get_loc('Plot_x_Label')]
+        except:
+            Plot_x_Label         = 'x'
+
+        try:
+            Plot_y_Label         = C.values[irow,C.columns.get_loc('Plot_y_Label')]
+        except:
+            Plot_y_Label         = 'y'
+
+        try:
+            Plot_Title           = C.values[irow,C.columns.get_loc('Plot_Title')]
+        except:
+            Plot_Title           = ''
+
+        try:
+            Plot_Subtitle        = C.values[irow,C.columns.get_loc('Plot_Subtitle')]
+        except:
+            Plot_Subtitle        = ''
+
+        try:
+            Plot_x_Min           = C.values[irow,C.columns.get_loc('Plot_x_Min')]
+        except:
+            Plot_x_Min           = -1.e12
+
+        try:
+            Plot_x_Max           = C.values[irow,C.columns.get_loc('Plot_x_Max')]
+        except:
+            Plot_x_Max           = 1.e12
+
+        try:
+            Plot_x_Tick          = C.values[irow,C.columns.get_loc('Plot_x_Tick')]
+        except:
+            Plot_x_Tick          = 1.e12
+
+        try:
+            Plot_y_Min           = C.values[irow,C.columns.get_loc('Plot_y_Min')]
+        except:
+            Plot_y_Min           = -1.e12
+
+        try:
+            Plot_y_Max           = C.values[irow,C.columns.get_loc('Plot_y_Max')]
+        except:
+            Plot_y_Max           = 1.e12
+
+        try:
+            Plot_y_Tick          = C.values[irow,C.columns.get_loc('Plot_y_Tick')]
+        except:
+            Plot_y_Tick          = 1.e12
+
+        try:
+            Plot_Show_Legend     = C.values[irow,C.columns.get_loc('Plot_Show_Legend')]
+        except:
+            Plot_Show_Legend     = True
+
+        try:
+            Plot_Legend_Location = C.values[irow,C.columns.get_loc('Plot_Legend_Location')]
+        except:
+            Plot_Legend_Location = 'best'
+
+        try:
+            Plot_Filename        = C.values[irow,C.columns.get_loc('Plot_Filename')]
+        except:
+            sys.exit('Required column header missing: Plot_Filename')
+
+        try:
+            Plot_x_Nticks = C.values[irow,C.columns.get_loc('Plot_x_Nticks')]
+        except:
+            Plot_x_Nticks = 5
+
+        if Plot_x_Tick.isnumeric():
+            if float(Plot_x_Tick)>0. and float(Plot_x_Tick)<1.e10 and float(Plot_x_Min)>-1.e10 and float(Plot_x_Max)<1.e10:
+                Plot_x_Nticks = get_nticks(Plot_x_Min,Plot_x_Max,Plot_x_Tick)
+
+        try:
+            Plot_y_Nticks = C.values[irow,C.columns.get_loc('Plot_y_Nticks')]
+        except:
+            Plot_y_Nticks = 5
+
+        if Plot_y_Tick.isnumeric():
+            if float(Plot_y_Tick)>0. and float(Plot_y_Tick)<1.e10 and float(Plot_y_Min)>-1.e10 and float(Plot_y_Max)<1.e10:
+                Plot_y_Nticks = get_nticks(Plot_y_Min,Plot_y_Max,Plot_y_Tick)
+
         if Plot_Legend_Location.isdigit():
             Plot_Legend_Location=int(Plot_Legend_Location)
 
@@ -293,7 +473,8 @@ def dataplot(config_filename,**kwargs):
                 x_label=pp.Plot_x_Label,
                 y_label=pp.Plot_y_Label,
                 marker_style=pp.Exp_Marker_Style,
-                marker_color=pp.Exp_Marker_Color,
+                marker_fill_color=pp.Exp_Marker_Fill_Color,
+                marker_edge_color=pp.Exp_Marker_Edge_Color,
                 marker_size=pp.Exp_Marker_Size,
                 line_style=pp.Exp_Line_Style,
                 line_color=pp.Exp_Line_Color,
@@ -323,7 +504,8 @@ def dataplot(config_filename,**kwargs):
             y_label=pp.Plot_y_Label,
             data_label=pp.Cmp_Data_Label,
             marker_style=pp.Cmp_Marker_Style,
-            marker_color=pp.Cmp_Marker_Color,
+            marker_fill_color=pp.Cmp_Marker_Fill_Color,
+            marker_edge_color=pp.Cmp_Marker_Edge_Color,
             marker_size=pp.Cmp_Marker_Size,
             line_style=pp.Cmp_Line_Style,
             line_color=pp.Cmp_Line_Color,
