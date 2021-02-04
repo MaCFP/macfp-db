@@ -71,12 +71,6 @@ def plot_to_fig(x_data,y_data,**kwargs):
             ax.fill_between(x_data,y_data*(1.-kwargs.get('y_error_relative')),y_data*(1.+kwargs.get('y_error_relative')),
                 alpha=0.1,color=kwargs.get('marker_edge_color'))
 
-    # set axes and tick properties
-    ax.set_xlim(kwargs.get('x_min'),kwargs.get('x_max'))
-    ax.set_ylim(kwargs.get('y_min'),kwargs.get('y_max'))
-    ax.set_xticks(np.linspace(start = kwargs.get('x_min'), stop = kwargs.get('x_max'), num = kwargs.get('x_nticks'), endpoint=True))
-    ax.set_yticks(np.linspace(start = kwargs.get('y_min'), stop = kwargs.get('y_max'), num = kwargs.get('y_nticks'), endpoint=True))
-
     if kwargs.get('ticklabel_fontsize'):
         ticklabel_fontsize=kwargs.get('ticklabel_fontsize')
     else:
@@ -112,11 +106,31 @@ def plot_to_fig(x_data,y_data,**kwargs):
     else:
         subtitle_fontsize=default_subtitle_fontsize
 
-    xmin=kwargs.get('x_min')
-    xmax=kwargs.get('x_max')
+    # set axes and tick properties
+    if np.isnan(kwargs.get('x_min')) or np.isnan(kwargs.get('x_max')):
+        xmin=min(x_data) - 0.05*(max(x_data)-min(x_data))
+        xmax=max(x_data) + 0.05*(max(x_data)-min(x_data))
+    else:
+        xmin=kwargs.get('x_min')
+        xmax=kwargs.get('x_max')
+
+    if np.isnan(kwargs.get('y_min')) or np.isnan(kwargs.get('y_max')):
+        ymin=min(y_data) - 0.05*(max(y_data)-min(y_data))
+        ymax=max(y_data) + 0.05*(max(y_data)-min(y_data))
+    else:
+        ymin=kwargs.get('y_min')
+        ymax=kwargs.get('y_max')
+
+    ax.set_xlim(xmin,xmax)
+    ax.set_ylim(ymin,ymax)
+
+    if kwargs.get('x_nticks'):
+        ax.set_xticks(np.linspace(start = kwargs.get('x_min'), stop = kwargs.get('x_max'), num = kwargs.get('x_nticks'), endpoint=True))
+
+    if kwargs.get('y_nticks'):
+        ax.set_yticks(np.linspace(start = kwargs.get('y_min'), stop = kwargs.get('y_max'), num = kwargs.get('y_nticks'), endpoint=True))
+
     xpos=xmin+0.05*(xmax-xmin)
-    ymin=kwargs.get('y_min')
-    ymax=kwargs.get('y_max')
     ypos1=ymin+0.900*(ymax-ymin)
     ypos2=ymin+0.825*(ymax-ymin)
     ax.text(xpos,ypos1, kwargs.get('plot_title'), fontsize=title_fontsize)
@@ -332,32 +346,32 @@ def define_plot_parameters(C,irow):
         try:
             Plot_x_Min           = C.values[irow,C.columns.get_loc('Plot_x_Min')]
         except:
-            Plot_x_Min           = -1.e12
+            Plot_x_Min           = None
 
         try:
             Plot_x_Max           = C.values[irow,C.columns.get_loc('Plot_x_Max')]
         except:
-            Plot_x_Max           = 1.e12
+            Plot_x_Max           = None
 
         try:
             Plot_x_Tick          = C.values[irow,C.columns.get_loc('Plot_x_Tick')]
         except:
-            Plot_x_Tick          = 1.e12
+            Plot_x_Tick          = None
 
         try:
             Plot_y_Min           = C.values[irow,C.columns.get_loc('Plot_y_Min')]
         except:
-            Plot_y_Min           = -1.e12
+            Plot_y_Min           = None
 
         try:
             Plot_y_Max           = C.values[irow,C.columns.get_loc('Plot_y_Max')]
         except:
-            Plot_y_Max           = 1.e12
+            Plot_y_Max           = None
 
         try:
             Plot_y_Tick          = C.values[irow,C.columns.get_loc('Plot_y_Tick')]
         except:
-            Plot_y_Tick          = 1.e12
+            Plot_y_Tick          = None
 
         try:
             Plot_Show_Legend     = C.values[irow,C.columns.get_loc('Plot_Show_Legend')]
@@ -377,24 +391,24 @@ def define_plot_parameters(C,irow):
         try:
             Plot_x_Nticks = C.values[irow,C.columns.get_loc('Plot_x_Nticks')]
         except:
-            Plot_x_Nticks = 5
+            Plot_x_Nticks = None
 
         try:
             if float(Plot_x_Tick)>0. and float(Plot_x_Tick)<1.e10 and float(Plot_x_Min)>-1.e10 and float(Plot_x_Max)<1.e10:
                 Plot_x_Nticks = get_nticks(Plot_x_Min,Plot_x_Max,Plot_x_Tick)
         except:
-            Plot_x_Nticks = 5
+            Plot_x_Nticks = None
 
         try:
             Plot_y_Nticks = C.values[irow,C.columns.get_loc('Plot_y_Nticks')]
         except:
-            Plot_y_Nticks = 5
+            Plot_y_Nticks = None
 
         try:
             if float(Plot_y_Tick)>0. and float(Plot_y_Tick)<1.e10 and float(Plot_y_Min)>-1.e10 and float(Plot_y_Max)<1.e10:
                 Plot_y_Nticks = get_nticks(Plot_y_Min,Plot_y_Max,Plot_y_Tick)
         except:
-            Plot_y_Nticks = 5
+            Plot_y_Nticks = None
 
         if Plot_Legend_Location.isdigit():
             Plot_Legend_Location=int(Plot_Legend_Location)
@@ -426,14 +440,13 @@ def dataplot(config_filename,**kwargs):
     plt.rcParams['pdf.fonttype'] = 3 # 42 embeds true type fonts into pdf (large file size)
     # plt.rcParams['text.usetex'] = True # supports latex math
 
-    # plt.close('all')
-
     # defaults
     institute = ''
     configdir = ''
     expdir = ''
     cmpdir = ''
     pltdir = ''
+    close_figs = False
 
     if kwargs.get('institute'):
         institute = kwargs.get('institute')
@@ -443,10 +456,13 @@ def dataplot(config_filename,**kwargs):
         expdir = kwargs.get('expdir') #'../Experimental_Data/'
 
     if kwargs.get('cmpdir'):
-        cmpdir = kwargs.get('cmpdir') #'../Computational_Results/2020/' + institute + '/'
+        cmpdir = kwargs.get('cmpdir') #'../Computational_Results/2021/' + institute + '/'
 
     if kwargs.get('pltdir'):
-        pltdir = kwargs.get('pltdir') #'../Plots/2020/'
+        pltdir = kwargs.get('pltdir') #'../Plots/2021/'
+
+    if kwargs.get('close_figs'):
+        close_figs = kwargs.get('close_figs')
 
     # read the config file
     C = pd.read_csv(configdir+config_filename, sep=' *, *', engine='python', comment='#')
@@ -460,6 +476,9 @@ def dataplot(config_filename,**kwargs):
         pp = define_plot_parameters(C,irow)
 
         if pp.Plot_Filename!=Plot_Filename_Last:
+
+            if close_figs:
+                plt.close('all')
 
             # read data from exp file
             # set header to the row where column names are stored (Python is 0 based)
