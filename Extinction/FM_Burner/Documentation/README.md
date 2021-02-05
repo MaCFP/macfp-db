@@ -21,12 +21,12 @@ The flame examined in this study has a theoretical heat release rate of 15 kW. T
 
 Table 1: Fuel and Oxidizer Flow Rate
 
-|Oxygen Index | Ethylene Flow Rate | Air Flow Rate | Nitrogen Flow Rate |
-|-------------|--------------------|---------------|--------------------|
-|(Vol%)       | (g/s)              | (g/s)         | (g/s)              |
-|20.9         | 0.318              | 52            | 0                  |
-|16.8         | 0.318              | 42            | 9.91               |
-|15.2         | 0.318              | 42            | 15.23              |
+|Oxygen Index | Y_O2 Oxidizer   | Ethylene Flow Rate | Air Flow Rate | Nitrogen Flow Rate |
+|-------------|-----------------|--------------------|---------------|--------------------| 
+|(Vol %)      |(Mass fraction)  |(g/s)               | (g/s)         | (g/s)              |
+| 20.9        | 0.231           | 0.318              | 52            | 0                  |
+| 16.8        | 0.187           | 0.318              | 42            | 9.91               |
+| 15.2        | 0.170           | 0.318              | 42            | 15.23              |
 
 #### Notes
 
