@@ -15,13 +15,13 @@ import importlib
 importlib.reload(macfp) # use for development (while making changes to macfp.py)
 import matplotlib.pyplot as plt
 
-macfp.dataplot(config_filename='Waterloo_Methanol_exp_config.csv',
+macfp.dataplot(config_filename='NIST_Pool_Fires_exp_config.csv',
                institute='',
                expdir='../Experimental_Data/',
                cmpdir='../Experimental_Data/',
                pltdir='../Plots/',
                close_figs=True,
-               verbose=True)
+               verbose=True,
+               plot_list=['all'])
 
-# This case create almost 300 figures!  Better to just look at them in the ../Plots/ directory.
 # plt.show()
