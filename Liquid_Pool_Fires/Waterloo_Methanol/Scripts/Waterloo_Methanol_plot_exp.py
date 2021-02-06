@@ -20,7 +20,8 @@ macfp.dataplot(config_filename='Waterloo_Methanol_exp_config.csv',
                expdir='../Experimental_Data/',
                cmpdir='../Experimental_Data/',
                pltdir='../Plots/',
-               close_figs=True)
+               close_figs=True,
+               verbose=True)
 
 # This case create almost 300 figures!  Better to just look at them in the ../Plots/ directory.
 # plt.show()

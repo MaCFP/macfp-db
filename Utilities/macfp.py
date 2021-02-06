@@ -107,14 +107,14 @@ def plot_to_fig(x_data,y_data,**kwargs):
         subtitle_fontsize=default_subtitle_fontsize
 
     # set axes and tick properties
-    if np.isnan(kwargs.get('x_min')) or np.isnan(kwargs.get('x_max')):
+    if kwargs.get('x_min')==None or kwargs.get('x_max')==None:
         xmin=min(x_data) - 0.05*(max(x_data)-min(x_data))
         xmax=max(x_data) + 0.05*(max(x_data)-min(x_data))
     else:
         xmin=kwargs.get('x_min')
         xmax=kwargs.get('x_max')
 
-    if np.isnan(kwargs.get('y_min')) or np.isnan(kwargs.get('y_max')):
+    if kwargs.get('y_min')==None or kwargs.get('y_max')==None:
         ymin=min(y_data) - 0.05*(max(y_data)-min(y_data))
         ymax=max(y_data) + 0.05*(max(y_data)-min(y_data))
     else:
@@ -194,6 +194,11 @@ def define_plot_parameters(C,irow):
             Exp_Header_Row        = 1
 
         try:
+            Exp_Data_Row          = C.values[irow,C.columns.get_loc('Exp_Data_Row')]
+        except:
+            Exp_Data_Row          = Exp_Header_Row+1
+
+        try:
             Exp_x_Col_Name        = C.values[irow,C.columns.get_loc('Exp_x_Col_Name')]
         except:
             sys.exit('Required column header missing: Exp_x_Col_Name')
@@ -213,8 +218,18 @@ def define_plot_parameters(C,irow):
         except:
             Exp_Data_Label        = 'Exp'
 
+        # what's the difference between 'None' and None?
+        # 'None' is a string that will not print a line in the call to axes.plot()
+        # None is a type that let's axes.plot use its default
+        # None gets filled in by df.fillna() for None values in existing columns in the DataFrame
+        # Therefore, in that case, the user probably means they do not want a value
+        # The except block is the case where the column does not exist
+        # Here we assume the user wants axes.plot to use its default
+
         try:
             Exp_Marker_Style      = C.values[irow,C.columns.get_loc('Exp_Marker_Style')]
+            if Exp_Marker_Style==None:
+                Exp_Marker_Style = 'None'
         except:
             Exp_Marker_Style      = 'o'
 
@@ -235,16 +250,23 @@ def define_plot_parameters(C,irow):
 
         try:
             Exp_Line_Style       = C.values[irow,C.columns.get_loc('Exp_Line_Style')]
+            if Exp_Line_Style==None:
+                Exp_Line_Style = 'None'
         except:
+            # if no column exists, we assume just markers for experimental data
             Exp_Line_Style       = 'None'
 
         try:
             Exp_Line_Color       = C.values[irow,C.columns.get_loc('Exp_Line_Color')]
+            if Exp_Line_Color==None:
+                Exp_Line_Style = 'None'
         except:
             Exp_Line_Color       = 'None'
 
         try:
             Exp_Line_Width       = C.values[irow,C.columns.get_loc('Exp_Line_Width')]
+            if Exp_Line_Width==None:
+                Exp_Line_Width = 0.
         except:
             Exp_Line_Width       = 1.
 
@@ -267,6 +289,11 @@ def define_plot_parameters(C,irow):
             Cmp_Header_Row       = C.values[irow,C.columns.get_loc('Cmp_Header_Row')]
         except:
             Cmp_Header_Row       = 1
+
+        try:
+            Cmp_Data_Row          = C.values[irow,C.columns.get_loc('Cmp_Data_Row')]
+        except:
+            Cmp_Data_Row          = Cmp_Header_Row+1
 
         try:
             Cmp_x_Col_Name       = C.values[irow,C.columns.get_loc('Cmp_x_Col_Name')]
@@ -296,7 +323,7 @@ def define_plot_parameters(C,irow):
         try:
             Cmp_Marker_Edge_Color= C.values[irow,C.columns.get_loc('Cmp_Marker_Edge_Color')]
         except:
-            Cmp_Marker_Edge_Color= 'None'
+            Cmp_Marker_Edge_Color= 'black'
 
         try:
             Cmp_Marker_Fill_Color= C.values[irow,C.columns.get_loc('Cmp_Marker_Fill_Color')]
@@ -306,12 +333,14 @@ def define_plot_parameters(C,irow):
         try:
             Cmp_Marker_Size      = C.values[irow,C.columns.get_loc('Cmp_Marker_Size')]
         except:
-            Cmp_Marker_Size      = 0
+            Cmp_Marker_Size      = 6
 
         try:
             Cmp_Line_Style       = C.values[irow,C.columns.get_loc('Cmp_Line_Style')]
+            if Cmp_Line_Style==None:
+                Cmp_Line_Style = 'None'
         except:
-            Cmp_Line_Style       = '-'
+            Cmp_Line_Style       = None
 
         try:
             Cmp_Line_Color       = C.values[irow,C.columns.get_loc('Cmp_Line_Color')]
@@ -320,8 +349,10 @@ def define_plot_parameters(C,irow):
 
         try:
             Cmp_Line_Width       = C.values[irow,C.columns.get_loc('Cmp_Line_Width')]
+            if Cmp_Line_Width==None:
+                Cmp_Line_Width = 0.
         except:
-            Cmp_Line_Width       = 1
+            Cmp_Line_Width       = 1.
 
         try:
             Plot_x_Label         = C.values[irow,C.columns.get_loc('Plot_x_Label')]
@@ -447,33 +478,48 @@ def dataplot(config_filename,**kwargs):
     cmpdir = ''
     pltdir = ''
     close_figs = False
+    verbose = False
+    plot_list = ['all']
 
     if kwargs.get('institute'):
         institute = kwargs.get('institute')
-    # config_filename = 'NIST_macfp_config.csv'
 
     if kwargs.get('expdir'):
-        expdir = kwargs.get('expdir') #'../Experimental_Data/'
+        expdir = kwargs.get('expdir')
 
     if kwargs.get('cmpdir'):
-        cmpdir = kwargs.get('cmpdir') #'../Computational_Results/2021/' + institute + '/'
+        cmpdir = kwargs.get('cmpdir')
 
     if kwargs.get('pltdir'):
-        pltdir = kwargs.get('pltdir') #'../Plots/2021/'
+        pltdir = kwargs.get('pltdir')
 
     if kwargs.get('close_figs'):
         close_figs = kwargs.get('close_figs')
 
-    # read the config file
-    C = pd.read_csv(configdir+config_filename, sep=' *, *', engine='python', comment='#')
+    if kwargs.get('verbose'):
+        verbose = kwargs.get('verbose')
 
-    Plot_Filename_Last = 'None'
+    if kwargs.get('plot_list'):
+        plot_list = kwargs.get('plot_list')
+
+    # read the config file
+    df = pd.read_csv(configdir+config_filename, sep=' *, *', engine='python', comment='#')
+    C = df.where(pd.notnull(df), None)
+
+    Plot_Filename_Last = None
 
     # loop over the rows of the config file
     for irow in C.index:
 
         # define plot parameters and return them in an object called pp
         pp = define_plot_parameters(C,irow)
+
+        if 'all' not in plot_list:
+            if pp.Plot_Filename not in plot_list:
+                continue
+
+        if verbose:
+            print('Processing '+pp.Plot_Filename+' ...')
 
         if pp.Plot_Filename!=Plot_Filename_Last:
 
@@ -484,8 +530,14 @@ def dataplot(config_filename,**kwargs):
             # set header to the row where column names are stored (Python is 0 based)
             E = pd.read_csv(expdir+pp.Exp_Filename, header=pp.Exp_Header_Row-1, sep=' *, *', engine='python')
 
-            x = E[pp.Exp_x_Col_Name]
-            y = E[pp.Exp_y_Col_Name]
+            if (pp.Exp_Data_Row-pp.Exp_Header_Row==1.):
+                x = E[pp.Exp_x_Col_Name].values[:].astype(float)
+                y = E[pp.Exp_y_Col_Name].values[:].astype(float)
+            else:
+                # don't exactly understand this, but df.values behave differently if they are object type
+                # when the header and data rows are separated, then there are usually strings in the df.values
+                x = E[pp.Exp_x_Col_Name].values[pp.Exp_Data_Row-2:-1].astype(float)
+                y = E[pp.Exp_y_Col_Name].values[pp.Exp_Data_Row-2:-1].astype(float)
 
             # plot the exp data
             f = plot_to_fig(x_data=x, y_data=y,
@@ -516,8 +568,12 @@ def dataplot(config_filename,**kwargs):
         # get the model results
         M = pd.read_csv(cmpdir+pp.Cmp_Filename, header=pp.Cmp_Header_Row-1, sep=' *, *', engine='python')
 
-        x = M[pp.Cmp_x_Col_Name]
-        y = M[pp.Cmp_y_Col_Name]
+        if (pp.Cmp_Data_Row-pp.Cmp_Header_Row==1.):
+            x = M[pp.Cmp_x_Col_Name].values[:].astype(float)
+            y = M[pp.Cmp_y_Col_Name].values[:].astype(float)
+        else:
+            x = M[pp.Cmp_x_Col_Name].values[pp.Cmp_Data_Row-2:-1].astype(float)
+            y = M[pp.Cmp_y_Col_Name].values[pp.Cmp_Data_Row-2:-1].astype(float)
 
         f = plot_to_fig(x_data=x, y_data=y,
             institute_label=institute,
