@@ -21,4 +21,4 @@ macfp.dataplot(config_filename='Sandia_Helium_Plume_exp_config.csv',
                cmpdir='../Experimental_Data/',
                pltdir='../Plots/')
 
-plt.show()
+#plt.show()
