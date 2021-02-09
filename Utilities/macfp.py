@@ -519,7 +519,7 @@ def dataplot(config_filename,**kwargs):
                 continue
 
         if verbose:
-            print('Processing '+pp.Plot_Filename+' ...')
+            print('Generating plot '+pp.Plot_Filename+'...')
 
         if pp.Plot_Filename!=Plot_Filename_Last:
 
