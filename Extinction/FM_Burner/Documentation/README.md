@@ -17,16 +17,16 @@ Figure 3 shows the enclosure drawing. The enclosure has a cross section of 122 b
 
 Figure 3: Enclosure drawing, (a) front view; (b) top view (units are inches).
 
-The flame examined in this study has a theoretical heat release rate of 15 kW. Three oxygen indexes are investigated, including normal air (20.9% oxygen index), 16.8% and 15.2% oxygen in nitrogen. The fuel flow rates and corresponding oxygen indices are listed in Table 1. The flow rate of oxidizer, i.e., air and nitrogen, under each OI condition is 3650±250 L/min. The corresponding nominal velocity normal to the sand bed is 0.041±0.003 m/s. The oxygen concentration in the co-flow is monitored using a gas analyzer, and verified at different locations around flame, i.e., 30 cm radial distance from the burner centerline, and -5 cm, 20 cm, 46 cm, and 71 cm height from the burner surface, respectively. The change of oxygen concentration does not exceed 0.1 vol%. 
+The flame examined in this study has a theoretical heat release rate of 15 kW. Three oxygen concentrations are investigated, including normal air (20.9% oxygen by volume), 16.8% and 15.2% oxygen in nitrogen. The fuel flow rates and corresponding oxygen concentrations are listed in Table 1. The flow rate of oxidizer, i.e., air and nitrogen, under each OC condition is 3650±250 L/min. The corresponding nominal velocity normal to the sand bed is 0.041±0.003 m/s. The oxygen concentration in the co-flow is monitored using a gas analyzer, and verified at different locations around flame, i.e., 30 cm radial distance from the burner centerline, and -5 cm, 20 cm, 46 cm, and 71 cm height from the burner surface, respectively. The change of oxygen concentration does not exceed 0.1 vol%. 
 
 Table 1: Fuel and Oxidizer Flow Rate
 
-|Oxygen Index | Y_O2 Oxidizer   | Ethylene Flow Rate | Air Flow Rate | Nitrogen Flow Rate | Radiant Fraction|
-|-------------|-----------------|--------------------|---------------|--------------------|-----------------|
-|(Vol %)      |(Mass fraction)  |(g/s)               | (g/s)         | (g/s)              |      |
-| 20.9        | 0.231           | 0.318              | 52            | 0                  | 0.34 |
-| 16.8        | 0.187           | 0.318              | 42            | 9.91               | 0.30 |
-| 15.2        | 0.170           | 0.318              | 42            | 15.23              | 0.22 |
+|Oxygen Concentration | Y_O2 Oxidizer   | Ethylene Flow Rate | Radiant Fraction|
+|---------------------|-----------------|--------------------|-----------------|
+|(Vol %)              |(Mass fraction)  |(g/s)               |      |
+| 20.9                | 0.231           | 0.318              | 0.34 |
+| 16.8                | 0.187           | 0.318              | 0.30 |
+| 15.2                | 0.170           | 0.318              | 0.22 |
 
 #### Notes
 
