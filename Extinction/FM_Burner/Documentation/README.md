@@ -17,7 +17,7 @@ Figure 3 shows the enclosure drawing. The enclosure has a cross section of 122 b
 
 Figure 3: Enclosure drawing, (a) front view; (b) top view (units are inches).
 
-The flame examined in this study has a theoretical heat release rate of 15 kW. Three oxygen indexes are investigated, including normal air, 16.8% oxygen in nitrogen, and 15.2% oxygen in nitrogen. The fuel, air, and nitrogen flow rates corresponding to each OI condition are listed in Table 1.
+The flame examined in this study has a theoretical heat release rate of 15 kW. Three oxygen indexes are investigated, including normal air (20.9% oxygen index), 16.8% and 15.2% oxygen in nitrogen. The fuel flow rates and corresponding oxygen indices are listed in Table 1. The flow rate of oxidizer, i.e., air and nitrogen, under each OI condition is 3650±250 L/min. The corresponding nominal velocity normal to the sand bed is 0.041±0.003 m/s. The oxygen concentration in the co-flow is monitored using a gas analyzer, and verified at different locations around flame, i.e., 30 cm radial distance from the burner centerline, and -5 cm, 20 cm, 46 cm, and 71 cm height from the burner surface, respectively. The change of oxygen concentration does not exceed 0.1 vol%. 
 
 Table 1: Fuel and Oxidizer Flow Rate
 
@@ -30,7 +30,7 @@ Table 1: Fuel and Oxidizer Flow Rate
 
 #### Notes
 
-The temperature was measured using a two-thermocouple probe, and the reported data is corrected. This technique is mainly applied to correct the thermal inertia as the radiation correction for a small thermocouple junction is insignificant. The two thermocouples have nominal size 25 and 50 microns.
+The temperature was measured using a two-thermocouple probe, and the reported data is corrected for radiation. This technique is mainly applied to correct the thermal inertia as the radiation correction for a small thermocouple junction is relatively small. The two thermocouples have nominal wire sizes of 25 and 50 microns.
 
 The derivation of soot volume fraction from either radiation probe data or LII data assumes 9.5 as a dimensionless extinction coefficient based on Williams’ study [7, 8] and 7.6 as the dimensionless absorption coefficient assuming 20% scattering. In Williams’ study [7, 8], a soot density value of 1.74 g/cm3 is used to derive the 9.5 value for dimensionless extinction coefficient. Therefore, a soot density of 1.74 g/cm3 should be used when converting soot mass fraction to volume fraction. 
 
