@@ -36,7 +36,7 @@ The derivation of soot volume fraction from either radiation probe data or LII d
 
 #### Flame Images
 
-<img src="https://github.com/MaCFP/macfp-db/blob/master/Extinction/FM_Burner/Documentation/FM_Burner_flame_images.png" width="400">
+<img src="https://github.com/MaCFP/macfp-db/blob/master/Extinction/FM_Burner/Documentation/FM_Burner_flame_images.png" width="600">
 
 Figure 4: FM Burner flame images at various oxygen concentrations.
 
