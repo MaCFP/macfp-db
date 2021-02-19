@@ -79,7 +79,7 @@ Photographs of the 30 cm methanol pool fire with a 1 cm lip height.
 
 #### Heat Flux
 
-* Radiative and total heat flux measurements were made at various locations for the 30 cm methanol pool fire. 
+* Radiative and total heat flux measurements were made at various locations for the 30 cm methanol pool fire.  The positions of the heat flux gauges were 1 cm abover the liquid pool surface.
 
 `Methanol_30_cm_HF_radial_Kim_2019.csv` Radial profile of total heat flux from the pool center out to 1.5 m.
 
