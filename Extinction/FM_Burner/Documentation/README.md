@@ -32,7 +32,13 @@ Table 1: Fuel and Oxidizer Flow Rate
 
 The temperature was measured using a two-thermocouple probe, and the reported data is corrected for radiation. This technique is mainly applied to correct the thermal inertia as the radiation correction for a small thermocouple junction is relatively small. The two thermocouples have nominal wire sizes of 25 and 50 microns.
 
-The derivation of soot volume fraction from either radiation probe data or LII data assumes 9.5 as a dimensionless extinction coefficient based on Williams’ study [7, 8] and 7.6 as the dimensionless absorption coefficient assuming 20% scattering. In Williams’ study [7, 8], a soot density value of 1.74 g/cm3 is used to derive the 9.5 value for dimensionless extinction coefficient. Therefore, a soot density of 1.74 g/cm3 should be used when converting soot mass fraction to volume fraction. 
+The derivation of soot volume fraction from either radiation probe data or LII data assumes 9.5 as a dimensionless extinction coefficient based on Williams’ study [7, 8] and 7.6 as the dimensionless absorption coefficient assuming 20% scattering. In Williams’ study [7, 8], a soot density value of 1.74 g/cm3 is used to derive the 9.5 value for dimensionless extinction coefficient. Therefore, a soot density of 1.74 g/cm3 should be used when converting soot mass fraction to volume fraction.
+
+#### Flame Images
+
+<img src="https://github.com/MaCFP/macfp-db/blob/master/Extinction/FM_Burner/Documentation/FM_Burner_flame_images.png" width="400">
+
+Figure 4: FM Burner flame images at various oxygen concentrations.
 
 #### References
 
