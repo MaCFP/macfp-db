@@ -67,9 +67,9 @@ Photographs of the 30 cm methanol pool fire with a 1 cm lip height.
 
 #### Temperature
 
-* Hamins and Lock (2016) made mean and rms centerline and radial gas temperature measurements for a 30 cm methanol pool fire. The radial measurements were made at heights of 3, 30, 40, 50, and 60 cm.
+* Hamins and Lock (2016) made mean and rms centerline and radial gas temperature measurements for a 30 cm methanol pool fire. The radial measurements were made at heights of 3.8, 30.8, 40.8, 50.8, and 60.8 cm above the pool surface (as opposed to the rim of the burner pan).
 
-* Sung et al. (2020) made mean and rms centerline and radial gas temperature measurements for a 100 cm methanol pool fire. The radial measurements were made at heights of 20, 60, 100, 140, and 180 cm.
+* Sung et al. (2020) made mean and rms centerline and radial gas temperature measurements for a 100 cm methanol pool fire. The radial measurements were made at heights of 21, 61, 101, 141, and 181 cm above the pool surface (as opposed to the rim of the burner pan).
 
 #### Gas Species and Soot Concentrations
 
