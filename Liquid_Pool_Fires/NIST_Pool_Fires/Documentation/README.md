@@ -19,11 +19,11 @@ This directory contains experimental measurements of liquid and gaseous pool fir
 \*\* puffing frequency  
 <sup>+</sup> thermocouple (TC) properties.
 
-![100 cm Pool Fire Photograph](100cm_Methanol_Pool_Fire.jpg)
+<img src="100cm_Methanol_Pool_Fire.jpg" width="700">
 
 Sequential photographs during a puffing cycle of the 100 cm methanol pool fire.
 
-<img src="30cm_Methanol_Pool_Fire.jpg" width="5 cm">
+<img src="30cm_Methanol_Pool_Fire.jpg" width="700">
 
 Sequential photographs during a puffing cycle of the 30 cm methanol pool fire.
 
