@@ -5,24 +5,25 @@ This directory contains experimental measurements of liquid and gaseous pool fir
 
 | Dia. (cm) | Fuel | Mass Flux g/(m<sup>2</sup>-s) | Rad Frac | Puf Freq (Hz) | Prof: r or z (cm) | TC Bead (µm) | References |
 |-------|----------|--------------|-------------|-------------|-------------------------|-------|-----------------------------------|
-| 30    | Methanol | 13.2 ± 0.4   | 0.22 ± 0.02 | 2.64 ± 0.06 | r=0; z=3.8, 30.8        | 225   | 1,2,3,4,5<sup>+</sup>, 6\*,7,9,10 |
-| 30    | Methanol | 13.2 ± 0.4   | 0.22 ± 0.02 |             | r=0                     | 52    | 13<sup>+</sup>                    |
-| 30    | Methanol | 13.2 ± 0.4   | 0.22 ± 0.02 |             | z=41, 51, 61            | 150   | 15<sup>+</sup>                    |
+| 30    | Methanol | 13.2 ± 0.4   | 0.22 ± 0.02 | 2.64 ± 0.06 | r=0; z=3.8, 30.8 | 225   | 1,2,3,4,5<sup>+</sup>, 6\*,7,9,10,16\*\* |
+| 30    | Methanol | 13.2 ± 0.4   | 0.22 ± 0.02 |             | r=0              | 52    | 13<sup>+</sup>                           |
+| 30    | Methanol | 13.2 ± 0.4   | 0.22 ± 0.02 |             | z=41, 51, 61     | 150   | 15<sup>+</sup>                           |
 | 30    | Ethanol  | 14.8 ± 1.2   | 0.26 ± 0.07 |             | r=0                      | 199   | 1,2,3,6\*,13<sup>+</sup>          |
 | 30    | Acetone  | 18.3 ± 0.6   | 0.31 ± 0.06 |             | r=0                      | 103   | 1,2,3,6\*,13<sup>+</sup>          |
 | 37    | Methane  | 6.4 ± 0.1    | 0.15        |             | r=0                      | 52    | 3,12\*,13<sup>+</sup>,14\*        |
-| 37    | Propane  | 4.16 ± 0.12  | 0.15        | 2.31 ± 0.10 | r=0                      | 125   | 12\*, 13<sup>+</sup>,14\*         |
-| 37    | Propane  | 6.9 ± 0.1    | 0.22        | 2.31 ± 0.10 | r=0                      | 125   | 12\*, 13<sup>+</sup>,14\*         |
-| 100   | Methanol | 16.3 ± 0.2   | 0.21 ± 0.01 | 1.37        | r=0; z=21,61,101,141,181 | 153   | 1\*,7\*,8\*,15<sup>+</sup>        |
+| 37    | Propane  | 4.16 ± 0.12  | 0.15        | 2.31 ± 0.10 | r=0                      | 125   | 12\*, 13<sup>+</sup>,14\*,17\*\*  |
+| 37    | Propane  | 6.9 ± 0.1    | 0.22        | 2.31 ± 0.10 | r=0                      | 125   | 12\*, 13<sup>+</sup>,14\*,17\*\*  |
+| 100   | Methanol | 16.3 ± 0.2   | 0.21 ± 0.01 | 1.37        | r=0; z=21,61,101,141,181 | 153   | 1\*,7\*,8(\*,\*\*),15<sup>+</sup> |
 
 \* radiative fraction  
+\*\* puffing frequency  
 <sup>+</sup> thermocouple (TC) properties.
 
-![100 cm Pool Fire Photograph](100cm_Methanol_Pool_Fire.jpg)
+<img src="100cm_Methanol_Pool_Fire.jpg" width="700">
 
 Sequential photographs during a puffing cycle of the 100 cm methanol pool fire.
 
-![30 cm Pool Fire Photograph](30cm_Methanol_Pool_Fire.jpg)
+<img src="30cm_Methanol_Pool_Fire.jpg" width="700">
 
 Sequential photographs during a puffing cycle of the 30 cm methanol pool fire.
 
