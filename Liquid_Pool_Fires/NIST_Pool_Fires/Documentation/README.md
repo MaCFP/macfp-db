@@ -3,7 +3,7 @@
 
 This directory contains experimental measurements of liquid and gaseous pool fires. Results using two circular, liquid pool burners are reported, 30 cm and 100 cm in diameter. Results using a 37 cm diameter, water-cooled, gaseous burner are also reported.  Experimental results are reported for steadily burning fires in a well-ventilated, quiescent environment. A warm-up period of 10 min was required for the mass burning rate of the liquid fuels to be steady.
 
-| Dia (cm) | Fuel | Mass Flux g/(m<sup>2</sup>-s) | Rad Frac | Puf Freq (Hz) | TC Bead Profile  | TC Bead Dia (µm) | References |
+| Dia (cm) | Fuel | Mass Flux g/(m<sup>2</sup>-s) | Rad Frac | Puf Freq (Hz) | TC Profile  | TC Bead (µm) | References |
 |-------|----------|--------------|-------------|-------------|-------------------------|-------|-----------------------------------|
 | 30    | Methanol | 13.2 ± 0.4   | 0.22 ± 0.02 | 2.64 ± 0.06 | r=0; z=3.8, 30.8 | 225   | 1,2,3,4,5<sup>+</sup>, 6\*,7,9,10,16\*\* |
 | 30    | Methanol | 13.2 ± 0.4   | 0.22 ± 0.02 |             | r=0              | 52    | 13<sup>+</sup>                           |
