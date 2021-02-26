@@ -76,7 +76,7 @@ The dominant puffing frequencies was determined from analysis of large scale fea
 
 #### Temperature
 
-* The table at the top of the page shows the thermocouple bead diameter for each of the temperature data files.
+* The table at the top of the page shows the thermocouple bead diameter (TC Bead) used for each of the temperature data profiles (TC Profiles).
 
 * Temperature measurements were made using fine-wire, bare-wire, type S (platinum) thermocouples with approximately spherical beads. The table below lists the thermocouple bead diameters used to acquire the pool fire temperature data. The associated references are also listed.
 
