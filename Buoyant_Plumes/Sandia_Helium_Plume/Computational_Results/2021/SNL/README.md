@@ -2,6 +2,10 @@
 ### Case: Sandia Helium Plume
 ### Contributor: Sandia National Laboratories
 
+#### Link to Results Presentation
+
+[Sandia National Laboratories Results Presentation](https://github.com/MaCFP/macfp-db/files/6049977/SNL_HePlumeResults_V3.pdf)
+
 #### Notes
 
 The table below lists the fine grid resolutions discussed on slide 5. "z-fine" refers to the finest vertical resolution at the base of the plume and "y-fine" refers to the finest horizontal resolution.
