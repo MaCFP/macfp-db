@@ -96,17 +96,17 @@ The dominant puffing frequencies was determined from analysis of large scale fea
 
 * Radiative and total heat flux measurements were made at various locations in the 30 cm and 100 cm methanol pool fires, mapping the heat flux emitted radially outward from the vertical surface and downwards through the bottom surface of a cylindical control volume about the fire.
 
-`Methanol_30_cm_HF_radial_Hamins_1994.csv` Radial profile of radiative heat flux in the downward direction from the pool center (r = 0) towards the burner edge (r ≅ 15 cm). The positions of the heat flux gauges were z = 0.5 cm above the fuel surface and oriented in the upward direction. (Hamins et al., 1994)
+* `Methanol_30_cm_HF_radial_Hamins_1994.csv` Radial profile of radiative heat flux in the downward direction from the pool center (r = 0) towards the burner edge (r ≅ 15 cm). The positions of the heat flux gauges were z = 0.5 cm above the fuel surface and oriented in the upward direction. (Hamins et al., 1994)
 
-`Methanol_30_cm_HF_radial_Klassen_1994.csv` Radial profile of total heat flux in the downward direction from the burner edge (r = 15 cm) to r = 85 cm. The positions of the heat flux gauges were z = 0.5 cm above the fuel surface and oriented in the upward direction. (Klassen and Gore, 1994)
+* `Methanol_30_cm_HF_radial_Klassen_1994.csv` Radial profile of total heat flux in the downward direction from the burner edge (r = 15 cm) to r = 85 cm. The positions of the heat flux gauges were z = 0.5 cm above the fuel surface and oriented in the upward direction. (Klassen and Gore, 1994)
 
-`Methanol_30_cm_HF_radial_Kim_2019.csv` Radial profile of total heat flux in the downward direction from the pool center (r = 0) to r = 1.5 m.  The heat flux gauges were oriented in the upward direction and positioned z = 1.3 cm and z = 1.0 cm above the fuel surface for 0 ≤ r (cm) ≤ 15 and 15 ≤ r (cm) ≤ 150, respectively. (Kim et al., 2019)
+* `Methanol_30_cm_HF_radial_Kim_2019.csv` Radial profile of total heat flux in the downward direction from the pool center (r = 0) to r = 1.5 m.  The heat flux gauges were oriented in the upward direction and positioned z = 1.3 cm and z = 1.0 cm above the fuel surface for 0 ≤ r (cm) ≤ 15 and 15 ≤ r (cm) ≤ 150, respectively. (Kim et al., 2019)
 
-`Methanol_30_cm_HF_vertical_Kim_2019.csv` Vertical profile of total heat flux emitted radially away from the fire acquired at various z heights above the fuel surface at r = 60 cm from the pool center and oriented towards the fire centerline. (Kim et al., 2019)
+* `Methanol_30_cm_HF_vertical_Kim_2019.csv` Vertical profile of total heat flux emitted radially away from the fire acquired at various z heights above the fuel surface at r = 60 cm from the pool center and oriented towards the fire centerline. (Kim et al., 2019)
 
-`Methanol_100_cm_HF_radial.csv` Radial profile of total heat flux in the downward direction from the burner edge (r = 0.50 m) to r = 2 m. The positions of the heat flux gauges were located z = 1 cm above the fuel surface and oriented in the upward direction. (Sung et al., 2019)
+* `Methanol_100_cm_HF_radial.csv` Radial profile of total heat flux in the downward direction from the burner edge (r = 0.50 m) to r = 2 m. The positions of the heat flux gauges were located z = 1 cm above the fuel surface and oriented in the upward direction. (Sung et al., 2019)
 
-`Methanol_100_cm_HF_vertical.csv` Vertical profiles of total heat flux emitted radially away from the fire acquired at various z heights above the fuel surface and r distances from the pool center and oriented towards the fire centerline. (Sung et al., 2019)
+* `Methanol_100_cm_HF_vertical.csv` Vertical profiles of total heat flux emitted radially away from the fire acquired at various z heights above the fuel surface and r distances from the pool center and oriented towards the fire centerline. (Sung et al., 2019)
 
 #### References
 
