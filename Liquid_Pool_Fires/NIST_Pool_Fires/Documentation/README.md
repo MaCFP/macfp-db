@@ -96,7 +96,7 @@ The dominant puffing frequencies was determined from analysis of large scale fea
 
 * Radiative and total heat flux measurements were made at various locations in the 30 cm and 100 cm methanol pool fires, mapping the heat flux emitted radially outward from the vertical surface and downwards through the bottom surface of a cylindical control volume about the fire.
 
-* `Methanol_30_cm_HF_radial_Hamins_1994.csv` Radial profile of radiative heat flux in the downward direction from the pool center (r = 0) towards the burner edge (r ≅ 15 cm). The positions of the heat flux gauges were z = 0.5 cm above the fuel surface and oriented in the upward direction. (Hamins et al., 1994)
+* `Methanol_30_cm_HF_radial_Hamins_1994.csv` Radial profile of radiative heat flux in the downward direction from the pool center (r = 0) towards the burner edge (r ≅ 15 cm). The positions of the heat flux gauges were z = 0.7 cm above the fuel surface and oriented in the upward direction. (Hamins et al., 1994)
 
 * `Methanol_30_cm_HF_radial_Klassen_1994.csv` Radial profile of total heat flux in the downward direction from the burner edge (r = 15 cm) to r = 85 cm. The positions of the heat flux gauges were z = 0.5 cm above the fuel surface and oriented in the upward direction. (Klassen and Gore, 1994)
 
