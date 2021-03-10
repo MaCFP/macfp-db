@@ -189,12 +189,12 @@ def define_plot_parameters(C,irow):
             sys.exit('Required column header missing: Exp_Filename')
 
         try:
-            Exp_Header_Row        = C.values[irow,C.columns.get_loc('Exp_Header_Row')]
+            Exp_Header_Row        = int(C.values[irow,C.columns.get_loc('Exp_Header_Row')])
         except:
             Exp_Header_Row        = 1
 
         try:
-            Exp_Data_Row          = C.values[irow,C.columns.get_loc('Exp_Data_Row')]
+            Exp_Data_Row          = int(C.values[irow,C.columns.get_loc('Exp_Data_Row')])
         except:
             Exp_Data_Row          = Exp_Header_Row+1
 
