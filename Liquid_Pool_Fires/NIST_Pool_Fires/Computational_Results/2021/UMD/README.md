@@ -24,20 +24,20 @@ https://github.com/fireFoam-dev/fireFoam-dev/commit/47c980c20b13c60c71a0e6d8d562
 ### Resolution
 
 #### Computational domain discretization (flow solver)
-Domain:
+Domain:  
 cylindrical domain
 
-diameter = 150 cm height = 173 m
-inner diameter of the fuel pan = 30.5 cm
-liquid pool surface is located at z = 0.3 m
-pan lip thickness = 1 cm
+diameter = 150 cm height = 173 m  
+inner diameter of the fuel pan = 30.5 cm  
+liquid pool surface is located at z = 0.3 m  
+pan lip thickness = 1 cm  
 pan lip height = 1 cm
 
 
-Cell size: 	
-multi-level mesh (vertical resolution, horizontal resolution):
-Coarse mesh: (5 mm, 10 mm) near pool surface & (10 mm, 10 mm) in bulk flame region
-Medium mesh: (2 mm, 5 mm) near pool surface & (5 mm, 5 mm) in bulk flame region
+Cell size:  
+multi-level mesh (vertical resolution, horizontal resolution):  
+Coarse mesh: (5 mm, 10 mm) near pool surface & (10 mm, 10 mm) in bulk flame region  
+Medium mesh: (2 mm, 5 mm) near pool surface & (5 mm, 5 mm) in bulk flame region  
 Fine mesh: (1 mm, 2.5 mm) near pool surface & (2.5 mm, 2.5 mm) in bulk flame region
 
 Details of vertical cell sizes
@@ -51,16 +51,16 @@ Details of vertical cell sizes
 
 Cell type: Structured hexahedra
 
-Total cells:
-	Coarse mesh: 0.185 million
-	Medium mesh: 1.5 million
+Total cells:  
+	Coarse mesh: 0.185 million  
+	Medium mesh: 1.5 million  
 	Fine mesh: 7.7 million
 
-Comments:
+Comments:  
 	Check CNF paper for more details about the mesh.
 
 #### Angular space discretization (radiation solver)
-Number of solid angles:
+Number of solid angles:  
 	64 solid angles
 
 Comments:
@@ -88,8 +88,8 @@ Comments:
 
 ### Boundary conditions
 
-Pool surface: inflow with prescribed flow rate of 0.963 g/s and temperature of 337.8 K
-Burner sides: no-slip adiabatic walls
+Pool surface: inflow with prescribed flow rate of 0.963 g/s and temperature of 337.8 K  
+Burner sides: no-slip adiabatic walls  
 Top, sides and bottom: open boundaries
 
 Comments:
@@ -102,19 +102,22 @@ Comments:
 ------------------
 
 ### Models (include parameters)
-Turbulence model:
+Turbulence model:  
 Dynamic k-equation model
 
-Combustion model:
-Eddy Dissipation Model
+Unity Lewis number for calculation of turbulent diffusivities  
+Turbulent Schmidt number = 0.5  
+Turbulent Prandtl number = 0.5
+
+Combustion model:  
+Eddy Dissipation Model  
 |Name|Value|Note|
 |---|---|---|
 |semiImplicit|no||
 |C_EDC|4.0|Eddy dissipation coefficient [-]|
 |C_Diff|6|Diffusion coefficient [-]|
 
-
-Radiation model:
+Radiation model:  
 Finite Volume Discrete Ordinates Method
 
 |Name|Value|Note|
@@ -133,10 +136,10 @@ The input value of the radiant fraction is 0.22.
 model 2: Weighted-Sum-of-Gray-Gases (WSGG)  
 The calculated radiant fraction is 0.21.
 
-Soot model:
+Soot model:  
 none
 
-Comments:
+Comments:  
 WSGG uses the model description provided in
 M.H. Bordbar , G. Wecel and T. Hyppänen (2014) A line by line based weighted sum of gray gases model for inhomogeneous CO2-H2O mixture in oxy-fired combustion, Combust. Flame, 161:2435–2445.
 
@@ -199,29 +202,29 @@ Pressure-velocity coupling:
 ------------------
 
 ### Computational Cost (hh:mm:ss)
-Wall clock time:
-Coarse mesh: 36:00:00
-Medium mesh: 192:00:00
+Wall clock time:  
+Coarse mesh: 36:00:00  
+Medium mesh: 192:00:00  
 Fine mesh: 840:00:00
 
-Simulation time:
-Coarse and medium meshes: 70 sec.
-Fine mesh: 35 sec. 
+Simulation time:  
+Coarse and medium meshes: 70 sec.  
+Fine mesh: 35 sec.
 
-Number of CPUs (MPI Processes):
-Coarse mesh: 96 cores
-Medium mesh: 120 cores
-Fine mesh: 288 cores
+Number of CPUs (MPI Processes):  
+Coarse mesh: 96 cores  
+Medium mesh: 120 cores  
+Fine mesh: 288 cores  
 
-CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):
-Coarse mesh: 0.000267
-Medium mesh: 0.000219
-Fine mesh: 0.000898
+CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):  
+Coarse mesh: 0.000267  
+Medium mesh: 0.000219  
+Fine mesh: 0.000898  
 
 ------------------
 
 ### Averaging period
-Coarse and medium meshes: 60 sec.
+Coarse and medium meshes: 60 sec.  
 Fine mesh: 20 sec.
 
 ------------------
