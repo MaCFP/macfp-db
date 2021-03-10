@@ -100,8 +100,8 @@ Comments:
 Turbulence model:
 Dynamic k-equation model
 
-Unity Lewis number for calculation of turbulent diffusivities
-Turbulent Schmidt number = 0.5
+Unity Lewis number for calculation of turbulent diffusivities  
+Turbulent Schmidt number = 0.5  
 Turbulent Prandtl number = 0.5
 
 Combustion model:
@@ -111,10 +111,6 @@ Eddy Dissipation Model
 |semiImplicit|no||
 |C_EDC|4.0|Eddy dissipation coefficient [-]|
 |C_Diff|6|Diffusion coefficient [-]|
-
-Unity Lewis number for calculation of turbulent diffusivities
-Turbulent Schmidt number = 0.5
-Turbulent Prandtl number = 0.5
 
 Radiation model:
 Finite Volume Discrete Ordinates Method
