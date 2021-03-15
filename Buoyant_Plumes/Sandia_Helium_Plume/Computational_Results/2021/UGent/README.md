@@ -10,6 +10,7 @@ Country: Belgium
 ### Test case
 
 Case 1 - Sandia helium plume
+
 ------------------
 
 ### CFD package
@@ -32,7 +33,7 @@ Total cells: 2k (20 cm), 12k (10 cm), 53k (6 cm), 139k (3 cm), 525k (1.5 cm)
 
 Comments: Refinement regions when local grid refinement (i.e., 3 cm, 1.5 cm) is used:
 
-• 3 cm: 2 m x 2 m
+• 3 cm: 2 m x 2 m  
 • 1.5 cm: 1.5 m x 1.5 m 
  
 #### Angular space discretization (radiation solver)
@@ -45,7 +46,7 @@ Comments: -
 ### Initial conditions
 Comments:
 
-• Temperature: 284 K
+• Temperature: 284 K  
 • Pressure: 80900 Pa
 
 ------------------
@@ -53,7 +54,7 @@ Comments:
 ### Boundary conditions
 Comments: 
 
-• Inlet mixture: 96.4% He, 1.7% C3H6O, 1.9% 02 (W_mixture ≈ 5.45 g/mol)
+• Inlet mixture: 96.4% He, 1.7% C3H6O, 1.9% 02 (W_mixture ≈ 5.45 g/mol)  
 • Mass flow rate: 0.06045 kg/(m2·s) (calculated as 0.325 m/s * 0.186 kg/m3)
 
 ------------------
@@ -100,11 +101,12 @@ CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 0.0
 ### Averaging period
 
 Averaging period: 30 sec (between 5 s – 35 s)
+
 ------------------
 
 ### Special issues/problems
 
-• The 0.5 m wide wall surrounding the inlet has been included in the simulations. 
+• The 0.5 m wide wall surrounding the inlet has been included in the simulations.  
 • The boundary outside the surrounding wall and the sides of the computational domain have been modelled as open surfaces. There is no imposed co-flow velocity.
 
 ------------------

@@ -10,6 +10,7 @@ Country: Belgium
 ### Test case
 
 Case 3b - NIST 1 m methanol pool fire
+
 ------------------
 
 ### CFD package
@@ -32,7 +33,7 @@ Total cells: 1.8k (20 cm), 10k (10 cm), 145k (4 cm), 605k (2 cm), 1.99mil (1 cm)
 
 Comments: Refinement regions when local grid refinement (i.e., 2 cm, 1 cm) is used:
 
-• 2 cm: 2.5 m x 2.5 m
+• 2 cm: 2.5 m x 2.5 m  
 • 1 cm: 1.5 m x 1.5 m 
  
 #### Angular space discretization (radiation solver)
@@ -45,7 +46,7 @@ Comments: -
 ### Initial conditions
 Comments:
 
-• Temperature: 293 K
+• Temperature: 293 K  
 • Pressure: 101325 Pa
 
 ------------------
@@ -53,7 +54,7 @@ Comments:
 ### Boundary conditions
 Comments: 
 
-• Fuel temperature: 338 K (boiling temperature of methanol).
+• Fuel temperature: 338 K (boiling temperature of methanol).  
 • Mass flow rate: Prescribed value corresponding to a HRR of 254 kW.
 
 ------------------
@@ -100,6 +101,7 @@ CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 0.3
 ### Averaging period
 
 Averaging period: 30 sec (between 5 s – 35 s)
+
 ------------------
 
 ### Special issues/problems

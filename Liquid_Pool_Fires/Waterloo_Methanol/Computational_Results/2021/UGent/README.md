@@ -10,6 +10,7 @@ Country: Belgium
 ### Test case
 
 Case 3a - Waterloo 30 cm methanol pool fire
+
 ------------------
 
 ### CFD package
@@ -32,7 +33,7 @@ Total cells: 3.5k (6 cm), 16k (3 cm), 47k (2 cm), 158k (1 cm), 597k (0.5 cm)
 
 Comments: Refinement regions when local grid refinement (i.e., 1 cm, 0.5 cm) is used:
 
-• 1 cm: 0.9 m x 0.9 m
+• 1 cm: 0.9 m x 0.9 m  
 • 0.5 cm: 0.6 m x 0.6 m 
  
 #### Angular space discretization (radiation solver)
@@ -45,7 +46,7 @@ Comments: -
 ### Initial conditions
 Comments:
 
-• Temperature: 293 K
+• Temperature: 293 K  
 • Pressure: 101325 Pa
 
 ------------------
@@ -53,7 +54,7 @@ Comments:
 ### Boundary conditions
 Comments: 
 
-• Fuel temperature: 338 K (boiling temperature of methanol).
+• Fuel temperature: 338 K (boiling temperature of methanol).  
 • Mass flow rate: Prescribed value corresponding to a HRR of 21.3 kW.
 
 ------------------
@@ -100,6 +101,7 @@ CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 0.3
 ### Averaging period
 
 Averaging period: 30 sec (between 5 s – 35 s)
+
 ------------------
 
 ### Special issues/problems
