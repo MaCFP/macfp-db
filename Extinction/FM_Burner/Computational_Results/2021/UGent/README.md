@@ -10,6 +10,7 @@ Country: Belgium
 ### Test case
 
 Case 5 - FM Burner
+
 ------------------
 
 ### CFD package
@@ -32,7 +33,7 @@ Total cells: 43k (2 cm), 177k (1 cm), 782k (0.5 cm)
 
 Comments: Refinement regions when local grid refinement (i.e., 1 cm, 0.5 cm) is used:
 
-• 1 cm: 0.8 m x 1.2 m
+• 1 cm: 0.8 m x 1.2 m  
 • 0.5 cm: 0.6 m x 0.9 m 
  
 #### Angular space discretization (radiation solver)
@@ -45,7 +46,7 @@ Comments: -
 ### Initial conditions
 Comments:
 
-• Temperature: 293 K
+• Temperature: 293 K  
 • Pressure: 101325 Pa
 
 ------------------
@@ -53,10 +54,10 @@ Comments:
 ### Boundary conditions
 Comments: 
 
-• Fuel temperature: 298 K
-• Mass flow rate: 0.318 g/s (15 kW)
-• Co-flow velocity: 0.041 m/s 
-• Co-flow 02 mass fraction: 0.231 
+• Fuel temperature: 298 K  
+• Mass flow rate: 0.318 g/s (15 kW)  
+• Co-flow velocity: 0.041 m/s  
+• Co-flow 02 mass fraction: 0.231
 
 ------------------
 
@@ -102,6 +103,7 @@ CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 0.3
 ### Averaging period
 
 Averaging period: 30 sec (between 5 s – 35 s)
+
 ------------------
 
 ### Special issues/problems
