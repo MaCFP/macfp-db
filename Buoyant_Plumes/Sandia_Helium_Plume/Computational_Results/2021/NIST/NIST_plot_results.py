@@ -15,9 +15,11 @@ import importlib
 importlib.reload(macfp)
 import matplotlib.pyplot as plt
 
-macfp.dataplot(config_filename='NIST_macfp_config.csv',
-               institute='NIST test',
+macfp.dataplot(config_filename='NIST_Sandia_Helium_Plume_dataplot_config.csv',
+               institute='NIST Cartesian Geometry',
                expdir='../../../Experimental_Data/',
-               pltdir='./Plots/')
+               pltdir='./Plots/',
+               verbose=True,
+               close_figs=True)
 
-plt.show()
+# plt.show()
