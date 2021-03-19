@@ -118,36 +118,36 @@ Schematic drawing of a liquid burner, illustrating its features. The table below
 | Ethanol_30_cm_TC_r=0_Falkenstein-Smith_2021a.csv | Centerline thermocouple temperature measurements. (Falkenstein-Smith et al., 2021a) |
 | Methanol_30_cm_TC_r=0_Hamins_2016.csv | Centerline thermocouple temperature measurements. (Hamins and Lock, 2016) |
 | Methanol_30_cm_TC_r=0_Falkenstein-Smith_2021a.csv  | Centerline thermocouple temperature measurements. (Falkenstein-Smith et al., 2021a)|
-| Methanol_30_cm_TC_z=38_mm_Hamins_2016.csv  | Radial thermocouple temperature measurements made at z=38 mm above the fuel surface. (Hamins and Lock, 2016)|
-| Methanol_30_cm_TC_z=308_mm_Hamins_2016.csv |Radial thermocouple temperature measurements made at z=30.8 cm above the fuel surface. (Hamins and Lock, 2016)|
-| Methanol_30_cm_TC_z=41_Sung_2021.csv  | Radial thermocouple temperature measurements made at z=41 above the fuel surface. (Sung et al., 2021b) |
-| Methanol_30_cm_TC_z=51_Sung_2021.csv  | Radial thermocouple temperature measurements made at z=51 above the fuel surface. (Sung et al., 2021b)|
-| Methanol_30_cm_TC_z=61_Sung_2021.csv  | Radial thermocouple temperature measurements made at z=61 above the fuel surface. (Sung et al., 2021b) |
+| Methanol_30_cm_TC_z=3p8_cm_Hamins_2016.csv  | Radial thermocouple temperature measurements made at z=3.8 cm above the fuel surface. (Hamins and Lock, 2016)|
+| Methanol_30_cm_TC_z=30p8_cm_Hamins_2016.csv |Radial thermocouple temperature measurements made at z=30.8 cm above the fuel surface. (Hamins and Lock, 2016)|
+| Methanol_30_cm_TC_z=41_cm_Sung_2021b.csv  | Radial thermocouple temperature measurements made at z=41 cm above the fuel surface. (Sung et al., 2021b) |
+| Methanol_30_cm_TC_z=51_cm_Sung_2021b.csv  | Radial thermocouple temperature measurements made at z=51 cm above the fuel surface. (Sung et al., 2021b)|
+| Methanol_30_cm_TC_z=61_cm_Sung_2021b.csv  | Radial thermocouple temperature measurements made at z=61 cm above the fuel surface. (Sung et al., 2021b) |
 | Methane_37_cm_TC_r=0_Falkenstein-Smith_2021a.csv  | Centerline thermocouple and gas temperature measurements. (Falkenstein-Smith et al., 2021a) |
-| Propane_37_cm_34_kW_TC_r=0_Falkenstein-Smith_2021.csv |Centerline thermocouple and gas temperature measurements. (Falkenstein-Smith et al., 2021a; 2021b) |
-| Propane_37_cm_20_kW_TC_r=0_Falkenstein-Smith_2021.csv | Centerline thermocouple and gas temperature measurements. (Falkenstein-Smith et al., 2021a; 2021b) |
+| Propane_37_cm_34_kW_TC_r=0_Falkenstein-Smith_2021a.csv | Centerline thermocouple and gas temperature measurements. (Falkenstein-Smith et al., 2021a) |
+| Propane_37_cm_20_kW_TC_r=0_Falkenstein-Smith_2021a.csv | Centerline thermocouple and gas temperature measurements. (Falkenstein-Smith et al., 2021a) |
 | Methanol_100_cm_TC_r=0_Sung 2021a.csv  | Centerline thermocouple and gas temperature measurements. (Sung et al., 2021a) |
-|Methanol_100_cm_TC_z=101_cm_Sung_2021a.csv | Radial thermocouple and gas temperature measurements at z=101 cm above the fuel surface. (Sung et al., 2021a) |
+| Methanol_100_cm_TC_z=101_cm_Sung_2021a.csv | Radial thermocouple and gas temperature measurements at z=101 cm above the fuel surface. (Sung et al., 2021a) |
 | Methanol_100_cm_TC_z=141_cm_Sung_2021a.csv | Radial thermocouple and gas temperature measurements at z=141 cm above the fuel surface. (Sung et al., 2021a) |
-| Methanol_100_cm_TC_z=181_Sung_2021a.csv | Radial thermocouple and gas temperature measurements at z=181 cm above the fuel surface. (Sung et al., 2021a)|
-| Methanol_100_cm_TC_z=21_cm_Sung_2021a.csv |Radial thermocouple and gas temperature measurements at z=21 cm above the fuel surface. (Sung et al., 2021a)|
+| Methanol_100_cm_TC_z=181_cm_Sung_2021a.csv | Radial thermocouple and gas temperature measurements at z=181 cm above the fuel surface. (Sung et al., 2021a)|
+| Methanol_100_cm_TC_z=21_cm_Sung_2021a.csv | Radial thermocouple and gas temperature measurements at z=21 cm above the fuel surface. (Sung et al., 2021a)|
 | Methanol_100_cm_TC_z=61_cm_Sung_2021a.csv | Radial thermocouple and gas temperature measurements at z=61 cm above the fuel surface. (Sung et al., 2021a) |
 
 
 ### Gas Species and Soot
 
-* Gas species measurements were made along the fire centerline (r=o), using extractive sampling with a water-cooled probe, injecting the sample into a gas chromatograph/mass spectrometer system (GC/MSD). The volume fraction of each species was calculated based on the number of moles measured by the GC/MSD. Falkenstein-Smith et al. (2020a and 2020b)
+* Gas species measurements were made along the fire centerline (r=0), using extractive sampling with a water-cooled probe, injecting the sample into a gas chromatograph/mass spectrometer system (GC/MSD). The volume fraction of each species was calculated based on the number of moles measured by the GC/MSD. Falkenstein-Smith et al. (2021a).
  
 * Soot mass fractions were measured gravimetrically during the gas sampling process. 
 
 | Experimental Data Filename            |  Description             |
 |---------------------------------------|--------------------------|
-| Acetone_30_cm_species_r=0_Falkenstein-Smith_2020a.csv | Mean gas species and soot, and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). Falkenstein-Smith et al. (2020a, 2020b, 2021a) |
-|Ethanol_30_cm_species_r=0_Falkenstein-Smith_2020a.csv |Mean gas species and soot, and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). Falkenstein-Smith et al. (2020a, 2020b, 2021a) |
-| Methanol_30_cm_species_r=0_Falkenstein-Smith_2020a.csv |Mean gas species and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). There is no measurable soot in the methanol fire. Falkenstein-Smith et al. (2020a, 2020b, 2021a) |
-| Methane_37_cm_species_r=0_Falkenstein-Smith_2020b.csv | Mean gas species and soot, and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). Falkenstein-Smith et al. (2020b, 2021a) |
-| Propane_37_cm_20_kW_species_r=0_Falkenstein-Smith_2020b.csv| Mean gas species and soot, and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). Falkenstein-Smith et al. (2020b, 2021a, 2021b) |
-|Propane_37_cm_34_kW_species_r=0_Falkenstein-Smith_2020b.csv | Mean gas species and soot, and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). Falkenstein-Smith et al. (2020b, 2021a, 2021b) |
+| Acetone_30_cm_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species and soot, and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0).|
+|Ethanol_30_cm_species_r=0_Falkenstein-Smith_2021a.csv |Mean gas species and soot, and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). |
+| Methanol_30_cm_species_r=0_Falkenstein-Smith_2021a.csv |Mean gas species and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). There is no measurable soot in the methanol fire. |
+| Methane_37_cm_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species and soot, and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). |
+| Propane_37_cm_20_kW_species_r=0_Falkenstein-Smith_2021a.csv| Mean gas species and soot, and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). |
+| Propane_37_cm_34_kW_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species and soot, and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). |
 
 
 ### Heat Flux
@@ -174,12 +174,12 @@ Schematic drawing of a liquid burner, illustrating its features. The table below
 
 | Experimental Data Filename  |  Description             |
 |-----------------------------|--------------------------|
-| Acetone_30_cm_U_r=0_Sung_2021.csv | Profile of the vertical component of velocity in the upward direction as a function of distance (z) above the fuel surface. (Sung et al., 2021b; Falkenstein - Smith et al., 2021a|
-| Ethanol_30_cm_U_r=0_Sung_2021.csv | Profile of the vertical component of velocity in the upward direction as a function of distance (z) above the fuel surface. (Sung et al., 2021b; Falkenstein - Smith et al., 2021a|
-| Methanol_30_cm_U_r=0_Sung_2021.csv | Profile of the vertical component of velocity in the upward direction as a function of distance (z) above the fuel surface. (Sung et al., 2021b; Falkenstein - Smith et al., 2021a|  
-| Methane_37_cm_U_r=0_Sung_2021.csv | Profile of the vertical component of velocity in the upward direction as a function of distance (z) above the fuel surface. (Sung et al., 2021b; Falkenstein - Smith et al., 2021a|
-|Propane_20_kW_37_cm_U_r=0_Sung_2021.csv |Profile of the vertical component of velocity in the upward direction as a function of distance (z) above the fuel surface. (Sung et al., 2021b; Falkenstein - Smith et al., 2021a; 2021b|
-|Propane_34_kW_37_cm_U_r=0_Sung_2021.csv |Profile of the vertical component of velocity in the upward direction as a function of distance (z) above the fuel surface. (Sung et al., 2021b; Falkenstein - Smith et al., 2021a; 2021b |
+| Acetone_30_cm_U_r=0_Sung_2021b.csv | Profile of the vertical component of velocity in the upward direction as a function of distance (z) above the fuel surface. (Sung et al., 2021b; Falkenstein - Smith et al., 2021a|
+| Ethanol_30_cm_U_r=0_Sung_2021b.csv | Profile of the vertical component of velocity in the upward direction as a function of distance (z) above the fuel surface. (Sung et al., 2021b; Falkenstein - Smith et al., 2021a|
+| Methanol_30_cm_U_r=0_Sung_2021b.csv | Profile of the vertical component of velocity in the upward direction as a function of distance (z) above the fuel surface. (Sung et al., 2021b; Falkenstein - Smith et al., 2021a|  
+| Methane_37_cm_U_r=0_Sung_2021b.csv | Profile of the vertical component of velocity in the upward direction as a function of distance (z) above the fuel surface. (Sung et al., 2021b; Falkenstein - Smith et al., 2021a|
+|Propane_20_kW_37_cm_U_r=0_Sung_2021b.csv |Profile of the vertical component of velocity in the upward direction as a function of distance (z) above the fuel surface. (Sung et al., 2021b; Falkenstein - Smith et al., 2021a; 2021b|
+|Propane_34_kW_37_cm_U_r=0_Sung_2021b.csv |Profile of the vertical component of velocity in the upward direction as a function of distance (z) above the fuel surface. (Sung et al., 2021b; Falkenstein - Smith et al., 2021a; 2021b |
 
 ### Heat Release Rate (HRR)
 
