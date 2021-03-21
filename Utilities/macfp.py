@@ -419,6 +419,8 @@ def define_plot_parameters(C,irow):
 
         try:
             Plot_Legend_Location = C.values[irow,C.columns.get_loc('Plot_Legend_Location')]
+            if Plot_Legend_Location==None:
+                Plot_Legend_Location = 'best'
         except:
             Plot_Legend_Location = 'best'
 
