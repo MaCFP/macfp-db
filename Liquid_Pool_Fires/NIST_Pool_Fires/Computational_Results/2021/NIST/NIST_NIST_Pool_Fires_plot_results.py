@@ -15,8 +15,8 @@ import importlib
 importlib.reload(macfp) # use for development (while making changes to macfp.py)
 import matplotlib.pyplot as plt
 
-macfp.dataplot(config_filename='NIST_NIST_Pool_Fires_dataplot_config.csv',
-               institute='NIST preliminary',
+macfp.dataplot(config_filename='NIST_NIST_Pool_Fires_dataplot_config_2.csv',
+               institute='NIST FDS6.7.5-1092-g94ad5b6a4',
                expdir='../../../../../Liquid_Pool_Fires/',
                pltdir='./Plots/',
                close_figs=True,
