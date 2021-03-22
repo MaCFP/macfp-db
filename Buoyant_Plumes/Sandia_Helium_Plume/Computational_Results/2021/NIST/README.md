@@ -45,7 +45,7 @@ Comments:
 
 ### Initial conditions
 
-Comments: quiescent
+Comments: small, divergence free random velocity fluctuations
 
 ------------------
 
@@ -71,7 +71,7 @@ Radiative fraction: (predicted or prescribed; if prescribed, what value)
 
 Soot model: NA
 
-Comments:
+Comments: Diffusion coefficient for helium + acetone mixture in nitrogen computed from molecular theory (see [1])
 
 ------------------
 
