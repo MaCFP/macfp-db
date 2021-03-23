@@ -1,6 +1,6 @@
 
 ### Contributor
-Name: Kevin McGrattan and Randy McDermott
+Name: Kevin McGrattan, Randy McDermott, Jason Floyd
 
 Institution: National Institute of Standards and Technology (NIST)
 
@@ -17,7 +17,7 @@ Case 5: Ethylene Burner
 ### CFD package
 Code: Fire Dynamics Simulator (FDS)
 
-Version: 6.7.5
+Version: FDS6.7.5-1198-g0f426abb6-master
 
 ------------------
 
