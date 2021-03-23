@@ -16,7 +16,7 @@ importlib.reload(macfp) # use for development (while making changes to macfp.py)
 import matplotlib.pyplot as plt
 
 macfp.dataplot(config_filename='NIST_FM_Burner_dataplot_config.csv',
-               institute='NIST preliminary',
+               institute='NIST',
                expdir='../../../Experimental_Data/',
                pltdir='./Plots/',
                close_figs=True,
