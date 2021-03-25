@@ -47,18 +47,63 @@ def plot_to_fig(x_data,y_data,**kwargs):
     else:
         fig, ax = plt.subplots(nrows=1, ncols=1, sharex=True, sharey=True, gridspec_kw={'hspace': 0, 'wspace': 0}, figsize=figure_size)
 
+    if kwargs.get('plot_type'):
+        plot_type=kwargs.get('plot_type')
+    else:
+        plot_type='linear'
+
     # generate the main x,y plot
-    ax.plot(x_data,y_data,
-        markevery=kwargs.get('data_markevery'),
-        label=kwargs.get('data_label'),
-        markerfacecolor=kwargs.get('marker_fill_color'),
-        markeredgecolor=kwargs.get('marker_edge_color'),
-        markeredgewidth=kwargs.get('line_width'),
-        marker=kwargs.get('marker_style'),
-        markersize=kwargs.get('marker_size'),
-        linestyle=kwargs.get('line_style'),
-        linewidth=kwargs.get('line_width'),
-        color=kwargs.get('line_color'))
+    if plot_type=='linear':
+        ax.plot(x_data,y_data,
+            markevery=kwargs.get('data_markevery'),
+            label=kwargs.get('data_label'),
+            markerfacecolor=kwargs.get('marker_fill_color'),
+            markeredgecolor=kwargs.get('marker_edge_color'),
+            markeredgewidth=kwargs.get('line_width'),
+            marker=kwargs.get('marker_style'),
+            markersize=kwargs.get('marker_size'),
+            linestyle=kwargs.get('line_style'),
+            linewidth=kwargs.get('line_width'),
+            color=kwargs.get('line_color'))
+
+    if plot_type=='loglog':
+        ax.loglog(x_data,y_data,
+            markevery=kwargs.get('data_markevery'),
+            label=kwargs.get('data_label'),
+            markerfacecolor=kwargs.get('marker_fill_color'),
+            markeredgecolor=kwargs.get('marker_edge_color'),
+            markeredgewidth=kwargs.get('line_width'),
+            marker=kwargs.get('marker_style'),
+            markersize=kwargs.get('marker_size'),
+            linestyle=kwargs.get('line_style'),
+            linewidth=kwargs.get('line_width'),
+            color=kwargs.get('line_color'))
+
+    if plot_type=='semilogx':
+        ax.semilogx(x_data,y_data,
+            markevery=kwargs.get('data_markevery'),
+            label=kwargs.get('data_label'),
+            markerfacecolor=kwargs.get('marker_fill_color'),
+            markeredgecolor=kwargs.get('marker_edge_color'),
+            markeredgewidth=kwargs.get('line_width'),
+            marker=kwargs.get('marker_style'),
+            markersize=kwargs.get('marker_size'),
+            linestyle=kwargs.get('line_style'),
+            linewidth=kwargs.get('line_width'),
+            color=kwargs.get('line_color'))
+
+    if plot_type=='semilogy':
+        ax.semilogy(x_data,y_data,
+            markevery=kwargs.get('data_markevery'),
+            label=kwargs.get('data_label'),
+            markerfacecolor=kwargs.get('marker_fill_color'),
+            markeredgecolor=kwargs.get('marker_edge_color'),
+            markeredgewidth=kwargs.get('line_width'),
+            marker=kwargs.get('marker_style'),
+            markersize=kwargs.get('marker_size'),
+            linestyle=kwargs.get('line_style'),
+            linewidth=kwargs.get('line_width'),
+            color=kwargs.get('line_color'))
 
     # if error range is passed, add it to the plot
     if kwargs.get('y_error_absolute'):
@@ -93,7 +138,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
         legend_fontsize=default_legend_fontsize
 
     if kwargs.get('show_legend'):
-        plt.legend(fontsize=legend_fontsize,loc=kwargs.get('legend_location'))
+        plt.legend(fontsize=legend_fontsize,loc=kwargs.get('legend_location'),framealpha=kwargs.get('legend_framealpha'))
 
     # plot titles
     if kwargs.get('title_fontsize'):
@@ -130,15 +175,27 @@ def plot_to_fig(x_data,y_data,**kwargs):
     if kwargs.get('y_nticks'):
         ax.set_yticks(np.linspace(start = kwargs.get('y_min'), stop = kwargs.get('y_max'), num = kwargs.get('y_nticks'), endpoint=True))
 
-    xpos=xmin+0.05*(xmax-xmin)
-    ypos1=ymin+0.900*(ymax-ymin)
-    ypos2=ymin+0.825*(ymax-ymin)
-    ax.text(xpos,ypos1, kwargs.get('plot_title'), fontsize=title_fontsize)
-    ax.text(xpos,ypos2, kwargs.get('plot_subtitle'), fontsize=subtitle_fontsize)
+    # if plot_type=='linear':
+    #     xpos=xmin+0.05*(xmax-xmin)
+    #     ypos1=ymin+0.900*(ymax-ymin)
+    #     ypos2=ymin+0.825*(ymax-ymin)
+    #     ax.text(xpos,ypos1, kwargs.get('plot_title'), fontsize=title_fontsize)
+    #     ax.text(xpos,ypos2, kwargs.get('plot_subtitle'), fontsize=subtitle_fontsize)
+
+    #     # plot Institute + MaCFP stamp
+    #     ax.text(xmin+0.025*(xmax-xmin),ymax+0.01*(ymax-ymin), kwargs.get('institute_label'), fontsize=default_stamp_fontsize)
+    #     ax.text(xmax-0.025*(xmax-xmin),ymax+0.01*(ymax-ymin), 'MaCFP 2021', fontsize=default_stamp_fontsize, ha='right')
+
+    # this relative method seems to work for all plot types (linear,loglog,etc.)
+    xpos=0.05
+    ypos1=0.900
+    ypos2=0.825
+    ax.text(xpos,ypos1, kwargs.get('plot_title'), fontsize=title_fontsize, transform=ax.transAxes)
+    ax.text(xpos,ypos2, kwargs.get('plot_subtitle'), fontsize=subtitle_fontsize, transform=ax.transAxes)
 
     # plot Institute + MaCFP stamp
-    ax.text(xmin+0.025*(xmax-xmin),ymax+0.01*(ymax-ymin), kwargs.get('institute_label'), fontsize=default_stamp_fontsize)
-    ax.text(xmax-0.025*(xmax-xmin),ymax+0.01*(ymax-ymin), 'MaCFP 2021', fontsize=default_stamp_fontsize, ha='right')
+    ax.text(0.025,1.01, kwargs.get('institute_label'), fontsize=default_stamp_fontsize, transform=ax.transAxes)
+    ax.text(0.975,1.01, 'MaCFP 2021', fontsize=default_stamp_fontsize, ha='right', transform=ax.transAxes)
 
     # note: this absolute method works better than fig.tight_layout(), which may change for each call of the figure
     left_adjust, bottom_adjust = get_subplots_adjust_parameters(ticklabel_fontsize,axeslabel_fontsize)
