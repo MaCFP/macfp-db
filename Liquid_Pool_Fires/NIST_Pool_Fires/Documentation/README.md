@@ -94,7 +94,7 @@ Schematic drawing of a liquid burner, illustrating its features. The table below
      * The same exact burner was used by Klassen and Gore (1994) and Sung et al. (2020).   
 
 ### Combustion Efficiency
-* For the methanol, ethanol and acetone pool fires, the amount of CO in the exhaust stream was measured to be below detection limits, so the combustion efficiency is thought to be close to 1. (Kim et al., 2019; Sung et al, 2019)
+* For the methanol, ethanol and acetone pool fires, the amount of CO in the exhaust stream was measured to be below detection limits, so the combustion efficiency is thought to be close to 1. (Kim et al., 2019; Sung et al, 2020)
 
 ### Puffing Frequency
 
