@@ -1,10 +1,12 @@
 ### Contributor
 
-Name: Randall McDermott, Marcos Vanella, Glenn Forney, Emanuele Gissi
+Name: Randall McDermott (a), Marcos Vanella (a), Glenn Forney (a), Emanuele Gissi (b)
 
-Institution: National Institute of Standards and Technology (NIST)
+Institution, Country:
 
-Country: USA, Italy
+(a) National Institute of Standards and Technology (NIST), USA
+
+(b) Corpo Nazionale dei Vigili del Fuoco (CNVVF), Italy
 
 ------------------
 
@@ -18,7 +20,7 @@ Case 1: Sandia Helium Plume (Unstructured Geometry)
 
 Code: [Fire Dynamics Simulator (FDS)](https://github.com/firemodels/fds)
  
-Version: FDS6.7.5-1204-g8eda6af9a-master
+Version: FDS6.7.5-1204-g8eda6af9a
 
 ------------------
 

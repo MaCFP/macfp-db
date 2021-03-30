@@ -43,8 +43,8 @@ f20, Pxx_den_20   = signal.periodogram(x20, fs20)
 fmeas = np.array([1.37, 1.37])
 PSDmeas = np.array([min(Pxx_den_1p5), max(Pxx_den_1p5)])
 fh=macfp.plot_to_fig(fmeas, PSDmeas,
-                  plot_type='semilogx',
-                  x_min=0.1,x_max=10,y_min=0,y_max=15,
+                  plot_type='linear',
+                  x_min=0,x_max=4,y_min=0,y_max=15,
                   x_label='frequency [Hz]',
                   y_label='PSD [V**2/Hz]',
                   line_style='--',
@@ -54,16 +54,16 @@ fh=macfp.plot_to_fig(fmeas, PSDmeas,
                   data_label='Exp',
                   plot_title='Sandia 1 m Helium Plume Puffing Frequency',
                   show_legend=True,
-                  legend_location='center left')
+                  legend_location='right')
 
 # add error to measuered puffing freq
 plt.fill_betweenx(PSDmeas, np.array([1.19, 1.19]), np.array([1.53, 1.53]), color='lightgrey', figure=fh)
 
-fh=macfp.plot_to_fig(f1p5, Pxx_den_1p5,plot_type='semilogx',x_min=0.1,x_max=10,y_min=0,y_max=15,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=1.5$ cm',line_style='-', line_width=1,line_color='black',  marker_style='o',marker_size=4,marker_edge_color='black',  marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='center left')
-fh=macfp.plot_to_fig(f3, Pxx_den_3,    plot_type='semilogx',x_min=0.1,x_max=10,y_min=0,y_max=15,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=3$ cm',  line_style='-', line_width=1,line_color='magenta',marker_style='^',marker_size=4,marker_edge_color='magenta',marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='center left')
-fh=macfp.plot_to_fig(f6, Pxx_den_6,    plot_type='semilogx',x_min=0.1,x_max=10,y_min=0,y_max=15,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=6$ cm',  line_style='-.',line_width=1,line_color='red',    marker_style='s',marker_size=4,marker_edge_color='red',    marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='center left')
-fh=macfp.plot_to_fig(f10, Pxx_den_10,  plot_type='semilogx',x_min=0.1,x_max=10,y_min=0,y_max=15,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=10$ cm', line_style=':', line_width=1,line_color='green',  marker_style='*',marker_size=4,marker_edge_color='green',  marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='center left')
-fh=macfp.plot_to_fig(f20, Pxx_den_20,  plot_type='semilogx',x_min=0.1,x_max=10,y_min=0,y_max=15,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=20$ cm', line_style=':', line_width=1,line_color='blue',   marker_style='+',marker_size=4,marker_edge_color='blue',   marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='center left')
+fh=macfp.plot_to_fig(f1p5, Pxx_den_1p5,plot_type='linear',x_min=0,x_max=4,y_min=0,y_max=15,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=1.5$ cm',line_style='-', line_width=1,line_color='black',  marker_style='o',marker_size=4,marker_edge_color='black',  marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='right')
+fh=macfp.plot_to_fig(f3, Pxx_den_3,    plot_type='linear',x_min=0,x_max=4,y_min=0,y_max=15,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=3$ cm',  line_style='-', line_width=1,line_color='magenta',marker_style='^',marker_size=4,marker_edge_color='magenta',marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='right')
+fh=macfp.plot_to_fig(f6, Pxx_den_6,    plot_type='linear',x_min=0,x_max=4,y_min=0,y_max=15,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=6$ cm',  line_style='-.',line_width=1,line_color='red',    marker_style='s',marker_size=4,marker_edge_color='red',    marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='right')
+fh=macfp.plot_to_fig(f10, Pxx_den_10,  plot_type='linear',x_min=0,x_max=4,y_min=0,y_max=15,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=10$ cm', line_style=':', line_width=1,line_color='green',  marker_style='*',marker_size=4,marker_edge_color='green',  marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='right')
+fh=macfp.plot_to_fig(f20, Pxx_den_20,  plot_type='linear',x_min=0,x_max=4,y_min=0,y_max=15,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=20$ cm', line_style=':', line_width=1,line_color='blue',   marker_style='+',marker_size=4,marker_edge_color='blue',   marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='right')
 
 # plt.show()
 

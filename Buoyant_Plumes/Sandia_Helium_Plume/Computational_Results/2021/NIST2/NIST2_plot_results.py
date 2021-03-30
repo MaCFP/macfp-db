@@ -20,6 +20,7 @@ macfp.dataplot(config_filename='NIST2_Sandia_Helium_Plume_dataplot_config.csv',
                expdir='../../../Experimental_Data/',
                pltdir='./Plots/',
                verbose=True,
-               close_figs=True)
+               close_figs=True,
+               plot_list=['all'])
 
 # plt.show()
