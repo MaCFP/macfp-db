@@ -26,7 +26,7 @@ Version: v2012 (based on OpenFOAM v2012: https://www.openfoam.com/releases/openf
 #### Computational domain discretization (flow solver)
 Domain: 1.5m-diameter x 1.81m-high cylinder
 
-Cell size: 5mm horizontal resolution
+Cell size: 5mm horizontal resolution  
 (elevation, vertical cell size): (0-30cm, 10mm), (30-33cm, 2.5mm), (33-90cm, 5mm), (90-120cm, 10mm), (120-181cm, 20mm)
 
 
@@ -46,7 +46,7 @@ Comments:
 ### Initial conditions
 Comments:
 
-Temperature: 293 K
+Temperature: 293 K  
 Pressure: 101325 Pa
 
 ------------------
@@ -54,9 +54,9 @@ Pressure: 101325 Pa
 ### Boundary conditions
 Comments:
 
-Inlet T: 338 K
-Inlet mass flow rate: 1.0692 g/s
-Burner walls: no-slip, adiabatic
+Inlet T: 338 K  
+Inlet mass flow rate: 1.0692 g/s  
+Burner walls: no-slip, adiabatic  
 Top, sides and bottom: open
 
 ------------------
@@ -70,8 +70,8 @@ Radiation model: fvDOM
 
 Radiative fraction: (predicted or prescribed; if prescribed, what value)
 
-prescribed: fixed radiant fraction = 0.22
-predicted:  Box Model with Emission TRI (default constants,i.e. C_TRI=1.25, C_Tvar=2)
+prescribed: fixed radiant fraction = 0.22  
+predicted:  Box Model with Emission TRI (default constants,i.e. C_TRI=1.25, C_Tvar=2)  
             Calculated global radiant fraction=0.20
 
 Soot model: none
