@@ -15,9 +15,8 @@ Case 3b - NIST 0.3 m & 1 m methanol pool fire
 ------------------
 
 ### CFD package
-Code: FireFOAM
 
-Version: 2.2.x (https://github.com/fireFoam-dev/fireFoam-2.2.x)
+Code: Warwick-version FireFOAM (a coupled solver for both fire region and fuel region based on conjugate heat transfer and a film evaporation model)
 
 ------------------
 
@@ -27,7 +26,7 @@ Version: 2.2.x (https://github.com/fireFoam-dev/fireFoam-2.2.x)
 
 Domain:  
 0.3 m pool fire: 165 cm diameter and 250 cm height  
-1.0 m pool fire: 250 cm diameter and 400 cm height
+1.0 m pool fire: 250 cm diameter and 400 cm height  
 
 Cell size:  
 0.3 m pool fire:  
@@ -35,19 +34,20 @@ Cell size:
 ∆z: 0.1 cm - 4 cm (fine mesh); 0.12 cm - 4 cm (medium mesh); 0.15 cm - 4 cm (coarse mesh)  
 1.0  m pool fire:  
 ∆x & ∆y: 1 cm, 2 cm, 4 cm (bulk flame region)  
-∆z: 0.1 cm - 5 cm (fine mesh); 0.12 cm - 5 cm (medium mesh); 0.15 cm - 5 cm (coarse mesh)  
+∆z: 0.1 cm - 5 cm (fine mesh); 0.12 cm - 5 cm (medium mesh); 0.12 cm - 5 cm (coarse mesh)  
 
-Cell type: structured hexahedral  
+Cell type: structured hexahedral
 
 Total cells:  
 0.3 m pool fire:  
-Coarse mesh:  97 k  
-Medium mesh: 252 k  
-Fine mesh: 904 k  
+
+Coarse mesh: 16 k (fuel region); 81 k (fire region)  
+Medium mesh: 58 k (fuel region); 194 k (fire region)  
+Fine mesh: 237 k (fuel region); 667 k (fire region)  
 1.0 m pool fire:  
-Coarse mesh:  204 k  
-Medium mesh: 642 k  
-Fine mesh: 2.344 mil  
+Coarse mesh:  41 k (fuel region); 163 k (fire region)  
+Medium mesh: 163 k (fuel region); 477 k (fire region)  
+Fine mesh: 600 k (fuel region); 1744 k (fire region)
 
 Comments: -
 
@@ -60,37 +60,32 @@ Comments: -
 ------------------
 
 ### Initial conditions
-
 Comments:  
-Temperature: 295 K (0.3 m Pool Fire), 293 K (1.0 m Pool Fire)  
-Pressure: 101325 Pa  
+Temperature (fire region & fuel region): 295 K (0.3 m Pool Fire), 293 K (1.0 m Pool Fire)  
+Pressure: 101325 Pa
 
 ### Boundary conditions
 Comments:  
-Inlet conditions:  
-Tempertaure: 295 K (0.3 m pool fire), 293 K (1.0 m pool fire)  
-Mass flow rate: predicted mass flow rate  
-Velocity: marangoni convection corrected velocity  
-Open flow boundary conditions at sides and top air boundaries
+Top and lateral boundaries: open flow boundary conditions  
+Fuel pool surface: interface couplings of mass (evaporation model), momentum (thermo-capillary stress) and energy (conjugate heat transfer)  
+Others: solid walls
 
 ------------------
 
-### Models (include parameters)
-SGS Models:  
-Turbulence model: k-equation  
-Combustion model: modified Eddy Dissipation Concept (EDC)  
-Radiation model: fvDOM (0.3 m pool fire); fvDOM-WSGG (1.0 m pool fire)  
-Radiative fraction: emission-only RTE with prescribed global radiant fraction (Xrad= 22%)  
-Soot model: -
+### Models (include parameters)  
+Turbulence: k-equation SGS model, constant turbulent Schmidt and Prandtl, SC_T=0.5, PR_T=0.5  
+Combustion: extended eddy dissipation concept (EEDC)  
+Radiation: FVM model (only gas phase radiation considered) -solid angles: 80  
+Soot model: none
 
 Comments:
 
 ------------------
 
 ### Discretization methods
-Time: Euler
+Time: Euler  
 
-CFL: 1.0
+CFL: 1.0  
 
 Advection:  
 div(phi,U)     Gauss linear 1;  
@@ -111,7 +106,6 @@ div(phi,Yi_hs) Gauss multivariateSelection
     Yfn        limitedLinear 1;  
     Yfsi       limitedLinear 1;  
 };  
-
 div((muEff*dev2(T(grad(U))))) Gauss linear;  
 div(phiU,p)    Gauss linear;  
 div(Ji,Ii_h)   Gauss linearUpwind grad(Ii_h);  
@@ -130,13 +124,13 @@ nNonOrthogonalCorrectors 1;
 
 ### Computational Cost (hh:mm:ss)
 
-Wall clock time: 85:00:00 (0.3 m fine mesh)
+Wall clock time: 85:00:00 (0.3 m fine mesh)  
 
-Simulation time: 50 s
+Simulation time: 50 s  
 
-Number of CPUs (MPI Processes): 48
+Number of CPUs (MPI Processes): 48  
 
-CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 0.325 (0.3 m fine mesh)
+CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 0.325 (0.3 m fine mesh)  
 
 ------------------
 
@@ -152,4 +146,5 @@ CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 0.3
 
 ### Relevant publications
 
+B. Xu, J. Wen. The effect of convective motion within liquid fuel on the mass burning rates of pool fires – A numerical study. _Proc. Combustion Institute_, 2020, 1-8.
 
