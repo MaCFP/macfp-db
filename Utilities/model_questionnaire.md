@@ -57,7 +57,7 @@ Comments:
 ------------------
 
 ### Models (include parameters)
-Turbulence model:
+Turbulence model (include Sc_t and Pr_t):
 
 Combustion model:
 
