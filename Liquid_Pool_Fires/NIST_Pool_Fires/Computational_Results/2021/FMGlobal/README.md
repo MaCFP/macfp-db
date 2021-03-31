@@ -63,6 +63,8 @@ Top, sides and bottom: open
 
 ### Models (include parameters)
 Turbulence model: Dynamic k-equation model
+                  Turbulent Pr = 1
+                  Turbulent Sc = 1
 
 Combustion model: Eddy Dissipation Model (Eddy dissipation and diffusion coefficients = 4)
 
@@ -83,7 +85,7 @@ Comments: Heat of combustion=21,105 kJ/kg
 ### Discretization methods
 Time: Backward (2nd-order)
 
-CFL: 3.0
+CFL: 3.0 (domain average 0.05; domain max 3.0)
 
 Advection: Velocity - 2nd-order, unbounded central difference (Gauss linear), Scalars - TVD (Gauss limitedLinear01 1.0)
 
