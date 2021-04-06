@@ -12,7 +12,7 @@ This directory contains experimental measurements of liquid and gaseous pool fir
 | 37    | Methane  | 6.4 ± 0.1    | 40 ± 10 | 0.15        |             | r=0              | 52    | 3,12\*,13<sup>+</sup>,14\*        |
 | 37    | Propane  | 4.16 ± 0.12  | 40 ± 10 | 0.15        | 2.31 ± 0.10 | r=0              | 125   | 12\*, 13<sup>+</sup>,14\*,17\*\*  |
 | 37    | Propane  | 6.9 ± 0.1    | 40 ± 10 | 0.22        | 2.31 ± 0.10 | r=0              | 125   | 12\*, 13<sup>+</sup>,14\*,17\*\*  |
-| 100   | Methanol | 16.3 ± 0.2   | 64.5±0.3| 0.21 ± 0.01 | 1.37        | r=0; z=21,61,101,141,181 | 153   | 1\*,7\*,8(\*,\*\*),15<sup>+</sup> |
+| 100.6 | Methanol | 16.3 ± 0.2   | 64.5±0.3| 0.21 ± 0.01 | 1.37        | r=0; z=21,61,101,141,181 | 153   | 1\*,7\*,8(\*,\*\*),15<sup>+</sup> |
 
 \* radiative fraction  
 \*\* puffing frequency  
