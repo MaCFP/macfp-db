@@ -563,6 +563,7 @@ def dataplot(config_filename,**kwargs):
     close_figs = False
     verbose = False
     plot_list = ['all']
+    plot_range = range(10000)
 
     if kwargs.get('institute'):
         institute = kwargs.get('institute')
@@ -585,6 +586,10 @@ def dataplot(config_filename,**kwargs):
     if kwargs.get('plot_list'):
         plot_list = kwargs.get('plot_list')
 
+    if kwargs.get('plot_range'):
+        plot_range_in = kwargs.get('plot_range')
+        plot_range = range(plot_range_in[0]-2,plot_range_in[-1])
+
     # read the config file
     df = pd.read_csv(configdir+config_filename, sep=' *, *', engine='python', comment='#')
     C = df.where(pd.notnull(df), None)
@@ -593,6 +598,9 @@ def dataplot(config_filename,**kwargs):
 
     # loop over the rows of the config file
     for irow in C.index:
+
+        if irow not in plot_range:
+            continue
 
         # define plot parameters and return them in an object called pp
         pp = define_plot_parameters(C,irow)
