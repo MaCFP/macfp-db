@@ -60,7 +60,7 @@ Radiation model: Finite-volume, upwind, first-order accurate
 
 Radiative fraction: Predicted based on RadCal tabulated absorption coefficients
 
-Soot model: Soot and CO are the products of the first reaction step, with 60% of the carbon in the fuel converted to CO, 40% to soot. CO and Soot then oxidize to carbon dioxide based on availability of soot model.
+Soot model: Soot and CO are the products of the first reaction step, with 60% of the carbon in the fuel converted to CO, 40% to soot. CO and Soot then oxidize to carbon dioxide based on availability of O2 model.
 
 Comments:
 

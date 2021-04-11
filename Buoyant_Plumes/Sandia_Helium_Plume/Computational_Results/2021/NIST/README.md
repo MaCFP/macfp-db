@@ -17,7 +17,7 @@ Case 1: Sandia Helium Plume (Cartesian Geometry)
 
 Code: [Fire Dynamics Simulator (FDS)](https://github.com/firemodels/fds)
 
-Version: FDS6.7.5-820-g2de95544d
+Version: FDS6.7.5-820-g2de95544d-master
 
 ------------------
 
