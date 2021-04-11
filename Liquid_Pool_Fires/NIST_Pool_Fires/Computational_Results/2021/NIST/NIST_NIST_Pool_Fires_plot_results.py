@@ -15,12 +15,12 @@ import importlib
 importlib.reload(macfp) # use for development (while making changes to macfp.py)
 import matplotlib.pyplot as plt
 
-macfp.dataplot(config_filename='NIST_NIST_Pool_Fires_dataplot_config_2.csv',
-               institute='NIST FDS6.7.5-1092-g94ad5b6a4',
+macfp.dataplot(config_filename='NIST_NIST_Pool_Fires_dataplot_config_base.csv',
+               institute='NIST FDS6.7.5-1092-g94ad5b6a4-master',
                expdir='../../../../../Liquid_Pool_Fires/',
-               pltdir='./Plots/',
+               pltdir='./Baseline/Plots/',
                close_figs=True,
                verbose=True,
-               plot_list=['all'])
+               plot_range=range(288,290))
 
 # plt.show()
