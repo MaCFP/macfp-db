@@ -69,13 +69,15 @@ Comments:
 ------------------
 
 ### Models (include parameters)
-Turbulence model: Deardoff (algebraic k_sgs), Sc_t = Pr_t = 0.5
+Turbulence model: Deardoff (algebraic k_sgs; C_DEARDORFF=0.1), Sc_t = Pr_t = 0.5
+
+Near-wall turb model: WALE (C_WALE=0.6)
 
 Combustion model: EDM wih two-step fast-fast serial reactions
 
 Radiation model: Finite-volume, upwind, first-order accurate
 
-Radiative fraction: Predicted based on RadCal tabulated absorption coefficients
+Radiative fraction: Predicted based on RadCal tabulated absorption coefficients, gray gas, mean beam length = 10 cm
 
 Soot model: CO is the product of the first reaction step, with 100% of the carbon in the fuel converted to CO. CO then oxidizes to carbon dioxide based on availability of O2 model.
 
@@ -100,19 +102,19 @@ Pressure-velocity coupling: Low Mach number approximation; solution of Poisson e
 
 #### Prescribed MLR
 
-| ∆x (cm) | Total cells | CPU cores | Sim Time (s) | Wall Clock (s) | WC (hh:mm:ss) | CPU Cost |
+| ∆x (cm) | Total cells | CPU cores | Sim Time (s) | Wall Clock (s) | WC (dd-hh:mm:ss) | CPU Cost |
 | :-------| :-----------| :-------- | :----------- | :------------- | :------------ | :------- |
-| 2       | 36000       | 8         | 60           | 1941           | 00:32:21      | 0.0072   |
-| 1       | 288000      | 8         | 60           | 29184          | 08:06:24      | 0.0135   |
-| 0.5     | 2304000     | 64        | 60           | 87294          | 24:14:54      | 0.0404   |
+| 2       | 36000       | 8         | 60           | 1941           | 00-00:32:21   | 0.0072   |
+| 1       | 288000      | 8         | 60           | 29184          | 00-08:06:24   | 0.0135   |
+| 0.5     | 2304000     | 64        | 60           | 87294          | 01-00:14:54   | 0.0404   |
 
 #### Predicted MLR
 
-| ∆x (cm) | Total cells | CPU cores | Sim Time (s) | Wall Clock (s) | WC (hh:mm:ss) | CPU Cost |
-| :-------| :-----------| :-------- | :----------- | :------------- | :------------ | :------- |
-| 2       | 36000       | 8         | 60           | 1516           | 00:25:16      | 0.0056   |
-| 1       | 288000      | 8         | 60           | 30989          | 08:36:29      | 0.0143   |
-| 0.5     | 2304000     | 64        | 60           | 108643         | 30:10:43      | 0.0503   |
+| ∆x (cm) | Total cells | CPU cores | Sim Time (s) | Wall Clock (s) | WC (dd-hh:mm:ss) | CPU Cost |
+| :-------| :-----------| :-------- | :----------- | :------------- | :--------------- | :------- |
+| 2       | 36000       | 8         | 60           | 1516           | 00-00:25:16      | 0.0056   |
+| 1       | 288000      | 8         | 60           | 30989          | 00-08:36:29      | 0.0143   |
+| 0.5     | 2304000     | 64        | 60           | 108643         | 01-06:10:43      | 0.0503   |
 
 
 Wall clock time: see table above
