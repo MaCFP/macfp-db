@@ -21,6 +21,6 @@ macfp.dataplot(config_filename='NIST_NIST_Pool_Fires_dataplot_config_base.csv',
                pltdir='./Baseline/Plots/',
                close_figs=True,
                verbose=True,
-               plot_range=range(288,290))
+               plot_range=range(1000))
 
 # plt.show()
