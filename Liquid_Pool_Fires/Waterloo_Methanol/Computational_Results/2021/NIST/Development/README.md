@@ -58,7 +58,8 @@ Comments: All flow variables are originally ambient and then ramped up in approx
 ### Predicted MLR model with 3D Heat Transfer
 * 6 cm thick liquid pool with 3D heat transfer  
 * ∆z of liquid phase matches gas phase  
-* surface heat flux internal wall [Ref 1]  
+* surface heat flux internal wall model [Ref 1]  
+* including internal radiation based on "optically thick" diffusivity model [Ref 1]  
 * liquid properties for methanol with effective turblent thermal diffusivity, k_eff/k = 10 [See Ref 3]  
 * initial liquid temperature set to 45 C (approx. average of T_boil and ambient)  
 * 3D heat transfer model with explicit time integration; substepping in time for stability
