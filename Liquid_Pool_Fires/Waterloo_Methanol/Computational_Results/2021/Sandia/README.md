@@ -103,9 +103,17 @@ CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):
 
 ### Special issues/problems
 
---Integrated mass fluxes, and integrated heat fluxes, approximately 10% high for coarse mesh due to the way fluxes were summed over nodal values.  The error went away for the fine mesh.
---Convective heat fluxes at the pool surface displayed a dependence on mass flux.  Higher mass fluxes gave convective heat fluxes of approximately zero due to dT/dz at the pool surface.
---Plume temperatures were closer to experimental measurements for lower mass fluxes (poolbc).
+* For temperature fluctuations and temperature-velocity correlations,
+  we used a thermocouple model that slightly filtered the highest
+  wavenumbers of the temperature signal.  This measurably reduced the fluctuations.
+* Integrated mass fluxes, and integrated heat fluxes, approximately
+  10% high for coarse mesh due to the way fluxes were summed over
+  nodal values.  The error went away for the fine mesh. 
+* Convective heat fluxes at the pool surface displayed a dependence on
+  mass flux.  Higher mass fluxes gave convective heat fluxes of
+  approximately zero due to dT/dz at the pool surface. 
+* Plume temperatures were closer to experimental measurements for
+  lower mass fluxes (poolbc). 
 
 ------------------
 
