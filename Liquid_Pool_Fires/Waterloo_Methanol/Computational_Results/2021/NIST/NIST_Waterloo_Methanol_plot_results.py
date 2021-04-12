@@ -22,15 +22,15 @@ macfp.dataplot(config_filename='NIST_Waterloo_Methanol_dataplot_config_base.csv'
                pltdir='./Baseline/Plots/',
                close_figs=True,
                verbose=True,
-               plot_range=range(10000))
+               plot_range=range(1000))
 
-# macfp.dataplot(config_filename='NIST_Waterloo_Methanol_dataplot_config_dev.csv',
-#                institute='NIST FDS6.7.5-1004-g197c82469-master',
-#                expdir='../../../../../Liquid_Pool_Fires/',
-#                cmpdir='',
-#                pltdir='./Development/Plots/',
-#                close_figs=True,
-#                verbose=True,
-#                plot_range=range(10000))
+macfp.dataplot(config_filename='NIST_Waterloo_Methanol_dataplot_config_dev.csv',
+               institute='NIST FDS6.7.5-1004-g197c82469-master',
+               expdir='../../../../../Liquid_Pool_Fires/',
+               cmpdir='',
+               pltdir='./Development/Plots/',
+               close_figs=True,
+               verbose=True,
+               plot_range=range(1000))
 
 # plt.show()
