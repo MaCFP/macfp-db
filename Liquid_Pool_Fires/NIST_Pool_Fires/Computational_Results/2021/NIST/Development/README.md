@@ -69,7 +69,7 @@ Comments:
 ------------------
 
 ### Models (include parameters)
-Turbulence model: Deardoff (algebraic k_sgs, C_DEARDORFF=0.1), Sc_t = Pr_t = 0.5
+Turbulence model: Deardorff (algebraic k_sgs, C_DEARDORFF=0.1), Sc_t = Pr_t = 0.5
 
 Near-wall turb model: WALE (C_WALE=0.6)
 
