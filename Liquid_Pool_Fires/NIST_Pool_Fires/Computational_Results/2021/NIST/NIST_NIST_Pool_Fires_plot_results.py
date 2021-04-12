@@ -23,4 +23,12 @@ macfp.dataplot(config_filename='NIST_NIST_Pool_Fires_dataplot_config_base.csv',
                verbose=True,
                plot_range=range(1000))
 
+macfp.dataplot(config_filename='NIST_NIST_Pool_Fires_dataplot_config_dev.csv',
+               institute='NIST FDS6.7.5-1373-g26b258878-master',
+               expdir='../../../../../Liquid_Pool_Fires/',
+               pltdir='./Development/Plots/',
+               close_figs=True,
+               verbose=True,
+               plot_range=range(1000))
+
 # plt.show()
