@@ -91,7 +91,7 @@ Number of CPUs (MPI Processes): 1296 (fine mesh)
 
 CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):
 
-1296 * (6*24*3600) / (10 * 5E6) = 13.4
+1296 * (6 * 24 * 3600) / (10 * 5E6) = 13.4
 
 ------------------
 
