@@ -83,14 +83,14 @@ Radiative fraction: See table
 | Acetone           | 0.31             | 0.85                  | 0.50                  |
 | Ethanol           | 0.26             | 0.95                  | 0.50                  |
 | Methane           | 0.15             | 0.97                  | 0.50                  |
-| Methanol (30 cm)  | 0.22             | 0.97                  | 0.50                  |
-| Methanol (100 cm) | 0.21             | 0.97                  | 0.50                  |
+| Methanol (30 cm)  | 0.22             | 0.97<sup>1</sup>      | 0.50                  |
+| Methanol (100 cm) | 0.21             | 0.97<sup>1</sup>      | 0.50                  |
 | Propane (20 kW)   | 0.15             | 0.85                  | 0.50                  |
 | Propane (34 kW)   | 0.22             | 0.85                  | 0.50                  |
 
-Comments: CO is the product of the first reaction step, with FUEL_C_TO_CO_FRACTION of the carbon in the fuel converted to CO with the remaining fraction going to C (Soot). CO and C then oxidize to carbon dioxide based on availability of O2 model, but leaving any specified post-flame SOOT_YIELD or CO_YIELD.  Similarly, for H2, FUEL_H_TO_H2_FRACTION of the H in the fuel is converted to H2, which is then oxidized to H2O in the second step.
+Comments:  A two-step reaction mechanism is implemented. In the first reaction, fuel is converted to CO, soot, H2, and H2O. In the second reaction, the CO, soot, and H2 are converted to CO2 and H2O. Both reactions employ fast kinetics, but proceed in series, not in parallel. The relative amounts of CO, soot, and H2 produced in the first step (dictated by the parameters FUEL_C_TO_CO_FRACTION and FUEL_H_TO_H2_FRACTION) are still subjects of study, and for the moment have been estimated based on measured results. The fractions of carbon atoms converted to CO in the first step are as follows---0.85 for acetone; 0.95 for ethanol; 0.97 for methane; 0.97 for methanol<sup>1</sup> ; 0.85 for propane. For all fuels, one half of the hydrogen atoms are converted to H2 in the first step.
 
-Comments:  The parameters FUEL_C_TO_CO_FRACTION and FUEL_H_TO_H2_FRACTION are tuned to get in-flame species concentrations in reasonable agreement with the experimental data.
+<sup>1</sup>The cases run for MaCFP-2 used FUEL_C_TO_CO_FRACTION=0.97 for methanol.  But since then we have changed the input files in our repository to reflect no in-flame soot formation, i.e., FUEL_C_TO_CO_FRACTION=1.
 
 ------------------
 
