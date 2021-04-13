@@ -34,7 +34,7 @@ f3, Pxx_den_3 = signal.periodogram(x3, fs3)
 
 # plot experimental result
 fmeas = np.array([2.64, 2.64])
-PSDmeas = np.array([0., 12.])
+PSDmeas = np.array([0., 8.])
 fh=macfp.plot_to_fig(fmeas, PSDmeas,
                   plot_type='linear',
                   x_min=0.5,x_max=4,y_min=0,y_max=15,
@@ -52,9 +52,9 @@ fh=macfp.plot_to_fig(fmeas, PSDmeas,
 # add error to measuered puffing freq
 plt.fill_betweenx(PSDmeas, np.array([2.58, 2.58]), np.array([2.70, 2.70]), color='lightgrey', figure=fh)
 
-fh=macfp.plot_to_fig(f1, Pxx_den_1, plot_type='linear',x_min=0.5,x_max=4,y_min=0,y_max=15,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=2$ cm', line_style='-', line_width=1,line_color='black',  marker_style='o',marker_size=4,marker_edge_color='black', marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='center left')
-fh=macfp.plot_to_fig(f2, Pxx_den_2, plot_type='linear',x_min=0.5,x_max=4,y_min=0,y_max=15,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=1$ cm', line_style='-', line_width=1,line_color='magenta',marker_style='^',marker_size=4,marker_edge_color='magenta',marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='center left')
-fh=macfp.plot_to_fig(f3, Pxx_den_3, plot_type='linear',x_min=0.5,x_max=4,y_min=0,y_max=15,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=0.5$ cm', line_style='-.',line_width=1,line_color='red',marker_style='s',marker_size=4,marker_edge_color='red', marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='center left')
+fh=macfp.plot_to_fig(f1, Pxx_den_1, plot_type='linear',x_min=0.5,x_max=4,y_min=0,y_max=10,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=2$ cm', line_style='-', line_width=1,line_color='black',  marker_style='o',marker_size=4,marker_edge_color='black', marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='center left')
+fh=macfp.plot_to_fig(f2, Pxx_den_2, plot_type='linear',x_min=0.5,x_max=4,y_min=0,y_max=10,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=1$ cm', line_style='-', line_width=1,line_color='magenta',marker_style='^',marker_size=4,marker_edge_color='magenta',marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='center left')
+fh=macfp.plot_to_fig(f3, Pxx_den_3, plot_type='linear',x_min=0.5,x_max=4,y_min=0,y_max=10,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='FDS $\Delta x=0.5$ cm', line_style='-.',line_width=1,line_color='red',marker_style='s',marker_size=4,marker_edge_color='red', marker_fill_color='None',figure_handle=fh,show_legend=True,legend_location='center left')
 
 # plt.show()
 
