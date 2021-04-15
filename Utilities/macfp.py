@@ -195,7 +195,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
 
     # plot Institute + MaCFP stamp
     ax.text(0.025,1.01, kwargs.get('institute_label'), fontsize=default_stamp_fontsize, transform=ax.transAxes)
-    ax.text(0.975,1.01, 'MaCFP 2021', fontsize=default_stamp_fontsize, ha='right', transform=ax.transAxes)
+    ax.text(0.975,1.01, 'MaCFP-2, Waterloo, 2021', fontsize=default_stamp_fontsize, ha='right', transform=ax.transAxes)
 
     # note: this absolute method works better than fig.tight_layout(), which may change for each call of the figure
     left_adjust, bottom_adjust = get_subplots_adjust_parameters(ticklabel_fontsize,axeslabel_fontsize)
