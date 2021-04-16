@@ -15,9 +15,9 @@ Please visit our [wiki pages](https://github.com/MaCFP/macfp-db/wiki) for additi
 
 Presentations for the MaCFP workshops can also be found on the [**GitHub Releases**](https://github.com/MaCFP/macfp-db/releases) page:
 
-[**MaCFP-1 2017**](https://github.com/MaCFP/macfp-db/releases/tag/macfp-1.0)
+[**MaCFP-1 (2017)**](https://github.com/MaCFP/macfp-db/releases/tag/macfp-1.0)
 
-[**MaCFP-2 2021**](https://github.com/MaCFP/macfp-db/releases/tag/macfp-2.0)
+[**MaCFP-2 (2021)**](https://github.com/MaCFP/macfp-db/releases/tag/macfp-2.0)
 
 If you find problems with the database or if you have suggestions for improvement, please submit an [Issue](https://github.com/MaCFP/macfp-db/issues).
 
