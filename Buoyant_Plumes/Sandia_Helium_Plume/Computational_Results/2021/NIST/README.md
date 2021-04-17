@@ -11,6 +11,10 @@ Country: USA
 
 Case 1: Sandia Helium Plume (Cartesian Geometry)
 
+#### Link to Results Presentation
+
+[NIST Case 1 Cartesian Results Presentation](https://github.com/MaCFP/macfp-db/releases/download/macfp-2.0/NIST_Sandia_Helium_Plume.pdf)
+
 ------------------
 
 ### CFD package
