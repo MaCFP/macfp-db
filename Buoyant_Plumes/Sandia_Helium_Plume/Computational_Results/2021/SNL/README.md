@@ -1,58 +1,131 @@
-## MaCFP-2 (2021) Computational Results
-### Case: Sandia Helium Plume
-### Contributor: Sandia National Laboratories
+### Contributor
 
-#### Link to Results Presentation
+Name: Alexander L. Brown, John C. Hewson
 
-[Sandia National Laboratories Results Presentation](https://github.com/MaCFP/macfp-db/files/6049977/SNL_HePlumeResults_V3.pdf)
+Institution: Sandia National Laboratories
 
-#### Notes
+Country: USA
+
+------------------
+
+### Test case
+
+Case 1: Sandia Helium Plume
+
+------------------
+
+### CFD package
+
+Code: SIERRA/Fuego
+
+------------------
+
+### Resolution
+
+#### Computational domain discretization (flow solver)
+
+Domain: 9 m (height) x 5.82 m (diameter)
+
+Cell size:
 
 The table below lists the fine grid resolutions discussed on slide 5. "z-fine" refers to the finest vertical resolution at the base of the plume and "y-fine" refers to the finest horizontal resolution.
 
-|    | z-fine (m) | y-fine (m) |
-|----|------------|------------|
-|R4  | 0.008333   | 0.03906    |
-|R5  | 0.004167   | 0.01953    |
-|R6  | 0.002778   | 0.01302    |
-|R7  | 0.002083   | 0.00977    |
-|R8  | 0.001667   | 0.00781    |
+|    | z-fine (m) | y-fine (m) | (fine cell vol)<sup>(1/3)</sup> | N cells |
+|----|------------|------------|---------------------------------|---------|
+|R4  | 0.008333   | 0.03906    | 0.0233                          | 250k    |
+|R5  | 0.004167   | 0.01953    | 0.0117                          | 2.5M    |
+|R6  | 0.002778   | 0.01302    | 0.0078                          | 8M      |
+|R7  | 0.002083   | 0.00977    | 0.0058                          | 19M     |
+|R8  | 0.001667   | 0.00781    | 0.0047                          | 66M     |
 
+Cell type: unstructured
 
-![](Slides/HePlumeResults_V3-0.png)
-![](Slides/HePlumeResults_V3-1.png)
-![](Slides/HePlumeResults_V3-2.png)
-![](Slides/HePlumeResults_V3-3.png)
-![](Slides/HePlumeResults_V3-4.png)
-![](Slides/HePlumeResults_V3-5.png)
-![](Slides/HePlumeResults_V3-6.png)
-![](Slides/HePlumeResults_V3-7.png)
-![](Slides/HePlumeResults_V3-8.png)
-![](Slides/HePlumeResults_V3-9.png)
-![](Slides/HePlumeResults_V3-10.png)
-![](Slides/HePlumeResults_V3-11.png)
-![](Slides/HePlumeResults_V3-12.png)
-![](Slides/HePlumeResults_V3-13.png)
-![](Slides/HePlumeResults_V3-14.png)
-![](Slides/HePlumeResults_V3-15.png)
-![](Slides/HePlumeResults_V3-16.png)
-![](Slides/HePlumeResults_V3-17.png)
-![](Slides/HePlumeResults_V3-18.png)
-![](Slides/HePlumeResults_V3-19.png)
-![](Slides/HePlumeResults_V3-20.png)
-![](Slides/HePlumeResults_V3-21.png)
-![](Slides/HePlumeResults_V3-22.png)
-![](Slides/HePlumeResults_V3-23.png)
-![](Slides/HePlumeResults_V3-24.png)
-![](Slides/HePlumeResults_V3-25.png)
-![](Slides/HePlumeResults_V3-26.png)
-![](Slides/HePlumeResults_V3-27.png)
-![](Slides/HePlumeResults_V3-28.png)
-![](Slides/HePlumeResults_V3-29.png)
-![](Slides/HePlumeResults_V3-30.png)
-![](Slides/HePlumeResults_V3-31.png)
-![](Slides/HePlumeResults_V3-32.png)
-![](Slides/HePlumeResults_V3-33.png)
-![](Slides/HePlumeResults_V3-34.png)
-![](Slides/HePlumeResults_V3-35.png)
-![](Slides/HePlumeResults_V3-36.png)
+Total cells: see table (N cells column)
+
+Comments:
+
+#### Angular space discretization (radiation solver)
+
+Number of solid angles: NA
+
+Comments:
+
+------------------
+
+### Initial conditions
+
+Comments:
+
+------------------
+
+### Boundary conditions
+
+Plume source: constant inlet velocity  
+
+OPEN side and top boundaries (rmax, zmax)  
+
+Prescribed coflow air flow bc level with diffuser plane, function of radial position
+
+------------------
+
+### Models (include parameters)
+
+Turbulence model:
+
+* one-equation KSGS LES
+* wall-resolved LES
+
+Combustion model: NA
+
+Radiation model: NA
+
+Radiative fraction: (predicted or prescribed; if prescribed, what value)
+
+Soot model: NA
+
+Comments: Schmidt number for helium + acetone mixture set to 0.9; unity Lewis number
+
+------------------
+
+### Discretization methods
+
+Time: implicit
+
+CFL: 0.7
+
+Advection:
+
+Diffusion:
+
+Pressure-velocity coupling:
+
+------------------
+
+### Computational Cost (hh:mm:ss)
+
+Wall clock time:
+
+Simulation time:
+
+Number of CPUs (MPI Processes):
+
+CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):
+
+Comments:
+
+------------------
+
+### Averaging period
+
+Simulation time: 23 s
+Last 15 s
+
+------------------
+
+### Special issues/problems
+
+------------------
+
+### Relevant publications
+
+1. O'hern, T.J., Weckman, E.J., Gerhart, A.L., Tieszen, S.R. and Schefer, R.W., 2005. Experimental study of a turbulent buoyant helium plume. Journal of Fluid Mechanics, 544, p. 143
