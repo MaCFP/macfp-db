@@ -106,14 +106,19 @@ def plot_to_fig(x_data,y_data,**kwargs):
             color=kwargs.get('line_color'))
 
     # if error range is passed, add it to the plot
-    if kwargs.get('y_error_absolute'):
+    if kwargs.get('y_error_absolute') and not kwargs.get('y_error_relative'):
         if kwargs.get('y_error_absolute')>0.:
             ax.fill_between(x_data,y_data-kwargs.get('y_error_absolute'),y_data+kwargs.get('y_error_absolute'),
                 alpha=0.1,color=kwargs.get('marker_edge_color'))
 
-    if kwargs.get('y_error_relative'):
+    if kwargs.get('y_error_relative') and not kwargs.get('y_error_absolute'):
         if kwargs.get('y_error_relative')>0.:
             ax.fill_between(x_data,y_data*(1.-kwargs.get('y_error_relative')),y_data*(1.+kwargs.get('y_error_relative')),
+                alpha=0.1,color=kwargs.get('marker_edge_color'))
+
+    if kwargs.get('y_error_relative') and kwargs.get('y_error_absolute'):
+        if kwargs.get('y_error_relative')>0.:
+            ax.fill_between(x_data,y_data*(1.-kwargs.get('y_error_relative'))-kwargs.get('y_error_absolute'),y_data*(1.+kwargs.get('y_error_relative'))+kwargs.get('y_error_absolute'),
                 alpha=0.1,color=kwargs.get('marker_edge_color'))
 
     if kwargs.get('ticklabel_fontsize'):
