@@ -1,5 +1,6 @@
 ### Contributor
-Name: Georgios Maragkos
+
+Name: Georgios Maragkos, Bart Merci
 
 Institution: Ghent University (UGent)
 
@@ -10,6 +11,10 @@ Country: Belgium
 ### Test case
 
 Case 1 - Sandia helium plume
+
+#### Link to Results Presentation
+
+[UGent Case 1 Results Presentation](https://github.com/MaCFP/macfp-db/releases/download/macfp-2.0/UGent_MaCFP-2_Case1_Presentation_V2.pdf)
 
 ------------------
 

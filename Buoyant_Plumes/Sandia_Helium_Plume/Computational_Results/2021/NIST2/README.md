@@ -14,6 +14,10 @@ Institution, Country:
 
 Case 1: Sandia Helium Plume (Unstructured Geometry)
 
+#### Link to Results Presentation
+
+[NIST2 Case 1 Unstructured Results Presentation](https://github.com/MaCFP/macfp-db/releases/download/macfp-2.0/NIST2_Sandia_Helium_Plume.pdf)
+
 ------------------
 
 ### CFD package
