@@ -65,7 +65,10 @@ Comments:
 ------------------
 
 ### Models (include parameters)
-Turbulence model: Dynamic Smagorinsky with a variable Schmidt number
+Turbulence model:
+
+* Dynamic Smagorinsky with a variable Schmidt number  
+* No slip wall stress
 
 Combustion model: -
 
