@@ -2,7 +2,7 @@
 
 Name: Alexander L. Brown, John C. Hewson
 
-Institution: Sandia National Laboratories
+Institution: Sandia National Laboratories (SNL)
 
 Country: USA
 
@@ -11,6 +11,10 @@ Country: USA
 ### Test case
 
 Case 1: Sandia Helium Plume
+
+#### Link to Results Presentation
+
+[SNL Case 1 Results Presentation](https://github.com/MaCFP/macfp-db/releases/download/macfp-2.0/SNL_HePlumeResults_V3.pdf)
 
 ------------------
 
@@ -117,8 +121,8 @@ Comments:
 
 ### Averaging period
 
-Simulation time: 23 s
-Last 15 s
+Simulation time: 23 s  
+Avaraging period: last 15 s
 
 ------------------
 
