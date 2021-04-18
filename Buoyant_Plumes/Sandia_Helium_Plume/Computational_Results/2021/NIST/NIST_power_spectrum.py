@@ -78,4 +78,37 @@ macfp.plot_to_fig(fmeas, PSDmeas,plot_type='loglog',x_min=0.5,x_max=1000,y_min=.
 
 # plt.show()
 
-plt.savefig('./Plots/NIST_Power_Spectrum.pdf')
+plt.savefig('./Plots/NIST_Power_Spectrum_1p5cm.pdf')
+
+# loglog spectrum
+fh2=macfp.plot_to_fig(f3, Pxx_den_3,plot_type='loglog',x_min=0.5,x_max=1000,y_min=.00001,y_max=100,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',plot_title='Sandia 1 m Helium Plume Power Spectrum',data_label='FDS $\Delta x=3$ cm',line_style='-', line_width=1,line_color='black',show_legend=True,legend_location='lower left',legend_framealpha=1.,institute_label='NIST Cartesian Geometry')
+macfp.plot_to_fig(f3, f3**(-5./3.),plot_type='loglog',x_min=0.5,x_max=1000,y_min=.00001,y_max=100,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='f**-5/3',line_style='--', line_width=2,line_color='black',show_legend=True,legend_location='lower left',legend_framealpha=1.,figure_handle=fh2)
+fnyquist = np.array([0.5*fs3, 0.5*fs3])
+macfp.plot_to_fig(fnyquist, PSDmeas,plot_type='loglog',x_min=0.5,x_max=1000,y_min=.00001,y_max=100,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='f Nyquist',line_style='--', line_width=1,line_color='red',show_legend=True,legend_location='lower left',legend_framealpha=1.,figure_handle=fh2)
+macfp.plot_to_fig(fmeas, PSDmeas,plot_type='loglog',x_min=0.5,x_max=1000,y_min=.00001,y_max=100,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='f puffing',line_style='--', line_width=1,line_color='green',show_legend=True,legend_location='lower left',legend_framealpha=1.,figure_handle=fh2)
+
+# plt.show()
+
+plt.savefig('./Plots/NIST_Power_Spectrum_3cm.pdf')
+
+# loglog spectrum
+fh2=macfp.plot_to_fig(f6, Pxx_den_6,plot_type='loglog',x_min=0.5,x_max=1000,y_min=.00001,y_max=100,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',plot_title='Sandia 1 m Helium Plume Power Spectrum',data_label='FDS $\Delta x=6$ cm',line_style='-', line_width=1,line_color='black',show_legend=True,legend_location='lower left',legend_framealpha=1.,institute_label='NIST Cartesian Geometry')
+macfp.plot_to_fig(f6, f6**(-5./3.),plot_type='loglog',x_min=0.5,x_max=1000,y_min=.00001,y_max=100,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='f**-5/3',line_style='--', line_width=2,line_color='black',show_legend=True,legend_location='lower left',legend_framealpha=1.,figure_handle=fh2)
+fnyquist = np.array([0.5*fs6, 0.5*fs6])
+macfp.plot_to_fig(fnyquist, PSDmeas,plot_type='loglog',x_min=0.5,x_max=1000,y_min=.00001,y_max=100,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='f Nyquist',line_style='--', line_width=1,line_color='red',show_legend=True,legend_location='lower left',legend_framealpha=1.,figure_handle=fh2)
+macfp.plot_to_fig(fmeas, PSDmeas,plot_type='loglog',x_min=0.5,x_max=1000,y_min=.00001,y_max=100,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='f puffing',line_style='--', line_width=1,line_color='green',show_legend=True,legend_location='lower left',legend_framealpha=1.,figure_handle=fh2)
+
+# plt.show()
+
+plt.savefig('./Plots/NIST_Power_Spectrum_6cm.pdf')
+
+# loglog spectrum
+fh2=macfp.plot_to_fig(f10, Pxx_den_10,plot_type='loglog',x_min=0.5,x_max=1000,y_min=.00001,y_max=100,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',plot_title='Sandia 1 m Helium Plume Power Spectrum',data_label='FDS $\Delta x=10$ cm',line_style='-', line_width=1,line_color='black',show_legend=True,legend_location='lower left',legend_framealpha=1.,institute_label='NIST Cartesian Geometry')
+macfp.plot_to_fig(f10, f10**(-5./3.),plot_type='loglog',x_min=0.5,x_max=1000,y_min=.00001,y_max=100,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='f**-5/3',line_style='--', line_width=2,line_color='black',show_legend=True,legend_location='lower left',legend_framealpha=1.,figure_handle=fh2)
+fnyquist = np.array([0.5*fs10, 0.5*fs10])
+macfp.plot_to_fig(fnyquist, PSDmeas,plot_type='loglog',x_min=0.5,x_max=1000,y_min=.00001,y_max=100,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='f Nyquist',line_style='--', line_width=1,line_color='red',show_legend=True,legend_location='lower left',legend_framealpha=1.,figure_handle=fh2)
+macfp.plot_to_fig(fmeas, PSDmeas,plot_type='loglog',x_min=0.5,x_max=1000,y_min=.00001,y_max=100,x_label='frequency [Hz]',y_label='PSD [V**2/Hz]',data_label='f puffing',line_style='--', line_width=1,line_color='green',show_legend=True,legend_location='lower left',legend_framealpha=1.,figure_handle=fh2)
+
+# plt.show()
+
+plt.savefig('./Plots/NIST_Power_Spectrum_10cm.pdf')
