@@ -77,7 +77,7 @@ Prescribed coflow air flow bc level with diffuser plane, function of radial posi
 Turbulence model:
 
 * one-equation KSGS LES
-* wall-resolved LES (log-law wall model with y+ < 5)
+* highly-resolved near-wall LES (log-law wall model with y+ < 10)
 
 Combustion model: NA
 

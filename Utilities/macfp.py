@@ -142,8 +142,11 @@ def plot_to_fig(x_data,y_data,**kwargs):
     else:
         legend_fontsize=default_legend_fontsize
 
-    if kwargs.get('show_legend'):
-        plt.legend(fontsize=legend_fontsize,loc=kwargs.get('legend_location'),framealpha=kwargs.get('legend_framealpha'))
+    if kwargs.get('legend_location')=='outside':
+        plt.legend(fontsize=legend_fontsize,bbox_to_anchor=(1,1),loc=kwargs.get('upper left'),framealpha=kwargs.get('legend_framealpha'))
+    else:
+        if kwargs.get('show_legend'):
+            plt.legend(fontsize=legend_fontsize,loc=kwargs.get('legend_location'),framealpha=kwargs.get('legend_framealpha'))
 
     # plot titles
     if kwargs.get('title_fontsize'):
@@ -213,7 +216,17 @@ def plot_to_fig(x_data,y_data,**kwargs):
     if kwargs.get('figure_bottom_adjust'):
         bottom_adjust=kwargs.get('figure_bottom_adjust')
 
-    fig.subplots_adjust(left=left_adjust, bottom=bottom_adjust, right=0.95, top=0.95, wspace=0.2, hspace=0.2)
+    if kwargs.get('figure_right_adjust'):
+        right_adjust=kwargs.get('figure_right_adjust')
+    else:
+        right_adjust = 0.95
+
+    if kwargs.get('figure_top_adjust'):
+        top_adjust=kwargs.get('figure_top_adjust')
+    else:
+        top_adjust = 0.95
+
+    fig.subplots_adjust(left=left_adjust, bottom=bottom_adjust, right=right_adjust, top=top_adjust, wspace=0.2, hspace=0.2)
 
     return fig
 
@@ -528,9 +541,33 @@ def define_plot_parameters(C,irow):
             Plot_Left_Adjust = None
 
         try:
+            Plot_Right_Adjust = C.values[irow,C.columns.get_loc('Plot_Right_Adjust')]
+        except:
+            Plot_Right_Adjust = None
+
+        try:
             Plot_Bottom_Adjust = C.values[irow,C.columns.get_loc('Plot_Bottom_Adjust')]
         except:
             Plot_Bottom_Adjust = None
+
+        try:
+            Plot_Top_Adjust = C.values[irow,C.columns.get_loc('Plot_Top_Adjust')]
+        except:
+            Plot_Top_Adjust = None
+
+        try:
+            Plot_Figure_Width = C.values[irow,C.columns.get_loc('Plot_Figure_Width')]
+            if Plot_Figure_Width==None:
+                Plot_Figure_Width=8
+        except:
+            Plot_Figure_Width = 8
+
+        try:
+            Plot_Figure_Height = C.values[irow,C.columns.get_loc('Plot_Figure_Height')]
+            if Plot_Figure_Height==None:
+                Plot_Figure_Height=6
+        except:
+            Plot_Figure_Height = 6
 
     return plot_parameters
 
@@ -653,9 +690,11 @@ def dataplot(config_filename,**kwargs):
                     x_min=pp.Plot_y_Min,x_max=pp.Plot_y_Max,x_nticks=pp.Plot_y_Nticks,
                     y_min=pp.Plot_x_Min,y_max=pp.Plot_x_Max,y_nticks=pp.Plot_x_Nticks,
                     show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
-                    figure_size=(8,6),
+                    figure_size=(pp.Plot_Figure_Width,pp.Plot_Figure_Height),
                     figure_left_adjust=pp.Plot_Left_Adjust,
-                    figure_bottom_adjust=pp.Plot_Bottom_Adjust
+                    figure_right_adjust=pp.Plot_Right_Adjust,
+                    figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                    figure_top_adjust=pp.Plot_Top_Adjust
                     )
             else:
                 # plot the exp data
@@ -676,9 +715,11 @@ def dataplot(config_filename,**kwargs):
                     x_min=pp.Plot_x_Min,x_max=pp.Plot_x_Max,x_nticks=pp.Plot_x_Nticks,
                     y_min=pp.Plot_y_Min,y_max=pp.Plot_y_Max,y_nticks=pp.Plot_y_Nticks,
                     show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
-                    figure_size=(8,6),
+                    figure_size=(pp.Plot_Figure_Width,pp.Plot_Figure_Height),
                     figure_left_adjust=pp.Plot_Left_Adjust,
-                    figure_bottom_adjust=pp.Plot_Bottom_Adjust
+                    figure_right_adjust=pp.Plot_Right_Adjust,
+                    figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                    figure_top_adjust=pp.Plot_Top_Adjust
                     )
 
             # plt.figure(f.number) # make figure current
@@ -717,7 +758,9 @@ def dataplot(config_filename,**kwargs):
                 plot_title=pp.Plot_Title,
                 plot_subtitle=pp.Plot_Subtitle,
                 figure_left_adjust=pp.Plot_Left_Adjust,
-                figure_bottom_adjust=pp.Plot_Bottom_Adjust
+                figure_right_adjust=pp.Plot_Right_Adjust,
+                figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                figure_top_adjust=pp.Plot_Top_Adjust
                 )
         else:
             f = plot_to_fig(x_data=x, y_data=y,
@@ -740,7 +783,9 @@ def dataplot(config_filename,**kwargs):
                 plot_title=pp.Plot_Title,
                 plot_subtitle=pp.Plot_Subtitle,
                 figure_left_adjust=pp.Plot_Left_Adjust,
-                figure_bottom_adjust=pp.Plot_Bottom_Adjust
+                figure_right_adjust=pp.Plot_Right_Adjust,
+                figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                figure_top_adjust=pp.Plot_Top_Adjust
                 )
 
         plt.figure(f.number) # make figure current
