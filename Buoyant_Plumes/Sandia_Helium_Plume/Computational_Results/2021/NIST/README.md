@@ -123,7 +123,7 @@ Last 10 s
 
 ### Special issues/problems
 
-Virtual measurement devices are not linearly interpolated to exact PIV measurement locations.  This shows up as a noticeable _O(∆x)_ error in the velocities and concentrations for coarse grid results.
+For very coarse calcualtions (10 cm and 20 cm grid resolution) we added linear interpolation of the virtual measurement device locations to remove the O(∆x) bias in the results.  Finer calculations retain this error, but it is deemed not significant.
 
 ------------------
 
