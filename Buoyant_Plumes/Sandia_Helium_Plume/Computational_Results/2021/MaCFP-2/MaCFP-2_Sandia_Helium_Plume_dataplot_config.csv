@@ -1,5 +1,5 @@
 Exp_Filename,Exp_x_Col_Name,Exp_y_Col_Name,Exp_Data_Markevery,Exp_Error_Absolute,Exp_Error_Relative,Exp_Data_Label,Exp_Marker_Style,Exp_Marker_Edge_Color,Exp_Marker_Size,Exp_Line_Style,Exp_Line_Color,Exp_Line_Width,Cmp_Filename,Cmp_Header_Row,Cmp_x_Col_Name,Cmp_y_Col_Name,Cmp_Data_Label,Cmp_Marker_Style,Cmp_Marker_Edge_Color,Cmp_Marker_Size,Cmp_Line_Style,Cmp_Line_Color,Cmp_Line_Width,Plot_Title,Plot_Subtitle,Plot_x_Label,Plot_y_Label,Plot_x_Min,Plot_x_Max,Plot_x_Tick,Plot_x_Nticks,Plot_y_Min,Plot_y_Max,Plot_y_Tick,Plot_y_Nticks,Plot_Show_Legend,Plot_Legend_Location,Plot_Filename
-Sandia_He_1m_p2.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp2,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p2_20cm.pdf
+Sandia_He_1m_p2.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp2,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p2_20cm.pdf
 Sandia_He_1m_p2.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp2,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p2_20cm.pdf
 
 Sandia_He_1m_p2.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,YHEp2,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p2_10cm.pdf
@@ -24,7 +24,7 @@ Sandia_He_1m_p2.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../SNL/Y_0.2.csv,1
 Sandia_He_1m_p2.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../SNL/Y_0.2.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p2_1cm.pdf
 
 
-Sandia_He_1m_p4.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp4,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p4_20cm.pdf
+Sandia_He_1m_p4.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp4,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p4_20cm.pdf
 Sandia_He_1m_p4.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp4,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p4_20cm.pdf
 
 Sandia_He_1m_p4.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,YHEp4,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p4_10cm.pdf
@@ -49,7 +49,7 @@ Sandia_He_1m_p4.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../SNL/Y_0.4.csv,1
 Sandia_He_1m_p4.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../SNL/Y_0.4.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p4_1cm.pdf
 
 
-Sandia_He_1m_p6.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp6,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p6_20cm.pdf
+Sandia_He_1m_p6.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp6,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p6_20cm.pdf
 Sandia_He_1m_p6.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp6,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p6_20cm.pdf
 
 Sandia_He_1m_p6.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,YHEp6,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p6_10cm.pdf
@@ -74,7 +74,7 @@ Sandia_He_1m_p6.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../SNL/Y_0.6.csv,1
 Sandia_He_1m_p6.csv,x (m),Y He,4,0.05,0.18,Exp,o,black,10,,,2,../SNL/Y_0.6.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Helium Mass Fraction,-0.5,0.5,,5,0,1,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHe_p6_1cm.pdf
 
 
-Sandia_He_1m_p2.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp2_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p2_20cm.pdf
+Sandia_He_1m_p2.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp2_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p2_20cm.pdf
 Sandia_He_1m_p2.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp2_rms,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p2_20cm.pdf
 
 Sandia_He_1m_p2.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,YHEp2_rms,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p2_10cm.pdf
@@ -99,7 +99,7 @@ Sandia_He_1m_p2.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../SNL/Y-stdev_0
 Sandia_He_1m_p2.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../SNL/Y-stdev_0.2.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p2_1cm.pdf
 
 
-Sandia_He_1m_p4.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp4_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p4_20cm.pdf
+Sandia_He_1m_p4.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp4_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p4_20cm.pdf
 Sandia_He_1m_p4.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp4_rms,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p4_20cm.pdf
 
 Sandia_He_1m_p4.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,YHEp4_rms,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p4_10cm.pdf
@@ -124,7 +124,7 @@ Sandia_He_1m_p4.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../SNL/Y-stdev_0
 Sandia_He_1m_p4.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../SNL/Y-stdev_0.4.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p4_1cm.pdf
 
 
-Sandia_He_1m_p6.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp6_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p6_20cm.pdf
+Sandia_He_1m_p6.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp6_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p6_20cm.pdf
 Sandia_He_1m_p6.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,YHEp6_rms,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p6_20cm.pdf
 
 Sandia_He_1m_p6.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,YHEp6_rms,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p6_10cm.pdf
@@ -149,7 +149,7 @@ Sandia_He_1m_p6.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../SNL/Y-stdev_0
 Sandia_He_1m_p6.csv,x (m),Y He rms,4,0.,0.21,Exp,o,black,10,,,2,../SNL/Y-stdev_0.6.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),RMS Helium Mass Fraction,-0.5,0.5,,5,0,0.25,,6,True,upper right,MaCFP-2_Sandia_He_1m_YHerms_p6_1cm.pdf
 
 
-Sandia_He_1m_p2.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,Up2,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,,-1.,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p2_20cm.pdf
+Sandia_He_1m_p2.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,Up2,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,,-1.,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p2_20cm.pdf
 Sandia_He_1m_p2.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,Up2,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,,-1,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p2_20cm.pdf
 
 Sandia_He_1m_p2.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,Up2,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,,-1.,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p2_10cm.pdf
@@ -174,7 +174,7 @@ Sandia_He_1m_p2.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../SNL/U_0.2.csv,1,x
 Sandia_He_1m_p2.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../SNL/U_0.2.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,0,-1,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p2_1cm.pdf
 
 
-Sandia_He_1m_p4.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,Up4,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,,-1.,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p4_20cm.pdf
+Sandia_He_1m_p4.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,Up4,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,,-1.,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p4_20cm.pdf
 Sandia_He_1m_p4.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,Up4,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,,-1,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p4_20cm.pdf
 
 Sandia_He_1m_p4.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,Up4,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,,-1.,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p4_10cm.pdf
@@ -199,7 +199,7 @@ Sandia_He_1m_p4.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../SNL/U_0.4.csv,1,x
 Sandia_He_1m_p4.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../SNL/U_0.4.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,0,-1,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p4_1cm.pdf
 
 
-Sandia_He_1m_p6.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,Up6,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,,-1.,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p6_20cm.pdf
+Sandia_He_1m_p6.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,Up6,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,,-1.,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p6_20cm.pdf
 Sandia_He_1m_p6.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,Up6,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,,-1,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p6_20cm.pdf
 
 Sandia_He_1m_p6.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,Up6,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,,-1.,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p6_10cm.pdf
@@ -224,7 +224,7 @@ Sandia_He_1m_p6.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../SNL/U_0.6.csv,1,x
 Sandia_He_1m_p6.csv,x (m),U (m/s),4,0.,0.2,Exp,o,red,10,,,2,../SNL/U_0.6.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Cross-Stream Velocity (m/s),-0.5,0.5,.25,0,-1,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_U_p6_1cm.pdf
 
 
-Sandia_He_1m_p2.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,Up2_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p2_20cm.pdf
+Sandia_He_1m_p2.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,Up2_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p2_20cm.pdf
 Sandia_He_1m_p2.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,Up2_rms,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0,1,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p2_20cm.pdf
 
 Sandia_He_1m_p2.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,Up2_rms,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p2_10cm.pdf
@@ -249,7 +249,7 @@ Sandia_He_1m_p2.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../SNL/U-stdev_0
 Sandia_He_1m_p2.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../SNL/U-stdev_0.2.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0.,1.,0.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p2_1cm.pdf
 
 
-Sandia_He_1m_p4.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,Up4_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p4_20cm.pdf
+Sandia_He_1m_p4.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,Up4_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p4_20cm.pdf
 Sandia_He_1m_p4.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,Up4_rms,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0,1,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p4_20cm.pdf
 
 Sandia_He_1m_p4.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,Up4_rms,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p4_10cm.pdf
@@ -274,7 +274,7 @@ Sandia_He_1m_p4.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../SNL/U-stdev_0
 Sandia_He_1m_p4.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../SNL/U-stdev_0.4.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0.,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p4_1cm.pdf
 
 
-Sandia_He_1m_p6.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,Up6_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p6_20cm.pdf
+Sandia_He_1m_p6.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,Up6_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p6_20cm.pdf
 Sandia_He_1m_p6.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,Up6_rms,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p6_20cm.pdf
 
 Sandia_He_1m_p6.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,Up6_rms,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p6_10cm.pdf
@@ -299,7 +299,7 @@ Sandia_He_1m_p6.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../SNL/U-stdev_0
 Sandia_He_1m_p6.csv,x (m),U rms (m/s),4,0.,0.3,Exp,o,red,10,,,2,../SNL/U-stdev_0.6.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),RMS Cross-Stream Velocity (m/s),-0.5,0.5,.25,,0.,1.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Urms_p6_1cm.pdf
 
 
-Sandia_He_1m_p2.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,Wp2,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p2_20cm.pdf
+Sandia_He_1m_p2.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,Wp2,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p2_20cm.pdf
 Sandia_He_1m_p2.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,Wp2,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p2_20cm.pdf
 
 Sandia_He_1m_p2.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,Wp2,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p2_10cm.pdf
@@ -324,7 +324,7 @@ Sandia_He_1m_p2.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../SNL/W_0.2.csv,1,
 Sandia_He_1m_p2.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../SNL/W_0.2.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0.,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p2_1cm.pdf
 
 
-Sandia_He_1m_p4.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,Wp4,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p4_20cm.pdf
+Sandia_He_1m_p4.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,Wp4,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p4_20cm.pdf
 Sandia_He_1m_p4.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,Wp4,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p4_20cm.pdf
 
 Sandia_He_1m_p4.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,Wp4,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p4_10cm.pdf
@@ -349,7 +349,7 @@ Sandia_He_1m_p4.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../SNL/W_0.4.csv,1,
 Sandia_He_1m_p4.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../SNL/W_0.4.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0.,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p4_1cm.pdf
 
 
-Sandia_He_1m_p6.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,Wp6,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p6_20cm.pdf
+Sandia_He_1m_p6.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,Wp6,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p6_20cm.pdf
 Sandia_He_1m_p6.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,Wp6,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p6_20cm.pdf
 
 Sandia_He_1m_p6.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,Wp6,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p6_10cm.pdf
@@ -374,7 +374,7 @@ Sandia_He_1m_p6.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../SNL/W_0.6.csv,1,
 Sandia_He_1m_p6.csv,x (m),W (m/s),4,0.,0.2,Exp,o,blue,10,,,2,../SNL/W_0.6.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),Vertical Velocity (m/s),-0.5,0.5,.25,,0.,5.,1.,,True,upper right,MaCFP-2_Sandia_He_1m_W_p6_1cm.pdf
 
 
-Sandia_He_1m_p2.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,Wp2_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Vertical Velocity (m/s),-0.5,0.5,.25,,0,2.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Wrms_p2_20cm.pdf
+Sandia_He_1m_p2.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,Wp2_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Vertical Velocity (m/s),-0.5,0.5,.25,,0,2.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Wrms_p2_20cm.pdf
 Sandia_He_1m_p2.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,Wp2_rms,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Vertical Velocity (m/s),-0.5,0.5,.25,,0,2.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Wrms_p2_20cm.pdf
 
 Sandia_He_1m_p2.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,Wp2_rms,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Vertical Velocity (m/s),-0.5,0.5,.25,,0,2.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Wrms_p2_10cm.pdf
@@ -399,7 +399,7 @@ Sandia_He_1m_p2.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../SNL/W-stdev_
 Sandia_He_1m_p2.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../SNL/W-stdev_0.2.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.2 m,Position (m),RMS Vertical Velocity (m/s),-0.5,0.5,.25,,0.,2.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Wrms_p2_1cm.pdf
 
 
-Sandia_He_1m_p4.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,Wp4_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Vertical Velocity (m/s),-0.5,0.5,.25,,0,2.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Wrms_p4_20cm.pdf
+Sandia_He_1m_p4.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,Wp4_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Vertical Velocity (m/s),-0.5,0.5,.25,,0,2.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Wrms_p4_20cm.pdf
 Sandia_He_1m_p4.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,Wp4_rms,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Vertical Velocity (m/s),-0.5,0.5,.25,,0,2,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Wrms_p4_20cm.pdf
 
 Sandia_He_1m_p4.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,Wp4_rms,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Vertical Velocity (m/s),-0.5,0.5,.25,,0,2.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Wrms_p4_10cm.pdf
@@ -424,7 +424,7 @@ Sandia_He_1m_p4.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../SNL/W-stdev_
 Sandia_He_1m_p4.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../SNL/W-stdev_0.4.csv,1,x (m),R8,SNL R8,,,,--,brown,2,Sandia Helium Plume,$z$ = 0.4 m,Position (m),RMS Vertical Velocity (m/s),-0.5,0.5,.25,,0.,2.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Wrms_p4_1cm.pdf
 
 
-Sandia_He_1m_p6.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx20cm_line.csv,2,x,Wp6_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),RMS Vertical Velocity (m/s),-0.5,0.5,.25,,0,2.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Wrms_p6_20cm.pdf
+Sandia_He_1m_p6.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../NIST/AREA_ADJUST/Sandia_He_1m_dx20cm_line.csv,2,x,Wp6_rms,NIST 20 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),RMS Vertical Velocity (m/s),-0.5,0.5,.25,,0,2.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Wrms_p6_20cm.pdf
 Sandia_He_1m_p6.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../UGent/Sandia_He_1m_dx20cm_line.csv,2,x,Wp6_rms,UGent 20 cm,,,,-,blue,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),RMS Vertical Velocity (m/s),-0.5,0.5,.25,,0,2.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Wrms_p6_20cm.pdf
 
 Sandia_He_1m_p6.csv,x (m),W rms (m/s),4,0.,0.3,Exp,o,blue,10,,,2,../NIST/DEVC_INTERP/Sandia_He_1m_dx10cm_line.csv,2,x,Wp6_rms,NIST 10 cm,,,,-,black,2,Sandia Helium Plume,$z$ = 0.6 m,Position (m),RMS Vertical Velocity (m/s),-0.5,0.5,.25,,0,2.,.25,,True,upper right,MaCFP-2_Sandia_He_1m_Wrms_p6_10cm.pdf
