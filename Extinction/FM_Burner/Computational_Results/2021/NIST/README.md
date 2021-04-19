@@ -52,7 +52,7 @@ Comments: Solid walls; open top; forced flow at floor
 ------------------
 
 ### Models (include parameters)
-Turbulence model: Deardoff
+Turbulence model: Deardoff (algebraic k_sgs); Sc_t=0.5; Pr_t=0.5
 
 Combustion model: Two-step fast-fast serial reactions
 
