@@ -77,7 +77,7 @@ Prescribed coflow air flow bc level with diffuser plane, function of radial posi
 Turbulence model:
 
 * one-equation KSGS LES
-* wall-resolved LES
+* wall-resolved LES (log-law wall model with y+ < 5)
 
 Combustion model: NA
 
@@ -93,15 +93,15 @@ Comments: Schmidt number for helium + acetone mixture set to 0.9; unity Lewis nu
 
 ### Discretization methods
 
-Time: implicit
+Time: 2nd-order backward differencing (implicit), segregated
 
 CFL: 0.7
 
-Advection:
+Advection: hybrid centered with (MUSCL upwind); generally centered for velocity; monotonicity-preserving for scalars
 
-Diffusion:
+Diffusion: centered
 
-Pressure-velocity coupling:
+Pressure-velocity coupling: iterative segregated pressure projection with Rhie-Chow smoothing
 
 ------------------
 
