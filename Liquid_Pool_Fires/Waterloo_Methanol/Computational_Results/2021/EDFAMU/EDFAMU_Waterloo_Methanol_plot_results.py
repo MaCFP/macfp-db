@@ -21,6 +21,6 @@ macfp.dataplot(config_filename='EDFAMU_Waterloo_Methanol_dataplot_config.csv',
                pltdir='./Plots/',
                close_figs=True,
                verbose=True,
-               plot_list=['all'])
+               plot_range=range(1000))
 
 # plt.show()
