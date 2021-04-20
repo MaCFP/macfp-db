@@ -143,7 +143,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
         legend_fontsize=default_legend_fontsize
 
     if kwargs.get('legend_location')=='outside':
-        plt.legend(fontsize=legend_fontsize,bbox_to_anchor=(1,1),loc=kwargs.get('upper left'),framealpha=kwargs.get('legend_framealpha'))
+        plt.legend(fontsize=legend_fontsize,bbox_to_anchor=(1,1),loc='upper left',framealpha=kwargs.get('legend_framealpha'))
     else:
         if kwargs.get('show_legend'):
             plt.legend(fontsize=legend_fontsize,loc=kwargs.get('legend_location'),framealpha=kwargs.get('legend_framealpha'))
@@ -505,6 +505,9 @@ def define_plot_parameters(C,irow):
         except:
             Plot_Legend_Location = 'best'
 
+        if Plot_Legend_Location.isdigit():
+            Plot_Legend_Location=int(Plot_Legend_Location)
+
         try:
             Plot_Filename        = C.values[irow,C.columns.get_loc('Plot_Filename')]
         except:
@@ -531,9 +534,6 @@ def define_plot_parameters(C,irow):
                 Plot_y_Nticks = get_nticks(Plot_y_Min,Plot_y_Max,Plot_y_Tick)
         except:
             Plot_y_Nticks = None
-
-        if Plot_Legend_Location.isdigit():
-            Plot_Legend_Location=int(Plot_Legend_Location)
 
         try:
             Plot_Left_Adjust = C.values[irow,C.columns.get_loc('Plot_Left_Adjust')]
