@@ -16,7 +16,7 @@ importlib.reload(macfp) # use for development (while making changes to macfp.py)
 import matplotlib.pyplot as plt
 
 macfp.dataplot(config_filename='MaCFP-2_Waterloo_Methanol_dataplot_config.csv',
-               institute='Case 3a: Waterloo Methanol 30 cm',
+               institute='Case 3: Methanol 30 cm',
                expdir='../../../../../Liquid_Pool_Fires/',
                cmpdir='',
                pltdir='./Plots/',
