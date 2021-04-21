@@ -70,7 +70,7 @@ Radiative fraction: Prescribed (chi_rad=0.21)
 
 Soot model: -
 
-Comments: -
+Comments: Some limited heat flux results with a WSGGM model (see Reference 3 for details of the model) have also been included to illustrate the impact of radiation modelling on the heat feedback on the fuel surface.
 
 ------------------
 
@@ -110,3 +110,10 @@ Averaging period: 30 sec (between 5 s – 35 s)
 
 ### Relevant publications
 
+1. G. Maragkos, T. Beji, B. Merci, Advances in modelling in CFD simulations of turbulent gaseous pool fires, Combust. Flame 181 (2017) 22-38. https://doi.org/10.1016/j.combustflame.2017.03.012
+
+2. G. Maragkos, T. Beji, B. Merci, Towards predictive simulations of gaseous pool fires, Proc. Comb. Inst. 37 (2019) 3927-3934. https://doi.org/10.1016/j.proci.2018.05.162
+
+3. G. Maragkos, B. Merci, On the use of dynamic turbulence modelling in fire applications, Combust. Flame 26 (2020) 9-23. https://doi.org/10.1016/j.combustflame.2020.02.012
+
+4. G. Maragkos, B. Merci, Grid insensitive modelling of convective heat transfer fluxes in CFD simulations of medium-scale pool fires, Fire Saf J., 103104, 2020. https://doi.org/10.1016/j.firesaf.2020.103104.
