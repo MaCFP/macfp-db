@@ -177,6 +177,11 @@ def plot_to_fig(x_data,y_data,**kwargs):
     ax.set_xlim(xmin,xmax)
     ax.set_ylim(ymin,ymax)
 
+    # if axis labels are too large or small, use sci notation
+    axis_exponent_min = -3
+    axis_exponent_max = 3
+    ax.ticklabel_format(axis='both',scilimits=(axis_exponent_min,axis_exponent_max))
+
     if kwargs.get('x_nticks'):
         ax.set_xticks(np.linspace(start = kwargs.get('x_min'), stop = kwargs.get('x_max'), num = kwargs.get('x_nticks'), endpoint=True))
 
@@ -202,8 +207,11 @@ def plot_to_fig(x_data,y_data,**kwargs):
     ax.text(xpos,ypos2, kwargs.get('plot_subtitle'), fontsize=subtitle_fontsize, transform=ax.transAxes)
 
     # plot Institute + MaCFP stamp
-    ax.text(0.025,1.01, kwargs.get('institute_label'), fontsize=default_stamp_fontsize, transform=ax.transAxes)
-    ax.text(0.975,1.01, 'MaCFP-2, Waterloo, 2021', fontsize=default_stamp_fontsize, ha='right', transform=ax.transAxes)
+    inst_label_x = 0.025
+    if len(str(ymax))>abs(axis_exponent_max) or len(str(ymin))>abs(axis_exponent_min):
+        inst_label_x = 0.06 # else the institute label overlays the exponential notation multiplier
+    ax.text(inst_label_x,1.01, kwargs.get('institute_label'), fontsize=default_stamp_fontsize, transform=ax.transAxes)
+    ax.text(0.975,       1.01, 'MaCFP-2, Waterloo, 2021', fontsize=default_stamp_fontsize, ha='right', transform=ax.transAxes)
 
     # note: this absolute method works better than fig.tight_layout(), which may change for each call of the figure
     left_adjust, bottom_adjust = get_subplots_adjust_parameters(ticklabel_fontsize,axeslabel_fontsize)
