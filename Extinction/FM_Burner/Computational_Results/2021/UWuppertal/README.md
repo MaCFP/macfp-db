@@ -62,9 +62,9 @@ Comments:
 ### Models (include parameters) 
 
 - Turbulence model: WALE
-- Combustion model: Eddy Dissipation Model ($C_{EDC} = 1 \text{~or~} 2.5$)
+- Combustion model: Eddy Dissipation Model (C_EDC = 1 or 2.5)
 - Radiation model: Finite Volume Discrete Ordinates Method (fvDOM)
-- Radiative fraction: Prescribed ($\chi_{\mathrm{rad}}=0.34$ for $Y_{\mathrm{O2}}=0.231$)
+- Radiative fraction: Prescribed (\chi_rad=0.34 for Y_O2=0.231)
 - Soot model: -
 - Comments: -
 
@@ -90,34 +90,34 @@ The table provides a list of all cases and the corresponding names for the setup
 
 | **Name**   | **Cell size** | **Combustion**       | **Rad.-angles** | **Rad.Freq** | **ddt**   | **div U**     | **scalars**           |
 | ---------- | ---------- | -----------------    | ------------ | ----------- | --------- | ------------- | --------------------- |
-| v0a        | v-coarse   | $C_{\mathrm{EDC}}$ 1 | 16           | 10          | backward     | linear        | limitedLinear01 05, h1    |
-| v0b        | v-coarse   | $C_{\mathrm{EDC}}$ 1 | 16           | 10          | backward     | linear        | limitedLinear01 05, h1    |
-| v0f        | v-coarse   | $C_{\mathrm{EDC}}$ 1 | 16           | 10          | backward     | linear        | limitedLinear01 05, h1    |
+| v0a        | v-coarse   | C_EDC 1 | 16           | 10          | backward     | linear        | limitedLinear01 05, h1    |
+| v0b        | v-coarse   | C_EDC 1 | 16           | 10          | backward     | linear        | limitedLinear01 05, h1    |
+| v0f        | v-coarse   | C_EDC 1 | 16           | 10          | backward     | linear        | limitedLinear01 05, h1    |
 
 **Coarse setup**:
 | **Name** | **Cell size** | **Combustion**         | **Rad.-angles** | **Rad.Freq** | **ddt** | **div U**   | **scalars**         |
 | ---      | ---           | ----                   | ---             | ---          | ---     | ---         | ---                 |
-| v2a      | coarse        | $C_{\mathrm{EDC}}$ 1   | 16              | 10           | Euler   | filt.Linear | limitedLinear01 1, h1   |
-| v2b      | coarse        | $C_{\mathrm{EDC}}$ 1   | 16              | 10           | backward   | filt.Linear | limitedLinear01 1, h1   |
-| v2c      | coarse        | $C_{\mathrm{EDC}}$ 1   | 16              | 10           | backward   | linear      | limitedLinear01 05, h1  |
-| v2d      | coarse        | $C_{\mathrm{EDC}}$ 3   | 16              | 10           | backward   | linear      | limitedLinear01 05, h1  |
-| v2e      | coarse        | $C_{\mathrm{EDC}}$ 3   | 16              | 10           | backward   | linear      | limitedLinear01 05, h05 |
-| v2f      | coarse        | $C_{\mathrm{EDC}}$ 2.5 | 16              | 10           | backward   | linear      | limitedLinear01 05, h05 |
-| v2g      | coarse        | $C_{\mathrm{EDC}}$ 2.5 | 16              | 10           | backward   | linear      | limitedLinear01 05, h05 |
-| v2h      | coarse        | $C_{\mathrm{EDC}}$ 2.5 | 16              | 10           | backward   | linear      | limitedLinear01 05, h05 |
-| v2i      | coarse        | $C_{\mathrm{EDC}}$ 2.5 | 64              | 1            | backward   | linear      | limitedLinear01 05, h05 |
+| v2a      | coarse        | C_EDC 1   | 16              | 10           | Euler   | filt.Linear | limitedLinear01 1, h1   |
+| v2b      | coarse        | C_EDC 1   | 16              | 10           | backward   | filt.Linear | limitedLinear01 1, h1   |
+| v2c      | coarse        | C_EDC 1   | 16              | 10           | backward   | linear      | limitedLinear01 05, h1  |
+| v2d      | coarse        | C_EDC 3   | 16              | 10           | backward   | linear      | limitedLinear01 05, h1  |
+| v2e      | coarse        | C_EDC 3   | 16              | 10           | backward   | linear      | limitedLinear01 05, h05 |
+| v2f      | coarse        | C_EDC 2.5 | 16              | 10           | backward   | linear      | limitedLinear01 05, h05 |
+| v2g      | coarse        | C_EDC 2.5 | 16              | 10           | backward   | linear      | limitedLinear01 05, h05 |
+| v2h      | coarse        | C_EDC 2.5 | 16              | 10           | backward   | linear      | limitedLinear01 05, h05 |
+| v2i      | coarse        | C_EDC 2.5 | 64              | 1            | backward   | linear      | limitedLinear01 05, h05 |
 
 **Medium setup**:
 | **Name**   | **Cell size** | **Combustion**    | **Rad.-angles** | **Rad.Freq** | **ddt**   | **div U**     | **scalars**           |
 | ---------- | ---------- | -----------------      | ------------ | ----------- | --------- | ------------- | --------------------- |
-| v3a        | medium     | $C_{\mathrm{EDC}}$ 1   | 16           | 10          | Euler     | filt.Linear   | limitedLinear01 1, h1     |
-| v3b        | medium     | $C_{\mathrm{EDC}}$ 1   | 16           | 10          | backward     | filt.Linear   | limitedLinear01 1, h1     |
-| v3ba       | medium     | $C_{\mathrm{EDC}}$ 1   | 16           | 10          | backward     | filt.Linear   | limitedLinear01 05, h1    |
-| v3c        | medium     | $C_{\mathrm{EDC}}$ 1   | 16           | 10          | backward     | linear        | limitedLinear01 05, h1    |
-| v3e        | medium     | $C_{\mathrm{EDC}}$ 3   | 16           | 10          | backward     | linear        | limitedLinear01 05, h05   |
-| v3f        | medium     | $C_{\mathrm{EDC}}$ 2.5 | 16           | 10          | backward     | linear        | limitedLinear01 05, h05   |
-| v3g        | medium     | $C_{\mathrm{EDC}}$ 2.5 | 64           | 10          | backward     | linear        | limitedLinear01 05, h05   |
-| v3i        | medium     | $C_{\mathrm{EDC}}$ 2.5 | 64           | 1           | backward     | linear        | limitedLinear01 05, h05   |
+| v3a        | medium     | C_EDC 1   | 16           | 10          | Euler     | filt.Linear   | limitedLinear01 1, h1     |
+| v3b        | medium     | C_EDC 1   | 16           | 10          | backward     | filt.Linear   | limitedLinear01 1, h1     |
+| v3ba       | medium     | C_EDC 1   | 16           | 10          | backward     | filt.Linear   | limitedLinear01 05, h1    |
+| v3c        | medium     | C_EDC 1   | 16           | 10          | backward     | linear        | limitedLinear01 05, h1    |
+| v3e        | medium     | C_EDC 3   | 16           | 10          | backward     | linear        | limitedLinear01 05, h05   |
+| v3f        | medium     | C_EDC 2.5 | 16           | 10          | backward     | linear        | limitedLinear01 05, h05   |
+| v3g        | medium     | C_EDC 2.5 | 64           | 10          | backward     | linear        | limitedLinear01 05, h05   |
+| v3i        | medium     | C_EDC 2.5 | 64           | 1           | backward     | linear        | limitedLinear01 05, h05   |
 
 ### Computational Cost (hh:mm:ss) 
 
