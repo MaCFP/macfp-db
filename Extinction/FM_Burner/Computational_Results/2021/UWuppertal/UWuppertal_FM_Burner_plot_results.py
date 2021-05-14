@@ -7,12 +7,10 @@
 # with the path (absolute or relative) to your macfp-db repository
 
 #================================================================================
-import glob
+# import glob
 import sys
 #--------------------------------------------------------------------------------
 sys.path.append('../../../../../../macfp-db/Utilities/')
-sys.path.append('../../../../../../../macfp-db/Utilities/')
-sys.path.append('../../../../../../../../macfp-db/Utilities/')
 
 #--------------------------------------------------------------------------------
 import macfp
@@ -29,21 +27,21 @@ plotFile_all = "UoW_FM_Burner_dataplot_config.csv"
 
 macfp.dataplot(config_filename = plotFile_01,
                institute='UWuppertal',
-               expdir='../../../../../Experimental_Data/',
+               expdir='../../../Experimental_Data/',
                pltdir='./Plots_01/',
                close_figs=True,
                verbose=True,
                plot_list=['all'])
 macfp.dataplot(config_filename = plotFile_02,
                institute='UWuppertal',
-               expdir='../../../../../Experimental_Data/',
+               expdir='../../../Experimental_Data/',
                pltdir='./Plots_02/',
                close_figs=True,
                verbose=True,
                plot_list=['all'])
 macfp.dataplot(config_filename = plotFile_03,
                institute='UWuppertal',
-               expdir='../../../../../Experimental_Data/',
+               expdir='../../../Experimental_Data/',
                pltdir='./Plots_03/',
                close_figs=True,
                verbose=True,
@@ -51,14 +49,14 @@ macfp.dataplot(config_filename = plotFile_03,
 
 macfp.dataplot(config_filename = plotFile_04,
                institute='UWuppertal',
-               expdir='../../../../../Experimental_Data/',
+               expdir='../../../Experimental_Data/',
                pltdir='./Plots_04/',
                close_figs=True,
                verbose=True,
                plot_list=['all'])
 macfp.dataplot(config_filename = plotFile_all,
                institute='UWuppertal',
-               expdir='../../../../../Experimental_Data/',
+               expdir='../../../Experimental_Data/',
                pltdir='./Plots_all/',
                close_figs=True,
                verbose=True,
