@@ -4,9 +4,9 @@ This directory contains experimental measurements of liquid and gaseous pool fir
 
 | D (cm) | Fuel | Mass Flux g/(m<sup>2</sup>-s) | Surf Temp(°C)<sup>++</sup> | Rad Frac | Puf Freq (Hz) | TC Profile  | TC Bead (µm) | References |
 |----------|------|-------------------------------|----------------|----------------------|------|-----------|-------------|------------|
-| 30.1    | Methanol | 13.2 ± 0.4   | 64.5±0.3| 0.22 ± 0.02 | 2.64 ± 0.06 | r=0; z=3.8, 30.8 | 225   | 1,2,3,4,5<sup>+</sup>, 6\*,7,9,10,16\*\* |
-| 30.1    | Methanol | 13.2 ± 0.4   | 64.5±0.3| 0.22 ± 0.02 |             | r=0              | 52    | 13<sup>+</sup>                           |
-| 30.1    | Methanol | 13.2 ± 0.4   | 64.6±0.3| 0.22 ± 0.02 |             | z=41, 51, 61     | 150   | 15<sup>+</sup>                           |
+| 30.1    | Methanol | 13.1 ± 0.9   | 64.5±0.3| 0.22 ± 0.02 | 2.64 ± 0.06 | r=0; z=3.8, 30.8 | 225   | 1,2,3,4,5<sup>+</sup>, 6\*,7,9,10,16\*\* |
+| 30.1    | Methanol | 13.1 ± 0.9   | 64.5±0.3| 0.22 ± 0.02 |             | r=0              | 52    | 13<sup>+</sup>                           |
+| 30.1    | Methanol | 13.1 ± 0.9   | 64.6±0.3| 0.22 ± 0.02 |             | z=41, 51, 61     | 150   | 15<sup>+</sup>                           |
 | 30.1    | Ethanol  | 14.8 ± 1.2   | 78.3±0.2| 0.26 ± 0.07 |             | r=0              | 119   | 1,2,3,6\*,13<sup>+</sup>          |
 | 30.1    | Acetone  | 18.3 ± 0.6   |56.1±0.4 | 0.31 ± 0.06 |             | r=0              | 103   | 1,2,3,6\*,13<sup>+</sup>          |
 | 37    | Methane  | 6.4 ± 0.1    | 40 ± 10 | 0.15        |             | r=0              | 52    | 3,12\*,13<sup>+</sup>,14\*        |
@@ -75,7 +75,7 @@ Schematic drawing of a liquid burner, illustrating its features. The table below
 
 * The table at the top of the page shows the measured mass flux for all the pool fires averaged over the results reported by the references in the table.
 
-     * The measured mass flux for the 30 cm methanol pool fire, averaged over the various studies, is 13.2 ± 0.9 g/(m<sup>2</sup> s) (Kim et al., 2019; Buch et al. 1997; Klassen and Gore, 1994; Weckman and Strong, 1996; Hamins et al., 1994; Falkenstein-Smith et al., 2020a, 2020b).
+     * The measured mass flux for the 30 cm methanol pool fire, averaged over the various studies, is 13.1 ± 0.9 g/(m<sup>2</sup> s) (Kim et al., 2019; Buch et al. 1997; Klassen and Gore, 1994; Weckman and Strong, 1996; Hamins et al., 1994; Falkenstein-Smith et al., 2020a, 2020b).
 
 ### Radiative Fraction
 
