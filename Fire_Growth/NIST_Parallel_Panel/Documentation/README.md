@@ -120,4 +120,4 @@ This work was supported by the Office of Nuclear Regulatory Research (RES) of th
 3. BNZ Materials, Inc., 'Marinite I Refractory Products - Fire-Resistant Thermal, Structural Insulation' https://www.bnzmaterials.com/wp-content/uploads/2013/03/Mar-I.pdf (accessed September 14, 2022)
 4.  Wu. P., Parallel Wall Fire Tests with PMMA and FRPPMMA, Technical Memorandum 0003024286, FM Global, December 1997.
 5.  Bryant, R.A., Bundy, M.F., The NIST 20 MW Calorimetry measurement system for large-fire research. NIST Technical Note 2077, National Institute of Standards and Technology, Gaithersburg, Maryland, 2019
-6.  Pitts, W.M., Murthy, A.V., De Ris, J.L. Filtz, J.-R., Nygard, K., Smith, D., and Wetterlund, I. Round robin study of total heat flux gauge calibration at fire laboratories. Fire Safety Journal, 41(6):459475, 2006.
+6.  Pitts, W.M., Murthy, A.V., De Ris, J.L. Filtz, J.-R., Nygard, K., Smith, D., and Wetterlund, I. Round robin study of total heat flux gauge calibration at fire laboratories. Fire Safety Journal, 41(6):459-475, 2006.
