@@ -1,6 +1,6 @@
 ## NIST Parallel Panel
-##### Disclaimers
-The test description and measurement data presented here should be considered as preliminary/draft results, for the purposes of initial fire model setup for the MaCFP Working Group; however, this summary has been analyzed by subject matter experts within the research team and is believed to be scientifically sound and consistent with the integrity expected of NIST research. A NIST Technical Note [1], currently in preparation, will be published shortly along with final experimental results and analysis.
+#### Disclaimers
+The test description and measurement data presented here should be considered as preliminary results, for the purposes of initial fire model setup for the MaCFP Working Group; however, this summary has been analyzed by subject matter experts within the research team and is believed to be scientifically sound and consistent with the integrity expected of NIST research. A NIST Technical Note [1], currently in preparation, will be published shortly along with final experimental results and analysis.
 
 Note: The identification of any commercial product or trade name does not imply endorsement or recommendation by NIST (or any other contributing institution).
 
