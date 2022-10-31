@@ -9,7 +9,7 @@ The experimental setup, shown in Fig. 1, was based on the Single Burning Item (S
 
 A set of 7 experiments was performed. All sensor data were collected at 10 Hz frequency using a LabVIEW enabled computer. The flame was allowed to spread until the HRR reached 300 kW. Once the HRR exceeded this threshold value, the propane burner was turned off and the flame was extinguished.
 
-<img src="https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/UMD_SBI/Documentation/UMDCornerFireSpread.jpg" width="400">
+<img src="https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/UMD_SBI/Documentation/UMDCornerFireSpreadSetup.jpg" width="800">
 
 *Figure 1.* Schematic of the experimental setup.
 
