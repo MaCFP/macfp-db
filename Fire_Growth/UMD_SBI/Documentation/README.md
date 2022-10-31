@@ -32,7 +32,7 @@ The third set of measurements performed in the same experiments was carried out 
 Two additional experiments were performed to measure radiative heat flux away from the flame, at locations shown in Fig. 2. Six water-cooled heat flux gauges and two radiometers were used in these measurements. They were oriented so that their wide angle sensors (150 degree viewing angle) were facing the vertical corner. The total heat flux gauge measurements were found to provide the same readings as the radiometers, when placed at the same location. This means that both measured the radiative heat flux from the flame and hot solid surfaces without any significant addition by convection. These data were processed in exactly the same way as were the total flame heat flux data. The error for these data were also calculated in the same way (two standard deviation of the mean from binned data and additional 3% systematic uncertainty corresponding to gauge calibration). These data are provided in the file: 
 [Rad\_flux\_away\_from\_the\_flame\_binned.csv](https://github.com/MaCFP/macfp-db/blob/master/ExtinctionFire_Growth/UMD_SBI/Experimental_Data/). 
 
-<img src="https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/UMD_SBI/Documentation/RadFluxAwayFromFireSetup.jpg" width="400">
+<img src="https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/UMD_SBI/Documentation/RadFluxAwayFromFireSetup.jpg" width="800">
 
 *Figure 2.* Locations of the heat flux gauges and radiometers for measuring radiative heat flux away from the flame. Locations marked with red circles indicate locations where a radiometer was placed next to the total heat flux gauge to ensure that the total heat flux gauge read radiative heat flux only.
 
