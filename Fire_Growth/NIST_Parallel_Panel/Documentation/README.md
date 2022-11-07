@@ -98,7 +98,7 @@ In each test, initial sample mass (combined mass of both panels) was approximate
 
 *Table 3*: Thermophysical Properties of Marinite Structural insulation board [3]
 
-|Temperature |  density (kg/m3) | Thermal Conductivity (W/m-K) | Specific Heat (J/g-K)| 
+|Temperature (C)|  Density (kg/m3) | Thermal Conductivity (W/m-K) | Specific Heat (J/g-K)| 
 |---------------------|-----------------|-----------------|-----------------|
 |24     |   737 |   0.127    |      -   |
 |93     |   -   |   -        |  1.172   |
