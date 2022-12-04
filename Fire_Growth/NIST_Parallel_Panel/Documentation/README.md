@@ -65,7 +65,7 @@ A summary of the data contained in each of these files is provided in Table 1.
 
 #### Heat Release Rate (HRR) and Heat Flux at a Distance
 
-The entire parallel panel test assembly was positioned beneath the 6.1 m by 6.1 m exhaust hood at the National Fire Research Laboratory (NFRL) at NIST, which is instrumented and capable of performing heat release rate measurements by oxygen consumption calorimetry for fires up to 3 MW [5], with an average combined uncertainty for generic combustible fuels of 6.8 %. In Test PMMA R6, radiative heat flux at a distance, q"rad, was measured using a Schmidt-Boelter heat flux gauge positioned approximately 3 m away from the parallel panel assembly (location details in Table 2). A round-robin study of total heat flux gauge calibration techniques suggests a combined uncertainty (with a 95% confidence interval) equal to or less than 2.3 % [6]. The uncertainty of the _x_ and _y_ location of this heat flux gauge is estimated as +/- 15 cm (Type B uncertainty, representing a 95% confidence interval of true gauge location).
+The entire parallel panel test assembly was positioned beneath the 6.1 m by 6.1 m exhaust hood at the National Fire Research Laboratory (NFRL) at NIST, which is instrumented and capable of performing heat release rate measurements by oxygen consumption calorimetry for fires up to 3 MW [5], with an average combined uncertainty for generic combustible fuels of 6.8 %. Uncertainty in burner heat release, which is considerably lower (approx. 60 kW) than the standard operating range of the 3 MW calorimeter [5], is reported as 10% (type B uncertainty). In Test PMMA R6, radiative heat flux at a distance, q"rad, was measured using a Schmidt-Boelter heat flux gauge positioned approximately 3 m away from the parallel panel assembly (location details in Table 2). A round-robin study of total heat flux gauge calibration techniques suggests a combined uncertainty (with a 95% confidence interval) equal to or less than 2.3 % [6]. The uncertainty of the _x_ and _y_ location of this heat flux gauge is estimated as +/- 15 cm (Type B uncertainty, representing a 95% confidence interval of true gauge location).
 
 Time-resolved measurements of total HRR (including energy release from the propane burner) and q"rad are provided (as .csv files) in the [Experimental  Data Section](https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/NIST_Parallel_Panel/Experimental_Data/); Table 2 provides key information about each of these tests.  Figure 4 plots time-resolved measurements of total HRR and q"rad. As seen here strong agreement is observed between the rise, fall, and time to peak of HRR and q"rad measurements. Note: In this test, the propane burner was turned on between 0 < t < 120 s; reported HRR measurements are not corrected for the energy release from the propane burner flames.
 
@@ -77,7 +77,7 @@ Time-resolved measurements of total HRR (including energy release from the propa
 
 |Experimental Data File Name | Burner Configuration    | Location of heat flux gauge at a distance |Soot yield [g/g]|CO2 Yield [g/g]|CO Yield [g/g]|
 |---------------------|-----------------|-----------------|----------|----------|----------|
-|PMMA\_HRR\_qrad\_R6.csv        |   multi-layer fill | _x_ = -1 m, _y_ = -3 m, _z_ = 0.9 m |0.00519 +/- 0.00077|2.238 +/- 0.082|0.0036 +/- 0.0011|
+|PMMA\_HRR\_qrad\_R6.csv        |   multi-layer fill | _x_ = -1 m, _y_ = -3 m, _z_ = 0.9 m |0.00526 +/- 0.00079|2.238 +/- 0.082|0.0036 +/- 0.0011|
 
 #### Wall Flame Heat Flux
 
