@@ -9,7 +9,7 @@ Target phenomena are grouped into Condensed-Phase, Gas-Phase, or Couple Condense
 | --- | --- | --- |
 | Primary | Thermal decomposition of solid fuels | 6, 7 |
 | | Ignition | 6 |
-| | Gasification of condensed phase fuels | 7 (on matl-db repo..)|
+| | Gasification of condensed phase fuels | 7 [(on matl-db repo)](https://github.com/MaCFP/matl-db)|
 |  ||  |
 | Secondary | In-depth radiative absorption |
 | | Charring |
