@@ -168,7 +168,8 @@ No single approach for pyrolysis model parameterization was suggested by the MaC
 In total, 18 institutions located in 11 different countries submitted experimental measurements from 220 unique tests to the MaCFP-2 Workshop. This measurement data, which can be used as targets for pyrolysis model calibration and validation, has been uniformly formatted and well-documented (i.e., saved with corresponding metadata describing sample preparation, test setup, and experimental conditions) to allow for efficient, automated analysis. All measurements (and related analysis tools) are maintained in a digital, version-controlled, and freely-available online repository: \url{https://github.com/MaCFP/matl-db}~\cite{MaCFP-cond-db}. \\
 
 \textbf{Model Calibration}\\
-Modelers from 13 different institutions in 8 countries then analyzed these experimental measurements to develop parameter sets that could be used to describe the thermal decomposition behavior of this PMMA (sets of calibrated material properties are also available on the online repository). These property sets were then used to predict sample decomposition in response to well-defined zero- and one-dimensional heating scenarios: preliminary results suggest that variations in modeling results exceeds experimental scatter.
+Modelers from 13 different institutions in 8 countries then analyzed these experimental measurements to develop parameter sets that could be used to describe the thermal decomposition behavior of this PMMA (sets of calibrated material properties are also available on the online repository). These property sets were then used to predict sample decomposition in response to well-defined zero- and one-dimensional heating scenarios: preliminary results suggest that variations in modeling results exceeds experimental scatter. 
+% Specifically, 
 
 **See note in section 3, you likely need more detail here on the model parameters that are provided, where to find them, how to assess them, and how new exp. data will be shared as part of MaCFP-3 to help validate which are `best'.**
 
@@ -188,25 +189,32 @@ The MaCFP repository is hosted on GitHub (\url{https://github.com/MaCFP}). The r
  \item Copies of presentations (lecture slides and audio/video recordings) given at the MaCFP-1 and MaCFP-2 Workshops
 \end{itemize}
 
-Users of the experimental measurements and model parameters found in the Condensed Phase Material Database are encouraged to cite the repository (see below), related publications [refs] **if using that analysis**, and credit the institutions that provided experimental measurements (relevant publications / contributor information) are detailed in the README file associated with each institutional dataset. The Github repository is version controlled, with each addition (or edit) saved with a unique identifier (i.e., commit tag). When citing this database, you must include the commit tag that identifies the version of the repository you are working with. You may cite the use of this data as follows:\\ 
+Users of the experimental measurements and model parameters found in the Condensed Phase Material Database (\url{https://github.com/MaCFP/matl-db}) are encouraged to cite the repository (see below); to cite related summary publications, if using the analysis results prepared in these documents (e.g., conference proceedings \cite{brown2018proceedings} or the preliminary summary of experimental measurements document, available at: \url{https://github.com/MaCFP/matl-db/releases}); and to directly credit the institutions that provided experimental measurements (relevant publications and contributor information) are detailed in the README file associated with each institutional dataset. 
+
+The MaCFP Condensed Phase Github repository is version controlled, with each addition (or edit) saved with a unique identifier (i.e., commit tag). When citing this database, you must include the commit tag that identifies the version of the repository you are working with. You may cite the use of this data as follows:\\ 
 **Leventon, I., Batiot, B., Bruns, M., Hostikka, S., Nakamura, Y., Reszka, P., Rogaume, T., Stoliarov, S., Measurement and Computation of Fire Phenomena (MaCFP) Condensed Phase Material Database, https://github.com/MaCFP/matl-db, Commit Tag: **give commit; e.g., 7f89fd8**, https://doi.org/10.18434/mds2-2586.
 
 \section{MaCFP-3: Tsukuba, Japan (2023)}
 \subsection{Workshop Presentation Topics}
 
-In October 2023, the third Measurement and Computation of Fire Phenomena Workshop (MaCFP-3) will be hosted as a pre-event to the IAFSS meeting in Tsukuba, Japan. At this workshop, we will present new experimental measurements and numerical simulations focused on separate condensed- and gas-phase phenomena as well as our first ever coordinated attempt to model coupled condensed/gas phase cases: flame spread over a combustible solid (i.e., the reference material characterized as part of the MaCFP-2 Workshop). In addition, a new sub-group focusing on Radiation Heat Transfer Phenomena will be launched. It will focus on creating new radiation benchmark problems for the fire-related radiation problems in gas and condensed phase, and using them to improve the radiation sub-models of the fire models. MaCFP-3 target presentations include:
+On Sunday, October 22, 2023, the third Measurement and Computation of Fire Phenomena Workshop (MaCFP-3) will be hosted as a pre-event to the IAFSS meeting in Tsukuba, Japan. At this workshop, we will present new experimental measurements and numerical simulations focused on separate condensed- and gas-phase phenomena as well as our first ever coordinated attempt to model coupled condensed/gas phase cases: flame spread over a combustible solid (i.e., the reference material characterized as part of the MaCFP-2 Workshop). In addition, a new sub-group focusing on Radiation Heat Transfer Phenomena will be launched. It will focus on creating new radiation benchmark problems for the fire-related radiation problems in gas and condensed phase, and using them to improve the radiation sub-models of the fire models. 
+
+MaCFP-3 target presentations include:
 \begin{itemize}[noitemsep]
-\item Pool fires (multiple fuels including centerline measurements of soot, gaseous species; 30cm and 100 cm diameter fires)
-\item Gaseous wall burner (methane and propane)
-\item Gasification of MaCFP PMMA (i.e., an independent pyrolysis model validation case)
-\item Upward flame spread over MaCFP PMMA in a corner wall (1.5 m tall) and parallel panel (2.45 m tall) configuration
+\item Liquid pool fire experiments (30-cm and 100-cm diameter pool flames studied at NIST and featuring multiple fuels). See: \url{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}
+\item Controlled co-flow round diffusion flame experiments (13.7-cm diameter ethylene diffusion flames studied at FM Global and featuring an oxygen-nitrogen oxidizer). See: \url{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}
+\item Benchmark gasification experiments of MaCFP-PMMA (bench-scale thermal degradation experiments conducted in the NIST gasification apparatus, providing validation data for PMMA pyrolysis models). See: %\url{**}
+\item Flame spread experiments in a 1.5-m corner wall configuration (Single Burning Item experiments studied at UMD with MaCFP-PMMA). See: \url{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/UMD_SBI} 
+\item Flame spread experiments in a 2.45-m parallel panel configuration (parallel panel experiments studied at NIST with MaCFP-PMMA). See: \url{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel}
+
  \end{itemize}
  
-The workshop will be organized to allow substantial time for open discussion and interaction amongst participants; we may wish to:\\
-To assess the impact of the variability of model parameters on predictions of sample burning and flame spread rate \\
-Provide guidelines for experimental calibration / description needs\\
-Present/assess first ever coupled gas/solid phase target experiments\\
-To identify a new material of interest for MaCFP-4\\
+The workshop will be organized to allow substantial time for open discussion and interaction amongst participants; discussion topics may include:
+Guidelines for experimental calibration / description needs\\
+Guidelines, needs, and/or knowledge gaps in **pyrolysis/fire model validation and validation\\
+Understanding the impact of variability in pyrolysis model parameters on predictions of sample burning and flame spread rate \\
+Identification of a new material of interest for MaCFP-4\\
+Frequency and locations of future MaCFP meetings and workshops\\
 
 \clearpage
 \subsection{Workshop Schedule (Tentative)}
@@ -304,18 +312,22 @@ Targeting new experimental data with centerline measurements of soot, gaseous sp
 Description of old data\\
 Description of MaCFP-2 Parameters and modeling results\\
 Really, I think rather than all this above, we need a simple paragraph in Section 1.3.2 that notes: here's what's missing, we see these large variations, so we propose additional modeling from here
+
+
 \subsection{New Experimental Data for Model Validation}
 At the MaCFP-2 Workshop it was noted that (a) clear variations in model predictions when extrapolating [provide brief summary of such; not saying anyone is wrong, but they cannot all be right] and (b) the proposed idealized gasification experiments were not true `validation' experiments, as experimental measurements were not provided for comparison.\\
 
 We revived the NIST Gasfication Apparatus. [``Generate new measurement data (MLR, back surface Temperature) on MaCFP-2 PMMA under well-defined heating conditions (ideally, this will be seen as ‘impartial’ data, as it’s been collected on a well-established instrument (first used by T. Kashiwagi 20 years ago and this data isn’t currently used by any one group for pyrolysis model development)'' --> Originally designed [year] by [name]; not used by any participating institution for model calibration.] \\
 Hence, we'll prepare and share this dataset and use it 
 
+
 \clearpage
 \subsection{New Calibration/Model Prediction Requests }
+
+
 Share new Gasification data, ask participants to blindly predict this with their current models [perhaps we just share that we have a new blind verification case “Please model these experiments, we’ll compare it with the data from Takashi’s apparatus that we don’t have yet]\\
 Make sure their first set of predictions of this new gasification exp. data are based on their original pyrolysis model properties.\\
 Also allow participants to adjust their parameter sets to provide better predictions, as needed, but they must describe what changes they made and why\\
-
 
 \clearpage
 \section{Coupled Condensed- and Gas-Phase Fire Growth Experiments}
