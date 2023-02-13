@@ -1,0 +1,140 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Document Class
+
+\documentclass[review,11pt]{elsarticle}
+%\documentclass[final,5p,times,twocolumn]{elsarticle}
+
+\journal{Fire Safety Journal}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Bibliography
+
+\bibliographystyle{elsarticle-num}
+\biboptions{comma,square,numbers,sort&compress}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Packages
+
+\usepackage{lineno}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%\usepackage{xr-hyper}
+\usepackage[pdftex,
+        colorlinks=true,
+        urlcolor=linkblue,     % \href{...}{...} external (URL)
+        citecolor=linkred,     % citation number colors
+        linkcolor=linknavy,    % \ref{...} and \pageref{...}
+        pdfproducer={pdflatex},
+        pagebackref,
+        pdfpagemode=UseNone,
+        bookmarksopen=true,
+        plainpages=false,
+        verbose]{hyperref}
+
+\usepackage{geometry}
+\geometry{letterpaper, margin=1in}
+
+\usepackage{lipsum}
+
+\usepackage[nooneline]{subfigure}
+%\subfigtopskip = 0cm
+\subfigcapskip = -5mm
+\subfigcapmargin = -3.5mm
+%\subfigcaptopadj = 7cm
+%\subfigbottomskip = 0cm
+%\subfiglabelskip = -1cm
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue}
+
+\usepackage{caption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Proceedings of the First Workshop Organized by the IAFSS Working Group on Measurement and Computation of Fire Phenomena (MaCFP)}
+
+
+\author[label:Sandia]{A.~Brown}
+\author[label:NIST]{M.~Bruns}
+\author[label:UMD]{M.~Gollner}
+\author[label:Sandia]{J.~Hewson}
+\author[label:UMD]{A.~Marshall}
+\author[label:NIST]{R.~McDermott}
+\author[label:Ghent]{G.~Maragkos}
+\author[label:Ghent]{B.~Merci}
+\author[label:Poitiers]{T.~Rogaume}
+\author[label:UMD]{S.~Stoliarov}
+\author[label:UMD]{J.~Torero}
+\author[label:UMD]{A.~Trouv\'{e}\corref{cor1}}
+\ead{atrouve@umd.edu}
+\author[label:FM]{Y.~Wang}
+\author[label:Waterloo]{E.~Weckman}
+
+\address[label:Sandia]{Fire Science and Technology Department, Sandia National Laboratories, Albuquerque,~NM~87185,~USA}
+\address[label:NIST]{Fire Research Division, National Institute of Standards and Technology, Gaithersburg,~MD~20899,~USA}
+\address[label:UMD]{Department of Fire Protection Engineering, University of Maryland, College~Park,~MD~20742,~USA}
+\address[label:Ghent]{Department of Flow, Heat and Combustion Mechanics, Ghent University-UGent,~B-9000~Ghent,~Belgium}
+\address[label:Poitiers]{Institut Pprime (UPR 3346 CNRS), Universit\'{e} de Poitiers, Isae-ENSMA,~86961~Futuroscope~Chasseneuil~Cedex,~France}
+\address[label:FM]{FM Global, Research Division, Norwood,~MA~02062,~USA}
+\address[label:Waterloo]{Department of Mechanical and Mechatronics Engineering, University of Waterloo, Waterloo,~Ontario,~N2L~3G1,~Canada}
+
+\cortext[cor1]{Corresponding author}
+
+\begin{abstract}
+
+This paper provides a report of the discussions held at the first workshop on Measurement and Computation of Fire Phenomena (MaCFP) on June 10-11 2017. The first MaCFP workshop was both a technical meeting for the gas phase subgroup and a planning meeting for the condensed phase subgroup. The gas phase subgroup reported on a first suite of experimental-computational comparisons corresponding to an initial list of target experiments. The initial list of target experiments identifies a series of benchmark configurations with databases deemed suitable for validation of fire models  based on a Computational Fluid Dynamics approach. The simulations presented at the first MaCFP workshop feature fine grid resolution at the millimeter- or centimeter-scale: these simulations allow an evaluation of the performance of fire models under high-resolution conditions in which the impact of numerical errors is reduced and many of the discrepancies between experimental data and computational results may be attributed to modeling errors. The experimental-computational comparisons are archived on the MaCFP repository~\cite{MaCFP_repository}. Furthermore, the condensed phase subgroup presented a review of the main issues associated with measurements and modeling of pyrolysis phenomena. Overall, the first workshop provided an illustration of the potential of MaCFP in providing a response to the general need for greater levels of integration and coordination in fire research, and specifically to the particular needs of model validation.
+
+\end{abstract}
+
+\begin{keyword}
+Buoyant plumes \sep Pool fires \sep Wall fires \sep Flame extinction \sep Fire modeling \sep Pyrolysis modeling \sep Large Eddy Simulation
+\end{keyword}
+
+\end{frontmatter}
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\linenumbers
+
+% change "include" to "input" for final paper
+
+\input{Introduction}
+
+\section{Gas Phase Subgroup} \label{sec:GPS_session}
+
+\input{CFD_VV_Review}
+
+\input{Case_1_Turbulent_Plumes}
+
+\input{Case_2_Gaseous_Pool_Fires}
+
+\input{Case_3_Liquid_Pool_Fires}
+
+\input{Case_4_Wall_Fires}
+
+\input{Case_5_Flame_Extinction}
+
+\input{Plans}
+
+%\section{Condensed Phase Subgroup} \label{sec:CPS_session}
+
+%\input{CPS_session_1}
+
+%\input{CPS_session_2}
+
+%\input{CPS_session_3}
+
+\section*{Acknowledgments} \label{sec:ack}
+
+The authors would like to gratefully acknowledge the endorsement  and support of MaCFP by IAFSS. The authors would also like to acknowledge all the researchers who contributed to the development of the experimental databases that were used in the present validation work, in particular the authors of Refs.~\cite{Case1_EXP,Case2a_EXP,Case2b_EXP_CH4,Case2b_EXP_H2,Case3_EXP_1,Case3_EXP_2,Case4_EXP_1,Case4_EXP_2,Case5_EXP_1,Case5_EXP_2,Case5_EXP_3}. Finally, the authors would like to gratefully acknowledge the contributions of all the researchers who contributed to the development of the numerical databases for the first MaCFP workshop, in particular the authors of Refs.~\cite{Case1_SIM_IRSN,Case1_SIM_NIST,Case1_SIM_UGent,Case2a_SIM_FMG,Case2a_SIM_UGent,Case2a_SIM_IRSN,Case2a_SIM_NIST,Case2b_SIM_UGent,Case2b_SIM_NIST,Case2b_SIM_SNL,Case2b_SIM_UCantabria,Case3_SIM_UGent,Case3_SIM_UMD,Case3_SIM_VTT,Case4_SIM_NIST,Case4_SIM_FMG,Case5_SIM_FMG,Case5_SIM_NIST,Case5_SIM_UMD}.
+
+\bibliography{MaCFP-1_Refs.bib}
+
+\end{document}
