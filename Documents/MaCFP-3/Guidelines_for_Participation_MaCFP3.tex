@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[12pt,demo]{article}
 
 \usepackage{times,mathptmx}
 \usepackage[pdftex]{graphicx}
@@ -76,7 +76,7 @@ Tsukuba, Japan
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=6in]{../MaCFP_Logo.pdf}
+  \includegraphics[width=6in]{../../../matl-db/Documents/FIGURES/MaCFP_Logo.pdf}
   \label{Cover_Image}
 \end{figure}
 
@@ -84,7 +84,7 @@ Tsukuba, Japan
 
 \begin{minipage}{0.25\textwidth}
 \begin{figure}[H]
-\includegraphics[width=1.8in]{../IAFSSLogo.pdf}
+\includegraphics[width=1.8in]{../../../matl-db/Documents/FIGURES/IAFSSLogo.pdf}
 \end{figure}
 \end{minipage} \hfill
 \begin{minipage}{0.75\textwidth}
@@ -191,15 +191,15 @@ The MaCFP Condensed Phase Github repository is version controlled, with each add
 \section{MaCFP-3: Tsukuba, Japan (2023)}
 \subsection{Workshop Presentation Topics}
 
-On Sunday, October 22, 2023, the third Measurement and Computation of Fire Phenomena Workshop (MaCFP-3) will be hosted as a pre-event to the IAFSS meeting in Tsukuba, Japan. At this workshop, we will present new experimental measurements and numerical simulations focused on separate condensed- and gas-phase phenomena as well as our first ever coordinated attempt to model coupled condensed/gas phase cases: flame spread over a combustible solid (i.e., the reference material characterized as part of the MaCFP-2 Workshop). In addition, a new sub-group focusing on Radiation Heat Transfer Phenomena will be launched. It will focus on creating new radiation benchmark problems for the fire-related radiation problems in gas and condensed phase, and using them to improve the radiation sub-models of the fire models. 
+On Sunday, October 22, 2023, the third Measurement and Computation of Fire Phenomena Workshop (MaCFP-3) will be hosted as a pre-event to the IAFSS meeting in Tsukuba, Japan. At this workshop, we will present new experimental measurements and numerical simulations focused on separate condensed- and gas-phase phenomena as well as our first ever coordinated attempt to model coupled condensed/gas phase cases: flame spread over a combustible solid (i.e., the reference material characterized as part of the MaCFP-2 Workshop). In addition, a new sub-group focusing on Radiation Heat Transfer Phenomena will be launched. It will focus on creating new radiation benchmark problems for the fire-related radiation problems in gas and condensed phase, and using them to improve the radiation sub models of the fire models.
 
 MaCFP-3 target presentations include:
 \begin{itemize}[noitemsep]
-\item Liquid pool fire experiments (30-cm and 100-cm diameter pool flames studied at NIST and featuring multiple fuels). See: \url{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}
-\item Controlled co-flow round diffusion flame experiments (13.7-cm diameter ethylene diffusion flames studied at FM Global and featuring an oxygen-nitrogen oxidizer). See: \url{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}
+\item Liquid pool fire experiments (30 cm and 100 cm diameter pool flames studied at NIST and featuring multiple fuels). See: \url{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}
+\item Controlled co-flow round diffusion flame experiments (13.7 cm diameter ethylene diffusion flames studied at FM Global and featuring an oxygen-nitrogen oxidizer). See: \url{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}
 \item Benchmark gasification experiments of MaCFP-PMMA (bench-scale thermal degradation experiments conducted in the NIST gasification apparatus, providing validation data for PMMA pyrolysis models). See: %\url{**}
-\item Flame spread experiments in a 1.5-m corner wall configuration (Single Burning Item experiments studied at UMD with MaCFP-PMMA). See: \url{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/UMD_SBI} 
-\item Flame spread experiments in a 2.45-m parallel panel configuration (parallel panel experiments studied at NIST with MaCFP-PMMA). See: \url{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel}
+\item Flame spread experiments in a 1.5 m corner wall configuration (Single Burning Item experiments studied at UMD with MaCFP-PMMA). See: \url{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/UMD_SBI}
+\item Flame spread experiments in a 2.45 m parallel panel configuration (parallel panel experiments studied at NIST with MaCFP-PMMA). See: \url{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel}
  \end{itemize}
  
 \newpage
@@ -330,7 +330,7 @@ A thorough description of the instrument calibration results, a summary of the e
 
 \begin{figure}
      \centering
-         \includegraphics[width=0.75\textwidth]{{../../Pyrolysis_Validation/Documentation/Gasification_Apparatus_Schematic.pdf}}
+         \includegraphics[width=0.75\textwidth]{../../Pyrolysis_Validation/Documentation/Gasification_Apparatus_Schematic.pdf}
          \caption{ Schematic of the NIST gasification apparatus. Insert at bottom right of figure highlights sample / insulation assembly.}
          \label{fig:NISTGasApp}
 \end{figure}
@@ -414,7 +414,7 @@ Coupled Flame Spread cases:
 Which set of material properties were used
 
 \subsection{File Format}
-Fire growth modeling results should be organized in simple ASCII comma-delimited files (*.csv files) with clear header names in a format that matches the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth}{experimental measurements} on the Github Repository. Note: For all submitted measurement data, please ensure that results are obtained with the same data acquisition rate and units. **Examples of how to format data submissions (for experimentally-measured or model-predicted results) are included below.
+Fire growth modeling results should be organized in simple ASCII comma-delimited files (*.csv files) with clear header names in a format that matches the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth}{experimental measurements} on the Github Repository. Note: For all submitted measurement data, please ensure that results are obtained with the same data acquisition rate and units. **Examples of how to format data submissions (for experimentally measured or model-predicted results) are included below.
 
 \textbf{Units}
 This may seem like a minor issue, but we must compare the results from all groups in the same units. The units we will use are provided in the Pyrolysis Modeling section of this document. If there is ambiguity in the units or you otherwise have questions along these lines, please let us know.
