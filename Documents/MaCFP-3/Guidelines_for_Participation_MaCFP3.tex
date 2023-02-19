@@ -397,20 +397,20 @@ Modelers of the UMD SBI tests are asked to submit numerical predictions of each 
 \textbf{Measurement Data}       	& \textbf{File Formatting } \\
 \hline
 Heat Release Rate, HRR 	& Output: 1 .csv file\\
-x[kW]& File Format: 1 column of data (total HRR)\\
-	& Resolution: Time-resolved predictions at 1 Hz \\
+(kW)& File Format: 2 columns of data (time \& total HRR)\\
+	& Resolution: Time-resolved predictions at 1~Hz \\
 	& Duration: Minimum of 200 s or 300 kW (whichever is greater) \\
 	& File Naming Convenction: [Institution Name]\_SBI\_HRR.csv \\
 &	\\
 Heat Flux at a Distance  & Output: 1 .csv file\\
-x[kW m$^{-2}$]& File Format: 7 columns of data (total heat flux, at 7 different heights above top of burner)\\ 
-	& Resolution: Time-resolved predictions at 5 Hz \\
+(kW m$^{-2}$)& File Format: 8 columns of data (time \& total heat flux at 7 different heights above top of burner)\\ 
+	& Resolution: Time-resolved predictions at 5~s intervals \\
 	& Duration: Minimum of 200 s or 300 kW (whichever is greater) \\
 	& File Naming Convenction: [Institution Name]\_SBI\_q\_wall.csv \\
 &	\\
 Wall Flame Heat Flux & Output: 7 .csv files (7 different heights above top of burner) \\
-x[kW m$^{-2}$]& File Format: each file contains 4 columns of data (total flame heat flux, at a given height, at 4 locations away from the corner wall)\\
-	& Resolution: Time-resolved predictions at 5 Hz \\
+(kW m$^{-2}$)& File Format: each file contains 5 columns of data (time \& total flame heat flux, at a given height, at 4 locations away from the corner wall)\\
+	& Resolution: Time-resolved predictions at 5~s intervals \\
 	& Duration: Minimum of 200 s or 300 kW (whichever is greater) \\
 	& File Naming Convenction: [Institution Name]\_SBI\_q\_distance.csv \\
 \hline
@@ -438,6 +438,29 @@ Measurement data obtained in this test series includes:
          \caption{Schematic of the NIST Parallel Panel Apparatus}
          \label{fig:Panel_Schematic}
 \end{figure}
+
+Modelers of the NIST Parallel Panel tests are asked to submit numerical predictions of each of the measurements listed below.
+\begin{table}[htb]
+\begin{tabular}{p{0.25\linewidth} | p{0.75\linewidth}}
+\hline
+\textbf{Measurement Data}       	& \textbf{File Formatting } \\
+\hline
+Heat Release Rate, HRR 	& Output: 1 .csv file\\
+(kW)& File Format: 3 columns of data (time, total HRR, $q^{``}$)\\
+Heat Flux at a Distance	& Resolution: Time-resolved predictions at 10~s intervals \\
+(kW m$^{-2}$)	& Duration: Throughout fire growth and decay (after peak HRR) \\
+	& File Naming Convenction: \\
+	& [Institution Name]\_Parallel-Panel\_HRR\_qrad.csv \\
+&	\\
+Wall Flame Heat Flux & Output: 1 .csv file\\
+x[kW m$^{-2}$]& File Format: 10 columns of data (HRR \& total flame heat flux, at the centerline of panel walls, at 9 heights, $z$, above the base of samples )\\
+	& Resolution: Spatially-resolved heat feedback profiles at \href{https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/NIST_Parallel_Panel/Experimental_Data/PMMA_heatflux.csv}{10 representative fire sizes, 120~kW$<$HRR$<$2800~kW}\\
+	& Duration: From ignition until peak HRR \\
+	& File Naming Convenction: [Institution Name]\_Parallel-Panel\_q\_wall.csv \\
+\hline
+\end{tabular}
+\end{table}
+
 
 \clearpage
 \section{Communicating Results}
