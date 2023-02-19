@@ -340,33 +340,63 @@ A thorough description of the instrument calibration results, a summary of the e
 \end{figure}
 
 \subsection{New Calibration/Model Prediction Requests }
-Participants who submitted pyrolysis models (i.e., material property sets for MaCFP-PMMA) to the MaCFP-2 Workshop are asked to use their original 
+Participants who submitted pyrolysis models (i.e., material property sets for MaCFP-PMMA) to the MaCFP-2 Workshop are asked to use their original model parameters to predict (without adjustment to material properties) the results of these validation experiments. These blind predictions should be shared (Github Pull Request) as separate .csv files containing time-resolved predictions of sample mass (file name:[Institution Name]\_Gasification\_q\#\_Mass.csv) and back surface temperature (file name:[Institution Name]\_Gasification\_q\#\_Temp.csv). Please follow the file formatting of template data provided on the \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Validation_Data}{Validation\_Data section} of the MaCFP repository)
 
- Share new Gasification data, ask participants to blindly predict this with their current models [perhaps we just share that we have a new blind verification case “Please model these experiments, we’ll compare it with the data from Takashi’s apparatus that we don’t have yet]\\
-Make sure their first set of predictions of this new gasification exp. data are based on their original pyrolysis model properties.\\
-Also allow participants to adjust their parameter sets to provide better predictions, as needed, but they must describe what changes they made and why\\
+If sufficient agreement between model-predictions and experiment-measurements is not observed, pyrolysis modelers are then allowed to adjust and resubmit these parameter sets to obtain better agreement; however, they must (a) [prepare a README file identifying exactly how and why that model was changed] and (b) they CANNOT simply recalibrate their models to match this new validation data set.  Adjustments to previously calibrated data sets may arrise for many reasons, including,  but not limited to, changes in assumed boundary conditions of model calibration data or incorporation new calibration data obtained in different test apparatus and/or heating conditions.
 
+New pyrolysis models are also welcomed. Once again, we emphasize the need to use independent model calibration and model validation data sets. For this exercise, pyrolysis models should $not$ be directly calibrated to new validation data for two reasons: (1) this would no longer make simulation results true predictions and (2) this would bias and/or eliminate the ability to objectively quantify their relative accuracy as compared to other models. Aside from this requirement, modelers are not provided limitations or suggestions regarding their pyrolysis model parameterization (i.e., calibration) $approach$; however, they are required to use either (a) at least one of the milligram-scale data sets (e.g., TGA or DSC) and one gram- scale experiment (e.g., cone calorimetery or controlled atmosphere gasification experiments), or (b) at least two of the gram-scale experiments available in the \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Calibration_Data}{Calibration\_Data section} of the MaCFP repository. Modelers can supplement MaCFP data with any literature data that they deem necessary. 
 
-%%
-Modelers were not provided limitations or suggestions regarding their 324
-pyrolysis model parameterization (i.e., calibration) approach, modelers were required 325
-to use at least one of the milligram-scale data sets (e.g., TGA or DSC) and one gram- 326
-scale experiment (e.g., cone calorimetery or controlled atmosphere gasification 327
-experiments), or at least two of the gram-scale experiments available in the MaCFP 328
-repository. Modelers could supplement the MaCFP data with any literature data 329
-that was deemed necessary. Modelers could not use experimental data of the target 330
-scenarios (i.e., the idealized zero- and one-dimensional heating scenarios) for model 331
-calibration as this would no longer make simulation results true predictions. 
-%%
+Table~\href{table:properties} lists all pyrolysis model parameters of interest for this study. Note: degradation kinetics and thermodynamic parameters can be component- or reaction-step-specific. If your model includes multiple reaction steps and/or components, please include all relevant parameters below for each one. Participants should provide a detailed description of the method of determination of each of these parameters as well as a description (written and mathematical) of their proposed decomposition reaction mechanism. 
+
+Final submissions (Github pull request) of each new pyrolysis model (i.e., material property set) should include: 
+\begin{itemize}[noitemsep]
+\item JSON (.json) file containing the model parameters defined in Table~\href{table:properties} and identifying the datasets used for calibration (please follow templates provided on the \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Calibration_Data}{Material\_Properties section} of the MaCFP repository)
+\item Markdown (README.md) file describing model calibration approach
+\item .csv file(s) containing model predictions of material thermal decomposition behavior that demonstrate proof of model calibration accuracy (i.e., if models were calibrated against mass loss rate measured in the TGA or cone calorimeter, please submit similarly formatted predictions of these datasets)
+\end{itemize}
 
 
+\begin{table}[htb]
+\centering
+\label{table:properties}
+\caption{\href{table:properties} Pyrolysis Model Parameters}
+\begin{tabular}{p{0.125\linewidth} | p{0.2\linewidth}| p{0.3\linewidth}}
+\hline
+\textbf{Symbol}       	& \textbf{Units} & \textbf{Name}\\
+\hline
+\multicolumn{3}{c}{Degradation Kinetics}\\
+\hline
+$A$	&s$^{-1}$		&Pre-exponential constant \\
+$E$	&J mol$^{-1}$	&Activation energy \\
+$n$	&[-]		&Reaction order\\
+$\nu$	&[-]		&Stoichiometric coefficient\\
+\hline		
+\multicolumn{3}{c}{Thermodynamic Properties}\\
+\hline
+$c_p$	&J kg$^{-1}$ K$^{-1}$	&Heat capacity\\
+$h_r$	&J kg$^{-1}$		&Heat of reaction\\
+$\rho$	&kg m$^{-3}$		&Density\\
+\hline		
+\multicolumn{3}{c}{Transport Properties}\\
+\hline
+$k$	&W m$^{-1}$ K$^{-1}$	&Thermal conductivity\\
+$D$	&m$^2$ s$^{-1}$		&Mass diffusivity\\
+$\alpha$	&m$^{-1}$ or m$^2$ kg$^{-1}$	&Absorption coefficient\\
+$\epsilon$	&[-]				&Emissivity\\
+\hline
+\end{tabular}
+\end{table}
 
 \clearpage
 \section{Coupled Condensed- and Gas-Phase Fire Growth Experiments}
 \label{Sec:Fire Growth}
-Two new fire growth experiments are now provided (as of Oct. 2022) for consideration in the MaCFP-3 Workshop~\cite{chaudhari2021experimental, Leventon2022ParallelPanel}. Both experimental cases study ignition of and flame spread over the same exact same reference material studied in the MaCFP-2 Workshop (i.e., cast black PMMA). Measurement data obtained in each of these fire growth experiments includes (but is not limited to): total heat release rate (HRR, $[$kW$]$), flame to wall heat flux ($q^{``}$, $[$kW~m$^{-2}$$]$), and flame heat flux at a distance ($q^{``}_{dist}$, $[$kW~m$^{-2}$$]$). These measurements, as well as detailed descriptions of experiments were set up and conducted, are provided below on the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth}{Fire\_Growth} page of the Github repository. 
+Two new fire growth experiments are now provided (as of Oct. 2022) for consideration in the MaCFP-3 Workshop~\cite{chaudhari2021experimental, Leventon2022ParallelPanel}. Both experimental cases study ignition of and flame spread over the same exact same reference material studied in the MaCFP-2 Workshop (i.e., cast black PMMA). Measurement data obtained in each of these fire growth experiments includes (but is not limited to): total heat release rate (HRR, $[$kW$]$), flame to wall heat flux ($q^{``}_{wall}$, $[$kW~m$^{-2}$$]$), and flame heat flux at a distance ($q^{``}_{dist}$, $[$kW~m$^{-2}$$]$). These measurements, as well as detailed descriptions of experiments were set up and conducted, are provided below on the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth}{Fire\_Growth} page of the Github repository. 
 
-For final simulations (see Sec.~\ref{}), modelers are asked to reproduce the experiments described here (with particular emphasis on **reproducing the provided validation data) using a pyrolysis parameter set (i.e., material properties) originally calibrated as part of the MaCFP-2 Workshop [**link to solid phase parameters page]. Note: as part of the MaCFP-3 excercise, condensed phase modelers are requested to provided updated parameter sets [and READMEs of how why what changed] as described in \ref{ [Section above]}. These updated material property datasets will be shared with the community by [Spring date**] at virtual meeting (see timeline in Sec.~\ref{Timeline})
+Add note - fire growth modelers are asked to prepare simulations using $two$ pyrolysis models (i.e., two sets of material properties ): the ``most average'' and ``most accurate'' models. Repeating simulations in this manner will enable a controlled analysis of the sensitivity of fire growth predictions to condensed phase material properties. Both of these pyrolysis models will be identified by their ability to predict ignition, burning rate, and heat transfer through the solid, as quantified based on model-predictions of: (a) onset time of mass loss, (b) average mass loss rate, and (c) the time at which back surface temperature reaches a critical value.
+
+First, initial model setup should be performed using a pyrolysis parameter set (i.e., material properties) that was \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Material_Properties}{originally calibrated as part of the MaCFP-2 Workshop}. Specifically, modelers are asked to use the ``most average'' pyrolysis model, which **has been idenfied as: [GROUP - MCB**]. It is important to note that this property set is not necessarily the ``best'' one, rather it was simply identified as ``most average'' based on a model-to-model comparison (of the three targe output quantities listed above) of numerical simulations of idealized gasification scenarios considered in MaCFP-2.
+
+Next, coupled condensed- and gas-phase fire growth simulations should be performed using the pyrolysis model that participants feel best captures available validation data. The MaCFP organizing committe will not identify a unique ``best'' pyrolysis model; however, we will prepare a means to objectively rank the predictions of available pyrolysis models based on a comparison of model predictions of new gasification experiments that were conducted for model validation for the MaCFP-3 Workshop (see Sec.~\href{Sec:Pyrolysis}). These updated material property datasets will be shared with the community by [Spring date**] at virtual meeting (see timeline in Sec.~\ref{Timeline}). Again, this model comparison will be based on the same metrics defined above to assess the ability of the model to predict ignition, burning rate, and heat transfer through MaCFP-PMMA. 
 
 \subsection {Single Burning Item (SBI) Tests}
 A set of 7 experiments was performed at the University of Maryland (UMD) on the same cast black PMMA considered in the MaCFP-2 Workshop using the experimental setup, shown in Fig.~\ref{fig:UMDCornerFireSpreadSetup}. These experiments were based on the Single Burning Item (SBI) test~\cite{EN-13823standard}, but with symmetric panels. In these tests, 1.49~m tall panels of PMMA were ignited at their base in a corner wall configuration and the wall flame was allowed to spread upwards until measured HRR reached 300~kW. Once the HRR exceeded this threshold value, the propane burner (ignition source) was turned off and the flame was extinguished. 
@@ -381,7 +411,7 @@ Measurement data obtained in this test series includes:
 \item Radiative intensity at a distance (emissions between 900~nm $\pm10$~nm); 
 \item Photographs and video of material ignition and fire growth behavior.
 \end{itemize}
-
+%\clearpage
 \begin{figure}
      \centering
          \includegraphics[width=0.75\textwidth]{{../../Fire_Growth/UMD_SBI/Documentation/UMDCornerFireSpreadSetup.jpg}}
@@ -389,27 +419,27 @@ Measurement data obtained in this test series includes:
          \label{fig:UMDCornerFireSpreadSetup}
 \end{figure}
 
-Modelers of the UMD SBI tests are asked to submit numerical predictions of each of the measurements listed below.
+Modelers of the UMD SBI tests are asked to submit numerical predictions of each of the measurements listed in Table~\href{table:SBI}.
 \begin{table}[htb]
-%\begin{tabular}{l{0.2\linewidth}l{0.8\linewidth}}
+\caption{\label{table:SBI} Target data for simulations of UMD SBI Tests}
 \begin{tabular}{p{0.25\linewidth} | p{0.75\linewidth}}
 \hline
 \textbf{Measurement Data}       	& \textbf{File Formatting } \\
 \hline
-Heat Release Rate, HRR 	& Output: 1 .csv file\\
-(kW)& File Format: 2 columns of data (time \& total HRR)\\
+Heat Release Rate 	& Output: 1 .csv file\\
+HRR $[$kW$]$& File Format: 2 columns of data (time \& total HRR)\\
 	& Resolution: Time-resolved predictions at 1~Hz \\
 	& Duration: Minimum of 200 s or 300 kW (whichever is greater) \\
 	& File Naming Convenction: [Institution Name]\_SBI\_HRR.csv \\
 &	\\
 Heat Flux at a Distance  & Output: 1 .csv file\\
-(kW m$^{-2}$)& File Format: 8 columns of data (time \& total heat flux at 7 different heights above top of burner)\\ 
+$q^{``}_{dist}$ $[$kW~m$^{-2}$$]$& File Format: 8 columns of data (time \& total heat flux at 7 different heights above top of burner)\\ 
 	& Resolution: Time-resolved predictions at 5~s intervals \\
 	& Duration: Minimum of 200 s or 300 kW (whichever is greater) \\
 	& File Naming Convenction: [Institution Name]\_SBI\_q\_wall.csv \\
 &	\\
 Wall Flame Heat Flux & Output: 7 .csv files (7 different heights above top of burner) \\
-(kW m$^{-2}$)& File Format: each file contains 5 columns of data (time \& total flame heat flux, at a given height, at 4 locations away from the corner wall)\\
+$q^{``}_{wall}$ $[$kW~m$^{-2}$$]$& File Format: each file contains 5 columns of data (time \& total flame heat flux, at a given height, at 4 locations away from the corner wall)\\
 	& Resolution: Time-resolved predictions at 5~s intervals \\
 	& Duration: Minimum of 200 s or 300 kW (whichever is greater) \\
 	& File Naming Convenction: [Institution Name]\_SBI\_q\_distance.csv \\
@@ -439,21 +469,22 @@ Measurement data obtained in this test series includes:
          \label{fig:Panel_Schematic}
 \end{figure}
 
-Modelers of the NIST Parallel Panel tests are asked to submit numerical predictions of each of the measurements listed below.
+Modelers of the NIST Parallel Panel tests are asked to submit numerical predictions of each of the measurements listed in \href{table:Parallel-Panel}.
 \begin{table}[htb]
+\caption{\label{table:Parallel-Panel} Target data for simulations of NIST Parallel Panel Tests}
 \begin{tabular}{p{0.25\linewidth} | p{0.75\linewidth}}
 \hline
 \textbf{Measurement Data}       	& \textbf{File Formatting } \\
 \hline
-Heat Release Rate, HRR 	& Output: 1 .csv file\\
-(kW)& File Format: 3 columns of data (time, total HRR, $q^{``}$)\\
+Heat Release Rate 	& Output: 1 .csv file\\
+HRR $[$kW$]$& File Format: 3 columns of data (time, total HRR, $q^{``}_{dist}$)\\
 Heat Flux at a Distance	& Resolution: Time-resolved predictions at 10~s intervals \\
-(kW m$^{-2}$)	& Duration: Throughout fire growth and decay (after peak HRR) \\
+$q^{``}_{dist}$ $[$kW~m$^{-2}$$]$	& Duration: Throughout fire growth and decay (after peak HRR) \\
 	& File Naming Convenction: \\
 	& [Institution Name]\_Parallel-Panel\_HRR\_qrad.csv \\
 &	\\
 Wall Flame Heat Flux & Output: 1 .csv file\\
-x[kW m$^{-2}$]& File Format: 10 columns of data (HRR \& total flame heat flux, at the centerline of panel walls, at 9 heights, $z$, above the base of samples )\\
+$q^{``}_{wall}$ $[$kW~m$^{-2}$$]$& File Format: 10 columns of data (HRR \& total flame heat flux, at the centerline of panel walls, at 9 heights, $z$, above the base of samples )\\
 	& Resolution: Spatially-resolved heat feedback profiles at \href{https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/NIST_Parallel_Panel/Experimental_Data/PMMA_heatflux.csv}{10 representative fire sizes, 120~kW$<$HRR$<$2800~kW}\\
 	& Duration: From ignition until peak HRR \\
 	& File Naming Convenction: [Institution Name]\_Parallel-Panel\_q\_wall.csv \\
