@@ -499,7 +499,8 @@ $q^{``}_{wall}$ $[$kW~m$^{-2}$$]$& File Format: 10 columns of data (HRR \& total
 \subsection{How to Submit Your Results}
 Experimental and Modeling Results will be submitted, stored, and made publicly available in the appropriate folders and subfolders of the \href{https://github.com/MaCFP/}{MaCFP GitHub Repository}. Participants can submit their contributions by creating a pull request on Github. For simplicity, please organize all model simulation results for a given target case (see Sec.~\ref{Sec:MaCFP-3 Target Cases}) in a single folder with your INSTITUTE name.  Template files (e.g., .json files holding material property information; .csv files holding results of numerical simulations; and .md files describing simulation setup and results) for all requested numerical simulations results to be provided in these folders are available on the Github repository. Please ensure that your results are formatted as per the guidelines below. Further details on how to contribute are available on the \href{https://github.com/MaCFP/macfp-db/wiki/How-to-Contribute}{MaCFP-db wiki}. 
 
-\subsection{Modeling Results: Calibratied Material Property Datasets and Simulations of **[Fire Behavior]; (.json and .csv files)}
+\subsection{Modeling Results: Calibratied Material Property Datasets and Simulations of Fire Behavior; (.json and .csv files)}
+
 Description of what's needed for material property .json files **MCB\\
 
 Numerical simulations results should be organized in simple ASCII comma-delimited files (.csv files) with clear header names in a format that matches the experimental measurements on the Github Repository. 
@@ -626,17 +627,22 @@ Target xyz of certain cases? Randy/Arnaud/Anthony?**\\
 %%%
 
 \textbf{Condensed Phase:}\\
-New data provided for pyrolysis model validation; request to solid-phase modelers to provided updated material property datasets (if needed) by **April 21\\
+New data has been provided for validation of pyrolysis models (i.e., material property sets) submitted to the MaCFP-2 Workshop. Condensed-phase modelers are asked to submit new predictions of material response to these test conditions (well-characterized radiant heating in an anaerobic environment) using their original MaCFP-2 pyrolysis models. If sufficient agreement is not observed, modelers are allowed to recalibrate their property sets. However, we emphasize the need to use independent model calibration and model validation data sets: for this exercise, pyrolysis models should $not$ be directly calibrated to new validation data.  
+
+Although no limitations are provided regarding pyrolysis model calibration approach, all submitted models are required to use either (a) at least one of the milligram-scale data sets (e.g., TGA or DSC) and one gram- scale experiment (e.g., cone calorimetery or controlled atmosphere gasification experiments), or (b) at least two of the gram-scale experiments available in the \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Calibration_Data}{Calibration\_Data section} of the MaCFP repository. Modelers can supplement MaCFP data with any literature data that they deem necessary. 
+
+Modelers are asked to provide (a) simulations of validation experiments using MaCFP-2 property sets and (b) if needed, to provide updated material property datasets (if needed) by **April 28\\
 Virtual meeting to follow [**May, 24]\\
 
-\textbf{All modelers:}
-New data provided for fire growth model validation; request to gas- and solid-phase modelers to simulated key validation targets (i.e., HRR, flame to wall heat flux, and heat flux at a distance) by **DATE\\
+\textbf{All modelers:}\\
+New measurement data has been provided for validation of fire growth simulations (flame spread over MaCFP-PMMA; a coupled condensed- and gas-phase scenario). Specificically, HRR, wall flame heat flux, and heat flux at a distance were recorded during upward flame spread over (a) 1.5~m tall PMMA walls in a corner configuration and (b) 2.45~m tall PMMA walls in a parallel panel configuration.
+Modelers are asked to provide simulations of one or both of these experiments using material property sets developed by the particpants of the condensed-phase portion of this working group. Final submissions should be provided by **DATE\\
 
 
 \clearpage
 \section{Contact Information}
  \subsection*{MaCFP Virtual Discussion Forum}
-A Google Discussion Group for the MaCFP Working Group can be accessed here: \url{https://groups.google.com/g/macfp-discussions/}. The purpose of this forum is to facilitate data sharing and model development to improve computational predictions of thermal degradation and pyrolysis in fire.
+A Google Discussion Group for the MaCFP Working Group can be accessed here: \url{https://groups.google.com/g/macfp-discussions/}. The purpose of this Forum is to help develop the network between fire researchers scientists, provide a community-wide forum for discussion and exchange of information, and to facilitate data sharing and model development to improve computational predictions of fire behavior.
 
 \subsection*{Condensed Phase Phenomena Subgroup Organizing Committee}
 \setlength{\parindent}{0cm}
