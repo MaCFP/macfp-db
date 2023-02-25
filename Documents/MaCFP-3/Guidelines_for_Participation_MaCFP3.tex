@@ -91,7 +91,7 @@ Tsukuba, Japan
 \begin{flushright}
 \begin{small}
 {\bf The MaCFP Working Group Organizing Committee:} \\
-{\footnotesize Benjamin Batiot (University of Poitiers, France); Morgan Bruns (Saint Mary's University, USA); Simo Hostikka (Aalto University, Finland); Isaac Leventon (National Institute of Standards and Technology, USA); Yuji Nakamura (Toyohashi University of Technology, Japan); Pedro Reszka (Universidad Adolfo Ibáñez, Chile); Thomas Rogaume (University of Poitiers, France); Stanislav Stoliarov (University of Maryland, USA)}\\
+{\footnotesize Benjamin Batiot (University of Poitiers, France); Morgan Bruns (St. Mary's University, USA); Simo Hostikka (Aalto University, Finland); Isaac Leventon (National Institute of Standards and Technology, USA); Yuji Nakamura (Toyohashi University of Technology, Japan); Pedro Reszka (Universidad Adolfo Ibáñez, Chile); Thomas Rogaume (University of Poitiers, France); Stanislav Stoliarov (University of Maryland, USA)}\\
 {\footnotesize Alexander Brown (Sandia National Laboratories, USA); Andres Fuentes (Universidad Técnica Federico Santa María, Chile); Michael Gollner (University of California, Berkeley, USA); Anthony Hamins (National Institute of Standars and Technology, USA); John Hewson (Sandia National Laboratories, USA); Naian Liu (University of Science and Technology of China, China); Randy McDermott (National Institute of Standards and Technology, USA); Bart Merci (Ghent University, Belgium); Arnaud Trouvé (University of Maryland, USA); Yi Wang (FM Global, USA); Beth Weckman (University of Waterloo, Canada)}
 
 
@@ -392,7 +392,7 @@ Two new fire growth experiments are now provided (as of Oct. 2022) for considera
 
 Add note - fire growth modelers are asked to prepare simulations using $two$ pyrolysis models (i.e., two sets of material properties ): the ``most average'' and ``most accurate'' models. Repeating simulations in this manner will enable a controlled analysis of the sensitivity of fire growth predictions to condensed phase material properties. Both of these pyrolysis models will be identified by their ability to predict ignition, burning rate, and heat transfer through the solid, as quantified based on model-predictions of: (a) onset time of mass loss, (b) average mass loss rate, and (c) the time at which back surface temperature reaches a critical value.
 
-First, initial model setup should be performed using a pyrolysis parameter set (i.e., material properties) that was \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Material_Properties}{originally calibrated as part of the MaCFP-2 Workshop}. Specifically, modelers are asked to use the ``most average'' pyrolysis model, which **has been idenfied as: [GROUP - MCB**]. It is important to note that this property set is not necessarily the ``best'' one, rather it was simply identified as ``most average'' based on a model-to-model comparison (of the three targe output quantities listed above) of numerical simulations of idealized gasification scenarios considered in MaCFP-2.
+First, initial model setup should be performed using a pyrolysis parameter set (i.e., material properties) that was \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Material_Properties}{originally calibrated as part of the MaCFP-2 Workshop}. Specifically, modelers will be asked to use a ``most average'' material property data set, which will be identified based on a comparison of the predictions of gasification scenarios performed for MaCFP-2. As such, this suggested property set is not meant to be endorsed as being the most ``correct'' property set, but rather just the set of material properties that predicts the most characteristic gasification simulations of the community. This ``most average'' property data set will be shared with participants at the virtual meeting on March 15, 2023.
 
 Next, coupled condensed- and gas-phase fire growth simulations should be performed using the pyrolysis model that participants feel best captures available validation data. The MaCFP organizing committe will not identify a unique ``best'' pyrolysis model; however, we will prepare a means to objectively rank the predictions of available pyrolysis models based on a comparison of model predictions of new gasification experiments that were conducted for model validation for the MaCFP-3 Workshop (see Sec.~\href{Sec:Pyrolysis}). These updated material property datasets will be shared with the community by [Spring date**] at virtual meeting (see timeline in Sec.~\ref{Timeline}). Again, this model comparison will be based on the same metrics defined above to assess the ability of the model to predict ignition, burning rate, and heat transfer through MaCFP-PMMA. 
 
@@ -499,7 +499,9 @@ Experimental and Modeling Results will be submitted, stored, and made publicly a
 
 \subsection{Modeling Results: Calibratied Material Property Datasets and Simulations of Fire Behavior; (.json and .csv files)}
 
-Description of what's needed for material property .json files **MCB\\
+Material property data will be stored in JavaScript Object Notation (JSON) files. JSON is a relatively simple text format for organizing data that has the advantage of being human-readable yet easily parsed in most programming languages. The JSON files characterize a material property data set in terms of six top level categories characterizing (1) the material, (2) the lab that determined the properties, (3) the details of the calibration procedures used to obtain the properties, (4) the kinetic properties, (5) the thermodynamic properties, and (6) the transport properties.
+
+All of the material properties obtained for the cast black MaCFP PMMA are stored in the MaCFP GitHub repository in the \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Calibration_Data}{Material\_Properties section}. These JSON files provide all of the necessary information to use a particular material property set for predicting the pyrolysis of the MaCFP PMMA. These files are also convenient templates for submitting new material property data sets.
 
 Numerical simulations results should be organized in simple ASCII comma-delimited files (.csv files) with clear header names in a format that matches the experimental measurements on the Github Repository. 
 Note: For all submitted results, please confirm that output data is provided using the same file format, data structure (order of data in columns AND data acquisition/output frequency), naming convention (file and data column header names), and reported units as available validation data (see descriptions of available datasets in Sections~\ref{Sec:Gas Phase}, \ref{Sec:Pyrolysis}, and \ref{Sec:Fire Growth}). 
@@ -650,7 +652,7 @@ Institut Pprime, France \\
     \vspace{0.5cm}
     
 \textbf{Morgan Bruns} \\
-Saint Mary's University, USA\\
+St. Mary's University, USA\\
 \href{mailto:mbruns@stmarytx.edu}{mbruns@stmarytx.edu}
     \vspace{0.5cm}
 
