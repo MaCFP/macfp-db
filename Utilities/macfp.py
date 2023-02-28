@@ -10,6 +10,7 @@ Collection of functions for plotting and analysis
 """
 
 import sys
+import math
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -160,14 +161,14 @@ def plot_to_fig(x_data,y_data,**kwargs):
         subtitle_fontsize=default_subtitle_fontsize
 
     # set axes and tick properties
-    if kwargs.get('x_min')==None or kwargs.get('x_max')==None:
+    if kwargs.get('x_min')==None or kwargs.get('x_max')==None or math.isnan(kwargs.get('x_min')) or math.isnan(kwargs.get('x_max')):
         xmin=min(x_data) - 0.05*(max(x_data)-min(x_data))
         xmax=max(x_data) + 0.05*(max(x_data)-min(x_data))
     else:
         xmin=kwargs.get('x_min')
         xmax=kwargs.get('x_max')
 
-    if kwargs.get('y_min')==None or kwargs.get('y_max')==None:
+    if kwargs.get('y_min')==None or kwargs.get('y_max')==None or math.isnan(kwargs.get('y_min')) or math.isnan(kwargs.get('y_max')):
         ymin=min(y_data) - 0.05*(max(y_data)-min(y_data))
         ymax=max(y_data) + 0.05*(max(y_data)-min(y_data))
     else:
@@ -272,6 +273,9 @@ def define_plot_parameters(C,irow):
     """
     class plot_parameters:
 
+        def __repr__(self):
+            return str(self)
+
         try:
             Exp_Filename          = C.values[irow,C.columns.get_loc('Exp_Filename')]
         except:
@@ -317,38 +321,44 @@ def define_plot_parameters(C,irow):
 
         try:
             Exp_Marker_Style      = C.values[irow,C.columns.get_loc('Exp_Marker_Style')]
-            if Exp_Marker_Style==None:
+            if Exp_Marker_Style==None or math.isnan(Exp_Marker_Style):
                 Exp_Marker_Style = 'None'
         except:
             Exp_Marker_Style      = 'o'
 
         try:
             Exp_Marker_Edge_Color = C.values[irow,C.columns.get_loc('Exp_Marker_Edge_Color')]
+            if math.isnan(Exp_Marker_Edge_Color):
+                Exp_Marker_Edge_Color = 'black'
         except:
             Exp_Marker_Edge_Color = 'black'
 
         try:
             Exp_Marker_Fill_Color = C.values[irow,C.columns.get_loc('Exp_Marker_Fill_Color')]
+            if math.isnan(Exp_Marker_Fill_Color):
+                Exp_Marker_Fill_Color = 'None'
         except:
             Exp_Marker_Fill_Color = 'None'
 
         try:
-            Exp_Marker_Size      = C.values[irow,C.columns.get_loc('Exp_Marker_Size')]
+            Exp_Marker_Size = C.values[irow,C.columns.get_loc('Exp_Marker_Size')]
+            if math.isnan(Exp_Marker_Size):
+                Exp_Marker_Size = 6
         except:
-            Exp_Marker_Size      = 6
+            Exp_Marker_Size = 6
 
         try:
-            Exp_Line_Style       = C.values[irow,C.columns.get_loc('Exp_Line_Style')]
-            if Exp_Line_Style==None:
+            Exp_Line_Style = C.values[irow,C.columns.get_loc('Exp_Line_Style')]
+            if Exp_Line_Style==None or math.isnan(Exp_Line_Style):
                 Exp_Line_Style = 'None'
         except:
             # if no column exists, we assume just markers for experimental data
-            Exp_Line_Style       = 'None'
+            Exp_Line_Style = 'None'
 
         try:
-            Exp_Line_Color       = C.values[irow,C.columns.get_loc('Exp_Line_Color')]
-            if Exp_Line_Color==None:
-                Exp_Line_Style = 'None'
+            Exp_Line_Color = C.values[irow,C.columns.get_loc('Exp_Line_Color')]
+            if Exp_Line_Color==None or math.isnan(Exp_Line_Color):
+                Exp_Line_Color = 'None'
         except:
             if Exp_Line_Style:
                 Exp_Line_Color = 'black'
@@ -356,159 +366,205 @@ def define_plot_parameters(C,irow):
                 Exp_Line_Color = 'None'
 
         try:
-            Exp_Line_Width       = C.values[irow,C.columns.get_loc('Exp_Line_Width')]
-            if Exp_Line_Width==None:
+            Exp_Line_Width = C.values[irow,C.columns.get_loc('Exp_Line_Width')]
+            if Exp_Line_Width==None or math.isnan(Exp_Line_Width):
                 Exp_Line_Width = 1.
         except:
-            Exp_Line_Width       = 1.
+            Exp_Line_Width = 1.
 
         try:
-            Exp_Error_Absolute   = C.values[irow,C.columns.get_loc('Exp_Error_Absolute')]
+            Exp_Error_Absolute = C.values[irow,C.columns.get_loc('Exp_Error_Absolute')]
+            if math.isnan(Exp_Error_Absolute):
+                Exp_Error_Absolute = 0.
         except:
-            Exp_Error_Absolute   = 0.
+            Exp_Error_Absolute = 0.
 
         try:
-            Exp_Error_Relative   = C.values[irow,C.columns.get_loc('Exp_Error_Relative')]
+            Exp_Error_Relative = C.values[irow,C.columns.get_loc('Exp_Error_Relative')]
+            if math.isnan(Exp_Error_Relative):
+                Exp_Error_Relative = 0.
         except:
-            Exp_Error_Relative   = 0.
+            Exp_Error_Relative = 0.
 
         try:
-            Cmp_Filename         = C.values[irow,C.columns.get_loc('Cmp_Filename')]
+            Cmp_Filename = C.values[irow,C.columns.get_loc('Cmp_Filename')]
         except:
             sys.exit('Required column header missing: Cmp_Filename')
 
         try:
-            Cmp_Header_Row       = C.values[irow,C.columns.get_loc('Cmp_Header_Row')]
+            Cmp_Header_Row = C.values[irow,C.columns.get_loc('Cmp_Header_Row')]
+            if math.isnan(Cmp_Header_Row):
+                Cmp_Header_Row = 1
         except:
-            Cmp_Header_Row       = 1
+            Cmp_Header_Row = 1
 
         try:
-            Cmp_Data_Row          = C.values[irow,C.columns.get_loc('Cmp_Data_Row')]
+            Cmp_Data_Row = C.values[irow,C.columns.get_loc('Cmp_Data_Row')]
+            if math.isnan(Cmp_Data_Row):
+                Cmp_Data_Row = Cmp_Header_Row+1
         except:
-            Cmp_Data_Row          = Cmp_Header_Row+1
+            Cmp_Data_Row = Cmp_Header_Row+1
 
         try:
-            Cmp_x_Col_Name       = C.values[irow,C.columns.get_loc('Cmp_x_Col_Name')]
+            Cmp_x_Col_Name = C.values[irow,C.columns.get_loc('Cmp_x_Col_Name')]
         except:
             sys.exit('Required column header missing: Cmp_x_Col_Name')
 
         try:
-            Cmp_y_Col_Name       = C.values[irow,C.columns.get_loc('Cmp_y_Col_Name')]
+            Cmp_y_Col_Name = C.values[irow,C.columns.get_loc('Cmp_y_Col_Name')]
         except:
             sys.exit('Required column header missing: Cmp_y_Col_Name')
 
         try:
-            Cmp_Data_Markevery   = C.values[irow,C.columns.get_loc('Cmp_Data_Markevery')]
+            Cmp_Data_Markevery = C.values[irow,C.columns.get_loc('Cmp_Data_Markevery')]
+            if math.isnan(Cmp_Data_Markevery):
+                Cmp_Data_Markevery = 1
         except:
-            Cmp_Data_Markevery   = 1
+            Cmp_Data_Markevery = 1
 
         try:
-            Cmp_Data_Label       = C.values[irow,C.columns.get_loc('Cmp_Data_Label')]
+            Cmp_Data_Label = C.values[irow,C.columns.get_loc('Cmp_Data_Label')]
+            if math.isnan(Cmp_Data_Label):
+                Cmp_Data_Label = 'Cmp'
         except:
-            Cmp_Data_Label       = 'Cmp'
+            Cmp_Data_Label = 'Cmp'
 
         try:
-            Cmp_Marker_Style     = C.values[irow,C.columns.get_loc('Cmp_Marker_Style')]
+            Cmp_Marker_Style = C.values[irow,C.columns.get_loc('Cmp_Marker_Style')]
+            if math.isnan(Cmp_Marker_Style):
+                Cmp_Marker_Style = 'None'
         except:
-            Cmp_Marker_Style     = 'None'
+            Cmp_Marker_Style = 'None'
 
         try:
-            Cmp_Marker_Edge_Color= C.values[irow,C.columns.get_loc('Cmp_Marker_Edge_Color')]
+            Cmp_Marker_Edge_Color = C.values[irow,C.columns.get_loc('Cmp_Marker_Edge_Color')]
+            if math.isnan(Cmp_Marker_Edge_Color):
+                Cmp_Marker_Edge_Color = 'black'
         except:
-            Cmp_Marker_Edge_Color= 'black'
+            Cmp_Marker_Edge_Color = 'black'
 
         try:
-            Cmp_Marker_Fill_Color= C.values[irow,C.columns.get_loc('Cmp_Marker_Fill_Color')]
+            Cmp_Marker_Fill_Color = C.values[irow,C.columns.get_loc('Cmp_Marker_Fill_Color')]
+            if math.isnan(Cmp_Marker_Fill_Color):
+                Cmp_Marker_Fill_Color = 'None'
         except:
-            Cmp_Marker_Fill_Color= 'None'
+            Cmp_Marker_Fill_Color = 'None'
 
         try:
-            Cmp_Marker_Size      = C.values[irow,C.columns.get_loc('Cmp_Marker_Size')]
+            Cmp_Marker_Size = C.values[irow,C.columns.get_loc('Cmp_Marker_Size')]
+            if math.isnan(Cmp_Marker_Size):
+                Cmp_Marker_Size = 6
         except:
-            Cmp_Marker_Size      = 6
+            Cmp_Marker_Size = 6
 
         try:
             Cmp_Line_Style       = C.values[irow,C.columns.get_loc('Cmp_Line_Style')]
-            if Cmp_Line_Style==None:
+            if Cmp_Line_Style==None or math.isnan(Cmp_Line_Style):
                 Cmp_Line_Style = 'None'
         except:
-            Cmp_Line_Style       = None
+            Cmp_Line_Style = 'None'
 
         try:
-            Cmp_Line_Color       = C.values[irow,C.columns.get_loc('Cmp_Line_Color')]
+            Cmp_Line_Color = C.values[irow,C.columns.get_loc('Cmp_Line_Color')]
+            if math.isnan(Cmp_Line_Color):
+                Cmp_Line_Color = 'black'
         except:
-            Cmp_Line_Color       = 'black'
+            Cmp_Line_Color = 'black'
 
         try:
-            Cmp_Line_Width       = C.values[irow,C.columns.get_loc('Cmp_Line_Width')]
-            if Cmp_Line_Width==None:
+            Cmp_Line_Width = C.values[irow,C.columns.get_loc('Cmp_Line_Width')]
+            if Cmp_Line_Width==None or math.isnan(Cmp_Line_Width):
                 Cmp_Line_Width = 0.
         except:
-            Cmp_Line_Width       = 1.
+            Cmp_Line_Width = 1.
 
         try:
-            Plot_Title           = C.values[irow,C.columns.get_loc('Plot_Title')]
+            Plot_Title = C.values[irow,C.columns.get_loc('Plot_Title')]
+            if math.isnan(Plot_Title):
+                Plot_Title = ''
         except:
-            Plot_Title           = ''
+            Plot_Title = ''
 
         try:
-            Plot_Subtitle        = C.values[irow,C.columns.get_loc('Plot_Subtitle')]
+            Plot_Subtitle = C.values[irow,C.columns.get_loc('Plot_Subtitle')]
+            if math.isnan(Plot_Subtitle):
+                Plot_Subtitle = ''
         except:
-            Plot_Subtitle        = ''
+            Plot_Subtitle = ''
 
         try:
-            Plot_x_Label         = C.values[irow,C.columns.get_loc('Plot_x_Label')]
+            Plot_x_Label = C.values[irow,C.columns.get_loc('Plot_x_Label')]
+            if math.isnan(Plot_x_Label):
+                Plot_x_Label = 'x'
         except:
-            Plot_x_Label         = 'x'
+            Plot_x_Label = 'x'
 
         try:
-            Plot_y_Label         = C.values[irow,C.columns.get_loc('Plot_y_Label')]
+            Plot_y_Label = C.values[irow,C.columns.get_loc('Plot_y_Label')]
+            if math.isnan(Plot_y_Label):
+                Plot_y_Label = 'y'
         except:
-            Plot_y_Label         = 'y'
+            Plot_y_Label = 'y'
 
         try:
-            Plot_x_Min           = C.values[irow,C.columns.get_loc('Plot_x_Min')]
+            Plot_x_Min = C.values[irow,C.columns.get_loc('Plot_x_Min')]
+            if math.isnan(Plot_x_Min):
+                Plot_x_Min = None
         except:
-            Plot_x_Min           = None
+            Plot_x_Min = None
 
         try:
-            Plot_x_Max           = C.values[irow,C.columns.get_loc('Plot_x_Max')]
+            Plot_x_Max = C.values[irow,C.columns.get_loc('Plot_x_Max')]
+            if math.isnan(Plot_x_Max):
+                Plot_x_Max = None
         except:
-            Plot_x_Max           = None
+            Plot_x_Max = None
 
         try:
-            Plot_x_Tick          = C.values[irow,C.columns.get_loc('Plot_x_Tick')]
+            Plot_x_Tick = C.values[irow,C.columns.get_loc('Plot_x_Tick')]
+            if math.isnan(Plot_x_Tick):
+                Plot_x_Tick = None
         except:
-            Plot_x_Tick          = None
+            Plot_x_Tick = None
 
         try:
-            Plot_y_Min           = C.values[irow,C.columns.get_loc('Plot_y_Min')]
+            Plot_y_Min = C.values[irow,C.columns.get_loc('Plot_y_Min')]
+            if math.isnan(Plot_y_Min):
+                Plot_y_Min = None
         except:
-            Plot_y_Min           = None
+            Plot_y_Min = None
 
         try:
-            Plot_y_Max           = C.values[irow,C.columns.get_loc('Plot_y_Max')]
+            Plot_y_Max = C.values[irow,C.columns.get_loc('Plot_y_Max')]
+            if math.isnan(Plot_y_Max):
+                Plot_y_Max = None
         except:
-            Plot_y_Max           = None
+            Plot_y_Max = None
 
         try:
-            Plot_y_Tick          = C.values[irow,C.columns.get_loc('Plot_y_Tick')]
+            Plot_y_Tick = C.values[irow,C.columns.get_loc('Plot_y_Tick')]
+            if math.isnan(Plot_y_Tick):
+                Plot_y_Tick = None
         except:
-            Plot_y_Tick          = None
+            Plot_y_Tick = None
 
         try:
-            Plot_Flip_Axis        = C.values[irow,C.columns.get_loc('Plot_Flip_Axis')]
+            Plot_Flip_Axis = C.values[irow,C.columns.get_loc('Plot_Flip_Axis')]
+            if math.isnan(Plot_Flip_Axis):
+                Plot_Flip_Axis = False
         except:
-            Plot_Flip_Axis        = False
+            Plot_Flip_Axis = False
 
         try:
-            Plot_Show_Legend     = C.values[irow,C.columns.get_loc('Plot_Show_Legend')]
+            Plot_Show_Legend = C.values[irow,C.columns.get_loc('Plot_Show_Legend')]
+            if math.isnan(Plot_Show_Legend):
+                Plot_Show_Legend = False
         except:
-            Plot_Show_Legend     = True
+            Plot_Show_Legend = True
 
         try:
             Plot_Legend_Location = C.values[irow,C.columns.get_loc('Plot_Legend_Location')]
-            if Plot_Legend_Location==None:
+            if Plot_Legend_Location==None or math.isnan(Plot_Legend_Location):
                 Plot_Legend_Location = 'best'
         except:
             Plot_Legend_Location = 'best'
@@ -517,62 +573,78 @@ def define_plot_parameters(C,irow):
             Plot_Legend_Location=int(Plot_Legend_Location)
 
         try:
-            Plot_Filename        = C.values[irow,C.columns.get_loc('Plot_Filename')]
+            Plot_Filename = C.values[irow,C.columns.get_loc('Plot_Filename')]
         except:
             sys.exit('Required column header missing: Plot_Filename')
 
         try:
             Plot_x_Nticks = C.values[irow,C.columns.get_loc('Plot_x_Nticks')]
+            if math.isnan(Plot_x_Nticks):
+                Plot_x_Nticks = None
         except:
             Plot_x_Nticks = None
 
         try:
             if float(Plot_x_Tick)>0. and float(Plot_x_Tick)<1.e10 and float(Plot_x_Min)>-1.e10 and float(Plot_x_Max)<1.e10:
                 Plot_x_Nticks = get_nticks(Plot_x_Min,Plot_x_Max,Plot_x_Tick)
+            if math.isnan(Plot_x_Nticks):
+                Plot_x_Nticks = None
         except:
             Plot_x_Nticks = None
 
         try:
             Plot_y_Nticks = C.values[irow,C.columns.get_loc('Plot_y_Nticks')]
+            if math.isnan(Plot_y_Nticks):
+                Plot_y_Nticks = None
         except:
             Plot_y_Nticks = None
 
         try:
             if float(Plot_y_Tick)>0. and float(Plot_y_Tick)<1.e10 and float(Plot_y_Min)>-1.e10 and float(Plot_y_Max)<1.e10:
                 Plot_y_Nticks = get_nticks(Plot_y_Min,Plot_y_Max,Plot_y_Tick)
+            if math.isnan(Plot_y_Nticks):
+                Plot_y_Nticks = None
         except:
             Plot_y_Nticks = None
 
         try:
             Plot_Left_Adjust = C.values[irow,C.columns.get_loc('Plot_Left_Adjust')]
+            if math.isnan(Plot_Left_Adjust):
+                Plot_Left_Adjust = None
         except:
             Plot_Left_Adjust = None
 
         try:
             Plot_Right_Adjust = C.values[irow,C.columns.get_loc('Plot_Right_Adjust')]
+            if math.isnan(Plot_Right_Adjust):
+                Plot_Right_Adjust = None
         except:
             Plot_Right_Adjust = None
 
         try:
             Plot_Bottom_Adjust = C.values[irow,C.columns.get_loc('Plot_Bottom_Adjust')]
+            if math.isnan(Plot_Bottom_Adjust):
+                Plot_Bottom_Adjust = None
         except:
             Plot_Bottom_Adjust = None
 
         try:
             Plot_Top_Adjust = C.values[irow,C.columns.get_loc('Plot_Top_Adjust')]
+            if math.isnan(Plot_Top_Adjust):
+                Plot_Top_Adjust = None
         except:
             Plot_Top_Adjust = None
 
         try:
             Plot_Figure_Width = C.values[irow,C.columns.get_loc('Plot_Figure_Width')]
-            if Plot_Figure_Width==None:
+            if Plot_Figure_Width==None or math.isnan(Plot_Figure_Width):
                 Plot_Figure_Width=8
         except:
             Plot_Figure_Width = 8
 
         try:
             Plot_Figure_Height = C.values[irow,C.columns.get_loc('Plot_Figure_Height')]
-            if Plot_Figure_Height==None:
+            if Plot_Figure_Height==None or math.isnan(Plot_Figure_Height):
                 Plot_Figure_Height=6
         except:
             Plot_Figure_Height = 6
@@ -654,6 +726,8 @@ def dataplot(config_filename,**kwargs):
 
         # define plot parameters and return them in an object called pp
         pp = define_plot_parameters(C,irow)
+
+        # print(pp.__dict__) # helpful for debug
 
         if 'all' not in plot_list:
             if pp.Plot_Filename not in plot_list:
