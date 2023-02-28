@@ -10,6 +10,7 @@ Collection of functions for plotting and analysis
 """
 
 import sys
+import math
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -126,6 +127,9 @@ def plot_to_fig(x_data,y_data,**kwargs):
     else:
         ticklabel_fontsize=default_ticklabel_fontsize
 
+    print(ticklabel_fontsize)
+    print(ax.xaxis.get_majorticklabels())
+
     plt.setp( ax.xaxis.get_majorticklabels(), rotation=0, fontsize=ticklabel_fontsize )
     plt.setp( ax.yaxis.get_majorticklabels(), rotation=0, fontsize=ticklabel_fontsize )
 
@@ -160,14 +164,14 @@ def plot_to_fig(x_data,y_data,**kwargs):
         subtitle_fontsize=default_subtitle_fontsize
 
     # set axes and tick properties
-    if kwargs.get('x_min')==None or kwargs.get('x_max')==None:
+    if kwargs.get('x_min')==None or kwargs.get('x_max')==None or math.isnan(kwargs.get('x_min')) or math.isnan(kwargs.get('x_max')):
         xmin=min(x_data) - 0.05*(max(x_data)-min(x_data))
         xmax=max(x_data) + 0.05*(max(x_data)-min(x_data))
     else:
         xmin=kwargs.get('x_min')
         xmax=kwargs.get('x_max')
 
-    if kwargs.get('y_min')==None or kwargs.get('y_max')==None:
+    if kwargs.get('y_min')==None or kwargs.get('y_max')==None or math.isnan(kwargs.get('y_min')) or math.isnan(kwargs.get('y_max')):
         ymin=min(y_data) - 0.05*(max(y_data)-min(y_data))
         ymax=max(y_data) + 0.05*(max(y_data)-min(y_data))
     else:
@@ -317,7 +321,7 @@ def define_plot_parameters(C,irow):
 
         try:
             Exp_Marker_Style      = C.values[irow,C.columns.get_loc('Exp_Marker_Style')]
-            if Exp_Marker_Style==None:
+            if Exp_Marker_Style==None or math.isnan(Exp_Marker_Style):
                 Exp_Marker_Style = 'None'
         except:
             Exp_Marker_Style      = 'o'
@@ -339,7 +343,7 @@ def define_plot_parameters(C,irow):
 
         try:
             Exp_Line_Style       = C.values[irow,C.columns.get_loc('Exp_Line_Style')]
-            if Exp_Line_Style==None:
+            if Exp_Line_Style==None or math.isnan(Exp_Line_Style):
                 Exp_Line_Style = 'None'
         except:
             # if no column exists, we assume just markers for experimental data
@@ -347,8 +351,8 @@ def define_plot_parameters(C,irow):
 
         try:
             Exp_Line_Color       = C.values[irow,C.columns.get_loc('Exp_Line_Color')]
-            if Exp_Line_Color==None:
-                Exp_Line_Style = 'None'
+            if Exp_Line_Color==None or math.isnan(Exp_Line_Color):
+                Exp_Line_Color = 'None'
         except:
             if Exp_Line_Style:
                 Exp_Line_Color = 'black'
@@ -357,7 +361,7 @@ def define_plot_parameters(C,irow):
 
         try:
             Exp_Line_Width       = C.values[irow,C.columns.get_loc('Exp_Line_Width')]
-            if Exp_Line_Width==None:
+            if Exp_Line_Width==None or math.isnan(Exp_Line_Width):
                 Exp_Line_Width = 1.
         except:
             Exp_Line_Width       = 1.
@@ -429,7 +433,7 @@ def define_plot_parameters(C,irow):
 
         try:
             Cmp_Line_Style       = C.values[irow,C.columns.get_loc('Cmp_Line_Style')]
-            if Cmp_Line_Style==None:
+            if Cmp_Line_Style==None or math.isnan(Cmp_Line_Style):
                 Cmp_Line_Style = 'None'
         except:
             Cmp_Line_Style       = None
@@ -441,7 +445,7 @@ def define_plot_parameters(C,irow):
 
         try:
             Cmp_Line_Width       = C.values[irow,C.columns.get_loc('Cmp_Line_Width')]
-            if Cmp_Line_Width==None:
+            if Cmp_Line_Width==None or math.isnan(Cmp_Line_Width):
                 Cmp_Line_Width = 0.
         except:
             Cmp_Line_Width       = 1.
@@ -508,7 +512,7 @@ def define_plot_parameters(C,irow):
 
         try:
             Plot_Legend_Location = C.values[irow,C.columns.get_loc('Plot_Legend_Location')]
-            if Plot_Legend_Location==None:
+            if Plot_Legend_Location==None or math.isnan(Plot_Legend_Location):
                 Plot_Legend_Location = 'best'
         except:
             Plot_Legend_Location = 'best'
@@ -565,14 +569,14 @@ def define_plot_parameters(C,irow):
 
         try:
             Plot_Figure_Width = C.values[irow,C.columns.get_loc('Plot_Figure_Width')]
-            if Plot_Figure_Width==None:
+            if Plot_Figure_Width==None or math.isnan(Plot_Figure_Width):
                 Plot_Figure_Width=8
         except:
             Plot_Figure_Width = 8
 
         try:
             Plot_Figure_Height = C.values[irow,C.columns.get_loc('Plot_Figure_Height')]
-            if Plot_Figure_Height==None:
+            if Plot_Figure_Height==None or math.isnan(Plot_Figure_Height):
                 Plot_Figure_Height=6
         except:
             Plot_Figure_Height = 6
