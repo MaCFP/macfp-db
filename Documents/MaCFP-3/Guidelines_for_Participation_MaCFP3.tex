@@ -284,16 +284,17 @@ Two experiments of gas-phase fire behavior (liquid pool fires and a co-flow roun
 
 Modeling groups are encouraged to consider performing fine-grained simulations under the high-resolution conditions that are often the preferred choice made by CFD researchers, and also consider performing coarse-grained simulations under the moderate-to-marginal resolution conditions (sometimes called VLES) that are more representative of the choices made by CFD practitioners.
 
-\subsection{EXPT1: Pool Fires}
-\href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{EXPT1 (Liquid pool fire experiments)} corresponds to 30-cm and 100-cm  diameter pool flames studied at NIST. The MaCFP experimental database also considers a 30-cm-diameter acetone pool fire, a 30-cm-diameter ethanol pool fire, a 37-cm diameter methane fire, and a 37-cm diameter propane fire. Groups interested in simulating several of these configurations are invited to focus on the 30-cm and 100-cm methanol cases first. Because of time constraints, discussions at MaCFP-3 may be limited to these methanol pool fire cases.
- 
-Groups interested in simulating EXPT1 are invited to focus first on simulations with a prescribed liquid evaporation rate (taken as the measured averaged value). Simulations with an evaporation rate that is calculated as a function of the thermal feedback are welcome but should be considered as a second step. Similarly, groups interested in simulating EXPT1 are invited to focus first on simulations with a prescribed global radiant fraction (taken as the measured averaged value). Simulations that simulate rather than prescribe the radiant fraction are welcome but should be considered as a second step.
+\subsection{NIST Pool Fires}
+The \href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{NIST pool fires} correspond to 30 cm, 37 cm, and 100 cm diameter pool and gaseous burner flames studied at NIST (see documentation provided here). Evaporating liquid pool fires should be simulated with both prescribed and predicted mass loss rate.
 
-Suggested grid resolution (30 cm pool): $\Delta x$ from 0.5 cm to 6 cm.
+\vskip.5\baselineskip
+\noindent Suggested grid resolution (30 cm pool, 37 cm burner): $\Delta x$ from 0.5 cm to 6 cm.
 
-Suggested grid resolution (100 cm pool): $\Delta x$ from 1 cm to 20 cm.
+\vskip.5\baselineskip
+\noindent Suggested grid resolution (100 cm pool): $\Delta x$ from 1 cm to 20 cm.
 
-Suggested angular resolution: $N_{\Omega}$ = 100 angles.\\
+\vskip.5\baselineskip
+\noindent Suggested angular resolution: $N_{\Omega}$ = 100 angles.\\
 
 \newpage
 Plots of interest include:
@@ -313,14 +314,16 @@ Plots of interest include:
  	
 The data required to generate these plots should be provided as ASCII files organized in simple comma-delimited format.
 
-\subsection{EXPT2: Controlled co-flow round diffusion flame experiments}
-\href{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}{EXPT2 (Controlled co-flow round diffusion flame experiments)} corresponds to a 13.7-cm-diameter, controlled co-flow (a mixture of air and nitrogen), round ethylene diffusion flame experiment currently studied at FM Global. EXPT2 includes global measurements at coflow oxygen mole fractions of 20.9\%, 19\%, 17\% and 15\%, and detailed measurements at coflow oxygen mole fraction of 20.9\%, 16.8\% and 15.2\%. Note that the current experimental database does not include the oxygen extinction limit of the flame and focuses instead on the change in the flame radiation observed as this limit is approached.
+\subsection{FM Burner}
+The \href{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}{FM Burner} corresponds to a 13.7 cm diameter, controlled coflow (a mixture of air and nitrogen), round ethylene diffusion flame experiment currently studied at FM Global (see documentation here). Case 2 includes global measurements at coflow oxygen mole fractions of 20.9%, 19%, 17% and 15%, and detailed measurements at coflow oxygen mole fraction of 20.9%, 16.8% and 15.2%. Groups interested in simulating Case 2 are invited to predict the changes in flame radiation. Simulations with a prescribed radiant fraction (taken as the measured averaged value) are acceptable as well.
 
-Groups interested in simulating EXPT2 are invited to predict the changes in flame radiation. Simulations with a prescribed radiant fraction (taken as the measured averaged value) are acceptable as well.
+The experimental database includes combustion efficiency as a function of coflow oxygen mole fraction for four different fuels: methane, ethylene, propylene, and propane. Modelers are invited to predict the limiting oxygen concentration at extinction for each fuel and for a range of grid resolutions.
 
-Suggested grid resolution: $\Delta x$ from 0.5 cm to 2 cm.
+\vskip.5\baselineskip
+\noindent Suggested grid resolution: $\Delta x$ from 0.5 cm to 2 cm.
 
-Suggested angular resolution: $N_{\Omega}$ = 100 angles.
+\vskip.5\baselineskip
+\noindent Suggested angular resolution: $N_{\Omega}$ = 100 angles.
 
 \newpage
 Plots of interest include:
@@ -519,7 +522,7 @@ $q^{``}_{dist}$ $[$kW~m$^{-2}$$]$	& Duration: Throughout fire growth and decay (
 	& [Institution Name]\_Parallel-Panel\_HRR\_qrad.csv \\
 &	\\
 Wall Flame Heat Flux & Output: 1 .csv file\\
-$q^{``}_{wall}$ $[$kW~m$^{-2}$$]$& File Format: 10 columns of data (HRR \& total flame heat flux, at the centerline of panel walls, at 9 heights, $z$, above the base of samples )\\
+$\dot{q}^{''}_{wall}$ $[$kW~m$^{-2}$$]$& File Format: 10 columns of data (HRR \& total flame heat flux, at the centerline of panel walls, at 9 heights, $z$, above the base of samples )\\
 	& Resolution: Spatially-resolved heat feedback profiles at \href{https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/NIST_Parallel_Panel/Experimental_Data/PMMA_heatflux.csv}{10 representative fire sizes, 120~kW$<$HRR$<$2800~kW}\\
 	& Duration: From ignition until peak HRR \\
 	& File Naming Convenction: [Institution Name]\_Parallel-Panel\_q\_wall.csv \\
