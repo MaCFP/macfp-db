@@ -11,9 +11,7 @@ Please read the [Modeling Guidelines for the MaCFP 2023 Workshop](https://github
 
 Please visit our [wiki pages](https://github.com/MaCFP/macfp-db/wiki) for additional details.
 
-[**MaCFP 2017 presentations can be found on the IAFSS website**](http://www.iafss.org/macfp/3770-2/)
-
-Presentations for the MaCFP workshops can also be found on the [**GitHub Releases**](https://github.com/MaCFP/macfp-db/releases) page:
+Presentations for the MaCFP workshops can be found on the [**GitHub Releases**](https://github.com/MaCFP/macfp-db/releases) page:
 
 [**MaCFP-1 (Lund, 2017)**](https://github.com/MaCFP/macfp-db/releases/tag/macfp-1.0)
 
