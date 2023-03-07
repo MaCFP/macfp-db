@@ -314,7 +314,7 @@ Plots of interest include:
 The data required to generate these plots should be provided as ASCII files organized in simple comma-delimited format.
 
 \subsection{FM-Burner}
-The \href{https://github.com/MaCFP/macfp-db/tree/master/Extinction/NIST_Pool_Fires}{FM-Burner} corresponds to a 13.7 cm diameter, controlled coflow (a mixture of air and nitrogen), round ethylene diffusion flame experiment currently studied at FM Global (see documentation here). FM-Burner includes global measurements at coflow oxygen mole fractions of 20.9%, 19%, 17% and 15%, and detailed measurements at coflow oxygen mole fraction of 20.9%, 16.8% and 15.2%. Groups interested in simulating FM-Burner are invited to predict the changes in flame radiation. Simulations with a prescribed radiant fraction (taken as the measured averaged value) are acceptable as well.
+The \href{https://github.com/MaCFP/macfp-db/tree/master/Extinction/NIST_Pool_Fires}{FM-Burner} corresponds to a 13.7 cm diameter, controlled coflow (a mixture of air and nitrogen), round ethylene diffusion flame experiment currently studied at FM Global. FM-Burner includes global measurements at coflow oxygen mole fractions of 20.9\%, 19\%, 17\% and 15\%, and detailed measurements at coflow oxygen mole fraction of 20.9\%, 16.8\% and 15.2\%. Groups interested in simulating FM-Burner are invited to predict the changes in flame radiation. Simulations with a prescribed radiant fraction (taken as the measured averaged value) are acceptable as well.
 
 The experimental database includes combustion efficiency as a function of coflow oxygen mole fraction for four different fuels: methane, ethylene, propylene, and propane. Modelers are invited to predict the limiting oxygen concentration at extinction for each fuel and for a range of grid resolutions.
 
@@ -425,9 +425,9 @@ $\epsilon$	&[-]				&Emissivity\\
 \clearpage
 \section{Fire Growth Experiments}
 \label{Sec:Fire Growth}
-Two new fire growth experiments are now provided for consideration in the MaCFP-3 Workshop~\cite{chaudhari2021experimental, Leventon2022ParallelPanel}. Both experimental cases study ignition of and flame spread over the same exact same reference material studied in the MaCFP-2 Workshop (i.e., cast black PMMA). Measurement data obtained in each of these fire growth experiments includes (but is not limited to): total heat release rate (HRR, $[$kW$]$), flame to wall heat flux ($\dot{q}^{\pp}_{wall}$, $[$kW~m$^{-2}$$]$), and flame heat flux at a distance ($\dot{q}^{\pp}_{dist}$, $[$kW~m$^{-2}$$]$). These measurements, as well as detailed descriptions of experiments were set up and conducted, are provided below on the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth}{Fire\_Growth} page of the Github repository.
+Two new fire growth experiments are now provided for consideration in the MaCFP-3 Workshop~\cite{chaudhari2021experimental, Leventon2022ParallelPanel}. Both experimental cases study ignition of and flame spread over the same exact same reference material studied in the MaCFP-2 Workshop (i.e., cast black PMMA). Measurement data obtained in each of these fire growth experiments includes (but is not limited to): total heat release rate (HRR, [kW]), flame to wall heat flux ($\dot{q}^{\pp}_{wall}$, [kW~m$^{-2}$]), and flame heat flux at a distance ($\dot{q}^{\pp}_{dist}$, [kW~m$^{-2}$]). These measurements, as well as detailed descriptions of experiments were set up and conducted, are provided below on the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth}{Fire\_Growth} page of the Github repository.
 
-Fire growth modelers are asked to prepare simulations using $two$ pyrolysis models (i.e., two sets of material properties ): the ``most average'' and ``most accurate'' models. Repeating simulations in this manner will enable a controlled analysis of the sensitivity of fire growth predictions to condensed phase material properties. Both of these pyrolysis models will be identified by their ability to predict ignition, burning rate, and heat transfer through the solid, as quantified based on model-predictions of: (a) onset time of mass loss, (b) average mass loss rate, and (c) the time at which back surface temperature reaches a critical value.
+Fire growth modelers are asked to prepare simulations using \emph{two} pyrolysis models (i.e., two sets of material properties ): the ``most average'' and ``most accurate'' models. Repeating simulations in this manner will enable a controlled analysis of the sensitivity of fire growth predictions to condensed phase material properties. Both of these pyrolysis models will be identified by their ability to predict ignition, burning rate, and heat transfer through the solid, as quantified based on model-predictions of: (a) onset time of mass loss, (b) average mass loss rate, and (c) the time at which back surface temperature reaches a critical value.
 
 First, initial model setup should be performed using a pyrolysis parameter set (i.e., material properties) that was \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Material_Properties}{originally calibrated as part of the MaCFP-2 Workshop}. Specifically, modelers will be asked to use a ``most average'' material property data set, which will be identified based on a comparison of the predictions of gasification scenarios performed for MaCFP-2. As such, this suggested property set is not meant to be endorsed as being the most ``correct'' property set, but rather just the set of material properties that predicts the most characteristic gasification simulations of the community. This ``most average'' property data set will be shared with participants at the virtual meeting on \textcolor{red}{March 22, 2023}.
 
@@ -436,7 +436,7 @@ Next, coupled condensed- and gas-phase fire growth simulations should be perform
 \subsection {UMD-SBI (Single Burner Item)}
 Seven experiments were performed at the University of Maryland (UMD) on the same cast black PMMA considered in the MaCFP-2 Workshop using the experimental setup, shown in Fig.~\ref{fig:UMDCornerFireSpreadSetup}. These experiments were based on the Single Burning Item (SBI) test~\cite{EN-13823standard}, but with symmetric panels. In these tests, two 1.46~m tall, 0.50~m wide panels of PMMA were arranged in a corner wall configuration. Panels were ignited 3.5~cm above their base by a 30~kW, triangular propane sand burner and the wall flame was allowed to spread upwards until measured HRR reached 300~kW. Once the HRR exceeded this threshold value, the propane burner (ignition source) was turned off and the flame was extinguished.
 
-A brief description of the experimental setup, measurement procedures, and data processing is provided on the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/UMD_SBI}{UMD\_SBI} page of the Github repository. A more complete description can be found elsewhere~\cite{chaudhari2021experimental}.
+A brief description of the experimental setup, measurement procedures, and data processing is provided on the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/UMD_SBI}{UMD-SBI} page of the Github repository. A more complete description can be found elsewhere~\cite{chaudhari2021experimental}.
 
 Measurement data obtained in this test series includes:
 \begin{itemize}[noitemsep]
@@ -446,7 +446,7 @@ Measurement data obtained in this test series includes:
 \item Radiative intensity at a distance (emissions between 900~nm $\pm10$~nm); 
 \item Photographs and video of material ignition and fire growth behavior.
 \end{itemize}
-%\clearpage
+
 \begin{figure}
      \centering
          \includegraphics[width=0.75\textwidth]{../../Fire_Growth/UMD_SBI/Documentation/UMDCornerFireSpreadSetup.jpg}
