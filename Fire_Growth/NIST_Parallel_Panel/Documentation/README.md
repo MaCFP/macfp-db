@@ -8,7 +8,7 @@ Note: The identification of any commercial product or trade name does not imply 
 
 ### Test Overview
 
-A set of 6 experiments was performed on poly(methyl methacrylate), PMMA. In each test, samples (i.e., 2.44 m tall, 0.61 m wide slabs of PMMA mounted in a parallel panel configuration) were exposed to a propane burner (nominal heat release rate, HRR = 60 kW), which was turned off after sustained flaming was observed across the panel walls. Flames were allowed to spread upward across the panels and continue burning until self-extinction following complete sample burnout.
+A set of 6 experiments was performed on poly(methyl methacrylate), PMMA. In each test, samples (i.e., 2.44 m tall, 0.61 m wide, and 5.8 mm thick slabs of PMMA mounted in a parallel panel configuration) were exposed to a propane burner (nominal heat release rate, HRR = 60 kW), which was turned off after sustained flaming was observed across the panel walls. Flames were allowed to spread upward across the panels and continue burning until self-extinction following complete sample burnout.
 
 During experiments, measurements were acquired and recorded using National Instruments (NI) data acquisition (DAQ) modules and using a custom program called MIDAS (Modular In-situ Data Acquisition System), which was developed in LabVIEW. Mean values from each channel were recorded at 1 Hz. Ultimately, the uncertainties from the DAQ system were orders of magnitude lower than those of the measurement devices and/or systems used in these experiments. 
 
@@ -23,7 +23,7 @@ Measurement data obtained in this test series includes:
 
 #### Parallel Panel Apparatus
 
-Figure 1 provides a schematic of the Parallel Panel test apparatus used in these experiments; this experimental setup was based on an assembly originally developed for experiments that measured flame spread rate over combustible wall lining materials [2]. As seen here, PMMA slabs, each 2.44 m tall by 0.61 m wide (nominally 8 ft. tall by 2 ft. wide) and  5.8 mm thick are mounted onto two inert parallel walls and ignited at their base using a rectangular propane burner (description below). The panel walls were each constructed by a 25 mm thick layer Marinite Board (Thermophysical properties [3] available in Table 3) attached to a 13 mm thick layer of plywood, both of which are attached to a vertical metal frame. The metal support frame for the Parallel Panel Apparatus was constructed in two parts, each positioned on a sliding track. The panels were positioned such that the front surface of each sample aligned with the outer edge of the propane burner below (i.e., 30 cm apart); the bottom edge of each sample aligned with the top edge of the burner and was sealed by aluminum tape. The origin of the coordinate system is located at the center of the top of the propane burner; with the positive _z_-direction identifying height above the top surface of the burner in the vertical direction (see Fig. 1).
+Figure 1 provides a schematic of the Parallel Panel test apparatus used in these experiments. This experimental setup was based on an assembly originally developed at FM Global for experiments that measured flame spread rate over combustible wall lining materials [2]; this test method has been standardized as FM 4910 [7]. As seen here, PMMA slabs, each 2.44 m tall by 0.61 m wide (nominally 8 ft. tall by 2 ft. wide) and  5.8 mm thick are mounted onto two inert parallel walls and ignited at their base using a rectangular propane burner (description below). The panel walls were each constructed by a 25 mm thick layer Marinite Board (Thermophysical properties [3] available in Table 3) attached to a 13 mm thick layer of plywood, both of which are attached to a vertical metal frame. The metal support frame for the Parallel Panel Apparatus was constructed in two parts, each positioned on a sliding track. The panels were positioned such that the front surface of each sample aligned with the outer edge of the propane burner below (i.e., 30 cm apart); the bottom edge of each sample aligned with the top edge of the burner and was sealed by aluminum tape. The origin of the coordinate system is located at the center of the top of the propane burner; with the positive _z_-direction identifying height above the top surface of the burner in the vertical direction (see Fig. 1).
 
 Samples were attached to the parallel panel walls by a series of bolts (twelve per panel), which were evenly distributed at six heights, _z_, across the height of each sample. Each bolt was drilled approximately 10 cm away from the centerline of the panels (i.e., at _y_ = -10 cm or _y_ = 10 cm; see Fig. 1 for relevant coordinate system). A steel washer, approximately 2.5 cm in diameter, was used to distribute the load held by the bolt at each attachment point at the sample's front surface. Additionally, a series of  steel brackets were used to secure the top, bottom, and outer edges of each sample to the panel walls. 
 
@@ -31,7 +31,7 @@ In each test, measurements of total flame to surface heat flux were obtained by 
 
 <img src="https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/NIST_Parallel_Panel/Documentation/Panel_Assembly.png" width="400">
 
-*Figure 1.* Schematic of the NIST Parallel Panel Apparatus
+Figure 1. Schematic of the Parallel Panel Apparatus (original apparatus design based on FM 4910 [7]; tests conducted at NIST)
 
 #### Propane Burner 
 
@@ -121,3 +121,4 @@ This work was supported by the Office of Nuclear Regulatory Research (RES) of th
 4.  Wu. P., Parallel Wall Fire Tests with PMMA and FRPPMMA, Technical Memorandum 0003024286, FM Global, December 1997.
 5.  Bryant, R.A., Bundy, M.F., The NIST 20 MW Calorimetry measurement system for large-fire research. NIST Technical Note 2077, National Institute of Standards and Technology, Gaithersburg, Maryland, 2019
 6.  Pitts, W.M., Murthy, A.V., De Ris, J.L. Filtz, J.-R., Nygard, K., Smith, D., and Wetterlund, I. Round robin study of total heat flux gauge calibration at fire laboratories. Fire Safety Journal, 41(6):459-475, 2006.
+7.  FM Global, FM 4910
