@@ -187,25 +187,24 @@ Leventon, I., Batiot, B., Bruns, M., Hostikka, S., Nakamura, Y., Reszka, P., Rog
 \label{Sec:MaCFP-3}
 \subsection{Workshop Presentation Topics}
 \label{Sec:MaCFP-3 Target Cases}
-On Sunday, October 22, 2023, the third Measurement and Computation of Fire Phenomena Workshop (MaCFP-3) will be hosted (in-person) as a pre-event to the IAFSS meeting in Tsukuba, Japan. At this workshop, we will present new experimental measurements and numerical simulations focused on separate condensed- and gas-phase phenomena as well as our first ever coordinated attempt to model coupled condensed/gas phase cases: flame spread over a combustible solid (i.e., the reference material characterized as part of the MaCFP-2 Workshop). In addition, a new sub-group focusing on Radiation Heat Transfer Phenomena will be launched. It will focus on creating new radiation benchmark problems for the fire-related radiation problems in gas and condensed phase, and using them to improve the radiation sub models of the fire models.
+On Sunday, October 22, 2023, the third Measurement and Computation of Fire Phenomena Workshop (MaCFP-3) will be hosted (in-person) as a pre-event to the IAFSS meeting in Tsukuba, Japan. At this workshop, we will present new experimental measurements and numerical simulations focused on separate condensed- and gas-phase phenomena as well as our first ever coordinated attempt to model coupled condensed/gas phase cases: flame spread over a combustible solid (i.e., the reference material characterized as part of the MaCFP-2 Workshop). In addition, a new sub-group focusing on Radiation Heat Transfer Phenomena will be launched. It will focus on creating new radiation benchmark problems for the fire-related radiation problems in gas and condensed phase, and using them to improve the radiation sub models of the fire models.\\
 
 MaCFP-3 target presentations include:
-\begin{itemize}[noitemsep,topsep=0pt]
+\begin{itemize}[noitemsep]
 \item \href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{NIST-Pool-Fires}: 30 cm, 37 cm, and 100 cm diameter liquid pool and gaseous burners studied at NIST and featuring multiple fuels;
 \item \href{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}{FM-Burner}: 13.7 cm diameter ethylene diffusion flames studied at FM Global and featuring a controlled co-flow oxygen-nitrogen oxidizer;
 \item \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Validation_Data/NIST_Gasification_Apparatus}{NIST-Gasification-Apparatus}: bench-scale thermal degradation experiments conducted in the NIST gasification apparatus, providing validation data for PMMA pyrolysis models;
-\item \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/UMD_SBI}{UMD-SBI}: Flame spread experiments in a 1.46 m corner wall configuration (single burning item) studied at the University of Maryland with MaCFP PMMA;
-\item \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel}{NIST-Parallel-Panel}: Flame spread experiments in a 2.44 m parallel panel configuration studied at NIST with MaCFP PMMA.
+\item \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/UMD_SBI}{UMD-SBI}: Flame spread experiments in a 1.46 m corner wall configuration studied at the University of Maryland with MaCFP PMMA (based on the Single Burning Item (SBI) Test, EN13823~\cite{EN-13823standard});
+\item \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel}{NIST-Parallel-Panel}: Flame spread experiments in a 2.44 m parallel panel configuration studied at NIST with MaCFP PMMA (based on the FM4910 Parallel Panel Test~\cite{FM-4910standard}).
 \end{itemize}
 
 
 \subsection{Workshop Schedule}
 
-The MaCFP-3 Workshop is tentatively scheduled to have two sessions (morning and afternoon, with a lunch break in between). This first half of the meeting will focus on target experiments (and related modeling) that have been organized separately by either the gas-phase or condensed-phase working groups (e.g., pool fires or determination of solid-phase material properties). The second half of the meeting will focus on coupled solid/gas phase experiments (i.e., fire growth over a combustible solid). In each session, an emphasis is maintained on providing time for open discussion among active participants of the working group in order to facilitate ongoing and future collaboration in this effort. A poster session will be organized for experimentalists and modelers to discuss current results and possible future target experiments. The workshop will be organized to allow substantial time for open discussion and interaction among participants.
+The MaCFP-3 Workshop is tentatively scheduled to have two sessions (morning and afternoon, with a lunch break in between). This first half of the meeting will focus on target experiments (and related modeling) that have been organized separately by either the gas-phase or condensed-phase working groups (e.g., pool fires or determination of solid-phase material properties). The second half of the meeting will focus on coupled solid/gas phase experiments (i.e., fire growth over a combustible solid). In each session, an emphasis is maintained on providing time for open discussion among active participants of the working group in order to facilitate ongoing and future collaboration in this effort. A poster session will be organized for experimentalists and modelers to discuss current results and possible future target experiments. The workshop will be organized to allow substantial time for open discussion and interaction among participants.\\
 
 Discussion topics may include:
-
-\begin{itemize}[noitemsep,topsep=0pt]
+\begin{itemize}[noitemsep]%,topsep=0pt
 \item Guidelines for experimental calibration/description needs
 \item Guidelines, needs, and/or knowledge gaps in pyrolysis/fire model verification and validation
 \item Understanding fire model sensitivity to variability in pyrolysis model parameters
@@ -460,7 +459,7 @@ First, initial model setup should be performed using a pyrolysis parameter set (
 Next, coupled condensed- and gas-phase fire growth simulations should be performed using the pyrolysis model that participants feel best captures available validation data. The MaCFP organizing committee will not identify a unique ``best'' pyrolysis model; however, we will prepare a means to objectively rank the predictions of available pyrolysis models based on a comparison of model predictions of new gasification experiments that were conducted for model validation for the MaCFP-3 Workshop (see Sec.~\ref{Sec:Pyrolysis}). These updated material property datasets will be shared with the community in a virtual meeting (mid-summer, 2023). Again, this model comparison will be based on the same metrics defined above to assess the ability of the model to predict ignition, burning rate, and heat transfer through MaCFP-PMMA.
 
 \subsection {UMD-SBI (Single Burning Item)}
-Seven experiments were performed at the University of Maryland (UMD) on the same cast black PMMA considered in the MaCFP-2 Workshop using the experimental setup, shown in Fig.~\ref{fig:UMDCornerFireSpreadSetup}. These experiments were based on the Single Burning Item (SBI) test~\cite{EN-13823standard}, but with symmetric panels. In these tests, two 1.46~m tall, 0.50~m wide panels of PMMA were arranged in a corner wall configuration. Panels were ignited 3.5~cm above their base by a 30~kW, triangular propane sand burner and the wall flame was allowed to spread upwards until measured HRR reached 300~kW. Once the HRR exceeded this threshold value, the propane burner (ignition source) was turned off and the flame was extinguished.
+Seven experiments were performed at the University of Maryland (UMD) on the same cast black PMMA considered in the MaCFP-2 Workshop using the experimental setup, shown in Fig.~\ref{fig:UMDCornerFireSpreadSetup}. These experiments were based on the EN13823 Single Burning Item (SBI) Test~\cite{EN-13823standard}, but with symmetric panels. In these tests, two 1.46~m tall, 0.50~m wide panels of PMMA were arranged in a corner wall configuration. Panels were ignited 3.5~cm above their base by a 30~kW, triangular propane sand burner and the wall flame was allowed to spread upwards until measured HRR reached 300~kW. Once the HRR exceeded this threshold value, the propane burner (ignition source) was turned off and the flame was extinguished.
 
 A brief description of the experimental setup, measurement procedures, and data processing is provided on the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/UMD_SBI}{UMD\_SBI} page of the Github repository. A more complete description can be found elsewhere~\cite{chaudhari2021experimental}.
 
@@ -503,8 +502,9 @@ Plots of interest include:
 \subsection {NIST-Parallel-Panel}
 A set of 6 experiments was performed at the National Institute of Standards and Technology (NIST) on the same cast black PMMA considered in the MaCFP-2 Workshop. In each test, samples (i.e., 2.44~m tall, 0.61 m wide, 5.8~mm thick slabs of PMMA mounted in a parallel panel configuration) were exposed to a propane burner (nominal heat release rate, HRR = 60~kW), which was turned off after sustained flaming was observed across the panel walls. Flames were allowed to spread upward across the panels and continue burning until self-extinction following complete sample burnout. Peak HRR in these experiments measured approximately 3~MW.
 
-Figure~\ref{fig:Panel_Schematic} provides a schematic of the Parallel Panel test apparatus used in these experiments; this experimental setup was based on an assembly originally developed for experiments that measured flame spread rate over combustible wall lining materials~\cite{Beaulieu2007Parallel}. A brief description of the experimental setup, measurement procedures, and data processing is provided on the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel}{NIST\_Parallel\_Panel} page of the Github repository.
+Figure~\ref{fig:Panel_Schematic} provides a schematic of the Parallel Panel test apparatus used in these experiments. This experimental setup was based on an assembly originally developed at FM Global for experiments that measured flame spread rate over combustible wall lining materials~\cite{Beaulieu2007Parallel}; this test method has been standardized as FM~4910~\cite{FM-4910standard}. A brief description of the experimental setup, measurement procedures, and data processing is provided on the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel}{NIST\_Parallel\_Panel} page of the MaCFP Github repository.
 
+\clearpage
 Measurement data obtained in this test series includes:
 \begin{itemize}[noitemsep]
 \item Time-resolved measurements of fire size (kW), soot generation, and gaseous species production (CO and CO$_2$);
@@ -516,8 +516,9 @@ Measurement data obtained in this test series includes:
 
 \begin{figure}
      \centering
+     \captionsetup{justification=centering}
          \includegraphics[width=0.75\textwidth]{../../Fire_Growth/NIST_Parallel_Panel/Documentation/Panel_Assembly.pdf}
-         \caption{Schematic of the NIST Parallel Panel Apparatus}
+         \caption{Schematic of the Parallel Panel Apparatus (original apparatus design based on FM~4910~\cite{FM-4910standard}; tests conducted at NIST)}
          \label{fig:Panel_Schematic}
 \end{figure}
 
@@ -616,19 +617,19 @@ NIST-Gasification-Apparatus & Isaac Leventon \\
 \hline
 UMD-SBI & Stanislav Stoliarov \\
 (Flame spread experiments in a 1.46-m tall corner wall &\href{mailto:stolia@umd.edu}{stolia@umd.edu}\\
-configuration)&\\
+configuration; based on EN13823~\cite{EN-13823standard})&\\
 &\\
 \hline
 NIST-Parallel-Panel &Isaac Leventon \\
 (Flame spread experiments in a 2.44-m tall parallel panel&\href{mailto:isaac.leventon@nist.gov}{isaac.leventon@nist.gov}\\
-configuration)& \\
+configuration; based on FM4910~\cite{FM-4910standard})& \\
 & \\
 \hline
+
 \end{tabular}
 \end{table}
 
-
- \clearpage
+\clearpage
 \bibliography{../MaCFP_References.bib}
 
 \end{document}
