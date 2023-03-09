@@ -71,6 +71,20 @@ Comments:
 
 ------------------
 
+### Pyrolysis Models (include parameters)
+Solver (e.g., GPyro, FDS, ThermaKin; include version):
+
+Radiation absorption model:
+
+Radiation model:
+
+Material property set: (developed by [institution]; calibration data; calibration method used [e.g., manual iteration, monte carlo sampling, optimization algorithm, PROPTI, Gpyro])
+
+
+Comments:
+
+------------------
+
 ### Discretization methods
 Time:
 
