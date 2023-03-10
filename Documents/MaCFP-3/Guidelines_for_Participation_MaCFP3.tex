@@ -108,14 +108,14 @@
 \begin{small}
 {\bf The MaCFP Working Group Organizing Committee:} \\
 {\footnotesize Benjamin Batiot (University of Poitiers, France); Morgan Bruns (St. Mary's University, USA); Simo Hostikka (Aalto University, Finland); Isaac Leventon (National Institute of Standards and Technology, USA); Yuji Nakamura (Toyohashi University of Technology, Japan); Pedro Reszka (Universidad Adolfo Ibáñez, Chile); Thomas Rogaume (University of Poitiers, France); Stanislav Stoliarov (University of Maryland, USA); Fabian Bränsström (University of Wuppertal)}\\
-{\footnotesize Alexander Brown (Sandia National Laboratories, USA); Andres Fuentes (Universidad Técnica Federico Santa María, Chile); Michael Gollner (University of California, Berkeley, USA); Anthony Hamins (National Institute of Standars and Technology, USA); John Hewson (Sandia National Laboratories, USA); Naian Liu (University of Science and Technology of China, China); Randy McDermott (National Institute of Standards and Technology, USA); Bart Merci (Ghent University, Belgium); Arnaud Trouvé (University of Maryland, USA); Yi Wang (FM Global, USA); Beth Weckman (University of Waterloo, Canada)}
+{\footnotesize Alexander Brown (Sandia National Laboratories, USA); Andres Fuentes (Universidad Técnica Federico Santa María, Chile); Michael Gollner (University of California, Berkeley, USA); Anthony Hamins (National Institute of Standards and Technology, USA); John Hewson (Sandia National Laboratories, USA); Naian Liu (University of Science and Technology of China, China); Randy McDermott (National Institute of Standards and Technology, USA); Bart Merci (Ghent University, Belgium); Arnaud Trouvé (University of Maryland, USA); Yi Wang (FM Global, USA); Beth Weckman (University of Waterloo, Canada)}
 
 
 \end{small}
 \end{flushright}
 \end{minipage}
 \begin{small}
-Document Prepared: March 9, 2023\\
+Document Prepared: March 10, 2023\\
 \end{small}
 \newpage
 \thispagestyle{empty}
@@ -192,10 +192,10 @@ On Sunday, October 22, 2023, the third Measurement and Computation of Fire Pheno
 MaCFP-3 target presentations include:
 \begin{itemize}[noitemsep]
 \item \href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{NIST-Pool-Fires}: 30 cm, 37 cm, and 100 cm diameter liquid pool and gaseous burners studied at NIST and featuring multiple fuels;
-\item \href{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}{FM-Burner}: 13.7 cm diameter ethylene diffusion flames studied at FM Global and featuring a controlled co-flow oxygen-nitrogen oxidizer;
+\item \href{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}{FM-Burner}: 13.7 cm inner diameter (15.2 cm outer diameter) ethylene diffusion flames studied at FM Global and featuring a controlled co-flow oxygen-nitrogen oxidizer;
 \item \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Validation_Data/NIST_Gasification_Apparatus}{NIST-Gasification-Apparatus}: bench-scale thermal degradation experiments conducted in the NIST gasification apparatus, providing validation data for PMMA pyrolysis models;
 \item \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/UMD_SBI}{UMD-SBI}: Flame spread experiments in a 1.46 m corner wall configuration studied at the University of Maryland with MaCFP PMMA (based on the Single Burning Item (SBI) Test, EN13823~\cite{EN-13823standard});
-\item \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel}{NIST-Parallel-Panel}: Flame spread experiments in a 2.44 m parallel panel configuration studied at NIST with MaCFP PMMA (based on the FM4910 Parallel Panel Test~\cite{FM-4910standard}).
+\item \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel}{NIST-Parallel-Panel}: Flame spread experiments in a 2.44 m parallel panel configuration studied at NIST with MaCFP PMMA (based on the FM4910 Parallel Panel Test~\cite{tewarson2001flammability,FM-4910standard}).
 \end{itemize}
 
 
@@ -339,9 +339,11 @@ Plots of interest include:
 The data required to generate these plots should be provided as ASCII files organized in simple comma-delimited format.
 
 \subsection{FM-Burner}
-The \href{https://github.com/MaCFP/macfp-db/tree/master/Extinction/NIST_Pool_Fires}{FM-Burner} corresponds to a 13.7 cm diameter, controlled coflow (a mixture of air and nitrogen), round ethylene diffusion flame experiment currently studied at FM Global. FM-Burner includes global measurements at coflow oxygen mole fractions of 20.9\%, 19\%, 17\% and 15\%, and detailed measurements at coflow oxygen mole fraction of 20.9\%, 16.8\% and 15.2\%. Groups interested in simulating FM-Burner are invited to predict the changes in flame radiation. Simulations with a prescribed radiant fraction (taken as the measured averaged value) are acceptable as well.
+The \href{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}{FM-Burner} corresponds to a 13.7 cm inner diameter (15.2 cm outer diameter), controlled coflow (a mixture of air and nitrogen), round ethylene diffusion flame experiment currently studied at FM Global. FM-Burner includes global measurements at coflow oxygen mole fractions of 20.9\%, 19\%, 17\% and 15\%, and detailed measurements at coflow oxygen mole fraction of 20.9\%, 16.8\% and 15.2\%. Measurements include radiant fraction, radiant power distribution along height, spatial distributions of soot volume fraction, flame temperature, local radiation intensity, etc. Velocity measurements will be provided in Summer 2023 to supplement the database.
 
-The experimental database includes combustion efficiency as a function of coflow oxygen mole fraction for four different fuels: methane, ethylene, propylene, and propane. Modelers are invited to predict the limiting oxygen concentration at extinction for each fuel and for a range of grid resolutions.
+Groups interested in simulating FM-Burner are invited to predict the changes in flame radiation. Simulations with a prescribed radiant fraction (taken as the measured averaged value) are acceptable as well.
+
+The experimental database also includes combustion efficiency as a function of coflow oxygen mole fraction for four different fuels: methane, ethylene, propylene, and propane. \textcolor{red}{Modelers are invited to predict the limiting oxygen concentration at extinction for each fuel and for a range of grid resolutions.}
 
 \vskip.5\baselineskip
 \noindent Suggested grid resolution: $\Delta x$ from 0.5 cm to 2 cm.
@@ -381,7 +383,7 @@ In discussions at the MaCFP-2 Workshop it was noted that clear variations in mod
 A new calibration exercise, along with new measurement data for pyrolysis model validation, was thus prepared to assist model development prior to the MaCFP-3 Workshop. All experiments were conducted using the NIST Gasification Apparatus~\cite{austin1998gasification}, which was specifically refurbished (multiple system components were upgraded or replaced), recalibrated, and brought back online to enable the study of MaCFP-PMMA gasification in a well-characterized anaerobic environment. The NIST Gasification Apparatus was originally designed and built in the late 1990s to expose solid or liquid samples to a uniform heat flux in a non-oxidizing or partially oxidizing atmosphere. It offers a stable, well-characterized environment for the study of anaerobic decomposition of pyrolyzable solids. Further, this instrument was not used during MaCFP-2 by any group for pyrolysis model development thus it offers a unique dataset for independent model validation.
 
 \subsection{NIST-Gasification-Apparatus}
-A set gasification experiments was conducted in the refurbished NIST Gasification Apparatus (Fig.~\ref{fig:NISTGasApp}) on the poly(methyl methacrylate), PMMA, made available to participants in the MaCFP-2 Workshop~\cite{Leventon2023Gasification}. For each test, samples (i.e., PMMA discs of approximate dimensions: 7~cm diameter, 5.8~mm thickness) were measured, weighed, mounted to a rigid ceramic insulation board (with known thermophysical properties), and stored in a desiccator for a minimum of 24 hours. Prepared samples were then mounted to additional layers of this insulation material and exposed to radiant heating (nominally 25~kW~m$^{-2}$ and 50~kW~m$^{-2}$ across their top surface) in an anaerobic environment until complete decomposition was observed. Measurement data collected during these experiments includes:
+A set of gasification experiments was conducted in the refurbished NIST Gasification Apparatus (Fig.~\ref{fig:NISTGasApp}) on the poly(methyl methacrylate), PMMA, made available to participants in the MaCFP-2 Workshop~\cite{Leventon2023Gasification}. For each test, samples (i.e., PMMA discs of approximate dimensions: 7~cm diameter, 5.8~mm thickness) were measured, weighed, mounted to a rigid ceramic insulation board (with known thermophysical properties), and stored in a desiccator for a minimum of 24 hours. Prepared samples were then mounted to additional layers of this insulation material and exposed to radiant heating (nominally 25~kW~m$^{-2}$ and 50~kW~m$^{-2}$ across their top surface) in an anaerobic environment (nitrogen) until complete decomposition was observed. Measurement data collected during these experiments includes:
 \begin{itemize}[noitemsep]
 \item Time-resolved measurements of PMMA sample mass [g];
 \item Time-resolved measurements of PMMA back surface temperature [K];
@@ -450,7 +452,7 @@ $\epsilon$  &[-]        &Emissivity\\
 \clearpage
 \section{Fire Growth Experiments}
 \label{Sec:Fire Growth}
-Two new fire growth experiments are now provided for consideration in the MaCFP-3 Workshop~\cite{chaudhari2021experimental, Leventon2022ParallelPanel}. Both experimental cases study ignition of and flame spread over the same exact same reference material studied in the MaCFP-2 Workshop (i.e., cast black PMMA). Measurement data obtained in each of these fire growth experiments includes (but is not limited to): total heat release rate (HRR, [kW]), flame to wall heat flux ($\dot{q}^{\pp}_{wall}$, [kW~m$^{-2}$]), and flame heat flux at a distance ($\dot{q}^{\pp}_{dist}$, [kW~m$^{-2}$]). These measurements, as well as detailed descriptions of experiments were set up and conducted, are provided below on the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth}{Fire\_Growth} page of the Github repository.
+Two new fire growth experiments are now provided for consideration in the MaCFP-3 Workshop~\cite{chaudhari2021experimental, Leventon2022ParallelPanel}. Both experimental cases study ignition of and flame spread over the same exact reference material studied in the MaCFP-2 Workshop (i.e., cast black PMMA). Measurement data obtained in each of these fire growth experiments includes (but is not limited to): total heat release rate (HRR, [kW]), flame to wall heat flux ($\dot{q}^{\pp}_{wall}$, [kW~m$^{-2}$]), and flame heat flux at a distance ($\dot{q}^{\pp}_{dist}$, [kW~m$^{-2}$]). These measurements, as well as detailed descriptions of experiments were set up and conducted, are provided below on the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth}{Fire\_Growth} page of the Github repository.
 
 Fire growth modelers are asked to prepare simulations using \emph{two} pyrolysis models (i.e., two sets of material properties): the ``most average'' and ``most accurate'' models. Repeating simulations in this manner will enable a controlled analysis of the sensitivity of fire growth predictions to condensed phase material properties. Both of these pyrolysis models will be identified by their ability to predict ignition, burning rate, and heat transfer through the solid, as quantified based on model-predictions of: (a) onset time of mass loss, (b) average mass loss rate, and (c) the time at which back surface temperature reaches a critical value.
 
@@ -502,7 +504,7 @@ Plots of interest include:
 \subsection {NIST-Parallel-Panel}
 A set of 6 experiments was performed at the National Institute of Standards and Technology (NIST) on the same cast black PMMA considered in the MaCFP-2 Workshop. In each test, samples (i.e., 2.44~m tall, 0.61 m wide, 5.8~mm thick slabs of PMMA mounted in a parallel panel configuration) were exposed to a propane burner (nominal heat release rate, HRR = 60~kW), which was turned off after sustained flaming was observed across the panel walls. Flames were allowed to spread upward across the panels and continue burning until self-extinction following complete sample burnout. Peak HRR in these experiments measured approximately 3~MW.
 
-Figure~\ref{fig:Panel_Schematic} provides a schematic of the Parallel Panel test apparatus used in these experiments. This experimental setup was based on an assembly originally developed at FM Global for experiments that measured flame spread rate over combustible wall lining materials~\cite{Beaulieu2007Parallel}; this test method has been standardized as FM~4910~\cite{FM-4910standard}. A brief description of the experimental setup, measurement procedures, and data processing is provided on the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel}{NIST\_Parallel\_Panel} page of the MaCFP Github repository.
+Figure~\ref{fig:Panel_Schematic} provides a schematic of the Parallel Panel test apparatus used in these experiments. This experimental setup was based on an assembly originally developed at FM Global for experiments that measured fire propagation and smoke development behavior of polymeric materials~\cite{tewarson2001flammability}; this test method has been standardized as FM~4910~\cite{FM-4910standard}. A brief description of the experimental setup, measurement procedures, and data processing is provided on the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel}{NIST\_Parallel\_Panel} page of the MaCFP Github repository.
 
 \clearpage
 Measurement data obtained in this test series includes:
