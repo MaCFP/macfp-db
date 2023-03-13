@@ -65,4 +65,4 @@ The combustion efficiency and limiting oxygen index (LOI) for four (4) fuels (me
 7. T.C. Williams, C.R. Shaddix, K.A. Jensen, J.M. Suo-Anttil, Measurement of the dimensionless extinction coefficient of soot within laminar diffusion flames. International Journal of Heat and Mass Transfer 50:1616–1630, 2007.
 8. M.Y. Choi, G.W. Mulholland, A. Hamins, T. Kashiwagi, Comparisons of the Soot Volume Fraction Using Gravimetric and Light Extinction Techniques. Combustion and Flame, 102:161-169, 1995.
 9. Zeng, D., Wang, Y., Dependence of Limiting Oxygen Index of Buoyant Turbulent non-premixed Flame on Fuel, in: 26th ICDERS (International Colloquium
-on the Dynamics of Explosions and Reactive Systems), Boston, 2017.
+on the Dynamics of Explosions and Reactive Systems), Boston, 2017. [link to pdf](http://www.icders.org/ICDERS2017/abstracts/ICDERS2017-1074.pdf)
