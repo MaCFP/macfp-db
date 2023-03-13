@@ -17,6 +17,8 @@ Figure 3 shows the enclosure drawing. The enclosure has a cross section of 122 b
 
 Figure 3: Enclosure drawing, (a) front view; (b) top view (units are inches).
 
+### Radiative Characteristics of Buoyant Diffusion Flames
+
 The flame examined in this study has a theoretical heat release rate of 15 kW. Three oxygen concentrations are investigated, including normal air (20.9% oxygen by volume), 16.8% and 15.2% oxygen in nitrogen. The fuel flow rates and corresponding oxygen concentrations are listed in Table 1. The flow rate of oxidizer, i.e., air and nitrogen, under each OC condition is 3650±250 L/min. The corresponding nominal velocity normal to the sand bed is 0.041±0.003 m/s. The oxygen concentration in the co-flow is monitored using a gas analyzer, and verified at different locations around flame, i.e., 30 cm radial distance from the burner centerline, and -5 cm, 20 cm, 46 cm, and 71 cm height from the burner surface, respectively. The change of oxygen concentration does not exceed 0.1 vol%. 
 
 Table 1: Fuel and Oxidizer Flow Rate
@@ -40,6 +42,18 @@ The derivation of soot volume fraction from either radiation probe data or LII d
 
 Figure 4: FM Burner flame images at various oxygen concentrations.
 
+### Combustion Efficiency
+
+The combustion efficiency and limiting oxygen index (LOI) for four (4) fuels (methane, propylene, propane, and ethylene) are reported in [9]. The theoretical heat release of all test conditions is maintained at 10 kW.  The flame was anchored by 36 pre-mixed ethylene/air pilot flames surrounding the burner. Each premixed flame was adjusted to be approximately 2.5 cm long. The total heat release rate of pilot flames is approximately 1 kW.
+
+|Fuel               | LOI  (vol %)  | 
+|-------------------|---------|
+| methane (CH4)     | 12.1    |
+| propylene (C3H6)  | 11.2    |
+| propane (C3H8)    | 10.3    |
+| ethylene (C2H4)   | 8.2     |
+
+
 #### References
 
 1. Zeng, D., Wang, Y., Effect of oxygen depletion on the radiative characteristics of buoyant turbulent diffusion flames, in: 15th Fire & Materials Conference, 2017.
@@ -50,3 +64,5 @@ Figure 4: FM Burner flame images at various oxygen concentrations.
 6. Chatterjee, P., Zeng, D., and Wang, Y., Numerical Modeling of Soot-Radiation in Optically-Thin, Buoyant Diffusion Flames of Varying Oxygen Concentrations. Submitted to Proceedings of Combustion Institute, 2019.
 7. T.C. Williams, C.R. Shaddix, K.A. Jensen, J.M. Suo-Anttil, Measurement of the dimensionless extinction coefficient of soot within laminar diffusion flames. International Journal of Heat and Mass Transfer 50:1616–1630, 2007.
 8. M.Y. Choi, G.W. Mulholland, A. Hamins, T. Kashiwagi, Comparisons of the Soot Volume Fraction Using Gravimetric and Light Extinction Techniques. Combustion and Flame, 102:161-169, 1995.
+9. Zeng, D., Wang, Y., Dependence of Limiting Oxygen Index of Buoyant Turbulent non-premixed Flame on Fuel, in: 26th ICDERS (International Colloquium
+on the Dynamics of Explosions and Reactive Systems), Boston, 2017. [link to pdf](http://www.icders.org/ICDERS2017/abstracts/ICDERS2017-1074.pdf)
