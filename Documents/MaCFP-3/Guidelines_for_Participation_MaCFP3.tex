@@ -170,8 +170,8 @@ Interested modeling groups should inform the Gas Phase and Condensed Phase Pheno
 \begin{itemize}[noitemsep]
 \item Morgan Bruns, \href{mailto:mbruns@stmarytx.edu}{mbruns@stmarytx.edu} (Co-Chair of the Condensed Phase Phenomena subgroup) (NIST-Gasification-Apparatus, UMD-SBI, NIST-Parallel-Panel)
 \item Isaac Leventon, \href{mailto:isaac.leventon@nist.gov}{isaac.leventon@nist.gov} (Co-Chair of the Condensed Phase Phenomena subgroup) (NIST-Gasification-Apparatus, UMD-SBI, NIST-Parallel-Panel)
-\item Bart Merci, \href{mailto:Bart.Merci@ugent.be}{Bart.Merci@ugent.be} (Co-Chair of the Gas Phase Phenomena subgroup) (NIST-Pool-Fires, FM-Burner, UMD-SBI, NIST-Parallel-Panel)
-\item Arnaud Trouv\'e, \href{mailto:atrouve@umd.edu}{atrouve@umd.edu} (Co-Chair of the Phase Gas Phenomena subgroup) (NIST-Pool-Fires, FM-Burner, UMD-SBI, NIST-Parallel-Panel)
+\item Bart Merci, \href{mailto:Bart.Merci@ugent.be}{Bart.Merci@ugent.be} (Co-Chair of the Gas Phase Phenomena subgroup) (NIST-Waterloo-Pool-Fires, FM-Burner, UMD-SBI, NIST-Parallel-Panel)
+\item Arnaud Trouv\'e, \href{mailto:atrouve@umd.edu}{atrouve@umd.edu} (Co-Chair of the Phase Gas Phenomena subgroup) (NIST-Waterloo-Pool-Fires, FM-Burner, UMD-SBI, NIST-Parallel-Panel)
  \end{itemize}
 
 Users of the experimental measurements and model parameters found in the Condensed Phase Material Database~\cite{MaCFP-cond-db} are encouraged to: (a) cite the repository (see below); (b) to cite related summary publications, if using the analysis results prepared in these documents (e.g., conference proceedings~\cite{brown2018proceedings} or the preliminary summary of experimental measurements document~\cite{MaCFP-2_Prelim_Exp}); and (c) to directly credit the institutions that provided experimental measurements (relevant publications and contributor information) are detailed in the README file associated with each institutional dataset.
@@ -191,7 +191,8 @@ On Sunday, October 22, 2023, the third Measurement and Computation of Fire Pheno
 
 MaCFP-3 target presentations include:
 \begin{itemize}[noitemsep]
-\item \href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{NIST-Pool-Fires}: 30 cm, 37 cm, and 100 cm diameter liquid pool and gaseous burners studied at NIST and featuring multiple fuels;
+\item \href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{NIST-}
+\href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/Waterloo_Methanol}{Waterloo}-Pool-Fires: 30 cm, 37 cm, and 100 cm diameter liquid pool and gaseous burners studied at NIST and featuring multiple fuels;
 \item \href{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}{FM-Burner}: 13.7 cm inner diameter (15.2 cm outer diameter) ethylene diffusion flames studied at FM Global and featuring a controlled co-flow oxygen-nitrogen oxidizer;
 \item \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Validation_Data/NIST_Gasification_Apparatus}{NIST-Gasification-Apparatus}: bench-scale thermal degradation experiments conducted in the NIST gasification apparatus, providing validation data for PMMA pyrolysis models;
 \item \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/UMD_SBI}{UMD-SBI}: Flame spread experiments in a 1.46 m corner wall configuration studied at the University of Maryland with MaCFP PMMA (based on the Single Burning Item (SBI) Test, EN13823~\cite{EN-13823standard});
@@ -308,8 +309,19 @@ Two experiments of gas-phase fire behavior (liquid pool fires \& gaseous burners
 
 Modeling groups are encouraged to consider performing fine-grained simulations under the high-resolution conditions that are often the preferred choice made by CFD researchers, and also consider performing coarse-grained simulations under the moderate-to-marginal resolution conditions (sometimes called VLES) that are more representative of the choices made by CFD practitioners.
 
-\subsection{NIST-Pool-Fires}
-\href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{NIST-Pool-Fires} correspond to 30 cm, 37 cm, and 100 cm diameter pool and gaseous burner flames studied at NIST (see documentation provided here). Evaporating liquid pool fires should be simulated with both prescribed and predicted mass loss rate.
+\subsection{NIST-Waterloo-Pool-Fires}
+\href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{NIST}-\href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/Waterloo_Methanol}{Waterloo}-Pool-Fires correspond to 30 cm, 37 cm, and 100 cm diameter pool and gaseous burner flames studied at NIST and Waterloo (see documentation provided here), including: 
+
+\begin{enumerate}
+\item 30 cm Methanol Liquid Pool Fire [\href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/Waterloo_Methanol}{Waterloo} and \href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{NIST}]
+\item 30 cm Acetone Liquid Pool Fire [\href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{NIST}]
+\item 100 cm Methanol Liquid Pool Fire [\href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{NIST}]
+\item 37 cm Methane Gaseous Pool Fire (34 kW) [\href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{NIST}]
+\item 37 cm Propane Gaseous Pool Fire (50 kW) [\href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{NIST}]
+\end{enumerate}
+
+\vskip.5\baselineskip
+\noindent Evaporating liquid pool fires should be simulated with both prescribed and predicted mass loss rate.
 
 \vskip.5\baselineskip
 \noindent Suggested grid resolution (30 cm pool, 37 cm burner): $\Delta x$ from 0.5 cm to 6 cm.
@@ -323,17 +335,17 @@ Modeling groups are encouraged to consider performing fine-grained simulations u
 \newpage
 Plots of interest include:
 \begin{itemize}[noitemsep]
-\item Plots showing the mean and {\it rms} centerline temperature as a function of elevation {\it z};
-\item Plots showing the mean and {\it rms} vertical velocity as a function of elevation {\it z};
-\item Plots showing the mean and {\it rms} temperature as a function of radial position {\it r}, for different elevations {\it z};
-\item Plots showing the mean and {\it rms} vertical velocity as a function of radial position {\it r}, for different elevations {\it z};
-\item Plots showing the mean and {\it rms} radial velocity as a function of radial position {\it r}, for different elevations {\it z};
-\item Plots showing the mean centerline volume fractions of selected gas species as a function of elevation {\it z}.
-\item A plot showing the time variations of the heat release rate;
-\item Representative plots showing the instantaneous flame shape (e.g., identified as the 200-kW/m$^3$ iso-contour of the volumetric heat release rate, or using some other method to be specified);
-\item A plot quantifying the puffing frequency of the pool fire;
-\item Plots showing the radial variations of the total heat flux for gauges oriented horizontally, facing upwards, and located near the plane defined by the burner rim;
-\item Plots showing the vertical variations of the radiative heat flux for gauges oriented vertically, facing the centerline of the fire, and located at {\it r} = 60 cm and {\it r} = 207.5 cm.
+\item Plots showing the mean and {\it rms} centerline temperature as a function of elevation {\it z} (pool fires \#1 - \#5);
+\item Plots showing the mean and {\it rms} vertical velocity as a function of elevation {\it z} (pool fires \#1 - \#5);
+\item Plots showing the mean and {\it rms} temperature as a function of radial position {\it r}, for different elevations {\it z} (pool fires \#1 - \#3);
+\item Plots showing the mean and {\it rms} vertical velocity as a function of radial position {\it r}, for different elevations {\it z}  (pool fires \#1 and \#2);
+\item Plots showing the mean and {\it rms} radial velocity as a function of radial position {\it r}, for different elevations {\it z} (pool fires \#1 and \#2);
+\item Plots showing the mean centerline volume fractions of selected gas species as a function of elevation {\it z} (pool fires \#1, \#2, \#4, and \#5);
+\item A plot showing the time variations of the heat release rate (pool fires \#1 - \#5);
+\item Representative plots showing the instantaneous flame shape (e.g., identified as the 200-kW/m$^3$ iso-contour of the volumetric heat release rate, or using some other method to be specified) (pool fires \#1 - \#5);
+\item A plot quantifying the puffing frequency of the pool fire (pool fires \#1 - \#5);
+\item Plots showing the radial variations of the total heat flux for gauges oriented horizontally, facing upwards, and located on the plane defined by the burner rim, within and beyond the pool burner (pool fires \#1 - \#3);
+\item Plots showing the vertical variations of the radiative heat flux for gauges oriented vertically, facing the centerline of the fire, and located at {\it r} = 60 cm (pool fires \#1, \#2) and {\it r} = 207.5 cm (pool fire \#3).
  \end{itemize}
 
 The data required to generate these plots should be provided as ASCII files organized in simple comma-delimited format.
@@ -605,7 +617,7 @@ A Google Discussion Group for the MaCFP Working Group can be accessed online at:
 \begin{table}[htb]
 \begin{tabular}{|p{0.6\linewidth} | p{0.4\linewidth}|}
 \hline
-NIST-Pool-Fires           & Anthony Hamins\\
+NIST-Waterloo-Pool-Fires           & Anthony Hamins\\
 (Liquid pool fires and gaseous burner experiments)& \href{mailto:anthony.hamins@nist.gov}{anthony.hamins@nist.gov}\\
 &\\
 \hline
