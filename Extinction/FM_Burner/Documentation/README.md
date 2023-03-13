@@ -46,9 +46,8 @@ Figure 4: FM Burner flame images at various oxygen concentrations.
 
 The combustion efficiency and limiting oxygen index (LOI) for four (4) fuels (methane, propylene, propane, and ethylene) are reported in [9]. The theoretical heat release of all test conditions is maintained at 10 kW.  The flame was anchored by 36 pre-mixed ethylene/air pilot flames surrounding the burner. Each premixed flame was adjusted to be approximately 2.5 cm long. The total heat release rate of pilot flames is approximately 1 kW.
 
-|Fuel               | LOI     | 
+|Fuel               | LOI  (vol %)  | 
 |-------------------|---------|
-|                   |(vol %)  |
 | methane (CH4)     | 12.1    |
 | propylene (C3H6)  | 11.2    |
 | propane (C3H8)    | 10.3    |
