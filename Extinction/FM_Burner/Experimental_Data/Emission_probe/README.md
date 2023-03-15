@@ -1,7 +1,7 @@
 ## Emission Probe Experimental Data Files
 
 #### 01-Output_mean_Intensity.csv
-The file contains the mean radiation intensity of 1.6 cm optical interrogation spacing, and wavelengths of 950 and 675 nm. The data were measured at 1.0D (1 of burner diameter), 1.5D, 2.0D, 2.5D, 3.0D, and 3.5D heights, and different radiuses, in normal air condition.
+The file contains the mean radiation intensity of 1.6 cm optical interrogation spacing, and wavelengths of 950 and 675 nm. The data were measured at 1.0D (1 of burner *outer* diameter), 1.5D, 2.0D, 2.5D, 3.0D, and 3.5D heights, and different radiuses, in normal air condition.
 
 #### 02-Output_rms_Intensity.csv
 The file contains the RMS value of the radiation intensity fluctuation at the same locations as 1.
