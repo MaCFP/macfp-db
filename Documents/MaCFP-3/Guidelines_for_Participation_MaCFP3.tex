@@ -115,7 +115,7 @@
 \end{flushright}
 \end{minipage}
 \begin{small}
-Document Prepared: March 13, 2023\\
+Document Prepared: March 14, 2023\\
 \end{small}
 \newpage
 \thispagestyle{empty}
@@ -191,11 +191,11 @@ On Sunday, October 22, 2023, the third Measurement and Computation of Fire Pheno
 
 MaCFP-3 target presentations include:
 \begin{itemize}[noitemsep]
-\item \href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{NIST}-\href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/Waterloo_Methanol}{Waterloo}-Pool-Fires: 30 cm, 37 cm, and 100 cm diameter liquid pool and gaseous burners studied at NIST and featuring multiple fuels;
+\item \href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires}{NIST}-\href{https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/Waterloo_Methanol}{Waterloo}-Pool-Fires: 30 cm, 37 cm, and 100 cm diameter liquid pool and gaseous burners studied at NIST and Waterloo, and featuring multiple fuels;
 \item \href{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}{FM-Burner}: 13.7 cm inner diameter (15.2 cm outer diameter) ethylene diffusion flames studied at FM Global and featuring a controlled co-flow oxygen-nitrogen oxidizer;
 \item \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Validation_Data/NIST_Gasification_Apparatus}{NIST-Gasification-Apparatus}: bench-scale thermal degradation experiments conducted in the NIST gasification apparatus, providing validation data for PMMA pyrolysis models;
-\item \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/UMD_SBI}{UMD-SBI}: Flame spread experiments in a 1.46 m corner wall configuration studied at the University of Maryland with MaCFP PMMA (based on the Single Burning Item (SBI) Test, EN13823~\cite{EN-13823standard});
-\item \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel}{NIST-Parallel-Panel}: Flame spread experiments in a 2.44 m parallel panel configuration studied at NIST with MaCFP PMMA (based on the FM4910 Parallel Panel Test~\cite{tewarson2001flammability,FM-4910standard}).
+\item \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/UMD_SBI}{UMD-SBI}: Flame spread experiments in a 1.46 m tall corner wall configuration studied at the University of Maryland with MaCFP PMMA (based on the Single Burning Item (SBI) Test, EN13823~\cite{EN-13823standard});
+\item \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel}{NIST-Parallel-Panel}: Flame spread experiments in a 2.44~m tall parallel panel configuration studied at NIST with MaCFP PMMA (based on the FM4910 Parallel Panel Test~\cite{tewarson2001flammability,FM-4910standard}).
 \end{itemize}
 
 
@@ -271,7 +271,7 @@ Discussion topics may include:
 December 20, 2022      & Share call for participation in MaCFP-3\\
                        & Experimental Measurements (fire growth) added to repo\\
 \\
-March 13, 2023          & Share `Guidelines for Participation in MaCFP-3' document \\
+March 14, 2023          & Share `Guidelines for Participation in MaCFP-3' document \\
                        & Modeling results from MaCFP-2 organized and added to Github Repo (simulations data + PMMA pyrolysis model parameters)\\
                        & Pyrolysis modeling validation dataset added to repo\\
 \\
@@ -354,7 +354,7 @@ The \href{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}{FM
 
 Groups interested in simulating FM-Burner are invited to predict the changes in flame radiation. Simulations with a prescribed radiant fraction (taken as the measured averaged value) are acceptable as well.
 
-The experimental database also includes combustion efficiency as a function of coflow oxygen mole fraction for four different fuels: methane, ethylene, propylene, and propane. \textcolor{red}{Modelers are invited to predict the limiting oxygen concentration at extinction for each fuel and for a range of grid resolutions.}
+The experimental database also includes combustion efficiency as a function of coflow oxygen mole fraction for four different fuels: methane, ethylene, propylene, and propane. Modelers are encouraged to predict the limiting oxygen concentration at extinction for each fuel and for a range of grid resolutions, as local extinction may have a significant effect on radiative emission, and these global extinction comparisons may provide insight about grid dependence of the combustion model.
 
 \vskip.5\baselineskip
 \noindent Suggested grid resolution: $\Delta x$ from 0.5 cm to 2 cm.
@@ -362,6 +362,7 @@ The experimental database also includes combustion efficiency as a function of c
 \vskip.5\baselineskip
 \noindent Suggested angular resolution: $N_{\Omega}$ = 100 angles.
 
+\vskip.5\baselineskip
 Plots of interest include:
 \begin{itemize}[noitemsep]
 \item Plots showing the mean and {\it rms} temperature as a function of radial position {\it r}, for different elevations {\it z};
@@ -416,7 +417,7 @@ Participants who submitted pyrolysis models (i.e., material property sets for Ma
 
 If sufficient agreement between model predictions and experimental measurements is not observed, pyrolysis modelers are then allowed to adjust and resubmit these parameter sets to obtain better agreement; however, they must (a) prepare a README file identifying exactly how and why that model was changed and (b) they CANNOT simply recalibrate their models to match this new validation dataset.  Adjustments to previously calibrated datasets may arise for many reasons, including,  but not limited to, changes in assumed boundary conditions of model calibration data or incorporation new calibration data obtained in different test apparatus and/or heating conditions.
 
-New pyrolysis models are also welcomed. Once again, we emphasize the need to use independent model calibration and model validation datasets. For this exercise, pyrolysis models should $not$ be directly calibrated to new validation data for two reasons: (1) this would no longer make simulation results true predictions and (2) this would bias and/or eliminate the ability to objectively quantify their relative accuracy as compared to other models. Aside from this requirement, modelers are not provided limitations or suggestions regarding their pyrolysis model parameterization (i.e., calibration) approach; however, they are required to use either (a) at least one of the milligram-scale datasets (e.g., TGA or DSC) and one gram-scale experiment (e.g., cone calorimetery or controlled atmosphere gasification experiments), or (b) at least two of the gram-scale experiments available in the \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Calibration_Data}{Calibration\_Data section} of the MaCFP repository. Modelers can supplement MaCFP data with any literature data that they deem necessary.
+New pyrolysis models are also welcomed. Once again, we emphasize the need to use independent model calibration and model validation datasets. For this exercise, pyrolysis models should $not$ be directly calibrated to new validation data for two reasons: (1) this would no longer make simulation results true predictions and (2) this would bias and/or eliminate the ability to objectively quantify their relative accuracy as compared to other models. Aside from this requirement, modelers are not provided limitations or suggestions regarding their pyrolysis model parameterization (i.e., calibration) approach; however, they are required to use either (a) at least one of the milligram-scale datasets (e.g., TGA or DSC) and one gram-scale experiment (e.g., cone calorimetry or controlled atmosphere gasification experiments), or (b) at least two of the gram-scale experiments available in the \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Calibration_Data}{Calibration\_Data section} of the MaCFP repository. Modelers can supplement MaCFP data with any literature data that they deem necessary.
 
 Table~\ref{table:properties} lists all pyrolysis model parameters of interest for this study. Note: degradation kinetics and thermodynamic parameters can be component- or reaction-step-specific. If your model includes multiple reaction steps and/or components, please include all relevant parameters below for each one. Participants should provide a detailed description of the method of determination of each of these parameters as well as a description (written and mathematical) of their proposed decomposition reaction mechanism.
 
@@ -594,7 +595,7 @@ Two experiments of gas-phase fire behavior (liquid pool fires \& gaseous burners
 \textbf{Condensed Phase:}\\
 New data has been provided for validation of pyrolysis models (i.e., material property sets) submitted to the MaCFP-2 Workshop. Condensed-phase modelers are asked to submit new predictions of material response to these test conditions (well-characterized radiant heating in an anaerobic environment) using their original MaCFP-2 pyrolysis models. If sufficient agreement is not observed, modelers are asked to recalibrate their property sets (new models are also welcomed). However, we emphasize the need to use independent model calibration and model validation datasets: for this exercise, pyrolysis models should $not$ be directly calibrated to new validation data.  
 
-Although no limitations are provided regarding pyrolysis model calibration approach, all submitted models are required to use either (a) at least one of the milligram-scale datasets (e.g., TGA or DSC) and one gram- scale experiment (e.g., cone calorimetery or controlled atmosphere gasification experiments), or (b) at least two of the gram-scale experiments available in the \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Calibration_Data}{Calibration\_Data section} of the MaCFP repository. Modelers can supplement MaCFP data with any literature data that they deem necessary. 
+Although no limitations are provided regarding pyrolysis model calibration approach, all submitted models are required to use either (a) at least one of the milligram-scale datasets (e.g., TGA or DSC) and one gram- scale experiment (e.g., cone calorimetry or controlled atmosphere gasification experiments), or (b) at least two of the gram-scale experiments available in the \href{https://github.com/MaCFP/matl-db/tree/master/PMMA/Calibration_Data}{Calibration\_Data section} of the MaCFP repository. Modelers can supplement MaCFP data with any literature data that they deem necessary. 
 
 Modelers are asked to provide (a) simulations of validation experiments using MaCFP-2 property sets and (b) if needed, to provide updated material property datasets (if needed) by June 1, 2023. These updated material property datasets will be shared (and their predictive accuracy assessed) with the community in a virtual meeting (mid-summer, 2023).\\
 
