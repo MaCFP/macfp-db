@@ -4,12 +4,13 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  push:
   # Triggers the workflow on push or pull request events but only for the $default-branch branch
-#   push:
-#     branches: [ $default-branch ]
-#   pull_request:
-#     branches: [ $default-branch ]
+  push:
+    branches:
+      -'**'
+  pull_request:
+    branches:
+      -'**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
