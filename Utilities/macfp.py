@@ -717,6 +717,7 @@ def dataplot(config_filename,**kwargs):
     C = df.where(pd.notnull(df), None)
 
     Plot_Filename_Last = None
+    f_Last = plt.figure()
 
     # loop over the rows of the config file
     for irow in C.index:
