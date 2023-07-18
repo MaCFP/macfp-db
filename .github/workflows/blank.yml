@@ -36,12 +36,20 @@ jobs:
           echo test, and deploy your project.
 
       # From https://github.com/runsascoded/nbconvert-action, convert iPython notebooks to Markdown
-      - name: Check out repository
-        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
         with:
-          ref: ${{ github.head_ref }}
-
-      - name: nbconvert .ipynb's
-        uses: runsascoded/nbconvert@v1.2
+          python-version: '3.9'
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip -r requirements.txt
+      - name: Update analysis notebook
+        run: |
+          python -m pip install jupyter nbconvert nbformat
+          cd ./Fire_Growth/NIST_Parallel_Panel/Documentation/
+          jupyter nbconvert --to markdown README.ipynb
+      - name: commit updated notebook
+        uses: EndBug/add-and-commit@v7
         with:
-          args: -f -x ./Fire_Growth/NIST_Parallel_Panel/Documentation/
+          author_name: Plot update bot
+          message: "Update Notebook"
+          add: "README.md"
