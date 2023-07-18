@@ -52,5 +52,5 @@ jobs:
         with:
           author_name: Plot update bot
           message: "Update Notebook"
-          add: "['./Fire_Growth/NIST_Parallel_Panel/Documentation/REAME_files/*.png','./Fire_Growth/NIST_Parallel_Panel/Documentation/README.md']"
+          add: "['./Fire_Growth/NIST_Parallel_Panel/Documentation/README_files/*.png','./Fire_Growth/NIST_Parallel_Panel/Documentation/README.md']"
 
