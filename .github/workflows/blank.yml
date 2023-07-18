@@ -34,3 +34,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      # From https://github.com/runsascoded/nbconvert-action, convert iPython notebooks to Markdown
+      - name: Check out repository
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: nbconvert .ipynb's
+        uses: runsascoded/nbconvert@v1.2
+        with:
+          args: -f -x
