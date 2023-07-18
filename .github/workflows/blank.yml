@@ -54,7 +54,7 @@ jobs:
           message: "Update Notebook"
           add: "['./Fire_Growth/NIST_Parallel_Panel/Documentation/README_files/*.png','./Fire_Growth/NIST_Parallel_Panel/Documentation/README.md']"
       - name: Upload image to releases
-      - run: gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/README_files/README_9_1.png --clobber
+        run: gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/README_files/README_9_1.png --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
