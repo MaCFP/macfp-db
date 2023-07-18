@@ -48,7 +48,7 @@ Error bars indicate an expanded uncertainty (u_exp(q"burner); 95% confidence int
 As seen here, burner flame heat flux, q"burner, decreases with sample height, z. Measurements of centerline burner flame heat flux are comparable to those reported in previous studies when heat flux from this propane burner was measured in repeated tests under nominally the same conditions (repeated years apart) [2,4].
 
 
-|<img src="https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_Fill.png" width="400">|  <img src="https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux.png" width="400">| 
+|<img src="https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_Fill.png" width="400">|  <img src="https://github.com/rmcdermo/macfp-db/releases/download/SCRIPT_FIGURES/Burner_heatflux.png" width="400">|
 |-----|-----|
 |(a)|(b)|
 
@@ -57,7 +57,7 @@ As seen here, burner flame heat flux, q"burner, decreases with sample height, z.
 Burner flame heat flux measurements shown in Fig. 2b are provided on the [**Experimental Data**](https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/NIST_Parallel_Panel/Experimental_Data/) page. Also included in this folder are width-resolved (across the width of panel walls) measurements of burner flame heat flux (multi-layer configuration) obtained during steady flaming (i.e., 20 s average of measurements obtained after steady flaming was observed). Figure 3 plots this dataset, which is provided as [Burner\_steadyHF\_Width\_multi-layer.csv](https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/NIST_Parallel_Panel/Experimental_Data/). As seen here, measured flame heat flux decreases toward either edge of the panels but is otherwise fairly symmetric across the width of the panels. 
 A summary of the data contained in each of these files is provided in Table 1. 
 
-<img src="https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux_colormap.png" width="400">
+<img src="https://github.com/rmcdermo/macfp-db/releases/download/SCRIPT_FIGURES/Burner_heatflux_colormap.png" width="400">
 
 *Figure 3.* Spatially resolved measurements (across the width of panel walls) of total flame heat flux, q"burner [kW/m2] at steady state (multilayer configuration)
 
