@@ -40,16 +40,17 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.9'
-      # - name: Install dependencies
-      #   run: python -m pip install --upgrade pip -r requirements.txt
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip
       - name: Update analysis notebook
         run: |
           python -m pip install jupyter nbconvert nbformat
           cd ./Fire_Growth/NIST_Parallel_Panel/Documentation/
           jupyter nbconvert --to markdown README.ipynb
       - name: commit updated notebook
-        uses: EndBug/add-and-commit@v7
+        uses: EndBug/add-and-commit@v9
         with:
           author_name: Plot update bot
           message: "Update Notebook"
-          add: "README.md"
+          add: "./Fire_Growth/NIST_Parallel_Panel/Documentation/REAME_files/*.png"
+          add: "./Fire_Growth/NIST_Parallel_Panel/Documentation/README.md"
