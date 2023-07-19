@@ -42,9 +42,13 @@ jobs:
           python-version: '3.9'
       - name: Install dependencies
         run: python -m pip install --upgrade pip
-      # - name: Upload image to releases
-      #   run: gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/README_files/README_9_1.png --clobber
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Generate Fire_Growth/NIST_Parallel_Panel/Documentation plots
+        run: |
+          cd ./Fire_Growth/NIST_Parallel_Panel/Documentation
+          python plot_flame_heat_flux.py
+      - name: Upload image to releases
+        run: gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux.png --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
