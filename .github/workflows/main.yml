@@ -59,11 +59,11 @@ jobs:
       #     conda install pytest
       #     pytest
 
-      # # Generate new plots
-      # - name: Generate Fire_Growth/NIST_Parallel_Panel/Documentation plots
-      #   run: |
-      #     cd ./Fire_Growth/NIST_Parallel_Panel/Documentation
-      #     python plot_flame_heat_flux.py
+      # Generate new plots
+      - name: Generate Fire_Growth/NIST_Parallel_Panel/Documentation plots
+        run: |
+          cd ./Fire_Growth/NIST_Parallel_Panel/Documentation
+          python plot_flame_heat_flux.py
       # # Push updated images to SCRIPT_FIGURES
       # - name: Upload image to releases
       #   run: gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux.png --clobber
