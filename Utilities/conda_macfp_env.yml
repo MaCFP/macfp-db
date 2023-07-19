@@ -61,4 +61,4 @@ dependencies:
   - xz=5.4.2=h6c40b1e_0
   - zlib=1.2.13=h4dc903c_0
   - zstd=1.5.5=hc035e20_0
-# prefix: /Users/rmcdermo/opt/anaconda3/envs/spiderman
+prefix: ./.github
