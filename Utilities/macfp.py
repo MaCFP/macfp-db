@@ -55,7 +55,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
 
     # generate the main x,y plot
     if plot_type=='linear':
-        ax.plot(x_data,y_data,
+        axh = ax.plot(x_data,y_data,
             markevery=kwargs.get('data_markevery'),
             label=kwargs.get('data_label'),
             markerfacecolor=kwargs.get('marker_fill_color'),
@@ -68,7 +68,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
             color=kwargs.get('line_color'))
 
     if plot_type=='loglog':
-        ax.loglog(x_data,y_data,
+        axh = ax.loglog(x_data,y_data,
             markevery=kwargs.get('data_markevery'),
             label=kwargs.get('data_label'),
             markerfacecolor=kwargs.get('marker_fill_color'),
@@ -81,7 +81,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
             color=kwargs.get('line_color'))
 
     if plot_type=='semilogx':
-        ax.semilogx(x_data,y_data,
+        axh = ax.semilogx(x_data,y_data,
             markevery=kwargs.get('data_markevery'),
             label=kwargs.get('data_label'),
             markerfacecolor=kwargs.get('marker_fill_color'),
@@ -94,7 +94,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
             color=kwargs.get('line_color'))
 
     if plot_type=='semilogy':
-        ax.semilogy(x_data,y_data,
+        axh = ax.semilogy(x_data,y_data,
             markevery=kwargs.get('data_markevery'),
             label=kwargs.get('data_label'),
             markerfacecolor=kwargs.get('marker_fill_color'),
@@ -207,12 +207,12 @@ def plot_to_fig(x_data,y_data,**kwargs):
     ax.text(xpos,ypos1, kwargs.get('plot_title'), fontsize=title_fontsize, transform=ax.transAxes)
     ax.text(xpos,ypos2, kwargs.get('plot_subtitle'), fontsize=subtitle_fontsize, transform=ax.transAxes)
 
-    # plot Institute + MaCFP stamp
+    # plot Institute + MaCFP (or revision) stamp
     inst_label_x = 0.025
     if len(str(ymax))>abs(axis_exponent_max) or len(str(ymin))>abs(axis_exponent_min):
         inst_label_x = 0.06 # else the institute label overlays the exponential notation multiplier
     ax.text(inst_label_x,1.01, kwargs.get('institute_label'), fontsize=default_stamp_fontsize, transform=ax.transAxes)
-    ax.text(0.975,       1.01, 'MaCFP-2, Waterloo, 2021', fontsize=default_stamp_fontsize, ha='right', transform=ax.transAxes)
+    ax.text(0.975,       1.01, kwargs.get('revision_label'), fontsize=default_stamp_fontsize, ha='right', transform=ax.transAxes)
 
     # note: this absolute method works better than fig.tight_layout(), which may change for each call of the figure
     left_adjust, bottom_adjust = get_subplots_adjust_parameters(ticklabel_fontsize,axeslabel_fontsize)
@@ -237,7 +237,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
 
     fig.subplots_adjust(left=left_adjust, bottom=bottom_adjust, right=right_adjust, top=top_adjust, wspace=0.2, hspace=0.2)
 
-    return fig
+    return fig, axh # figure and axes handles
 
 
 def get_subplots_adjust_parameters(ticklabel_fontsize,axeslabel_fontsize):
@@ -678,6 +678,7 @@ def dataplot(config_filename,**kwargs):
 
     # defaults
     institute = ''
+    revision  = 'MaCFP-3, Tsukuba, 2023'
     configdir = ''
     expdir = ''
     cmpdir = ''
@@ -689,6 +690,9 @@ def dataplot(config_filename,**kwargs):
 
     if kwargs.get('institute'):
         institute = kwargs.get('institute')
+
+    if kwargs.get('revision'):
+        revision = kwargs.get('revision')
 
     if kwargs.get('expdir'):
         expdir = kwargs.get('expdir')
@@ -823,6 +827,7 @@ def dataplot(config_filename,**kwargs):
         if (pp.Plot_Flip_Axis):
             f = plot_to_fig(x_data=y, y_data=x,
                 institute_label=institute,
+                revision_label=revision,
                 figure_handle=f,
                 data_markevery=pp.Cmp_Data_Markevery,
                 x_label=pp.Plot_y_Label,
@@ -848,6 +853,7 @@ def dataplot(config_filename,**kwargs):
         else:
             f = plot_to_fig(x_data=x, y_data=y,
                 institute_label=institute,
+                revision_label=revision,
                 figure_handle=f,
                 data_markevery=pp.Cmp_Data_Markevery,
                 x_label=pp.Plot_x_Label,
