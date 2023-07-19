@@ -47,27 +47,20 @@ jobs:
       - name: Install dependencies # use if necessary
         run: |
           conda env update --file environment.yml --name base
-      # - name: Lint with flake8
-      #   run: |
-      #     conda install flake8
-      #     # stop the build if there are Python syntax errors or undefined names
-      #     flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-      #     # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-      #     flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-      # - name: Test with pytest
-      #   run: |
-      #     conda install pytest
-      #     pytest
+      - name: Test with pytest
+        run: |
+          conda install pytest
+          pytest
 
       # Generate new plots
       - name: Generate Fire_Growth/NIST_Parallel_Panel/Documentation plots
         run: |
           cd ./Fire_Growth/NIST_Parallel_Panel/Documentation
           python plot_flame_heat_flux.py
-      # # Push updated images to SCRIPT_FIGURES
-      # - name: Upload image to releases
-      #   run: gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux.png --clobber
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Push updated images to SCRIPT_FIGURES
+      - name: Upload image to releases
+        run: gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux.png --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
