@@ -1,6 +1,6 @@
 # environment.yml
 
-# User's minimal environment for macfp
+# User's minimal environment for macfp (test)
 
 # conda env create -f environment.yml
 
