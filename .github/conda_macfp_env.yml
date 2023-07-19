@@ -1,4 +1,4 @@
-name: spiderman
+name: base
 channels:
   - defaults
 dependencies:
