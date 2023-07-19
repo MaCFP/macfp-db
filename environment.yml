@@ -7,11 +7,11 @@
 name: base
 
 channels:
-  - conda-forge  # must come before defaults (for gsl version)
+  # - conda-forge  # must come before defaults (for gsl version)
   - defaults
 
 dependencies:
-  - python =3.9
+  - python = 3.9
   - numpy
   - matplotlib
   - pandas
