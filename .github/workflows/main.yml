@@ -56,11 +56,13 @@ jobs:
           cd ./Fire_Growth/NIST_Parallel_Panel/Documentation
           python plot_burner_heat_flux_centerline.py
           python plot_burner_heat_flux_contour.py
+          python plot_pmma_hrr_qrad.py
       # Push updated images to SCRIPT_FIGURES
       - name: Upload images to releases
         run: |
           gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux.png --clobber
           gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux_colormap.png --clobber
+          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/PMMA_HRR_q-rad-only.png --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

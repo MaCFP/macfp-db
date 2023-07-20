@@ -79,7 +79,7 @@ In Test PMMA R6, radiative heat flux at a distance, q"rad, was measured using a 
 
 Time-resolved measurements of total HRR (including energy release from the propane burner) and q"rad are provided (as .csv files) in the [Experimental  Data Section](https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/NIST_Parallel_Panel/Experimental_Data/); Table 2 provides key information about each of these tests.  Figure 4 plots time-resolved measurements of total HRR and q"rad. As seen here strong agreement is observed between the rise, fall, and time to peak of HRR and q"rad measurements. Note: In this test, the propane burner was turned on between 0 < t < 120 s; reported HRR measurements are not corrected for the energy release from the propane burner flames.
 
-<img src="https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/NIST_Parallel_Panel/Documentation/PMMA_HRR_q-rad-only.png" width="400">
+<img src="https://github.com/rmcdermo/macfp-db/releases/download/SCRIPT_FIGURES/PMMA_HRR_q-rad-only.png" width="400">
 
 *Figure 4.* Time-resolved measurements of HRR and radiation heat flux at a distance, q"rad, from Test R6
 
