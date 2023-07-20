@@ -52,10 +52,13 @@ jobs:
       - name: Generate Fire_Growth/NIST_Parallel_Panel/Documentation plots
         run: |
           cd ./Fire_Growth/NIST_Parallel_Panel/Documentation
-          python plot_flame_heat_flux.py
+          python plot_burner_heat_flux_centerline.py
+          python plot_burner_heat_flux_contour.py
       # Push updated images to SCRIPT_FIGURES
-      - name: Upload image to releases
-        run: gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux.png --clobber
+      - name: Upload images to releases
+        run: |
+          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux.png --clobber
+          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux_colormap.png --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
