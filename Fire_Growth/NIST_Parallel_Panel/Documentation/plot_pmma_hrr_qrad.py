@@ -32,7 +32,7 @@ ax1.set_ylim(0,4000)
 
 # Adding Twin Axes to plot using dataset_2
 ax2 = ax1.twinx()
-ax2.set_ylim(0,7.5)
+ax2.set_ylim(0,6)
 
 lns2=ax2.plot(Time,HF,marker='none',linestyle='--',color='orange',label='HF-RAD, R6')
 ax2.set_ylabel('Rad Heat Flux [kW/m2]', fontsize=16, color='orange')
