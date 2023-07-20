@@ -35,18 +35,19 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      # Setup Anaconda python
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v3
+      # Setup python
+      - uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-      - name: Add conda to system path
-        run: |
-          # $CONDA is an environment variable pointing to the root of the miniconda directory
-          echo $CONDA/bin >> $GITHUB_PATH
-      - name: Install dependencies # use if necessary
-        run: |
-          conda env update --file .github/environment.yml --name base
+          cache: 'pip' # caching pip dependencies
+      - run: pip install -r .github/requirements.txt
+      # - name: Add conda to system path
+      #   run: |
+      #     # $CONDA is an environment variable pointing to the root of the miniconda directory
+      #     echo $CONDA/bin >> $GITHUB_PATH
+      # - name: Install dependencies # use if necessary
+      #   run: |
+      #     conda env update --file .github/environment.yml --name base
 
       # Generate new plots
       - name: Generate Fire_Growth/NIST_Parallel_Panel/Documentation plots
