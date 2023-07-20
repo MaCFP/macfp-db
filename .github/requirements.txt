@@ -2,7 +2,6 @@
 
 # User's minimal environment for macfp (test)
 
-python >= 3.9
 numpy
 matplotlib
 pandas
