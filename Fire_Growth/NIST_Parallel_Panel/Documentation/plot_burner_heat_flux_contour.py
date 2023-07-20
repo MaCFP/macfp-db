@@ -54,8 +54,7 @@ ax.set_ylim(0,250)
 
 plt.legend(loc='upper right')
 
-
-# fig.tight_layout(pad=1.0, h_pad=0.0, w_pad=0.0, rect=[0.05, 0.05, 0.90, 0.95])
+fig.tight_layout(pad=0.0, h_pad=0.0, w_pad=0.0, rect=[0.05, 0.05, 0.90, 0.95])
 
 plt.savefig('Burner_heatflux_colormap.png') #save as png
 
