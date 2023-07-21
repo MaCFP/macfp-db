@@ -26,7 +26,7 @@ y = M["Wu_1997 y"].values[:].astype(float)
 f, axh = macfp.plot_to_fig(x_data=x, y_data=y, data_label='Wu, 1997',marker_style='d',marker_size=10,line_style='None',figure_handle=f)
 
 # read data from csv file
-E = pd.read_csv('../Experimental_Data/Burner_HF_Centerline_multi-layer.csv', sep=',')
+E = pd.read_csv('../Experimental_Data/Burner_HF_Centerline_sand_multi-layer.csv', sep=',')
 
 y = np.array([20,50,75,100])
 Exp_Name = ['20 s','40 s','60 s','80 s']
