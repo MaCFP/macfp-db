@@ -43,8 +43,11 @@ def plot_to_fig(x_data,y_data,**kwargs):
     # if figure handle is passed, append to current figure, else generate a new figure
     if kwargs.get('figure_handle'):
         fig = kwargs.get('figure_handle')
-        ax = fig.axes[0]
-        plt.figure(fig.number)
+        if len(fig.axes)>0:
+            ax = fig.axes[0]
+            plt.figure(fig.number)
+        else:
+            fig, ax = plt.subplots(nrows=1, ncols=1, sharex=True, sharey=True, gridspec_kw={'hspace': 0, 'wspace': 0}, figsize=figure_size)
     else:
         fig, ax = plt.subplots(nrows=1, ncols=1, sharex=True, sharey=True, gridspec_kw={'hspace': 0, 'wspace': 0}, figsize=figure_size)
 
