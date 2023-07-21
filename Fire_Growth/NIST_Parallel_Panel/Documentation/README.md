@@ -97,7 +97,7 @@ PMMA flame heat flux data is provided in the file [PMMA_heatflux.csv](https://gi
 
 More details about these measurement devices and techniques as well as their respective capabilities and uncertainties will be provided in an upcoming publication [1].
 
-|<img src="https://github.com/rmcdermo/macfp-db/releases/download/SCRIPT_FIGURES/pmma_120-500.png" height="240">|<img src="https://github.com/rmcdermo/macfp-db/releases/download/SCRIPT_FIGURES/PMMA_flame_spread_heatflux.png" height="240">|<img src="https://github.com/rmcdermo/macfp-db/releases/download/SCRIPT_FIGURES/pmma_1500-2800.png" height="240">
+|<img src="https://github.com/rmcdermo/macfp-db/releases/download/SCRIPT_FIGURES/pmma_120-500.png" height="280">|<img src="https://github.com/rmcdermo/macfp-db/releases/download/SCRIPT_FIGURES/PMMA_flame_spread_heatflux.png" height="280">|<img src="https://github.com/rmcdermo/macfp-db/releases/download/SCRIPT_FIGURES/pmma_1500-2800.png" height="280">
 |-----|-----|-----|
 
 *Figure 5.*  Representative images of flame structure and height-resolved measurements of total flame to wall heat flux (as measured by an array of water-cooled, Schmidt-Boelter heat flux gauges) during upward flame spread over cast poly(methyl methacrylate), PMMA
