@@ -28,19 +28,19 @@ for irow in range(len(hrr_label)):
     x = E.loc[irow,"HF_z10":"HF_z220"].values[:].astype(float)
     u = E.loc[irow,"u_exp_HF_z10":"u_exp_HF_z220"].values[:].astype(float)
     if hrr_label[irow] in ['400 kW', '750 kW', '990 kW']: continue
-    f, a = macfp.plot_to_fig(x_data=x, y_data=z, data_label=hrr_label[irow],
-                             x_min=0,x_max=150,x_nticks=4,
-                             y_min=0,y_max=250,
-                             x_label='Heat Flux [kW/m2]',
-                             y_label='Height [cm]',
-                             marker_style='o',
-                             marker_edge_color=color[irow],
-                             marker_fill_color=color[irow],
-                             line_style='--',
-                             line_color=color[irow],
-                             show_legend=True,
-                             legend_location='lower right',
-                             figure_handle=f)
+    f = macfp.plot_to_fig(x_data=x, y_data=z, data_label=hrr_label[irow],
+                          x_min=0,x_max=150,x_nticks=4,
+                          y_min=0,y_max=250,
+                          x_label='Heat Flux [kW/m2]',
+                          y_label='Height [cm]',
+                          marker_style='o',
+                          marker_edge_color=color[irow],
+                          marker_fill_color=color[irow],
+                          line_style='--',
+                          line_color=color[irow],
+                          show_legend=True,
+                          legend_location='lower right',
+                          figure_handle=f)
     plt.errorbar(x,z,linestyle='',xerr=u,capsize=4,ecolor=color[irow])
 
 
