@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Fire_Growth_CI
+name: Fire_Growth_PR
 
 # Controls when the workflow will run
 on:
@@ -56,6 +56,8 @@ jobs:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 ## IF THE PR PASSES AND THE MAINTAINER MERGES THE PR, THEN RERUN AND UPLOAD IMAGES TO RELEASES
+
+name: Fire_Growth_PUSH
 
 # Controls when the workflow will run
 on:
