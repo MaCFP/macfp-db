@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Fire_Growth_CI
+name: Fire_Growth_PR
 
 # Controls when the workflow will run
 on:
@@ -8,7 +8,7 @@ on:
   # push:
     # branches: [ $default-branch, test_branch ]
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ master ]
     paths:
       - .github/**
       - Utilities/**
@@ -45,14 +45,13 @@ jobs:
           python plot_pmma_hrr_qrad.py
           python plot_pmma_flame_spread_heat_flux.py
 
-      # Push updated images to SCRIPT_FIGURES
-      - name: Upload images to releases
-        run: |
-          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux.png --clobber
-          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux_colormap.png --clobber
-          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/PMMA_HRR_q-rad-only.png --clobber
-          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/PMMA_flame_spread_heatflux.png --clobber
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+      # # Push updated images to SCRIPT_FIGURES (CANNOT PERFORM THIS STEP ON PULL REQUEST)
+      # - name: Upload images to releases
+      #   run: |
+      #     gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux.png --clobber
+      #     gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux_colormap.png --clobber
+      #     gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/PMMA_HRR_q-rad-only.png --clobber
+      #     gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/PMMA_flame_spread_heatflux.png --clobber
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
