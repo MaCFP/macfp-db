@@ -5,10 +5,10 @@ name: Fire_Growth_CI
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the $default-branch branch
-  push:
+  # push:
     # branches: [ $default-branch, test_branch ]
-  # pull_request:
-  #   branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
     paths:
       - .github/**
       - Utilities/**
