@@ -8,7 +8,7 @@ on:
   # push:
     # branches: [ $default-branch, test_branch ]
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ master ]
     paths:
       - .github/**
       - Utilities/**
