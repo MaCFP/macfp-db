@@ -1,4 +1,4 @@
-s,kg/s/m2,none
-Time,MLRPUA,X_RAD
-0.,0.0183,0.31
-600.,0.0183,0.31
+s,kW,kg/s,kg/s/m2,none
+Time,HRR,MLR,MLRPUA,X_RAD
+0.,37.8,0.00130,0.0183,0.31
+600.,37.8,0.00130,0.0183,0.31
