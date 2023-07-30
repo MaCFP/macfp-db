@@ -14,7 +14,6 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-# import pprint # debug
 
 def plot_to_fig(x_data,y_data,**kwargs):
     """
@@ -719,6 +718,7 @@ def dataplot(config_filename,**kwargs):
     C = df.where(pd.notnull(df), None)
 
     Plot_Filename_Last = None
+    Exp_Data_Label_Last = None
     f_Last = plt.figure()
 
     # loop over the rows of the config file
@@ -748,7 +748,7 @@ def dataplot(config_filename,**kwargs):
             # set header to the row where column names are stored (Python is 0 based)
             E = pd.read_csv(expdir+pp.Exp_Filename, header=pp.Exp_Header_Row-1, sep=' *, *', engine='python')
 
-            if (pp.Exp_Data_Row-pp.Exp_Header_Row==1.):
+            if (pp.Exp_Data_Row-pp.Exp_Header_Row==1):
                 x = E[pp.Exp_x_Col_Name].values[:].astype(float)
                 y = E[pp.Exp_y_Col_Name].values[:].astype(float)
             else:
@@ -812,10 +812,77 @@ def dataplot(config_filename,**kwargs):
         else:
             f = f_Last
 
+            if pp.Exp_Data_Label!=Exp_Data_Label_Last:
+
+                # read data from exp file
+                # set header to the row where column names are stored (Python is 0 based)
+                E = pd.read_csv(expdir+pp.Exp_Filename, header=pp.Exp_Header_Row-1, sep=' *, *', engine='python')
+
+                if (pp.Exp_Data_Row-pp.Exp_Header_Row==1):
+                    x = E[pp.Exp_x_Col_Name].values[:].astype(float)
+                    y = E[pp.Exp_y_Col_Name].values[:].astype(float)
+                else:
+                    # don't exactly understand this, but df.values behave differently if they are object type
+                    # when the header and data rows are separated, then there are usually strings in the df.values
+                    x = E[pp.Exp_x_Col_Name].values[pp.Exp_Data_Row-2:-1].astype(float)
+                    y = E[pp.Exp_y_Col_Name].values[pp.Exp_Data_Row-2:-1].astype(float)
+
+                if (pp.Plot_Flip_Axis):
+                    f = plot_to_fig(x_data=y, y_data=x,
+                        figure_handle=f,
+                        data_markevery=pp.Exp_Data_Markevery,
+                        data_label=pp.Exp_Data_Label,
+                        y_error_absolute=pp.Exp_Error_Absolute,
+                        y_error_relative=pp.Exp_Error_Relative,
+                        x_label=pp.Plot_y_Label,
+                        y_label=pp.Plot_x_Label,
+                        marker_style=pp.Exp_Marker_Style,
+                        marker_fill_color=pp.Exp_Marker_Fill_Color,
+                        marker_edge_color=pp.Exp_Marker_Edge_Color,
+                        marker_size=pp.Exp_Marker_Size,
+                        line_style=pp.Exp_Line_Style,
+                        line_color=pp.Exp_Line_Color,
+                        line_width=pp.Exp_Line_Width,
+                        x_min=pp.Plot_y_Min,x_max=pp.Plot_y_Max,x_nticks=pp.Plot_y_Nticks,
+                        y_min=pp.Plot_x_Min,y_max=pp.Plot_x_Max,y_nticks=pp.Plot_x_Nticks,
+                        show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
+                        figure_size=(pp.Plot_Figure_Width,pp.Plot_Figure_Height),
+                        figure_left_adjust=pp.Plot_Left_Adjust,
+                        figure_right_adjust=pp.Plot_Right_Adjust,
+                        figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                        figure_top_adjust=pp.Plot_Top_Adjust
+                        )
+                else:
+                    # plot the exp data
+                    f = plot_to_fig(x_data=x, y_data=y,
+                        figure_handle=f,
+                        data_markevery=pp.Exp_Data_Markevery,
+                        data_label=pp.Exp_Data_Label,
+                        y_error_absolute=pp.Exp_Error_Absolute,
+                        y_error_relative=pp.Exp_Error_Relative,
+                        x_label=pp.Plot_x_Label,
+                        y_label=pp.Plot_y_Label,
+                        marker_style=pp.Exp_Marker_Style,
+                        marker_fill_color=pp.Exp_Marker_Fill_Color,
+                        marker_edge_color=pp.Exp_Marker_Edge_Color,
+                        marker_size=pp.Exp_Marker_Size,
+                        line_style=pp.Exp_Line_Style,
+                        line_color=pp.Exp_Line_Color,
+                        line_width=pp.Exp_Line_Width,
+                        x_min=pp.Plot_x_Min,x_max=pp.Plot_x_Max,x_nticks=pp.Plot_x_Nticks,
+                        y_min=pp.Plot_y_Min,y_max=pp.Plot_y_Max,y_nticks=pp.Plot_y_Nticks,
+                        show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
+                        figure_size=(pp.Plot_Figure_Width,pp.Plot_Figure_Height),
+                        figure_left_adjust=pp.Plot_Left_Adjust,
+                        figure_right_adjust=pp.Plot_Right_Adjust,
+                        figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                        figure_top_adjust=pp.Plot_Top_Adjust
+                        )
+
         # get the model results
         M = pd.read_csv(cmpdir+pp.Cmp_Filename, header=pp.Cmp_Header_Row-1, sep=' *, *', engine='python')
 
-        if (pp.Cmp_Data_Row-pp.Cmp_Header_Row==1.):
+        if (pp.Cmp_Data_Row-pp.Cmp_Header_Row==1):
             x = M[pp.Cmp_x_Col_Name].values[:].astype(float)
             y = M[pp.Cmp_y_Col_Name].values[:].astype(float)
         else:
@@ -886,4 +953,5 @@ def dataplot(config_filename,**kwargs):
         plt.savefig(pltdir + pp.Plot_Filename)
 
         Plot_Filename_Last = pp.Plot_Filename
+        Exp_Data_Label_Last = pp.Exp_Data_Label
         f_Last = f
