@@ -47,7 +47,7 @@ jobs:
           zip Plots.zip -r Plots
           mv Plots.zip NIST_Pool_Fires_NIST_Plots.zip
       - name: Push NIST Results
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
         run: |
           gh release upload SCRIPT_FIGURES NIST_Pool_Fires_NIST_Plots.zip --clobber
         env:
