@@ -1,6 +1,6 @@
 # Plot data in Experimental_Data directories
 
-name: Plot_Experimental_Data
+name: Experimental_Data
 
 # Controls when the workflow will run
 on:
