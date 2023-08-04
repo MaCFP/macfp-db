@@ -1,6 +1,6 @@
 # Plot data in Experimental_Data directories
 
-name: Plot_NIST_Pool_Fires
+name: NIST_Pool_Fires
 
 # Controls when the workflow will run
 on:
