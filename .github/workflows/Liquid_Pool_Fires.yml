@@ -1,6 +1,6 @@
-# Plot data in Experimental_Data directories
+# MaCFP workflow
 
-name: NIST_Pool_Fires
+name: Liquid_Pool_Fires
 
 # Controls when the workflow will run
 on:
@@ -9,12 +9,12 @@ on:
     branches: [ master ]
     paths:
       - .github/**
-      - Liquid_Pool_Fires/NIST_Pool_Fires/**
+      - Liquid_Pool_Fires/**
   pull_request:
     branches: [ master ]
     paths:
       - .github/**
-      - Liquid_Pool_Fires/NIST_Pool_Fires/**
+      - Liquid_Pool_Fires/**
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
