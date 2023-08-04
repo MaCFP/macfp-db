@@ -49,6 +49,7 @@ jobs:
       - name: Push NIST Results
         if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
         run: |
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST/Preliminary_Results
           gh release upload SCRIPT_FIGURES NIST_Pool_Fires_NIST_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
