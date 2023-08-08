@@ -25,7 +25,7 @@ Z = E.loc[1:4,"HF_y-25":"HF_y25"].values[:].astype(float)
 levels = [5, 10, 15, 20, 30, 40, 50, 60]
 
 fig, ax = plt.subplots()
-CS = ax.contourf(X, Y, Z, levels, extend='both')
+CS = ax.contourf(X, Y, Z, levels)
 ax.clabel(CS, inline=False, fontsize=10, colors='black')
 
 # add 3 gauge avg
