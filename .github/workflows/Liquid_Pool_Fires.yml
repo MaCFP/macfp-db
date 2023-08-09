@@ -60,3 +60,19 @@ jobs:
 
       # ADD YOUR INSTITUTION BELOW, COPY STEPS 1 AND 2, CHANGE INSTITUTE NAME (AFTER 2023 AND WITHIN ZIP FILENAME)
 
+      - name: Sandia Preliminary Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/Sandia
+          python Sandia_Pool_Fires_plot_cmp.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push Sandia Results to release
+        if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/Sandia/Preliminary_Results
+          zip Plots.zip -r Plots
+          mv Plots.zip Sandia_Pool_Fires_NIST_Plots.zip
+          gh release upload SCRIPT_FIGURES Sandia_Pool_Fires_NIST_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
