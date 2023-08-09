@@ -56,8 +56,11 @@ for irow in range(len(hrr_label)):
                           line_style='None',
                           line_color=color[irow],
                           show_legend=True,
-                          legend_location='lower right',
+                          legend_location='outside',
+                          figure_right_adjust=0,
+                          legend_fontsize=10,
                           figure_handle=f)
+
     plt.errorbar(x,z,linestyle='',xerr=u,capsize=4,ecolor=color[irow])
 
     x1 = M1.loc[indices1[irow],"Flux-1":"Flux-50"].values[:].astype(float)
@@ -72,6 +75,9 @@ for irow in range(len(hrr_label)):
                           line_style='-',
                           line_color=color[irow],
                           show_legend=True,
+                          legend_location='outside',
+                          figure_right_adjust=0,
+                          legend_fontsize=10,
                           figure_handle=f)
 
     f = macfp.plot_to_fig(x_data=x2, y_data=z_FDS, data_label=hrr_label[irow],
@@ -83,6 +89,9 @@ for irow in range(len(hrr_label)):
                           line_style='--',
                           line_color=color[irow],
                           show_legend=True,
+                          legend_location='outside',
+                          figure_right_adjust=0,
+                          legend_fontsize=10,
                           figure_handle=f)
 
 f.tight_layout(pad=0.0, h_pad=0.0, w_pad=0.0, rect=[0.05, 0.05, 0.90, 0.95])
