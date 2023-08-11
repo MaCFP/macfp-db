@@ -22,11 +22,20 @@ y = np.array([20, 50, 75, 100])
 X, Y = np.meshgrid(x, y, indexing='xy')
 Z = E.loc[1:4,"HF_y-25":"HF_y25"].values[:].astype(float)
 
-levels = [5, 10, 15, 20, 30, 40, 50, 60]
+# Define where the lines are located.
+levels = [0, 5, 10, 15, 20, 30, 40, 50, 70]
+# Edge length of the data set, i.e. lower part of the panel.
+extent = [-0.3,0.3, 0.0,1.0]
 
 fig, ax = plt.subplots()
-CS = ax.contourf(X, Y, Z, levels)
-ax.clabel(CS, inline=False, fontsize=10, colors='black')
+CS = ax.contourf(X, Y, Z, levels, extent=extent)
+# ax.clabel(CS, inline=False, fontsize=10, colors='black')
+
+# Contour lines of the gauge heat flux distribution.
+contours = plt.contour(X, Y, Z, levels, colors='black')
+plt.clabel(contours, levels, inline=True,
+           fmt='%1.0f',  # Set number of digits for contour labels.
+           fontsize=10)
 
 # add 3 gauge avg
 firstlabel=True
