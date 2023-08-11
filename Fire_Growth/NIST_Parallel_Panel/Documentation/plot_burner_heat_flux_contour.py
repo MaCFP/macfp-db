@@ -29,7 +29,6 @@ extent = [-0.3,0.3, 0.0,1.0]
 
 fig, ax = plt.subplots()
 CS = ax.contourf(X, Y, Z, levels, extent=extent)
-# ax.clabel(CS, inline=False, fontsize=10, colors='black')
 
 # Contour lines of the gauge heat flux distribution.
 contours = plt.contour(X, Y, Z, levels, colors='black')
