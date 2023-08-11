@@ -28,13 +28,14 @@ levels = [0, 5, 10, 15, 20, 30, 40, 50, 70]
 extent = [-0.3,0.3, 0.0,1.0]
 
 fig, ax = plt.subplots()
-CS = ax.contourf(X, Y, Z, levels, extent=extent)
+CS = plt.contourf(X, Y, Z, levels, extent=extent, cmap=plt.cm.viridis)
 
-# Contour lines of the gauge heat flux distribution.
-contours = plt.contour(X, Y, Z, levels, colors='black')
-plt.clabel(contours, levels, inline=True,
-           fmt='%1.0f',  # Set number of digits for contour labels.
-           fontsize=10)
+# Define colour bar.
+plt.clim(2.0, 65.0)
+plt.colorbar().set_label('Gauge Heat Flux [kW/m²]',size=14)
+
+contours = ax.contour(X, Y, Z, levels, colors='black')
+ax.clabel(contours, levels, inline=True,fmt='%1.0f',fontsize=10)
 
 # add 3 gauge avg
 firstlabel=True
@@ -58,7 +59,7 @@ plt.xlabel('Width [cm]', fontsize=16)
 plt.ylabel('Height [cm]', fontsize=16)
 
 ax.set_xlim(-30,30)
-ax.set_ylim(0,250)
+ax.set_ylim(0,130)
 
 plt.legend(loc='upper right')
 

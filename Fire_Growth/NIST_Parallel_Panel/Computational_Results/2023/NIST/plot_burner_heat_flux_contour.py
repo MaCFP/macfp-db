@@ -10,6 +10,7 @@ import macfp
 import importlib
 importlib.reload(macfp) # use for development (while making changes to macfp.py)
 import matplotlib.pyplot as plt
+import matplotlib.lines as mlines
 import numpy as np
 import pandas as pd
 
@@ -37,28 +38,41 @@ Z2[1,:] = M2.loc[60,"HF_y-25z50":"HF_y25z50"].values[:].astype(float)
 Z2[2,:] = M2.loc[60,"HF_y-25z75":"HF_y25z75"].values[:].astype(float)
 Z2[3,:] = M2.loc[60,"HF_y-25z100":"HF_y25z100"].values[:].astype(float)
 
-levels = [5, 10, 15, 20, 30, 40, 50, 60]
+# Define where the lines are located.
+levels = [0, 5, 10, 15, 20, 30, 40, 50, 70]
+# Edge length of the data set, i.e. lower part of the panel.
+extent = [-0.3,0.3, 0.0,1.0]
 
 fig, ax = plt.subplots()
-CS = ax.contourf(X, Y, Z, levels)
-ax.clabel(CS, inline=False, fontsize=10, colors='red')
+CS = plt.contourf(X, Y, Z, levels, extent=extent, cmap=plt.cm.viridis)
 
-CS1 = ax.contour(X, Y, Z1, levels, colors='white')
-ax.clabel(CS1, inline=True, fontsize=10, colors='white')
+# Define colour bar.
+plt.clim(2.0, 65.0)
+plt.colorbar().set_label('Gauge Heat Flux [kW/m²]',size=14)
 
-CS2 = ax.contour(X, Y, Z2, levels, colors='yellow', linestyles='dashed')
-ax.clabel(CS2, inline=True, fontsize=10, colors='yellow')
+contours = ax.contour(X, Y, Z, levels, colors='black')
+ax.clabel(contours, levels, inline=True, fmt='%1.0f', fontsize=10)
+
+CS1 = ax.contour(X, Y, Z1, levels, colors='yellow')
+ax.clabel(CS1, inline=True, fmt='%1.0f', fontsize=10, colors='yellow')
+
+CS2 = ax.contour(X, Y, Z2, levels, colors='green', linestyles='dashed')
+ax.clabel(CS2, inline=True, fmt='%1.0f', fontsize=10, colors='green')
 
 plt.xlabel('Width [cm]', fontsize=16)
 plt.ylabel('Height [cm]', fontsize=16)
 
 ax.set_xlim(-30,30)
-ax.set_ylim(0,120)
+ax.set_ylim(0,130)
 
-#plt.legend(loc='upper right')
+exp_line    = mlines.Line2D([], [], color='black', label='exp')
+sim2cm_line = mlines.Line2D([], [], color='yellow', linestyle='-', label='sim 2 cm')
+sim1cm_line = mlines.Line2D([], [], color='green', linestyle='--', label='sim 1 cm')
+
+ax.legend(handles=[exp_line,sim2cm_line,sim1cm_line])
 
 fig.tight_layout(pad=0.0, h_pad=0.0, w_pad=0.0, rect=[0.05, 0.05, 0.90, 0.95])
 
-plt.savefig('Preliminary_Results/Plots/Burner_heatflux_colormap.pdf')
+# plt.savefig('Preliminary_Results/Plots/Burner_heatflux_colormap.pdf')
 
-# plt.show()
+plt.show()
