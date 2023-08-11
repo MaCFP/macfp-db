@@ -9,15 +9,17 @@ Experimentalists and modelers may participate in the group by submitting [pull r
 
 Please read the [Modeling Guidelines for the MaCFP 2023 Workshop](https://github.com/MaCFP/macfp-db/wiki/MaCFP-2023-Modeling-Guidelines).
 
-Instructions for [Submission of Computational Results](https://github.com/MaCFP/macfp-db/wiki/Submitting-Computational-Results).
+Please read instructions for [Submission of Computational Results](https://github.com/MaCFP/macfp-db/wiki/Submitting-Computational-Results).
 
 Please visit our [wiki pages](https://github.com/MaCFP/macfp-db/wiki) for additional details.
 
 Presentations for the MaCFP workshops can be found on the [**GitHub Releases**](https://github.com/MaCFP/macfp-db/releases) page:
 
-[**MaCFP-1 (Lund, 2017)**](https://github.com/MaCFP/macfp-db/releases/tag/macfp-1.0)
+[**MaCFP-3 (Tsukuba, 2023)**](https://github.com/MaCFP/macfp-db/releases/tag/macfp-3.0)
 
 [**MaCFP-2 (Waterloo, 2021)**](https://github.com/MaCFP/macfp-db/releases/tag/macfp-2.0)
+
+[**MaCFP-1 (Lund, 2017)**](https://github.com/MaCFP/macfp-db/releases/tag/macfp-1.0)
 
 If you find problems with the database or if you have suggestions for improvement, please submit an [Issue](https://github.com/MaCFP/macfp-db/issues).
 
