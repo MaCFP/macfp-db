@@ -7,9 +7,9 @@ The central objective of the MaCFP working group is to target fundamental progre
 
 Experimentalists and modelers may participate in the group by submitting [pull requests to this repository](https://github.com/MaCFP/macfp-db/pulls).
 
-Detailed instructions for [Submission of Computational Results](https://github.com/MaCFP/macfp-db/wiki/Submitting-Computational-Results).
-
 Please read the [Modeling Guidelines for the MaCFP 2023 Workshop](https://github.com/MaCFP/macfp-db/wiki/MaCFP-2023-Modeling-Guidelines).
+
+Instructions for [Submission of Computational Results](https://github.com/MaCFP/macfp-db/wiki/Submitting-Computational-Results).
 
 Please visit our [wiki pages](https://github.com/MaCFP/macfp-db/wiki) for additional details.
 
