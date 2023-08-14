@@ -8,7 +8,7 @@ sys.path.append('../../../../../../macfp-db/Utilities/')
 import macfp
 
 macfp.dataplot(
-    config_filename='Sandia_Pool_Fires_cmp_config.csv',
+    config_filename='NIST_Pool_Fires_Sandia_cmp_config.csv',
     institute='Sandia',
     revision='MaCFP-3, Tsukuba, 2023',
     expdir='../../../Experimental_Data/',
