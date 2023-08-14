@@ -8,12 +8,12 @@ on:
   # push:
   #   branches: [ master ]
   #   paths:
-  #     - .github/**
+  #     - .github/Extinction.yml
   #     - Extinction/**
   # pull_request:
   #   branches: [ master ]
   #   paths:
-  #     - .github/**
+  #     - .github/Extinction.yml
   #     - Extinction/**
 
   # Allows you to run this workflow manually from the Actions tab

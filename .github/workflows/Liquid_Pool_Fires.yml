@@ -8,12 +8,12 @@ on:
   push:
     branches: [ master ]
     paths:
-      - .github/**
+      - .github/Liquid_Pool_Fires.yml
       - Liquid_Pool_Fires/**
   pull_request:
     branches: [ master ]
     paths:
-      - .github/**
+      - .github/Liquid_Pool_Fires.yml
       - Liquid_Pool_Fires/**
 
   # Allows you to run this workflow manually from the Actions tab

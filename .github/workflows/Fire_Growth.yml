@@ -8,13 +8,13 @@ on:
   push:
     branches: [ master ]
     paths:
-      - .github/**
+      - .github/Fire_Growth.yml
       - Utilities/**
       - Fire_Growth/**
   pull_request:
     branches: [ master ]
     paths:
-      - .github/**
+      - .github/Fire_Growth.yml
       - Utilities/**
       - Fire_Growth/**
 
