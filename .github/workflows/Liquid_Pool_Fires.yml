@@ -65,15 +65,15 @@ jobs:
         run: |
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/Sandia
-          python Sandia_Pool_Fires_plot_cmp.py
+          python NIST_Pool_Fires_Sandia_plot_cmp.py
 
       - name: Push Sandia Results to release
         if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
         run: |
           cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/Sandia/Preliminary_Results
           zip Plots.zip -r Plots
-          mv Plots.zip Sandia_Pool_Fires_NIST_Plots.zip
-          gh release upload SCRIPT_FIGURES Sandia_Pool_Fires_NIST_Plots.zip --clobber
+          mv Plots.zip NIST_Pool_Fires_Sandia_Plots.zip
+          gh release upload SCRIPT_FIGURES NIST_Pool_Fires_Sandia_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
