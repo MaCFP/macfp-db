@@ -8,12 +8,12 @@ on:
   # push:
   #   branches: [ master ]
   #   paths:
-  #     - .github/**
+  #     - .github/Gaseous_Pool_Fires.yml
   #     - Gaseous_Pool_Fires/**
   # pull_request:
   #   branches: [ master ]
   #   paths:
-  #     - .github/**
+  #     - .github/Gaseous_Pool_Fires.yml
   #     - Gaseous_Pool_Fires/**
 
   # Allows you to run this workflow manually from the Actions tab
