@@ -7,16 +7,28 @@ on:
   # Triggers the workflow on push or pull request events but only for the $default-branch branch
   push:
     branches: [ master ]
+    paths:
+      - .github/Experimental_Data.yml
+      - Utilities/macfp.py
+      - Buoyant_Plumes/Sandia_Helium_Plume/Experimental_Data/**
+      - Extinction/FM_Burner/Experimental_Data/**
+      - Gaseous_Pool_Fires/McCaffrey_Flames/Experimental_Data/**
+      - Gaseous_Pool_Fires/Sandia_Flames/Experimental_Data/**
+      - Liquid_Pool_Fires/Waterloo_Methanol/Experimental_Data/**
+      - Liquid_Pool_Fires/NIST_Pool_Fires/Experimental_Data/**
+      - Wall_Fires/FM_Vertical_Wall_Flames/Experimental_Data/**
   pull_request:
     branches: [ master ]
     paths:
-      - .github/**
-      - Utilities/**
-      - Buoyant_Plumes/**
-      - Extinction/**
-      - Gaseous_Pool_Fires/**
-      - Liquid_Pool_Fires/**
-      - Wall_Fires/**
+      - .github/Experimental_Data.yml
+      - Utilities/macfp.py
+      - Buoyant_Plumes/Sandia_Helium_Plume/Experimental_Data/**
+      - Extinction/FM_Burner/Experimental_Data/**
+      - Gaseous_Pool_Fires/McCaffrey_Flames/Experimental_Data/**
+      - Gaseous_Pool_Fires/Sandia_Flames/Experimental_Data/**
+      - Liquid_Pool_Fires/Waterloo_Methanol/Experimental_Data/**
+      - Liquid_Pool_Fires/NIST_Pool_Fires/Experimental_Data/**
+      - Wall_Fires/FM_Vertical_Wall_Flames/Experimental_Data/**
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

@@ -8,12 +8,12 @@ on:
   # push:
   #   branches: [ master ]
   #   paths:
-  #     - .github/**
+  #     - .github/Buoyant_Plumes.yml
   #     - Buoyant_Plumes/**
   # pull_request:
   #   branches: [ master ]
   #   paths:
-  #     - .github/**
+  #     - .github/Buoyant_Plumes.yml
   #     - Buoyant_Plumes/**
 
   # Allows you to run this workflow manually from the Actions tab

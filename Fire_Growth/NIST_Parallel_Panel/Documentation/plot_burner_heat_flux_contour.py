@@ -22,11 +22,20 @@ y = np.array([20, 50, 75, 100])
 X, Y = np.meshgrid(x, y, indexing='xy')
 Z = E.loc[1:4,"HF_y-25":"HF_y25"].values[:].astype(float)
 
-levels = [5, 10, 15, 20, 30, 40, 50, 60]
+# Define where the lines are located.
+levels = [0, 5, 10, 15, 20, 30, 40, 50, 70]
+# Edge length of the data set, i.e. lower part of the panel.
+extent = [-0.3,0.3, 0.0,1.0]
 
 fig, ax = plt.subplots()
-CS = ax.contourf(X, Y, Z, levels)
-ax.clabel(CS, inline=False, fontsize=10, colors='black')
+CS = plt.contourf(X, Y, Z, levels, extent=extent, cmap=plt.cm.viridis)
+
+# Define colour bar.
+plt.clim(2.0, 65.0)
+plt.colorbar().set_label('Gauge Heat Flux [kW/m²]',size=14)
+
+contours = ax.contour(X, Y, Z, levels, colors='black')
+ax.clabel(contours, levels, inline=True,fmt='%1.0f',fontsize=10)
 
 # add 3 gauge avg
 firstlabel=True
@@ -50,7 +59,7 @@ plt.xlabel('Width [cm]', fontsize=16)
 plt.ylabel('Height [cm]', fontsize=16)
 
 ax.set_xlim(-30,30)
-ax.set_ylim(0,250)
+ax.set_ylim(0,130)
 
 plt.legend(loc='upper right')
 
