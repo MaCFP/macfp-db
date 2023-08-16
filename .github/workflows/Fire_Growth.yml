@@ -9,13 +9,13 @@ on:
     branches: [ master ]
     paths:
       - .github/Fire_Growth.yml
-      - Utilities/**
+      - Utilities/macfp.py
       - Fire_Growth/**
   pull_request:
     branches: [ master ]
     paths:
       - .github/Fire_Growth.yml
-      - Utilities/**
+      - Utilities/macfp.py
       - Fire_Growth/**
 
   # Allows you to run this workflow manually from the Actions tab
