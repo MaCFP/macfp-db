@@ -11,9 +11,9 @@ import sys
 sys.path.append('../../../../../../macfp-db/Utilities/')
 
 import macfp
-# import importlib
-# importlib.reload(macfp) # use for development (while making changes to macfp.py)
-# import matplotlib.pyplot as plt
+import importlib
+importlib.reload(macfp) # use for development (while making changes to macfp.py)
+import matplotlib.pyplot as plt
 
 macfp.dataplot(config_filename='NIST_Pool_Fires_cmp_config.csv',
                institute='NIST',
