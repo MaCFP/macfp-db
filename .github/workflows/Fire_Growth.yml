@@ -72,6 +72,10 @@ jobs:
           python plot_burner_heat_flux_contour.py
           python plot_pmma_flame_spread_heat_flux.py
           python plot_pmma_hrr_qrad.py
+          python plot_pmma_flame_spread_con_heat_flux.py
+          python plot_pmma_flame_spread_mass_loss_rate.py
+          python plot_pmma_flame_spread_rad_heat_flux.py
+          python plot_pmma_flame_spread_temperature.py
 
       # Step 2: push the plots to the releases page
       - name: Push NIST Results to release
