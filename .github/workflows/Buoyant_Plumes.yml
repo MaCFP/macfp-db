@@ -9,11 +9,13 @@ on:
   #   branches: [ master ]
   #   paths:
   #     - .github/Buoyant_Plumes.yml
+  #     - Utilities/macfp.py
   #     - Buoyant_Plumes/**
   # pull_request:
   #   branches: [ master ]
   #   paths:
   #     - .github/Buoyant_Plumes.yml
+  #     - Utilities/macfp.py
   #     - Buoyant_Plumes/**
 
   # Allows you to run this workflow manually from the Actions tab
