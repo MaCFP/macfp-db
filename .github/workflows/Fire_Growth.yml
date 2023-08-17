@@ -90,3 +90,22 @@ jobs:
 
       # ADD YOUR INSTITUTION BELOW, COPY STEPS 1 AND 2, CHANGE INSTITUTE NAME (AFTER 2023 AND WITHIN ZIP FILENAME)
 
+# When submitting computational results, add your script to the list below (follow the example)
+
+      # Step 1: generate the plots
+      - name: FSRI Preliminary SBI Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/FSRI
+          python FSRI_SBI_plot_cmp.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push FSRI Results to release
+        if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/FSRI
+          zip Plots.zip -r Plots
+          mv Plots.zip NIST_Parallel_Panel_NIST_Plots.zip
+          gh release upload SCRIPT_FIGURES UMD_SBI_FSRI_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
