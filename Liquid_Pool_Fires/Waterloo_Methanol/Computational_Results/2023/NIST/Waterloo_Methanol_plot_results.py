@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 
 macfp.dataplot(config_filename='Waterloo_Methanol_cmp_config.csv',
                institute='NIST',
-               expdir='../../../../../Liquid_Pool_Fires/',
+               expdir='../../../Experimental_Data/',
                cmpdir='./Output/',
                pltdir='./Plots/',
                close_figs=True,
