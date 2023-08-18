@@ -8,13 +8,13 @@ on:
   # push:
   #   branches: [ master ]
   #   paths:
-  #     - .github/Wall_Fires.yml
+  #     - .github/workflows/Wall_Fires.yml
   #     - Utilities/macfp.py
   #     - Wall_Fires/**
   # pull_request:
   #   branches: [ master ]
   #   paths:
-  #     - .github/Wall_Fires.yml
+  #     - .github/workflows/Wall_Fires.yml
   #     - Utilities/macfp.py
   #     - Wall_Fires/**
 

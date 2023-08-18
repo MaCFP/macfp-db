@@ -8,13 +8,13 @@ on:
   push:
     branches: [ master ]
     paths:
-      - .github/Fire_Growth.yml
+      - .github/workflows/Fire_Growth.yml
       - Utilities/macfp.py
       - Fire_Growth/**
   pull_request:
     branches: [ master ]
     paths:
-      - .github/Fire_Growth.yml
+      - .github/workflows/Fire_Growth.yml
       - Utilities/macfp.py
       - Fire_Growth/**
 
