@@ -53,7 +53,8 @@ jobs:
       - name: Push NIST NIST Pool Fires Results to release
         if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST/Preliminary_Results
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST
+          cp README.md ./Plots/.
           zip Plots.zip -r Plots
           mv Plots.zip NIST_Pool_Fires_NIST_Plots.zip
           gh release upload SCRIPT_FIGURES NIST_Pool_Fires_NIST_Plots.zip --clobber
@@ -72,6 +73,7 @@ jobs:
         if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
         run: |
           cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/Waterloo_Methanol/Computational_Results/2023/NIST
+          cp README.md ./Plots/.
           zip Plots.zip -r Plots
           mv Plots.zip Waterloo_Methanol_NIST_Plots.zip
           gh release upload SCRIPT_FIGURES Waterloo_Methanol_NIST_Plots.zip --clobber
