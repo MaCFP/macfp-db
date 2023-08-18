@@ -8,13 +8,13 @@ on:
   push:
     branches: [ master ]
     paths:
-      - .github/Liquid_Pool_Fires.yml
+      - .github/workflows/Liquid_Pool_Fires.yml
       - Utilities/macfp.py
       - Liquid_Pool_Fires/**
   pull_request:
     branches: [ master ]
     paths:
-      - .github/Liquid_Pool_Fires.yml
+      - .github/workflows/Liquid_Pool_Fires.yml
       - Utilities/macfp.py
       - Liquid_Pool_Fires/**
 
