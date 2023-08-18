@@ -71,7 +71,7 @@ jobs:
       - name: Push NIST Waterloo Methanol Results to release
         if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/Waterlool_Methanol/Computational_Results/2023/NIST
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/Waterloo_Methanol/Computational_Results/2023/NIST
           zip Plots.zip -r Plots
           mv Plots.zip Waterloo_Methanol_NIST_Plots.zip
           gh release upload SCRIPT_FIGURES Waterloo_Methanol_NIST_Plots.zip --clobber
