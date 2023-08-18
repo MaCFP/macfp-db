@@ -12,7 +12,7 @@ Country: USA
 
 ### Test case
 
-Case 3a: Waterloo Methanol 30 cm
+Waterloo Methanol 30 cm
 
 ------------------
 
