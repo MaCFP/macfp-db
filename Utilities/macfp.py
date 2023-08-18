@@ -661,15 +661,16 @@ def define_plot_parameters(C,irow):
                 Savgol_Filter = False
         except:
             Savgol_Filter = False
+
         try:
-            Savgol_Window = C.values[irow,C.columns.get_loc('Savgol_Window')]
+            Savgol_Window = int(C.values[irow,C.columns.get_loc('Savgol_Window')])
             if pd.isnull(Savgol_Window):
                 Savgol_Window = 11
         except:
-            Savgol_Filter = 11
+            Savgol_Window = 11
 
         try:
-            Savgol_Polyorder = C.values[irow,C.columns.get_loc('Savgol_Polyorder')]
+            Savgol_Polyorder = int(C.values[irow,C.columns.get_loc('Savgol_Polyorder')])
             if pd.isnull(Savgol_Polyorder):
                 Savgol_Polyorder = 3
         except:
