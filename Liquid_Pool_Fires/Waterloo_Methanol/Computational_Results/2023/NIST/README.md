@@ -4,7 +4,7 @@ Name: Randy McDermott<sup>a</sup>, Kevin McGrattan<sup>a</sup>, Jason Floyd<sup>
 
 Institutions:  
 <sup>a</sup>National Institute of Standards and Technology (NIST), Gaithersburg, Maryland  
-<sup>b</sup>Jensen Hughes, Rockville, Maryland
+<sup>b</sup>Fire Safety Research Institute, UL Research Institutes, Columbia, Maryland
 
 Country: USA
 
@@ -21,8 +21,7 @@ Code: [Fire Dynamics Simulator (FDS)](https://github.com/firemodels/fds)
 
 Version:
 
-FDS6.7.5-990-g5c1eb1782-master (prescribed MLR)  
-FDS6.7.5-1004-g197c82469-master (predicted MLR)
+FDS-6.8.0-564-g879930a-master
 
 ------------------
 
