@@ -4,7 +4,7 @@ Name: Randy McDermott<sup>a</sup>, Kevin McGrattan<sup>a</sup>, Jason Floyd<sup>
 
 Institutions:  
 <sup>a</sup>National Institute of Standards and Technology (NIST), Gaithersburg, Maryland  
-<sup>b</sup>Jensen Hughes, Rockville, Maryland
+<sup>b</sup>Fire Safety Research Institute, UL Research Institutes, Columbia, Maryland
 
 Country: USA
 
