@@ -43,20 +43,38 @@ jobs:
       # When submitting computational results, add your script to the list below (follow the example)
 
       # Step 1: generate the plots
-      - name: NIST Preliminary Results
+      - name: NIST NIST Pool Fires Results
         run: |
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST
           python NIST_Pool_Fires_plot_cmp.py
 
       # Step 2: push the plots to the releases page
-      - name: Push NIST Results to release
+      - name: Push NIST NIST Pool Fires Results to release
         if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
         run: |
           cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST/Preliminary_Results
           zip Plots.zip -r Plots
           mv Plots.zip NIST_Pool_Fires_NIST_Plots.zip
           gh release upload SCRIPT_FIGURES NIST_Pool_Fires_NIST_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 1: generate the plots
+      - name: NIST [Waterloo Methanol] Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/Waterloo_Methanol/Computational_Results/2023/NIST
+          python Waterloo_Methanol_plot_results.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push NIST Waterloo Methanol Results to release
+        if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/Waterlool_Methanol/Computational_Results/2023/NIST
+          zip Plots.zip -r Plots
+          mv Plots.zip Waterloo_Methanol_NIST_Plots.zip
+          gh release upload SCRIPT_FIGURES Waterloo_Methanol_NIST_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
