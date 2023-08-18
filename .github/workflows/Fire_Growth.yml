@@ -105,7 +105,7 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/FSRI
           zip Plots.zip -r Plots
-          mv Plots.zip NIST_Parallel_Panel_NIST_Plots.zip
+          mv Plots.zip UMB_SBI_FSRI_Plots.zip
           gh release upload SCRIPT_FIGURES UMD_SBI_FSRI_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
