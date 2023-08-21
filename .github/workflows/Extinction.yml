@@ -52,7 +52,7 @@ jobs:
 
       # Step 2: push the plots to the releases page
       - name: Push NIST Results to release
-        if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }} && github.repository_owner == 'MaCFP'
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
           cd $GITHUB_WORKSPACE/Extinction/FM_Burner/Computational_Results/2023/NIST
           cp README.md ./Plots/.
