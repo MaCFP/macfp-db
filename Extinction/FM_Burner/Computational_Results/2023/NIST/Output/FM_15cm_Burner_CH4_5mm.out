@@ -1,0 +1,1646 @@
+
+ Fire Dynamics Simulator
+
+ Current Date     : August 16, 2023  16:59:35
+ Revision         : FDS-6.8.0-564-g879930a-master
+ Revision Date    : Wed Aug 16 13:01:02 2023 -0400
+ Compiler         : ifort version 2021.7.1
+ Compilation Date : Aug 16, 2023 16:46:52
+
+ MPI Enabled;    Number of MPI Processes:     208
+ OpenMP Disabled
+
+ MPI version: 3.1
+ MPI library version: Intel(R) MPI Library 2021.7 for Linux* OS
+
+
+ Job TITLE        : LOI test for FM 15 cm burner
+ Job ID string    : FM_15cm_Burner_CH4_5mm
+
+
+ Miscellaneous Parameters
+
+   Simulation Start Time (s)          0.0
+   Simulation End Time (s)           65.0
+   Background Pressure (Pa)     101325.00
+   Ambient Temperature (C)          20.00
+
+   3D Cartesian
+   LES Calculation
+   Eddy Viscosity Model:  Deardorff (C_DEARDORFF = 0.10)
+   Surface side wall Eddy Viscosity Model:  WALE (C_WALE = 0.60)
+   Surface wall Eddy Viscosity Model:  WALE (C_WALE = 0.60)
+   Surface burner Eddy Viscosity Model:  WALE (C_WALE = 0.60)
+   Surface coflow Eddy Viscosity Model:  WALE (C_WALE = 0.60)
+   Surface pilot Eddy Viscosity Model:  WALE (C_WALE = 0.60)
+   Turbulent Prandtl Number:         0.50
+   Turbulent Schmidt Number:         0.50
+
+
+ Pressure solver information
+
+   Solver:                          ULMAT
+   Velocity tolerance (m/s):    2.500E-03
+   Press eqn res tol (1/s^2):   8.000E+05
+   Max pressure iterations:            10
+
+
+ Mass Fraction Transformation Matrix to Convert Species Mixtures (Columns) to Primitive Species (Rows)
+
+                         AIR       PRODUCTS  INTERMED  PRODUCTS  NITROGEN  METHANE   PILOT FU
+   OXYGEN                0.230997  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+   CARBON DIOXIDE        0.000591  0.198962  0.000549  0.150715  0.000000  0.000000  0.000000
+   WATER VAPOR           0.005941  0.086784  0.166489  0.128549  0.000000  0.000000  0.000000
+   CARBON MONOXIDE       0.000000  0.000000  0.125140  0.000000  0.000000  0.000000  0.000000
+   SOOT                  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+   HYDROGEN              0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+   HYDROGEN CYANIDE      0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+   NITROGEN              0.762470  0.714254  0.707822  0.720736  1.000000  0.000000  0.000000
+   METHANE               0.000000  0.000000  0.000000  0.000000  0.000000  1.000000  0.000000
+   ETHYLENE              0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  1.000000
+
+
+ Primitive Species Information
+
+   OXYGEN
+   Gas Species
+   Molecular Weight (g/mol)                31.99880
+   Ambient Density (kg/m^3)                1.330
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   CARBON DIOXIDE
+   Gas Species
+   Molecular Weight (g/mol)                44.00950
+   Ambient Density (kg/m^3)                1.830
+           Enthalpy of Formation (J/kg) -8.941E+06
+
+   WATER VAPOR
+   Gas Species
+   Molecular Weight (g/mol)                18.01528
+   Ambient Density (kg/m^3)                0.749
+           Enthalpy of Formation (J/kg) -1.342E+07
+
+   CARBON MONOXIDE
+   Gas Species
+   Molecular Weight (g/mol)                28.01010
+   Ambient Density (kg/m^3)                1.164
+           Enthalpy of Formation (J/kg) -3.946E+06
+
+   SOOT
+   Gas Species
+   Molecular Weight (g/mol)                12.01070
+   Ambient Density (kg/m^3)                0.499
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   HYDROGEN
+   Gas Species
+   Molecular Weight (g/mol)                 2.01588
+   Ambient Density (kg/m^3)                0.084
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   HYDROGEN CYANIDE
+   Gas Species
+   Molecular Weight (g/mol)                27.02534
+   Ambient Density (kg/m^3)                1.123
+           Enthalpy of Formation (J/kg)  4.924E+06
+
+   NITROGEN
+   Gas Species
+   Molecular Weight (g/mol)                28.01340
+   Ambient Density (kg/m^3)                1.165
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   METHANE
+   Gas Species
+   Molecular Weight (g/mol)                16.04246
+   Ambient Density (kg/m^3)                0.667
+           Enthalpy of Formation (J/kg) -4.650E+06
+
+   ETHYLENE
+   Gas Species
+   Molecular Weight (g/mol)                28.05316
+   Ambient Density (kg/m^3)                1.166
+           Enthalpy of Formation (J/kg)  1.871E+06
+
+
+ Tracked (Lumped) Species Information
+
+   AIR
+   Molecular Weight (g/mol)            28.75198
+   Ambient Density (kg/m^3)            1.195
+   Initial Mass Fraction               1.000
+   Enthalpy of Formation (J/kg)     -8.504E+04
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   OXYGEN                         2.309974E-01      2.075588E-01
+   CARBON DIOXIDE                 5.914650E-04      3.864118E-04
+   WATER VAPOR                    5.941209E-03      9.482037E-03
+   NITROGEN                       7.624699E-01      7.825727E-01
+ 
+     Viscosity (kg/m/s) Ambient,  293 K:  1.796E-05
+                                  500 K:  2.612E-05
+                                 1000 K:  4.125E-05
+                                 1500 K:  5.371E-05
+                                 2000 K:  6.476E-05
+   Therm. Cond. (W/m/K) Ambient,  293 K:  2.556E-02
+                                  500 K:  3.814E-02
+                                 1000 K:  6.686E-02
+                                 1500 K:  9.249E-02
+                                 2000 K:  1.153E-01
+        Enthalpy (J/kg) Ambient,  293 K: -9.012E+04
+                                  500 K:  1.222E+05
+                                 1000 K:  6.721E+05
+                                 1500 K:  1.270E+06
+                                 2000 K:  1.896E+06
+    Spec. Heat (J/kg/K) Ambient,  293 K:  1.016E+03
+                                  500 K:  1.042E+03
+                                 1000 K:  1.156E+03
+                                 1500 K:  1.229E+03
+                                 2000 K:  1.270E+03
+   Diff. Coeff. (m^2/s) Ambient,  293 K:  1.991E-05
+                                  500 K:  4.961E-05
+                                 1000 K:  1.580E-04
+                                 1500 K:  3.095E-04
+                                 2000 K:  4.984E-04
+ Gibbs Energy Amb. (kJ/mol),  293 K: -5.873E+01
+                                  500 K: -1.007E+02
+                                 1000 K: -2.117E+02
+                                 1500 K: -3.312E+02
+                                 2000 K: -4.568E+02
+
+   PRODUCTS
+   Molecular Weight (g/mol)            28.70676
+   Ambient Density (kg/m^3)            1.193
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)     -2.944E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   CARBON DIOXIDE                 1.989619E-01      1.297800E-01
+   WATER VAPOR                    8.678371E-02      1.382870E-01
+   CARBON MONOXIDE                0.000000E+00      0.000000E+00
+   SOOT                           0.000000E+00      0.000000E+00
+   HYDROGEN CYANIDE               0.000000E+00      0.000000E+00
+   NITROGEN                       7.142544E-01      7.319330E-01
+ 
+     Viscosity (kg/m/s) Ambient,  293 K:  1.623E-05
+                                  500 K:  2.403E-05
+                                 1000 K:  3.903E-05
+                                 1500 K:  5.145E-05
+                                 2000 K:  6.239E-05
+   Therm. Cond. (W/m/K) Ambient,  293 K:  2.339E-02
+                                  500 K:  3.614E-02
+                                 1000 K:  6.673E-02
+                                 1500 K:  9.529E-02
+                                 2000 K:  1.208E-01
+        Enthalpy (J/kg) Ambient,  293 K: -2.949E+06
+                                  500 K: -2.722E+06
+                                 1000 K: -2.120E+06
+                                 1500 K: -1.454E+06
+                                 2000 K: -7.474E+05
+    Spec. Heat (J/kg/K) Ambient,  293 K:  1.071E+03
+                                  500 K:  1.126E+03
+                                 1000 K:  1.278E+03
+                                 1500 K:  1.380E+03
+                                 2000 K:  1.439E+03
+   Diff. Coeff. (m^2/s) Ambient,  293 K:  1.940E-05
+                                  500 K:  4.914E-05
+                                 1000 K:  1.584E-04
+                                 1500 K:  3.114E-04
+                                 2000 K:  5.021E-04
+ Gibbs Energy Amb. (kJ/mol),  293 K: -1.566E+02
+                                  500 K: -1.990E+02
+                                 1000 K: -3.118E+02
+                                 1500 K: -4.344E+02
+                                 2000 K: -5.638E+02
+
+   INTERMEDIATE PRODUCTS 2
+   Molecular Weight (g/mol)            25.64829
+   Ambient Density (kg/m^3)            1.066
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)     -2.734E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   CARBON DIOXIDE                 5.490730E-04      3.199942E-04
+   WATER VAPOR                    1.664888E-01      2.370296E-01
+   CARBON MONOXIDE                1.251405E-01      1.145887E-01
+   SOOT                           0.000000E+00      0.000000E+00
+   HYDROGEN                       0.000000E+00      0.000000E+00
+   HYDROGEN CYANIDE               0.000000E+00      0.000000E+00
+   NITROGEN                       7.078216E-01      6.480618E-01
+ 
+     Viscosity (kg/m/s) Ambient,  293 K:  1.602E-05
+                                  500 K:  2.368E-05
+                                 1000 K:  3.885E-05
+                                 1500 K:  5.163E-05
+                                 2000 K:  6.290E-05
+   Therm. Cond. (W/m/K) Ambient,  293 K:  2.421E-02
+                                  500 K:  3.678E-02
+                                 1000 K:  6.840E-02
+                                 1500 K:  9.934E-02
+                                 2000 K:  1.275E-01
+        Enthalpy (J/kg) Ambient,  293 K: -2.739E+06
+                                  500 K: -2.494E+06
+                                 1000 K: -1.854E+06
+                                 1500 K: -1.143E+06
+                                 2000 K: -3.855E+05
+    Spec. Heat (J/kg/K) Ambient,  293 K:  1.177E+03
+                                  500 K:  1.207E+03
+                                 1000 K:  1.357E+03
+                                 1500 K:  1.476E+03
+                                 2000 K:  1.550E+03
+   Diff. Coeff. (m^2/s) Ambient,  293 K:  2.012E-05
+                                  500 K:  5.136E-05
+                                 1000 K:  1.666E-04
+                                 1500 K:  3.281E-04
+                                 2000 K:  5.295E-04
+ Gibbs Energy Amb. (kJ/mol),  293 K: -1.105E+02
+                                  500 K: -1.520E+02
+                                 1000 K: -2.618E+02
+                                 1500 K: -3.805E+02
+                                 2000 K: -5.054E+02
+
+   PRODUCTS 2
+   Molecular Weight (g/mol)            27.55701
+   Ambient Density (kg/m^3)            1.146
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)     -3.073E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   CARBON DIOXIDE                 1.507153E-01      9.437196E-02
+   WATER VAPOR                    1.285488E-01      1.966343E-01
+   CARBON MONOXIDE                0.000000E+00      0.000000E+00
+   SOOT                           0.000000E+00      0.000000E+00
+   HYDROGEN CYANIDE               0.000000E+00      0.000000E+00
+   NITROGEN                       7.207359E-01      7.089938E-01
+ 
+     Viscosity (kg/m/s) Ambient,  293 K:  1.599E-05
+                                  500 K:  2.373E-05
+                                 1000 K:  3.886E-05
+                                 1500 K:  5.148E-05
+                                 2000 K:  6.260E-05
+   Therm. Cond. (W/m/K) Ambient,  293 K:  2.347E-02
+                                  500 K:  3.624E-02
+                                 1000 K:  6.760E-02
+                                 1500 K:  9.758E-02
+                                 2000 K:  1.246E-01
+        Enthalpy (J/kg) Ambient,  293 K: -3.079E+06
+                                  500 K: -2.843E+06
+                                 1000 K: -2.221E+06
+                                 1500 K: -1.530E+06
+                                 2000 K: -7.946E+05
+    Spec. Heat (J/kg/K) Ambient,  293 K:  1.115E+03
+                                  500 K:  1.165E+03
+                                 1000 K:  1.322E+03
+                                 1500 K:  1.434E+03
+                                 2000 K:  1.501E+03
+   Diff. Coeff. (m^2/s) Ambient,  293 K:  1.963E-05
+                                  500 K:  5.001E-05
+                                 1000 K:  1.619E-04
+                                 1500 K:  3.186E-04
+                                 2000 K:  5.141E-04
+ Gibbs Energy Amb. (kJ/mol),  293 K: -1.474E+02
+                                  500 K: -1.895E+02
+                                 1000 K: -3.015E+02
+                                 1500 K: -4.231E+02
+                                 2000 K: -5.515E+02
+
+   NITROGEN
+   Molecular Weight (g/mol)            28.01340
+   Ambient Density (kg/m^3)            1.165
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)      0.000E+00
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   NITROGEN                       1.000000E+00      1.000000E+00
+ 
+     Viscosity (kg/m/s) Ambient,  293 K:  1.740E-05
+                                  500 K:  2.512E-05
+                                 1000 K:  3.948E-05
+                                 1500 K:  5.136E-05
+                                 2000 K:  6.190E-05
+   Therm. Cond. (W/m/K) Ambient,  293 K:  2.547E-02
+                                  500 K:  3.736E-02
+                                 1000 K:  6.491E-02
+                                 1500 K:  8.998E-02
+                                 2000 K:  1.120E-01
+        Enthalpy (J/kg) Ambient,  293 K: -5.199E+03
+                                  500 K:  2.110E+05
+                                 1000 K:  7.661E+05
+                                 1500 K:  1.371E+06
+                                 2000 K:  2.004E+06
+    Spec. Heat (J/kg/K) Ambient,  293 K:  1.040E+03
+                                  500 K:  1.056E+03
+                                 1000 K:  1.167E+03
+                                 1500 K:  1.244E+03
+                                 2000 K:  1.284E+03
+   Diff. Coeff. (m^2/s) Ambient,  293 K:  1.986E-05
+                                  500 K:  4.934E-05
+                                 1000 K:  1.568E-04
+                                 1500 K:  3.070E-04
+                                 2000 K:  4.944E-04
+ Gibbs Energy Amb. (kJ/mol),  293 K: -5.614E+01
+                                  500 K: -9.746E+01
+                                 1000 K: -2.067E+02
+                                 1500 K: -3.244E+02
+                                 2000 K: -4.480E+02
+
+   METHANE
+   Molecular Weight (g/mol)            16.04246
+   Ambient Density (kg/m^3)            0.667
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)     -4.650E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   METHANE                        1.000000E+00      1.000000E+00
+ 
+     Viscosity (kg/m/s) Ambient,  293 K:  1.096E-05
+                                  500 K:  1.677E-05
+                                 1000 K:  2.728E-05
+                                 1500 K:  3.559E-05
+                                 2000 K:  4.290E-05
+   Therm. Cond. (W/m/K) Ambient,  293 K:  3.466E-02
+                                  500 K:  6.958E-02
+                                 1000 K:  1.790E-01
+                                 1500 K:  2.880E-01
+                                 2000 K:  3.876E-01
+        Enthalpy (J/kg) Ambient,  293 K: -4.661E+06
+                                  500 K: -4.137E+06
+                                 1000 K: -2.239E+06
+                                 1500 K:  3.482E+05
+                                 2000 K:  3.357E+06
+    Spec. Heat (J/kg/K) Ambient,  293 K:  2.213E+03
+                                  500 K:  2.904E+03
+                                 1000 K:  4.593E+03
+                                 1500 K:  5.664E+03
+                                 2000 K:  6.323E+03
+   Diff. Coeff. (m^2/s) Ambient,  293 K:  2.147E-05
+                                  500 K:  5.438E-05
+                                 1000 K:  1.750E-04
+                                 1500 K:  3.433E-04
+                                 2000 K:  5.530E-04
+ Gibbs Energy Amb. (kJ/mol),  293 K: -1.292E+02
+                                  500 K: -1.700E+02
+                                 1000 K: -2.842E+02
+                                 1500 K: -4.170E+02
+                                 2000 K: -5.650E+02
+
+   PILOT FUEL
+   Molecular Weight (g/mol)            28.05316
+   Ambient Density (kg/m^3)            1.166
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)      1.871E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   ETHYLENE                       1.000000E+00      1.000000E+00
+ 
+     Viscosity (kg/m/s) Ambient,  293 K:  9.987E-06
+                                  500 K:  1.608E-05
+                                 1000 K:  2.724E-05
+                                 1500 K:  3.595E-05
+                                 2000 K:  4.345E-05
+   Therm. Cond. (W/m/K) Ambient,  293 K:  1.819E-02
+                                  500 K:  4.313E-02
+                                 1000 K:  1.099E-01
+                                 1500 K:  1.699E-01
+                                 2000 K:  2.210E-01
+        Enthalpy (J/kg) Ambient,  293 K:  1.864E+06
+                                  500 K:  2.252E+06
+                                 1000 K:  3.678E+06
+                                 1500 K:  5.511E+06
+                                 2000 K:  7.554E+06
+    Spec. Heat (J/kg/K) Ambient,  293 K:  1.511E+03
+                                  500 K:  2.227E+03
+                                 1000 K:  3.348E+03
+                                 1500 K:  3.922E+03
+                                 2000 K:  4.221E+03
+   Diff. Coeff. (m^2/s) Ambient,  293 K:  1.552E-05
+                                  500 K:  3.994E-05
+                                 1000 K:  1.298E-04
+                                 1500 K:  2.553E-04
+                                 2000 K:  4.114E-04
+ Gibbs Energy Amb. (kJ/mol),  293 K: -1.176E+01
+                                  500 K: -5.994E+01
+                                 1000 K: -1.972E+02
+                                 1500 K: -3.582E+02
+                                 2000 K: -5.377E+02
+
+
+ Gas Phase Reaction Information
+
+   Reaction 1
+
+      Priority:                                                               1
+
+      Fuel                                           Heat of Combustion (kJ/kg)
+      PILOT FUEL                                                     47166.5937
+
+      Primitive Species Stoich. Coeff.
+      Species ID                                                          Molar
+      OXYGEN                                                          -3.000000
+      CARBON DIOXIDE                                                   2.000000
+      WATER VAPOR                                                      2.000000
+      ETHYLENE                                                        -1.000000
+
+      Tracked (Lumped) Species Stoich. Coeff.
+      Species ID                                             Molar         Mass
+      AIR                                               -14.453734   -14.813786
+      PRODUCTS                                           15.453734    15.813786
+      PILOT FUEL                                         -1.000000    -1.000000
+
+      Reaction Kinetics
+
+      Fast chemistry
+
+      ODE Solver:  EXPLICIT EULER
+
+      Extinction Model:  EXTINCTION 2
+      Auto-Ignition Temperature (C):            -273.0
+      Critical Flame Temperature (C):           1427.0
+
+      Prescribed Radiative Fraction:             0.000
+
+   Reaction 2
+
+      Priority:                                                               1
+
+      Fuel                                           Heat of Combustion (kJ/kg)
+      METHANE                                                        32388.2494
+      2-step reaction,  Total Heat of Combustion                     50027.3649
+
+      Primitive Species Stoich. Coeff.
+      Species ID                                                          Molar
+      OXYGEN                                                          -1.500000
+      WATER VAPOR                                                      2.000000
+      CARBON MONOXIDE                                                  1.000000
+      METHANE                                                         -1.000000
+
+      Tracked (Lumped) Species Stoich. Coeff.
+      Species ID                                             Molar         Mass
+      AIR                                                -7.226867   -12.952300
+      INTERMEDIATE PRODUCTS 2                             8.726867    13.952300
+      METHANE                                            -1.000000    -1.000000
+
+      Reaction Kinetics
+
+      Fast chemistry
+
+      ODE Solver:  EXPLICIT EULER
+
+      Extinction Model:  EXTINCTION 2
+      Auto-Ignition Temperature (C):             600.0
+      Critical Flame Temperature (C):           1507.0
+
+      Prescribed Radiative Fraction:             0.000
+
+   Reaction 3
+
+      Priority:                                                               2
+
+      Fuel                                           Heat of Combustion (kJ/kg)
+      INTERMEDIATE PRODUCTS 2                                         1264.2442
+
+      Primitive Species Stoich. Coeff.
+      Species ID                                                          Molar
+      OXYGEN                                                          -0.057294
+      CARBON DIOXIDE                                                   0.114589
+      CARBON MONOXIDE                                                 -0.114589
+
+      Tracked (Lumped) Species Stoich. Coeff.
+      Species ID                                             Molar         Mass
+      AIR                                                -0.276039    -0.309442
+      INTERMEDIATE PRODUCTS 2                            -1.000000    -1.000000
+      PRODUCTS 2                                          1.218745     1.309442
+
+      Reaction Kinetics
+
+      Fast chemistry
+
+      ODE Solver:  EXPLICIT EULER
+
+      Prescribed Radiative Fraction:             0.000
+
+
+ Material Information
+
+   1 sand
+     Emissivity:                                  0.900
+     Density (kg/m3):                            1500.0
+     Specific Heat (kJ/kg/K) Ambient,  293 K:  8.300E-01
+                                       350 K:  8.300E-01
+                                       500 K:  8.300E-01
+                                       800 K:  8.300E-01
+     Therm. Cond. (W/m/K) Ambient,     293 K:  2.500E-01
+                                       350 K:  2.500E-01
+                                       500 K:  2.500E-01
+                                       800 K:  2.500E-01
+     Enthalpy (kJ/kg) Ambient,         293 K:  2.432E+02
+                                       350 K:  2.905E+02
+                                       500 K:  4.150E+02
+                                       800 K:  6.640E+02
+
+
+ Surface Conditions
+
+   0 INERT
+
+   1 side wall (DEFAULT)
+
+   2 wall
+
+   3 burner
+     Material List
+          1  sand
+     Layer  1
+        Thickness   (m):  0.02540
+        Density (kg/m3):  1500.00
+        sand, Mass fraction:    1.00
+     Reaction products considered from the first  0.50 layers.
+     Total surface density    38.100 kg/m2
+     Solid Phase Node, Layer, Coordinates(m):
+                    0      1       0.0000000
+                    1      1       0.0004097
+                    2      1       0.0012290
+                    3      1       0.0028677
+                    4      1       0.0061452
+                    5      1       0.0127000
+                    6      1       0.0192548
+                    7      1       0.0225323
+                    8      1       0.0241710
+                    9      1       0.0249903
+                   10      1       0.0254000
+     Exposed Backing
+     METHANE Mass Flux (kg/s/m2)   1.102E-02
+
+   4 coflow
+     AIR Mass Flux (kg/s/m2)   2.230E-01
+     NITROGEN Mass Flux (kg/s/m2)   3.600E-01
+
+   5 pilot
+     PILOT FUEL Mass Flux (kg/s/m2)   2.197E-03
+     Convection length scale (m)  9.400E-03
+
+   6 OPEN
+     Passive Vent to Atmosphere
+
+   7 MIRROR
+     Symmetry Plane
+
+   8 INTERPOLATED
+
+   9 PERIODIC
+
+  10 HVAC
+
+  11 MASSLESS TRACER
+
+  12 DROPLET
+
+  13 MASSLESS TARGET
+
+  14 PERIODIC FLOW ONLY
+
+
+ Lagrangian Particle Classes
+
+   1 ignitor
+     SURFace ID: pilot
+     # Reals: 88
+     # Integers: 24
+     # Logicals: 5
+
+
+ Cut-off Density and Temperature
+
+    Minimum Temperature:  -259.1 C
+    Maximum Temperature:  2726.8 C
+    Minimum Density:  1.195E-01 kg/m3
+    Maximum Density:  5.006E+01 kg/m3
+
+
+ Device Information
+
+   1 ID: XO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.520000E-01   -5.000000E-05   -1.490000E-01
+     TEMPORAL STATISTIC: INSTANT VALUE
+   2 ID: TBURNER
+     QUANTITY: WALL TEMPERATURE
+     Coordinates (X,Y,Z):   -5.000000E-05   -5.000000E-05    1.000000E-03
+     TEMPORAL STATISTIC: TIME AVERAGE
+
+
+ Radiation Model Information
+
+   Number of control angles  104
+   Time step increment         3
+   Angle increment             5
+   Theta band N_phi   Solid angle
+     1:        4     0.120
+     2:       12     0.114
+     3:       16     0.127
+     4:       20     0.120
+     5:       20     0.120
+     6:       16     0.127
+     7:       12     0.114
+     8:        4     0.120
+   Using gray gas absorption.
+   Mean beam length  1.000E-01 m
+ 
+ 
+
+ Run Time Diagnostics
+
+ Time Step:      1, Simulation Time:    0.0060 s, Step Size: 0.00595 s, Pressure Iterations: 10
+ Time Step:      2, Simulation Time:     0.012 s, Step Size: 0.00595 s, Pressure Iterations: 10
+ Time Step:      3, Simulation Time:     0.018 s, Step Size: 0.00595 s, Pressure Iterations: 10
+ Time Step:      4, Simulation Time:     0.024 s, Step Size: 0.00595 s, Pressure Iterations: 10
+ Time Step:      5, Simulation Time:     0.030 s, Step Size: 0.00595 s, Pressure Iterations: 10
+ Time Step:      6, Simulation Time:     0.034 s, Step Size: 0.00447 s, Pressure Iterations: 10
+ Time Step:      7, Simulation Time:     0.039 s, Step Size: 0.00447 s, Pressure Iterations: 10
+ Time Step:      8, Simulation Time:     0.043 s, Step Size: 0.00447 s, Pressure Iterations: 10
+ Time Step:      9, Simulation Time:     0.048 s, Step Size: 0.00447 s, Pressure Iterations: 10
+ Time Step:     10, Simulation Time:     0.052 s, Step Size: 0.00447 s, Pressure Iterations: 10
+ Time Step:     20, Simulation Time:     0.093 s, Step Size: 0.00402 s, Pressure Iterations: 10
+ Time Step:     30, Simulation Time:      0.14 s, Step Size: 0.00309 s, Pressure Iterations: 10
+ Time Step:     40, Simulation Time:      0.16 s, Step Size: 0.00145 s, Pressure Iterations: 10
+ Time Step:     50, Simulation Time:      0.17 s, Step Size: 0.00129 s, Pressure Iterations: 10
+ Time Step:     60, Simulation Time:      0.19 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:     70, Simulation Time:      0.21 s, Step Size: 0.00205 s, Pressure Iterations: 10
+ Time Step:     80, Simulation Time:      0.23 s, Step Size: 0.00230 s, Pressure Iterations: 10
+ Time Step:     90, Simulation Time:      0.25 s, Step Size: 0.00217 s, Pressure Iterations: 10
+ Time Step:    100, Simulation Time:      0.27 s, Step Size: 0.00239 s, Pressure Iterations: 10
+ Time Step:    200, Simulation Time:      0.37 s, Step Size: 0.00088 s, Pressure Iterations: 10
+ Time Step:    300, Simulation Time:      0.46 s, Step Size: 0.00078 s, Pressure Iterations: 10
+ Time Step:    400, Simulation Time:      0.53 s, Step Size: 0.00061 s, Pressure Iterations: 10
+ Time Step:    500, Simulation Time:      0.59 s, Step Size: 0.00060 s, Pressure Iterations: 10
+ Time Step:    600, Simulation Time:      0.64 s, Step Size: 0.00053 s, Pressure Iterations: 10
+ Time Step:    700, Simulation Time:      0.70 s, Step Size: 0.00052 s, Pressure Iterations: 10
+ Time Step:    800, Simulation Time:      0.74 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:    900, Simulation Time:      0.79 s, Step Size: 0.00049 s, Pressure Iterations: 10
+ Time Step:   1000, Simulation Time:      0.84 s, Step Size: 0.00044 s, Pressure Iterations: 9
+ Time Step:   1100, Simulation Time:      0.88 s, Step Size: 0.00043 s, Pressure Iterations: 8
+ Time Step:   1200, Simulation Time:      0.93 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:   1300, Simulation Time:      0.97 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:   1400, Simulation Time:      1.01 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:   1500, Simulation Time:      1.05 s, Step Size: 0.00037 s, Pressure Iterations: 8
+ Time Step:   1600, Simulation Time:      1.08 s, Step Size: 0.00040 s, Pressure Iterations: 9
+ Time Step:   1700, Simulation Time:      1.12 s, Step Size: 0.00040 s, Pressure Iterations: 7
+ Time Step:   1800, Simulation Time:      1.15 s, Step Size: 0.00031 s, Pressure Iterations: 8
+ Time Step:   1900, Simulation Time:      1.19 s, Step Size: 0.00035 s, Pressure Iterations: 8
+ Time Step:   2000, Simulation Time:      1.22 s, Step Size: 0.00030 s, Pressure Iterations: 9
+ Time Step:   2100, Simulation Time:      1.26 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:   2200, Simulation Time:      1.29 s, Step Size: 0.00039 s, Pressure Iterations: 9
+ Time Step:   2300, Simulation Time:      1.33 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:   2400, Simulation Time:      1.36 s, Step Size: 0.00034 s, Pressure Iterations: 9
+ Time Step:   2500, Simulation Time:      1.40 s, Step Size: 0.00036 s, Pressure Iterations: 9
+ Time Step:   2600, Simulation Time:      1.44 s, Step Size: 0.00036 s, Pressure Iterations: 9
+ Time Step:   2700, Simulation Time:      1.47 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:   2800, Simulation Time:      1.51 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:   2900, Simulation Time:      1.54 s, Step Size: 0.00033 s, Pressure Iterations: 8
+ Time Step:   3000, Simulation Time:      1.58 s, Step Size: 0.00035 s, Pressure Iterations: 8
+ Time Step:   3100, Simulation Time:      1.61 s, Step Size: 0.00033 s, Pressure Iterations: 8
+ Time Step:   3200, Simulation Time:      1.65 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:   3300, Simulation Time:      1.69 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:   3400, Simulation Time:      1.72 s, Step Size: 0.00030 s, Pressure Iterations: 9
+ Time Step:   3500, Simulation Time:      1.75 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:   3600, Simulation Time:      1.79 s, Step Size: 0.00034 s, Pressure Iterations: 9
+ Time Step:   3700, Simulation Time:      1.83 s, Step Size: 0.00036 s, Pressure Iterations: 9
+ Time Step:   3800, Simulation Time:      1.86 s, Step Size: 0.00032 s, Pressure Iterations: 9
+ Time Step:   3900, Simulation Time:      1.89 s, Step Size: 0.00029 s, Pressure Iterations: 10
+ Time Step:   4000, Simulation Time:      1.93 s, Step Size: 0.00031 s, Pressure Iterations: 9
+ Time Step:   4100, Simulation Time:      1.96 s, Step Size: 0.00030 s, Pressure Iterations: 9
+ Time Step:   4200, Simulation Time:      1.99 s, Step Size: 0.00032 s, Pressure Iterations: 10
+ Time Step:   4300, Simulation Time:      2.02 s, Step Size: 0.00043 s, Pressure Iterations: 9
+ Time Step:   4400, Simulation Time:      2.06 s, Step Size: 0.00037 s, Pressure Iterations: 9
+ Time Step:   4500, Simulation Time:      2.10 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:   4600, Simulation Time:      2.13 s, Step Size: 0.00030 s, Pressure Iterations: 8
+ Time Step:   4700, Simulation Time:      2.16 s, Step Size: 0.00032 s, Pressure Iterations: 9
+ Time Step:   4800, Simulation Time:      2.19 s, Step Size: 0.00031 s, Pressure Iterations: 9
+ Time Step:   4900, Simulation Time:      2.22 s, Step Size: 0.00027 s, Pressure Iterations: 7
+ Time Step:   5000, Simulation Time:      2.25 s, Step Size: 0.00032 s, Pressure Iterations: 9
+ Time Step:   5100, Simulation Time:      2.28 s, Step Size: 0.00028 s, Pressure Iterations: 10
+ Time Step:   5200, Simulation Time:      2.31 s, Step Size: 0.00036 s, Pressure Iterations: 8
+ Time Step:   5300, Simulation Time:      2.35 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:   5400, Simulation Time:      2.38 s, Step Size: 0.00034 s, Pressure Iterations: 8
+ Time Step:   5500, Simulation Time:      2.42 s, Step Size: 0.00034 s, Pressure Iterations: 9
+ Time Step:   5600, Simulation Time:      2.45 s, Step Size: 0.00030 s, Pressure Iterations: 9
+ Time Step:   5700, Simulation Time:      2.48 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:   5800, Simulation Time:      2.52 s, Step Size: 0.00036 s, Pressure Iterations: 9
+ Time Step:   5900, Simulation Time:      2.55 s, Step Size: 0.00036 s, Pressure Iterations: 9
+ Time Step:   6000, Simulation Time:      2.59 s, Step Size: 0.00032 s, Pressure Iterations: 8
+ Time Step:   6100, Simulation Time:      2.62 s, Step Size: 0.00034 s, Pressure Iterations: 8
+ Time Step:   6200, Simulation Time:      2.66 s, Step Size: 0.00034 s, Pressure Iterations: 9
+ Time Step:   6300, Simulation Time:      2.69 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:   6400, Simulation Time:      2.73 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:   6500, Simulation Time:      2.76 s, Step Size: 0.00037 s, Pressure Iterations: 9
+ Time Step:   6600, Simulation Time:      2.80 s, Step Size: 0.00033 s, Pressure Iterations: 9
+ Time Step:   6700, Simulation Time:      2.83 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:   6800, Simulation Time:      2.86 s, Step Size: 0.00032 s, Pressure Iterations: 9
+ Time Step:   6900, Simulation Time:      2.89 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:   7000, Simulation Time:      2.93 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:   7100, Simulation Time:      2.97 s, Step Size: 0.00030 s, Pressure Iterations: 10
+ Time Step:   7200, Simulation Time:      3.00 s, Step Size: 0.00030 s, Pressure Iterations: 8
+ Time Step:   7300, Simulation Time:      3.03 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:   7400, Simulation Time:      3.07 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:   7500, Simulation Time:      3.11 s, Step Size: 0.00032 s, Pressure Iterations: 9
+ Time Step:   7600, Simulation Time:      3.14 s, Step Size: 0.00031 s, Pressure Iterations: 8
+ Time Step:   7700, Simulation Time:      3.17 s, Step Size: 0.00034 s, Pressure Iterations: 8
+ Time Step:   7800, Simulation Time:      3.21 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:   7900, Simulation Time:      3.24 s, Step Size: 0.00036 s, Pressure Iterations: 8
+ Time Step:   8000, Simulation Time:      3.27 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:   8100, Simulation Time:      3.31 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:   8200, Simulation Time:      3.34 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:   8300, Simulation Time:      3.38 s, Step Size: 0.00031 s, Pressure Iterations: 10
+ Time Step:   8400, Simulation Time:      3.41 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:   8500, Simulation Time:      3.45 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:   8600, Simulation Time:      3.48 s, Step Size: 0.00038 s, Pressure Iterations: 8
+ Time Step:   8700, Simulation Time:      3.52 s, Step Size: 0.00034 s, Pressure Iterations: 9
+ Time Step:   8800, Simulation Time:      3.55 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:   8900, Simulation Time:      3.59 s, Step Size: 0.00037 s, Pressure Iterations: 9
+ Time Step:   9000, Simulation Time:      3.63 s, Step Size: 0.00033 s, Pressure Iterations: 9
+ Time Step:   9100, Simulation Time:      3.66 s, Step Size: 0.00036 s, Pressure Iterations: 9
+ Time Step:   9200, Simulation Time:      3.70 s, Step Size: 0.00040 s, Pressure Iterations: 9
+ Time Step:   9300, Simulation Time:      3.74 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:   9400, Simulation Time:      3.77 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:   9500, Simulation Time:      3.81 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:   9600, Simulation Time:      3.84 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:   9700, Simulation Time:      3.88 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:   9800, Simulation Time:      3.91 s, Step Size: 0.00037 s, Pressure Iterations: 8
+ Time Step:   9900, Simulation Time:      3.95 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  10000, Simulation Time:      3.99 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  10100, Simulation Time:      4.03 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  10200, Simulation Time:      4.06 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  10300, Simulation Time:      4.09 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:  10400, Simulation Time:      4.13 s, Step Size: 0.00037 s, Pressure Iterations: 9
+ Time Step:  10500, Simulation Time:      4.16 s, Step Size: 0.00031 s, Pressure Iterations: 9
+ Time Step:  10600, Simulation Time:      4.19 s, Step Size: 0.00030 s, Pressure Iterations: 9
+ Time Step:  10700, Simulation Time:      4.23 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  10800, Simulation Time:      4.26 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  10900, Simulation Time:      4.29 s, Step Size: 0.00032 s, Pressure Iterations: 9
+ Time Step:  11000, Simulation Time:      4.33 s, Step Size: 0.00031 s, Pressure Iterations: 9
+ Time Step:  11100, Simulation Time:      4.36 s, Step Size: 0.00033 s, Pressure Iterations: 8
+ Time Step:  11200, Simulation Time:      4.39 s, Step Size: 0.00036 s, Pressure Iterations: 9
+ Time Step:  11300, Simulation Time:      4.43 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  11400, Simulation Time:      4.46 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  11500, Simulation Time:      4.50 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  11600, Simulation Time:      4.53 s, Step Size: 0.00032 s, Pressure Iterations: 10
+ Time Step:  11700, Simulation Time:      4.57 s, Step Size: 0.00036 s, Pressure Iterations: 9
+ Time Step:  11800, Simulation Time:      4.60 s, Step Size: 0.00036 s, Pressure Iterations: 8
+ Time Step:  11900, Simulation Time:      4.64 s, Step Size: 0.00034 s, Pressure Iterations: 9
+ Time Step:  12000, Simulation Time:      4.67 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:  12100, Simulation Time:      4.71 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  12200, Simulation Time:      4.74 s, Step Size: 0.00033 s, Pressure Iterations: 9
+ Time Step:  12300, Simulation Time:      4.78 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  12400, Simulation Time:      4.81 s, Step Size: 0.00039 s, Pressure Iterations: 8
+ Time Step:  12500, Simulation Time:      4.85 s, Step Size: 0.00032 s, Pressure Iterations: 9
+ Time Step:  12600, Simulation Time:      4.88 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  12700, Simulation Time:      4.92 s, Step Size: 0.00035 s, Pressure Iterations: 8
+ Time Step:  12800, Simulation Time:      4.95 s, Step Size: 0.00031 s, Pressure Iterations: 10
+ Time Step:  12900, Simulation Time:      4.98 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  13000, Simulation Time:      5.02 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  13100, Simulation Time:      5.06 s, Step Size: 0.00037 s, Pressure Iterations: 8
+ Time Step:  13200, Simulation Time:      5.09 s, Step Size: 0.00033 s, Pressure Iterations: 9
+ Time Step:  13300, Simulation Time:      5.13 s, Step Size: 0.00036 s, Pressure Iterations: 8
+ Time Step:  13400, Simulation Time:      5.16 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  13500, Simulation Time:      5.20 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  13600, Simulation Time:      5.24 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:  13700, Simulation Time:      5.27 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  13800, Simulation Time:      5.31 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  13900, Simulation Time:      5.35 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  14000, Simulation Time:      5.38 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  14100, Simulation Time:      5.42 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  14200, Simulation Time:      5.45 s, Step Size: 0.00036 s, Pressure Iterations: 8
+ Time Step:  14300, Simulation Time:      5.49 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  14400, Simulation Time:      5.53 s, Step Size: 0.00032 s, Pressure Iterations: 8
+ Time Step:  14500, Simulation Time:      5.56 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  14600, Simulation Time:      5.60 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  14700, Simulation Time:      5.63 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  14800, Simulation Time:      5.67 s, Step Size: 0.00036 s, Pressure Iterations: 9
+ Time Step:  14900, Simulation Time:      5.70 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  15000, Simulation Time:      5.74 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  15100, Simulation Time:      5.78 s, Step Size: 0.00035 s, Pressure Iterations: 8
+ Time Step:  15200, Simulation Time:      5.81 s, Step Size: 0.00034 s, Pressure Iterations: 9
+ Time Step:  15300, Simulation Time:      5.85 s, Step Size: 0.00031 s, Pressure Iterations: 8
+ Time Step:  15400, Simulation Time:      5.88 s, Step Size: 0.00033 s, Pressure Iterations: 9
+ Time Step:  15500, Simulation Time:      5.92 s, Step Size: 0.00033 s, Pressure Iterations: 9
+ Time Step:  15600, Simulation Time:      5.95 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  15700, Simulation Time:      5.99 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  15800, Simulation Time:      6.03 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  15900, Simulation Time:      6.06 s, Step Size: 0.00032 s, Pressure Iterations: 10
+ Time Step:  16000, Simulation Time:      6.10 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  16100, Simulation Time:      6.14 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  16200, Simulation Time:      6.17 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  16300, Simulation Time:      6.21 s, Step Size: 0.00030 s, Pressure Iterations: 9
+ Time Step:  16400, Simulation Time:      6.24 s, Step Size: 0.00032 s, Pressure Iterations: 8
+ Time Step:  16500, Simulation Time:      6.28 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  16600, Simulation Time:      6.31 s, Step Size: 0.00037 s, Pressure Iterations: 9
+ Time Step:  16700, Simulation Time:      6.35 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  16800, Simulation Time:      6.39 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  16900, Simulation Time:      6.43 s, Step Size: 0.00033 s, Pressure Iterations: 8
+ Time Step:  17000, Simulation Time:      6.46 s, Step Size: 0.00036 s, Pressure Iterations: 9
+ Time Step:  17100, Simulation Time:      6.50 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  17200, Simulation Time:      6.53 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  17300, Simulation Time:      6.57 s, Step Size: 0.00039 s, Pressure Iterations: 9
+ Time Step:  17400, Simulation Time:      6.61 s, Step Size: 0.00035 s, Pressure Iterations: 7
+ Time Step:  17500, Simulation Time:      6.65 s, Step Size: 0.00031 s, Pressure Iterations: 7
+ Time Step:  17600, Simulation Time:      6.68 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:  17700, Simulation Time:      6.71 s, Step Size: 0.00034 s, Pressure Iterations: 9
+ Time Step:  17800, Simulation Time:      6.75 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  17900, Simulation Time:      6.78 s, Step Size: 0.00030 s, Pressure Iterations: 9
+ Time Step:  18000, Simulation Time:      6.81 s, Step Size: 0.00031 s, Pressure Iterations: 10
+ Time Step:  18100, Simulation Time:      6.84 s, Step Size: 0.00034 s, Pressure Iterations: 9
+ Time Step:  18200, Simulation Time:      6.88 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  18300, Simulation Time:      6.92 s, Step Size: 0.00034 s, Pressure Iterations: 9
+ Time Step:  18400, Simulation Time:      6.95 s, Step Size: 0.00033 s, Pressure Iterations: 9
+ Time Step:  18500, Simulation Time:      6.98 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  18600, Simulation Time:      7.01 s, Step Size: 0.00033 s, Pressure Iterations: 9
+ Time Step:  18700, Simulation Time:      7.05 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  18800, Simulation Time:      7.09 s, Step Size: 0.00032 s, Pressure Iterations: 9
+ Time Step:  18900, Simulation Time:      7.12 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  19000, Simulation Time:      7.16 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:  19100, Simulation Time:      7.19 s, Step Size: 0.00030 s, Pressure Iterations: 10
+ Time Step:  19200, Simulation Time:      7.22 s, Step Size: 0.00030 s, Pressure Iterations: 9
+ Time Step:  19300, Simulation Time:      7.25 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:  19400, Simulation Time:      7.29 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  19500, Simulation Time:      7.32 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  19600, Simulation Time:      7.36 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  19700, Simulation Time:      7.39 s, Step Size: 0.00031 s, Pressure Iterations: 8
+ Time Step:  19800, Simulation Time:      7.42 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:  19900, Simulation Time:      7.46 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:  20000, Simulation Time:      7.50 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:  20100, Simulation Time:      7.53 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  20200, Simulation Time:      7.57 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  20300, Simulation Time:      7.61 s, Step Size: 0.00029 s, Pressure Iterations: 9
+ Time Step:  20400, Simulation Time:      7.64 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:  20500, Simulation Time:      7.67 s, Step Size: 0.00031 s, Pressure Iterations: 8
+ Time Step:  20600, Simulation Time:      7.70 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  20700, Simulation Time:      7.74 s, Step Size: 0.00037 s, Pressure Iterations: 9
+ Time Step:  20800, Simulation Time:      7.78 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  20900, Simulation Time:      7.81 s, Step Size: 0.00030 s, Pressure Iterations: 10
+ Time Step:  21000, Simulation Time:      7.84 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:  21100, Simulation Time:      7.88 s, Step Size: 0.00034 s, Pressure Iterations: 9
+ Time Step:  21200, Simulation Time:      7.91 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  21300, Simulation Time:      7.94 s, Step Size: 0.00036 s, Pressure Iterations: 8
+ Time Step:  21400, Simulation Time:      7.98 s, Step Size: 0.00035 s, Pressure Iterations: 8
+ Time Step:  21500, Simulation Time:      8.01 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  21600, Simulation Time:      8.05 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  21700, Simulation Time:      8.08 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  21800, Simulation Time:      8.12 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  21900, Simulation Time:      8.15 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  22000, Simulation Time:      8.19 s, Step Size: 0.00040 s, Pressure Iterations: 9
+ Time Step:  22100, Simulation Time:      8.22 s, Step Size: 0.00032 s, Pressure Iterations: 10
+ Time Step:  22200, Simulation Time:      8.26 s, Step Size: 0.00031 s, Pressure Iterations: 10
+ Time Step:  22300, Simulation Time:      8.29 s, Step Size: 0.00031 s, Pressure Iterations: 8
+ Time Step:  22400, Simulation Time:      8.32 s, Step Size: 0.00031 s, Pressure Iterations: 8
+ Time Step:  22500, Simulation Time:      8.35 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  22600, Simulation Time:      8.39 s, Step Size: 0.00033 s, Pressure Iterations: 9
+ Time Step:  22700, Simulation Time:      8.42 s, Step Size: 0.00040 s, Pressure Iterations: 8
+ Time Step:  22800, Simulation Time:      8.46 s, Step Size: 0.00031 s, Pressure Iterations: 8
+ Time Step:  22900, Simulation Time:      8.49 s, Step Size: 0.00034 s, Pressure Iterations: 9
+ Time Step:  23000, Simulation Time:      8.53 s, Step Size: 0.00034 s, Pressure Iterations: 8
+ Time Step:  23100, Simulation Time:      8.56 s, Step Size: 0.00034 s, Pressure Iterations: 9
+ Time Step:  23200, Simulation Time:      8.60 s, Step Size: 0.00036 s, Pressure Iterations: 8
+ Time Step:  23300, Simulation Time:      8.63 s, Step Size: 0.00032 s, Pressure Iterations: 9
+ Time Step:  23400, Simulation Time:      8.67 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  23500, Simulation Time:      8.70 s, Step Size: 0.00034 s, Pressure Iterations: 9
+ Time Step:  23600, Simulation Time:      8.74 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  23700, Simulation Time:      8.77 s, Step Size: 0.00030 s, Pressure Iterations: 10
+ Time Step:  23800, Simulation Time:      8.80 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:  23900, Simulation Time:      8.84 s, Step Size: 0.00032 s, Pressure Iterations: 8
+ Time Step:  24000, Simulation Time:      8.88 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:  24100, Simulation Time:      8.91 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:  24200, Simulation Time:      8.95 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  24300, Simulation Time:      8.98 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  24400, Simulation Time:      9.02 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  24500, Simulation Time:      9.05 s, Step Size: 0.00032 s, Pressure Iterations: 9
+ Time Step:  24600, Simulation Time:      9.08 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:  24700, Simulation Time:      9.11 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  24800, Simulation Time:      9.15 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  24900, Simulation Time:      9.19 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  25000, Simulation Time:      9.23 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  25100, Simulation Time:      9.26 s, Step Size: 0.00034 s, Pressure Iterations: 8
+ Time Step:  25200, Simulation Time:      9.30 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  25300, Simulation Time:      9.33 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  25400, Simulation Time:      9.37 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:  25500, Simulation Time:      9.40 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  25600, Simulation Time:      9.44 s, Step Size: 0.00037 s, Pressure Iterations: 9
+ Time Step:  25700, Simulation Time:      9.47 s, Step Size: 0.00032 s, Pressure Iterations: 7
+ Time Step:  25800, Simulation Time:      9.50 s, Step Size: 0.00032 s, Pressure Iterations: 8
+ Time Step:  25900, Simulation Time:      9.54 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:  26000, Simulation Time:      9.58 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:  26100, Simulation Time:      9.62 s, Step Size: 0.00037 s, Pressure Iterations: 8
+ Time Step:  26200, Simulation Time:      9.65 s, Step Size: 0.00037 s, Pressure Iterations: 8
+ Time Step:  26300, Simulation Time:      9.69 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  26400, Simulation Time:      9.72 s, Step Size: 0.00032 s, Pressure Iterations: 8
+ Time Step:  26500, Simulation Time:      9.76 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  26600, Simulation Time:      9.79 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:  26700, Simulation Time:      9.83 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  26800, Simulation Time:      9.87 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  26900, Simulation Time:      9.90 s, Step Size: 0.00039 s, Pressure Iterations: 9
+ Time Step:  27000, Simulation Time:      9.94 s, Step Size: 0.00031 s, Pressure Iterations: 8
+ Time Step:  27100, Simulation Time:      9.98 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  27200, Simulation Time:     10.01 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  27300, Simulation Time:     10.05 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  27400, Simulation Time:     10.08 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  27500, Simulation Time:     10.12 s, Step Size: 0.00038 s, Pressure Iterations: 8
+ Time Step:  27600, Simulation Time:     10.16 s, Step Size: 0.00038 s, Pressure Iterations: 8
+ Time Step:  27700, Simulation Time:     10.19 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  27800, Simulation Time:     10.23 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:  27900, Simulation Time:     10.27 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  28000, Simulation Time:     10.31 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  28100, Simulation Time:     10.34 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  28200, Simulation Time:     10.38 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  28300, Simulation Time:     10.41 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  28400, Simulation Time:     10.45 s, Step Size: 0.00032 s, Pressure Iterations: 9
+ Time Step:  28500, Simulation Time:     10.48 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  28600, Simulation Time:     10.52 s, Step Size: 0.00033 s, Pressure Iterations: 8
+ Time Step:  28700, Simulation Time:     10.55 s, Step Size: 0.00032 s, Pressure Iterations: 10
+ Time Step:  28800, Simulation Time:     10.59 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  28900, Simulation Time:     10.62 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  29000, Simulation Time:     10.66 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  29100, Simulation Time:     10.70 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  29200, Simulation Time:     10.73 s, Step Size: 0.00034 s, Pressure Iterations: 8
+ Time Step:  29300, Simulation Time:     10.77 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  29400, Simulation Time:     10.80 s, Step Size: 0.00037 s, Pressure Iterations: 9
+ Time Step:  29500, Simulation Time:     10.84 s, Step Size: 0.00037 s, Pressure Iterations: 9
+ Time Step:  29600, Simulation Time:     10.87 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:  29700, Simulation Time:     10.91 s, Step Size: 0.00035 s, Pressure Iterations: 9
+ Time Step:  29800, Simulation Time:     10.94 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  29900, Simulation Time:     10.98 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:  30000, Simulation Time:     11.02 s, Step Size: 0.00042 s, Pressure Iterations: 8
+ Time Step:  30100, Simulation Time:     11.06 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  30200, Simulation Time:     11.09 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  30300, Simulation Time:     11.12 s, Step Size: 0.00031 s, Pressure Iterations: 10
+ Time Step:  30400, Simulation Time:     11.16 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  30500, Simulation Time:     11.21 s, Step Size: 0.00040 s, Pressure Iterations: 9
+ Time Step:  30600, Simulation Time:     11.25 s, Step Size: 0.00040 s, Pressure Iterations: 9
+ Time Step:  30700, Simulation Time:     11.28 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  30800, Simulation Time:     11.32 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:  30900, Simulation Time:     11.36 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  31000, Simulation Time:     11.40 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  31100, Simulation Time:     11.44 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  31200, Simulation Time:     11.47 s, Step Size: 0.00037 s, Pressure Iterations: 9
+ Time Step:  31300, Simulation Time:     11.51 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  31400, Simulation Time:     11.55 s, Step Size: 0.00040 s, Pressure Iterations: 9
+ Time Step:  31500, Simulation Time:     11.58 s, Step Size: 0.00039 s, Pressure Iterations: 9
+ Time Step:  31600, Simulation Time:     11.62 s, Step Size: 0.00043 s, Pressure Iterations: 9
+ Time Step:  31700, Simulation Time:     11.67 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  31800, Simulation Time:     11.70 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  31900, Simulation Time:     11.74 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  32000, Simulation Time:     11.78 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  32100, Simulation Time:     11.81 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  32200, Simulation Time:     11.85 s, Step Size: 0.00031 s, Pressure Iterations: 10
+ Time Step:  32300, Simulation Time:     11.88 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  32400, Simulation Time:     11.92 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  32500, Simulation Time:     11.95 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  32600, Simulation Time:     11.99 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  32700, Simulation Time:     12.03 s, Step Size: 0.00033 s, Pressure Iterations: 9
+ Time Step:  32800, Simulation Time:     12.06 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  32900, Simulation Time:     12.10 s, Step Size: 0.00037 s, Pressure Iterations: 9
+ Time Step:  33000, Simulation Time:     12.13 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  33100, Simulation Time:     12.17 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  33200, Simulation Time:     12.21 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  33300, Simulation Time:     12.24 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  33400, Simulation Time:     12.28 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  33500, Simulation Time:     12.31 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  33600, Simulation Time:     12.35 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  33700, Simulation Time:     12.39 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  33800, Simulation Time:     12.42 s, Step Size: 0.00038 s, Pressure Iterations: 9
+ Time Step:  33900, Simulation Time:     12.46 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  34000, Simulation Time:     12.49 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  34100, Simulation Time:     12.53 s, Step Size: 0.00033 s, Pressure Iterations: 9
+ Time Step:  34200, Simulation Time:     12.56 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  34300, Simulation Time:     12.60 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  34400, Simulation Time:     12.64 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  34500, Simulation Time:     12.68 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  34600, Simulation Time:     12.71 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  34700, Simulation Time:     12.75 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  34800, Simulation Time:     12.78 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  34900, Simulation Time:     12.83 s, Step Size: 0.00043 s, Pressure Iterations: 9
+ Time Step:  35000, Simulation Time:     12.87 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  35100, Simulation Time:     12.90 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  35200, Simulation Time:     12.94 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  35300, Simulation Time:     12.98 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  35400, Simulation Time:     13.01 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  35500, Simulation Time:     13.05 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  35600, Simulation Time:     13.09 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  35700, Simulation Time:     13.12 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  35800, Simulation Time:     13.17 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  35900, Simulation Time:     13.20 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  36000, Simulation Time:     13.24 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  36100, Simulation Time:     13.29 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  36200, Simulation Time:     13.32 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  36300, Simulation Time:     13.36 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  36400, Simulation Time:     13.40 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  36500, Simulation Time:     13.45 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  36600, Simulation Time:     13.49 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  36700, Simulation Time:     13.53 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  36800, Simulation Time:     13.56 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  36900, Simulation Time:     13.60 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  37000, Simulation Time:     13.64 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  37100, Simulation Time:     13.68 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  37200, Simulation Time:     13.72 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  37300, Simulation Time:     13.76 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  37400, Simulation Time:     13.80 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  37500, Simulation Time:     13.84 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  37600, Simulation Time:     13.88 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  37700, Simulation Time:     13.92 s, Step Size: 0.00039 s, Pressure Iterations: 9
+ Time Step:  37800, Simulation Time:     13.96 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  37900, Simulation Time:     13.99 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  38000, Simulation Time:     14.03 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  38100, Simulation Time:     14.07 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  38200, Simulation Time:     14.11 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  38300, Simulation Time:     14.14 s, Step Size: 0.00032 s, Pressure Iterations: 10
+ Time Step:  38400, Simulation Time:     14.18 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  38500, Simulation Time:     14.22 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  38600, Simulation Time:     14.26 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  38700, Simulation Time:     14.30 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  38800, Simulation Time:     14.33 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  38900, Simulation Time:     14.37 s, Step Size: 0.00032 s, Pressure Iterations: 10
+ Time Step:  39000, Simulation Time:     14.41 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  39100, Simulation Time:     14.44 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  39200, Simulation Time:     14.48 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  39300, Simulation Time:     14.52 s, Step Size: 0.00033 s, Pressure Iterations: 8
+ Time Step:  39400, Simulation Time:     14.55 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  39500, Simulation Time:     14.59 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  39600, Simulation Time:     14.63 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  39700, Simulation Time:     14.66 s, Step Size: 0.00031 s, Pressure Iterations: 10
+ Time Step:  39800, Simulation Time:     14.69 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  39900, Simulation Time:     14.73 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  40000, Simulation Time:     14.76 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  40100, Simulation Time:     14.80 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  40200, Simulation Time:     14.83 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  40300, Simulation Time:     14.88 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  40400, Simulation Time:     14.91 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  40500, Simulation Time:     14.95 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  40600, Simulation Time:     14.99 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  40700, Simulation Time:     15.02 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  40800, Simulation Time:     15.06 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  40900, Simulation Time:     15.10 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  41000, Simulation Time:     15.14 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  41100, Simulation Time:     15.18 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  41200, Simulation Time:     15.22 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  41300, Simulation Time:     15.26 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  41400, Simulation Time:     15.29 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  41500, Simulation Time:     15.33 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  41600, Simulation Time:     15.37 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  41700, Simulation Time:     15.41 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  41800, Simulation Time:     15.45 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  41900, Simulation Time:     15.49 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  42000, Simulation Time:     15.52 s, Step Size: 0.00034 s, Pressure Iterations: 10
+ Time Step:  42100, Simulation Time:     15.56 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  42200, Simulation Time:     15.60 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  42300, Simulation Time:     15.63 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  42400, Simulation Time:     15.67 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  42500, Simulation Time:     15.71 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  42600, Simulation Time:     15.75 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  42700, Simulation Time:     15.79 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  42800, Simulation Time:     15.83 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  42900, Simulation Time:     15.87 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  43000, Simulation Time:     15.90 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  43100, Simulation Time:     15.94 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  43200, Simulation Time:     15.98 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  43300, Simulation Time:     16.02 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  43400, Simulation Time:     16.06 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  43500, Simulation Time:     16.10 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  43600, Simulation Time:     16.14 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  43700, Simulation Time:     16.17 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  43800, Simulation Time:     16.21 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  43900, Simulation Time:     16.25 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  44000, Simulation Time:     16.28 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  44100, Simulation Time:     16.32 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  44200, Simulation Time:     16.37 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  44300, Simulation Time:     16.41 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  44400, Simulation Time:     16.44 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  44500, Simulation Time:     16.48 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  44600, Simulation Time:     16.52 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  44700, Simulation Time:     16.56 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  44800, Simulation Time:     16.60 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  44900, Simulation Time:     16.64 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  45000, Simulation Time:     16.68 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  45100, Simulation Time:     16.72 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  45200, Simulation Time:     16.76 s, Step Size: 0.00033 s, Pressure Iterations: 10
+ Time Step:  45300, Simulation Time:     16.79 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  45400, Simulation Time:     16.83 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  45500, Simulation Time:     16.87 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  45600, Simulation Time:     16.90 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  45700, Simulation Time:     16.94 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  45800, Simulation Time:     16.98 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  45900, Simulation Time:     17.02 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  46000, Simulation Time:     17.06 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  46100, Simulation Time:     17.10 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  46200, Simulation Time:     17.14 s, Step Size: 0.00039 s, Pressure Iterations: 9
+ Time Step:  46300, Simulation Time:     17.18 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  46400, Simulation Time:     17.22 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  46500, Simulation Time:     17.26 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  46600, Simulation Time:     17.29 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  46700, Simulation Time:     17.33 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  46800, Simulation Time:     17.37 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  46900, Simulation Time:     17.41 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  47000, Simulation Time:     17.46 s, Step Size: 0.00044 s, Pressure Iterations: 10
+ Time Step:  47100, Simulation Time:     17.50 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  47200, Simulation Time:     17.54 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  47300, Simulation Time:     17.58 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  47400, Simulation Time:     17.62 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  47500, Simulation Time:     17.66 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  47600, Simulation Time:     17.70 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  47700, Simulation Time:     17.74 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  47800, Simulation Time:     17.78 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  47900, Simulation Time:     17.82 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  48000, Simulation Time:     17.86 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  48100, Simulation Time:     17.90 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  48200, Simulation Time:     17.94 s, Step Size: 0.00046 s, Pressure Iterations: 10
+ Time Step:  48300, Simulation Time:     17.99 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  48400, Simulation Time:     18.02 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  48500, Simulation Time:     18.06 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  48600, Simulation Time:     18.10 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  48700, Simulation Time:     18.14 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  48800, Simulation Time:     18.18 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  48900, Simulation Time:     18.22 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  49000, Simulation Time:     18.27 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  49100, Simulation Time:     18.31 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  49200, Simulation Time:     18.34 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  49300, Simulation Time:     18.38 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  49400, Simulation Time:     18.42 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  49500, Simulation Time:     18.46 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  49600, Simulation Time:     18.50 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  49700, Simulation Time:     18.54 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  49800, Simulation Time:     18.58 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  49900, Simulation Time:     18.62 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  50000, Simulation Time:     18.66 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  50100, Simulation Time:     18.70 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  50200, Simulation Time:     18.74 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  50300, Simulation Time:     18.78 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  50400, Simulation Time:     18.83 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  50500, Simulation Time:     18.87 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  50600, Simulation Time:     18.91 s, Step Size: 0.00046 s, Pressure Iterations: 10
+ Time Step:  50700, Simulation Time:     18.95 s, Step Size: 0.00044 s, Pressure Iterations: 10
+ Time Step:  50800, Simulation Time:     18.99 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  50900, Simulation Time:     19.03 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  51000, Simulation Time:     19.07 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  51100, Simulation Time:     19.11 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  51200, Simulation Time:     19.16 s, Step Size: 0.00046 s, Pressure Iterations: 10
+ Time Step:  51300, Simulation Time:     19.20 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  51400, Simulation Time:     19.24 s, Step Size: 0.00046 s, Pressure Iterations: 10
+ Time Step:  51500, Simulation Time:     19.28 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  51600, Simulation Time:     19.32 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  51700, Simulation Time:     19.36 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  51800, Simulation Time:     19.41 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  51900, Simulation Time:     19.45 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  52000, Simulation Time:     19.49 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  52100, Simulation Time:     19.53 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  52200, Simulation Time:     19.57 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  52300, Simulation Time:     19.61 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  52400, Simulation Time:     19.65 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  52500, Simulation Time:     19.69 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  52600, Simulation Time:     19.73 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  52700, Simulation Time:     19.77 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  52800, Simulation Time:     19.81 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  52900, Simulation Time:     19.85 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  53000, Simulation Time:     19.89 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  53100, Simulation Time:     19.93 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  53200, Simulation Time:     19.97 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  53300, Simulation Time:     20.01 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  53400, Simulation Time:     20.05 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  53500, Simulation Time:     20.09 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  53600, Simulation Time:     20.13 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  53700, Simulation Time:     20.17 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  53800, Simulation Time:     20.20 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  53900, Simulation Time:     20.24 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  54000, Simulation Time:     20.28 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  54100, Simulation Time:     20.32 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  54200, Simulation Time:     20.36 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  54300, Simulation Time:     20.40 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  54400, Simulation Time:     20.45 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  54500, Simulation Time:     20.49 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  54600, Simulation Time:     20.53 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  54700, Simulation Time:     20.57 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  54800, Simulation Time:     20.61 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  54900, Simulation Time:     20.65 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  55000, Simulation Time:     20.69 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  55100, Simulation Time:     20.73 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  55200, Simulation Time:     20.78 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  55300, Simulation Time:     20.82 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  55400, Simulation Time:     20.86 s, Step Size: 0.00046 s, Pressure Iterations: 10
+ Time Step:  55500, Simulation Time:     20.90 s, Step Size: 0.00036 s, Pressure Iterations: 10
+ Time Step:  55600, Simulation Time:     20.94 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  55700, Simulation Time:     20.98 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  55800, Simulation Time:     21.02 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  55900, Simulation Time:     21.06 s, Step Size: 0.00046 s, Pressure Iterations: 10
+ Time Step:  56000, Simulation Time:     21.10 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  56100, Simulation Time:     21.14 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  56200, Simulation Time:     21.18 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  56300, Simulation Time:     21.22 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  56400, Simulation Time:     21.26 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  56500, Simulation Time:     21.31 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  56600, Simulation Time:     21.35 s, Step Size: 0.00044 s, Pressure Iterations: 10
+ Time Step:  56700, Simulation Time:     21.39 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  56800, Simulation Time:     21.43 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  56900, Simulation Time:     21.47 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  57000, Simulation Time:     21.51 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  57100, Simulation Time:     21.56 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  57200, Simulation Time:     21.60 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  57300, Simulation Time:     21.64 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  57400, Simulation Time:     21.68 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  57500, Simulation Time:     21.72 s, Step Size: 0.00035 s, Pressure Iterations: 10
+ Time Step:  57600, Simulation Time:     21.76 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  57700, Simulation Time:     21.80 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  57800, Simulation Time:     21.84 s, Step Size: 0.00049 s, Pressure Iterations: 10
+ Time Step:  57900, Simulation Time:     21.89 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  58000, Simulation Time:     21.93 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  58100, Simulation Time:     21.97 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  58200, Simulation Time:     22.01 s, Step Size: 0.00044 s, Pressure Iterations: 10
+ Time Step:  58300, Simulation Time:     22.06 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  58400, Simulation Time:     22.10 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  58500, Simulation Time:     22.14 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  58600, Simulation Time:     22.19 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  58700, Simulation Time:     22.23 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  58800, Simulation Time:     22.27 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  58900, Simulation Time:     22.32 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  59000, Simulation Time:     22.36 s, Step Size: 0.00044 s, Pressure Iterations: 10
+ Time Step:  59100, Simulation Time:     22.40 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  59200, Simulation Time:     22.44 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  59300, Simulation Time:     22.48 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  59400, Simulation Time:     22.52 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  59500, Simulation Time:     22.56 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  59600, Simulation Time:     22.61 s, Step Size: 0.00048 s, Pressure Iterations: 10
+ Time Step:  59700, Simulation Time:     22.65 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  59800, Simulation Time:     22.69 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  59900, Simulation Time:     22.74 s, Step Size: 0.00046 s, Pressure Iterations: 10
+ Time Step:  60000, Simulation Time:     22.78 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  60100, Simulation Time:     22.82 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  60200, Simulation Time:     22.86 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  60300, Simulation Time:     22.90 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  60400, Simulation Time:     22.95 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  60500, Simulation Time:     22.99 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  60600, Simulation Time:     23.03 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  60700, Simulation Time:     23.08 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  60800, Simulation Time:     23.12 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  60900, Simulation Time:     23.17 s, Step Size: 0.00047 s, Pressure Iterations: 10
+ Time Step:  61000, Simulation Time:     23.21 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  61100, Simulation Time:     23.25 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  61200, Simulation Time:     23.29 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  61300, Simulation Time:     23.33 s, Step Size: 0.00044 s, Pressure Iterations: 10
+ Time Step:  61400, Simulation Time:     23.38 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  61500, Simulation Time:     23.42 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  61600, Simulation Time:     23.46 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  61700, Simulation Time:     23.51 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  61800, Simulation Time:     23.55 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  61900, Simulation Time:     23.59 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  62000, Simulation Time:     23.63 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  62100, Simulation Time:     23.67 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  62200, Simulation Time:     23.71 s, Step Size: 0.00047 s, Pressure Iterations: 10
+ Time Step:  62300, Simulation Time:     23.76 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  62400, Simulation Time:     23.79 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  62500, Simulation Time:     23.83 s, Step Size: 0.00037 s, Pressure Iterations: 10
+ Time Step:  62600, Simulation Time:     23.87 s, Step Size: 0.00044 s, Pressure Iterations: 10
+ Time Step:  62700, Simulation Time:     23.92 s, Step Size: 0.00044 s, Pressure Iterations: 10
+ Time Step:  62800, Simulation Time:     23.96 s, Step Size: 0.00044 s, Pressure Iterations: 10
+ Time Step:  62900, Simulation Time:     24.01 s, Step Size: 0.00039 s, Pressure Iterations: 10
+ Time Step:  63000, Simulation Time:     24.05 s, Step Size: 0.00047 s, Pressure Iterations: 10
+ Time Step:  63100, Simulation Time:     24.10 s, Step Size: 0.00047 s, Pressure Iterations: 10
+ Time Step:  63200, Simulation Time:     24.14 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  63300, Simulation Time:     24.19 s, Step Size: 0.00047 s, Pressure Iterations: 10
+ Time Step:  63400, Simulation Time:     24.24 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  63500, Simulation Time:     24.28 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step:  63600, Simulation Time:     24.32 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  63700, Simulation Time:     24.36 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  63800, Simulation Time:     24.41 s, Step Size: 0.00049 s, Pressure Iterations: 10
+ Time Step:  63900, Simulation Time:     24.45 s, Step Size: 0.00048 s, Pressure Iterations: 10
+ Time Step:  64000, Simulation Time:     24.50 s, Step Size: 0.00046 s, Pressure Iterations: 10
+ Time Step:  64100, Simulation Time:     24.55 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  64200, Simulation Time:     24.59 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  64300, Simulation Time:     24.64 s, Step Size: 0.00044 s, Pressure Iterations: 10
+ Time Step:  64400, Simulation Time:     24.68 s, Step Size: 0.00047 s, Pressure Iterations: 10
+ Time Step:  64500, Simulation Time:     24.73 s, Step Size: 0.00047 s, Pressure Iterations: 10
+ Time Step:  64600, Simulation Time:     24.77 s, Step Size: 0.00046 s, Pressure Iterations: 10
+ Time Step:  64700, Simulation Time:     24.82 s, Step Size: 0.00046 s, Pressure Iterations: 10
+ Time Step:  64800, Simulation Time:     24.86 s, Step Size: 0.00049 s, Pressure Iterations: 10
+ Time Step:  64900, Simulation Time:     24.91 s, Step Size: 0.00049 s, Pressure Iterations: 10
+ Time Step:  65000, Simulation Time:     24.96 s, Step Size: 0.00048 s, Pressure Iterations: 10
+ Time Step:  65100, Simulation Time:     25.00 s, Step Size: 0.00047 s, Pressure Iterations: 10
+ Time Step:  65200, Simulation Time:     25.05 s, Step Size: 0.00046 s, Pressure Iterations: 10
+ Time Step:  65300, Simulation Time:     25.09 s, Step Size: 0.00044 s, Pressure Iterations: 10
+ Time Step:  65400, Simulation Time:     25.14 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  65500, Simulation Time:     25.19 s, Step Size: 0.00046 s, Pressure Iterations: 10
+ Time Step:  65600, Simulation Time:     25.23 s, Step Size: 0.00041 s, Pressure Iterations: 10
+ Time Step:  65700, Simulation Time:     25.27 s, Step Size: 0.00045 s, Pressure Iterations: 10
+ Time Step:  65800, Simulation Time:     25.32 s, Step Size: 0.00048 s, Pressure Iterations: 10
+ Time Step:  65900, Simulation Time:     25.37 s, Step Size: 0.00048 s, Pressure Iterations: 10
+ Time Step:  66000, Simulation Time:     25.42 s, Step Size: 0.00052 s, Pressure Iterations: 10
+ Time Step:  66100, Simulation Time:     25.47 s, Step Size: 0.00046 s, Pressure Iterations: 10
+ Time Step:  66200, Simulation Time:     25.51 s, Step Size: 0.00051 s, Pressure Iterations: 10
+ Time Step:  66300, Simulation Time:     25.56 s, Step Size: 0.00049 s, Pressure Iterations: 10
+ Time Step:  66400, Simulation Time:     25.61 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step:  66500, Simulation Time:     25.65 s, Step Size: 0.00051 s, Pressure Iterations: 10
+ Time Step:  66600, Simulation Time:     25.70 s, Step Size: 0.00049 s, Pressure Iterations: 10
+ Time Step:  66700, Simulation Time:     25.75 s, Step Size: 0.00044 s, Pressure Iterations: 10
+ Time Step:  66800, Simulation Time:     25.80 s, Step Size: 0.00048 s, Pressure Iterations: 10
+ Time Step:  66900, Simulation Time:     25.84 s, Step Size: 0.00051 s, Pressure Iterations: 10
+ Time Step:  67000, Simulation Time:     25.89 s, Step Size: 0.00040 s, Pressure Iterations: 10
+ Time Step:  67100, Simulation Time:     25.93 s, Step Size: 0.00048 s, Pressure Iterations: 10
+ Time Step:  67200, Simulation Time:     25.98 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  67300, Simulation Time:     26.03 s, Step Size: 0.00051 s, Pressure Iterations: 10
+ Time Step:  67400, Simulation Time:     26.08 s, Step Size: 0.00049 s, Pressure Iterations: 10
+ Time Step:  67500, Simulation Time:     26.13 s, Step Size: 0.00048 s, Pressure Iterations: 10
+ Time Step:  67600, Simulation Time:     26.18 s, Step Size: 0.00049 s, Pressure Iterations: 10
+ Time Step:  67700, Simulation Time:     26.23 s, Step Size: 0.00049 s, Pressure Iterations: 10
+ Time Step:  67800, Simulation Time:     26.28 s, Step Size: 0.00052 s, Pressure Iterations: 10
+ Time Step:  67900, Simulation Time:     26.33 s, Step Size: 0.00047 s, Pressure Iterations: 10
+ Time Step:  68000, Simulation Time:     26.38 s, Step Size: 0.00047 s, Pressure Iterations: 10
+ Time Step:  68100, Simulation Time:     26.42 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step:  68200, Simulation Time:     26.47 s, Step Size: 0.00053 s, Pressure Iterations: 10
+ Time Step:  68300, Simulation Time:     26.52 s, Step Size: 0.00050 s, Pressure Iterations: 10
+ Time Step:  68400, Simulation Time:     26.57 s, Step Size: 0.00050 s, Pressure Iterations: 10
+ Time Step:  68500, Simulation Time:     26.62 s, Step Size: 0.00050 s, Pressure Iterations: 10
+ Time Step:  68600, Simulation Time:     26.67 s, Step Size: 0.00050 s, Pressure Iterations: 10
+ Time Step:  68700, Simulation Time:     26.72 s, Step Size: 0.00054 s, Pressure Iterations: 10
+ Time Step:  68800, Simulation Time:     26.77 s, Step Size: 0.00047 s, Pressure Iterations: 10
+ Time Step:  68900, Simulation Time:     26.82 s, Step Size: 0.00051 s, Pressure Iterations: 10
+ Time Step:  69000, Simulation Time:     26.87 s, Step Size: 0.00055 s, Pressure Iterations: 10
+ Time Step:  69100, Simulation Time:     26.92 s, Step Size: 0.00053 s, Pressure Iterations: 10
+ Time Step:  69200, Simulation Time:     26.98 s, Step Size: 0.00053 s, Pressure Iterations: 10
+ Time Step:  69300, Simulation Time:     27.03 s, Step Size: 0.00046 s, Pressure Iterations: 10
+ Time Step:  69400, Simulation Time:     27.07 s, Step Size: 0.00056 s, Pressure Iterations: 10
+ Time Step:  69500, Simulation Time:     27.13 s, Step Size: 0.00054 s, Pressure Iterations: 10
+ Time Step:  69600, Simulation Time:     27.18 s, Step Size: 0.00054 s, Pressure Iterations: 10
+ Time Step:  69700, Simulation Time:     27.23 s, Step Size: 0.00048 s, Pressure Iterations: 10
+ Time Step:  69800, Simulation Time:     27.28 s, Step Size: 0.00050 s, Pressure Iterations: 10
+ Time Step:  69900, Simulation Time:     27.33 s, Step Size: 0.00055 s, Pressure Iterations: 10
+ Time Step:  70000, Simulation Time:     27.39 s, Step Size: 0.00049 s, Pressure Iterations: 10
+ Time Step:  70100, Simulation Time:     27.44 s, Step Size: 0.00054 s, Pressure Iterations: 10
+ Time Step:  70200, Simulation Time:     27.49 s, Step Size: 0.00047 s, Pressure Iterations: 10
+ Time Step:  70300, Simulation Time:     27.54 s, Step Size: 0.00051 s, Pressure Iterations: 10
+ Time Step:  70400, Simulation Time:     27.59 s, Step Size: 0.00051 s, Pressure Iterations: 10
+ Time Step:  70500, Simulation Time:     27.64 s, Step Size: 0.00057 s, Pressure Iterations: 10
+ Time Step:  70600, Simulation Time:     27.70 s, Step Size: 0.00054 s, Pressure Iterations: 10
+ Time Step:  70700, Simulation Time:     27.75 s, Step Size: 0.00054 s, Pressure Iterations: 10
+ Time Step:  70800, Simulation Time:     27.81 s, Step Size: 0.00054 s, Pressure Iterations: 10
+ Time Step:  70900, Simulation Time:     27.86 s, Step Size: 0.00054 s, Pressure Iterations: 10
+ Time Step:  71000, Simulation Time:     27.91 s, Step Size: 0.00054 s, Pressure Iterations: 10
+ Time Step:  71100, Simulation Time:     27.97 s, Step Size: 0.00054 s, Pressure Iterations: 10
+ Time Step:  71200, Simulation Time:     28.02 s, Step Size: 0.00053 s, Pressure Iterations: 10
+ Time Step:  71300, Simulation Time:     28.08 s, Step Size: 0.00058 s, Pressure Iterations: 10
+ Time Step:  71400, Simulation Time:     28.13 s, Step Size: 0.00051 s, Pressure Iterations: 10
+ Time Step:  71500, Simulation Time:     28.19 s, Step Size: 0.00062 s, Pressure Iterations: 10
+ Time Step:  71600, Simulation Time:     28.25 s, Step Size: 0.00054 s, Pressure Iterations: 10
+ Time Step:  71700, Simulation Time:     28.30 s, Step Size: 0.00053 s, Pressure Iterations: 10
+ Time Step:  71800, Simulation Time:     28.36 s, Step Size: 0.00063 s, Pressure Iterations: 10
+ Time Step:  71900, Simulation Time:     28.42 s, Step Size: 0.00062 s, Pressure Iterations: 10
+ Time Step:  72000, Simulation Time:     28.48 s, Step Size: 0.00061 s, Pressure Iterations: 10
+ Time Step:  72100, Simulation Time:     28.53 s, Step Size: 0.00054 s, Pressure Iterations: 10
+ Time Step:  72200, Simulation Time:     28.59 s, Step Size: 0.00058 s, Pressure Iterations: 10
+ Time Step:  72300, Simulation Time:     28.65 s, Step Size: 0.00067 s, Pressure Iterations: 10
+ Time Step:  72400, Simulation Time:     28.71 s, Step Size: 0.00059 s, Pressure Iterations: 10
+ Time Step:  72500, Simulation Time:     28.77 s, Step Size: 0.00058 s, Pressure Iterations: 10
+ Time Step:  72600, Simulation Time:     28.83 s, Step Size: 0.00055 s, Pressure Iterations: 10
+ Time Step:  72700, Simulation Time:     28.89 s, Step Size: 0.00055 s, Pressure Iterations: 10
+ Time Step:  72800, Simulation Time:     28.94 s, Step Size: 0.00060 s, Pressure Iterations: 10
+ Time Step:  72900, Simulation Time:     29.00 s, Step Size: 0.00060 s, Pressure Iterations: 10
+ Time Step:  73000, Simulation Time:     29.06 s, Step Size: 0.00059 s, Pressure Iterations: 10
+ Time Step:  73100, Simulation Time:     29.12 s, Step Size: 0.00065 s, Pressure Iterations: 10
+ Time Step:  73200, Simulation Time:     29.19 s, Step Size: 0.00065 s, Pressure Iterations: 10
+ Time Step:  73300, Simulation Time:     29.25 s, Step Size: 0.00062 s, Pressure Iterations: 10
+ Time Step:  73400, Simulation Time:     29.31 s, Step Size: 0.00062 s, Pressure Iterations: 10
+ Time Step:  73500, Simulation Time:     29.38 s, Step Size: 0.00061 s, Pressure Iterations: 10
+ Time Step:  73600, Simulation Time:     29.44 s, Step Size: 0.00061 s, Pressure Iterations: 10
+ Time Step:  73700, Simulation Time:     29.50 s, Step Size: 0.00061 s, Pressure Iterations: 10
+ Time Step:  73800, Simulation Time:     29.56 s, Step Size: 0.00068 s, Pressure Iterations: 10
+ Time Step:  73900, Simulation Time:     29.63 s, Step Size: 0.00057 s, Pressure Iterations: 10
+ Time Step:  74000, Simulation Time:     29.69 s, Step Size: 0.00063 s, Pressure Iterations: 10
+ Time Step:  74100, Simulation Time:     29.75 s, Step Size: 0.00068 s, Pressure Iterations: 10
+ Time Step:  74200, Simulation Time:     29.82 s, Step Size: 0.00067 s, Pressure Iterations: 10
+ Time Step:  74300, Simulation Time:     29.89 s, Step Size: 0.00072 s, Pressure Iterations: 10
+ Time Step:  74400, Simulation Time:     29.96 s, Step Size: 0.00067 s, Pressure Iterations: 10
+ Time Step:  74500, Simulation Time:     30.03 s, Step Size: 0.00070 s, Pressure Iterations: 10
+ Time Step:  74600, Simulation Time:     30.09 s, Step Size: 0.00062 s, Pressure Iterations: 10
+ Time Step:  74700, Simulation Time:     30.15 s, Step Size: 0.00059 s, Pressure Iterations: 10
+ Time Step:  74800, Simulation Time:     30.22 s, Step Size: 0.00071 s, Pressure Iterations: 10
+ Time Step:  74900, Simulation Time:     30.29 s, Step Size: 0.00070 s, Pressure Iterations: 10
+ Time Step:  75000, Simulation Time:     30.36 s, Step Size: 0.00070 s, Pressure Iterations: 10
+ Time Step:  75100, Simulation Time:     30.42 s, Step Size: 0.00063 s, Pressure Iterations: 10
+ Time Step:  75200, Simulation Time:     30.49 s, Step Size: 0.00069 s, Pressure Iterations: 10
+ Time Step:  75300, Simulation Time:     30.57 s, Step Size: 0.00076 s, Pressure Iterations: 10
+ Time Step:  75400, Simulation Time:     30.64 s, Step Size: 0.00076 s, Pressure Iterations: 10
+ Time Step:  75500, Simulation Time:     30.72 s, Step Size: 0.00066 s, Pressure Iterations: 10
+ Time Step:  75600, Simulation Time:     30.79 s, Step Size: 0.00071 s, Pressure Iterations: 10
+ Time Step:  75700, Simulation Time:     30.86 s, Step Size: 0.00078 s, Pressure Iterations: 10
+ Time Step:  75800, Simulation Time:     30.94 s, Step Size: 0.00078 s, Pressure Iterations: 10
+ Time Step:  75900, Simulation Time:     31.02 s, Step Size: 0.00077 s, Pressure Iterations: 10
+ Time Step:  76000, Simulation Time:     31.09 s, Step Size: 0.00082 s, Pressure Iterations: 10
+ Time Step:  76100, Simulation Time:     31.17 s, Step Size: 0.00082 s, Pressure Iterations: 9
+ Time Step:  76200, Simulation Time:     31.26 s, Step Size: 0.00081 s, Pressure Iterations: 10
+ Time Step:  76300, Simulation Time:     31.34 s, Step Size: 0.00081 s, Pressure Iterations: 10
+ Time Step:  76400, Simulation Time:     31.42 s, Step Size: 0.00081 s, Pressure Iterations: 10
+ Time Step:  76500, Simulation Time:     31.50 s, Step Size: 0.00080 s, Pressure Iterations: 10
+ Time Step:  76600, Simulation Time:     31.59 s, Step Size: 0.00088 s, Pressure Iterations: 10
+ Time Step:  76700, Simulation Time:     31.68 s, Step Size: 0.00088 s, Pressure Iterations: 10
+ Time Step:  76800, Simulation Time:     31.76 s, Step Size: 0.00084 s, Pressure Iterations: 10
+ Time Step:  76900, Simulation Time:     31.84 s, Step Size: 0.00076 s, Pressure Iterations: 10
+ Time Step:  77000, Simulation Time:     31.93 s, Step Size: 0.00091 s, Pressure Iterations: 10
+ Time Step:  77100, Simulation Time:     32.02 s, Step Size: 0.00081 s, Pressure Iterations: 10
+ Time Step:  77200, Simulation Time:     32.11 s, Step Size: 0.00090 s, Pressure Iterations: 10
+ Time Step:  77300, Simulation Time:     32.20 s, Step Size: 0.00085 s, Pressure Iterations: 10
+ Time Step:  77400, Simulation Time:     32.29 s, Step Size: 0.00094 s, Pressure Iterations: 10
+ Time Step:  77500, Simulation Time:     32.38 s, Step Size: 0.00091 s, Pressure Iterations: 10
+ Time Step:  77600, Simulation Time:     32.47 s, Step Size: 0.00100 s, Pressure Iterations: 10
+ Time Step:  77700, Simulation Time:     32.57 s, Step Size: 0.00098 s, Pressure Iterations: 9
+ Time Step:  77800, Simulation Time:     32.67 s, Step Size: 0.00096 s, Pressure Iterations: 8
+ Time Step:  77900, Simulation Time:     32.77 s, Step Size: 0.00104 s, Pressure Iterations: 10
+ Time Step:  78000, Simulation Time:     32.88 s, Step Size: 0.00113 s, Pressure Iterations: 8
+ Time Step:  78100, Simulation Time:     32.99 s, Step Size: 0.00113 s, Pressure Iterations: 10
+ Time Step:  78200, Simulation Time:     33.10 s, Step Size: 0.00102 s, Pressure Iterations: 10
+ Time Step:  78300, Simulation Time:     33.21 s, Step Size: 0.00116 s, Pressure Iterations: 8
+ Time Step:  78400, Simulation Time:     33.32 s, Step Size: 0.00116 s, Pressure Iterations: 10
+ Time Step:  78500, Simulation Time:     33.44 s, Step Size: 0.00114 s, Pressure Iterations: 10
+ Time Step:  78600, Simulation Time:     33.55 s, Step Size: 0.00114 s, Pressure Iterations: 10
+ Time Step:  78700, Simulation Time:     33.67 s, Step Size: 0.00123 s, Pressure Iterations: 10
+ Time Step:  78800, Simulation Time:     33.79 s, Step Size: 0.00108 s, Pressure Iterations: 8
+ Time Step:  78900, Simulation Time:     33.90 s, Step Size: 0.00108 s, Pressure Iterations: 9
+ Time Step:  79000, Simulation Time:     34.00 s, Step Size: 0.00108 s, Pressure Iterations: 9
+ Time Step:  79100, Simulation Time:     34.11 s, Step Size: 0.00108 s, Pressure Iterations: 9
+ Time Step:  79200, Simulation Time:     34.22 s, Step Size: 0.00108 s, Pressure Iterations: 9
+ Time Step:  79300, Simulation Time:     34.33 s, Step Size: 0.00119 s, Pressure Iterations: 10
+ Time Step:  79400, Simulation Time:     34.44 s, Step Size: 0.00107 s, Pressure Iterations: 10
+ Time Step:  79500, Simulation Time:     34.56 s, Step Size: 0.00117 s, Pressure Iterations: 8
+ Time Step:  79600, Simulation Time:     34.67 s, Step Size: 0.00104 s, Pressure Iterations: 9
+ Time Step:  79700, Simulation Time:     34.78 s, Step Size: 0.00104 s, Pressure Iterations: 8
+ Time Step:  79800, Simulation Time:     34.89 s, Step Size: 0.00114 s, Pressure Iterations: 10
+ Time Step:  79900, Simulation Time:     35.00 s, Step Size: 0.00114 s, Pressure Iterations: 8
+ Time Step:  80000, Simulation Time:     35.11 s, Step Size: 0.00114 s, Pressure Iterations: 9
+ Time Step:  80100, Simulation Time:     35.23 s, Step Size: 0.00114 s, Pressure Iterations: 10
+ Time Step:  80200, Simulation Time:     35.34 s, Step Size: 0.00122 s, Pressure Iterations: 10
+ Time Step:  80300, Simulation Time:     35.47 s, Step Size: 0.00122 s, Pressure Iterations: 8
+ Time Step:  80400, Simulation Time:     35.58 s, Step Size: 0.00109 s, Pressure Iterations: 8
+ Time Step:  80500, Simulation Time:     35.70 s, Step Size: 0.00120 s, Pressure Iterations: 10
+ Time Step:  80600, Simulation Time:     35.82 s, Step Size: 0.00120 s, Pressure Iterations: 9
+ Time Step:  80700, Simulation Time:     35.94 s, Step Size: 0.00116 s, Pressure Iterations: 10
+ Time Step:  80800, Simulation Time:     36.05 s, Step Size: 0.00104 s, Pressure Iterations: 9
+ Time Step:  80900, Simulation Time:     36.16 s, Step Size: 0.00114 s, Pressure Iterations: 8
+ Time Step:  81000, Simulation Time:     36.27 s, Step Size: 0.00114 s, Pressure Iterations: 10
+ Time Step:  81100, Simulation Time:     36.39 s, Step Size: 0.00120 s, Pressure Iterations: 7
+ Time Step:  81200, Simulation Time:     36.51 s, Step Size: 0.00120 s, Pressure Iterations: 9
+ Time Step:  81300, Simulation Time:     36.63 s, Step Size: 0.00120 s, Pressure Iterations: 8
+ Time Step:  81400, Simulation Time:     36.76 s, Step Size: 0.00132 s, Pressure Iterations: 6
+ Time Step:  81500, Simulation Time:     36.88 s, Step Size: 0.00130 s, Pressure Iterations: 10
+ Time Step:  81600, Simulation Time:     37.01 s, Step Size: 0.00116 s, Pressure Iterations: 8
+ Time Step:  81700, Simulation Time:     37.13 s, Step Size: 0.00120 s, Pressure Iterations: 7
+ Time Step:  81800, Simulation Time:     37.26 s, Step Size: 0.00130 s, Pressure Iterations: 7
+ Time Step:  81900, Simulation Time:     37.39 s, Step Size: 0.00130 s, Pressure Iterations: 7
+ Time Step:  82000, Simulation Time:     37.51 s, Step Size: 0.00125 s, Pressure Iterations: 7
+ Time Step:  82100, Simulation Time:     37.64 s, Step Size: 0.00125 s, Pressure Iterations: 7
+ Time Step:  82200, Simulation Time:     37.76 s, Step Size: 0.00122 s, Pressure Iterations: 6
+ Time Step:  82300, Simulation Time:     37.88 s, Step Size: 0.00122 s, Pressure Iterations: 6
+ Time Step:  82400, Simulation Time:     38.00 s, Step Size: 0.00122 s, Pressure Iterations: 7
+ Time Step:  82500, Simulation Time:     38.12 s, Step Size: 0.00122 s, Pressure Iterations: 8
+ Time Step:  82600, Simulation Time:     38.25 s, Step Size: 0.00122 s, Pressure Iterations: 7
+ Time Step:  82700, Simulation Time:     38.37 s, Step Size: 0.00122 s, Pressure Iterations: 6
+ Time Step:  82800, Simulation Time:     38.49 s, Step Size: 0.00109 s, Pressure Iterations: 7
+ Time Step:  82900, Simulation Time:     38.61 s, Step Size: 0.00132 s, Pressure Iterations: 8
+ Time Step:  83000, Simulation Time:     38.74 s, Step Size: 0.00132 s, Pressure Iterations: 6
+ Time Step:  83100, Simulation Time:     38.87 s, Step Size: 0.00124 s, Pressure Iterations: 6
+ Time Step:  83200, Simulation Time:     38.99 s, Step Size: 0.00121 s, Pressure Iterations: 6
+ Time Step:  83300, Simulation Time:     39.12 s, Step Size: 0.00133 s, Pressure Iterations: 8
+ Time Step:  83400, Simulation Time:     39.25 s, Step Size: 0.00120 s, Pressure Iterations: 7
+ Time Step:  83500, Simulation Time:     39.36 s, Step Size: 0.00126 s, Pressure Iterations: 7
+ Time Step:  83600, Simulation Time:     39.49 s, Step Size: 0.00124 s, Pressure Iterations: 6
+ Time Step:  83700, Simulation Time:     39.61 s, Step Size: 0.00124 s, Pressure Iterations: 5
+ Time Step:  83800, Simulation Time:     39.73 s, Step Size: 0.00124 s, Pressure Iterations: 6
+ Time Step:  83900, Simulation Time:     39.86 s, Step Size: 0.00108 s, Pressure Iterations: 6
+ Time Step:  84000, Simulation Time:     39.99 s, Step Size: 0.00130 s, Pressure Iterations: 6
+ Time Step:  84100, Simulation Time:     40.12 s, Step Size: 0.00130 s, Pressure Iterations: 7
+ Time Step:  84200, Simulation Time:     40.24 s, Step Size: 0.00128 s, Pressure Iterations: 6
+ Time Step:  84300, Simulation Time:     40.37 s, Step Size: 0.00128 s, Pressure Iterations: 6
+ Time Step:  84400, Simulation Time:     40.50 s, Step Size: 0.00131 s, Pressure Iterations: 6
+ Time Step:  84500, Simulation Time:     40.63 s, Step Size: 0.00131 s, Pressure Iterations: 6
+ Time Step:  84600, Simulation Time:     40.77 s, Step Size: 0.00144 s, Pressure Iterations: 6
+ Time Step:  84700, Simulation Time:     40.91 s, Step Size: 0.00140 s, Pressure Iterations: 6
+ Time Step:  84800, Simulation Time:     41.05 s, Step Size: 0.00140 s, Pressure Iterations: 5
+ Time Step:  84900, Simulation Time:     41.19 s, Step Size: 0.00140 s, Pressure Iterations: 6
+ Time Step:  85000, Simulation Time:     41.33 s, Step Size: 0.00140 s, Pressure Iterations: 6
+ Time Step:  85100, Simulation Time:     41.47 s, Step Size: 0.00138 s, Pressure Iterations: 6
+ Time Step:  85200, Simulation Time:     41.62 s, Step Size: 0.00152 s, Pressure Iterations: 6
+ Time Step:  85300, Simulation Time:     41.77 s, Step Size: 0.00152 s, Pressure Iterations: 5
+ Time Step:  85400, Simulation Time:     41.93 s, Step Size: 0.00161 s, Pressure Iterations: 6
+ Time Step:  85500, Simulation Time:     42.10 s, Step Size: 0.00155 s, Pressure Iterations: 4
+ Time Step:  85600, Simulation Time:     42.28 s, Step Size: 0.00185 s, Pressure Iterations: 5
+ Time Step:  85700, Simulation Time:     42.47 s, Step Size: 0.00203 s, Pressure Iterations: 5
+ Time Step:  85800, Simulation Time:     42.67 s, Step Size: 0.00203 s, Pressure Iterations: 4
+ Time Step:  85900, Simulation Time:     42.88 s, Step Size: 0.00224 s, Pressure Iterations: 6
+ Time Step:  86000, Simulation Time:     43.12 s, Step Size: 0.00246 s, Pressure Iterations: 6
+ Time Step:  86100, Simulation Time:     43.38 s, Step Size: 0.00243 s, Pressure Iterations: 5
+ Time Step:  86200, Simulation Time:     43.62 s, Step Size: 0.00243 s, Pressure Iterations: 7
+ Time Step:  86300, Simulation Time:     43.86 s, Step Size: 0.00243 s, Pressure Iterations: 4
+ Time Step:  86400, Simulation Time:     44.08 s, Step Size: 0.00218 s, Pressure Iterations: 4
+ Time Step:  86500, Simulation Time:     44.30 s, Step Size: 0.00240 s, Pressure Iterations: 10
+ Time Step:  86600, Simulation Time:     44.54 s, Step Size: 0.00240 s, Pressure Iterations: 10
+ Time Step:  86700, Simulation Time:     44.78 s, Step Size: 0.00240 s, Pressure Iterations: 4
+ Time Step:  86800, Simulation Time:     45.02 s, Step Size: 0.00240 s, Pressure Iterations: 4
+ Time Step:  86900, Simulation Time:     45.26 s, Step Size: 0.00240 s, Pressure Iterations: 10
+ Time Step:  87000, Simulation Time:     45.50 s, Step Size: 0.00240 s, Pressure Iterations: 10
+ Time Step:  87100, Simulation Time:     45.74 s, Step Size: 0.00216 s, Pressure Iterations: 6
+ Time Step:  87200, Simulation Time:     45.95 s, Step Size: 0.00216 s, Pressure Iterations: 10
+ Time Step:  87300, Simulation Time:     46.17 s, Step Size: 0.00216 s, Pressure Iterations: 3
+ Time Step:  87400, Simulation Time:     46.39 s, Step Size: 0.00216 s, Pressure Iterations: 3
+ Time Step:  87500, Simulation Time:     46.60 s, Step Size: 0.00216 s, Pressure Iterations: 7
+ Time Step:  87600, Simulation Time:     46.82 s, Step Size: 0.00216 s, Pressure Iterations: 4
+ Time Step:  87700, Simulation Time:     47.03 s, Step Size: 0.00216 s, Pressure Iterations: 4
+ Time Step:  87800, Simulation Time:     47.25 s, Step Size: 0.00216 s, Pressure Iterations: 4
+ Time Step:  87900, Simulation Time:     47.46 s, Step Size: 0.00216 s, Pressure Iterations: 3
+ Time Step:  88000, Simulation Time:     47.68 s, Step Size: 0.00216 s, Pressure Iterations: 3
+ Time Step:  88100, Simulation Time:     47.89 s, Step Size: 0.00216 s, Pressure Iterations: 10
+ Time Step:  88200, Simulation Time:     48.11 s, Step Size: 0.00216 s, Pressure Iterations: 10
+ Time Step:  88300, Simulation Time:     48.33 s, Step Size: 0.00216 s, Pressure Iterations: 3
+ Time Step:  88400, Simulation Time:     48.54 s, Step Size: 0.00216 s, Pressure Iterations: 10
+ Time Step:  88500, Simulation Time:     48.76 s, Step Size: 0.00216 s, Pressure Iterations: 3
+ Time Step:  88600, Simulation Time:     48.97 s, Step Size: 0.00216 s, Pressure Iterations: 10
+ Time Step:  88700, Simulation Time:     49.19 s, Step Size: 0.00216 s, Pressure Iterations: 5
+ Time Step:  88800, Simulation Time:     49.40 s, Step Size: 0.00216 s, Pressure Iterations: 3
+ Time Step:  88900, Simulation Time:     49.62 s, Step Size: 0.00216 s, Pressure Iterations: 5
+ Time Step:  89000, Simulation Time:     49.83 s, Step Size: 0.00216 s, Pressure Iterations: 3
+ Time Step:  89100, Simulation Time:     50.05 s, Step Size: 0.00216 s, Pressure Iterations: 2
+ Time Step:  89200, Simulation Time:     50.27 s, Step Size: 0.00216 s, Pressure Iterations: 4
+ Time Step:  89300, Simulation Time:     50.48 s, Step Size: 0.00216 s, Pressure Iterations: 8
+ Time Step:  89400, Simulation Time:     50.70 s, Step Size: 0.00216 s, Pressure Iterations: 3
+ Time Step:  89500, Simulation Time:     50.91 s, Step Size: 0.00216 s, Pressure Iterations: 3
+ Time Step:  89600, Simulation Time:     51.13 s, Step Size: 0.00216 s, Pressure Iterations: 10
+ Time Step:  89700, Simulation Time:     51.34 s, Step Size: 0.00216 s, Pressure Iterations: 3
+ Time Step:  89800, Simulation Time:     51.56 s, Step Size: 0.00216 s, Pressure Iterations: 8
+ Time Step:  89900, Simulation Time:     51.77 s, Step Size: 0.00216 s, Pressure Iterations: 4
+ Time Step:  90000, Simulation Time:     51.99 s, Step Size: 0.00216 s, Pressure Iterations: 4
+ Time Step:  90100, Simulation Time:     52.21 s, Step Size: 0.00216 s, Pressure Iterations: 3
+ Time Step:  90200, Simulation Time:     52.40 s, Step Size: 0.00194 s, Pressure Iterations: 10
+ Time Step:  90300, Simulation Time:     52.60 s, Step Size: 0.00194 s, Pressure Iterations: 3
+ Time Step:  90400, Simulation Time:     52.79 s, Step Size: 0.00194 s, Pressure Iterations: 3
+ Time Step:  90500, Simulation Time:     52.99 s, Step Size: 0.00194 s, Pressure Iterations: 10
+ Time Step:  90600, Simulation Time:     53.18 s, Step Size: 0.00194 s, Pressure Iterations: 10
+ Time Step:  90700, Simulation Time:     53.37 s, Step Size: 0.00194 s, Pressure Iterations: 7
+ Time Step:  90800, Simulation Time:     53.57 s, Step Size: 0.00194 s, Pressure Iterations: 10
+ Time Step:  90900, Simulation Time:     53.76 s, Step Size: 0.00194 s, Pressure Iterations: 3
+ Time Step:  91000, Simulation Time:     53.96 s, Step Size: 0.00194 s, Pressure Iterations: 10
+ Time Step:  91100, Simulation Time:     54.15 s, Step Size: 0.00194 s, Pressure Iterations: 4
+ Time Step:  91200, Simulation Time:     54.34 s, Step Size: 0.00194 s, Pressure Iterations: 3
+ Time Step:  91300, Simulation Time:     54.54 s, Step Size: 0.00194 s, Pressure Iterations: 4
+ Time Step:  91400, Simulation Time:     54.73 s, Step Size: 0.00194 s, Pressure Iterations: 3
+ Time Step:  91500, Simulation Time:     54.93 s, Step Size: 0.00194 s, Pressure Iterations: 3
+ Time Step:  91600, Simulation Time:     55.12 s, Step Size: 0.00194 s, Pressure Iterations: 2
+ Time Step:  91700, Simulation Time:     55.31 s, Step Size: 0.00194 s, Pressure Iterations: 2
+ Time Step:  91800, Simulation Time:     55.51 s, Step Size: 0.00194 s, Pressure Iterations: 10
+ Time Step:  91900, Simulation Time:     55.70 s, Step Size: 0.00194 s, Pressure Iterations: 5
+ Time Step:  92000, Simulation Time:     55.90 s, Step Size: 0.00194 s, Pressure Iterations: 10
+ Time Step:  92100, Simulation Time:     56.12 s, Step Size: 0.00235 s, Pressure Iterations: 10
+ Time Step:  92200, Simulation Time:     56.33 s, Step Size: 0.00211 s, Pressure Iterations: 10
+ Time Step:  92300, Simulation Time:     56.53 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  92400, Simulation Time:     56.72 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  92500, Simulation Time:     56.91 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  92600, Simulation Time:     57.10 s, Step Size: 0.00190 s, Pressure Iterations: 2
+ Time Step:  92700, Simulation Time:     57.29 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  92800, Simulation Time:     57.48 s, Step Size: 0.00190 s, Pressure Iterations: 9
+ Time Step:  92900, Simulation Time:     57.67 s, Step Size: 0.00190 s, Pressure Iterations: 2
+ Time Step:  93000, Simulation Time:     57.86 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  93100, Simulation Time:     58.05 s, Step Size: 0.00190 s, Pressure Iterations: 2
+ Time Step:  93200, Simulation Time:     58.24 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  93300, Simulation Time:     58.43 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  93400, Simulation Time:     58.62 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  93500, Simulation Time:     58.81 s, Step Size: 0.00190 s, Pressure Iterations: 8
+ Time Step:  93600, Simulation Time:     59.00 s, Step Size: 0.00190 s, Pressure Iterations: 2
+ Time Step:  93700, Simulation Time:     59.19 s, Step Size: 0.00190 s, Pressure Iterations: 6
+ Time Step:  93800, Simulation Time:     59.38 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  93900, Simulation Time:     59.57 s, Step Size: 0.00190 s, Pressure Iterations: 8
+ Time Step:  94000, Simulation Time:     59.76 s, Step Size: 0.00190 s, Pressure Iterations: 2
+ Time Step:  94100, Simulation Time:     59.95 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  94200, Simulation Time:     60.14 s, Step Size: 0.00190 s, Pressure Iterations: 6
+ Time Step:  94300, Simulation Time:     60.33 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  94400, Simulation Time:     60.52 s, Step Size: 0.00190 s, Pressure Iterations: 3
+ Time Step:  94500, Simulation Time:     60.70 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  94600, Simulation Time:     60.89 s, Step Size: 0.00190 s, Pressure Iterations: 3
+ Time Step:  94700, Simulation Time:     61.08 s, Step Size: 0.00190 s, Pressure Iterations: 5
+ Time Step:  94800, Simulation Time:     61.27 s, Step Size: 0.00190 s, Pressure Iterations: 7
+ Time Step:  94900, Simulation Time:     61.46 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  95000, Simulation Time:     61.65 s, Step Size: 0.00190 s, Pressure Iterations: 4
+ Time Step:  95100, Simulation Time:     61.84 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  95200, Simulation Time:     62.03 s, Step Size: 0.00190 s, Pressure Iterations: 7
+ Time Step:  95300, Simulation Time:     62.22 s, Step Size: 0.00190 s, Pressure Iterations: 7
+ Time Step:  95400, Simulation Time:     62.41 s, Step Size: 0.00190 s, Pressure Iterations: 9
+ Time Step:  95500, Simulation Time:     62.60 s, Step Size: 0.00190 s, Pressure Iterations: 2
+ Time Step:  95600, Simulation Time:     62.79 s, Step Size: 0.00190 s, Pressure Iterations: 10
+ Time Step:  95700, Simulation Time:     62.98 s, Step Size: 0.00190 s, Pressure Iterations: 9
+ Time Step:  95800, Simulation Time:     63.17 s, Step Size: 0.00190 s, Pressure Iterations: 9
+ Time Step:  95900, Simulation Time:     63.36 s, Step Size: 0.00190 s, Pressure Iterations: 3
+ Time Step:  96000, Simulation Time:     63.55 s, Step Size: 0.00190 s, Pressure Iterations: 9
+ Time Step:  96100, Simulation Time:     63.74 s, Step Size: 0.00190 s, Pressure Iterations: 3
+ Time Step:  96200, Simulation Time:     63.91 s, Step Size: 0.00169 s, Pressure Iterations: 2
+ Time Step:  96300, Simulation Time:     64.08 s, Step Size: 0.00169 s, Pressure Iterations: 4
+ Time Step:  96400, Simulation Time:     64.25 s, Step Size: 0.00186 s, Pressure Iterations: 6
+ Time Step:  96500, Simulation Time:     64.44 s, Step Size: 0.00186 s, Pressure Iterations: 10
+ Time Step:  96600, Simulation Time:     64.62 s, Step Size: 0.00186 s, Pressure Iterations: 10
+ Time Step:  96700, Simulation Time:     64.81 s, Step Size: 0.00186 s, Pressure Iterations: 10
+ Time Step:  96800, Simulation Time:     65.00 s, Step Size: 0.00186 s, Pressure Iterations: 2
+ Time Step:  96803, Simulation Time:     65.00 s, Step Size: 0.00078 s, Pressure Iterations: 10
+
+
+ Time Stepping Wall Clock Time (s):   104653.295
+ Total Elapsed Wall Clock Time (s):   104676.706
+
+STOP: FDS completed successfully (CHID: FM_15cm_Burner_CH4_5mm)
