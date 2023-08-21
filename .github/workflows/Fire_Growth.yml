@@ -104,6 +104,7 @@ jobs:
         if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
         run: |
           cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/FSRI
+          cp README.md Plots/.
           zip Plots.zip -r Plots
           mv Plots.zip UMB_SBI_FSRI_Plots.zip
           gh release upload SCRIPT_FIGURES UMD_SBI_FSRI_Plots.zip --clobber
