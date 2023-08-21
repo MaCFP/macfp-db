@@ -8,12 +8,12 @@
 import numpy as np
 import pandas as pd
 
-outdir = './Preliminary_Results/'
+outdir = './Output/'
 
 # create files with XO2 as independent column
 
 fuel_name = ['C2H4','C3H6','C3H8','CH4']
-res_name  = ['2cm','1cm'] #,'5mm']
+res_name  = ['2cm','1cm','5mm']
 
 for fuel in fuel_name:
    for res in res_name:
@@ -37,7 +37,7 @@ for fuel in fuel_name:
 # create files with Time as independent column for C2H4 fuel
 
 O2_name  = ['20p9','19p0','16p8','15p2']
-res_name = ['2cm','1cm'] #,'5mm']
+res_name = ['2cm','1cm','5mm']
 
 for O2 in O2_name:
    for res in res_name:
