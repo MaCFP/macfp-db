@@ -51,7 +51,7 @@ jobs:
 
       # Step 2: push the plots to the releases page
       - name: Push NIST NIST Pool Fires Results to release
-        if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
           cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST
           cp README.md ./Plots/.
@@ -70,7 +70,7 @@ jobs:
 
       # Step 2: push the plots to the releases page
       - name: Push NIST Waterloo Methanol Results to release
-        if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
           cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/Waterloo_Methanol/Computational_Results/2023/NIST
           cp README.md ./Plots/.
@@ -90,7 +90,7 @@ jobs:
           python NIST_Pool_Fires_Sandia_plot_cmp.py
 
       - name: Push Sandia Results to release
-        if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
           cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/Sandia/Preliminary_Results
           zip Plots.zip -r Plots

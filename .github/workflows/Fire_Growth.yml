@@ -51,7 +51,7 @@ jobs:
 
       # Push updated images to SCRIPT_FIGURES
       - name: Upload images to releases
-        if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
           gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux.png --clobber
           gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux_colormap.png --clobber
@@ -63,7 +63,7 @@ jobs:
       # When submitting computational results, add your script to the list below (follow the example)
 
       # Step 1: generate the plots
-      - name: NIST Preliminary Results
+      - name: NIST Results
         run: |
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/NIST
@@ -79,7 +79,7 @@ jobs:
 
       # Step 2: push the plots to the releases page
       - name: Push NIST Results to release
-        if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
           cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/NIST/Preliminary_Results
           zip Plots.zip -r Plots
@@ -101,12 +101,12 @@ jobs:
 
       # Step 2: push the plots to the releases page
       - name: Push FSRI Results to release
-        if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
           cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/FSRI
           cp README.md Plots/.
           zip Plots.zip -r Plots
-          mv Plots.zip UMB_SBI_FSRI_Plots.zip
+          mv Plots.zip UMD_SBI_FSRI_Plots.zip
           gh release upload SCRIPT_FIGURES UMD_SBI_FSRI_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
