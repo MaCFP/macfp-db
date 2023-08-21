@@ -1,0 +1,3810 @@
+
+ Fire Dynamics Simulator
+
+ Current Date     : August 19, 2023  00:24:10
+ Revision         : FDS-6.8.0-564-g879930a-master
+ Revision Date    : Wed Aug 16 13:01:02 2023 -0400
+ Compiler         : ifort version 2021.7.1
+ Compilation Date : Aug 16, 2023 16:23:58
+
+ MPI Enabled;    Number of MPI Processes:     128
+ OpenMP Disabled
+
+ MPI version: 3.1
+ MPI library version: Intel(R) MPI Library 2021.7 for Linux* OS
+
+
+ Job TITLE        : (Concatenated) NIST Methanol Pool, 1 m pan, 5 cm resolution
+ Job ID string    : NIST_Methanol_1m_GEOM_Prescribed_5cm_cat
+
+
+ Miscellaneous Parameters
+
+   Simulation Start Time (s)          0.0
+   Simulation End Time (s)           60.0
+   Background Pressure (Pa)     101325.00
+   Ambient Temperature (C)          25.00
+
+   3D Cartesian
+   LES Calculation
+   Eddy Viscosity Model:  Deardorff (C_DEARDORFF = 0.10)
+   Surface INERT Eddy Viscosity Model:  WALE (C_WALE = 0.60)
+   Surface PAN Eddy Viscosity Model:  WALE (C_WALE = 0.60)
+   Surface POOL Eddy Viscosity Model:  WALE (C_WALE = 0.60)
+   Turbulent Prandtl Number:         0.50
+   Turbulent Schmidt Number:         0.50
+
+
+ Pressure solver information
+
+   Solver:                          ULMAT
+   Velocity tolerance (m/s):    2.500E-02
+   Press eqn res tol (1/s^2):   8.000E+03
+   Max pressure iterations:            10
+
+
+ Mass Fraction Transformation Matrix to Convert Species Mixtures (Columns) to Primitive Species (Rows)
+
+                         AIR       METHANOL  INTERMED  PRODUCTS
+   NITROGEN              0.760861  0.000000  0.520553  0.659393
+   OXYGEN                0.230510  0.000000  0.000000  0.000000
+   CARBON DIOXIDE        0.000590  0.000000  0.000404  0.183680
+   WATER VAPOR           0.008039  0.000000  0.183077  0.156927
+   CARBON MONOXIDE       0.000000  0.000000  0.276096  0.000000
+   SOOT                  0.000000  0.000000  0.000000  0.000000
+   HYDROGEN              0.000000  0.000000  0.019871  0.000000
+   HYDROGEN CYANIDE      0.000000  0.000000  0.000000  0.000000
+   METHANOL              0.000000  1.000000  0.000000  0.000000
+
+
+ Primitive Species Information
+
+   NITROGEN
+   Gas Species
+   Molecular Weight (g/mol)                28.01340
+   Ambient Density (kg/m^3)                1.145
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   OXYGEN
+   Gas Species
+   Molecular Weight (g/mol)                31.99880
+   Ambient Density (kg/m^3)                1.308
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   CARBON DIOXIDE
+   Gas Species
+   Molecular Weight (g/mol)                44.00950
+   Ambient Density (kg/m^3)                1.799
+           Enthalpy of Formation (J/kg) -8.941E+06
+
+   WATER VAPOR
+   Gas Species
+   Molecular Weight (g/mol)                18.01528
+   Ambient Density (kg/m^3)                0.736
+           Enthalpy of Formation (J/kg) -1.342E+07
+
+   CARBON MONOXIDE
+   Gas Species
+   Molecular Weight (g/mol)                28.01010
+   Ambient Density (kg/m^3)                1.145
+           Enthalpy of Formation (J/kg) -3.946E+06
+
+   SOOT
+   Gas Species
+   Molecular Weight (g/mol)                12.01070
+   Ambient Density (kg/m^3)                0.491
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   HYDROGEN
+   Gas Species
+   Molecular Weight (g/mol)                 2.01588
+   Ambient Density (kg/m^3)                0.082
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   HYDROGEN CYANIDE
+   Gas Species
+   Molecular Weight (g/mol)                27.02534
+   Ambient Density (kg/m^3)                1.105
+           Enthalpy of Formation (J/kg)  4.924E+06
+
+   METHANOL
+   Gas Species
+   Molecular Weight (g/mol)                32.04186
+   Ambient Density (kg/m^3)                1.310
+           Enthalpy of Formation (J/kg) -6.271E+06
+
+
+ Tracked (Lumped) Species Information
+
+   AIR
+   Molecular Weight (g/mol)            28.71586
+   Ambient Density (kg/m^3)            1.174
+   Initial Mass Fraction               1.000
+   Enthalpy of Formation (J/kg)     -1.132E+05
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   NITROGEN                       7.608605E-01      7.799397E-01
+   OXYGEN                         2.305098E-01      2.068605E-01
+   CARBON DIOXIDE                 5.902165E-04      3.851117E-04
+   WATER VAPOR                    8.039473E-03      1.281470E-02
+ 
+     Viscosity (kg/m/s) Ambient,  298 K:  1.816E-05
+                                  500 K:  2.610E-05
+                                 1000 K:  4.124E-05
+                                 1500 K:  5.371E-05
+                                 2000 K:  6.476E-05
+   Therm. Cond. (W/m/K) Ambient,  298 K:  2.587E-02
+                                  500 K:  3.813E-02
+                                 1000 K:  6.690E-02
+                                 1500 K:  9.261E-02
+                                 2000 K:  1.155E-01
+        Enthalpy (J/kg) Ambient,  298 K: -1.132E+05
+                                  500 K:  9.439E+04
+                                 1000 K:  6.454E+05
+                                 1500 K:  1.245E+06
+                                 2000 K:  1.872E+06
+    Spec. Heat (J/kg/K) Ambient,  298 K:  1.018E+03
+                                  500 K:  1.044E+03
+                                 1000 K:  1.158E+03
+                                 1500 K:  1.232E+03
+                                 2000 K:  1.273E+03
+   Diff. Coeff. (m^2/s) Ambient,  298 K:  2.050E-05
+                                  500 K:  4.964E-05
+                                 1000 K:  1.582E-04
+                                 1500 K:  3.098E-04
+                                 2000 K:  4.989E-04
+ Gibbs Energy Amb. (kJ/mol),  298 K: -6.020E+01
+                                  500 K: -1.012E+02
+                                 1000 K: -2.122E+02
+                                 1500 K: -3.317E+02
+                                 2000 K: -4.573E+02
+
+   METHANOL
+   Molecular Weight (g/mol)            32.04186
+   Ambient Density (kg/m^3)            1.310
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)     -6.271E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   METHANOL                       1.000000E+00      1.000000E+00
+ 
+     Viscosity (kg/m/s) Ambient,  298 K:  9.670E-06
+                                  500 K:  1.644E-05
+                                 1000 K:  3.130E-05
+                                 1500 K:  4.324E-05
+                                 2000 K:  5.347E-05
+   Therm. Cond. (W/m/K) Ambient,  298 K:  1.399E-02
+                                  500 K:  3.224E-02
+                                 1000 K:  9.206E-02
+                                 1500 K:  1.497E-01
+                                 2000 K:  2.000E-01
+        Enthalpy (J/kg) Ambient,  298 K: -6.271E+06
+                                  500 K: -5.946E+06
+                                 1000 K: -4.758E+06
+                                 1500 K: -3.224E+06
+                                 2000 K: -1.507E+06
+    Spec. Heat (J/kg/K) Ambient,  298 K:  1.374E+03
+                                  500 K:  1.863E+03
+                                 1000 K:  2.794E+03
+                                 1500 K:  3.289E+03
+                                 2000 K:  3.553E+03
+   Diff. Coeff. (m^2/s) Ambient,  298 K:  1.557E-05
+                                  500 K:  4.034E-05
+                                 1000 K:  1.345E-04
+                                 1500 K:  2.667E-04
+                                 2000 K:  4.310E-04
+ Gibbs Energy Amb. (kJ/mol),  298 K: -2.724E+02
+                                  500 K: -3.236E+02
+                                 1000 K: -4.702E+02
+                                 1500 K: -6.394E+02
+                                 2000 K: -8.262E+02
+
+   INTERMEDIATE PRODUCTS
+   Molecular Weight (g/mol)            20.63226
+   Ambient Density (kg/m^3)            0.843
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)     -3.551E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   NITROGEN                       5.205526E-01      3.833942E-01
+   CARBON DIOXIDE                 4.038043E-04      1.893090E-04
+   WATER VAPOR                    1.830771E-01      2.096717E-01
+   CARBON MONOXIDE                2.760959E-01      2.033724E-01
+   SOOT                           0.000000E+00      0.000000E+00
+   HYDROGEN                       1.987055E-02      2.033724E-01
+   HYDROGEN CYANIDE               0.000000E+00      0.000000E+00
+ 
+     Viscosity (kg/m/s) Ambient,  298 K:  1.558E-05
+                                  500 K:  2.282E-05
+                                 1000 K:  3.759E-05
+                                 1500 K:  5.003E-05
+                                 2000 K:  6.101E-05
+   Therm. Cond. (W/m/K) Ambient,  298 K:  3.500E-02
+                                  500 K:  5.194E-02
+                                 1000 K:  9.295E-02
+                                 1500 K:  1.337E-01
+                                 2000 K:  1.717E-01
+        Enthalpy (J/kg) Ambient,  298 K: -3.551E+06
+                                  500 K: -3.254E+06
+                                 1000 K: -2.470E+06
+                                 1500 K: -1.606E+06
+                                 2000 K: -6.832E+05
+    Spec. Heat (J/kg/K) Ambient,  298 K:  1.454E+03
+                                  500 K:  1.490E+03
+                                 1000 K:  1.652E+03
+                                 1500 K:  1.794E+03
+                                 2000 K:  1.890E+03
+   Diff. Coeff. (m^2/s) Ambient,  298 K:  3.176E-05
+                                  500 K:  7.771E-05
+                                 1000 K:  2.498E-04
+                                 1500 K:  4.907E-04
+                                 2000 K:  7.912E-04
+ Gibbs Energy Amb. (kJ/mol),  298 K: -1.320E+02
+                                  500 K: -1.724E+02
+                                 1000 K: -2.822E+02
+                                 1500 K: -4.008E+02
+                                 2000 K: -5.256E+02
+
+   PRODUCTS
+   Molecular Weight (g/mol)            27.45525
+   Ambient Density (kg/m^3)            1.122
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)     -3.749E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   NITROGEN                       6.593931E-01      6.462551E-01
+   CARBON DIOXIDE                 1.836798E-01      1.145883E-01
+   WATER VAPOR                    1.569271E-01      2.391566E-01
+   CARBON MONOXIDE                0.000000E+00      0.000000E+00
+   SOOT                           0.000000E+00      0.000000E+00
+   HYDROGEN CYANIDE               0.000000E+00      0.000000E+00
+ 
+     Viscosity (kg/m/s) Ambient,  298 K:  1.589E-05
+                                  500 K:  2.343E-05
+                                 1000 K:  3.872E-05
+                                 1500 K:  5.151E-05
+                                 2000 K:  6.275E-05
+   Therm. Cond. (W/m/K) Ambient,  298 K:  2.335E-02
+                                  500 K:  3.599E-02
+                                 1000 K:  6.820E-02
+                                 1500 K:  9.925E-02
+                                 2000 K:  1.274E-01
+        Enthalpy (J/kg) Ambient,  298 K: -3.749E+06
+                                  500 K: -3.515E+06
+                                 1000 K: -2.878E+06
+                                 1500 K: -2.167E+06
+                                 2000 K: -1.410E+06
+    Spec. Heat (J/kg/K) Ambient,  298 K:  1.133E+03
+                                  500 K:  1.189E+03
+                                 1000 K:  1.356E+03
+                                 1500 K:  1.476E+03
+                                 2000 K:  1.549E+03
+   Diff. Coeff. (m^2/s) Ambient,  298 K:  2.019E-05
+                                  500 K:  5.015E-05
+                                 1000 K:  1.630E-04
+                                 1500 K:  3.211E-04
+                                 2000 K:  5.183E-04
+ Gibbs Energy Amb. (kJ/mol),  298 K: -1.684E+02
+                                  500 K: -2.097E+02
+                                 1000 K: -3.223E+02
+                                 1500 K: -4.448E+02
+                                 2000 K: -5.742E+02
+
+
+ Gas Phase Reaction Information
+
+   Reaction 1
+
+      Priority:                                                               1
+
+      Fuel                                           Heat of Combustion (kJ/kg)
+      METHANOL                                                        4725.7305
+      2-step reaction,  Total Heat of Combustion                     21104.3304
+
+      Primitive Species Stoich. Coeff.
+      Species ID                                                          Molar
+      OXYGEN                                                          -0.500000
+      WATER VAPOR                                                      1.000000
+      CARBON MONOXIDE                                                  1.000000
+      HYDROGEN                                                         1.000000
+      METHANOL                                                        -1.000000
+
+      Tracked (Lumped) Species Stoich. Coeff.
+      Species ID                                             Molar         Mass
+      AIR                                                -2.417088    -2.166190
+      METHANOL                                           -1.000000    -1.000000
+      INTERMEDIATE PRODUCTS                               4.917088     3.166190
+
+      Reaction Kinetics
+
+      Fast chemistry
+
+      ODE Solver:  EXPLICIT EULER
+
+      Extinction Model:  EXTINCTION 2
+      Auto-Ignition Temperature (C):            -273.1
+      Critical Flame Temperature (C):           1257.0
+
+      Prescribed Radiative Fraction:             0.210
+
+   Reaction 2
+
+      Priority:                                                               2
+
+      Fuel                                           Heat of Combustion (kJ/kg)
+      INTERMEDIATE PRODUCTS                                           5172.9678
+
+      Primitive Species Stoich. Coeff.
+      Species ID                                                          Molar
+      OXYGEN                                                          -0.203372
+      CARBON DIOXIDE                                                   0.203372
+      WATER VAPOR                                                      0.203372
+      CARBON MONOXIDE                                                 -0.203372
+      HYDROGEN                                                        -0.203372
+
+      Tracked (Lumped) Species Stoich. Coeff.
+      Species ID                                             Molar         Mass
+      AIR                                                -0.983138    -1.368326
+      INTERMEDIATE PRODUCTS                              -1.000000    -1.000000
+      PRODUCTS                                            1.779766     2.368326
+
+      Reaction Kinetics
+
+      Fast chemistry
+
+      ODE Solver:  EXPLICIT EULER
+
+      Prescribed Radiative Fraction:             0.210
+
+
+ Material Information
+
+   1 STEEL
+     Emissivity:                                  0.800
+     Density (kg/m3):                            7800.0
+     Specific Heat (kJ/kg/K) Ambient,  298 K:  4.650E-01
+                                       350 K:  4.650E-01
+                                       500 K:  4.650E-01
+                                       800 K:  4.650E-01
+     Therm. Cond. (W/m/K) Ambient,     298 K:  5.400E+01
+                                       350 K:  5.400E+01
+                                       500 K:  5.400E+01
+                                       800 K:  5.400E+01
+     Enthalpy (kJ/kg) Ambient,         298 K:  1.386E+02
+                                       350 K:  1.628E+02
+                                       500 K:  2.325E+02
+                                       800 K:  3.720E+02
+
+
+ Surface Conditions
+
+   0 INERT (DEFAULT)
+
+   1 PAN
+     Material List
+          1  STEEL
+     Layer  1
+        Thickness   (m):  0.00300
+        Density (kg/m3):  7800.00
+        STEEL, Mass fraction:    1.00
+     Reaction products considered from the first  0.50 layers.
+     Total surface density    23.400 kg/m2
+     Solid Phase Node, Layer, Coordinates(m):
+                    0      1       0.0000000
+                    1      1       0.0030000
+     Exposed Backing
+
+   2 POOL
+     Wall or Vent Temperature (C)    64.6
+     METHANOL Mass Flux (kg/s/m2)   1.630E-02
+
+   3 OPEN
+     Passive Vent to Atmosphere
+
+   4 MIRROR
+     Symmetry Plane
+
+   5 INTERPOLATED
+
+   6 PERIODIC
+
+   7 HVAC
+
+   8 MASSLESS TRACER
+
+   9 DROPLET
+
+  10 MASSLESS TARGET
+
+  11 PERIODIC FLOW ONLY
+
+
+ Lagrangian Particle Classes
+
+   1 RESERVED TARGET PARTICLE
+     SURFace ID: MASSLESS TARGET
+     # Reals: 690
+     # Integers: 24
+     # Logicals: 5
+
+
+ PROPerty Information
+
+   1 TC
+     Smokeview ID                sensor
+
+
+ Cut-off Density and Temperature
+
+    Minimum Temperature:  -259.1 C
+    Maximum Temperature:  2726.8 C
+    Minimum Density:  1.174E-01 kg/m3
+    Maximum Density:  5.578E+01 kg/m3
+
+
+ Device Information
+
+   1 ID: MLRPUA
+     QUANTITY: BURNING RATE
+     Coordinates (X,Y,Z):   -5.000000E-04   -5.000000E-04    4.500000E-02
+     SPATIAL STATISTIC: MEAN
+     TEMPORAL STATISTIC: TIME AVERAGE
+   2 ID: HEAT_FLUX
+     QUANTITY: TOTAL HEAT FLUX
+     Coordinates (X,Y,Z):   -5.000000E-04   -5.000000E-04    4.500000E-02
+     SPATIAL STATISTIC: MEAN
+     TEMPORAL STATISTIC: TIME AVERAGE
+   3 ID: MLRPUA_ideal
+     QUANTITY: TOTAL HEAT FLUX
+     Coordinates (X,Y,Z):   -5.000000E-04   -5.000000E-04    4.500000E-02
+     SPATIAL STATISTIC: MEAN
+     TEMPORAL STATISTIC: TIME AVERAGE
+   4 ID: T_SURF_MEAN
+     QUANTITY: WALL TEMPERATURE
+     Coordinates (X,Y,Z):   -5.000000E-04   -5.000000E-04    4.500000E-02
+     SPATIAL STATISTIC: MEAN
+     TEMPORAL STATISTIC: TIME AVERAGE
+   5 ID: T_SURF_MAX
+     QUANTITY: WALL TEMPERATURE
+     Coordinates (X,Y,Z):   -5.000000E-04   -5.000000E-04    4.500000E-02
+     SPATIAL STATISTIC: MAX
+     TEMPORAL STATISTIC: TIME AVERAGE
+   6 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-03
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+   7 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.462264E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+   8 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.424528E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+   9 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.238679E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  10 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.634906E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  11 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.031132E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  12 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.427358E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  13 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.823585E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  14 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.219811E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  15 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.616038E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  16 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.012264E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  17 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.408491E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  18 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.804717E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  19 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.200943E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  20 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.597170E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  21 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.993396E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  22 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.389623E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  23 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.785849E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  24 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.182075E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  25 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.578302E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  26 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.974528E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  27 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.370755E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  28 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.766981E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  29 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.163208E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  30 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.559434E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  31 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.955660E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  32 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.035189E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  33 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.074811E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  34 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.114434E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  35 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.154057E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  36 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.193679E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  37 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.233302E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  38 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.272925E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  39 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.312547E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  40 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.352170E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  41 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.391792E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  42 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.431415E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  43 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.471038E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  44 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.510660E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  45 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.550283E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  46 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.589906E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  47 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.629528E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  48 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.669151E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  49 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.708774E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  50 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.748396E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  51 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.788019E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  52 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.827642E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  53 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.867264E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  54 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.906887E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  55 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.946509E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  56 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.986132E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  57 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.025755E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  58 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.065377E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  59 ID: T_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.105000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  60 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-03
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  61 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.462264E-02
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  62 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.424528E-02
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  63 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.238679E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  64 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.634906E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  65 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.031132E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  66 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.427358E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  67 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.823585E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  68 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.219811E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  69 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.616038E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  70 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.012264E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  71 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.408491E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  72 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.804717E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  73 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.200943E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  74 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.597170E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  75 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.993396E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  76 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.389623E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  77 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.785849E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  78 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.182075E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  79 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.578302E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  80 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.974528E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  81 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.370755E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  82 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.766981E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  83 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.163208E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  84 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.559434E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  85 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.955660E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  86 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.035189E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  87 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.074811E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  88 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.114434E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  89 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.154057E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  90 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.193679E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  91 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.233302E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  92 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.272925E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  93 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.312547E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  94 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.352170E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  95 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.391792E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  96 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.431415E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  97 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.471038E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  98 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.510660E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+  99 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.550283E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 100 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.589906E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 101 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.629528E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 102 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.669151E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 103 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.708774E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 104 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.748396E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 105 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.788019E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 106 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.827642E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 107 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.867264E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 108 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.906887E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 109 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.946509E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 110 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.986132E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 111 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.025755E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 112 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.065377E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 113 ID: T_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.105000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 114 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -9.500000E-02    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 115 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -5.285714E-02    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 116 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -1.071429E-02    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 117 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.142857E-02    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 118 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    7.357143E-02    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 119 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.157143E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 120 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.578571E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 121 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.000000E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 122 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.421429E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 123 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.842857E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 124 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.264286E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 125 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.685714E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 126 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.107143E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 127 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.528571E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 128 ID: T_20
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.950000E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 129 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -9.500000E-02    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 130 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -5.285714E-02    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 131 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -1.071429E-02    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 132 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.142857E-02    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 133 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    7.357143E-02    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 134 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.157143E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 135 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.578571E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 136 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.000000E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 137 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.421429E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 138 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.842857E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 139 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.264286E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 140 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.685714E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 141 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.107143E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 142 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.528571E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 143 ID: T_20_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.950000E-01    1.000000E-03    2.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 144 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -9.500000E-02    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 145 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -5.285714E-02    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 146 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -1.071429E-02    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 147 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.142857E-02    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 148 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    7.357143E-02    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 149 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.157143E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 150 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.578571E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 151 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.000000E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 152 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.421429E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 153 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.842857E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 154 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.264286E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 155 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.685714E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 156 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.107143E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 157 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.528571E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 158 ID: T_60
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.950000E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 159 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -9.500000E-02    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 160 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -5.285714E-02    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 161 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -1.071429E-02    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 162 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.142857E-02    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 163 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    7.357143E-02    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 164 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.157143E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 165 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.578571E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 166 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.000000E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 167 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.421429E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 168 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.842857E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 169 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.264286E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 170 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.685714E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 171 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.107143E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 172 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.528571E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 173 ID: T_60_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.950000E-01    1.000000E-03    6.000000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 174 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -9.500000E-02    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 175 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -5.285714E-02    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 176 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -1.071429E-02    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 177 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.142857E-02    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 178 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    7.357143E-02    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 179 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.157143E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 180 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.578571E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 181 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.000000E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 182 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.421429E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 183 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.842857E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 184 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.264286E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 185 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.685714E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 186 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.107143E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 187 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.528571E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 188 ID: T_100
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.950000E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 189 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -9.500000E-02    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 190 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -5.285714E-02    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 191 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -1.071429E-02    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 192 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.142857E-02    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 193 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    7.357143E-02    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 194 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.157143E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 195 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.578571E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 196 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.000000E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 197 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.421429E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 198 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.842857E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 199 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.264286E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 200 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.685714E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 201 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.107143E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 202 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.528571E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 203 ID: T_100_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.950000E-01    1.000000E-03    1.000000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 204 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -9.500000E-02    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 205 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -5.285714E-02    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 206 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -1.071429E-02    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 207 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.142857E-02    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 208 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    7.357143E-02    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 209 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.157143E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 210 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.578571E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 211 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.000000E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 212 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.421429E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 213 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.842857E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 214 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.264286E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 215 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.685714E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 216 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.107143E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 217 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.528571E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 218 ID: T_140
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.950000E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 219 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -9.500000E-02    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 220 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -5.285714E-02    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 221 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -1.071429E-02    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 222 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.142857E-02    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 223 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    7.357143E-02    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 224 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.157143E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 225 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.578571E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 226 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.000000E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 227 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.421429E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 228 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.842857E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 229 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.264286E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 230 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.685714E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 231 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.107143E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 232 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.528571E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 233 ID: T_140_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.950000E-01    1.000000E-03    1.400000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 234 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -9.500000E-02    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 235 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -5.285714E-02    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 236 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -1.071429E-02    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 237 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.142857E-02    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 238 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    7.357143E-02    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 239 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.157143E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 240 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.578571E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 241 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.000000E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 242 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.421429E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 243 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.842857E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 244 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.264286E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 245 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.685714E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 246 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.107143E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 247 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.528571E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 248 ID: T_180
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.950000E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+ 249 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -9.500000E-02    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 250 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -5.285714E-02    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 251 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):   -1.071429E-02    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 252 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.142857E-02    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 253 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    7.357143E-02    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 254 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.157143E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 255 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.578571E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 256 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.000000E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 257 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.421429E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 258 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    2.842857E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 259 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.264286E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 260 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    3.685714E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 261 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.107143E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 262 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.528571E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 263 ID: T_180_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    4.950000E-01    1.000000E-03    1.800000E+00
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 264 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    5.200000E-01    1.000000E-03    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 265 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    5.648000E-01    2.990000E-03    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 266 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    6.096000E-01    4.980000E-03    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 267 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    6.544000E-01    6.970000E-03    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 268 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    6.992000E-01    8.960000E-03    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 269 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    7.440000E-01    1.095000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 270 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    7.888000E-01    1.294000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 271 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    8.336000E-01    1.493000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 272 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    8.784000E-01    1.692000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 273 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    9.232000E-01    1.891000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 274 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    9.680000E-01    2.090000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 275 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.012800E+00    2.289000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 276 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.057600E+00    2.488000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 277 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.102400E+00    2.687000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 278 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.147200E+00    2.886000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 279 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.192000E+00    3.085000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 280 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.236800E+00    3.284000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 281 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.281600E+00    3.483000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 282 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.326400E+00    3.682000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 283 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.371200E+00    3.881000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 284 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.416000E+00    4.080000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 285 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.460800E+00    4.279000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 286 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.505600E+00    4.478000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 287 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.550400E+00    4.677000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 288 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.595200E+00    4.876000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 289 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.640000E+00    5.075000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 290 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.684800E+00    5.274000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 291 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.729600E+00    5.473000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 292 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.774400E+00    5.672000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 293 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.819200E+00    5.871000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 294 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.864000E+00    6.070000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 295 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.908800E+00    6.269000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 296 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.953600E+00    6.468000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 297 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.998400E+00    6.667000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 298 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.043200E+00    6.866000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 299 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.088000E+00    7.065000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 300 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.132800E+00    7.264000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 301 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.177600E+00    7.463000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 302 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.222400E+00    7.662000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 303 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.267200E+00    7.861000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 304 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.312000E+00    8.060000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 305 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.356800E+00    8.259000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 306 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.401600E+00    8.458000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 307 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.446400E+00    8.657000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 308 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.491200E+00    8.856000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 309 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.536000E+00    9.055000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 310 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.580800E+00    9.254000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 311 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.625600E+00    9.453000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 312 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.670400E+00    9.652000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 313 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.715200E+00    9.851000E-02    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 314 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.760000E+00    1.005000E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 315 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.804800E+00    1.024900E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 316 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.849600E+00    1.044800E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 317 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.894400E+00    1.064700E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 318 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.939200E+00    1.084600E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 319 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.984000E+00    1.104500E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 320 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.028800E+00    1.124400E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 321 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.073600E+00    1.144300E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 322 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.118400E+00    1.164200E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 323 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.163200E+00    1.184100E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 324 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.208000E+00    1.204000E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 325 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.252800E+00    1.223900E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 326 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.297600E+00    1.243800E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 327 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.342400E+00    1.263700E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 328 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.387200E+00    1.283600E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 329 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.432000E+00    1.303500E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 330 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.476800E+00    1.323400E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 331 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.521600E+00    1.343300E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 332 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.566400E+00    1.363200E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 333 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.611200E+00    1.383100E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 334 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.656000E+00    1.403000E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 335 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.700800E+00    1.422900E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 336 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.745600E+00    1.442800E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 337 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.790400E+00    1.462700E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 338 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.835200E+00    1.482600E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 339 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.880000E+00    1.502500E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 340 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.924800E+00    1.522400E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 341 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.969600E+00    1.542300E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 342 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.014400E+00    1.562200E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 343 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.059200E+00    1.582100E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 344 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.104000E+00    1.602000E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 345 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.148800E+00    1.621900E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 346 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.193600E+00    1.641800E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 347 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.238400E+00    1.661700E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 348 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.283200E+00    1.681600E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 349 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.328000E+00    1.701500E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 350 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.372800E+00    1.721400E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 351 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.417600E+00    1.741300E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 352 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.462400E+00    1.761200E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 353 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.507200E+00    1.781100E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 354 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.552000E+00    1.801000E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 355 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.596800E+00    1.820900E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 356 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.641600E+00    1.840800E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 357 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.686400E+00    1.860700E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 358 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.731200E+00    1.880600E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 359 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.776000E+00    1.900500E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 360 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.820800E+00    1.920400E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 361 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.865600E+00    1.940300E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 362 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.910400E+00    1.960200E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 363 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.955200E+00    1.980100E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 364 ID: HF_00
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.999500E+00    2.000000E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 365 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    5.200000E-01    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 366 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    5.648000E-01    2.990000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 367 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    6.096000E-01    4.980000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 368 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    6.544000E-01    6.970000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 369 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    6.992000E-01    8.960000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 370 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    7.440000E-01    1.095000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 371 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    7.888000E-01    1.294000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 372 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    8.336000E-01    1.493000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 373 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    8.784000E-01    1.692000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 374 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    9.232000E-01    1.891000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 375 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    9.680000E-01    2.090000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 376 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.012800E+00    2.289000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 377 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.057600E+00    2.488000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 378 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.102400E+00    2.687000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 379 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.147200E+00    2.886000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 380 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.192000E+00    3.085000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 381 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.236800E+00    3.284000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 382 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.281600E+00    3.483000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 383 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.326400E+00    3.682000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 384 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.371200E+00    3.881000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 385 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.416000E+00    4.080000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 386 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.460800E+00    4.279000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 387 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.505600E+00    4.478000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 388 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.550400E+00    4.677000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 389 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.595200E+00    4.876000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 390 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.640000E+00    5.075000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 391 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.684800E+00    5.274000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 392 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.729600E+00    5.473000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 393 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.774400E+00    5.672000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 394 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.819200E+00    5.871000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 395 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.864000E+00    6.070000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 396 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.908800E+00    6.269000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 397 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.953600E+00    6.468000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 398 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.998400E+00    6.667000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 399 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.043200E+00    6.866000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 400 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.088000E+00    7.065000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 401 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.132800E+00    7.264000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 402 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.177600E+00    7.463000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 403 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.222400E+00    7.662000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 404 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.267200E+00    7.861000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 405 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.312000E+00    8.060000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 406 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.356800E+00    8.259000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 407 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.401600E+00    8.458000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 408 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.446400E+00    8.657000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 409 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.491200E+00    8.856000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 410 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.536000E+00    9.055000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 411 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.580800E+00    9.254000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 412 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.625600E+00    9.453000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 413 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.670400E+00    9.652000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 414 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.715200E+00    9.851000E-02    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 415 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.760000E+00    1.005000E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 416 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.804800E+00    1.024900E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 417 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.849600E+00    1.044800E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 418 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.894400E+00    1.064700E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 419 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.939200E+00    1.084600E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 420 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.984000E+00    1.104500E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 421 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.028800E+00    1.124400E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 422 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.073600E+00    1.144300E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 423 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.118400E+00    1.164200E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 424 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.163200E+00    1.184100E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 425 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.208000E+00    1.204000E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 426 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.252800E+00    1.223900E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 427 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.297600E+00    1.243800E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 428 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.342400E+00    1.263700E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 429 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.387200E+00    1.283600E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 430 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.432000E+00    1.303500E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 431 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.476800E+00    1.323400E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 432 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.521600E+00    1.343300E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 433 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.566400E+00    1.363200E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 434 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.611200E+00    1.383100E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 435 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.656000E+00    1.403000E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 436 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.700800E+00    1.422900E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 437 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.745600E+00    1.442800E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 438 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.790400E+00    1.462700E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 439 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.835200E+00    1.482600E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 440 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.880000E+00    1.502500E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 441 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.924800E+00    1.522400E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 442 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.969600E+00    1.542300E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 443 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.014400E+00    1.562200E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 444 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.059200E+00    1.582100E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 445 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.104000E+00    1.602000E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 446 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.148800E+00    1.621900E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 447 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.193600E+00    1.641800E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 448 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.238400E+00    1.661700E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 449 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.283200E+00    1.681600E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 450 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.328000E+00    1.701500E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 451 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.372800E+00    1.721400E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 452 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.417600E+00    1.741300E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 453 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.462400E+00    1.761200E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 454 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.507200E+00    1.781100E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 455 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.552000E+00    1.801000E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 456 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.596800E+00    1.820900E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 457 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.641600E+00    1.840800E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 458 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.686400E+00    1.860700E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 459 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.731200E+00    1.880600E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 460 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.776000E+00    1.900500E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 461 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.820800E+00    1.920400E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 462 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.865600E+00    1.940300E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 463 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.910400E+00    1.960200E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 464 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.955200E+00    1.980100E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 465 ID: HF_41
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.999500E+00    2.000000E-01    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 466 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    5.200000E-01    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 467 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    5.648000E-01    2.990000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 468 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    6.096000E-01    4.980000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 469 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    6.544000E-01    6.970000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 470 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    6.992000E-01    8.960000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 471 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    7.440000E-01    1.095000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 472 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    7.888000E-01    1.294000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 473 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    8.336000E-01    1.493000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 474 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    8.784000E-01    1.692000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 475 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    9.232000E-01    1.891000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 476 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    9.680000E-01    2.090000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 477 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.012800E+00    2.289000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 478 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.057600E+00    2.488000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 479 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.102400E+00    2.687000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 480 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.147200E+00    2.886000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 481 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.192000E+00    3.085000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 482 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.236800E+00    3.284000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 483 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.281600E+00    3.483000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 484 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.326400E+00    3.682000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 485 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.371200E+00    3.881000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 486 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.416000E+00    4.080000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 487 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.460800E+00    4.279000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 488 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.505600E+00    4.478000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 489 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.550400E+00    4.677000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 490 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.595200E+00    4.876000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 491 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.640000E+00    5.075000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 492 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.684800E+00    5.274000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 493 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.729600E+00    5.473000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 494 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.774400E+00    5.672000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 495 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.819200E+00    5.871000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 496 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.864000E+00    6.070000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 497 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.908800E+00    6.269000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 498 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.953600E+00    6.468000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 499 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.998400E+00    6.667000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 500 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.043200E+00    6.866000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 501 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.088000E+00    7.065000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 502 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.132800E+00    7.264000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 503 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.177600E+00    7.463000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 504 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.222400E+00    7.662000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 505 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.267200E+00    7.861000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 506 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.312000E+00    8.060000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 507 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.356800E+00    8.259000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 508 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.401600E+00    8.458000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 509 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.446400E+00    8.657000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 510 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.491200E+00    8.856000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 511 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.536000E+00    9.055000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 512 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.580800E+00    9.254000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 513 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.625600E+00    9.453000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 514 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.670400E+00    9.652000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 515 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.715200E+00    9.851000E-02    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 516 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.760000E+00    1.005000E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 517 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.804800E+00    1.024900E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 518 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.849600E+00    1.044800E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 519 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.894400E+00    1.064700E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 520 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.939200E+00    1.084600E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 521 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.984000E+00    1.104500E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 522 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.028800E+00    1.124400E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 523 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.073600E+00    1.144300E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 524 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.118400E+00    1.164200E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 525 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.163200E+00    1.184100E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 526 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.208000E+00    1.204000E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 527 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.252800E+00    1.223900E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 528 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.297600E+00    1.243800E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 529 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.342400E+00    1.263700E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 530 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.387200E+00    1.283600E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 531 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.432000E+00    1.303500E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 532 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.476800E+00    1.323400E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 533 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.521600E+00    1.343300E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 534 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.566400E+00    1.363200E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 535 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.611200E+00    1.383100E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 536 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.656000E+00    1.403000E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 537 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.700800E+00    1.422900E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 538 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.745600E+00    1.442800E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 539 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.790400E+00    1.462700E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 540 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.835200E+00    1.482600E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 541 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.880000E+00    1.502500E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 542 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.924800E+00    1.522400E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 543 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.969600E+00    1.542300E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 544 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.014400E+00    1.562200E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 545 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.059200E+00    1.582100E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 546 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.104000E+00    1.602000E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 547 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.148800E+00    1.621900E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 548 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.193600E+00    1.641800E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 549 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.238400E+00    1.661700E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 550 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.283200E+00    1.681600E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 551 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.328000E+00    1.701500E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 552 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.372800E+00    1.721400E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 553 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.417600E+00    1.741300E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 554 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.462400E+00    1.761200E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 555 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.507200E+00    1.781100E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 556 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.552000E+00    1.801000E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 557 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.596800E+00    1.820900E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 558 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.641600E+00    1.840800E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 559 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.686400E+00    1.860700E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 560 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.731200E+00    1.880600E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 561 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.776000E+00    1.900500E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 562 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.820800E+00    1.920400E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 563 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.865600E+00    1.940300E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 564 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.910400E+00    1.960200E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 565 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.955200E+00    1.980100E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 566 ID: HF_61
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.999500E+00    2.000000E-01    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 567 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    5.200000E-01    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 568 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    5.648000E-01    2.990000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 569 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    6.096000E-01    4.980000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 570 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    6.544000E-01    6.970000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 571 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    6.992000E-01    8.960000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 572 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    7.440000E-01    1.095000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 573 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    7.888000E-01    1.294000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 574 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    8.336000E-01    1.493000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 575 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    8.784000E-01    1.692000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 576 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    9.232000E-01    1.891000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 577 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    9.680000E-01    2.090000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 578 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.012800E+00    2.289000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 579 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.057600E+00    2.488000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 580 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.102400E+00    2.687000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 581 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.147200E+00    2.886000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 582 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.192000E+00    3.085000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 583 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.236800E+00    3.284000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 584 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.281600E+00    3.483000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 585 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.326400E+00    3.682000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 586 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.371200E+00    3.881000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 587 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.416000E+00    4.080000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 588 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.460800E+00    4.279000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 589 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.505600E+00    4.478000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 590 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.550400E+00    4.677000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 591 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.595200E+00    4.876000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 592 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.640000E+00    5.075000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 593 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.684800E+00    5.274000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 594 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.729600E+00    5.473000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 595 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.774400E+00    5.672000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 596 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.819200E+00    5.871000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 597 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.864000E+00    6.070000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 598 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.908800E+00    6.269000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 599 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.953600E+00    6.468000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 600 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    1.998400E+00    6.667000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 601 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.043200E+00    6.866000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 602 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.088000E+00    7.065000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 603 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.132800E+00    7.264000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 604 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.177600E+00    7.463000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 605 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.222400E+00    7.662000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 606 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.267200E+00    7.861000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 607 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.312000E+00    8.060000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 608 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.356800E+00    8.259000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 609 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.401600E+00    8.458000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 610 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.446400E+00    8.657000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 611 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.491200E+00    8.856000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 612 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.536000E+00    9.055000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 613 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.580800E+00    9.254000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 614 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.625600E+00    9.453000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 615 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.670400E+00    9.652000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 616 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.715200E+00    9.851000E-02    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 617 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.760000E+00    1.005000E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 618 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.804800E+00    1.024900E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 619 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.849600E+00    1.044800E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 620 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.894400E+00    1.064700E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 621 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.939200E+00    1.084600E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 622 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.984000E+00    1.104500E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 623 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.028800E+00    1.124400E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 624 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.073600E+00    1.144300E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 625 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.118400E+00    1.164200E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 626 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.163200E+00    1.184100E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 627 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.208000E+00    1.204000E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 628 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.252800E+00    1.223900E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 629 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.297600E+00    1.243800E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 630 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.342400E+00    1.263700E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 631 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.387200E+00    1.283600E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 632 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.432000E+00    1.303500E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 633 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.476800E+00    1.323400E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 634 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.521600E+00    1.343300E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 635 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.566400E+00    1.363200E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 636 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.611200E+00    1.383100E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 637 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.656000E+00    1.403000E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 638 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.700800E+00    1.422900E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 639 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.745600E+00    1.442800E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 640 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.790400E+00    1.462700E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 641 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.835200E+00    1.482600E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 642 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.880000E+00    1.502500E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 643 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.924800E+00    1.522400E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 644 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    3.969600E+00    1.542300E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 645 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.014400E+00    1.562200E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 646 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.059200E+00    1.582100E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 647 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.104000E+00    1.602000E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 648 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.148800E+00    1.621900E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 649 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.193600E+00    1.641800E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 650 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.238400E+00    1.661700E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 651 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.283200E+00    1.681600E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 652 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.328000E+00    1.701500E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 653 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.372800E+00    1.721400E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 654 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.417600E+00    1.741300E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 655 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.462400E+00    1.761200E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 656 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.507200E+00    1.781100E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 657 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.552000E+00    1.801000E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 658 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.596800E+00    1.820900E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 659 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.641600E+00    1.840800E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 660 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.686400E+00    1.860700E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 661 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.731200E+00    1.880600E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 662 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.776000E+00    1.900500E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 663 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.820800E+00    1.920400E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 664 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.865600E+00    1.940300E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 665 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.910400E+00    1.960200E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 666 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.955200E+00    1.980100E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 667 ID: HF_81
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    4.999500E+00    2.000000E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 668 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    0.000000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 669 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    4.500000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 670 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    9.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 671 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.350000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 672 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.800000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 673 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    2.250000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 674 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    2.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 675 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    3.150000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 676 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    3.600000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 677 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    4.050000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 678 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    4.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 679 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    4.950000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 680 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    5.400000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 681 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    5.850000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 682 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    6.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 683 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    6.750000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 684 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    7.200000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 685 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    7.650000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 686 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 687 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    8.550000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 688 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    9.000000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 689 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    9.450000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 690 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    9.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 691 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.035000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 692 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.080000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 693 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.125000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 694 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.170000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 695 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.215000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 696 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.260000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 697 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.305000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 698 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.350000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 699 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.395000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 700 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.440000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 701 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.485000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 702 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.530000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 703 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.575000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 704 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.620000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 705 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.665000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 706 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.710000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 707 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.755000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 708 ID: HF_207
+     QUANTITY: RADIATIVE HEAT FLUX
+     Coordinates (X,Y,Z):    2.075000E+00    1.000000E-01    1.800000E+00
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 709 ID: w
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.010000E-01
+     TEMPORAL STATISTIC: TIME AVERAGE
+
+
+ Boundary File Information
+
+   1 Quantity: WALL TEMPERATURE
+   2 Quantity: METHANOL MASS FLUX
+
+
+ Radiation Model Information
+
+   Number of control angles  616
+   Time step increment         1
+   Angle increment             1
+   Theta band N_phi   Solid angle
+     1:        4     0.019
+     2:       12     0.019
+     3:       20     0.019
+     4:       24     0.021
+     5:       32     0.020
+     6:       36     0.021
+     7:       40     0.021
+     8:       44     0.021
+     9:       48     0.020
+    10:       48     0.020
+    11:       48     0.020
+    12:       48     0.020
+    13:       44     0.021
+    14:       40     0.021
+    15:       36     0.021
+    16:       32     0.020
+    17:       24     0.021
+    18:       20     0.019
+    19:       12     0.019
+    20:        4     0.019
+   Using gray gas absorption.
+   Mean beam length  1.000E-01 m
+ 
+ 
+
+ Run Time Diagnostics
+
+ Time Step:      1, Simulation Time:     0.040 s, Step Size: 0.03992 s, Pressure Iterations: 1
+ Time Step:      2, Simulation Time:     0.080 s, Step Size: 0.03992 s, Pressure Iterations: 3
+ Time Step:      3, Simulation Time:      0.12 s, Step Size: 0.03992 s, Pressure Iterations: 6
+ Time Step:      4, Simulation Time:      0.16 s, Step Size: 0.03992 s, Pressure Iterations: 3
+ Time Step:      5, Simulation Time:      0.20 s, Step Size: 0.03992 s, Pressure Iterations: 1
+ Time Step:      6, Simulation Time:      0.24 s, Step Size: 0.03992 s, Pressure Iterations: 1
+ Time Step:      7, Simulation Time:      0.28 s, Step Size: 0.03992 s, Pressure Iterations: 1
+ Time Step:      8, Simulation Time:      0.32 s, Step Size: 0.03992 s, Pressure Iterations: 2
+ Time Step:      9, Simulation Time:      0.36 s, Step Size: 0.03992 s, Pressure Iterations: 5
+ Time Step:     10, Simulation Time:      0.40 s, Step Size: 0.03992 s, Pressure Iterations: 3
+ Time Step:     20, Simulation Time:      0.73 s, Step Size: 0.01716 s, Pressure Iterations: 3
+ Time Step:     30, Simulation Time:      0.85 s, Step Size: 0.00956 s, Pressure Iterations: 2
+ Time Step:     40, Simulation Time:      0.94 s, Step Size: 0.00956 s, Pressure Iterations: 4
+ Time Step:     50, Simulation Time:      1.03 s, Step Size: 0.00728 s, Pressure Iterations: 4
+ Time Step:     60, Simulation Time:      1.10 s, Step Size: 0.00563 s, Pressure Iterations: 4
+ Time Step:     70, Simulation Time:      1.15 s, Step Size: 0.00503 s, Pressure Iterations: 4
+ Time Step:     80, Simulation Time:      1.20 s, Step Size: 0.00554 s, Pressure Iterations: 3
+ Time Step:     90, Simulation Time:      1.26 s, Step Size: 0.00580 s, Pressure Iterations: 3
+ Time Step:    100, Simulation Time:      1.31 s, Step Size: 0.00467 s, Pressure Iterations: 3
+ Time Step:    200, Simulation Time:      1.70 s, Step Size: 0.00302 s, Pressure Iterations: 4
+ Time Step:    300, Simulation Time:      2.01 s, Step Size: 0.00288 s, Pressure Iterations: 5
+ Time Step:    400, Simulation Time:      2.32 s, Step Size: 0.00312 s, Pressure Iterations: 5
+ Time Step:    500, Simulation Time:      2.60 s, Step Size: 0.00280 s, Pressure Iterations: 4
+ Time Step:    600, Simulation Time:      2.89 s, Step Size: 0.00274 s, Pressure Iterations: 5
+ Time Step:    700, Simulation Time:      3.17 s, Step Size: 0.00297 s, Pressure Iterations: 5
+ Time Step:    800, Simulation Time:      3.47 s, Step Size: 0.00327 s, Pressure Iterations: 5
+ Time Step:    900, Simulation Time:      3.76 s, Step Size: 0.00290 s, Pressure Iterations: 4
+ Time Step:   1000, Simulation Time:      4.06 s, Step Size: 0.00285 s, Pressure Iterations: 5
+ Time Step:   1100, Simulation Time:      4.35 s, Step Size: 0.00282 s, Pressure Iterations: 4
+ Time Step:   1200, Simulation Time:      4.64 s, Step Size: 0.00307 s, Pressure Iterations: 5
+ Time Step:   1300, Simulation Time:      4.93 s, Step Size: 0.00268 s, Pressure Iterations: 5
+ Time Step:   1400, Simulation Time:      5.23 s, Step Size: 0.00286 s, Pressure Iterations: 5
+ Time Step:   1500, Simulation Time:      5.51 s, Step Size: 0.00315 s, Pressure Iterations: 6
+ Time Step:   1600, Simulation Time:      5.82 s, Step Size: 0.00336 s, Pressure Iterations: 5
+ Time Step:   1700, Simulation Time:      6.10 s, Step Size: 0.00288 s, Pressure Iterations: 5
+ Time Step:   1800, Simulation Time:      6.41 s, Step Size: 0.00317 s, Pressure Iterations: 5
+ Time Step:   1900, Simulation Time:      6.68 s, Step Size: 0.00269 s, Pressure Iterations: 5
+ Time Step:   2000, Simulation Time:      7.00 s, Step Size: 0.00321 s, Pressure Iterations: 5
+ Time Step:   2100, Simulation Time:      7.29 s, Step Size: 0.00308 s, Pressure Iterations: 5
+ Time Step:   2200, Simulation Time:      7.58 s, Step Size: 0.00267 s, Pressure Iterations: 5
+ Time Step:   2300, Simulation Time:      7.84 s, Step Size: 0.00267 s, Pressure Iterations: 4
+ Time Step:   2400, Simulation Time:      8.15 s, Step Size: 0.00291 s, Pressure Iterations: 5
+ Time Step:   2500, Simulation Time:      8.42 s, Step Size: 0.00247 s, Pressure Iterations: 5
+ Time Step:   2600, Simulation Time:      8.70 s, Step Size: 0.00284 s, Pressure Iterations: 5
+ Time Step:   2700, Simulation Time:      8.98 s, Step Size: 0.00284 s, Pressure Iterations: 5
+ Time Step:   2800, Simulation Time:      9.29 s, Step Size: 0.00305 s, Pressure Iterations: 5
+ Time Step:   2900, Simulation Time:      9.56 s, Step Size: 0.00284 s, Pressure Iterations: 5
+ Time Step:   3000, Simulation Time:      9.86 s, Step Size: 0.00308 s, Pressure Iterations: 5
+ Time Step:   3100, Simulation Time:     10.16 s, Step Size: 0.00305 s, Pressure Iterations: 5
+ Time Step:   3200, Simulation Time:     10.46 s, Step Size: 0.00316 s, Pressure Iterations: 5
+ Time Step:   3300, Simulation Time:     10.75 s, Step Size: 0.00306 s, Pressure Iterations: 5
+ Time Step:   3400, Simulation Time:     11.08 s, Step Size: 0.00342 s, Pressure Iterations: 6
+ Time Step:   3500, Simulation Time:     11.38 s, Step Size: 0.00301 s, Pressure Iterations: 6
+ Time Step:   3600, Simulation Time:     11.69 s, Step Size: 0.00301 s, Pressure Iterations: 4
+ Time Step:   3700, Simulation Time:     12.00 s, Step Size: 0.00298 s, Pressure Iterations: 5
+ Time Step:   3800, Simulation Time:     12.31 s, Step Size: 0.00328 s, Pressure Iterations: 5
+ Time Step:   3900, Simulation Time:     12.61 s, Step Size: 0.00312 s, Pressure Iterations: 4
+ Time Step:   4000, Simulation Time:     12.91 s, Step Size: 0.00302 s, Pressure Iterations: 4
+ Time Step:   4100, Simulation Time:     13.21 s, Step Size: 0.00320 s, Pressure Iterations: 5
+ Time Step:   4200, Simulation Time:     13.52 s, Step Size: 0.00312 s, Pressure Iterations: 5
+ Time Step:   4300, Simulation Time:     13.83 s, Step Size: 0.00312 s, Pressure Iterations: 5
+ Time Step:   4400, Simulation Time:     14.12 s, Step Size: 0.00300 s, Pressure Iterations: 5
+ Time Step:   4500, Simulation Time:     14.42 s, Step Size: 0.00266 s, Pressure Iterations: 5
+ Time Step:   4600, Simulation Time:     14.70 s, Step Size: 0.00322 s, Pressure Iterations: 5
+ Time Step:   4700, Simulation Time:     15.00 s, Step Size: 0.00283 s, Pressure Iterations: 5
+ Time Step:   4800, Simulation Time:     15.31 s, Step Size: 0.00311 s, Pressure Iterations: 4
+ Time Step:   4900, Simulation Time:     15.58 s, Step Size: 0.00258 s, Pressure Iterations: 5
+ Time Step:   5000, Simulation Time:     15.86 s, Step Size: 0.00312 s, Pressure Iterations: 6
+ Time Step:   5100, Simulation Time:     16.17 s, Step Size: 0.00306 s, Pressure Iterations: 5
+ Time Step:   5200, Simulation Time:     16.46 s, Step Size: 0.00297 s, Pressure Iterations: 6
+ Time Step:   5300, Simulation Time:     16.76 s, Step Size: 0.00289 s, Pressure Iterations: 5
+ Time Step:   5400, Simulation Time:     17.06 s, Step Size: 0.00314 s, Pressure Iterations: 5
+ Time Step:   5500, Simulation Time:     17.38 s, Step Size: 0.00271 s, Pressure Iterations: 4
+ Time Step:   5600, Simulation Time:     17.68 s, Step Size: 0.00323 s, Pressure Iterations: 5
+ Time Step:   5700, Simulation Time:     17.98 s, Step Size: 0.00312 s, Pressure Iterations: 6
+ Time Step:   5800, Simulation Time:     18.28 s, Step Size: 0.00266 s, Pressure Iterations: 5
+ Time Step:   5900, Simulation Time:     18.58 s, Step Size: 0.00322 s, Pressure Iterations: 5
+ Time Step:   6000, Simulation Time:     18.87 s, Step Size: 0.00301 s, Pressure Iterations: 6
+ Time Step:   6100, Simulation Time:     19.17 s, Step Size: 0.00315 s, Pressure Iterations: 5
+ Time Step:   6200, Simulation Time:     19.48 s, Step Size: 0.00250 s, Pressure Iterations: 5
+ Time Step:   6300, Simulation Time:     19.75 s, Step Size: 0.00285 s, Pressure Iterations: 4
+ Time Step:   6400, Simulation Time:     20.06 s, Step Size: 0.00278 s, Pressure Iterations: 6
+ Time Step:   6500, Simulation Time:     20.35 s, Step Size: 0.00333 s, Pressure Iterations: 5
+ Time Step:   6600, Simulation Time:     20.67 s, Step Size: 0.00265 s, Pressure Iterations: 5
+ Time Step:   6700, Simulation Time:     20.97 s, Step Size: 0.00321 s, Pressure Iterations: 5
+ Time Step:   6800, Simulation Time:     21.27 s, Step Size: 0.00253 s, Pressure Iterations: 5
+ Time Step:   6900, Simulation Time:     21.56 s, Step Size: 0.00296 s, Pressure Iterations: 6
+ Time Step:   7000, Simulation Time:     21.85 s, Step Size: 0.00291 s, Pressure Iterations: 5
+ Time Step:   7100, Simulation Time:     22.15 s, Step Size: 0.00320 s, Pressure Iterations: 5
+ Time Step:   7200, Simulation Time:     22.46 s, Step Size: 0.00269 s, Pressure Iterations: 5
+ Time Step:   7300, Simulation Time:     22.74 s, Step Size: 0.00291 s, Pressure Iterations: 5
+ Time Step:   7400, Simulation Time:     23.04 s, Step Size: 0.00287 s, Pressure Iterations: 5
+ Time Step:   7500, Simulation Time:     23.32 s, Step Size: 0.00311 s, Pressure Iterations: 5
+ Time Step:   7600, Simulation Time:     23.63 s, Step Size: 0.00311 s, Pressure Iterations: 6
+ Time Step:   7700, Simulation Time:     23.95 s, Step Size: 0.00307 s, Pressure Iterations: 5
+ Time Step:   7800, Simulation Time:     24.23 s, Step Size: 0.00298 s, Pressure Iterations: 5
+ Time Step:   7900, Simulation Time:     24.52 s, Step Size: 0.00286 s, Pressure Iterations: 4
+ Time Step:   8000, Simulation Time:     24.81 s, Step Size: 0.00276 s, Pressure Iterations: 5
+ Time Step:   8100, Simulation Time:     25.10 s, Step Size: 0.00303 s, Pressure Iterations: 5
+ Time Step:   8200, Simulation Time:     25.40 s, Step Size: 0.00303 s, Pressure Iterations: 5
+ Time Step:   8300, Simulation Time:     25.72 s, Step Size: 0.00296 s, Pressure Iterations: 5
+ Time Step:   8400, Simulation Time:     26.00 s, Step Size: 0.00284 s, Pressure Iterations: 4
+ Time Step:   8500, Simulation Time:     26.31 s, Step Size: 0.00278 s, Pressure Iterations: 5
+ Time Step:   8600, Simulation Time:     26.60 s, Step Size: 0.00305 s, Pressure Iterations: 5
+ Time Step:   8700, Simulation Time:     26.91 s, Step Size: 0.00300 s, Pressure Iterations: 6
+ Time Step:   8800, Simulation Time:     27.20 s, Step Size: 0.00296 s, Pressure Iterations: 5
+ Time Step:   8900, Simulation Time:     27.51 s, Step Size: 0.00267 s, Pressure Iterations: 6
+ Time Step:   9000, Simulation Time:     27.79 s, Step Size: 0.00323 s, Pressure Iterations: 5
+ Time Step:   9100, Simulation Time:     28.09 s, Step Size: 0.00290 s, Pressure Iterations: 5
+ Time Step:   9200, Simulation Time:     28.38 s, Step Size: 0.00290 s, Pressure Iterations: 5
+ Time Step:   9300, Simulation Time:     28.67 s, Step Size: 0.00256 s, Pressure Iterations: 5
+ Time Step:   9400, Simulation Time:     28.94 s, Step Size: 0.00305 s, Pressure Iterations: 4
+ Time Step:   9500, Simulation Time:     29.22 s, Step Size: 0.00268 s, Pressure Iterations: 6
+ Time Step:   9600, Simulation Time:     29.50 s, Step Size: 0.00295 s, Pressure Iterations: 5
+ Time Step:   9700, Simulation Time:     29.81 s, Step Size: 0.00291 s, Pressure Iterations: 6
+ Time Step:   9800, Simulation Time:     30.08 s, Step Size: 0.00282 s, Pressure Iterations: 5
+ Time Step:   9900, Simulation Time:     30.39 s, Step Size: 0.00291 s, Pressure Iterations: 5
+ Time Step:  10000, Simulation Time:     30.68 s, Step Size: 0.00317 s, Pressure Iterations: 5
+ Time Step:  10100, Simulation Time:     30.98 s, Step Size: 0.00277 s, Pressure Iterations: 5
+ Time Step:  10200, Simulation Time:     31.28 s, Step Size: 0.00330 s, Pressure Iterations: 5
+ Time Step:  10300, Simulation Time:     31.60 s, Step Size: 0.00293 s, Pressure Iterations: 5
+ Time Step:  10400, Simulation Time:     31.91 s, Step Size: 0.00322 s, Pressure Iterations: 5
+ Time Step:  10500, Simulation Time:     32.23 s, Step Size: 0.00255 s, Pressure Iterations: 5
+ Time Step:  10600, Simulation Time:     32.50 s, Step Size: 0.00308 s, Pressure Iterations: 4
+ Time Step:  10700, Simulation Time:     32.79 s, Step Size: 0.00277 s, Pressure Iterations: 6
+ Time Step:  10800, Simulation Time:     33.07 s, Step Size: 0.00271 s, Pressure Iterations: 4
+ Time Step:  10900, Simulation Time:     33.37 s, Step Size: 0.00249 s, Pressure Iterations: 5
+ Time Step:  11000, Simulation Time:     33.66 s, Step Size: 0.00331 s, Pressure Iterations: 5
+ Time Step:  11100, Simulation Time:     33.98 s, Step Size: 0.00296 s, Pressure Iterations: 5
+ Time Step:  11200, Simulation Time:     34.27 s, Step Size: 0.00318 s, Pressure Iterations: 5
+ Time Step:  11300, Simulation Time:     34.58 s, Step Size: 0.00262 s, Pressure Iterations: 5
+ Time Step:  11400, Simulation Time:     34.87 s, Step Size: 0.00316 s, Pressure Iterations: 4
+ Time Step:  11500, Simulation Time:     35.19 s, Step Size: 0.00277 s, Pressure Iterations: 5
+ Time Step:  11600, Simulation Time:     35.46 s, Step Size: 0.00275 s, Pressure Iterations: 5
+ Time Step:  11700, Simulation Time:     35.76 s, Step Size: 0.00298 s, Pressure Iterations: 5
+ Time Step:  11800, Simulation Time:     36.06 s, Step Size: 0.00298 s, Pressure Iterations: 5
+ Time Step:  11900, Simulation Time:     36.34 s, Step Size: 0.00265 s, Pressure Iterations: 4
+ Time Step:  12000, Simulation Time:     36.65 s, Step Size: 0.00321 s, Pressure Iterations: 5
+ Time Step:  12100, Simulation Time:     36.94 s, Step Size: 0.00279 s, Pressure Iterations: 5
+ Time Step:  12200, Simulation Time:     37.24 s, Step Size: 0.00299 s, Pressure Iterations: 5
+ Time Step:  12300, Simulation Time:     37.54 s, Step Size: 0.00290 s, Pressure Iterations: 5
+ Time Step:  12400, Simulation Time:     37.86 s, Step Size: 0.00319 s, Pressure Iterations: 5
+ Time Step:  12500, Simulation Time:     38.16 s, Step Size: 0.00294 s, Pressure Iterations: 5
+ Time Step:  12600, Simulation Time:     38.43 s, Step Size: 0.00285 s, Pressure Iterations: 4
+ Time Step:  12700, Simulation Time:     38.72 s, Step Size: 0.00277 s, Pressure Iterations: 5
+ Time Step:  12800, Simulation Time:     39.00 s, Step Size: 0.00296 s, Pressure Iterations: 5
+ Time Step:  12900, Simulation Time:     39.29 s, Step Size: 0.00260 s, Pressure Iterations: 5
+ Time Step:  13000, Simulation Time:     39.56 s, Step Size: 0.00314 s, Pressure Iterations: 4
+ Time Step:  13100, Simulation Time:     39.87 s, Step Size: 0.00265 s, Pressure Iterations: 5
+ Time Step:  13200, Simulation Time:     40.15 s, Step Size: 0.00292 s, Pressure Iterations: 5
+ Time Step:  13300, Simulation Time:     40.43 s, Step Size: 0.00278 s, Pressure Iterations: 5
+ Time Step:  13400, Simulation Time:     40.73 s, Step Size: 0.00306 s, Pressure Iterations: 5
+ Time Step:  13500, Simulation Time:     41.05 s, Step Size: 0.00296 s, Pressure Iterations: 4
+ Time Step:  13600, Simulation Time:     41.35 s, Step Size: 0.00310 s, Pressure Iterations: 5
+ Time Step:  13700, Simulation Time:     41.65 s, Step Size: 0.00305 s, Pressure Iterations: 5
+ Time Step:  13800, Simulation Time:     41.96 s, Step Size: 0.00294 s, Pressure Iterations: 5
+ Time Step:  13900, Simulation Time:     42.26 s, Step Size: 0.00297 s, Pressure Iterations: 4
+ Time Step:  14000, Simulation Time:     42.55 s, Step Size: 0.00293 s, Pressure Iterations: 5
+ Time Step:  14100, Simulation Time:     42.84 s, Step Size: 0.00299 s, Pressure Iterations: 5
+ Time Step:  14200, Simulation Time:     43.13 s, Step Size: 0.00267 s, Pressure Iterations: 5
+ Time Step:  14300, Simulation Time:     43.42 s, Step Size: 0.00293 s, Pressure Iterations: 5
+ Time Step:  14400, Simulation Time:     43.72 s, Step Size: 0.00323 s, Pressure Iterations: 5
+ Time Step:  14500, Simulation Time:     44.04 s, Step Size: 0.00283 s, Pressure Iterations: 5
+ Time Step:  14600, Simulation Time:     44.34 s, Step Size: 0.00304 s, Pressure Iterations: 5
+ Time Step:  14700, Simulation Time:     44.63 s, Step Size: 0.00285 s, Pressure Iterations: 5
+ Time Step:  14800, Simulation Time:     44.93 s, Step Size: 0.00280 s, Pressure Iterations: 5
+ Time Step:  14900, Simulation Time:     45.23 s, Step Size: 0.00308 s, Pressure Iterations: 5
+ Time Step:  15000, Simulation Time:     45.54 s, Step Size: 0.00300 s, Pressure Iterations: 6
+ Time Step:  15100, Simulation Time:     45.84 s, Step Size: 0.00324 s, Pressure Iterations: 5
+ Time Step:  15200, Simulation Time:     46.15 s, Step Size: 0.00275 s, Pressure Iterations: 5
+ Time Step:  15300, Simulation Time:     46.44 s, Step Size: 0.00318 s, Pressure Iterations: 5
+ Time Step:  15400, Simulation Time:     46.73 s, Step Size: 0.00241 s, Pressure Iterations: 6
+ Time Step:  15500, Simulation Time:     47.02 s, Step Size: 0.00286 s, Pressure Iterations: 5
+ Time Step:  15600, Simulation Time:     47.31 s, Step Size: 0.00315 s, Pressure Iterations: 6
+ Time Step:  15700, Simulation Time:     47.60 s, Step Size: 0.00280 s, Pressure Iterations: 5
+ Time Step:  15800, Simulation Time:     47.89 s, Step Size: 0.00291 s, Pressure Iterations: 5
+ Time Step:  15900, Simulation Time:     48.18 s, Step Size: 0.00291 s, Pressure Iterations: 5
+ Time Step:  16000, Simulation Time:     48.49 s, Step Size: 0.00286 s, Pressure Iterations: 6
+ Time Step:  16100, Simulation Time:     48.78 s, Step Size: 0.00315 s, Pressure Iterations: 5
+ Time Step:  16200, Simulation Time:     49.07 s, Step Size: 0.00296 s, Pressure Iterations: 5
+ Time Step:  16300, Simulation Time:     49.36 s, Step Size: 0.00315 s, Pressure Iterations: 5
+ Time Step:  16400, Simulation Time:     49.65 s, Step Size: 0.00272 s, Pressure Iterations: 5
+ Time Step:  16500, Simulation Time:     49.93 s, Step Size: 0.00261 s, Pressure Iterations: 5
+ Time Step:  16600, Simulation Time:     50.21 s, Step Size: 0.00277 s, Pressure Iterations: 5
+ Time Step:  16700, Simulation Time:     50.50 s, Step Size: 0.00336 s, Pressure Iterations: 6
+ Time Step:  16800, Simulation Time:     50.80 s, Step Size: 0.00296 s, Pressure Iterations: 6
+ Time Step:  16900, Simulation Time:     51.10 s, Step Size: 0.00287 s, Pressure Iterations: 5
+ Time Step:  17000, Simulation Time:     51.39 s, Step Size: 0.00316 s, Pressure Iterations: 5
+ Time Step:  17100, Simulation Time:     51.69 s, Step Size: 0.00281 s, Pressure Iterations: 6
+ Time Step:  17200, Simulation Time:     52.00 s, Step Size: 0.00309 s, Pressure Iterations: 5
+ Time Step:  17300, Simulation Time:     52.30 s, Step Size: 0.00276 s, Pressure Iterations: 5
+ Time Step:  17400, Simulation Time:     52.60 s, Step Size: 0.00278 s, Pressure Iterations: 5
+ Time Step:  17500, Simulation Time:     52.90 s, Step Size: 0.00306 s, Pressure Iterations: 5
+ Time Step:  17600, Simulation Time:     53.19 s, Step Size: 0.00286 s, Pressure Iterations: 5
+ Time Step:  17700, Simulation Time:     53.49 s, Step Size: 0.00315 s, Pressure Iterations: 5
+ Time Step:  17800, Simulation Time:     53.80 s, Step Size: 0.00311 s, Pressure Iterations: 5
+ Time Step:  17900, Simulation Time:     54.10 s, Step Size: 0.00296 s, Pressure Iterations: 5
+ Time Step:  18000, Simulation Time:     54.39 s, Step Size: 0.00229 s, Pressure Iterations: 5
+ Time Step:  18100, Simulation Time:     54.66 s, Step Size: 0.00270 s, Pressure Iterations: 6
+ Time Step:  18200, Simulation Time:     54.96 s, Step Size: 0.00289 s, Pressure Iterations: 5
+ Time Step:  18300, Simulation Time:     55.26 s, Step Size: 0.00314 s, Pressure Iterations: 5
+ Time Step:  18400, Simulation Time:     55.55 s, Step Size: 0.00291 s, Pressure Iterations: 5
+ Time Step:  18500, Simulation Time:     55.86 s, Step Size: 0.00320 s, Pressure Iterations: 5
+ Time Step:  18600, Simulation Time:     56.13 s, Step Size: 0.00252 s, Pressure Iterations: 5
+ Time Step:  18700, Simulation Time:     56.42 s, Step Size: 0.00305 s, Pressure Iterations: 5
+ Time Step:  18800, Simulation Time:     56.72 s, Step Size: 0.00263 s, Pressure Iterations: 5
+ Time Step:  18900, Simulation Time:     57.01 s, Step Size: 0.00313 s, Pressure Iterations: 5
+ Time Step:  19000, Simulation Time:     57.30 s, Step Size: 0.00308 s, Pressure Iterations: 5
+ Time Step:  19100, Simulation Time:     57.61 s, Step Size: 0.00334 s, Pressure Iterations: 5
+ Time Step:  19200, Simulation Time:     57.91 s, Step Size: 0.00292 s, Pressure Iterations: 5
+ Time Step:  19300, Simulation Time:     58.20 s, Step Size: 0.00283 s, Pressure Iterations: 4
+ Time Step:  19400, Simulation Time:     58.50 s, Step Size: 0.00272 s, Pressure Iterations: 5
+ Time Step:  19500, Simulation Time:     58.79 s, Step Size: 0.00296 s, Pressure Iterations: 5
+ Time Step:  19600, Simulation Time:     59.08 s, Step Size: 0.00296 s, Pressure Iterations: 5
+ Time Step:  19700, Simulation Time:     59.37 s, Step Size: 0.00275 s, Pressure Iterations: 5
+ Time Step:  19800, Simulation Time:     59.65 s, Step Size: 0.00293 s, Pressure Iterations: 5
+ Time Step:  19900, Simulation Time:     59.94 s, Step Size: 0.00277 s, Pressure Iterations: 5
+ Time Step:  19923, Simulation Time:     60.00 s, Step Size: 0.00185 s, Pressure Iterations: 5
+
+
+ Time Stepping Wall Clock Time (s):    17506.871
+ Total Elapsed Wall Clock Time (s):    17547.069
+
+STOP: FDS completed successfully (CHID: NIST_Methanol_1m_GEOM_Prescribed_5cm_cat)
