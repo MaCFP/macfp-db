@@ -181,7 +181,7 @@ def plot_to_fig(x_data,y_data,**kwargs):
     ax.set_ylim(ymin,ymax)
 
     # if axis labels are too large or small, use sci notation
-    axis_exponent_min = -2
+    axis_exponent_min = -3
     axis_exponent_max = 3
     ax.ticklabel_format(axis='both',scilimits=(axis_exponent_min,axis_exponent_max))
 

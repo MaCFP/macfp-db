@@ -8,13 +8,13 @@ on:
   # push:
   #   branches: [ master ]
   #   paths:
-  #     - .github/Gaseous_Pool_Fires.yml
+  #     - .github/workflows/Gaseous_Pool_Fires.yml
   #     - Utilities/macfp.py
   #     - Gaseous_Pool_Fires/**
   # pull_request:
   #   branches: [ master ]
   #   paths:
-  #     - .github/Gaseous_Pool_Fires.yml
+  #     - .github/workflows/Gaseous_Pool_Fires.yml
   #     - Utilities/macfp.py
   #     - Gaseous_Pool_Fires/**
 

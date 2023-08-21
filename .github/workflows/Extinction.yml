@@ -8,13 +8,13 @@ on:
   push:
     branches: [ master ]
     paths:
-      - .github/Extinction.yml
+      - .github/workflows/Extinction.yml
       - Utilities/macfp.py
       - Extinction/**
   pull_request:
     branches: [ master ]
     paths:
-      - .github/Extinction.yml
+      - .github/workflows/Extinction.yml
       - Utilities/macfp.py
       - Extinction/**
 
