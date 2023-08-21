@@ -51,7 +51,7 @@ jobs:
 
       # # Step 2: push the plots to the releases page
       # - name: Push NIST Results to release
-      #   if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
+      #   if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
       #   run: |
       #     cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST/Preliminary_Results
       #     zip Plots.zip -r Plots
