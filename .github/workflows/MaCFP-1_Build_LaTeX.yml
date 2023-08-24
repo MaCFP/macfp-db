@@ -1,6 +1,6 @@
 # MaCFP workflow
 
-name: MaCFP-1 Build LaTeX document
+name: MaCFP-1_Build_LaTeX
 
 # Controls when the workflow will run
 on:
@@ -35,9 +35,9 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: macfp_2017_gasphase.tex
+          root_file: ./Documents/MaCFP-1/macfp_2017_gasphase.tex
         env:
-          TEXINPUTS: ".:./Documents/MaCFP-1/:"
+          TEXINPUTS: ".:./Documents/MaCFP-1//:"
         # run: |
         #   cd ./Documents/MaCFP-1
 
