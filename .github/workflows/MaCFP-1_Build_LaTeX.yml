@@ -31,15 +31,34 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Compile LaTeX
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
+      - name: pdflatex report
+        uses: dante-ev/latex-action@latest
         with:
-          root_file: ./Documents/MaCFP-1/macfp_2017_gasphase.tex
-        env:
-          TEXINPUTS: ".:./Documents/MaCFP-1//:"
-        # run: |
-        #   cd ./Documents/MaCFP-1
+          root_file: macfp_2017_gasphase.tex
+          working_directory: ./Documents/MaCFP-1
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
+      - name: bibtex report
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: macfp_2017_gasphase.aux
+          working_directory: ./Documents/MaCFP-1
+          compiler: bibtex
+          args:
+      - name: pdflatex report
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: macfp_2017_gasphase.tex
+          working_directory: ./Documents/MaCFP-1
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
+      - name: pdflatex report
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: macfp_2017_gasphase.tex
+          working_directory: ./Documents/MaCFP-1
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
 
       # Push updated pdf to release
       - name: Upload document to releases
