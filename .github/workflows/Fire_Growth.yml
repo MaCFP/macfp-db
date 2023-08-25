@@ -90,6 +90,24 @@ jobs:
 
       # ADD YOUR INSTITUTION BELOW, COPY STEPS 1 AND 2, CHANGE INSTITUTE NAME (AFTER 2023 AND WITHIN ZIP FILENAME)
 
+      # Step 1: generate the plots
+      - name: BUWFZJ Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/BUWFZJ
+          python NIST_Parallel_Panel_plot_BUWFZJ_cmp.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push NIST Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/BUWFZJ/Output
+          zip Plots.zip -r Plots
+          mv Plots.zip NIST_Parallel_Panel_BUWFZJ_Plots.zip
+          gh release upload SCRIPT_FIGURES NIST_Parallel_Panel_BUWFZJ_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 # When submitting computational results, add your script to the list below (follow the example)
 
       # Step 1: generate the plots
