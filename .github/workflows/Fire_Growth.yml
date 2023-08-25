@@ -110,8 +110,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-# When submitting computational results, add your script to the list below (follow the example)
-
       # Step 1: generate the plots
       - name: FSRI Preliminary SBI Results
         run: |
