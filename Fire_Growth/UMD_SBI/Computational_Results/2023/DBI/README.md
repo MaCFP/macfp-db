@@ -26,9 +26,9 @@ Version: 6.7.9-0
 
 #### Computational domain discretization (flow solver)
 
-Domain: 2 m by 2 m by 2.8 m (includes hood) for 1 cm ,2.5 cm, and 4 cm grids. 0.5 cm shrunk the hood and domain to 1 m by 1 m x 1.4 m.
+Domain: 2 m by 2 m by 2.8 m (includes hood) for 1 cm and 2.5 cm grids. 0.5 cm shrunk the hood and domain to 1 m by 1 m x 1.4 m.
 
-Cell size: 2.5 cm, 1 cm for UMD props, 2.5 cm for DBI props.
+Cell size: 2.5 cm and 1 cm for UMD props, 2.5 cm for DBI props.
 
 Cell type: Cubes
 
