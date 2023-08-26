@@ -26,9 +26,9 @@ Version: 6.7.9-0
 
 #### Computational domain discretization (flow solver)
 
-Domain: 2 m by 2 m by 2.8 m (includes hood) for 1,2, and 4 cm grids. 0.5 cm shrunk the hood and domain to 1 m by 1 m x 1.4 m.
+Domain: 2 m by 2 m by 2.8 m (includes hood) for 1 cm ,2.5 cm, and 4 cm grids. 0.5 cm shrunk the hood and domain to 1 m by 1 m x 1.4 m.
 
-Cell size: 4 cm, 2 cm, 1 cm, 0.5 cm for UMD props, 2 cm for UMB props with cone heat flux or blowing, 2 and 1 cm for selected other property sets
+Cell size: 2.5 cm, 1 cm for UMD props, 2.5 cm for DBI props.
 
 Cell type: Cubes
 
@@ -48,7 +48,7 @@ Comments: Ambient temperature of 20 °C.
 
 ### Boundary conditions
 
-Comments: Between bottom edge of curtain andf floor there was Open (passive) pressure boundaries. The floor, hood cone, and hood curtains were solid. The top of the hood was a fixed volume flow exhuast of 0.56 m^3/s using FDS HVAC.
+Comments: Between bottom edge of curtain and floor there was Open boundaries. The floor, hood cone, and hood curtains were solid. The top of the hood was a fixed volume flow exhuast of 0.56 m^3/s.
 
 ------------------
 
@@ -61,7 +61,7 @@ Combustion model: 1-step mixing-controlled reactions of propane (burner) and MMA
 Radiation model: Finite-volume, gray gas with specified radiative fraction
 
 Radiative fraction: Propane FDS default of 0.29, MMA FDS default of 0.35
-Yields: Propane Soot=0.01, CO=0.005 (smoke detection work done by JH for the FPRF suggests Tewarson is high for non-bench scale fires). MMA Soot: 0.018, CO_Yield 0.007 (from https://doi.org/10.3390/app11135942).
+Yields: Propane Soot=0.01, CO=0.005 (smoke detection work done by JH for the FPRF suggests Tewarson is high for non-bench scale fires). MMA Soot: 0.018, CO_Yield 0.007.
 
 ------------------
 
@@ -75,7 +75,7 @@ Material property set: Properties of black PMMA taken from the various json file
 
 Comments:
 
-HRR was computed using gas concentrations in the hood exhaust duct and the formula in https://doi.org/10.1016/j.polymdegradstab.2020.109433
+HRR was 
 
 ------------------
 
@@ -97,9 +97,9 @@ Pressure-velocity coupling: Low Mach number approximation
 
 Wall clock time: 4 cm (84,728 s [23.54 hr]) 2 cm (245,260 s [68.12 hr]]); 1 cm (1,541,700 s [428.25 hr]) 0.5 cm (3347800 s [929.94 hr] reduced domain size)
 
-Simulation time: 200 s (0.5 cm was terminated due to HPC maintenace at 198.57 s)
+Simulation time: 200 s 
 
-Number of CPUs (MPI Processes): 4 cm (1); 2 cm (16), 1 cm (64); 0.5 cm (128)
+Number of CPUs (MPI Processes): 2.5 cm (6), 1 cm (6); 
 
 CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 4 cm (0.0024 s); 2 cm (0.014 s); 1 cm (0.044 s); 0.5 cm (0.096 s)
 
@@ -121,5 +121,4 @@ Grid independence
 
 1. FDS Technical Reference Guide
 
-2. Test Report, to be published.
 
