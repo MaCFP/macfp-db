@@ -10,7 +10,7 @@ import importlib
 importlib.reload(macfp) # use for development (while making changes to macfp.py)
 import matplotlib.pyplot as plt
 
-macfp.dataplot(config_filename='DBI-UMD_SBI_Config.csv',
+macfp.dataplot(config_filename='DBI_UMD_SBI_Config.csv',
                institute='DBI',
                revision='MaCFP-3, Tsukuba, 2023',
                expdir='../../../Experimental_Data/',
@@ -18,6 +18,6 @@ macfp.dataplot(config_filename='DBI-UMD_SBI_Config.csv',
                pltdir='./Plots/',
                close_figs=True,
                verbose=True,
-               plot_list= ['all']) 
+               plot_list= ['all'])
 
 # plt.show()
