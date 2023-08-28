@@ -79,7 +79,7 @@ jobs:
           cd $GITHUB_WORKSPACE/Extinction/FM_Burner/Computational_Results/2023/UGent
           cp README.md ./Plots/.
           zip Plots.zip -r Plots
-          mv Plots.zip FM_Burner_UGent_Plots.zip
-          gh release upload SCRIPT_FIGURES FM_Burner_UGent_Plots.zip --clobber
+          mv Plots.zip UGent_FM_Burner_Plots.zip
+          gh release upload SCRIPT_FIGURES UGent_FM_Burner_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
