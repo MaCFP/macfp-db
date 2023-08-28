@@ -107,6 +107,7 @@ CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 0.0
 ### Averaging period
 
 A 1 second averaging period has been applied to the heat flux results to reduce the fluctuation of the data.
+
 ------------------
 
 ### Special issues/problems
