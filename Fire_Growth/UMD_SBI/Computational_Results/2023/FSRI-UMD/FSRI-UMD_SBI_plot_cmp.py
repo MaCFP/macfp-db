@@ -10,7 +10,7 @@ import importlib
 importlib.reload(macfp) # use for development (while making changes to macfp.py)
 import matplotlib.pyplot as plt
 
-macfp.dataplot(config_filename='FSRI-UMD_SBI_Config_Autoupdated.csv',#'FSRI-UMD_SBI_cmp_config_test.csv',
+macfp.dataplot(config_filename='FSRI-UMD_SBI_Config_Autoupdated.csv',
                institute='FSRI-UMD',
                revision='MaCFP-3, Tsukuba, 2023',
                expdir='../../../Experimental_Data/',
@@ -18,8 +18,6 @@ macfp.dataplot(config_filename='FSRI-UMD_SBI_Config_Autoupdated.csv',#'FSRI-UMD_
                pltdir='./Plots/',
                close_figs=True,
                verbose=True,
-               plot_list= ['all']) #['FSRI-UMD_SBI_RadHFVertVariation_t105.pdf',
-                        #'FSRI-UMD_SBI_RadHFVertVariation_t145.pdf',
-                        #'FSRI-UMD_SBI_RadHFVertVariation_t185.pdf']
+               plot_list= ['all'])
 
 # plt.show()
