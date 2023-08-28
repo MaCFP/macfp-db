@@ -98,3 +98,22 @@ jobs:
           gh release upload SCRIPT_FIGURES NIST_Pool_Fires_Sandia_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 1: generate the plots
+      - name: UGent NIST_Pool_Fires Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/UGent
+          python UGent_NIST_Pool_Fires_plot_cmp.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push UGent NIST_Pool_Fires Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/UGent
+          cp README.md ./Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip UGent_NIST_Pool_Fires_Plots.zip
+          gh release upload SCRIPT_FIGURES UGent_NIST_Pool_Fires_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
