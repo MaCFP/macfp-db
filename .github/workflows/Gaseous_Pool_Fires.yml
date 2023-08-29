@@ -1,0 +1,64 @@
+# MaCFP workflow
+
+name: Gaseous_Pool_Fires
+
+# Controls when the workflow will run
+on:
+  # # Triggers the workflow on push or pull request events but only for the master branch
+  # push:
+  #   branches: [ master ]
+  #   paths:
+  #     - .github/workflows/Gaseous_Pool_Fires.yml
+  #     - Utilities/macfp.py
+  #     - Gaseous_Pool_Fires/**
+  # pull_request:
+  #   branches: [ master ]
+  #   paths:
+  #     - .github/workflows/Gaseous_Pool_Fires.yml
+  #     - Utilities/macfp.py
+  #     - Gaseous_Pool_Fires/**
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Setup python
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: 'pip' # caching pip dependencies
+      - run: pip install -r .github/requirements.txt
+
+      # When submitting computational results, add your script to the list below (follow the example)
+
+      # # Step 1: generate the plots
+      # - name: NIST Preliminary Results
+      #   run: |
+      #     echo $GITHUB_WORKSPACE
+      #     cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST
+      #     python NIST_Pool_Fires_plot_cmp.py
+
+      # # Step 2: push the plots to the releases page
+      # - name: Push NIST Results to release
+      #   if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+      #   run: |
+      #     cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST/Preliminary_Results
+      #     zip Plots.zip -r Plots
+      #     mv Plots.zip NIST_Pool_Fires_NIST_Plots.zip
+      #     gh release upload SCRIPT_FIGURES NIST_Pool_Fires_NIST_Plots.zip --clobber
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ADD YOUR INSTITUTION BELOW, COPY STEPS 1 AND 2, CHANGE INSTITUTE NAME (AFTER 2023 AND WITHIN ZIP FILENAME)
+

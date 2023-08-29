@@ -16,7 +16,8 @@ importlib.reload(macfp) # use for development (while making changes to macfp.py)
 import matplotlib.pyplot as plt
 
 macfp.dataplot(config_filename='NIST_Pool_Fires_exp_config.csv',
-               institute='',
+               institute=' ',
+               revision=' ',
                expdir='../Experimental_Data/',
                cmpdir='../Experimental_Data/',
                pltdir='../Plots/',

@@ -16,7 +16,8 @@ importlib.reload(macfp) # use for development (while making changes to macfp.py)
 import matplotlib.pyplot as plt
 
 macfp.dataplot(config_filename='FM_Burner_exp_dataplot_config.csv',
-               institute='',
+               institute=' ',
+               revision=' ',
                expdir='../Experimental_Data/',
                cmpdir='../Experimental_Data/',
                pltdir='../Plots/',

@@ -14,6 +14,8 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from scipy import signal #Savitzy-Golay filter
+import seaborn as sns # colorblind pallete
 
 def plot_to_fig(x_data,y_data,**kwargs):
     """
@@ -207,12 +209,12 @@ def plot_to_fig(x_data,y_data,**kwargs):
     ax.text(xpos,ypos1, kwargs.get('plot_title'), fontsize=title_fontsize, transform=ax.transAxes)
     ax.text(xpos,ypos2, kwargs.get('plot_subtitle'), fontsize=subtitle_fontsize, transform=ax.transAxes)
 
-    # plot Institute + MaCFP stamp
+    # plot Institute + MaCFP (or revision) stamp
     inst_label_x = 0.025
     if len(str(ymax))>abs(axis_exponent_max) or len(str(ymin))>abs(axis_exponent_min):
         inst_label_x = 0.06 # else the institute label overlays the exponential notation multiplier
     ax.text(inst_label_x,1.01, kwargs.get('institute_label'), fontsize=default_stamp_fontsize, transform=ax.transAxes)
-    ax.text(0.975,       1.01, 'MaCFP-2, Waterloo, 2021', fontsize=default_stamp_fontsize, ha='right', transform=ax.transAxes)
+    ax.text(0.975,       1.01, kwargs.get('revision_label'), fontsize=default_stamp_fontsize, ha='right', transform=ax.transAxes)
 
     # note: this absolute method works better than fig.tight_layout(), which may change for each call of the figure
     left_adjust, bottom_adjust = get_subplots_adjust_parameters(ticklabel_fontsize,axeslabel_fontsize)
@@ -320,36 +322,36 @@ def define_plot_parameters(C,irow):
         # Here we assume the user wants axes.plot to use its default
 
         try:
-            Exp_Marker_Style      = C.values[irow,C.columns.get_loc('Exp_Marker_Style')]
-            if Exp_Marker_Style==None or math.isnan(Exp_Marker_Style):
+            Exp_Marker_Style = C.values[irow,C.columns.get_loc('Exp_Marker_Style')]
+            if Exp_Marker_Style==None or pd.isnull(Exp_Marker_Style):
                 Exp_Marker_Style = 'None'
         except:
-            Exp_Marker_Style      = 'o'
+            Exp_Marker_Style = 'o'
 
         try:
             Exp_Marker_Edge_Color = C.values[irow,C.columns.get_loc('Exp_Marker_Edge_Color')]
-            if math.isnan(Exp_Marker_Edge_Color):
+            if pd.isnull(Exp_Marker_Edge_Color):
                 Exp_Marker_Edge_Color = 'black'
         except:
             Exp_Marker_Edge_Color = 'black'
 
         try:
             Exp_Marker_Fill_Color = C.values[irow,C.columns.get_loc('Exp_Marker_Fill_Color')]
-            if math.isnan(Exp_Marker_Fill_Color):
+            if pd.isnull(Exp_Marker_Fill_Color):
                 Exp_Marker_Fill_Color = 'None'
         except:
             Exp_Marker_Fill_Color = 'None'
 
         try:
             Exp_Marker_Size = C.values[irow,C.columns.get_loc('Exp_Marker_Size')]
-            if math.isnan(Exp_Marker_Size):
+            if pd.isnull(Exp_Marker_Size):
                 Exp_Marker_Size = 6
         except:
             Exp_Marker_Size = 6
 
         try:
             Exp_Line_Style = C.values[irow,C.columns.get_loc('Exp_Line_Style')]
-            if Exp_Line_Style==None or math.isnan(Exp_Line_Style):
+            if Exp_Line_Style==None or pd.isnull(Exp_Line_Style):
                 Exp_Line_Style = 'None'
         except:
             # if no column exists, we assume just markers for experimental data
@@ -357,7 +359,7 @@ def define_plot_parameters(C,irow):
 
         try:
             Exp_Line_Color = C.values[irow,C.columns.get_loc('Exp_Line_Color')]
-            if Exp_Line_Color==None or math.isnan(Exp_Line_Color):
+            if Exp_Line_Color==None or pd.isnull(Exp_Line_Color):
                 Exp_Line_Color = 'None'
         except:
             if Exp_Line_Style:
@@ -367,21 +369,21 @@ def define_plot_parameters(C,irow):
 
         try:
             Exp_Line_Width = C.values[irow,C.columns.get_loc('Exp_Line_Width')]
-            if Exp_Line_Width==None or math.isnan(Exp_Line_Width):
+            if Exp_Line_Width==None or pd.isnull(Exp_Line_Width):
                 Exp_Line_Width = 1.
         except:
             Exp_Line_Width = 1.
 
         try:
             Exp_Error_Absolute = C.values[irow,C.columns.get_loc('Exp_Error_Absolute')]
-            if math.isnan(Exp_Error_Absolute):
+            if pd.isnull(Exp_Error_Absolute):
                 Exp_Error_Absolute = 0.
         except:
             Exp_Error_Absolute = 0.
 
         try:
             Exp_Error_Relative = C.values[irow,C.columns.get_loc('Exp_Error_Relative')]
-            if math.isnan(Exp_Error_Relative):
+            if pd.isnull(Exp_Error_Relative):
                 Exp_Error_Relative = 0.
         except:
             Exp_Error_Relative = 0.
@@ -393,14 +395,14 @@ def define_plot_parameters(C,irow):
 
         try:
             Cmp_Header_Row = C.values[irow,C.columns.get_loc('Cmp_Header_Row')]
-            if math.isnan(Cmp_Header_Row):
+            if pd.isnull(Cmp_Header_Row):
                 Cmp_Header_Row = 1
         except:
             Cmp_Header_Row = 1
 
         try:
             Cmp_Data_Row = C.values[irow,C.columns.get_loc('Cmp_Data_Row')]
-            if math.isnan(Cmp_Data_Row):
+            if pd.isnull(Cmp_Data_Row):
                 Cmp_Data_Row = Cmp_Header_Row+1
         except:
             Cmp_Data_Row = Cmp_Header_Row+1
@@ -417,154 +419,151 @@ def define_plot_parameters(C,irow):
 
         try:
             Cmp_Data_Markevery = C.values[irow,C.columns.get_loc('Cmp_Data_Markevery')]
-            if math.isnan(Cmp_Data_Markevery):
+            if pd.isnull(Cmp_Data_Markevery):
                 Cmp_Data_Markevery = 1
         except:
             Cmp_Data_Markevery = 1
 
         try:
             Cmp_Data_Label = C.values[irow,C.columns.get_loc('Cmp_Data_Label')]
-            if math.isnan(Cmp_Data_Label):
-                Cmp_Data_Label = 'Cmp'
         except:
             Cmp_Data_Label = 'Cmp'
 
         try:
             Cmp_Marker_Style = C.values[irow,C.columns.get_loc('Cmp_Marker_Style')]
-            if math.isnan(Cmp_Marker_Style):
+            if pd.isnull(Cmp_Marker_Style):
                 Cmp_Marker_Style = 'None'
         except:
             Cmp_Marker_Style = 'None'
 
         try:
             Cmp_Marker_Edge_Color = C.values[irow,C.columns.get_loc('Cmp_Marker_Edge_Color')]
-            if math.isnan(Cmp_Marker_Edge_Color):
+            if pd.isnull(Cmp_Marker_Edge_Color):
                 Cmp_Marker_Edge_Color = 'black'
         except:
             Cmp_Marker_Edge_Color = 'black'
 
         try:
             Cmp_Marker_Fill_Color = C.values[irow,C.columns.get_loc('Cmp_Marker_Fill_Color')]
-            if math.isnan(Cmp_Marker_Fill_Color):
+            if pd.isnull(Cmp_Marker_Fill_Color):
                 Cmp_Marker_Fill_Color = 'None'
         except:
             Cmp_Marker_Fill_Color = 'None'
 
         try:
             Cmp_Marker_Size = C.values[irow,C.columns.get_loc('Cmp_Marker_Size')]
-            if math.isnan(Cmp_Marker_Size):
+            if pd.isnull(Cmp_Marker_Size):
                 Cmp_Marker_Size = 6
         except:
             Cmp_Marker_Size = 6
 
         try:
-            Cmp_Line_Style       = C.values[irow,C.columns.get_loc('Cmp_Line_Style')]
-            if Cmp_Line_Style==None or math.isnan(Cmp_Line_Style):
+            Cmp_Line_Style = C.values[irow,C.columns.get_loc('Cmp_Line_Style')]
+            if Cmp_Line_Style==None or pd.isnull(Cmp_Line_Style):
                 Cmp_Line_Style = 'None'
         except:
             Cmp_Line_Style = 'None'
 
         try:
             Cmp_Line_Color = C.values[irow,C.columns.get_loc('Cmp_Line_Color')]
-            if math.isnan(Cmp_Line_Color):
+            if pd.isnull(Cmp_Line_Color):
                 Cmp_Line_Color = 'black'
         except:
             Cmp_Line_Color = 'black'
 
         try:
             Cmp_Line_Width = C.values[irow,C.columns.get_loc('Cmp_Line_Width')]
-            if Cmp_Line_Width==None or math.isnan(Cmp_Line_Width):
+            if Cmp_Line_Width==None or pd.isnull(Cmp_Line_Width):
                 Cmp_Line_Width = 0.
         except:
             Cmp_Line_Width = 1.
 
         try:
             Plot_Title = C.values[irow,C.columns.get_loc('Plot_Title')]
-            if math.isnan(Plot_Title):
+            if pd.isnull(Plot_Title):
                 Plot_Title = ''
         except:
             Plot_Title = ''
 
         try:
             Plot_Subtitle = C.values[irow,C.columns.get_loc('Plot_Subtitle')]
-            if math.isnan(Plot_Subtitle):
+            if pd.isnull(Plot_Subtitle):
                 Plot_Subtitle = ''
         except:
             Plot_Subtitle = ''
 
         try:
             Plot_x_Label = C.values[irow,C.columns.get_loc('Plot_x_Label')]
-            if math.isnan(Plot_x_Label):
+            if pd.isnull(Plot_x_Label):
                 Plot_x_Label = 'x'
         except:
             Plot_x_Label = 'x'
-
         try:
             Plot_y_Label = C.values[irow,C.columns.get_loc('Plot_y_Label')]
-            if math.isnan(Plot_y_Label):
+            if pd.isnull(Plot_y_Label):
                 Plot_y_Label = 'y'
         except:
             Plot_y_Label = 'y'
 
         try:
             Plot_x_Min = C.values[irow,C.columns.get_loc('Plot_x_Min')]
-            if math.isnan(Plot_x_Min):
+            if pd.isnull(Plot_x_Min):
                 Plot_x_Min = None
         except:
             Plot_x_Min = None
 
         try:
             Plot_x_Max = C.values[irow,C.columns.get_loc('Plot_x_Max')]
-            if math.isnan(Plot_x_Max):
+            if pd.isnull(Plot_x_Max):
                 Plot_x_Max = None
         except:
             Plot_x_Max = None
 
         try:
             Plot_x_Tick = C.values[irow,C.columns.get_loc('Plot_x_Tick')]
-            if math.isnan(Plot_x_Tick):
+            if pd.isnull(Plot_x_Tick):
                 Plot_x_Tick = None
         except:
             Plot_x_Tick = None
 
         try:
             Plot_y_Min = C.values[irow,C.columns.get_loc('Plot_y_Min')]
-            if math.isnan(Plot_y_Min):
+            if pd.isnull(Plot_y_Min):
                 Plot_y_Min = None
         except:
             Plot_y_Min = None
 
         try:
             Plot_y_Max = C.values[irow,C.columns.get_loc('Plot_y_Max')]
-            if math.isnan(Plot_y_Max):
+            if pd.isnull(Plot_y_Max):
                 Plot_y_Max = None
         except:
             Plot_y_Max = None
 
         try:
             Plot_y_Tick = C.values[irow,C.columns.get_loc('Plot_y_Tick')]
-            if math.isnan(Plot_y_Tick):
+            if pd.isnull(Plot_y_Tick):
                 Plot_y_Tick = None
         except:
             Plot_y_Tick = None
 
         try:
             Plot_Flip_Axis = C.values[irow,C.columns.get_loc('Plot_Flip_Axis')]
-            if math.isnan(Plot_Flip_Axis):
+            if pd.isnull(Plot_Flip_Axis):
                 Plot_Flip_Axis = False
         except:
             Plot_Flip_Axis = False
 
         try:
             Plot_Show_Legend = C.values[irow,C.columns.get_loc('Plot_Show_Legend')]
-            if math.isnan(Plot_Show_Legend):
+            if pd.isnull(Plot_Show_Legend):
                 Plot_Show_Legend = False
         except:
             Plot_Show_Legend = True
 
         try:
             Plot_Legend_Location = C.values[irow,C.columns.get_loc('Plot_Legend_Location')]
-            if Plot_Legend_Location==None or math.isnan(Plot_Legend_Location):
+            if Plot_Legend_Location==None or pd.isnull(Plot_Legend_Location):
                 Plot_Legend_Location = 'best'
         except:
             Plot_Legend_Location = 'best'
@@ -579,7 +578,7 @@ def define_plot_parameters(C,irow):
 
         try:
             Plot_x_Nticks = C.values[irow,C.columns.get_loc('Plot_x_Nticks')]
-            if math.isnan(Plot_x_Nticks):
+            if pd.isnull(Plot_x_Nticks):
                 Plot_x_Nticks = None
         except:
             Plot_x_Nticks = None
@@ -587,14 +586,14 @@ def define_plot_parameters(C,irow):
         try:
             if float(Plot_x_Tick)>0. and float(Plot_x_Tick)<1.e10 and float(Plot_x_Min)>-1.e10 and float(Plot_x_Max)<1.e10:
                 Plot_x_Nticks = get_nticks(Plot_x_Min,Plot_x_Max,Plot_x_Tick)
-            if math.isnan(Plot_x_Nticks):
+            if pd.isnull(Plot_x_Nticks):
                 Plot_x_Nticks = None
         except:
             Plot_x_Nticks = None
 
         try:
             Plot_y_Nticks = C.values[irow,C.columns.get_loc('Plot_y_Nticks')]
-            if math.isnan(Plot_y_Nticks):
+            if pd.isnull(Plot_y_Nticks):
                 Plot_y_Nticks = None
         except:
             Plot_y_Nticks = None
@@ -602,52 +601,80 @@ def define_plot_parameters(C,irow):
         try:
             if float(Plot_y_Tick)>0. and float(Plot_y_Tick)<1.e10 and float(Plot_y_Min)>-1.e10 and float(Plot_y_Max)<1.e10:
                 Plot_y_Nticks = get_nticks(Plot_y_Min,Plot_y_Max,Plot_y_Tick)
-            if math.isnan(Plot_y_Nticks):
+            if pd.isnull(Plot_y_Nticks):
                 Plot_y_Nticks = None
         except:
             Plot_y_Nticks = None
 
         try:
             Plot_Left_Adjust = C.values[irow,C.columns.get_loc('Plot_Left_Adjust')]
-            if math.isnan(Plot_Left_Adjust):
+            if pd.isnull(Plot_Left_Adjust):
                 Plot_Left_Adjust = None
         except:
             Plot_Left_Adjust = None
 
         try:
             Plot_Right_Adjust = C.values[irow,C.columns.get_loc('Plot_Right_Adjust')]
-            if math.isnan(Plot_Right_Adjust):
+            if pd.isnull(Plot_Right_Adjust):
                 Plot_Right_Adjust = None
         except:
             Plot_Right_Adjust = None
 
         try:
             Plot_Bottom_Adjust = C.values[irow,C.columns.get_loc('Plot_Bottom_Adjust')]
-            if math.isnan(Plot_Bottom_Adjust):
+            if pd.isnull(Plot_Bottom_Adjust):
                 Plot_Bottom_Adjust = None
         except:
             Plot_Bottom_Adjust = None
 
         try:
             Plot_Top_Adjust = C.values[irow,C.columns.get_loc('Plot_Top_Adjust')]
-            if math.isnan(Plot_Top_Adjust):
+            if pd.isnull(Plot_Top_Adjust):
                 Plot_Top_Adjust = None
         except:
             Plot_Top_Adjust = None
 
         try:
             Plot_Figure_Width = C.values[irow,C.columns.get_loc('Plot_Figure_Width')]
-            if Plot_Figure_Width==None or math.isnan(Plot_Figure_Width):
+            if Plot_Figure_Width==None or pd.isnull(Plot_Figure_Width):
                 Plot_Figure_Width=8
         except:
             Plot_Figure_Width = 8
 
         try:
             Plot_Figure_Height = C.values[irow,C.columns.get_loc('Plot_Figure_Height')]
-            if Plot_Figure_Height==None or math.isnan(Plot_Figure_Height):
+            if Plot_Figure_Height==None or pd.isnull(Plot_Figure_Height):
                 Plot_Figure_Height=6
         except:
             Plot_Figure_Height = 6
+
+        try:
+            Seaborn_Color = C.values[irow,C.columns.get_loc('Seaborn_Color')]
+            if pd.isnull(Seaborn_Color):
+                Seaborn_Color = False
+        except:
+            Seaborn_Color = False
+
+        try:
+            Savgol_Filter = C.values[irow,C.columns.get_loc('Savgol_Filter')]
+            if pd.isnull(Savgol_Filter):
+                Savgol_Filter = False
+        except:
+            Savgol_Filter = False
+
+        try:
+            Savgol_Window = int(C.values[irow,C.columns.get_loc('Savgol_Window')])
+            if pd.isnull(Savgol_Window):
+                Savgol_Window = 11
+        except:
+            Savgol_Window = 11
+
+        try:
+            Savgol_Polyorder = int(C.values[irow,C.columns.get_loc('Savgol_Polyorder')])
+            if pd.isnull(Savgol_Polyorder):
+                Savgol_Polyorder = 3
+        except:
+            Savgol_Polyorder = 3
 
     return plot_parameters
 
@@ -678,6 +705,7 @@ def dataplot(config_filename,**kwargs):
 
     # defaults
     institute = ''
+    revision  = 'MaCFP-3, Tsukuba, 2023'
     configdir = ''
     expdir = ''
     cmpdir = ''
@@ -689,6 +717,9 @@ def dataplot(config_filename,**kwargs):
 
     if kwargs.get('institute'):
         institute = kwargs.get('institute')
+
+    if kwargs.get('revision'):
+        revision = kwargs.get('revision')
 
     if kwargs.get('expdir'):
         expdir = kwargs.get('expdir')
@@ -717,6 +748,8 @@ def dataplot(config_filename,**kwargs):
     C = df.where(pd.notnull(df), None)
 
     Plot_Filename_Last = None
+    Exp_Data_Label_Last = None
+    f_Last = plt.figure()
 
     # loop over the rows of the config file
     for irow in C.index:
@@ -744,8 +777,9 @@ def dataplot(config_filename,**kwargs):
             # read data from exp file
             # set header to the row where column names are stored (Python is 0 based)
             E = pd.read_csv(expdir+pp.Exp_Filename, header=pp.Exp_Header_Row-1, sep=' *, *', engine='python')
-
-            if (pp.Exp_Data_Row-pp.Exp_Header_Row==1.):
+            if (pp.Seaborn_Color):
+                sns.color_palette('colorblind')
+            if (pp.Exp_Data_Row-pp.Exp_Header_Row==1):
                 x = E[pp.Exp_x_Col_Name].values[:].astype(float)
                 y = E[pp.Exp_y_Col_Name].values[:].astype(float)
             else:
@@ -755,120 +789,335 @@ def dataplot(config_filename,**kwargs):
                 y = E[pp.Exp_y_Col_Name].values[pp.Exp_Data_Row-2:-1].astype(float)
 
             if (pp.Plot_Flip_Axis):
-                f = plot_to_fig(x_data=y, y_data=x,
-                    data_markevery=pp.Exp_Data_Markevery,
-                    data_label=pp.Exp_Data_Label,
-                    y_error_absolute=pp.Exp_Error_Absolute,
-                    y_error_relative=pp.Exp_Error_Relative,
-                    x_label=pp.Plot_y_Label,
-                    y_label=pp.Plot_x_Label,
-                    marker_style=pp.Exp_Marker_Style,
-                    marker_fill_color=pp.Exp_Marker_Fill_Color,
-                    marker_edge_color=pp.Exp_Marker_Edge_Color,
-                    marker_size=pp.Exp_Marker_Size,
-                    line_style=pp.Exp_Line_Style,
-                    line_color=pp.Exp_Line_Color,
-                    line_width=pp.Exp_Line_Width,
-                    x_min=pp.Plot_y_Min,x_max=pp.Plot_y_Max,x_nticks=pp.Plot_y_Nticks,
-                    y_min=pp.Plot_x_Min,y_max=pp.Plot_x_Max,y_nticks=pp.Plot_x_Nticks,
-                    show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
-                    figure_size=(pp.Plot_Figure_Width,pp.Plot_Figure_Height),
-                    figure_left_adjust=pp.Plot_Left_Adjust,
-                    figure_right_adjust=pp.Plot_Right_Adjust,
-                    figure_bottom_adjust=pp.Plot_Bottom_Adjust,
-                    figure_top_adjust=pp.Plot_Top_Adjust
-                    )
+                if (pp.Seaborn_Color):
+                    f = plot_to_fig(x_data=y, y_data=x,
+                        data_markevery=pp.Exp_Data_Markevery,
+                        data_label=pp.Exp_Data_Label,
+                        y_error_absolute=pp.Exp_Error_Absolute,
+                        y_error_relative=pp.Exp_Error_Relative,
+                        x_label=pp.Plot_y_Label,
+                        y_label=pp.Plot_x_Label,
+                        marker_style=pp.Exp_Marker_Style,
+                        marker_size=pp.Exp_Marker_Size,
+                        line_style=pp.Exp_Line_Style,
+                        line_width=pp.Exp_Line_Width,
+                        x_min=pp.Plot_y_Min,x_max=pp.Plot_y_Max,x_nticks=pp.Plot_y_Nticks,
+                        y_min=pp.Plot_x_Min,y_max=pp.Plot_x_Max,y_nticks=pp.Plot_x_Nticks,
+                        show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
+                        figure_size=(pp.Plot_Figure_Width,pp.Plot_Figure_Height),
+                        figure_left_adjust=pp.Plot_Left_Adjust,
+                        figure_right_adjust=pp.Plot_Right_Adjust,
+                        figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                        figure_top_adjust=pp.Plot_Top_Adjust
+                        )
+                else:
+                    f = plot_to_fig(x_data=y, y_data=x,
+                        data_markevery=pp.Exp_Data_Markevery,
+                        data_label=pp.Exp_Data_Label,
+                        y_error_absolute=pp.Exp_Error_Absolute,
+                        y_error_relative=pp.Exp_Error_Relative,
+                        x_label=pp.Plot_y_Label,
+                        y_label=pp.Plot_x_Label,
+                        marker_style=pp.Exp_Marker_Style,
+                        marker_fill_color=pp.Exp_Marker_Fill_Color,
+                        marker_edge_color=pp.Exp_Marker_Edge_Color,
+                        marker_size=pp.Exp_Marker_Size,
+                        line_style=pp.Exp_Line_Style,
+                        line_color=pp.Exp_Line_Color,
+                        line_width=pp.Exp_Line_Width,
+                        x_min=pp.Plot_y_Min,x_max=pp.Plot_y_Max,x_nticks=pp.Plot_y_Nticks,
+                        y_min=pp.Plot_x_Min,y_max=pp.Plot_x_Max,y_nticks=pp.Plot_x_Nticks,
+                        show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
+                        figure_size=(pp.Plot_Figure_Width,pp.Plot_Figure_Height),
+                        figure_left_adjust=pp.Plot_Left_Adjust,
+                        figure_right_adjust=pp.Plot_Right_Adjust,
+                        figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                        figure_top_adjust=pp.Plot_Top_Adjust
+                        )
+
             else:
+                if (pp.Seaborn_Color):
                 # plot the exp data
-                f = plot_to_fig(x_data=x, y_data=y,
-                    data_markevery=pp.Exp_Data_Markevery,
-                    data_label=pp.Exp_Data_Label,
-                    y_error_absolute=pp.Exp_Error_Absolute,
-                    y_error_relative=pp.Exp_Error_Relative,
-                    x_label=pp.Plot_x_Label,
-                    y_label=pp.Plot_y_Label,
-                    marker_style=pp.Exp_Marker_Style,
-                    marker_fill_color=pp.Exp_Marker_Fill_Color,
-                    marker_edge_color=pp.Exp_Marker_Edge_Color,
-                    marker_size=pp.Exp_Marker_Size,
-                    line_style=pp.Exp_Line_Style,
-                    line_color=pp.Exp_Line_Color,
-                    line_width=pp.Exp_Line_Width,
-                    x_min=pp.Plot_x_Min,x_max=pp.Plot_x_Max,x_nticks=pp.Plot_x_Nticks,
-                    y_min=pp.Plot_y_Min,y_max=pp.Plot_y_Max,y_nticks=pp.Plot_y_Nticks,
-                    show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
-                    figure_size=(pp.Plot_Figure_Width,pp.Plot_Figure_Height),
-                    figure_left_adjust=pp.Plot_Left_Adjust,
-                    figure_right_adjust=pp.Plot_Right_Adjust,
-                    figure_bottom_adjust=pp.Plot_Bottom_Adjust,
-                    figure_top_adjust=pp.Plot_Top_Adjust
-                    )
+                    f = plot_to_fig(x_data=x, y_data=y,
+                        data_markevery=pp.Exp_Data_Markevery,
+                        data_label=pp.Exp_Data_Label,
+                        y_error_absolute=pp.Exp_Error_Absolute,
+                        y_error_relative=pp.Exp_Error_Relative,
+                        x_label=pp.Plot_x_Label,
+                        y_label=pp.Plot_y_Label,
+                        marker_style=pp.Exp_Marker_Style,
+                        marker_size=pp.Exp_Marker_Size,
+                        line_style=pp.Exp_Line_Style,
+                        line_width=pp.Exp_Line_Width,
+                        x_min=pp.Plot_x_Min,x_max=pp.Plot_x_Max,x_nticks=pp.Plot_x_Nticks,
+                        y_min=pp.Plot_y_Min,y_max=pp.Plot_y_Max,y_nticks=pp.Plot_y_Nticks,
+                        show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
+                        figure_size=(pp.Plot_Figure_Width,pp.Plot_Figure_Height),
+                        figure_left_adjust=pp.Plot_Left_Adjust,
+                        figure_right_adjust=pp.Plot_Right_Adjust,
+                        figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                        figure_top_adjust=pp.Plot_Top_Adjust
+                        )
+                else:
+                    # plot the exp data
+                    f = plot_to_fig(x_data=x, y_data=y,
+                        data_markevery=pp.Exp_Data_Markevery,
+                        data_label=pp.Exp_Data_Label,
+                        y_error_absolute=pp.Exp_Error_Absolute,
+                        y_error_relative=pp.Exp_Error_Relative,
+                        x_label=pp.Plot_x_Label,
+                        y_label=pp.Plot_y_Label,
+                        marker_style=pp.Exp_Marker_Style,
+                        marker_fill_color=pp.Exp_Marker_Fill_Color,
+                        marker_edge_color=pp.Exp_Marker_Edge_Color,
+                        marker_size=pp.Exp_Marker_Size,
+                        line_style=pp.Exp_Line_Style,
+                        line_color=pp.Exp_Line_Color,
+                        line_width=pp.Exp_Line_Width,
+                        x_min=pp.Plot_x_Min,x_max=pp.Plot_x_Max,x_nticks=pp.Plot_x_Nticks,
+                        y_min=pp.Plot_y_Min,y_max=pp.Plot_y_Max,y_nticks=pp.Plot_y_Nticks,
+                        show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
+                        figure_size=(pp.Plot_Figure_Width,pp.Plot_Figure_Height),
+                        figure_left_adjust=pp.Plot_Left_Adjust,
+                        figure_right_adjust=pp.Plot_Right_Adjust,
+                        figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                        figure_top_adjust=pp.Plot_Top_Adjust
+                        )
+
 
             # plt.figure(f.number) # make figure current
             # plt.show()
         else:
             f = f_Last
 
+            if pp.Exp_Data_Label!=Exp_Data_Label_Last:
+
+                # read data from exp file
+                # set header to the row where column names are stored (Python is 0 based)
+                E = pd.read_csv(expdir+pp.Exp_Filename, header=pp.Exp_Header_Row-1, sep=' *, *', engine='python')
+
+                if (pp.Exp_Data_Row-pp.Exp_Header_Row==1):
+                    x = E[pp.Exp_x_Col_Name].values[:].astype(float)
+                    y = E[pp.Exp_y_Col_Name].values[:].astype(float)
+                else:
+                    # don't exactly understand this, but df.values behave differently if they are object type
+                    # when the header and data rows are separated, then there are usually strings in the df.values
+                    x = E[pp.Exp_x_Col_Name].values[pp.Exp_Data_Row-2:-1].astype(float)
+                    y = E[pp.Exp_y_Col_Name].values[pp.Exp_Data_Row-2:-1].astype(float)
+
+                if (pp.Plot_Flip_Axis):
+                    if (pp.Seaborn_Color):
+                        f = plot_to_fig(x_data=y, y_data=x,
+                            figure_handle=f,
+                            data_markevery=pp.Exp_Data_Markevery,
+                            data_label=pp.Exp_Data_Label,
+                            y_error_absolute=pp.Exp_Error_Absolute,
+                            y_error_relative=pp.Exp_Error_Relative,
+                            x_label=pp.Plot_y_Label,
+                            y_label=pp.Plot_x_Label,
+                            marker_style=pp.Exp_Marker_Style,
+                            marker_size=pp.Exp_Marker_Size,
+                            line_style=pp.Exp_Line_Style,
+                            line_width=pp.Exp_Line_Width,
+                            x_min=pp.Plot_y_Min,x_max=pp.Plot_y_Max,x_nticks=pp.Plot_y_Nticks,
+                            y_min=pp.Plot_x_Min,y_max=pp.Plot_x_Max,y_nticks=pp.Plot_x_Nticks,
+                            show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
+                            figure_size=(pp.Plot_Figure_Width,pp.Plot_Figure_Height),
+                            figure_left_adjust=pp.Plot_Left_Adjust,
+                            figure_right_adjust=pp.Plot_Right_Adjust,
+                            figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                            figure_top_adjust=pp.Plot_Top_Adjust
+                            )
+                    else:
+                        f = plot_to_fig(x_data=y, y_data=x,
+                            figure_handle=f,
+                            data_markevery=pp.Exp_Data_Markevery,
+                            data_label=pp.Exp_Data_Label,
+                            y_error_absolute=pp.Exp_Error_Absolute,
+                            y_error_relative=pp.Exp_Error_Relative,
+                            x_label=pp.Plot_y_Label,
+                            y_label=pp.Plot_x_Label,
+                            marker_style=pp.Exp_Marker_Style,
+                            marker_fill_color=pp.Exp_Marker_Fill_Color,
+                            marker_edge_color=pp.Exp_Marker_Edge_Color,
+                            marker_size=pp.Exp_Marker_Size,
+                            line_style=pp.Exp_Line_Style,
+                            line_color=pp.Exp_Line_Color,
+                            line_width=pp.Exp_Line_Width,
+                            x_min=pp.Plot_y_Min,x_max=pp.Plot_y_Max,x_nticks=pp.Plot_y_Nticks,
+                            y_min=pp.Plot_x_Min,y_max=pp.Plot_x_Max,y_nticks=pp.Plot_x_Nticks,
+                            show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
+                            figure_size=(pp.Plot_Figure_Width,pp.Plot_Figure_Height),
+                            figure_left_adjust=pp.Plot_Left_Adjust,
+                            figure_right_adjust=pp.Plot_Right_Adjust,
+                            figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                            figure_top_adjust=pp.Plot_Top_Adjust
+                            )
+                else:
+                    if (pp.Seaborn_Color):
+                        # plot the exp data
+                        f = plot_to_fig(x_data=x, y_data=y,
+                            figure_handle=f,
+                            data_markevery=pp.Exp_Data_Markevery,
+                            data_label=pp.Exp_Data_Label,
+                            y_error_absolute=pp.Exp_Error_Absolute,
+                            y_error_relative=pp.Exp_Error_Relative,
+                            x_label=pp.Plot_x_Label,
+                            y_label=pp.Plot_y_Label,
+                            marker_style=pp.Exp_Marker_Style,
+                            marker_size=pp.Exp_Marker_Size,
+                            line_style=pp.Exp_Line_Style,
+                            line_width=pp.Exp_Line_Width,
+                            x_min=pp.Plot_x_Min,x_max=pp.Plot_x_Max,x_nticks=pp.Plot_x_Nticks,
+                            y_min=pp.Plot_y_Min,y_max=pp.Plot_y_Max,y_nticks=pp.Plot_y_Nticks,
+                            show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
+                            figure_size=(pp.Plot_Figure_Width,pp.Plot_Figure_Height),
+                            figure_left_adjust=pp.Plot_Left_Adjust,
+                            figure_right_adjust=pp.Plot_Right_Adjust,
+                            figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                            figure_top_adjust=pp.Plot_Top_Adjust
+                            )
+                    else:
+                        # plot the exp data
+                        f = plot_to_fig(x_data=x, y_data=y,
+                            figure_handle=f,
+                            data_markevery=pp.Exp_Data_Markevery,
+                            data_label=pp.Exp_Data_Label,
+                            y_error_absolute=pp.Exp_Error_Absolute,
+                            y_error_relative=pp.Exp_Error_Relative,
+                            x_label=pp.Plot_x_Label,
+                            y_label=pp.Plot_y_Label,
+                            marker_style=pp.Exp_Marker_Style,
+                            marker_fill_color=pp.Exp_Marker_Fill_Color,
+                            marker_edge_color=pp.Exp_Marker_Edge_Color,
+                            marker_size=pp.Exp_Marker_Size,
+                            line_style=pp.Exp_Line_Style,
+                            line_color=pp.Exp_Line_Color,
+                            line_width=pp.Exp_Line_Width,
+                            x_min=pp.Plot_x_Min,x_max=pp.Plot_x_Max,x_nticks=pp.Plot_x_Nticks,
+                            y_min=pp.Plot_y_Min,y_max=pp.Plot_y_Max,y_nticks=pp.Plot_y_Nticks,
+                            show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
+                            figure_size=(pp.Plot_Figure_Width,pp.Plot_Figure_Height),
+                            figure_left_adjust=pp.Plot_Left_Adjust,
+                            figure_right_adjust=pp.Plot_Right_Adjust,
+                            figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                            figure_top_adjust=pp.Plot_Top_Adjust
+                            )
+
         # get the model results
         M = pd.read_csv(cmpdir+pp.Cmp_Filename, header=pp.Cmp_Header_Row-1, sep=' *, *', engine='python')
 
-        if (pp.Cmp_Data_Row-pp.Cmp_Header_Row==1.):
+        if (pp.Cmp_Data_Row-pp.Cmp_Header_Row==1):
             x = M[pp.Cmp_x_Col_Name].values[:].astype(float)
             y = M[pp.Cmp_y_Col_Name].values[:].astype(float)
         else:
             x = M[pp.Cmp_x_Col_Name].values[pp.Cmp_Data_Row-2:-1].astype(float)
             y = M[pp.Cmp_y_Col_Name].values[pp.Cmp_Data_Row-2:-1].astype(float)
 
+        if (pp.Savgol_Filter):
+            ys = signal.savgol_filter(y, window_length=pp.Savgol_Window,polyorder=pp.Savgol_Polyorder,mode="nearest")
+            y =ys
+
         if (pp.Plot_Flip_Axis):
-            f = plot_to_fig(x_data=y, y_data=x,
-                institute_label=institute,
-                figure_handle=f,
-                data_markevery=pp.Cmp_Data_Markevery,
-                x_label=pp.Plot_y_Label,
-                y_label=pp.Plot_x_Label,
-                data_label=pp.Cmp_Data_Label,
-                marker_style=pp.Cmp_Marker_Style,
-                marker_fill_color=pp.Cmp_Marker_Fill_Color,
-                marker_edge_color=pp.Cmp_Marker_Edge_Color,
-                marker_size=pp.Cmp_Marker_Size,
-                line_style=pp.Cmp_Line_Style,
-                line_color=pp.Cmp_Line_Color,
-                line_width=pp.Cmp_Line_Width,
-                x_min=pp.Plot_y_Min,x_max=pp.Plot_y_Max,x_nticks=pp.Plot_y_Nticks,
-                y_min=pp.Plot_x_Min,y_max=pp.Plot_x_Max,y_nticks=pp.Plot_x_Nticks,
-                show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
-                plot_title=pp.Plot_Title,
-                plot_subtitle=pp.Plot_Subtitle,
-                figure_left_adjust=pp.Plot_Left_Adjust,
-                figure_right_adjust=pp.Plot_Right_Adjust,
-                figure_bottom_adjust=pp.Plot_Bottom_Adjust,
-                figure_top_adjust=pp.Plot_Top_Adjust
-                )
+            if (pp.Seaborn_Color):
+                f = plot_to_fig(x_data=y, y_data=x,
+                    institute_label=institute,
+                    revision_label=revision,
+                    figure_handle=f,
+                    data_markevery=pp.Cmp_Data_Markevery,
+                    x_label=pp.Plot_y_Label,
+                    y_label=pp.Plot_x_Label,
+                    data_label=pp.Cmp_Data_Label,
+                    marker_style=pp.Cmp_Marker_Style,
+                    marker_size=pp.Cmp_Marker_Size,
+                    line_style=pp.Cmp_Line_Style,
+                    line_width=pp.Cmp_Line_Width,
+                    x_min=pp.Plot_y_Min,x_max=pp.Plot_y_Max,x_nticks=pp.Plot_y_Nticks,
+                    y_min=pp.Plot_x_Min,y_max=pp.Plot_x_Max,y_nticks=pp.Plot_x_Nticks,
+                    show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
+                    plot_title=pp.Plot_Title,
+                    plot_subtitle=pp.Plot_Subtitle,
+                    figure_left_adjust=pp.Plot_Left_Adjust,
+                    figure_right_adjust=pp.Plot_Right_Adjust,
+                    figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                    figure_top_adjust=pp.Plot_Top_Adjust
+                    )
+            else:
+                f = plot_to_fig(x_data=y, y_data=x,
+                    institute_label=institute,
+                    revision_label=revision,
+                    figure_handle=f,
+                    data_markevery=pp.Cmp_Data_Markevery,
+                    x_label=pp.Plot_y_Label,
+                    y_label=pp.Plot_x_Label,
+                    data_label=pp.Cmp_Data_Label,
+                    marker_style=pp.Cmp_Marker_Style,
+                    marker_size=pp.Cmp_Marker_Size,
+                    marker_fill_color=pp.Cmp_Marker_Fill_Color,
+                    marker_edge_color=pp.Cmp_Marker_Edge_Color,
+                    line_style=pp.Cmp_Line_Style,
+                    line_width=pp.Cmp_Line_Width,
+                    line_color=pp.Cmp_Line_Color,
+                    x_min=pp.Plot_y_Min,x_max=pp.Plot_y_Max,x_nticks=pp.Plot_y_Nticks,
+                    y_min=pp.Plot_x_Min,y_max=pp.Plot_x_Max,y_nticks=pp.Plot_x_Nticks,
+                    show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
+                    plot_title=pp.Plot_Title,
+                    plot_subtitle=pp.Plot_Subtitle,
+                    figure_left_adjust=pp.Plot_Left_Adjust,
+                    figure_right_adjust=pp.Plot_Right_Adjust,
+                    figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                    figure_top_adjust=pp.Plot_Top_Adjust
+                    )
         else:
-            f = plot_to_fig(x_data=x, y_data=y,
-                institute_label=institute,
-                figure_handle=f,
-                data_markevery=pp.Cmp_Data_Markevery,
-                x_label=pp.Plot_x_Label,
-                y_label=pp.Plot_y_Label,
-                data_label=pp.Cmp_Data_Label,
-                marker_style=pp.Cmp_Marker_Style,
-                marker_fill_color=pp.Cmp_Marker_Fill_Color,
-                marker_edge_color=pp.Cmp_Marker_Edge_Color,
-                marker_size=pp.Cmp_Marker_Size,
-                line_style=pp.Cmp_Line_Style,
-                line_color=pp.Cmp_Line_Color,
-                line_width=pp.Cmp_Line_Width,
-                x_min=pp.Plot_x_Min,x_max=pp.Plot_x_Max,x_nticks=pp.Plot_x_Nticks,
-                y_min=pp.Plot_y_Min,y_max=pp.Plot_y_Max,y_nticks=pp.Plot_y_Nticks,
-                show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
-                plot_title=pp.Plot_Title,
-                plot_subtitle=pp.Plot_Subtitle,
-                figure_left_adjust=pp.Plot_Left_Adjust,
-                figure_right_adjust=pp.Plot_Right_Adjust,
-                figure_bottom_adjust=pp.Plot_Bottom_Adjust,
-                figure_top_adjust=pp.Plot_Top_Adjust
-                )
+            if (pp.Seaborn_Color):
+                f = plot_to_fig(x_data=x, y_data=y,
+                    institute_label=institute,
+                    revision_label=revision,
+                    figure_handle=f,
+                    data_markevery=pp.Cmp_Data_Markevery,
+                    x_label=pp.Plot_x_Label,
+                    y_label=pp.Plot_y_Label,
+                    data_label=pp.Cmp_Data_Label,
+                    marker_style=pp.Cmp_Marker_Style,
+                    marker_size=pp.Cmp_Marker_Size,
+                    line_style=pp.Cmp_Line_Style,
+                    line_width=pp.Cmp_Line_Width,
+                    x_min=pp.Plot_x_Min,x_max=pp.Plot_x_Max,x_nticks=pp.Plot_x_Nticks,
+                    y_min=pp.Plot_y_Min,y_max=pp.Plot_y_Max,y_nticks=pp.Plot_y_Nticks,
+                    show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
+                    plot_title=pp.Plot_Title,
+                    plot_subtitle=pp.Plot_Subtitle,
+                    figure_left_adjust=pp.Plot_Left_Adjust,
+                    figure_right_adjust=pp.Plot_Right_Adjust,
+                    figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                    figure_top_adjust=pp.Plot_Top_Adjust
+                    )
+            else:
+                f = plot_to_fig(x_data=x, y_data=y,
+                    institute_label=institute,
+                    revision_label=revision,
+                    figure_handle=f,
+                    data_markevery=pp.Cmp_Data_Markevery,
+                    x_label=pp.Plot_x_Label,
+                    y_label=pp.Plot_y_Label,
+                    data_label=pp.Cmp_Data_Label,
+                    marker_style=pp.Cmp_Marker_Style,
+                    marker_fill_color=pp.Cmp_Marker_Fill_Color,
+                    marker_edge_color=pp.Cmp_Marker_Edge_Color,
+                    marker_size=pp.Cmp_Marker_Size,
+                    line_style=pp.Cmp_Line_Style,
+                    line_color=pp.Cmp_Line_Color,
+                    line_width=pp.Cmp_Line_Width,
+                    x_min=pp.Plot_x_Min,x_max=pp.Plot_x_Max,x_nticks=pp.Plot_x_Nticks,
+                    y_min=pp.Plot_y_Min,y_max=pp.Plot_y_Max,y_nticks=pp.Plot_y_Nticks,
+                    show_legend=pp.Plot_Show_Legend,legend_location=pp.Plot_Legend_Location,
+                    plot_title=pp.Plot_Title,
+                    plot_subtitle=pp.Plot_Subtitle,
+                    figure_left_adjust=pp.Plot_Left_Adjust,
+                    figure_right_adjust=pp.Plot_Right_Adjust,
+                    figure_bottom_adjust=pp.Plot_Bottom_Adjust,
+                    figure_top_adjust=pp.Plot_Top_Adjust
+                    )
 
         plt.figure(f.number) # make figure current
         # plt.show()
@@ -881,4 +1130,5 @@ def dataplot(config_filename,**kwargs):
         plt.savefig(pltdir + pp.Plot_Filename)
 
         Plot_Filename_Last = pp.Plot_Filename
+        Exp_Data_Label_Last = pp.Exp_Data_Label
         f_Last = f

@@ -1,0 +1,149 @@
+# MaCFP workflow
+
+name: Fire_Growth
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the $default-branch branch
+  push:
+    branches: [ master ]
+    paths:
+      - .github/workflows/Fire_Growth.yml
+      - Utilities/macfp.py
+      - Fire_Growth/**
+  pull_request:
+    branches: [ master ]
+    paths:
+      - .github/workflows/Fire_Growth.yml
+      - Utilities/macfp.py
+      - Fire_Growth/**
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Setup python
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: 'pip' # caching pip dependencies
+      - run: pip install -r .github/requirements.txt
+
+      # Generate new plots
+      - name: Generate Fire_Growth/NIST_Parallel_Panel/Documentation plots
+        run: |
+          cd ./Fire_Growth/NIST_Parallel_Panel/Documentation
+          python plot_burner_heat_flux_centerline.py
+          python plot_burner_heat_flux_contour.py
+          python plot_pmma_hrr_qrad.py
+          python plot_pmma_flame_spread_heat_flux.py
+
+      # Push updated images to SCRIPT_FIGURES
+      - name: Upload images to releases
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux.png --clobber
+          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux_colormap.png --clobber
+          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/PMMA_HRR_q-rad-only.png --clobber
+          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/PMMA_flame_spread_heatflux.png --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # When submitting computational results, add your script to the list below (follow the example)
+
+      # Step 1: generate the plots
+      - name: NIST Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/NIST
+          python NIST_Parallel_Panel_plot_cmp.py
+          python plot_burner_heat_flux_centerline.py
+          python plot_burner_heat_flux_contour.py
+          python plot_pmma_flame_spread_heat_flux.py
+          python plot_pmma_hrr_qrad.py
+          python plot_pmma_flame_spread_con_heat_flux.py
+          python plot_pmma_flame_spread_mass_loss_rate.py
+          python plot_pmma_flame_spread_rad_heat_flux.py
+          python plot_pmma_flame_spread_temperature.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push NIST Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/NIST/Preliminary_Results
+          zip Plots.zip -r Plots
+          mv Plots.zip NIST_Parallel_Panel_NIST_Plots.zip
+          gh release upload SCRIPT_FIGURES NIST_Parallel_Panel_NIST_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ADD YOUR INSTITUTION BELOW, COPY STEPS 1 AND 2, CHANGE INSTITUTE NAME (AFTER 2023 AND WITHIN ZIP FILENAME)
+
+      # Step 1: generate the plots
+      - name: BUWFZJ Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/BUWFZJ
+          python NIST_Parallel_Panel_plot_BUWFZJ_cmp.py
+          python plot_burner_heat_flux_centerline.py
+          python plot_burner_heat_flux_contour.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push BUWFZJ Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/BUWFZJ/Output
+          zip Plots.zip -r Plots
+          mv Plots.zip NIST_Parallel_Panel_BUWFZJ_Plots.zip
+          gh release upload SCRIPT_FIGURES NIST_Parallel_Panel_BUWFZJ_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 1: generate the plots
+      - name: FSRI Preliminary SBI Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/FSRI
+          python FSRI_SBI_plot_cmp.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push FSRI Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/FSRI
+          cp README.md Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip UMD_SBI_FSRI_Plots.zip
+          gh release upload SCRIPT_FIGURES UMD_SBI_FSRI_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 1: generate the plots - FSRI-UMD
+      - name: FSRI-UMD Preliminary SBI Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/FSRI-UMD
+          python FSRI-UMD_SBI_plot_cmp.py
+
+      # Step 2: push the plots to the releases page - FSRI-UMD
+      - name: Push FSRI-UMD Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/FSRI-UMD
+          cp README.md Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip UMD_SBI_FSRI-UMD_Plots.zip
+          gh release upload SCRIPT_FIGURES UMD_SBI_FSRI-UMD_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
