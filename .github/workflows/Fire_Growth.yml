@@ -147,3 +147,23 @@ jobs:
           gh release upload SCRIPT_FIGURES UMD_SBI_FSRI-UMD_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 1: generate the plots - DBI-UMD
+      - name: DBI-UMD SBI Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/DBI
+          python DBI_SBI_plot.py
+         
+
+      # Step 2: push the plots to the releases page - DBI
+      - name: Push DBI Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/DBI
+          cp README.md Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip UMD_SBI_DBI_Plots.zip
+          gh release upload SCRIPT_FIGURES UMD_SBI_DBI_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
