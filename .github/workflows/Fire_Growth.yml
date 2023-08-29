@@ -147,3 +147,42 @@ jobs:
           gh release upload SCRIPT_FIGURES UMD_SBI_FSRI-UMD_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 1: generate the plots
+      - name: UGent UMD_SBI Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/UGent
+          python UGent_UMD_SBI_plot_cmp.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push UGent Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/UGent
+          cp README.md Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip UMD_SBI_UGent_Plots.zip
+          gh release upload SCRIPT_FIGURES UMD_SBI_UGent_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+     # Step 1: generate the plots
+      - name: UGent NIST_Parallel_Panel Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/UGent
+          python UGent_NIST_Parallel_Panel_plot_cmp.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push UGent Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/UGent
+          cp README.md Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip NIST_Parallel_Panel_UGent_Plots.zip
+          gh release upload SCRIPT_FIGURES NIST_Parallel_Panel_UGent_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
