@@ -52,7 +52,7 @@ Comments: Ambient temperature of 20 °C.
 
 ### Boundary conditions
 
-Comments: Open (passive) pressure boundaries except at the floor. To simulate the random air movement in the lab, a sinusoidally-varying pressure of 0.02 Pa is applied at the lateral boundaries of the open domain. The period of the fluctuations is 10 s. No measurements were made to confirm these estimates. They are based on comparisons of heat flux measurements from the propane burner to the marinite wall panels. These fluctuations tend to widen the heat flux profile to the panels.
+Comments: Open (passive) pressure boundaries except at the floor. To simulate the random air movement in the lab, a sinusoidally-varying pressure of 0.05 Pa is applied at the lateral boundaries of the open domain. The period of the fluctuations is 10 s. No measurements were made to confirm these estimates. These fluctuations tend to widen the heat flux profile to the panels, but even with this fluctuation, the heat flux profile is still narrower than that which was measured.
 
 ------------------
 
@@ -60,15 +60,15 @@ Comments: Open (passive) pressure boundaries except at the floor. To simulate th
 
 Turbulence model (include Sc_t and Pr_t): Deardorff turbulence model with FDS defaults of 0.5 for both Schmidt and Prandtl numbers.
 
-Combustion model: 1-step mixing-controlled reactions of propane (burner) and MMA (pyrolyzate)
+Combustion model: 1-step EDC mixing-controlled reactions of propane (burner) and MMA (pyrolyzate)
 
 Radiation model: Finite-volume, gray gas with specified radiative fraction
 
-Radiative fraction: Prescribed, 0.35
+Radiative fraction: Prescribed, 0.29 for propane; 0.31 for PMMA (SFPE Handbook, 4th ed., Table 3-4.16)
 
-Soot model: Fixed soot yield, 0.024
+Soot model: Fixed soot yield, 0.024 for propane; 0.022 for PMMA (SFPE Handbook, 4th ed., Table 3-4.16)
 
-Comments: The soot yield is for propane and based on Tewarson's chapter of the SFPE Handbook
+Comments: The radiative fractions and species yields are taken from Tewarson's chapter of the 4th SFPE Handbook
 
 ------------------
 
@@ -88,7 +88,7 @@ Comments:
 
 Time: Second-order accurate Runge-Kutta
 
-CFL: 1
+CFL: 1.0
 
 Advection: Superbee flux limiter
 
@@ -98,15 +98,15 @@ Pressure-velocity coupling: Low Mach number approximation
 
 ------------------
 
-### Computational Cost (hh:mm:ss)
+### Computational Cost
 
-Wall clock time: 2 cm (13:20:00); 1 cm (173:51:00)
+Wall clock time: 2 cm 11.25 h; 1 cm 146 h; 5 mm 236 h (Intel Xeon CPU E5-2630 v2 @ 2.60 GHz)
 
-Simulation time: 900 s
+Simulation time: 600 s
 
-Number of CPUs (MPI Processes): 96
+Number of CPUs (MPI Processes): 96 for 2 cm and 1 cm cases; 320 for 5 mm case
 
-CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 2 cm (0.009 s); 1 cm (0.014 s)
+CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 2 cm (0.011 s); 1 cm (0.018 s); 5 mm (0.049 s)
 
 ------------------
 
@@ -118,7 +118,10 @@ CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 2 c
 
 ### Special issues/problems
 
-Grid independence
+1. Grid independence -- heat flux to surface over-predicted by fine grids.
+
+2. Burner cannot be turned off as it was in the experiment. In the simulation, the propane burner's HRR is reduced by half whereas in the experiment the burner is turned off.
+
 
 ------------------
 
