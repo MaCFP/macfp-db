@@ -98,9 +98,9 @@ Pressure-velocity coupling: Low Mach number approximation
 
 ------------------
 
-### Computational Cost (hh:mm:ss)
+### Computational Cost
 
-Wall clock time: 2 cm 11.25 h; 1 cm 146 h; 5 mm 236 h
+Wall clock time: 2 cm 11.25 h; 1 cm 146 h; 5 mm 236 h (Intel Xeon CPU E5-2630 v2 @ 2.60 GHz)
 
 Simulation time: 600 s
 
