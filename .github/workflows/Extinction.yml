@@ -83,21 +83,22 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
-          # Step 1: generate the plots
-      - name: UGENT Results
+        # Step 1: generate the plots
+      - name: UGent2 Results
         run: |
           echo $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE/Extinction/FM_Burner/Computational_Results/2023/UGENT
+          cd $GITHUB_WORKSPACE/Extinction/FM_Burner/Computational_Results/2023/UGent2
           python UGENT_FM_Burner_plot_results.py
 
       # Step 2: push the plots to the releases page
-      - name: Push UGENT Results to release
+      - name: Push UGent2 Results to release
         if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Extinction/FM_Burner/Computational_Results/2023/UGENT
+          cd $GITHUB_WORKSPACE/Extinction/FM_Burner/Computational_Results/2023/UGent2
           cp README.md ./Plots/.
           zip Plots.zip -r Plots
-          mv Plots.zip FM_Burner_UGENT_Plots.zip
-          gh release upload SCRIPT_FIGURES FM_Burner_UGENT_Plots.zip --clobber
+          mv Plots.zip FM_Burner_UGent2_Plots.zip
+          gh release upload SCRIPT_FIGURES FM_Burner_UGent2_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
