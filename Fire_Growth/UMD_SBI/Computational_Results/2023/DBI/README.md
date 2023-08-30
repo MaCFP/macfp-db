@@ -54,7 +54,7 @@ Comments: Between bottom edge of curtain and floor there was Open boundaries. Th
 
 ### Models (include parameters)
 
-Turbulence model (include Sc_t and Pr_t): Deardorff turbulence model with FDS defaults of 0.5 for both Schmidt and Prandtl numbers.
+Turbulence model: Default Deardorff turbulence model with FDS defaults of 0.5 for both Schmidt and Prandtl numbers.
 
 Combustion model: 1-step mixing-controlled reactions of propane (burner) and MMA (pyrolyzate)
 
