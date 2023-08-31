@@ -31,14 +31,14 @@ Domain:
 - 100 cm: 616.0 cm diameter, 800 cm vertical
 
 Cell size:
-- 30 cm: 2.0 cm, 1.0 cm, 0.5 cm
-- 100 cm: 4.0 cm, 2.0 cm, 1.0 cm
+- 30 cm: 1.0 cm
+- 100 cm: 2.0 cm
 
 Cell type: unstructured hexes
 
 Total elements:
-- 30 cm: 79752, 521560, 3115390
-- 100 cm: 528024, 2797765, 8820831
+- 30 cm: 521560
+- 100 cm: 2797765
 
 Comments: The cell sizes provided here are roughly the cell sizes above the burner and approximately two diameters downstrean. The grid resolution gradually increases away from the near-field. We also refine the mesh in the vertical direction above to the pool surface.
 
@@ -88,34 +88,35 @@ Pressure-velocity coupling: Low-Mach number approximation
 ### Computational Cost (hh:mm:ss)
 
 Wall clock time (hours):
-- 30 cm: 
-- 100 cm:
+- 30 cm: 28.3
+- 100 cm: 103.8
 
 Simulation time:
-- 30 cm: 
-- 100 cm:
+- 30 cm: 23.0
+- 100 cm: 22.5
 
 Number of CPUs (MPI Processes):
-- 30 cm: 
-- 100 cm:
+- 30 cm: 288
+- 100 cm: 576
 
 CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):
-- 30 cm: 
-- 100 cm:
+- 30 cm: 0.00068
+- 100 cm: 0.00095
+
+Comments: There were some file system issues so the CPU time of the results are likely not indicative of the code performance.
 
 ------------------
 
 ### Averaging period
 
-- 30 cm: 
-- 100 cm:
+- 30 cm: 16.5 seconds
+- 100 cm: 20.0 seconds
 
 ------------------
 
 ### Special issues/problems
 
-- 30 cm: 
-- 100 cm:
+Convergence in the form of collecting enough statistics and fine enough resolution was a challenge in both cases.
 
 ------------------
 
