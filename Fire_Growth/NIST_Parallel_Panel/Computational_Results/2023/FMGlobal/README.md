@@ -2,7 +2,7 @@
 
 Name: Danyal Mohaddes, Ning Ren, Yi Wang
 
-Institution: FM Global Research (abbr. 'FM')
+Institution: Factory Mutual Global Research (abbr. 'FMGlobal')
 
 Country: USA
 
