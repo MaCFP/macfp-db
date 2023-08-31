@@ -8,12 +8,14 @@ on:
   push:
     branches: [ master ]
     paths:
-      - .github/Liquid_Pool_Fires.yml
+      - .github/workflows/Liquid_Pool_Fires.yml
+      - Utilities/macfp.py
       - Liquid_Pool_Fires/**
   pull_request:
     branches: [ master ]
     paths:
-      - .github/Liquid_Pool_Fires.yml
+      - .github/workflows/Liquid_Pool_Fires.yml
+      - Utilities/macfp.py
       - Liquid_Pool_Fires/**
 
   # Allows you to run this workflow manually from the Actions tab
@@ -41,20 +43,40 @@ jobs:
       # When submitting computational results, add your script to the list below (follow the example)
 
       # Step 1: generate the plots
-      - name: NIST Preliminary Results
+      - name: NIST NIST Pool Fires Results
         run: |
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST
           python NIST_Pool_Fires_plot_cmp.py
 
       # Step 2: push the plots to the releases page
-      - name: Push NIST Results to release
-        if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
+      - name: Push NIST NIST Pool Fires Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST/Preliminary_Results
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST
+          cp README.md ./Plots/.
           zip Plots.zip -r Plots
           mv Plots.zip NIST_Pool_Fires_NIST_Plots.zip
           gh release upload SCRIPT_FIGURES NIST_Pool_Fires_NIST_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 1: generate the plots
+      - name: NIST [Waterloo Methanol] Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/Waterloo_Methanol/Computational_Results/2023/NIST
+          python Waterloo_Methanol_plot_results.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push NIST Waterloo Methanol Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/Waterloo_Methanol/Computational_Results/2023/NIST
+          cp README.md ./Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip Waterloo_Methanol_NIST_Plots.zip
+          gh release upload SCRIPT_FIGURES Waterloo_Methanol_NIST_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -68,7 +90,7 @@ jobs:
           python NIST_Pool_Fires_Sandia_plot_cmp.py
 
       - name: Push Sandia Results to release
-        if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
           cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/Sandia/Preliminary_Results
           zip Plots.zip -r Plots
@@ -76,4 +98,22 @@ jobs:
           gh release upload SCRIPT_FIGURES NIST_Pool_Fires_Sandia_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
+
+      # Step 1: generate the plots
+      - name: UGent NIST_Pool_Fires Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/UGent
+          python UGent_NIST_Pool_Fires_plot_cmp.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push UGent NIST_Pool_Fires Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/UGent
+          cp README.md ./Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip NIST_Pool_Fires_UGent_Plots.zip
+          gh release upload SCRIPT_FIGURES NIST_Pool_Fires_UGent_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

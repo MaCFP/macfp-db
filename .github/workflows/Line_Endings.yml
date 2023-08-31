@@ -28,7 +28,7 @@ jobs:
           { grep -IUlr --exclude={"*.pdf","*.png"} --exclude-dir=".git" $'\r' > tmp.txt || true; }
           nlines=$(cat tmp.txt | wc -l)
           if [ $nlines -gt 0 ]; then
-            echo "matl-db repo text files with dos line endings:"
+            echo "macfp-db repo text files with dos line endings:"
             cat tmp.txt
             exit 1
           fi

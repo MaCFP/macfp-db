@@ -4,17 +4,19 @@ name: Extinction
 
 # Controls when the workflow will run
 on:
-  # # Triggers the workflow on push or pull request events but only for the master branch
-  # push:
-  #   branches: [ master ]
-  #   paths:
-  #     - .github/Extinction.yml
-  #     - Extinction/**
-  # pull_request:
-  #   branches: [ master ]
-  #   paths:
-  #     - .github/Extinction.yml
-  #     - Extinction/**
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+    paths:
+      - .github/workflows/Extinction.yml
+      - Utilities/macfp.py
+      - Extinction/**
+  pull_request:
+    branches: [ master ]
+    paths:
+      - .github/workflows/Extinction.yml
+      - Utilities/macfp.py
+      - Extinction/**
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -40,23 +42,63 @@ jobs:
 
       # When submitting computational results, add your script to the list below (follow the example)
 
-      # # Step 1: generate the plots
-      # - name: NIST Preliminary Results
-      #   run: |
-      #     echo $GITHUB_WORKSPACE
-      #     cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST
-      #     python NIST_Pool_Fires_plot_cmp.py
+      # Step 1: generate the plots
+      - name: NIST Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Extinction/FM_Burner/Computational_Results/2023/NIST
+          python FM_Burner_post_process.py
+          python FM_Burner_plot_cmp.py
 
-      # # Step 2: push the plots to the releases page
-      # - name: Push NIST Results to release
-      #   if: github.event_name == 'push' && github.repository_owner == 'MaCFP'
-      #   run: |
-      #     cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST/Preliminary_Results
-      #     zip Plots.zip -r Plots
-      #     mv Plots.zip NIST_Pool_Fires_NIST_Plots.zip
-      #     gh release upload SCRIPT_FIGURES NIST_Pool_Fires_NIST_Plots.zip --clobber
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Step 2: push the plots to the releases page
+      - name: Push NIST Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Extinction/FM_Burner/Computational_Results/2023/NIST
+          cp README.md ./Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip FM_Burner_NIST_Plots.zip
+          gh release upload SCRIPT_FIGURES FM_Burner_NIST_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # ADD YOUR INSTITUTION BELOW, COPY STEPS 1 AND 2, CHANGE INSTITUTE NAME (AFTER 2023 AND WITHIN ZIP FILENAME)
+
+      # Step 1: generate the plots
+      - name: UGent Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Extinction/FM_Burner/Computational_Results/2023/UGent
+          python UGent_FM_Burner_plot_cmp.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push NIST Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Extinction/FM_Burner/Computational_Results/2023/UGent
+          cp README.md ./Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip FM_Burner_UGent_Plots.zip
+          gh release upload SCRIPT_FIGURES FM_Burner_UGent_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+        # Step 1: generate the plots
+      - name: UGent2 Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Extinction/FM_Burner/Computational_Results/2023/UGent2
+          python UGENT_FM_Burner_plot_results.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push UGent2 Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Extinction/FM_Burner/Computational_Results/2023/UGent2
+          cp README.md ./Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip FM_Burner_UGent2_Plots.zip
+          gh release upload SCRIPT_FIGURES FM_Burner_UGent2_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

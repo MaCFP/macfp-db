@@ -8,7 +8,7 @@ on:
   push:
     branches: [ master ]
     paths:
-      - .github/Experimental_Data.yml
+      - .github/workflows/Experimental_Data.yml
       - Utilities/macfp.py
       - Buoyant_Plumes/Sandia_Helium_Plume/Experimental_Data/**
       - Extinction/FM_Burner/Experimental_Data/**
@@ -20,7 +20,7 @@ on:
   pull_request:
     branches: [ master ]
     paths:
-      - .github/Experimental_Data.yml
+      - .github/workflows/Experimental_Data.yml
       - Utilities/macfp.py
       - Buoyant_Plumes/Sandia_Helium_Plume/Experimental_Data/**
       - Extinction/FM_Burner/Experimental_Data/**
