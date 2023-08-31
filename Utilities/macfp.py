@@ -785,8 +785,8 @@ def dataplot(config_filename,**kwargs):
             else:
                 # don't exactly understand this, but df.values behave differently if they are object type
                 # when the header and data rows are separated, then there are usually strings in the df.values
-                x = E[pp.Exp_x_Col_Name].values[pp.Exp_Data_Row-2:-1].astype(float)
-                y = E[pp.Exp_y_Col_Name].values[pp.Exp_Data_Row-2:-1].astype(float)
+                x = E[pp.Exp_x_Col_Name].values[pp.Exp_Data_Row-2:].astype(float)
+                y = E[pp.Exp_y_Col_Name].values[pp.Exp_Data_Row-2:].astype(float)
 
             if (pp.Plot_Flip_Axis):
                 if (pp.Seaborn_Color):
@@ -902,8 +902,8 @@ def dataplot(config_filename,**kwargs):
                 else:
                     # don't exactly understand this, but df.values behave differently if they are object type
                     # when the header and data rows are separated, then there are usually strings in the df.values
-                    x = E[pp.Exp_x_Col_Name].values[pp.Exp_Data_Row-2:-1].astype(float)
-                    y = E[pp.Exp_y_Col_Name].values[pp.Exp_Data_Row-2:-1].astype(float)
+                    x = E[pp.Exp_x_Col_Name].values[pp.Exp_Data_Row-2:].astype(float)
+                    y = E[pp.Exp_y_Col_Name].values[pp.Exp_Data_Row-2:].astype(float)
 
                 if (pp.Plot_Flip_Axis):
                     if (pp.Seaborn_Color):
@@ -1011,8 +1011,8 @@ def dataplot(config_filename,**kwargs):
             x = M[pp.Cmp_x_Col_Name].values[:].astype(float)
             y = M[pp.Cmp_y_Col_Name].values[:].astype(float)
         else:
-            x = M[pp.Cmp_x_Col_Name].values[pp.Cmp_Data_Row-2:-1].astype(float)
-            y = M[pp.Cmp_y_Col_Name].values[pp.Cmp_Data_Row-2:-1].astype(float)
+            x = M[pp.Cmp_x_Col_Name].values[pp.Cmp_Data_Row-2:].astype(float)
+            y = M[pp.Cmp_y_Col_Name].values[pp.Cmp_Data_Row-2:].astype(float)
 
         if (pp.Savgol_Filter):
             ys = signal.savgol_filter(y, window_length=pp.Savgol_Window,polyorder=pp.Savgol_Polyorder,mode="nearest")
