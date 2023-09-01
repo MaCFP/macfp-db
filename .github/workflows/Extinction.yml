@@ -82,7 +82,7 @@ jobs:
           gh release upload SCRIPT_FIGURES FM_Burner_UGent_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
+
         # Step 1: generate the plots
       - name: UGent2 Results
         run: |
@@ -117,8 +117,8 @@ jobs:
           cd $GITHUB_WORKSPACE/Extinction/FM_Burner/Computational_Results/2023/UNSW
           cp README.md ./Plots/.
           zip Plots.zip -r Plots
-          mv Plots.zip FM_Burner_NIST_Plots.zip
-          gh release upload SCRIPT_FIGURES FM_Burner_NIST_Plots.zip --clobber
+          mv Plots.zip FM_Burner_UNSW_Plots.zip
+          gh release upload SCRIPT_FIGURES FM_Burner_UNSW_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
