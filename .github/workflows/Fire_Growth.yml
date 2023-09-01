@@ -243,21 +243,3 @@ jobs:
           gh release upload SCRIPT_FIGURES UMD_SBI_DBI_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Step 1: generate the plots - AALTO
-      - name: AALTO SBI Results
-        run: |
-          echo $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/AALTO
-          python AALTO_SBI_plot_cmp.py
-
-      # Step 2: push the plots to the releases page - AALTO
-      - name: Push AALTO Results to release
-        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
-        run: |
-          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/AALTO
-          cp README.md Plots/.
-          zip Plots.zip -r Plots
-          mv Plots.zip UMD_SBI_AALTO_Plots.zip
-          gh release upload SCRIPT_FIGURES UMD_SBI_AALTO_Plots.zip --clobber
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
