@@ -58,6 +58,6 @@ ax1.legend(lns, labs, loc='upper right')
 
 fig.tight_layout(pad=0.0, h_pad=0.0, w_pad=0.0, rect=[0.05, 0.05, 0.90, 0.95])
 
-plt.savefig('Preliminary_Results/Plots/PMMA_HRR_q-rad-only.pdf')
+plt.savefig('Preliminary_Results/Plots/PMMA_HRR_Qrad.pdf')
 
 # plt.show()
