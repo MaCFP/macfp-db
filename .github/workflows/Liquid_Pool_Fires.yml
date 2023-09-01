@@ -117,3 +117,43 @@ jobs:
           gh release upload SCRIPT_FIGURES NIST_Pool_Fires_UGent_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # FM Global results (NIST pool, methanol) -------------------------------------------
+      # Step 1: generate the plots
+      - name: FM NIST_Pool_Fires Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/FMGlobal
+          python FM_NIST_Pool_Fires_plot_cmp.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push FM NIST_Pool_Fires Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/FMGlobal
+          cp README.md ./Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip NIST_Pool_Fires_FMGlobal_Plots.zip
+          gh release upload SCRIPT_FIGURES NIST_Pool_Fires_FMGlobal_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # FM Global results (Waterloo pool, methanol) -------------------------------------------
+      # Step 1: generate the plots
+      - name: FM Waterloo_Methanol Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/Waterloo_Methanol/Computational_Results/2023/FMGlobal
+          python FM_Waterloo_Methanol_plot_results.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push FM Waterloo_Methanol Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/Waterloo_Methanol/Computational_Results/2023/FMGlobal
+          cp README.md ./Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip Waterloo_Methanol_FMGlobal_Plots.zip
+          gh release upload SCRIPT_FIGURES Waterloo_Methanol_FMGlobal_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
