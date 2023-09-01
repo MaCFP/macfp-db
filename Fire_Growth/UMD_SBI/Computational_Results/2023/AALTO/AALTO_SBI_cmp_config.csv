@@ -1,0 +1,283 @@
+Exp_Filename                                               ,Exp_Header_Row,Exp_Data_Row,Exp_x_Col_Name,Exp_y_Col_Name,Exp_Data_Label           ,Exp_Line_Style,Exp_Marker_Style,Plot_Right_Adjust,Cmp_Filename                                      ,Cmp_Header_Row,Cmp_Data_Row,Cmp_x_Col_Name,Cmp_y_Col_Name,Cmp_Data_Label,Cmp_Marker_Style,Cmp_Line_Style,Plot_Title                                  ,Plot_x_Label,Plot_y_Label         ,Plot_x_Min,Plot_x_Max,Plot_y_Min,Plot_y_Max,Seaborn_Color,Savgol_Filter,Savgol_Window,Savgol_Polyorder,Plot_Legend_Location,Plot_Filename
+
+HRR_1Hz_7TestAverage.csv,1,3,Time,HRR,Exp        ,-     ,        ,        ,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HRR,AALTO_I,                ,-             ,UMD SBI,Time (s),Heat Release Rate (kW),0,200,0,400,TRUE,TRUE,21,5,best,AALTO_SBI_HRR.pdf
+HRR_1Hz_7TestAverage.csv,1,3,Time,HRR,Exp        ,-     ,        ,        ,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HRR,AALTO_II,                ,--            ,UMD SBI,Time (s),Heat Release Rate (kW),0,200,0,400,TRUE,TRUE,21,5,best,AALTO_SBI_HRR.pdf
+
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x5_y10,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 10-1,AALTO_I,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x5_y10.pdf
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x5_y10,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 10-1,AALTO_II,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x5_y10.pdf
+
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x10_y10,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 10-2,AALTO_I,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x10_y10.pdf
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x10_y10,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 10-2,AALTO_II,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x10_y10.pdf
+
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x15_y10,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 10-3,AALTO_I,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x15_y10.pdf
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x15_y10,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 10-3,AALTO_II,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x15_y10.pdf
+
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x22_y10,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 10-4,AALTO_I,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x22_y10.pdf
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x22_y10,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 10-4,AALTO_II,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x22_y10.pdf
+
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x5_y30,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 30-1,AALTO_I,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x5_y30.pdf
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x5_y30,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 30-1,AALTO_II,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x5_y30.pdf
+
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x10_y30,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 30-2,AALTO_I,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x10_y30.pdf
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x10_y30,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 30-2,AALTO_II,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x10_y30.pdf
+
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x15_y30,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 30-3,AALTO_I,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x15_y30.pdf
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x15_y30,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 30-3,AALTO_II,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x15_y30.pdf
+
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x22_y30,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 30-4,AALTO_I,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,40,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x22_y30.pdf
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x22_y30,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 30-4,AALTO_II,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,40,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x22_y30.pdf
+
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x5_y50,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 50-1,AALTO_I,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x5_y50.pdf
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x5_y50,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 50-1,AALTO_II,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x5_y50.pdf
+
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x10_y50,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 50-2,AALTO_I,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x10_y50.pdf
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x10_y50,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 50-2,AALTO_II,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x10_y50.pdf
+
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x15_y50,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 50-3,AALTO_I,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x15_y50.pdf
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x15_y50,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 50-3,AALTO_II,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x15_y50.pdf
+
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x22_y50,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 50-4,AALTO_I,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,50,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x22_y50.pdf
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x22_y50,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 50-4,AALTO_II,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,50,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x22_y50.pdf
+
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x5_y70,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 70-1,AALTO_I,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x5_y70.pdf
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x5_y70,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 70-1,AALTO_II,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x5_y70.pdf
+
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x10_y70,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 70-2,AALTO_I,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x10_y70.pdf
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x10_y70,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 70-2,AALTO_II,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x10_y70.pdf
+
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x15_y70,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 70-3,AALTO_I,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x15_y70.pdf
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x15_y70,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 70-3,AALTO_II,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x15_y70.pdf
+
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x22_y70,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 70-4,AALTO_I,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x22_y70.pdf
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x22_y70,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 70-4,AALTO_II,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x22_y70.pdf
+
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x5_y90,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 90-1,AALTO_I,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x5_y90.pdf
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x5_y90,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 90-1,AALTO_II,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x5_y90.pdf
+
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x10_y90,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 90-2,AALTO_I,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x10_y90.pdf
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x10_y90,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 90-2,AALTO_II,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x10_y90.pdf
+
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x15_y90,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 90-3,AALTO_I,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x15_y90.pdf
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x15_y90,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 90-3,AALTO_II,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x15_y90.pdf
+
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x22_y90,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 90-4,AALTO_I,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x22_y90.pdf
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x22_y90,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 90-4,AALTO_II,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x22_y90.pdf
+
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x5_y110,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 110-1,AALTO_I,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x5_y110.pdf
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x5_y110,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 110-1,AALTO_II,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x5_y110.pdf
+
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x10_y110,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 110-2,AALTO_I,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x10_y110.pdf
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x10_y110,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 110-2,AALTO_II,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x10_y110.pdf
+
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x15_y110,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 110-3,AALTO_I,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x15_y110.pdf
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x15_y110,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 110-3,AALTO_II,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x15_y110.pdf
+
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x22_y110,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 110-4,AALTO_I,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x22_y110.pdf
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x22_y110,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 110-4,AALTO_II,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x22_y110.pdf
+
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x5_y130,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 130-1,AALTO_I,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x5_y130.pdf
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x5_y130,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 130-1,AALTO_II,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x5_y130.pdf
+
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x10_y130,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 130-2,AALTO_I,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x10_y130.pdf
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x10_y130,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 130-2,AALTO_II,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x10_y130.pdf
+
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x15_y130,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 130-3,AALTO_I,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x15_y130.pdf
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x15_y130,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 130-3,AALTO_II,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x15_y130.pdf
+
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x22_y130,Exp        ,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,HF 130-4,AALTO_I,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x22_y130.pdf
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x22_y130,Exp        ,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,HF 130-4,AALTO_II,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,AALTO_SBI_HFG_x22_y130.pdf
+
+Rad_flux_away_from_the_flame_binned.csv,1,3,Time,HFG_y10,Exp        ,-     ,        ,        ,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,Rad 10,AALTO_I,                ,-             ,UMD SBI (z=10 cm),Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,10,TRUE,TRUE,21,5,best,AALTO_SBI_GHF10.pdf
+Rad_flux_away_from_the_flame_binned.csv,1,3,Time,HFG_y10,Exp        ,-     ,        ,        ,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,Rad 10,AALTO_II,                ,-             ,UMD SBI (z=10 cm),Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,10,TRUE,TRUE,21,5,best,AALTO_SBI_GHF10.pdf
+
+Rad_flux_away_from_the_flame_binned.csv,1,3,Time,HFG_y35,Exp        ,-     ,        ,        ,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,Rad 35,AALTO_I,                ,-             ,UMD SBI (z=35 cm),Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,10,TRUE,TRUE,21,5,best,AALTO_SBI_GHF35.pdf
+Rad_flux_away_from_the_flame_binned.csv,1,3,Time,HFG_y35,Exp        ,-     ,        ,        ,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,Rad 35,AALTO_II,                ,-             ,UMD SBI (z=35 cm),Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,10,TRUE,TRUE,21,5,best,AALTO_SBI_GHF35.pdf
+
+Rad_flux_away_from_the_flame_binned.csv,1,3,Time,HFG_y60,Exp        ,-     ,        ,        ,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,Rad 60,AALTO_I,                ,-             ,UMD SBI (z=60 cm),Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,10,TRUE,TRUE,21,5,best,AALTO_SBI_GHF60.pdf
+Rad_flux_away_from_the_flame_binned.csv,1,3,Time,HFG_y60,Exp        ,-     ,        ,        ,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,Rad 60,AALTO_II,                ,-             ,UMD SBI (z=60 cm),Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,10,TRUE,TRUE,21,5,best,AALTO_SBI_GHF60.pdf
+
+Rad_flux_away_from_the_flame_binned.csv,1,3,Time,HFG_y85,Exp        ,-     ,        ,        ,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,Rad 85,AALTO_I,                ,-             ,UMD SBI (z=85 cm),Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,15,TRUE,TRUE,21,5,best,AALTO_SBI_GHF85.pdf
+Rad_flux_away_from_the_flame_binned.csv,1,3,Time,HFG_y85,Exp        ,-     ,        ,        ,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,Rad 85,AALTO_II,                ,-             ,UMD SBI (z=85 cm),Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,15,TRUE,TRUE,21,5,best,AALTO_SBI_GHF85.pdf
+
+Rad_flux_away_from_the_flame_binned.csv,1,3,Time,HFG_y110,Exp        ,-     ,        ,        ,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,Rad 110,AALTO_I,                ,-             ,UMD SBI (z=110 cm),Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,15,TRUE,TRUE,21,5,best,AALTO_SBI_GHF110.pdf
+Rad_flux_away_from_the_flame_binned.csv,1,3,Time,HFG_y110,Exp        ,-     ,        ,        ,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,Rad 110,AALTO_II,                ,-             ,UMD SBI (z=110 cm),Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,15,TRUE,TRUE,21,5,best,AALTO_SBI_GHF110.pdf
+
+Rad_flux_away_from_the_flame_binned.csv,1,3,Time,HFG_y135,Exp        ,-     ,        ,        ,AALTO_I/AALTO_SBI_1_devc.csv,2,3,Time,Rad 135,AALTO_I,                ,-             ,UMD SBI (z=135 cm),Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,20,TRUE,TRUE,21,5,best,AALTO_SBI_GHF135.pdf
+Rad_flux_away_from_the_flame_binned.csv,1,3,Time,HFG_y135,Exp        ,-     ,        ,        ,AALTO_II/AALTO_SBI_1_devc.csv,2,3,Time,Rad 135,AALTO_II,                ,-             ,UMD SBI (z=135 cm),Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,20,TRUE,TRUE,21,5,best,AALTO_SBI_GHF135.pdf
+
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,WT 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,WT 22-105,x=22:t=105,                ,-            ,UMD SBI (AALTO_I),y (m),Wall Temperature ($^\circ$C),0,1.5,0,500,TRUE,FALSE,0,0,outside,AALTO_SBI_WT_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,WT 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,WT 05-145,x=5:t=145,                ,--           ,UMD SBI (AALTO_I),y (m),Wall Temperature ($^\circ$C),0,1.5,0,500,TRUE,FALSE,0,0,outside,AALTO_SBI_WT_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,WT 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,WT 22-145,x=22:t=145,                ,-.           ,UMD SBI (AALTO_I),y (m),Wall Temperature ($^\circ$C),0,1.5,0,500,TRUE,FALSE,0,0,outside,AALTO_SBI_WT_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,WT 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,WT 05-185,x=5:t=185,                ,:            ,UMD SBI (AALTO_I),y (m),Wall Temperature ($^\circ$C),0,1.5,0,500,TRUE,FALSE,0,0,outside,AALTO_SBI_WT_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,WT 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,WT 22-185,x=22:t=185,                ,-            ,UMD SBI (AALTO_I),y (m),Wall Temperature ($^\circ$C),0,1.5,0,500,TRUE,FALSE,0,0,outside,AALTO_SBI_WT_I.pdf
+
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,WT 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,WT 22-105,x=22:t=105,                ,-            ,UMD SBI (AALTO_II),y (m),Wall Temperature ($^\circ$C),0,1.5,0,500,TRUE,FALSE,0,0,outside,AALTO_SBI_WT_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,WT 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,WT 05-145,x=5:t=145,                ,--           ,UMD SBI (AALTO_II),y (m),Wall Temperature ($^\circ$C),0,1.5,0,500,TRUE,FALSE,0,0,outside,AALTO_SBI_WT_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,WT 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,WT 22-145,x=22:t=145,                ,-.           ,UMD SBI (AALTO_II),y (m),Wall Temperature ($^\circ$C),0,1.5,0,500,TRUE,FALSE,0,0,outside,AALTO_SBI_WT_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,WT 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,WT 05-185,x=5:t=185,                ,:            ,UMD SBI (AALTO_II),y (m),Wall Temperature ($^\circ$C),0,1.5,0,500,TRUE,FALSE,0,0,outside,AALTO_SBI_WT_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,WT 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,WT 22-185,x=22:t=185,                ,-            ,UMD SBI (AALTO_II),y (m),Wall Temperature ($^\circ$C),0,1.5,0,500,TRUE,FALSE,0,0,outside,AALTO_SBI_WT_II.pdf
+
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,BR 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,BR 22-105,x=22:t=105,                ,-            ,UMD SBI (AALTO_I),y (m),Burning Rate (kg/s),0,1.5,0,0.025,TRUE,FALSE,0,0,outside,AALTO_SBI_BR_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,BR 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,BR 05-145,x=5:t=145,                ,--           ,UMD SBI (AALTO_I),y (m),Burning Rate (kg/s),0,1.5,0,0.025,TRUE,FALSE,0,0,outside,AALTO_SBI_BR_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,BR 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,BR 22-145,x=22:t=145,                ,-.           ,UMD SBI (AALTO_I),y (m),Burning Rate (kg/s),0,1.5,0,0.025,TRUE,FALSE,0,0,outside,AALTO_SBI_BR_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,BR 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,BR 05-185,x=5:t=185,                ,:            ,UMD SBI (AALTO_I),y (m),Burning Rate (kg/s),0,1.5,0,0.025,TRUE,FALSE,0,0,outside,AALTO_SBI_BR_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,BR 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,BR 22-185,x=22:t=185,                ,-            ,UMD SBI (AALTO_I),y (m),Burning Rate (kg/s),0,1.5,0,0.025,TRUE,FALSE,0,0,outside,AALTO_SBI_BR_I.pdf
+
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,BR 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,BR 22-105,x=22:t=105,                ,-            ,UMD SBI (AALTO_II),y (m),Burning Rate (kg/s),0,1.5,0,0.025,TRUE,FALSE,0,0,outside,AALTO_SBI_BR_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,BR 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,BR 05-145,x=5:t=145,                ,--           ,UMD SBI (AALTO_II),y (m),Burning Rate (kg/s),0,1.5,0,0.025,TRUE,FALSE,0,0,outside,AALTO_SBI_BR_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,BR 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,BR 22-145,x=22:t=145,                ,-.           ,UMD SBI (AALTO_II),y (m),Burning Rate (kg/s),0,1.5,0,0.025,TRUE,FALSE,0,0,outside,AALTO_SBI_BR_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,BR 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,BR 05-185,x=5:t=185,                ,:            ,UMD SBI (AALTO_II),y (m),Burning Rate (kg/s),0,1.5,0,0.025,TRUE,FALSE,0,0,outside,AALTO_SBI_BR_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,BR 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,BR 22-185,x=22:t=185,                ,-            ,UMD SBI (AALTO_II),y (m),Burning Rate (kg/s),0,1.5,0,0.025,TRUE,FALSE,0,0,outside,AALTO_SBI_BR_II.pdf
+
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,TF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,TF 22-105,x=22:t=105,                ,-            ,UMD SBI (AALTO_I),y (m),Net Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_TF_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,TF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,TF 05-145,x=5:t=145,                ,--           ,UMD SBI (AALTO_I),y (m),Net Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_TF_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,TF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,TF 22-145,x=22:t=145,                ,-.           ,UMD SBI (AALTO_I),y (m),Net Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_TF_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,TF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,TF 05-185,x=5:t=185,                ,:            ,UMD SBI (AALTO_I),y (m),Net Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_TF_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,TF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,TF 22-185,x=22:t=185,                ,-            ,UMD SBI (AALTO_I),y (m),Net Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_TF_I.pdf
+
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,TF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,TF 22-105,x=22:t=105,                ,-            ,UMD SBI (AALTO_II),y (m),Net Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_TF_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,TF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,TF 05-145,x=5:t=145,                ,--           ,UMD SBI (AALTO_II),y (m),Net Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_TF_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,TF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,TF 22-145,x=22:t=145,                ,-.           ,UMD SBI (AALTO_II),y (m),Net Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_TF_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,TF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,TF 05-185,x=5:t=185,                ,:            ,UMD SBI (AALTO_II),y (m),Net Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_TF_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,TF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,TF 22-185,x=22:t=185,                ,-            ,UMD SBI (AALTO_II),y (m),Net Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_TF_II.pdf
+
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,RF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,RF 22-105,x=22:t=105,                ,-            ,UMD SBI (AALTO_I),y (m),Rad. Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_RF_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,RF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,RF 05-145,x=5:t=145,                ,--           ,UMD SBI (AALTO_I),y (m),Rad. Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_RF_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,RF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,RF 22-145,x=22:t=145,                ,-.           ,UMD SBI (AALTO_I),y (m),Rad. Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_RF_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,RF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,RF 05-185,x=5:t=185,                ,:            ,UMD SBI (AALTO_I),y (m),Rad. Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_RF_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,RF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,RF 22-185,x=22:t=185,                ,-            ,UMD SBI (AALTO_I),y (m),Rad. Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_RF_I.pdf
+
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,RF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,RF 22-105,x=22:t=105,                ,-            ,UMD SBI (AALTO_II),y (m),Rad. Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_RF_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,RF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,RF 05-145,x=5:t=145,                ,--           ,UMD SBI (AALTO_II),y (m),Rad. Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_RF_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,RF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,RF 22-145,x=22:t=145,                ,-.           ,UMD SBI (AALTO_II),y (m),Rad. Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_RF_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,RF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,RF 05-185,x=5:t=185,                ,:            ,UMD SBI (AALTO_II),y (m),Rad. Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_RF_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,RF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,RF 22-185,x=22:t=185,                ,-            ,UMD SBI (AALTO_II),y (m),Rad. Heat Flux (kW/m$^2$),0,1.5,0,40,TRUE,FALSE,0,0,outside,AALTO_SBI_RF_II.pdf
+
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,CF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,CF 22-105,x=22:t=105,                ,-            ,UMD SBI (AALTO_I),y (m),Conv. Heat Flux (kW/m$^2$),0,1.5,0,8,TRUE,FALSE,0,0,outside,AALTO_SBI_CF_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,CF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,CF 05-145,x=5:t=145,                ,--           ,UMD SBI (AALTO_I),y (m),Conv. Heat Flux (kW/m$^2$),0,1.5,0,8,TRUE,FALSE,0,0,outside,AALTO_SBI_CF_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,CF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,CF 22-145,x=22:t=145,                ,-.           ,UMD SBI (AALTO_I),y (m),Conv. Heat Flux (kW/m$^2$),0,1.5,0,8,TRUE,FALSE,0,0,outside,AALTO_SBI_CF_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,CF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,CF 05-185,x=5:t=185,                ,:            ,UMD SBI (AALTO_I),y (m),Conv. Heat Flux (kW/m$^2$),0,1.5,0,8,TRUE,FALSE,0,0,outside,AALTO_SBI_CF_I.pdf
+../Computational_Results/2023/AALTO/AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,CF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_I/AALTO_SBI_1_line.csv,2,3,y ,CF 22-185,x=22:t=185,                ,-            ,UMD SBI (AALTO_I),y (m),Conv. Heat Flux (kW/m$^2$),0,1.5,0,8,TRUE,FALSE,0,0,outside,AALTO_SBI_CF_I.pdf
+
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,CF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,CF 22-105,x=22:t=105,                ,-            ,UMD SBI (AALTO_I),y (m),Conv. Heat Flux (kW/m$^2$),0,1.5,0,8,TRUE,FALSE,0,0,outside,AALTO_SBI_CF_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,CF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,CF 05-145,x=5:t=145,                ,--           ,UMD SBI (AALTO_I),y (m),Conv. Heat Flux (kW/m$^2$),0,1.5,0,8,TRUE,FALSE,0,0,outside,AALTO_SBI_CF_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,CF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,CF 22-145,x=22:t=145,                ,-.           ,UMD SBI (AALTO_I),y (m),Conv. Heat Flux (kW/m$^2$),0,1.5,0,8,TRUE,FALSE,0,0,outside,AALTO_SBI_CF_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,CF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,CF 05-185,x=5:t=185,                ,:            ,UMD SBI (AALTO_I),y (m),Conv. Heat Flux (kW/m$^2$),0,1.5,0,8,TRUE,FALSE,0,0,outside,AALTO_SBI_CF_II.pdf
+../Computational_Results/2023/AALTO/AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,CF 05-105,x=5:t=105,-     ,        ,0.7,AALTO_II/AALTO_SBI_1_line.csv,2,3,y ,CF 22-185,x=22:t=185,                ,-            ,UMD SBI (AALTO_I),y (m),Conv. Heat Flux (kW/m$^2$),0,1.5,0,8,TRUE,FALSE,0,0,outside,AALTO_SBI_CF_II.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
