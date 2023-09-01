@@ -67,15 +67,11 @@ jobs:
         run: |
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/NIST
+          python Burner_heat_flux_contour.py
+          python Burner_heat_flux_profile.py
           python NIST_Parallel_Panel_plot_cmp.py
-          python plot_burner_heat_flux_centerline.py
-          python plot_burner_heat_flux_contour.py
-          python plot_pmma_flame_spread_heat_flux.py
-          python plot_pmma_hrr_qrad.py
-          python plot_pmma_flame_spread_con_heat_flux.py
-          python plot_pmma_flame_spread_mass_loss_rate.py
-          python plot_pmma_flame_spread_rad_heat_flux.py
-          python plot_pmma_flame_spread_temperature.py
+          python PMMA_heat_flux_profile.py
+          python PMMA_HRR_Qrad.py
 
       # Step 2: push the plots to the releases page
       - name: Push NIST Results to release

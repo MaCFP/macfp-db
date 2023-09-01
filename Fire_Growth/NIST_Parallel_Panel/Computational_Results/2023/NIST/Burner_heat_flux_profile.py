@@ -94,6 +94,6 @@ for irow in range(0,4):
 
 # fig.tight_layout(pad=1.0, h_pad=0.0, w_pad=0.0, rect=[0.05, 0.05, 0.90, 0.95])
 
-plt.savefig('Preliminary_Results/Plots/Burner_heatflux.pdf')
+plt.savefig('Preliminary_Results/Plots/Burner_heat_flux_profile.pdf')
 
 # plt.show()
