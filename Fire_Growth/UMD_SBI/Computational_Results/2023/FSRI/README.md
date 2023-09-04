@@ -61,6 +61,7 @@ Combustion model: 1-step mixing-controlled reactions of propane (burner) and MMA
 Radiation model: Finite-volume, gray gas with specified radiative fraction
 
 Radiative fraction: Propane FDS default of 0.29, MMA FDS default of 0.35
+Radiation pathlength: 10 cm
 Yields: Propane Soot=0.01, CO=0.005 (smoke detection work done by JH for the FPRF suggests Tewarson is high for non-bench scale fires). MMA Soot: 0.018, CO_Yield 0.007 (from https://doi.org/10.3390/app11135942).
 
 ------------------
@@ -72,6 +73,8 @@ Solver: FDS
 Radiation absorption model: 2-flux model in PMMA solid when an absoprtion coeffiicent is specified
 
 Material property set: Properties of black PMMA taken from the various json files at https://github.com/MaCFP/matl-db/tree/master/PMMA/Material_Properties.  Grid study, blowing, and cone flux cases used the UMD properties.
+
+FDS STRETCH_FACTOR set to 1 for wall cells with PMMA. This results in unform 0.34 mm cells for PMMA (16 cells) and 0.385 mm cells for the MARINITE layer (34 cells).
 
 Comments:
 
@@ -107,7 +110,8 @@ CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): 4 c
 
 ### Averaging period
 
-0.2 s
+2 s for profiles
+HRR and point heat flux gauge output 0.2 s but Savgol filter applied for plotting.
 
 ------------------
 
