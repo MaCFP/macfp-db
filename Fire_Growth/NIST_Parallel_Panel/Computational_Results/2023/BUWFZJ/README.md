@@ -44,11 +44,19 @@ Cell type: Cubes
 
 Comments: The cases use uniform cells throughout.
 
+#### Computational domain discretization (solid solver)
+
+Heat conduction: 1-dimensional
+Solid cells: uniform (FDS: STRETCH_FACTOR=1)
+Sample thickness: 0.0058 m
+Cell size: 0.0000337 m (FDS: CELL_SIZE_FACTOR=0.1)
+n Nodes: 173
+
 #### Angular space discretization (radiation solver)
 
 Number of solid angles: 104
-
-Comments: This is the default number of solid angles in FDS
+Gray gas model absorption coefficient path length: 0.1 m
+Comments: These are the default settings in FDS
 
 ------------------
 
@@ -152,6 +160,6 @@ Material parameter set is model-dependent, inverse modelling was performed with 
 
 ### Relevant publications
 
-1. BUW_FZJ_C contribution to MaCFP-3: https://zenodo.org/record/8005836
+1. BUW_FZJ_C pyrolysis parameter set contribution to MaCFP-3: https://zenodo.org/record/8005836
 
 2. Article providing overview over parameter estimation procedure. Note, here (BUW_FZJ_C) the pyrolysis reactions release either CH4 or CO2 not the mixture discussed in the article: https://doi.org/10.1016/j.firesaf.2023.103926
