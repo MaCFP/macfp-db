@@ -5394,3 +5394,20 @@
  Time Step: 136100, Simulation Time:     59.48 s, Step Size: 0.00040 s, Pressure Iterations: 10
  Time Step: 136200, Simulation Time:     59.52 s, Step Size: 0.00036 s, Pressure Iterations: 10
  Time Step: 136300, Simulation Time:     59.56 s, Step Size: 0.00044 s, Pressure Iterations: 10
+ Time Step: 136400, Simulation Time:     59.60 s, Step Size: 0.00044 s, Pressure Iterations: 10
+ Time Step: 136500, Simulation Time:     59.65 s, Step Size: 0.00048 s, Pressure Iterations: 10
+ Time Step: 136600, Simulation Time:     59.70 s, Step Size: 0.00043 s, Pressure Iterations: 10
+ Time Step: 136700, Simulation Time:     59.74 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step: 136800, Simulation Time:     59.78 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step: 136900, Simulation Time:     59.82 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step: 137000, Simulation Time:     59.85 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step: 137100, Simulation Time:     59.89 s, Step Size: 0.00038 s, Pressure Iterations: 10
+ Time Step: 137200, Simulation Time:     59.93 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step: 137300, Simulation Time:     59.97 s, Step Size: 0.00042 s, Pressure Iterations: 10
+ Time Step: 137365, Simulation Time:     60.00 s, Step Size: 0.00007 s, Pressure Iterations: 10
+
+
+ Time Stepping Wall Clock Time (s):   942998.594
+ Total Elapsed Wall Clock Time (s):   943060.039
+
+STOP: FDS completed successfully (CHID: NIST_Propane_34kW_GEOM_Prescribed_p5cm_cat)
