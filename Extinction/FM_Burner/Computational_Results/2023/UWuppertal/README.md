@@ -107,18 +107,18 @@ cells): -
 
 ### Radiation Setups
 
-  Name   Time Step   Radiation Angles   
-  ------ ----------- ------------------  
-  V1     10          104               
-  V2     10          512
-  V3     1           104
-  V4     1           512
-  V5     50          104
-  V6     50          512
-  V7     1000        104
-  V8     1000        512
-  V9     200         104
-  V10    200         512
+ | Name | Time Step | Radiation Angles |
+ |------|-----------|------------------|
+ | V1   | 10        | 104              |
+ | V2   | 10        | 512              |
+ | V3   | 1         | 104              |
+ | V4   | 1         | 512              |
+ | V5   | 50        | 104              |
+ | V6   | 50        | 512              |
+ | V7   | 1000      | 104              |
+ | V8   | 1000      | 512              |
+ | V9   | 200       | 104              |
+ | V10  | 200       | 512              |
 
 - The `Time Step` referes to the number of time steps when complete radiation solving is accomplished.
 - Average time step size is about `5e-4` between each time step (though this depends especially during the initial development phase)
