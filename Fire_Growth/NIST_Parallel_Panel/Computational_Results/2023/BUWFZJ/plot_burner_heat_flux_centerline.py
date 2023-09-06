@@ -169,7 +169,7 @@ for sim_id, sim_label in enumerate(list(burner_sims)):
 
 # fig.tight_layout(pad=1.0, h_pad=0.0, w_pad=0.0, rect=[0.05, 0.05, 0.90, 0.95])
 
-plot_dir = os.path.join(sim_dir, "Plots", "Burner_heatflux.pdf")
+plot_dir = os.path.join(sim_dir, "Plots", "NIST_Parallel_Panel_Burner_heatflux_BUWFZJ.pdf")
 plt.savefig(plot_dir)
 
 # plt.show()

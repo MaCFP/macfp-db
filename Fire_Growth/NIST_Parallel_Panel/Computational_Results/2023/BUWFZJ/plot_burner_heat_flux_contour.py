@@ -209,7 +209,7 @@ plt.tight_layout()
 plt.legend(handles=data_labels, loc='upper center', fontsize=11)
 
 # Save image.
-plot_dir = os.path.join(sim_dir, "Plots", "Burner_heatflux_colormap.pdf")
+plot_dir = os.path.join(sim_dir, "Plots", "NIST_Parallel_Panel_Burner_heatflux_colormap_BUWFZJ.pdf")
 plt.savefig(plot_dir, dpi=320, bbox_inches='tight')
 
 # plt.show()
