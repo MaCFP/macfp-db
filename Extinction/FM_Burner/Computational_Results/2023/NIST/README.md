@@ -10,7 +10,7 @@ Country: USA
 
 ### Test case
 
-Case 5: FM Burner
+FM Burner
 
 ------------------
 
