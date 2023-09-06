@@ -40,11 +40,15 @@ Comments:
 
 #### Angular space discretization (radiation solver)
 
-**30 cm and 37 cm**
+**37 cm methane and propane**
+
+Number of solid angles: 16, `TIME_STEP_INCREMENT`=1, `ANGLE_INCREMENT`=1
+
+**30 cm liquid fuels**
 
 Number of solid angles: 600, `TIME_STEP_INCREMENT`=10, `ANGLE_INCREMENT`=10
 
-**100 cm**
+**100 cm methanol**
 
 Number of solid angles: 600, `TIME_STEP_INCREMENT`=1, `ANGLE_INCREMENT`=1
 
