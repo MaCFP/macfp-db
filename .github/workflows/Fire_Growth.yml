@@ -68,14 +68,10 @@ jobs:
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/NIST
           python NIST_Parallel_Panel_plot_cmp.py
-          python plot_burner_heat_flux_centerline.py
-          python plot_burner_heat_flux_contour.py
-          python plot_pmma_flame_spread_heat_flux.py
-          python plot_pmma_hrr_qrad.py
-          python plot_pmma_flame_spread_con_heat_flux.py
-          python plot_pmma_flame_spread_mass_loss_rate.py
-          python plot_pmma_flame_spread_rad_heat_flux.py
-          python plot_pmma_flame_spread_temperature.py
+          python Burner_heat_flux_contour.py
+          python Burner_heat_flux_profile.py
+          python PMMA_heat_flux_profile.py
+          python PMMA_HRR_Qrad.py
 
       # Step 2: push the plots to the releases page
       - name: Push NIST Results to release
@@ -241,5 +237,24 @@ jobs:
           zip Plots.zip -r Plots
           mv Plots.zip UMD_SBI_DBI_Plots.zip
           gh release upload SCRIPT_FIGURES UMD_SBI_DBI_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      # Step 1: generate the plots - AALTO
+      - name: AALTO SBI Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/AALTO
+          python AALTO_SBI_plot_cmp.py
+
+      # Step 2: push the plots to the releases page - AALTO
+      - name: Push AALTO Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/AALTO
+          cp README.md Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip UMD_SBI_AALTO_Plots.zip
+          gh release upload SCRIPT_FIGURES UMD_SBI_AALTO_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
