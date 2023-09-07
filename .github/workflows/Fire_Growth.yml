@@ -208,6 +208,9 @@ jobs:
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/FMGlobal
           python FMGlobal_NIST_Parallel_Panel_plot_cmp.py
+          python Burner_heat_flux_contour.py
+          python Burner_heat_flux_profile.py
+          python PMMA_heat_flux_profile.py
 
       # Step 2: push the plots to the releases page
       - name: Push FMGlobal results to release
