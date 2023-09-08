@@ -39,10 +39,8 @@ pp_sims = dict()
 sim_dir = os.path.join("Output")
 
 # Define meta information for the plots.
-# hrr_label = ['120 kW', '200 kW', '300 kW', '400 kW', '510 kW', '750 kW', '990 kW', '1500 kW', '1980 kW', '2800 kW']
-# color = ['black', 'maroon', 'limegreen', 'lightgray', 'blue', 'plum', 'cyan', 'orange', 'darkgreen', 'salmon']
-hrr_label = ['120 kW', '200 kW', '300 kW', '510 kW','1500 kW', '1980 kW', '2800 kW']
-color = ['black', 'maroon', 'limegreen','blue', 'orange', 'darkgreen', 'salmon']
+hrr_label = ['120 kW', '200 kW', '300 kW', '400 kW', '510 kW', '750 kW', '990 kW', '1500 kW', '1980 kW', '2800 kW']
+color = ['black', 'maroon', 'limegreen', 'lightgray', 'blue', 'plum', 'cyan', 'orange', 'darkgreen', 'salmon']
 
 # Heights of measurements and FDS predictions.
 z_exp = np.array([10, 20, 30, 50, 75, 100, 140, 180, 220])
@@ -57,7 +55,7 @@ hf_devc_labels = ["HF_y0_z20", "HF_y0_z50", "HF_y0_z75", "HF_y0_z100",
 # ------------------------------
 # Read centre line heat flux to empty panel, from experiment.
 exp_heatflux_path = os.path.join("..", "..", "..", "Experimental_Data",
-                                  "PMMA_heatflux.csv")
+                                 "PMMA_heatflux.csv")
 # First row as header and row with units skipped.
 exp_heatflux_df = pd.read_csv(exp_heatflux_path, header=0, skiprows=[1])
 exp_heatflux_df.interpolate(axis=1, method='linear', inplace=True) # fill nan values
@@ -118,12 +116,16 @@ for irow in range(len(hrr_label)):
 
     # Plot simulation results for different fluid cell resolution.
     for sim_label in pp_sim_info:
+        # Prepare data for plotting.
         sim_df = pp_sims[sim_label]["DEVC"]
         indices = pp_sims[sim_label]["Indices"]
-        print(sim_label, indices)
+        cell_size = pp_sim_info[sim_label]["FluidCells"]
+        data_series_label = f"Sim. {cell_size}"
+
         x_vals = sim_df.loc[indices[irow], hf_devc_labels].values[:].astype(float)
 
-        f = macfp.plot_to_fig(x_data=x_vals, y_data=z_FDS, data_label=hrr_label[irow],
+        f = macfp.plot_to_fig(x_data=x_vals, y_data=z_FDS,
+                              data_label=data_series_label,
                               x_min=0,x_max=150,x_nticks=4,
                               y_min=0,y_max=250,
                               x_label='Heat Flux [kW/m²]',
