@@ -56,11 +56,11 @@ Comments: All flow variables are originally ambient and then ramped up in approx
 * combined forced and natural convection correlations for h_conv and h_mass
 
 #### Predicted MLR
-* 10 cm thick SURF with 15 cells in depth  
-* ∆z = 0.2618 mm in first liquid cell  (based on ∆z<sup>2</sup>/α<sup>2</sup> = 1 (unity time scale))
+* 15 cm thick SURF with 15 cells in depth
+* ∆z = 0.294 mm in first liquid cell  (based on ∆z<sup>2</sup>/α<sup>2</sup> = 1 (unity time scale))
 * stretched grid with stretch factor of 2  
 * liquid properties for methanol; no effective turblent transport
-* in-depth radiation absorption considered; κ=1140 m<sup>-1</sup>
+* in-depth radiation absorption considered; κ=1500 m<sup>-1</sup>
 * dynamic, energy-conserving remeshing scheme as liquid thickness recedes
 
 Comments:
@@ -102,18 +102,20 @@ Pressure-velocity coupling: Low Mach number approximation; solution of Poisson e
 #### Prescribed MLR
 
 | ∆x (cm) | Total cells | CPU cores | Sim Time (s) | Wall Clock (s) | WC (dd-hh:mm:ss) | CPU Cost |
-| :-------| :-----------| :-------- | :----------- | :------------- | :------------ | :------- |
-| 2       | 36000       | 8         | 60           | 1941           | 00-00:32:21   | 0.0072   |
-| 1       | 288000      | 8         | 60           | 29184          | 00-08:06:24   | 0.0135   |
-| 0.5     | 2304000     | 64        | 60           | 87294          | 01-00:14:54   | 0.0404   |
+| :-------| :-----------| :-------- | :----------- | :------------- | :--------------- | :------- |
+| 2       | 36000       | 8         | 60           | 2604           | 00-00:43:24      | 0.0096   |
+| 1       | 288000      | 8         | 60           | 50529          | 00-14:02:09      | 0.0234   |
+| 0.5     | 2304000     | 64        | 60           | 641621         | 07-10:13:41      | 0.2970\* |
 
 #### Predicted MLR
 
 | ∆x (cm) | Total cells | CPU cores | Sim Time (s) | Wall Clock (s) | WC (dd-hh:mm:ss) | CPU Cost |
 | :-------| :-----------| :-------- | :----------- | :------------- | :--------------- | :------- |
-| 2       | 36000       | 8         | 60           | 1516           | 00-00:25:16      | 0.0056   |
-| 1       | 288000      | 8         | 60           | 30989          | 00-08:36:29      | 0.0143   |
-| 0.5     | 2304000     | 64        | 60           | 108643         | 01-06:10:43      | 0.0503   |
+| 2       | 36000       | 8         | 60           | 2814           | 00-00:46:54      | 0.0104   |
+| 1       | 288000      | 8         | 60           | 46643          | 00-12:57:23      | 0.0216   |
+| 0.5     | 2304000     | 64        | 60           | 669761         | 07-18:02:41      | 0.3100\* |
+
+\* Ten-fold increase in cost appears to be attributable to the ULMAT pressure solver.  MAX_PRESSURE_ITERATIONS (100) were reached every time step.  Still investigating why this occurs with GEOM.
 
 
 Wall clock time: see table above
@@ -129,7 +131,7 @@ CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): see
 ### Averaging period
 
 total simulation time: 60 s  
-averaged statistics: last 50 s
+averaged statistics: last 30 s
 
 ------------------
 
