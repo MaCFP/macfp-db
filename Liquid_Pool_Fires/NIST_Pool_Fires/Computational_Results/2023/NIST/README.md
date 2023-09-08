@@ -76,6 +76,8 @@ Comments: All flow variables are originally ambient and then ramped up in approx
 
 Comments:
 
+To ignite the liquid pool calculations, a 20 kW/m2 external flux was applied to the pool surface for the first 20 s of the simulation.
+
 ------------------
 
 ### Models (include parameters)
@@ -231,6 +233,8 @@ CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells): see
 
 total simulation time: 60 s  
 averaged statistics: last 30 s
+
+For liquid fuels with predicted MLR, the first 20 s a 20 kW/m2 external flux was applied to pool surface for ignition.
 
 ------------------
 
