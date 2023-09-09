@@ -8,6 +8,7 @@
 
 import sys
 # sys.path.append('<path to macfp-db>/macfp-db/Utilities/')
+# sys.path.append('../../../../../../macfp-db/Utilities/')
 sys.path.append('../../../../../Utilities/')
 # sys.path.append('/Users/fbraenns/09_TOOLs_Application/MaCFP/00_Repositories/macfp-db_FORK.github/Utilities/')
 
@@ -16,14 +17,12 @@ import importlib
 importlib.reload(macfp) # use for development (while making changes to macfp.py)
 import matplotlib.pyplot as plt
 
-macfp.dataplot(config_filename='FM_Burner_cmp_config.csv',
+macfp.dataplot(config_filename='FM_Burner_cmp_config_Transient.csv',
                institute='UWuppertal',
                revision='MaCFP-3, Tsukuba, 2023',
-               expdir='../../../Experimental_Data/',
-               # cmpdir='./Output/',
-               # cmpdir='../NIST/Output/',
+               expdir='./Output/',
                cmpdir='./Output/',
-               pltdir='./Plots/',
+               pltdir='./Plots/Transient/',
                close_figs=True,
                verbose=True,
                plot_list=['all'])
