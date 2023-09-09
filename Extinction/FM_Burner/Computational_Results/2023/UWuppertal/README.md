@@ -16,6 +16,27 @@ Case 5 - FM Burner
 
 ------------------------------------------------------------------------
 
+### General Comments
+Settings were mainly used by the setup from NIST which was applied for
+MaCFP-2. This is one of the test cases for MaCFP-Radiation subgroup
+and therefore further investigated.
+
+Here the focus is on some radiation settings and the impact of
+averaging (see some further information below).
+
+------------------------------------------------------------------------
+
+### Post-Processing
+Post-processing is done for the following monitors:
+- Radiative heat flux on the side wall at \(y=0m\) over height from \(z=0.1016m\) to \(z=0.8128m\)
+- Development of radiative fraction over time
+- Vertical radiation emission over height (symmetry line above burner)
+
+The image below shows the position of the relevant monitors:
+![](./img/Vert_WW_visit0000.png)
+
+------------------------------------------------------------------------
+
 ### CFD package
 
 Code: FDS
@@ -36,7 +57,7 @@ Version: FDS6.7.8-88-g922085eba-nightly
 
 
 #### Angular space discretization (radiation solver)
-    - Number of solid angles: 104, 512
+    - Number of solid angles: 104 (default), 512
     - Time steps between full solution of all angles: 1, 10, 50, 200, 1000
       - This corresponds roughly to: 5e-4s, 5e-3s, 2.5e-2s, 5e-1s, 1e-2s
 
@@ -132,14 +153,26 @@ cells): -
 - If not otherwise stated the complete time span is used for averaging.
 
 
+
+------------------------------------------------------------------------
+
+### Info about plots
+
+Config file: FM_Burner_cmp_config.csv
+- General plots for radiation
+
+Config file: FM_Burner_cmp_config_Transient.csv
+- Focus on (backward) averaging and initial transient based [1]
+- `dNM` is a time estimation for the initial transient before averaging should be started (see section 2.1 in [1]) 
+- Backward averaging means that based on the available data; different time spans are used for averaging always starting at `200s` and going back to `0s`.
+
 ------------------------------------------------------------------------
 
 ### Special issues/problems
 - 
-
 ------------------------------------------------------------------------
 
 ### Relevant publications
 
-none
+[1] Bergmann, Michael, Christian Morsbach, Graham Ashcroft, and Edmund Kügeler. ‘Statistical Error Estimation Methods for Engineering-Relevant Quantities From Scale-Resolving Simulations’. Journal of Turbomachinery 144, no. 3 (1 March 2022): 031005. https://doi.org/10.1115/1.4052402.
 
