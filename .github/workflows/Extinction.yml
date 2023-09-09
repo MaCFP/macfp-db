@@ -128,6 +128,7 @@ jobs:
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE/Extinction/FM_Burner/Computational_Results/2023/UWuppertal
           python FM_Burner_plot_cmp.py
+          python FM_Burner_plot_cmp_Transient.py
 
       # Step 2: push the plots to the releases page
       - name: Push UWuppertal Results to release
