@@ -8,7 +8,8 @@
 
 import sys
 # sys.path.append('<path to macfp-db>/macfp-db/Utilities/')
-sys.path.append('../../../../../../macfp-db/Utilities/')
+# sys.path.append('../../../../../../macfp-db/Utilities/')
+sys.path.append('../../../../../Utilities/')
 # sys.path.append('/Users/fbraenns/09_TOOLs_Application/MaCFP/00_Repositories/macfp-db_FORK.github/Utilities/')
 
 import macfp

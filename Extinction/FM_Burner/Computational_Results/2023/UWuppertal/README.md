@@ -166,6 +166,17 @@ Config file: FM_Burner_cmp_config_Transient.csv
 - `dNM` is a time estimation for the initial transient before averaging should be started (see section 2.1 in [1]) 
 - Backward averaging means that based on the available data; different time spans are used for averaging always starting at `200s` and going back to `0s`.
 
+Monitor positions for plots
+- General
+  - MEAN_Radiative_Wall_Flux: x=0.6m, y=0m, z=0.106-0.8128m
+  - STD_Radiative_Wall_Flux: x=0.6m, y=0m, z=0.106-0.8128m
+- Initial Transient
+  - `radfl_FM_rad_distribution_x06_y0_19_dNM`: x=0.6m, y=0m, z=Xm
+  - `radfl_FM_rad_distribution_x06_y0_19_gi`: x=0.6m, y=0m, z=0.8128m
+- Backward Averaging
+  - `radfl_middle_x0_y_zn37_9`: x=0m, y=-0.15, z=-0.37m
+
+
 ------------------------------------------------------------------------
 
 ### Special issues/problems
