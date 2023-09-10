@@ -26,17 +26,6 @@ averaging (see some further information below).
 
 ------------------------------------------------------------------------
 
-### Post-Processing
-Post-processing is done for the following monitors:
-- Radiative heat flux on the side wall at \(y=0m\) over height from \(z=0.1016m\) to \(z=0.8128m\)
-- Development of radiative fraction over time
-- Vertical radiation emission over height (symmetry line above burner)
-
-The image below shows the position of the relevant monitors:
-![](./img/Vert_WW_visit0000.png)
-
-------------------------------------------------------------------------
-
 ### CFD package
 
 Code: FDS
@@ -48,18 +37,18 @@ Version: FDS6.7.8-88-g922085eba-nightly
 ### Resolution
 
 
-####  Computational domain discretization (flow solver)
-    -   closed domain with part of hood
-    -   Domain: 1.2 m x 1.2 m x 1.2 m (closed domain with no hood )
-    -   Cell size: 0.5 cm (in fine flame region)
-    -   Cell type: cubes
-    -   Total cells: XXX
+Computational domain discretization (flow solver)
+-   closed domain with part of hood
+-   Domain: 1.2 m x 1.2 m x 1.2 m (closed domain with no hood )
+-   Cell size: 0.5 cm (in fine flame region)
+-   Cell type: cubes
+-   Total cells: XXX
 
 
-#### Angular space discretization (radiation solver)
-    - Number of solid angles: 104 (default), 512
-    - Time steps between full solution of all angles: 1, 10, 50, 200, 1000
-      - This corresponds roughly to: 5e-4s, 5e-3s, 2.5e-2s, 5e-1s, 1e-2s
+Angular space discretization (radiation solver)
+- Number of solid angles: 104 (default), 512
+- Time steps between full solution of all angles: 1, 10, 50, 200, 1000
+  - This corresponds roughly to: 5e-4s, 5e-3s, 2.5e-2s, 5e-1s, 1e-2s
 
 Comments: Otherwise default FDS radiation solver
 
@@ -156,10 +145,16 @@ cells): -
 
 ------------------------------------------------------------------------
 
-### Info about plots
+### Post-Processing
+The main Post-processing is done for the following monitors:
+- Development of total radiative fraction over time
+- Vertical radiation emission over height (symmetry line above burner)
 
 Config file: FM_Burner_cmp_config.csv
 - General plots for radiation
+
+Config file: FM_Burner_cmp_config_WallRadiation.csv
+- Additional plots with focus on wall heat flux 
 
 Config file: FM_Burner_cmp_config_Transient.csv
 - Focus on (backward) averaging and initial transient based [1]
@@ -175,6 +170,20 @@ Monitor positions for plots
   - `radfl_FM_rad_distribution_x06_y0_19_gi`: x=0.6m, y=0m, z=0.8128m
 - Backward Averaging
   - `radfl_middle_x0_y_zn37_9`: x=0m, y=-0.15, z=-0.37m
+
+------------------------------------------------------------------------
+
+### Infos about plot scripts
+
+Three different scripts are used for the plots:
+- FM_Burner_plot_cmp.py
+- FM_Burner_plot_cmp_Transient.py
+- FM_Burner_plot_cmp_WallRadiation.py
+
+The first one is producing plots for the total radiative heat flux and radiative power over the height.
+
+The other plots are a bit outside the initial scope and were put into a different folder.
+
 
 
 ------------------------------------------------------------------------
