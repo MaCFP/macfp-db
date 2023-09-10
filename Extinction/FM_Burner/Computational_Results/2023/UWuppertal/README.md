@@ -73,13 +73,13 @@ Comments:
 
 ### Models (include parameters) 
 
-Turbulence model: Deardoff (algebraic k_sgs); Sc_t=0.5; Pr_t=0.5
+- Turbulence model: Deardoff (algebraic k_sgs); Sc_t=0.5; Pr_t=0.5
 
-Combustion model: Two-step fast-fast serial reactions
+- Combustion model: Two-step fast-fast serial reactions
 
-Radiation model: Finite-volume, upwind, first-order accurate
+- Radiation model: Finite-volume, upwind, first-order accurate
 
-Radiative fraction: Predicted based on RadCal tabulated absorption coefficients
+- Radiative fraction: Predicted based on RadCal tabulated absorption coefficients
 
 - Comments: -
 
@@ -87,30 +87,30 @@ Radiative fraction: Predicted based on RadCal tabulated absorption coefficients
 
 ### Discretization methods
 
-Time: Predictor-Corrector; second-order accurate
+- Time: Predictor-Corrector; second-order accurate
 
-CFL: 0.8 to 1.0
+- CFL: 0.8 to 1.0
 
-Advection: CHARM Flux Limiter
+- Advection: CHARM Flux Limiter
 
-Diffusion: Second-order accurate central difference
+- Diffusion: Second-order accurate central difference
 
-Pressure-velocity coupling: Low Mach number approximation; solution of Poisson equation for pressure
+- Pressure-velocity coupling: Low Mach number approximation; solution of Poisson equation for pressure
 
 ------------------------------------------------------------------------
 
 ### Computational Cost (hh:mm:ss) 
 
 
-Simulation time: 70-200 sec
+- Simulation time: 70-200 sec
 
-Number of CPUs (MPI Processes): 64 cores
+- Number of CPUs (MPI Processes): 64 cores
 
-Wall clock time: -
+- Wall clock time: -
 
-Wall clock time per time step: -
+- Wall clock time per time step: -
 
-CPU cost (Number of CPUs \* Wall clock time / Simulation time / Total
+- CPU cost (Number of CPUs \* Wall clock time / Simulation time / Total
 cells): - 
 
 ------------------------------------------------------------------------
