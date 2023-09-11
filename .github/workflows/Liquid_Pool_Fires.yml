@@ -48,6 +48,10 @@ jobs:
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/NIST_Pool_Fires/Computational_Results/2023/NIST
           python NIST_Pool_Fires_plot_cmp.py
+          python NIST_Pool_Fires_1m_methanol_power_spectrum.py
+          python NIST_Pool_Fires_30cm_methanol_power_spectrum.py
+          python NIST_Pool_Fires_37cm_20kW_propane_power_spectrum.py
+          python NIST_Pool_Fires_37cm_34kW_propane_power_spectrum.py
 
       # Step 2: push the plots to the releases page
       - name: Push NIST NIST Pool Fires Results to release

@@ -106,7 +106,7 @@ Comments:  A two-step reaction mechanism is implemented. In the first reaction, 
 
 ------------------
 
-### Discretization methods
+### Discretization Methods
 Time: Predictor-Corrector; second-order accurate
 
 CFL: 0.8 to 1.0
@@ -116,6 +116,19 @@ Advection: CHARM flux limiter
 Diffusion: Second-order accurate central difference
 
 Pressure-velocity coupling: Low Mach number approximation; solution of Poisson equation for pressure
+
+------------------
+
+### Puffing Frequency
+
+| Case                 | Resolution  | Computed f (Hz) | Measured f (Hz) |
+| :--------------------| :-----------| :-------------- | :-------------- |
+| 1 m methanol         | 2.5 cm \*   | 1.31            | 1.37            |
+| 30 cm methanol       | 0.5 cm      | 2.69            | 2.64            |
+| 37 cm 20 kW propane  | 1.0 cm \*   | 2.55            | 2.31            |
+| 37 cm 34 kW propane  | 0.5 cm      | 2.47            | 2.31            |
+
+\* highest resolution cases not available for signal analysis
 
 ------------------
 
