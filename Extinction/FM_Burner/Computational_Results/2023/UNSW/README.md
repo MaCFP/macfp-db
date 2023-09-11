@@ -3,8 +3,8 @@
 Name: Jianhong Lin<sup>a</sup>, Hua Zhou<sup>b</sup>, Evatt R. Hawkes<sup>a</sup>, Man-Ching Ma<sup>a</sup>
 
 Institutions:  
-<sup>a</sup>University of New South Wales, NSW 2052, Australia
-<sup>b</sup>Tsinghua University, Beijing 100084, China
+<sup>a</sup>University of New South Wales, NSW 2052, Australia  
+<sup>b</sup>Tsinghua University, Beijing 100084, China 
 
 Country: Australia
 
@@ -17,8 +17,9 @@ FM Burner
 ------------------
 
 ### CFD package
-Code: fireFPVFoam developed byased on OpenFOAM-7
-Version: OpenFOAM-7
+Code: fireFPVFoam developed byased on OpenFOAM-7  
+
+Version: OpenFOAM-7  
 
 
 ------------------
@@ -26,13 +27,13 @@ Version: OpenFOAM-7
 ### Resolution
 
 #### Computational domain discretization (flow solver)
-Domain: 1.22 m x 2 m by (cylindrical)
+Domain: 1.22 m x 1.22 m x 2 m  
+ 
+Cell size: 2 cm, 1 cm, 5 mm  
 
-Cell size: 1 cm
+Cell type: non-uniform  
 
-Cell type: non-uniform
-
-Total cells: 1 cm case: 617800; 
+Total cells: 5 mm case:77775; 1 cm case: 617800; 5 mm case: 4084800.  
 
 Comments: The cells at the height between 0 - 60 cm are uniform with the size specified above. Further downstream, the grid resolution gradually increases. 
 
@@ -62,7 +63,7 @@ Turbulence model: dynamic k-Eqn, Sc_t = Pr_t = 0.9
 
 Combustion model: radiative flamelet/progress variable (RFPV) model
 
-Radiation model: fvDOM, WSGG considering CO2, H2O and soot as participating media 
+Radiation model: fvDOM, considering CO2, H2O (grey gas RADCAL model)and soot (Cs = 700 m<sup>-1<sup> K <sup>-1<sup>) as participating media 
 
 Soot Model: two equation models for the soot mass fraction and soot number density. 
  
@@ -85,13 +86,24 @@ Pressure-velocity coupling: PIMPLE
 
 ### Computational Cost (hh:mm:ss)
 
-Wall clock time: - 
+Wall clock time:  
+2 cm case: 02:24:49  
+1 cm case: 13:20:14  
+5 mm case: 40:01:49  
+ 
+Simulation time: 30 sec (27 sec for the 5 mm case)  
 
-Simulation time: - 
+Number of CPUs (MPI Processes):  
+2 cm case: 48  
+1 cm case: 96  
+5 mm case: 384  
+ 
+CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):  
+2 cm case: 0.18  
+1 cm case: 0.25  
+5 mm case: 0.50  
 
-Number of CPUs (MPI Processes): 96
 
-CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):
 
 ------------------
 
