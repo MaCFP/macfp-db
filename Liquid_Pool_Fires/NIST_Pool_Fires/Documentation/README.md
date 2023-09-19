@@ -123,6 +123,8 @@ Schematic drawing of a liquid burner, illustrating its features. The table below
 | Methanol_30_cm_TC_z=41_cm_Sung_2021b.csv  | Radial thermocouple temperature measurements made at z=41 cm above the fuel surface. (Sung et al., 2021b) |
 | Methanol_30_cm_TC_z=51_cm_Sung_2021b.csv  | Radial thermocouple temperature measurements made at z=51 cm above the fuel surface. (Sung et al., 2021b)|
 | Methanol_30_cm_TC_z=61_cm_Sung_2021b.csv  | Radial thermocouple temperature measurements made at z=61 cm above the fuel surface. (Sung et al., 2021b) |
+| Methanol_30_cm_Indepth_Fuel_TC_r=1_cm.csv  | Time history of in-depth thermocouple temperature measurements at radial position r=1 cm |
+| Methanol_30_cm_Indepth_Fuel_TC_r=13_cm.csv  | ime history of in-depth thermocouple temperature measurements at radial position r=13 cm |
 | Methane_37_cm_TC_r=0_Falkenstein-Smith_2021a.csv  | Centerline thermocouple and gas temperature measurements. (Falkenstein-Smith et al., 2021a) |
 | Propane_37_cm_34_kW_TC_r=0_Falkenstein-Smith_2021a.csv | Centerline thermocouple and gas temperature measurements. (Falkenstein-Smith et al., 2021a) |
 | Propane_37_cm_20_kW_TC_r=0_Falkenstein-Smith_2021a.csv | Centerline thermocouple and gas temperature measurements. (Falkenstein-Smith et al., 2021a) |
