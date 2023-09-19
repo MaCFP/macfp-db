@@ -58,7 +58,7 @@ Turbulence model (include Sc_t and Pr_t): Deardorff turbulence model with FDS de
 
 Combustion model: 1-step mixing-controlled reactions of propane (burner) and MMA (pyrolyzate)
 
-Radiation model: Finite-volume, gray gas with specified radiative fraction
+Radiation model: Finite-volume, gray gas with specified radiative fraction. Note the Aalto results use the 2023 properties except for radiation which uses the 2021 values.
 
 Radiative fraction: Propane FDS default of 0.29, MMA FDS default of 0.35
 Radiation pathlength: 10 cm
