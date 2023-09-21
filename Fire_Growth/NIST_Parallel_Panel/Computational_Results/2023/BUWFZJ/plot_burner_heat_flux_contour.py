@@ -83,7 +83,8 @@ burnersteady_hf_df = pd.read_csv(burnersteady_hf_path, header=0, skiprows=[1])
 data_labels = list()
 
 # Set size of the figure.
-plt.figure(figsize=(5, 5))
+# plt.figure(figsize=(5, 5))
+plt.figure()
 
 hf_gauge = burnersteady_hf_df[hf_labels].to_numpy()
 

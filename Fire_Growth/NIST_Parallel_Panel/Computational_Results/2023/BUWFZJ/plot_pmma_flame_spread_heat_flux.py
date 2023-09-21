@@ -24,11 +24,11 @@ pp_sim_info = {
         "FluidCells": "2.0 cm",
         "LineStyle": "-",
         "fps": 2},
-    "PP_C10_03_cat": {
+    "PP_C10_04_cat": {
         "FluidCells": "1.0 cm",
         "LineStyle": "--",
         "fps": 2},
-    "PP_C20_02_cat": {
+    "PP_C20_03_cat": {
         "FluidCells": "0.5 cm",
         "LineStyle": "-.",
         "fps": 2}
