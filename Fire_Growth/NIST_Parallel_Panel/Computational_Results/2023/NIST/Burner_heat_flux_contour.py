@@ -16,6 +16,19 @@ import pandas as pd
 
 plt.close('all')
 
+
+font_size_axis = 13
+font_size_contours = 8
+contour_line_widths = 1
+
+# Define contour information.
+cont_info = {
+    "Exp": ['k', '-', 'Exp.'],
+    "Sim_1": ['red', '--', 'Sim. 2.0 cm'],
+    "Sim_2": ['yellow', '--', 'Sim. 1.0 cm'],
+    "Sim_3": ['green', '--', 'Sim. 0.5 cm']}
+
+
 E = pd.read_csv('../../../Experimental_Data/Burner_steadyHF_Width_multi-layer.csv', sep=',')
 x = np.array([-25, -15, 0, 15, 25])
 y = np.array([20, 50, 75, 100])
@@ -50,40 +63,60 @@ levels = [0, 5, 10, 15, 20, 30, 40, 50, 70]
 # Edge length of the data set, i.e. lower part of the panel.
 extent = [-0.3,0.3, 0.0,1.0]
 
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(5, 5))
 CS = plt.contourf(X, Y, Z, levels, extent=extent, cmap=plt.cm.viridis)
 
 # Define colour bar.
 plt.clim(2.0, 65.0)
-plt.colorbar().set_label('Gauge Heat Flux [kW/m²]',size=14)
+plt.colorbar().set_label('Gauge Heat Flux [kW/m²]',size=font_size_axis)
 
-contours = ax.contour(X, Y, Z, levels, colors='gray')
-ax.clabel(contours, levels, inline=True, fmt='%1.0f', fontsize=8)
 
-CS5 = ax.contour(X, Y, Z5, levels, colors='red', linestyles='dashed', linewidths=1)
-ax.clabel(CS5, inline=True, fmt='%1.0f', fontsize=8, colors='red')
+contours = ax.contour(X, Y, Z, levels,
+                      colors=cont_info["Exp"][0],
+                      linestyles=cont_info["Exp"][1])
+ax.clabel(contours, levels, inline=True, fmt='%1.0f', fontsize=font_size_contours)
 
-CS1 = ax.contour(X, Y, Z1, levels, colors='yellow', linestyles='dashed', linewidths=1)
-ax.clabel(CS1, inline=True, fmt='%1.0f', fontsize=8, colors='yellow')
+CS2 = ax.contour(X, Y, Z2, levels, linewidths=contour_line_widths,
+                 colors=cont_info["Sim_3"][0],
+                 linestyles=cont_info["Sim_3"][1])
+ax.clabel(CS2, inline=True, fmt='%1.0f', fontsize=font_size_contours,
+          colors=cont_info["Sim_3"][0])
 
-CS2 = ax.contour(X, Y, Z2, levels, colors='green', linestyles='dashed', linewidths=1)
-ax.clabel(CS2, inline=True, fmt='%1.0f', fontsize=8, colors='green')
+CS1 = ax.contour(X, Y, Z1, levels, linewidths=contour_line_widths,
+                 colors=cont_info["Sim_2"][0],
+                 linestyles=cont_info["Sim_2"][1])
+ax.clabel(CS1, inline=True, fmt='%1.0f', fontsize=font_size_contours,
+          colors=cont_info["Sim_2"][0])
 
-plt.xlabel('Width [cm]', fontsize=16)
-plt.ylabel('Height [cm]', fontsize=16)
+CS5 = ax.contour(X, Y, Z5, levels, linewidths=contour_line_widths,
+                 colors=cont_info["Sim_1"][0],
+                 linestyles=cont_info["Sim_1"][1])
+ax.clabel(CS5, inline=True, fmt='%1.0f', fontsize=font_size_contours,
+          colors=cont_info["Sim_1"][0])
+
+plt.xlabel('Width [cm]', fontsize=font_size_axis)
+plt.ylabel('Height [cm]', fontsize=font_size_axis)
 
 ax.set_xlim(-30,30)
 ax.set_ylim(0,140)
 
-exp_line    = mlines.Line2D([], [], color='gray', label='exp')
-sim5mm_line = mlines.Line2D([], [], color='red', linestyle='--', label='sim 5 mm')
-sim1cm_line = mlines.Line2D([], [], color='yellow', linestyle='--', label='sim 1 cm')
-sim2cm_line = mlines.Line2D([], [], color='green', linestyle='--', label='sim 2 cm')
+exp_line    = mlines.Line2D([], [], color=cont_info["Exp"][0],
+                            linestyle=cont_info["Exp"][1],
+                            label=cont_info["Exp"][2])
+sim5mm_line = mlines.Line2D([], [], color=cont_info["Sim_1"][0],
+                            linestyle=cont_info["Sim_1"][1],
+                            label=cont_info["Sim_1"][2])
+sim1cm_line = mlines.Line2D([], [], color=cont_info["Sim_2"][0],
+                            linestyle=cont_info["Sim_2"][1],
+                            label=cont_info["Sim_2"][2])
+sim2cm_line = mlines.Line2D([], [], color=cont_info["Sim_3"][0],
+                            linestyle=cont_info["Sim_3"][1],
+                            label=cont_info["Sim_3"][2])
 
 ax.legend(handles=[exp_line,sim5mm_line,sim1cm_line,sim2cm_line])
 
 fig.tight_layout(pad=0.0, h_pad=0.0, w_pad=0.0, rect=[0.05, 0.05, 0.90, 0.95])
 
-plt.savefig('Preliminary_Results/Plots/Burner_heat_flux_contour.pdf')
+plt.savefig('Preliminary_Results/Plots/Burner_heat_flux_contour.pdf', bbox_inches='tight')
 
 # plt.show()

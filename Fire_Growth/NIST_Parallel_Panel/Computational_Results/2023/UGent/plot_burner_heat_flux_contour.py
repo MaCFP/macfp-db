@@ -16,6 +16,18 @@ import pandas as pd
 
 plt.close('all')
 
+
+font_size_axis = 13
+font_size_contours = 8
+contour_line_widths = 1
+
+# Define contour information.
+cont_info = {
+    "Exp": ['k', '-', 'Exp.'],
+    "Sim_1": ['red', '--', 'Sim. 5.0 cm'],
+    "Sim_2": ['yellow', '--', 'Sim. 2.5 cm']}
+
+
 E = pd.read_csv('../../../Experimental_Data/Burner_steadyHF_Width_multi-layer.csv', sep=',')
 x = np.array([-25, -15, 0, 15, 25])
 y = np.array([20, 50, 75, 100])
@@ -43,36 +55,50 @@ levels = [0, 5, 10, 15, 20, 30, 40, 50, 70]
 # Edge length of the data set, i.e. lower part of the panel.
 extent = [-0.3,0.3, 0.0,1.0]
 
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(5, 5))
 CS = plt.contourf(X, Y, Z, levels, extent=extent, cmap=plt.cm.viridis)
 
 # Define colour bar.
 plt.clim(2.0, 65.0)
-plt.colorbar().set_label('Gauge Heat Flux [kW/m²]',size=14)
+plt.colorbar().set_label('Gauge Heat Flux [kW/m²]',size=font_size_axis)
 
-contours = ax.contour(X, Y, Z, levels, colors='gray')
-ax.clabel(contours, levels, inline=True, fmt='%1.0f', fontsize=8)
+contours = ax.contour(X, Y, Z, levels,
+                      colors=cont_info["Exp"][0],
+                      linestyles=cont_info["Exp"][1])
+ax.clabel(contours, levels, inline=True, fmt='%1.0f', fontsize=font_size_contours)
 
-CS5 = ax.contour(X, Y, Z5, levels, colors='red', linestyles='dashed', linewidths=1)
-ax.clabel(CS5, inline=True, fmt='%1.0f', fontsize=8, colors='red')
+CS5 = ax.contour(X, Y, Z5, levels, linewidths=contour_line_widths,
+                 colors=cont_info["Sim_1"][0],
+                 linestyles=cont_info["Sim_1"][1])
+ax.clabel(CS5, inline=True, fmt='%1.0f', fontsize=font_size_contours,
+          colors=cont_info["Sim_1"][0])
 
-CS2 = ax.contour(X, Y, Z2, levels, colors='green', linestyles='dashed', linewidths=1)
-ax.clabel(CS2, inline=True, fmt='%1.0f', fontsize=8, colors='green')
+CS2 = ax.contour(X, Y, Z2, levels, linewidths=contour_line_widths,
+                 colors=cont_info["Sim_2"][0],
+                 linestyles=cont_info["Sim_2"][1])
+ax.clabel(CS2, inline=True, fmt='%1.0f', fontsize=font_size_contours,
+          colors=cont_info["Sim_2"][0])
 
-plt.xlabel('Width [cm]', fontsize=16)
-plt.ylabel('Height [cm]', fontsize=16)
+plt.xlabel('Width [cm]', fontsize=font_size_axis)
+plt.ylabel('Height [cm]', fontsize=font_size_axis)
 
 ax.set_xlim(-30,30)
 ax.set_ylim(0,140)
 
-exp_line    = mlines.Line2D([], [], color='gray', label='exp')
-sim50mm_line = mlines.Line2D([], [], color='red', linestyle='--', label='sim 50 mm')
-sim25mm_line = mlines.Line2D([], [], color='green', linestyle='--', label='sim 25 mm')
+exp_line    = mlines.Line2D([], [], color=cont_info["Exp"][0],
+                            linestyle=cont_info["Exp"][1],
+                            label=cont_info["Exp"][2])
+sim50mm_line = mlines.Line2D([], [], color=cont_info["Sim_1"][0],
+                            linestyle=cont_info["Sim_1"][1],
+                            label=cont_info["Sim_1"][2])
+sim25mm_line = mlines.Line2D([], [], color=cont_info["Sim_2"][0],
+                            linestyle=cont_info["Sim_2"][1],
+                            label=cont_info["Sim_2"][2])
 
-ax.legend(handles=[exp_line,sim25mm_line,sim50mm_line])
+ax.legend(handles=[exp_line,sim50mm_line,sim25mm_line])
 
 fig.tight_layout(pad=0.0, h_pad=0.0, w_pad=0.0, rect=[0.05, 0.05, 0.90, 0.95])
 
-plt.savefig('Plots/UGent_NIST_Parallel_Panel_HF_contours.pdf')
+plt.savefig('Plots/UGent_NIST_Parallel_Panel_HF_contours.pdf', bbox_inches='tight')
 
 # plt.show()
