@@ -209,7 +209,7 @@ jobs:
       - name: Push Uwaterloo Waterloo Methanol Results to release
         if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/Waterloo_Methanol/Computational_Results/2023/Uwaterloo
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/Waterloo_Methanol/Computational_Results/2023/UWaterloo
           cp README.md ./Plots/.
           zip Plots.zip -r Plots
           mv Plots.zip Waterloo_Methanol_UWaterloo_Plots.zip
