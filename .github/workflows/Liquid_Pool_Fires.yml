@@ -195,3 +195,24 @@ jobs:
           gh release upload SCRIPT_FIGURES NIST_Pool_Fires_DBI_Plots.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # UWaterloo - Waterloo Methanol Results
+
+      # Step 1: generate the plots
+      - name: UWaterloo Waterloo Methanol Results
+        run: |
+          echo $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/Waterloo_Methanol/Computational_Results/2023/UWaterloo
+          python UWaterloo_Waterloo_Methanol_plot_results.py
+
+      # Step 2: push the plots to the releases page
+      - name: Push Uwaterloo Waterloo Methanol Results to release
+        if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
+        run: |
+          cd $GITHUB_WORKSPACE/Liquid_Pool_Fires/Waterloo_Methanol/Computational_Results/2023/Uwaterloo
+          cp README.md ./Plots/.
+          zip Plots.zip -r Plots
+          mv Plots.zip Waterloo_Methanol_UWaterloo_Plots.zip
+          gh release upload SCRIPT_FIGURES Waterloo_Methanol_UWaterloo_Plots.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
