@@ -4,20 +4,9 @@
 #
 # Integrate vertical radiant power distribution to confirm radiant fraction
 
-import numpy as np
 import pandas as pd
 
-import sys
-# sys.path.append('<path to macfp-db>/macfp-db/Utilities/')
-sys.path.append('../../../macfp-db/Utilities/')
-
-import macfp
-import importlib
-importlib.reload(macfp) # use for development (while making changes to macfp.py)
-import matplotlib.pyplot as plt
-
-
-R = pd.read_csv('../Experimental_Data/Radiation_global/Radiant_power_distribution.csv', sep=',', header=0);
+R = pd.read_csv('./Radiant_power_distribution.csv', sep=',', header=0);
 R = R.fillna(0.)
 
 XO2 = ["Air-mean","19per-mean","17per-mean","15per-mean"]
