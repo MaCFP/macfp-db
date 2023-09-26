@@ -1,4 +1,88 @@
 Exp_Filename                                               ,Exp_Header_Row,Exp_Data_Row,Exp_x_Col_Name,Exp_y_Col_Name,Exp_Data_Label           ,Exp_Line_Style,Exp_Marker_Style,Plot_Right_Adjust,Cmp_Filename                                      ,Cmp_Header_Row,Cmp_Data_Row,Cmp_x_Col_Name,Cmp_y_Col_Name,Cmp_Data_Label,Cmp_Marker_Style,Cmp_Line_Style,Plot_Title                                  ,Plot_x_Label,Plot_y_Label         ,Plot_x_Min,Plot_x_Max,Plot_y_Min,Plot_y_Max,Seaborn_Color,Savgol_Filter,Savgol_Window,Savgol_Polyorder,Plot_Legend_Location,Plot_Filename
 
-HRR_1Hz_7TestAverage.csv,1,3,Time,HRR,Experiment        ,-     ,        ,        ,Results/SBI_C10_01_cat_hrr.csv,2,3,Time,HRR,BUWFZJ-C; 1.0 cm,                ,-             ,UMD SBI,Time (s),Heat Release Rate (kW),0,200,0,400,TRUE,TRUE,21,5,best,UMD_SBI_HRR_BUWFZJ.pdf
+HRR_1Hz_7TestAverage.csv,1,3,Time,HRR,Experiment        ,-     ,        ,        ,Results/SBI_C10_04_cat_hrr.csv,2,3,Time,HRR,BUWFZJ-C; 1.0 cm,                ,-             ,UMD SBI,Time (s),Heat Release Rate (kW),0,200,0,400,TRUE,TRUE,21,5,best,UMD_SBI_HRR_BUWFZJ.pdf
 HRR_1Hz_7TestAverage.csv,1,3,Time,HRR,Experiment        ,-     ,        ,        ,Results/SBI_C5_01_cat_hrr.csv,2,3,Time,HRR,BUWFZJ-C; 2.0 cm,                ,-             ,UMD SBI,Time (s),Heat Release Rate (kW),0,200,0,400,TRUE,TRUE,21,5,best,UMD_SBI_HRR_BUWFZJ.pdf
+
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x5_y10,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_5_y_10",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x5_y10.pdf
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x5_y10,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_5_y_10",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x5_y10.pdf
+
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x10_y10,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_10_y_10",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x10_y10.pdf
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x10_y10,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_10_y_10",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x10_y10.pdf
+
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x15_y10,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_15_y_10",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x15_y10.pdf
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x15_y10,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_15_y_10",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x15_y10.pdf
+
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x22_y10,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_22_y_10",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x22_y10.pdf
+Total_HF_binned_y_10cm.csv,1,3,Time,HFG_x22_y10,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_22_y_10",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=10,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x22_y10.pdf
+
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x5_y30,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_5_y_30",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x5_y30.pdf
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x5_y30,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_5_y_30",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x5_y30.pdf
+
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x10_y30,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_10_y_30",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x10_y30.pdf
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x10_y30,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_10_y_30",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x10_y30.pdf
+
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x15_y30,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_15_y_30",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x15_y30.pdf
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x15_y30,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_15_y_30",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x15_y30.pdf
+
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x22_y30,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_22_y_30",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,40,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x22_y30.pdf
+Total_HF_binned_y_30cm.csv,1,3,Time,HFG_x22_y30,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_22_y_30",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=30,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,40,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x22_y30.pdf
+
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x5_y50,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_5_y_50",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x5_y50.pdf
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x5_y50,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_5_y_50",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x5_y50.pdf
+
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x10_y50,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_10_y_50",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x10_y50.pdf
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x10_y50,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_10_y_50",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x10_y50.pdf
+
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x15_y50,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_15_y_50",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x15_y50.pdf
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x15_y50,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_15_y_50",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x15_y50.pdf
+
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x22_y50,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_22_y_50",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,50,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x22_y50.pdf
+Total_HF_binned_y_50cm.csv,1,3,Time,HFG_x22_y50,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_22_y_50",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=50,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,50,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x22_y50.pdf
+
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x5_y70,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_5_y_70",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x5_y70.pdf
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x5_y70,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_5_y_70",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x5_y70.pdf
+
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x10_y70,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_10_y_70",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x10_y70.pdf
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x10_y70,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_10_y_70",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x10_y70.pdf
+
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x15_y70,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_15_y_70",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x15_y70.pdf
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x15_y70,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_15_y_70",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x15_y70.pdf
+
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x22_y70,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_22_y_70",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x22_y70.pdf
+Total_HF_binned_y_70cm.csv,1,3,Time,HFG_x22_y70,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_22_y_70",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=70,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x22_y70.pdf
+
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x5_y90,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_5_y_90",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x5_y90.pdf
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x5_y90,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_5_y_90",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x5_y90.pdf
+
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x10_y90,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_10_y_90",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x10_y90.pdf
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x10_y90,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_10_y_90",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x10_y90.pdf
+
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x15_y90,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_15_y_90",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x15_y90.pdf
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x15_y90,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_15_y_90",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x15_y90.pdf
+
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x22_y90,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_22_y_90",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x22_y90.pdf
+Total_HF_binned_y_90cm.csv,1,3,Time,HFG_x22_y90,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_22_y_90",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=90,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x22_y90.pdf
+
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x5_y110,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_5_y_110",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x5_y110.pdf
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x5_y110,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_5_y_110",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x5_y110.pdf
+
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x10_y110,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_10_y_110",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x10_y110.pdf
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x10_y110,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_10_y_110",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x10_y110.pdf
+
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x15_y110,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_15_y_110",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x15_y110.pdf
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x15_y110,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_15_y_110",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x15_y110.pdf
+
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x22_y110,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_22_y_110",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x22_y110.pdf
+Total_HF_binned_y_110cm.csv,1,3,Time,HFG_x22_y110,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_22_y_110",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=110,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,60,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x22_y110.pdf
+
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x5_y130,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_5_y_130",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x5_y130.pdf
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x5_y130,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_5_y_130",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x5_y130.pdf
+
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x10_y130,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_10_y_130",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x10_y130.pdf
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x10_y130,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_10_y_130",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x10_y130.pdf
+
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x15_y130,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_15_y_130",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x15_y130.pdf
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x15_y130,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_15_y_130",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x15_y130.pdf
+
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x22_y130,Exp        ,-     ,        ,0.7,Results/SBI_C10_04_cat_devc.csv,2,3,Time,"HF_x_22_y_130",FDS x:1 cm,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x22_y130.pdf
+Total_HF_binned_y_130cm.csv,1,3,Time,HFG_x22_y130,Exp        ,-     ,        ,0.7,Results/SBI_C5_01_cat_devc.csv,2,3,Time,"HF_x_22_y_130",FDS x:2 cm,                ,-             ,UMD SBI x=5:y=130,Time (s),Gauge Heat Flux (kW/m$^2$),0,200,0,80,TRUE,TRUE,21,5,outside,BUWFZJ_SBI_HFG_x22_y130.pdf

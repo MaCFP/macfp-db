@@ -17,24 +17,28 @@ import pandas as pd
 plt.close('all')
 
 
+font_size_axis = 13
+font_size_contours = 8
+contour_line_widths = 1
+
 # Define general information.
 # ------------------------------
 # Basic information about cases.
 burner_sim_info = {
     "MaCFP_Burner_04": {
         "FluidCells": "2.0 cm",
-        "Color": "brown",
-        "LineStyle": "-.",
+        "Color": "red",
+        "LineStyle": "--",
         "fps": 2},
     "MaCFP_Burner_08": {
         "FluidCells": "1.0 cm",
         "Color": "yellow",
-        "LineStyle": "-.",
+        "LineStyle": "--",
         "fps": 2},
     "MaCFP_Burner_09": {
         "FluidCells": "0.5 cm",
         "Color": "green",
-        "LineStyle": "-.",
+        "LineStyle": "--",
         "fps": 2},
 #     "MaCFP_Burner_10": {
 #         "FluidCells": "0.5 cm",
@@ -100,43 +104,43 @@ levels = [0, 5, 10, 15, 20, 30, 40, 50, 70]
 extent = [-0.3,0.3, 0.0,1.0]
 
 # Filled areas.
-CS = plt.contourf(X, Y, Z, levels,
+CS = plt.contourf(X, Y, Z, levels, extent=extent,
                   cmap=plt.cm.viridis)
 
 # Define colour bar.
 plt.clim(2.0, 65.0)
-plt.colorbar().set_label('Gauge Heat Flux [kW/m²]',size=14)
+plt.colorbar().set_label('Gauge Heat Flux [kW/m²]',size=font_size_axis)
 
 
 # Contour lines of the gauge heat flux distribution.
 contours = plt.contour(X, Y, Z, levels, colors='black')
 plt.clabel(contours, levels, inline=True,
            fmt='%1.0f',  # Set number of digits for contour labels.
-           fontsize=8)
+           fontsize=font_size_contours)
 
 # Define data label.
 data_labels.append(mlines.Line2D([], [], color='k', label='Exp.'))
 
 # Show DEVC locations.
-# Height: 20 cm
-plt.scatter([-25, -15, 0, 15, 25],
-            [20, 20, 20, 20, 20],
-            color='k')
-
-# Height: 50 cm
-plt.scatter([-25, -15, 0, 15, 25],
-            [50, 50, 50, 50, 50],
-            color='k')
-
-# Height: 75 cm
-plt.scatter([-25, -15, 0, 15, 25],
-            [75, 75, 75, 75, 75],
-            color='k')
-
-# Height: 100 cm
-plt.scatter([-25, -15, 0, 15, 25],
-            [100, 100, 100, 100, 100],
-            color='k')
+# # Height: 20 cm
+# plt.scatter([-25, -15, 0, 15, 25],
+#             [20, 20, 20, 20, 20],
+#             color='k')
+#
+# # Height: 50 cm
+# plt.scatter([-25, -15, 0, 15, 25],
+#             [50, 50, 50, 50, 50],
+#             color='k')
+#
+# # Height: 75 cm
+# plt.scatter([-25, -15, 0, 15, 25],
+#             [75, 75, 75, 75, 75],
+#             color='k')
+#
+# # Height: 100 cm
+# plt.scatter([-25, -15, 0, 15, 25],
+#             [100, 100, 100, 100, 100],
+#             color='k')
 
 
 # Plot simulation data.
@@ -183,11 +187,12 @@ for sim_label in burner_sims:
     color = burner_sim_info[sim_label]["Color"]
     linestyle = burner_sim_info[sim_label]["LineStyle"]
     contours = plt.contour(X, Y, Z, levels,
+                           linewidths=contour_line_widths,
                            colors=color,
                            linestyles=linestyle)
     plt.clabel(contours, levels, inline=True,
                fmt='%1.0f',  # Set number of digits for contour labels.
-               fontsize=8, colors=color)
+               fontsize=font_size_contours, colors=color)
 
     # Define data label.
     cell_size = burner_sim_info[sim_label]["FluidCells"]
@@ -197,19 +202,19 @@ for sim_label in burner_sims:
 
 
 # Plot meta data.
-plt.xlabel("Width [cm]")
-plt.ylabel("Height [cm]")
+plt.xlabel("Width [cm]", fontsize=font_size_axis)
+plt.ylabel("Height [cm]", fontsize=font_size_axis)
 
-plt.xlim(xmin=-32, xmax=32)
-plt.ylim(ymin=-2, ymax=142)
+plt.xlim(xmin=-30, xmax=30)
+plt.ylim(ymin=0, ymax=140)
 
 # plt.rcParams.update({'font.size': 12})
 
-plt.tight_layout()
-plt.legend(handles=data_labels, loc='upper center', fontsize=11)
+plt.tight_layout(pad=0.0, h_pad=0.0, w_pad=0.0, rect=[0.05, 0.05, 0.90, 0.95])
+plt.legend(handles=data_labels)#, loc='upper center', fontsize=11)
 
 # Save image.
-plot_dir = os.path.join(sim_dir, "Plots", "Burner_heatflux_colormap.pdf")
-plt.savefig(plot_dir, dpi=320, bbox_inches='tight')
+plot_dir = os.path.join(sim_dir, "Plots", "NIST_Parallel_Panel_Burner_heatflux_colormap_BUWFZJ.pdf")
+plt.savefig(plot_dir, bbox_inches='tight')
 
 # plt.show()

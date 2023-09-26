@@ -1,0 +1,4143 @@
+
+ Fire Dynamics Simulator
+
+ Current Date     : September  5, 2023  15:34:44
+ Revision         : FDS-6.8.0-575-g0c0e32a-master
+ Revision Date    : Fri Aug 18 17:38:45 2023 -0400
+ Compiler         : ifort version 2021.7.1
+ Compilation Date : Aug 21, 2023 14:27:03
+
+ MPI Enabled;    Number of MPI Processes:      96
+ OpenMP Disabled
+
+ MPI version: 3.1
+ MPI library version: Intel(R) MPI Library 2021.7 for Linux* OS
+
+
+ Job TITLE        : (Concatenated) NIST Ethanol Pool, 0.5 cm resolution
+ Job ID string    : NIST_Ethanol_GEOM_Predicted_p5cm_cat
+
+
+ Miscellaneous Parameters
+
+   Simulation Start Time (s)          0.0
+   Simulation End Time (s)           60.0
+   Background Pressure (Pa)     101325.00
+   Ambient Temperature (C)          16.00
+
+   3D Cartesian
+   LES Calculation
+   Eddy Viscosity Model:  Deardorff (C_DEARDORFF = 0.10)
+   Surface INERT Eddy Viscosity Model:  WALE (C_WALE = 0.60)
+   Surface PAN Eddy Viscosity Model:  WALE (C_WALE = 0.60)
+   Surface POOL Eddy Viscosity Model:  WALE (C_WALE = 0.60)
+   Turbulent Prandtl Number:         0.50
+   Turbulent Schmidt Number:         0.50
+
+
+ Pressure solver information
+
+   Solver:                          ULMAT
+   Velocity tolerance (m/s):    2.500E-03
+   Press eqn res tol (1/s^2):   8.000E+05
+   Max pressure iterations:            10
+
+
+ Mass Fraction Transformation Matrix to Convert Species Mixtures (Columns) to Primitive Species (Rows)
+
+                         AIR       ETHANOL   INTERMED  PRODUCTS
+   NITROGEN              0.764811  0.000000  0.598449  0.687548
+   OXYGEN                0.231707  0.000000  0.000000  0.000000
+   CARBON DIOXIDE        0.000593  0.000000  0.000464  0.190430
+   WATER VAPOR           0.002889  0.000000  0.129854  0.121114
+   CARBON MONOXIDE       0.000000  0.000000  0.251284  0.000101
+   SOOT                  0.000000  0.000000  0.005671  0.000808
+   HYDROGEN              0.000000  0.000000  0.014278  0.000000
+   HYDROGEN CYANIDE      0.000000  0.000000  0.000000  0.000000
+   ETHANOL               0.000000  1.000000  0.000000  0.000000
+
+
+ Primitive Species Information
+
+   NITROGEN
+   Gas Species
+   Molecular Weight (g/mol)                28.01340
+   Ambient Density (kg/m^3)                1.181
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   OXYGEN
+   Gas Species
+   Molecular Weight (g/mol)                31.99880
+   Ambient Density (kg/m^3)                1.349
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   CARBON DIOXIDE
+   Gas Species
+   Molecular Weight (g/mol)                44.00950
+   Ambient Density (kg/m^3)                1.855
+           Enthalpy of Formation (J/kg) -8.941E+06
+
+   WATER VAPOR
+   Gas Species
+   Molecular Weight (g/mol)                18.01528
+   Ambient Density (kg/m^3)                0.759
+           Enthalpy of Formation (J/kg) -1.342E+07
+
+   CARBON MONOXIDE
+   Gas Species
+   Molecular Weight (g/mol)                28.01010
+   Ambient Density (kg/m^3)                1.181
+           Enthalpy of Formation (J/kg) -3.946E+06
+
+   SOOT
+   Gas Species
+   Molecular Weight (g/mol)                12.01070
+   Ambient Density (kg/m^3)                0.506
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   HYDROGEN
+   Gas Species
+   Molecular Weight (g/mol)                 2.01588
+   Ambient Density (kg/m^3)                0.085
+           Enthalpy of Formation (J/kg)  0.000E+00
+
+   HYDROGEN CYANIDE
+   Gas Species
+   Molecular Weight (g/mol)                27.02534
+   Ambient Density (kg/m^3)                1.139
+           Enthalpy of Formation (J/kg)  4.924E+06
+
+   ETHANOL
+   Gas Species
+   Molecular Weight (g/mol)                46.06844
+   Ambient Density (kg/m^3)                1.942
+           Enthalpy of Formation (J/kg) -5.100E+06
+
+
+ Tracked (Lumped) Species Information
+
+   AIR
+   Molecular Weight (g/mol)            28.80470
+   Ambient Density (kg/m^3)            1.214
+   Initial Mass Fraction               1.000
+   Enthalpy of Formation (J/kg)     -4.408E+04
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   NITROGEN                       7.648113E-01      7.864151E-01
+   OXYGEN                         2.317067E-01      2.085779E-01
+   CARBON DIOXIDE                 5.932813E-04      3.883091E-04
+   WATER VAPOR                    2.888634E-03      4.618647E-03
+ 
+     Viscosity (kg/m/s) Ambient,  289 K:  1.780E-05
+                                  500 K:  2.616E-05
+                                 1000 K:  4.127E-05
+                                 1500 K:  5.372E-05
+                                 2000 K:  6.475E-05
+   Therm. Cond. (W/m/K) Ambient,  289 K:  2.532E-02
+                                  500 K:  3.815E-02
+                                 1000 K:  6.680E-02
+                                 1500 K:  9.232E-02
+                                 2000 K:  1.150E-01
+        Enthalpy (J/kg) Ambient,  289 K: -5.320E+04
+                                  500 K:  1.626E+05
+                                 1000 K:  7.109E+05
+                                 1500 K:  1.307E+06
+                                 2000 K:  1.930E+06
+    Spec. Heat (J/kg/K) Ambient,  289 K:  1.013E+03
+                                  500 K:  1.039E+03
+                                 1000 K:  1.153E+03
+                                 1500 K:  1.224E+03
+                                 2000 K:  1.265E+03
+   Diff. Coeff. (m^2/s) Ambient,  289 K:  1.943E-05
+                                  500 K:  4.957E-05
+                                 1000 K:  1.578E-04
+                                 1500 K:  3.091E-04
+                                 2000 K:  4.977E-04
+ Gibbs Energy Amb. (kJ/mol),  289 K: -5.722E+01
+                                  500 K: -9.997E+01
+                                 1000 K: -2.109E+02
+                                 1500 K: -3.305E+02
+                                 2000 K: -4.560E+02
+
+   ETHANOL
+   Molecular Weight (g/mol)            46.06844
+   Ambient Density (kg/m^3)            1.942
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)     -5.100E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   ETHANOL                        1.000000E+00      1.000000E+00
+ 
+     Viscosity (kg/m/s) Ambient,  289 K:  8.363E-06
+                                  500 K:  1.448E-05
+                                 1000 K:  2.625E-05
+                                 1500 K:  3.555E-05
+                                 2000 K:  4.346E-05
+   Therm. Cond. (W/m/K) Ambient,  289 K:  1.381E-02
+                                  500 K:  3.586E-02
+                                 1000 K:  9.678E-02
+                                 1500 K:  1.525E-01
+                                 2000 K:  2.002E-01
+        Enthalpy (J/kg) Ambient,  289 K: -5.113E+06
+                                  500 K: -4.745E+06
+                                 1000 K: -3.420E+06
+                                 1500 K: -1.730E+06
+                                 2000 K:  1.444E+05
+    Spec. Heat (J/kg/K) Ambient,  289 K:  1.387E+03
+                                  500 K:  2.080E+03
+                                 1000 K:  3.097E+03
+                                 1500 K:  3.604E+03
+                                 2000 K:  3.868E+03
+   Diff. Coeff. (m^2/s) Ambient,  289 K:  1.142E-05
+                                  500 K:  3.087E-05
+                                 1000 K:  1.018E-04
+                                 1500 K:  2.012E-04
+                                 2000 K:  3.247E-04
+ Gibbs Energy Amb. (kJ/mol),  289 K: -3.160E+02
+                                  500 K: -3.795E+02
+                                 1000 K: -5.621E+02
+                                 1500 K: -7.807E+02
+                                 2000 K: -1.027E+03
+
+   INTERMEDIATE PRODUCTS
+   Molecular Weight (g/mol)            22.16932
+   Ambient Density (kg/m^3)            0.934
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)     -2.739E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   NITROGEN                       5.984492E-01      4.736023E-01
+   CARBON DIOXIDE                 4.642304E-04      2.338512E-04
+   WATER VAPOR                    1.298539E-01      1.597962E-01
+   CARBON MONOXIDE                2.512841E-01      1.988853E-01
+   SOOT                           5.671070E-03      1.046765E-02
+   HYDROGEN                       1.427752E-02      1.570147E-01
+   HYDROGEN CYANIDE               0.000000E+00      0.000000E+00
+ 
+     Viscosity (kg/m/s) Ambient,  289 K:  1.571E-05
+                                  500 K:  2.339E-05
+                                 1000 K:  3.803E-05
+                                 1500 K:  5.029E-05
+                                 2000 K:  6.113E-05
+   Therm. Cond. (W/m/K) Ambient,  289 K:  3.167E-02
+                                  500 K:  4.800E-02
+                                 1000 K:  8.553E-02
+                                 1500 K:  1.221E-01
+                                 2000 K:  1.558E-01
+        Enthalpy (J/kg) Ambient,  289 K: -2.751E+06
+                                  500 K: -2.467E+06
+                                 1000 K: -1.746E+06
+                                 1500 K: -9.538E+05
+                                 2000 K: -1.114E+05
+    Spec. Heat (J/kg/K) Ambient,  289 K:  1.333E+03
+                                  500 K:  1.368E+03
+                                 1000 K:  1.518E+03
+                                 1500 K:  1.642E+03
+                                 2000 K:  1.722E+03
+   Diff. Coeff. (m^2/s) Ambient,  289 K:  2.771E-05
+                                  500 K:  7.139E-05
+                                 1000 K:  2.291E-04
+                                 1500 K:  4.497E-04
+                                 2000 K:  7.250E-04
+ Gibbs Energy Amb. (kJ/mol),  289 K: -1.145E+02
+                                  500 K: -1.565E+02
+                                 1000 K: -2.657E+02
+                                 1500 K: -3.836E+02
+                                 2000 K: -5.077E+02
+
+   PRODUCTS
+   Molecular Weight (g/mol)            28.03928
+   Ambient Density (kg/m^3)            1.182
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)     -3.329E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   NITROGEN                       6.875477E-01      6.881828E-01
+   CARBON DIOXIDE                 1.904295E-01      1.213262E-01
+   WATER VAPOR                    1.211136E-01      1.885031E-01
+   CARBON MONOXIDE                1.010232E-04      1.011284E-04
+   SOOT                           8.081854E-04      1.886729E-03
+   HYDROGEN CYANIDE               0.000000E+00      0.000000E+00
+ 
+     Viscosity (kg/m/s) Ambient,  289 K:  1.579E-05
+                                  500 K:  2.372E-05
+                                 1000 K:  3.886E-05
+                                 1500 K:  5.145E-05
+                                 2000 K:  6.254E-05
+   Therm. Cond. (W/m/K) Ambient,  289 K:  2.295E-02
+                                  500 K:  3.606E-02
+                                 1000 K:  6.745E-02
+                                 1500 K:  9.725E-02
+                                 2000 K:  1.241E-01
+        Enthalpy (J/kg) Ambient,  289 K: -3.339E+06
+                                  500 K: -3.101E+06
+                                 1000 K: -2.482E+06
+                                 1500 K: -1.793E+06
+                                 2000 K: -1.062E+06
+    Spec. Heat (J/kg/K) Ambient,  289 K:  1.100E+03
+                                  500 K:  1.157E+03
+                                 1000 K:  1.317E+03
+                                 1500 K:  1.428E+03
+                                 2000 K:  1.494E+03
+   Diff. Coeff. (m^2/s) Ambient,  289 K:  1.904E-05
+                                  500 K:  4.968E-05
+                                 1000 K:  1.608E-04
+                                 1500 K:  3.165E-04
+                                 2000 K:  5.106E-04
+ Gibbs Energy Amb. (kJ/mol),  289 K: -1.607E+02
+                                  500 K: -2.037E+02
+                                 1000 K: -3.163E+02
+                                 1500 K: -4.388E+02
+                                 2000 K: -5.681E+02
+
+
+ Gas Phase Reaction Information
+
+   Reaction 1
+
+      Priority:                                                               1
+
+      Fuel                                           Heat of Combustion (kJ/kg)
+      ETHANOL                                                         7332.6961
+      2-step reaction,  Total Heat of Combustion                     27459.3140
+
+      Primitive Species Stoich. Coeff.
+      Species ID                                                          Molar
+      NITROGEN                                                         0.000000
+      OXYGEN                                                          -1.200000
+      WATER VAPOR                                                      1.500000
+      CARBON MONOXIDE                                                  1.900000
+      SOOT                                                             0.100000
+      HYDROGEN                                                         1.500000
+      ETHANOL                                                         -1.000000
+
+      Tracked (Lumped) Species Stoich. Coeff.
+      Species ID                                             Molar         Mass
+      AIR                                                -5.753245    -3.597268
+      ETHANOL                                            -1.000000    -1.000000
+      INTERMEDIATE PRODUCTS                               9.553245     4.597268
+
+      Reaction Kinetics
+
+      Fast chemistry
+
+      ODE Solver:  EXPLICIT EULER
+
+      Extinction Model:  EXTINCTION 2
+      Auto-Ignition Temperature (C):            -273.1
+      Critical Flame Temperature (C):           1397.0
+
+      Prescribed Radiative Fraction:             0.260
+
+   Reaction 2
+
+      Priority:                                                               2
+
+      Fuel                                           Heat of Combustion (kJ/kg)
+      INTERMEDIATE PRODUCTS                                           4377.9521
+
+      Primitive Species Stoich. Coeff.
+      Species ID                                                          Molar
+      OXYGEN                                                          -0.185120
+      CARBON DIOXIDE                                                   0.205969
+      WATER VAPOR                                                      0.157015
+      CARBON MONOXIDE                                                 -0.198713
+      SOOT                                                            -0.007256
+      HYDROGEN                                                        -0.157015
+
+      Tracked (Lumped) Species Stoich. Coeff.
+      Species ID                                             Molar         Mass
+      AIR                                                -0.887532    -1.153174
+      INTERMEDIATE PRODUCTS                              -1.000000    -1.000000
+      PRODUCTS                                            1.702412     2.153174
+
+      Reaction Kinetics
+
+      Fast chemistry
+
+      ODE Solver:  EXPLICIT EULER
+
+      Prescribed Radiative Fraction:             0.260
+
+
+ Material Information
+
+   1 STEEL
+     Emissivity:                                  0.800
+     Density (kg/m3):                            7800.0
+     Specific Heat (kJ/kg/K) Ambient,  289 K:  4.650E-01
+                                       350 K:  4.650E-01
+                                       500 K:  4.650E-01
+                                       800 K:  4.650E-01
+     Therm. Cond. (W/m/K) Ambient,     289 K:  5.400E+01
+                                       350 K:  5.400E+01
+                                       500 K:  5.400E+01
+                                       800 K:  5.400E+01
+     Enthalpy (kJ/kg) Ambient,         289 K:  1.344E+02
+                                       350 K:  1.628E+02
+                                       500 K:  2.325E+02
+                                       800 K:  3.720E+02
+
+   2 ETHANOL LIQUID
+     Emissivity:                                  1.000
+     Density (kg/m3):                             794.0
+     Specific Heat (kJ/kg/K) Ambient,  289 K:  2.440E+00
+                                       350 K:  2.440E+00
+                                       500 K:  2.440E+00
+                                       800 K:  2.440E+00
+     Therm. Cond. (W/m/K) Ambient,     289 K:  1.700E-01
+                                       350 K:  1.700E-01
+                                       500 K:  1.700E-01
+                                       800 K:  1.700E-01
+     Enthalpy (kJ/kg) Ambient,         289 K: -6.009E+03
+                                       350 K: -5.860E+03
+                                       500 K: -5.494E+03
+                                       800 K: -4.762E+03
+     Absorption coefficient (1/m)  1534.30
+     Liquid evaporation reaction
+        Gaseous Yields:
+        AIR                                                         :     0.00
+        ETHANOL                                                     :     1.00
+        INTERMEDIATE PRODUCTS                                       :     0.00
+        PRODUCTS                                                    :     0.00
+        Boiling temperature (C):    78.35
+        H_R (kJ/kg)            :  8.962E+02
+
+
+ Surface Conditions
+
+   0 INERT (DEFAULT)
+
+   1 PAN
+     Material List
+          1  STEEL
+     Layer  1
+        Thickness   (m):  0.00300
+        Density (kg/m3):  7800.00
+        STEEL, Mass fraction:    1.00
+     Reaction products considered from the first  0.50 layers.
+     Total surface density    23.400 kg/m2
+     Solid Phase Node, Layer, Coordinates(m):
+                    0      1       0.0000000
+                    1      1       0.0030000
+     Exposed Backing
+
+   2 POOL
+     Material List
+          1  ETHANOL LIQUID
+     Layer  1
+        Thickness   (m):  0.15000
+        Density (kg/m3):   794.00
+        ETHANOL LIQUID, Mass fraction:    1.00
+     Reaction products considered from the first  0.50 layers.
+     Total surface density   119.100 kg/m2
+     Solid Phase Node, Layer, Coordinates(m):
+                    0      1       0.0000000
+                    1      1       0.0002941
+                    2      1       0.0008824
+                    3      1       0.0020588
+                    4      1       0.0044118
+                    5      1       0.0091176
+                    6      1       0.0185294
+                    7      1       0.0373529
+                    8      1       0.0750000
+                    9      1       0.1126471
+                   10      1       0.1314706
+                   11      1       0.1408824
+                   12      1       0.1455882
+                   13      1       0.1479412
+                   14      1       0.1491176
+                   15      1       0.1497059
+                   16      1       0.1500000
+     Exposed Backing
+
+   3 OPEN
+     Passive Vent to Atmosphere
+
+   4 MIRROR
+     Symmetry Plane
+
+   5 INTERPOLATED
+
+   6 PERIODIC
+
+   7 HVAC
+
+   8 MASSLESS TRACER
+
+   9 DROPLET
+
+  10 MASSLESS TARGET
+
+  11 PERIODIC FLOW ONLY
+
+
+ Lagrangian Particle Classes
+
+
+ PROPerty Information
+
+   1 TC
+     Smokeview ID                sensor
+
+
+ Cut-off Density and Temperature
+
+    Minimum Temperature:  -259.1 C
+    Maximum Temperature:  2726.8 C
+    Minimum Density:  1.214E-01 kg/m3
+    Maximum Density:  8.020E+01 kg/m3
+
+
+ Device Information
+
+   1 ID: MLRPUA
+     QUANTITY: BURNING RATE
+     Coordinates (X,Y,Z):   -5.000000E-05   -5.000000E-05    4.500000E-02
+     SPATIAL STATISTIC: MEAN
+     TEMPORAL STATISTIC: TIME AVERAGE
+   2 ID: HEAT_FLUX
+     QUANTITY: TOTAL HEAT FLUX
+     Coordinates (X,Y,Z):   -5.000000E-05   -5.000000E-05    4.500000E-02
+     SPATIAL STATISTIC: MEAN
+     TEMPORAL STATISTIC: TIME AVERAGE
+   3 ID: MLRPUA_ideal
+     QUANTITY: TOTAL HEAT FLUX
+     Coordinates (X,Y,Z):   -5.000000E-05   -5.000000E-05    4.500000E-02
+     SPATIAL STATISTIC: MEAN
+     TEMPORAL STATISTIC: TIME AVERAGE
+   4 ID: T_SURF_MEAN
+     QUANTITY: WALL TEMPERATURE
+     Coordinates (X,Y,Z):   -5.000000E-05   -5.000000E-05    4.500000E-02
+     SPATIAL STATISTIC: MEAN
+     TEMPORAL STATISTIC: TIME AVERAGE
+   5 ID: T_SURF_MAX
+     QUANTITY: WALL TEMPERATURE
+     Coordinates (X,Y,Z):   -5.000000E-05   -5.000000E-05    4.500000E-02
+     SPATIAL STATISTIC: MAX
+     TEMPORAL STATISTIC: TIME AVERAGE
+   6 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+   7 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+   8 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+   9 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  10 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  11 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  12 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  13 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  14 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  15 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  16 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  17 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  18 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  19 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  20 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  21 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  22 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  23 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  24 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  25 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  26 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  27 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  28 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  29 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  30 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  31 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  32 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  33 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  34 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  35 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  36 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  37 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  38 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  39 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  40 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  41 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  42 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  43 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  44 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  45 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  46 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  47 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  48 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  49 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  50 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  51 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  52 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  53 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  54 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  55 ID: TC_CL
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  Property ID: TC
+  56 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  57 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  58 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  59 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  60 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  61 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  62 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  63 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  64 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  65 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  66 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  67 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  68 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  69 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  70 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  71 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  72 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  73 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  74 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  75 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  76 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  77 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  78 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  79 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  80 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  81 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  82 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  83 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  84 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  85 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  86 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  87 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  88 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  89 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  90 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  91 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  92 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  93 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  94 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  95 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  96 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  97 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  98 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+  99 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 100 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 101 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 102 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 103 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 104 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 105 ID: TG_CL
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 106 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 107 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 108 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 109 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 110 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 111 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 112 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 113 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 114 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 115 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 116 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 117 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 118 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 119 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 120 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 121 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 122 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 123 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 124 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 125 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 126 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 127 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 128 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 129 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 130 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 131 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 132 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 133 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 134 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 135 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 136 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 137 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 138 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 139 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 140 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 141 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 142 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 143 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 144 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 145 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 146 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 147 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 148 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 149 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 150 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 151 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 152 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 153 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 154 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 155 ID: w_CL
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 156 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 157 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 158 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 159 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 160 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 161 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 162 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 163 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 164 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 165 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 166 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 167 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 168 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 169 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 170 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 171 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 172 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 173 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 174 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 175 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 176 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 177 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 178 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 179 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 180 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 181 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 182 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 183 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 184 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 185 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 186 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 187 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 188 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 189 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 190 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 191 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 192 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 193 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 194 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 195 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 196 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 197 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 198 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 199 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 200 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 201 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 202 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 203 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 204 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 205 ID: TC_CL_RMS
+     QUANTITY: THERMOCOUPLE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RMS
+  Property ID: TC
+ 206 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RMS
+ 207 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RMS
+ 208 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RMS
+ 209 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RMS
+ 210 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RMS
+ 211 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 212 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 213 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 214 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 215 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 216 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 217 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 218 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 219 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 220 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 221 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 222 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 223 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 224 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 225 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 226 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 227 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 228 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 229 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 230 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 231 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 232 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 233 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 234 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 235 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 236 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 237 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 238 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 239 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 240 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 241 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 242 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 243 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 244 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 245 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 246 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 247 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 248 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 249 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 250 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 251 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 252 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 253 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 254 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 255 ID: TG_CL_RMS
+     QUANTITY: TEMPERATURE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 256 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RMS
+ 257 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RMS
+ 258 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RMS
+ 259 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RMS
+ 260 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RMS
+ 261 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 262 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 263 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 264 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 265 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 266 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 267 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 268 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 269 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 270 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 271 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 272 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 273 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 274 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 275 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 276 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 277 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 278 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 279 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 280 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 281 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 282 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 283 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 284 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 285 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 286 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 287 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 288 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 289 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 290 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 291 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 292 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 293 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 294 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 295 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 296 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 297 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 298 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 299 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 300 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 301 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RMS
+ 302 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RMS
+ 303 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RMS
+ 304 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RMS
+ 305 ID: w_CL_RMS
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RMS
+ 306 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 307 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 308 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 309 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 310 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 311 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 312 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 313 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 314 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 315 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 316 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 317 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 318 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 319 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 320 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 321 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 322 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 323 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 324 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 325 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 326 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 327 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 328 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 329 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 330 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 331 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 332 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 333 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 334 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 335 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 336 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 337 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 338 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 339 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 340 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 341 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 342 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 343 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 344 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 345 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 346 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 347 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 348 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 349 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 350 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 351 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 352 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 353 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 354 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 355 ID: X_O2
+     QUANTITY: VOLUME FRACTION
+     Species ID: OXYGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 356 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 357 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 358 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 359 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 360 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 361 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 362 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 363 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 364 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 365 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 366 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 367 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 368 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 369 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 370 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 371 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 372 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 373 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 374 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 375 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 376 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 377 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 378 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 379 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 380 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 381 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 382 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 383 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 384 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 385 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 386 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 387 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 388 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 389 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 390 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 391 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 392 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 393 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 394 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 395 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 396 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 397 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 398 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 399 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 400 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 401 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 402 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 403 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 404 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 405 ID: X_CO2
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON DIOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 406 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 407 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 408 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 409 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 410 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 411 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 412 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 413 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 414 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 415 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 416 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 417 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 418 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 419 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 420 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 421 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 422 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 423 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 424 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 425 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 426 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 427 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 428 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 429 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 430 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 431 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 432 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 433 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 434 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 435 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 436 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 437 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 438 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 439 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 440 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 441 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 442 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 443 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 444 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 445 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 446 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 447 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 448 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 449 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 450 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 451 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 452 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 453 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 454 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 455 ID: X_CO
+     QUANTITY: VOLUME FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 456 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 457 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 458 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 459 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 460 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 461 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 462 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 463 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 464 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 465 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 466 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 467 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 468 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 469 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 470 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 471 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 472 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 473 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 474 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 475 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 476 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 477 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 478 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 479 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 480 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 481 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 482 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 483 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 484 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 485 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 486 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 487 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 488 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 489 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 490 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 491 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 492 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 493 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 494 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 495 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 496 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 497 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 498 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 499 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 500 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 501 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 502 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 503 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 504 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 505 ID: X_FUEL
+     QUANTITY: VOLUME FRACTION
+     Species ID: ETHANOL
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 506 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 507 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 508 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 509 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 510 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 511 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 512 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 513 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 514 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 515 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 516 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 517 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 518 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 519 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 520 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 521 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 522 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 523 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 524 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 525 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 526 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 527 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 528 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 529 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 530 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 531 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 532 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 533 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 534 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 535 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 536 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 537 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 538 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 539 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 540 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 541 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 542 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 543 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 544 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 545 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 546 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 547 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 548 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 549 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 550 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 551 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 552 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 553 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 554 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 555 ID: X_H2O
+     QUANTITY: VOLUME FRACTION
+     Species ID: WATER VAPOR
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 556 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 557 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 558 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 559 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 560 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 561 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 562 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 563 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 564 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 565 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 566 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 567 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 568 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 569 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 570 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 571 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 572 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 573 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 574 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 575 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 576 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 577 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 578 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 579 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 580 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 581 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 582 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 583 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 584 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 585 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 586 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 587 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 588 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 589 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 590 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 591 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 592 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 593 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 594 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 595 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 596 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 597 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 598 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 599 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 600 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 601 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 602 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 603 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 604 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 605 ID: X_H2
+     QUANTITY: VOLUME FRACTION
+     Species ID: HYDROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 606 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 607 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 608 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 609 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 610 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 611 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 612 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 613 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 614 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 615 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 616 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 617 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 618 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 619 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 620 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 621 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 622 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 623 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 624 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 625 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 626 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 627 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 628 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 629 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 630 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 631 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 632 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 633 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 634 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 635 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 636 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 637 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 638 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 639 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 640 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 641 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 642 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 643 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 644 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 645 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 646 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 647 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 648 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 649 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 650 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 651 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 652 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 653 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 654 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 655 ID: X_N2
+     QUANTITY: VOLUME FRACTION
+     Species ID: NITROGEN
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 656 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 657 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 658 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 659 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 660 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 661 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 662 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 663 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 664 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 665 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 666 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 667 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 668 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 669 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 670 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 671 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 672 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 673 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 674 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 675 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 676 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 677 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 678 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 679 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 680 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 681 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 682 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 683 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 684 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 685 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 686 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 687 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 688 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 689 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 690 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 691 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 692 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 693 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 694 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 695 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 696 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 697 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 698 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 699 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 700 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 701 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 702 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 703 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 704 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 705 ID: Y_CO
+     QUANTITY: MASS FRACTION
+     Species ID: CARBON MONOXIDE
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 706 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 707 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 708 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 709 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 710 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.000000E-02
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 711 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 712 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 713 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 714 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 715 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 716 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 717 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 718 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 719 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 720 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    2.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 721 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 722 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 723 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 724 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 725 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    3.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 726 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 727 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 728 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 729 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 730 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    4.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 731 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 732 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 733 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 734 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 735 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    5.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 736 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 737 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 738 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 739 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 740 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    6.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 741 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 742 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 743 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 744 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 745 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    7.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 746 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 747 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 748 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 749 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 750 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    8.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 751 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.100000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 752 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.300000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 753 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.500000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 754 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.700000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 755 ID: Y_Soot
+     QUANTITY: MASS FRACTION
+     Species ID: SOOT
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    9.900000E-01
+     TEMPORAL STATISTIC: RUNNING AVERAGE
+ 756 ID: w
+     QUANTITY: W-VELOCITY
+     Coordinates (X,Y,Z):    1.000000E-03    1.000000E-03    1.510000E-01
+     TEMPORAL STATISTIC: TIME AVERAGE
+
+
+ Boundary File Information
+
+   1 Quantity: BURNING RATE
+   2 Quantity: GAUGE HEAT FLUX
+   3 Quantity: WALL TEMPERATURE
+   4 Quantity: ETHANOL MASS FLUX
+
+
+ Radiation Model Information
+
+   Number of control angles  616
+   Time step increment        10
+   Angle increment            10
+   Theta band N_phi   Solid angle
+     1:        4     0.019
+     2:       12     0.019
+     3:       20     0.019
+     4:       24     0.021
+     5:       32     0.020
+     6:       36     0.021
+     7:       40     0.021
+     8:       44     0.021
+     9:       48     0.020
+    10:       48     0.020
+    11:       48     0.020
+    12:       48     0.020
+    13:       44     0.021
+    14:       40     0.021
+    15:       36     0.021
+    16:       32     0.020
+    17:       24     0.021
+    18:       20     0.019
+    19:       12     0.019
+    20:        4     0.019
+   Using gray gas absorption.
+   Mean beam length  1.000E-01 m
+ 
+ 
+
+ Run Time Diagnostics
+
+ Time Step:      1, Simulation Time:    0.0058 s, Step Size: 0.00576 s, Pressure Iterations: 2
+ Time Step:      2, Simulation Time:     0.012 s, Step Size: 0.00576 s, Pressure Iterations: 3
+ Time Step:      3, Simulation Time:     0.017 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:      4, Simulation Time:     0.023 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:      5, Simulation Time:     0.029 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:      6, Simulation Time:     0.035 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:      7, Simulation Time:     0.040 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:      8, Simulation Time:     0.046 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:      9, Simulation Time:     0.052 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:     10, Simulation Time:     0.058 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:     20, Simulation Time:      0.12 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:     30, Simulation Time:      0.17 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:     40, Simulation Time:      0.23 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:     50, Simulation Time:      0.29 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:     60, Simulation Time:      0.35 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:     70, Simulation Time:      0.40 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:     80, Simulation Time:      0.46 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:     90, Simulation Time:      0.52 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:    100, Simulation Time:      0.58 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:    200, Simulation Time:      1.15 s, Step Size: 0.00576 s, Pressure Iterations: 1
+ Time Step:    300, Simulation Time:      1.73 s, Step Size: 0.00576 s, Pressure Iterations: 2
+ Time Step:    400, Simulation Time:      2.11 s, Step Size: 0.00325 s, Pressure Iterations: 2
+ Time Step:    500, Simulation Time:      2.40 s, Step Size: 0.00263 s, Pressure Iterations: 2
+ Time Step:    600, Simulation Time:      2.66 s, Step Size: 0.00237 s, Pressure Iterations: 3
+ Time Step:    700, Simulation Time:      2.89 s, Step Size: 0.00237 s, Pressure Iterations: 4
+ Time Step:    800, Simulation Time:      3.12 s, Step Size: 0.00211 s, Pressure Iterations: 6
+ Time Step:    900, Simulation Time:      3.29 s, Step Size: 0.00166 s, Pressure Iterations: 6
+ Time Step:   1000, Simulation Time:      3.43 s, Step Size: 0.00117 s, Pressure Iterations: 5

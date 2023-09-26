@@ -31,18 +31,27 @@ Domain:
 
 Total cells per cell size:
 - Simulation with sample:
-    - 2.0 cm:    
-    - 1.0 cm:  
+    - 2.0 cm:   504,000
+    - 1.0 cm: 4,032,000
 
 Cell type: Cubes
 
 Comments: The cases use uniform cells throughout.
 
+#### Computational domain discretization (solid solver)
+
+Heat conduction: 1-dimensional
+Solid cells: uniform (FDS: STRETCH_FACTOR=1)
+Sample thickness: 0.0058 m
+Cell size: 0.0000337 m (FDS: CELL_SIZE_FACTOR=0.1)
+n Nodes: 173
+
+
 #### Angular space discretization (radiation solver)
 
 Number of solid angles: 104
-
-Comments: This is the default number of solid angles in FDS
+Gray gas model absorption coefficient path length: 0.1 m
+Comments: These are the default settings in FDS
 
 ------------------
 
@@ -107,24 +116,24 @@ Pressure-velocity coupling: Low Mach number approximation
 
 ------------------
 
-### Computational Cost (hh:mm:ss)
+### Computational Cost (dd-hh:mm:ss)
 Data for simulations including PMMA sample.
 
 Wall clock time:
-- 2.0 cm ()
-- 1.0 cm ()
+- 2.0 cm (02-16:45:00)
+- 1.0 cm (07-00:02:08)
 
 Simulation time:
-- 2.0 cm ( s)
-- 1.0 cm ( s)
+- 2.0 cm (200.00 s)
+- 1.0 cm (106.29 s)
 
 Number of CPUs (MPI Processes):
-- 2.0 cm ()
-- 1.0 cm ()
+- 2.0 cm (63)
+- 1.0 cm (63)
 
 CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells):
-- 2.0 cm ( s)
-- 1.0 cm ( s)
+- 2.0 cm (0.0916875 s)
+- 1.0 cm (0.6098035621883526 s)
 
 ------------------
 
@@ -142,6 +151,6 @@ Material parameter set is model-dependent, inverse modelling was performed with 
 
 ### Relevant publications
 
-1. BUW_FZJ_C contribution to MaCFP-3: https://zenodo.org/record/8005836
+1. BUW_FZJ_C pyrolysis parameter set contribution to MaCFP-3: https://zenodo.org/record/8005836
 
 2. Article providing overview over parameter estimation procedure. Note, here (BUW_FZJ_C) the pyrolysis reactions release either CH4 or CO2 not the mixture discussed in the article: https://doi.org/10.1016/j.firesaf.2023.103926
