@@ -25,4 +25,24 @@ macfp.dataplot(config_filename='NIST_Pool_Fires_cmp_config.csv',
                verbose=True,
                plot_list=['all'])
 
+macfp.dataplot(config_filename='NIST_Pool_Fires_cmp_config_no_sup.csv',
+               institute='NIST',
+               revision='MaCFP-3, Tsukuba, 2023',
+               expdir='../../../Experimental_Data/',
+               cmpdir='./No_Suppression/',
+               pltdir='./Plots/',
+               close_figs=True,
+               verbose=True,
+               plot_list=['all'])
+
+macfp.dataplot(config_filename='NIST_Pool_Fires_cmp_config_no_sup_default_radi.csv',
+               institute='NIST',
+               revision='MaCFP-3, Tsukuba, 2023',
+               expdir='../../../Experimental_Data/',
+               cmpdir='./Default_Radi/',
+               pltdir='./Plots/',
+               close_figs=True,
+               verbose=True,
+               plot_list=['all'])
+
 # plt.show()
