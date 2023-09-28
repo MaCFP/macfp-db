@@ -124,6 +124,14 @@ def plot_to_fig(x_data,y_data,**kwargs):
             ax.fill_between(x_data,y_data*(1.-kwargs.get('y_error_relative'))-kwargs.get('y_error_absolute'),y_data*(1.+kwargs.get('y_error_relative'))+kwargs.get('y_error_absolute'),
                 alpha=0.1,color=kwargs.get('marker_edge_color'))
 
+    try:
+        y_error = kwargs.get('y_error_vector')
+        if len(y_data)==len(y_error):
+            ax.fill_between(x_data,y_data-y_error,y_data+y_error,
+                alpha=0.1,color=kwargs.get('marker_edge_color'))
+    except:
+        y_error = 0.
+
     if kwargs.get('ticklabel_fontsize'):
         ticklabel_fontsize=kwargs.get('ticklabel_fontsize')
     else:
@@ -389,6 +397,11 @@ def define_plot_parameters(C,irow):
                 Exp_Error_Relative = 0.
         except:
             Exp_Error_Relative = 0.
+
+        try:
+            Exp_y_Error_Col_Name = C.values[irow,C.columns.get_loc('Exp_y_Error_Col_Name')]
+        except:
+            Exp_y_Error_Col_Name = None
 
         try:
             Cmp_Filename = C.values[irow,C.columns.get_loc('Cmp_Filename')]
@@ -784,11 +797,19 @@ def dataplot(config_filename,**kwargs):
             if (pp.Exp_Data_Row-pp.Exp_Header_Row==1):
                 x = E[pp.Exp_x_Col_Name].values[:].astype(float)
                 y = E[pp.Exp_y_Col_Name].values[:].astype(float)
+                if (pp.Exp_y_Error_Col_Name):
+                    y_error = E[pp.Exp_y_Error_Col_Name].values[:].astype(float)
+                else:
+                    y_error = 0.
             else:
                 # don't exactly understand this, but df.values behave differently if they are object type
                 # when the header and data rows are separated, then there are usually strings in the df.values
                 x = E[pp.Exp_x_Col_Name].values[pp.Exp_Data_Row-2:].astype(float)
                 y = E[pp.Exp_y_Col_Name].values[pp.Exp_Data_Row-2:].astype(float)
+                if (pp.Exp_y_Error_Col_Name):
+                    y_error = E[pp.Exp_y_Error_Col_Name].values[pp.Exp_Data_Row-2:].astype(float)
+                else:
+                    y_error = 0.
 
             if (pp.Plot_Flip_Axis):
                 if (pp.Seaborn_Color):
@@ -797,6 +818,7 @@ def dataplot(config_filename,**kwargs):
                         data_label=pp.Exp_Data_Label,
                         y_error_absolute=pp.Exp_Error_Absolute,
                         y_error_relative=pp.Exp_Error_Relative,
+                        y_error_vector=y_error,
                         x_label=pp.Plot_y_Label,
                         y_label=pp.Plot_x_Label,
                         marker_style=pp.Exp_Marker_Style,
@@ -818,6 +840,7 @@ def dataplot(config_filename,**kwargs):
                         data_label=pp.Exp_Data_Label,
                         y_error_absolute=pp.Exp_Error_Absolute,
                         y_error_relative=pp.Exp_Error_Relative,
+                        y_error_vector=y_error,
                         x_label=pp.Plot_y_Label,
                         y_label=pp.Plot_x_Label,
                         marker_style=pp.Exp_Marker_Style,
@@ -845,6 +868,7 @@ def dataplot(config_filename,**kwargs):
                         data_label=pp.Exp_Data_Label,
                         y_error_absolute=pp.Exp_Error_Absolute,
                         y_error_relative=pp.Exp_Error_Relative,
+                        y_error_vector=y_error,
                         x_label=pp.Plot_x_Label,
                         y_label=pp.Plot_y_Label,
                         marker_style=pp.Exp_Marker_Style,
@@ -867,6 +891,7 @@ def dataplot(config_filename,**kwargs):
                         data_label=pp.Exp_Data_Label,
                         y_error_absolute=pp.Exp_Error_Absolute,
                         y_error_relative=pp.Exp_Error_Relative,
+                        y_error_vector=y_error,
                         x_label=pp.Plot_x_Label,
                         y_label=pp.Plot_y_Label,
                         marker_style=pp.Exp_Marker_Style,
@@ -901,11 +926,19 @@ def dataplot(config_filename,**kwargs):
                 if (pp.Exp_Data_Row-pp.Exp_Header_Row==1):
                     x = E[pp.Exp_x_Col_Name].values[:].astype(float)
                     y = E[pp.Exp_y_Col_Name].values[:].astype(float)
+                    if (pp.Exp_y_Error_Col_Name):
+                        y_error = E[pp.Exp_y_Error_Col_Name].values[:].astype(float)
+                    else:
+                        y_error = 0.
                 else:
                     # don't exactly understand this, but df.values behave differently if they are object type
                     # when the header and data rows are separated, then there are usually strings in the df.values
                     x = E[pp.Exp_x_Col_Name].values[pp.Exp_Data_Row-2:].astype(float)
                     y = E[pp.Exp_y_Col_Name].values[pp.Exp_Data_Row-2:].astype(float)
+                    if (pp.Exp_y_Error_Col_Name):
+                        y_error = E[pp.Exp_y_Error_Col_Name].values[pp.Exp_Data_Row-2:].astype(float)
+                    else:
+                        y_error = 0.
 
                 if (pp.Plot_Flip_Axis):
                     if (pp.Seaborn_Color):
@@ -915,6 +948,7 @@ def dataplot(config_filename,**kwargs):
                             data_label=pp.Exp_Data_Label,
                             y_error_absolute=pp.Exp_Error_Absolute,
                             y_error_relative=pp.Exp_Error_Relative,
+                            y_error_vector=y_error,
                             x_label=pp.Plot_y_Label,
                             y_label=pp.Plot_x_Label,
                             marker_style=pp.Exp_Marker_Style,
@@ -937,6 +971,7 @@ def dataplot(config_filename,**kwargs):
                             data_label=pp.Exp_Data_Label,
                             y_error_absolute=pp.Exp_Error_Absolute,
                             y_error_relative=pp.Exp_Error_Relative,
+                            y_error_vector=y_error,
                             x_label=pp.Plot_y_Label,
                             y_label=pp.Plot_x_Label,
                             marker_style=pp.Exp_Marker_Style,
@@ -964,6 +999,7 @@ def dataplot(config_filename,**kwargs):
                             data_label=pp.Exp_Data_Label,
                             y_error_absolute=pp.Exp_Error_Absolute,
                             y_error_relative=pp.Exp_Error_Relative,
+                            y_error_vector=y_error,
                             x_label=pp.Plot_x_Label,
                             y_label=pp.Plot_y_Label,
                             marker_style=pp.Exp_Marker_Style,
@@ -987,6 +1023,7 @@ def dataplot(config_filename,**kwargs):
                             data_label=pp.Exp_Data_Label,
                             y_error_absolute=pp.Exp_Error_Absolute,
                             y_error_relative=pp.Exp_Error_Relative,
+                            y_error_vector=y_error,
                             x_label=pp.Plot_x_Label,
                             y_label=pp.Plot_y_Label,
                             marker_style=pp.Exp_Marker_Style,
