@@ -15,11 +15,31 @@ import importlib
 importlib.reload(macfp) # use for development (while making changes to macfp.py)
 import matplotlib.pyplot as plt
 
-macfp.dataplot(config_filename='FM_Burner_cmp_config.csv',
+macfp.dataplot(config_filename='FM_Burner_cmp_config_eta.csv',
                institute='NIST',
                revision='MaCFP-3, Tsukuba, 2023',
                expdir='../../../Experimental_Data/',
-               cmpdir='./Output/',
+               cmpdir='./Output_Eta/',
+               pltdir='./Plots/',
+               close_figs=True,
+               verbose=True,
+               plot_list=['all'])
+
+macfp.dataplot(config_filename='FM_Burner_cmp_config_C2CO_p6.csv',
+               institute='NIST',
+               revision='MaCFP-3, Tsukuba, 2023',
+               expdir='../../../Experimental_Data/',
+               cmpdir='./Output_C2CO_p6/',
+               pltdir='./Plots/',
+               close_figs=True,
+               verbose=True,
+               plot_list=['all'])
+
+macfp.dataplot(config_filename='FM_Burner_cmp_config_C2CO_p9.csv',
+               institute='NIST',
+               revision='MaCFP-3, Tsukuba, 2023',
+               expdir='../../../Experimental_Data/',
+               cmpdir='./Output_C2CO_p9/',
                pltdir='./Plots/',
                close_figs=True,
                verbose=True,
