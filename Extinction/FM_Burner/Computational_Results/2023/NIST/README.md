@@ -63,7 +63,7 @@ Soot model: Soot and CO are the products of the first reaction step, then oxidiz
 | Fuel  | FUEL_C_TO_CO_FRACTION | CO_YIELD* | SOOT_YIELD* | AIT** (°C)|
 |-------|-----------------------|-----------|-------------|-----------|
 | CH4   | 1                     | 0         | 0           | 600       |
-| C2H4  | 0.60                  | 0.013     | 0.045       | 450       |
+| C2H4  | 0.60,0.90             | 0.013     | 0.045       | 450       |
 | C3H6  | 0.60                  | 0.020     | 0.103       | 457       |
 | C3H8  | 0.85                  | 0.006     | 0.026       | 450       |
 
