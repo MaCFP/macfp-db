@@ -16,6 +16,8 @@ from scipy.signal import savgol_filter
 plt.close('all')
 
 hrr_label = ['120 kW', '200 kW', '300 kW', '400 kW', '510 kW', '750 kW', '990 kW', '1500 kW', '1980 kW', '2800 kW']
+hrr_label_2p5 = ['2.5 cm', '2.5 cm', '2.5 cm', '2.5 cm', '2.5 cm', '2.5 cm', '2.5 cm', '2.5 cm', '2.5 cm', '2.5 cm']
+hrr_label_1p3 = ['1.3 cm', '1.3 cm', '1.3 cm', '1.3 cm', '1.3 cm', '1.3 cm', '1.3 cm', '1.3 cm', '1.3 cm', '1.3 cm']
 color = ['black', 'maroon', 'limegreen', 'lightgray', 'blue', 'plum', 'cyan', 'orange', 'darkgreen', 'salmon']
 
 # Heights of measurements
@@ -73,7 +75,7 @@ for irow in range(len(hrr_label)):
    end_row = min(len(M13), hrr_rows['M13'][irow] + window_size + 1) 
    x13 = M13[start_row:end_row].mean(axis=0).to_numpy()[1:-1]
 
-   f = macfp.plot_to_fig(x_data=x25, y_data=z, data_label=hrr_label[irow],
+   f = macfp.plot_to_fig(x_data=x25, y_data=z, data_label=hrr_label_2p5[irow],
                            x_min=0,x_max=150,x_nticks=4,
                            y_min=0,y_max=250,
                            x_label='Heat Flux [kW/m²]',
@@ -87,7 +89,7 @@ for irow in range(len(hrr_label)):
                            legend_fontsize=8,
                            figure_handle=f)
 
-   f = macfp.plot_to_fig(x_data=x13, y_data=z, data_label=hrr_label[irow],
+   f = macfp.plot_to_fig(x_data=x13, y_data=z, data_label=hrr_label_1p3[irow],
                            x_min=0,x_max=150,x_nticks=4,
                            y_min=0,y_max=250,
                            x_label='Heat Flux [kW/m²]',
