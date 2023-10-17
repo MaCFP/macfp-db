@@ -15,6 +15,9 @@ import pandas as pd
 plt.close('all')
 
 hrr_label = ['120 kW', '200 kW', '300 kW', '400 kW', '510 kW', '750 kW', '990 kW', '1500 kW', '1980 kW', '2800 kW']
+hrr_label_2cm = ['2 cm', '2 cm', '2 cm', '2 cm', '2 cm', '2 cm', '2 cm', '2 cm', '2 cm', '2 cm']
+hrr_label_1cm = ['1 cm', '1 cm', '1 cm', '1 cm', '1 cm', '1 cm', '1 cm', '1 cm', '1 cm', '1 cm']
+hrr_label_5mm = ['5 mm', '5 mm', '5 mm', '5 mm', '5 mm', '5 mm', '5 mm', '5 mm', '5 mm', '5 mm']
 color = ['black', 'maroon', 'limegreen', 'lightgray', 'blue', 'plum', 'cyan', 'orange', 'darkgreen', 'salmon']
 
 # Heights of measurements and FDS predictions
@@ -71,7 +74,7 @@ for irow in range(len(hrr_label)):
     x2 = M2.loc[indices2[irow],"Flux-1":"Flux-50"].values[:].astype(float)
     x5 = M5.loc[indices5[irow],"Flux-1":"Flux-50"].values[:].astype(float)
 
-    f = macfp.plot_to_fig(x_data=x5, y_data=z_FDS, data_label=hrr_label[irow],
+    f = macfp.plot_to_fig(x_data=x5, y_data=z_FDS, data_label=hrr_label_5mm[irow],
                           x_min=0,x_max=150,x_nticks=4,
                           y_min=0,y_max=250,
                           x_label='Heat Flux [kW/m²]',
@@ -85,7 +88,7 @@ for irow in range(len(hrr_label)):
                           legend_fontsize=8,
                           figure_handle=f)
 
-    f = macfp.plot_to_fig(x_data=x1, y_data=z_FDS, data_label=hrr_label[irow],
+    f = macfp.plot_to_fig(x_data=x1, y_data=z_FDS, data_label=hrr_label_1cm[irow],
                           x_min=0,x_max=150,x_nticks=4,
                           y_min=0,y_max=250,
                           x_label='Heat Flux [kW/m²]',
@@ -99,7 +102,7 @@ for irow in range(len(hrr_label)):
                           legend_fontsize=8,
                           figure_handle=f)
 
-    f = macfp.plot_to_fig(x_data=x2, y_data=z_FDS, data_label=hrr_label[irow],
+    f = macfp.plot_to_fig(x_data=x2, y_data=z_FDS, data_label=hrr_label_2cm[irow],
                           x_min=0,x_max=150,x_nticks=4,
                           y_min=0,y_max=250,
                           x_label='Heat Flux [kW/m²]',
