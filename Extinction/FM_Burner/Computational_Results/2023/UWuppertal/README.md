@@ -129,9 +129,18 @@ cells): -
  | V8   | 1000      | 512              |
  | V9   | 200       | 104              |
  | V10  | 200       | 512              |
+ | V11  | 2000      | 104              |
+ | V12  | 2000      | 512              |
+ | V13  | 4000      | 104              |
+ | V14  | 4000      | 512              |
 
 - The `Time Step` referes to the number of time steps when complete radiation solving is accomplished.
 - Average time step size is about `5e-4` between each time step (though this depends especially during the initial development phase)
+- Based on this average step size of about `5e-4` sec we have a full radiation calculation of about each `1.6` sec for the variants `V13` and `V14`.
+
+- Though the radiative fraction is post-processed, but is expected that these changes will have minor impact on the results.
+- The main impact of these setups will be on the averaging and the heat flux to the wall which is slightly outside the scope of MaCFP3.
+
 
 ------------------------------------------------------------------------
 
