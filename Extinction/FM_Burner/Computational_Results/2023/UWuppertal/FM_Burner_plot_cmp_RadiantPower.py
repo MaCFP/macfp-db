@@ -16,14 +16,14 @@ import importlib
 importlib.reload(macfp) # use for development (while making changes to macfp.py)
 import matplotlib.pyplot as plt
 
-macfp.dataplot(config_filename='FM_Burner_cmp_config.csv',
+macfp.dataplot(config_filename='FM_Burner_cmp_config_RadiantPower.csv',
                institute='UWuppertal',
                revision='MaCFP-3, Tsukuba, 2023',
                expdir='../../../Experimental_Data/',
                # cmpdir='./Output/',
                # cmpdir='../NIST/Output/',
                cmpdir='./Output/',
-               pltdir='./Plots/WallRadiation/',
+               pltdir='./Plots/RadiantPower/',
                close_figs=True,
                verbose=True,
                plot_list=['all'])

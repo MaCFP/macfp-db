@@ -41,7 +41,10 @@ res_name  = ['5mm']
 O2_name  = ['20p9']
 res_name = ['5mm']
 
-variantL = ["v1_","v2_", "v3_","v4_","v5_","v6_","v7_","v8_","v9_","v10_"]
+# variantL = ["v1_","v2_", "v3_","v4_","v5_","v6_","v7_","v8_","v9_","v10_","v14_"]
+variantL = ["v4_"]
+variantL = ["v14_"]
+variantL = ["v2_", "v8_", "v12_","v14_"]
 for variant in variantL:
    for O2 in O2_name:
       for res in res_name:
