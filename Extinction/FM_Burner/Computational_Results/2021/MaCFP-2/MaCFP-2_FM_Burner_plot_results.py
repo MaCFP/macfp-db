@@ -17,6 +17,7 @@ import matplotlib.pyplot as plt
 
 macfp.dataplot(config_filename='MaCFP-2_FM_Burner_dataplot_config.csv',
                institute='Case 5: FM Burner',
+               revision='MaCFP-2, Waterloo, 2021',
                expdir='../../../Experimental_Data/',
                pltdir='./Plots/',
                close_figs=True,
