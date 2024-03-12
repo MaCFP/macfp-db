@@ -2,7 +2,7 @@
 
 ### Disclaimers
 
-The test description and measurement data presented here should be considered as preliminary results, for the purposes of initial fire model setup for the MaCFP Working Group; however, this summary has been analyzed by subject matter experts within the research team and is believed to be scientifically sound and consistent with the integrity expected of NIST research. A NIST Technical Note [1], currently in preparation, will be published shortly along with final experimental results and analysis.
+The test description and measurement data presented here should be considered as preliminary results, for the purposes of initial fire model setup for the MaCFP Working Group; however, this summary has been analyzed by subject matter experts within the research team and is believed to be scientifically sound and consistent with the integrity expected of NIST research. [NIST Technical Note 2282](https://www.nist.gov/publications/impact-material-composition-ignitability-and-fire-growth-volume-1-full-scale-burning) [1] provides a comprehenseive analysis of experimental results obtained during this test series (including measurements during flame spread over MaCFP PMMA and 17 other combustible solids).
 
 Note: The identification of any commercial product or trade name does not imply endorsement or recommendation by NIST (or any other contributing institution).
 
@@ -126,7 +126,7 @@ This work was supported by the Office of Nuclear Regulatory Research (RES) of th
 
 ### References
 
-1. Leventon, I.T., Heck, M.V., McGrattan, K. B., Bundy, M.F., Davis, R.D., The Impact of Material Composition on Ignitability and Fire Growth. Volume 1: Full-Scale Burning Behavior of Combustible Solids Commonly Found in Nuclear Power Plants, NIST Technical Note 22xx, National Institute of Standards and Technology, Gaithersburg, MD, _(In Preparation)_. 
+1. Leventon, I.T., Heck, M.V., McGrattan, K. B., Bundy, M.F., Davis, R.D., The Impact of Material Composition on Ignitability and Fire Growth. Volume 1: Full-Scale Burning Behavior of Combustible Solids Commonly Found in Nuclear Power Plants, NIST Technical Note 2282, National Institute of Standards and Technology, Gaithersburg, MD, 2024. https://doi.org/10.6028/NIST.TN.2282.
 2. P.A. Beaulieu. Parallel Panel Experiments of FRP Composites. Technical Report 0003024286, FM Global, Norwood, Massachusetts, December 2007.
 3. BNZ Materials, Inc., 'Marinite I Refractory Products - Fire-Resistant Thermal, Structural Insulation' https://www.bnzmaterials.com/wp-content/uploads/2013/03/Mar-I.pdf (accessed September 14, 2022)
 4.  Wu. P., Parallel Wall Fire Tests with PMMA and FRPPMMA, Technical Memorandum 0003024286, FM Global, December 1997.
