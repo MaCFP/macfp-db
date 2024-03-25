@@ -7,4 +7,5 @@ matplotlib
 pandas
 scipy
 seaborn
+pygments
 
