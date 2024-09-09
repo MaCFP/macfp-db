@@ -10,12 +10,13 @@ Target phenomena are grouped into Condensed-Phase, Gas-Phase, or Couple Condense
 | Primary | Thermal decomposition of solid fuels | 6, 7 |
 | | Ignition | 6 |
 | | Gasification of condensed phase fuels | 7 (see [matl-db](https://github.com/MaCFP/matl-db) repo)|
+| | Oxidation |  |
 |  ||  |
-| Secondary | In-depth radiative absorption |
-| | Charring |
+| Secondary |Charring ||
 | | Condensed phase heat transfer in complex materials |
+| | In-depth radiative absorption ||
 | | Liquid phase transport effects |
-||||
+
 ### Gas Phase Phenomena
 
 | **Priority** | **Gas Phase Phenomena** | **Benchmark Experiment** |
@@ -23,28 +24,30 @@ Target phenomena are grouped into Condensed-Phase, Gas-Phase, or Couple Condense
 | Primary | Buoyant plumes | 1 |
 | | Convective heat transfer | 3b, 6a,b |
 | | Radiative heat transfer | 3b, 6a,b |
+| | Species transport and composition | 3b |
 | | Turbulent flow | 3a |
 | | Turbulent mixing | 3a |
-| | Species transport and composition | 3b |
 ||||
-| Secondary | Soot formation and oxidation (aerosol species) | 3b |
-| | Toxicity (yields of particles and toxic gases) | 3b |
-| | Scale effects | 3b |
-| | Compartment fire effects including ventilation |
-| | Visibility |
-| | Local extinction and re-ignition | 5 |
-| | Suppression | 5 |
+| Secondary | Compartment fire effects including ventilation |
 | | Fire growth | 6a,b |
 | | Instabilities (large-scale puffing/small-scale phenomena) | 3a,3b |
+| | Local extinction and re-ignition | 5 |
+| | Scale effects | 3b |
+| | Soot formation and oxidation (aerosol species) | 3b |
+| | Suppression | 5 |
+| | Toxicity (yields of particles and toxic gases) | 3b |
+| | Visibility |
 
 ### Coupled Condensed- and Gas-Phase Phenomena
 
 | Priority |  Condensed- and Gas-Phase Phenomena | Benchmark Experiment |
 | --- | --- | --- |
-| Primary | Fire spread | 6a, 6b |
-| | Fire growth |
-| Secondary | Wall-flame interactions |
-||||
+| Primary | Burning Rate | 3 |
+| | Fire growth | |
+|  | Fire spread | 6a, 6b |
+| Secondary | Wall-flame interactions | |
+| | Suppression | |
+
 
 ### Benchmark Experiments
 
@@ -70,4 +73,3 @@ Target phenomena are grouped into Condensed-Phase, Gas-Phase, or Couple Condense
 6. [Fire Growth over Combustible Solids](https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth)  
    a. [NIST Parallel Panel (PMMA and other fuels)](https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel)  
    b. [UMD Corner Wall (PMMA)](https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/UMD_SBI)
-   
