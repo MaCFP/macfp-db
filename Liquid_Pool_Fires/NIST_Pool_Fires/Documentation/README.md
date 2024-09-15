@@ -1,62 +1,14 @@
 # 1. Overview of NIST Pool Fire Data
 
-This directory contains detailed background information on the NIST pool fire data provided on the MaCFP GitHub website: <https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires/Experimental_Data>. The data includes global and local experimental results from measurements in nine steadily burning liquid and gaseous pool fires established using 30 cm, 37 cm, and 100 cm diameter, circular burners. Most of the measurements were conducted at NIST. If measurements by non-NIST authors were identified in the technical literature, those global measurements were included in average values provided here. This README file is broken into several parts:
-
-
-
-1\. Overview of NIST Pool Fire Data
-
-2\. Description of Burners, Coordinate System and Boundary Conditions
-
-​	2.1. Burners
-
-​	2.2. Fuel Mass Flux
-
-​	2.3. Fuel Surface Temperature
-
-3\. Global Measurements
-
-​	3.1. Heat Release Rate (HRR)
-
-​	3.2. Radiative Fraction
-
-​	3.3. Total Heat Feedback to the Fuel Surface
-
-​	3.4. Soot and CO Yields
-
-​	3.5. Combustion Efficiency
-
-​	3.6. Puffing Frequency
-
-​	3.7. Flame Height
-
-4\. Local Measurements
-
-​	4.1. Gas-Phase Temperature
-
-​	4.2. Gas-Phase Velocity
-
-​	4.3. Gas Species and Soot
-
-​	4.4. Heat Flux
-
-​	4.5. Liquid Fuel Temperature
-
-5\. References
-
-6\. List of Contributors to the Measurements
-
-7\. APPENDIX
-
-
+This directory contains detailed background information on the NIST pool fire data provided on the MaCFP GitHub website: <https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/NIST_Pool_Fires/Experimental_Data>. The data includes global and local experimental results from measurements in nine steadily burning liquid and gaseous pool fires established using 30 cm, 37 cm, and 100 cm diameter, circular burners. Most of the measurements were conducted at NIST. If measurements by non-NIST authors were identified in the technical literature, those global measurements were included in average values provided here. 
 
 **Table 1.1** presents a compilation of measurement data taken from NIST publications, and when available from the technical literature, characterizing the global features of the nine pool fires documented here. The nine fires include eight medium-scale pool fires (0.3 m to 0. 4 m) burning a variety of liquid and gaseous fuels, including four 30 cm diameter liquid pool fires burning methanol, ethanol, acetone, and heptane, and four 37 cm diameter gaseous pool fires burning methane (34 kW) and propane (20 kW, 34 kW, and 50 kW). A 100 cm diameter liquid pool fire-burning methanol is also included. The table shows the average values of the pool fires’ mass burning flux, the radiative fraction, the heat feedback to the pool surface, flame height, fractional heat feedback to the fuel from the fire, and the CO and soot yields. A companion table (**Table 7.1)** in the Appendix provides references for each of the measurements used in the compilation. Additional types of data on the 30 cm methanol and acetone pool fires from the University of Waterloo is available on the MaCFP GitHub website: <https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/Waterloo_Methanol>.
 
-**Table 1.1 Compilation of mean global pool fire characteristics from the literature, including the measured fuel mass flux (**$\dot{\mathbf{m}}$**’’), fuel surface temperature (**$\mathbf{T}_{\mathbf{s}}$**), radiative fraction (**$\mathbf{\chi}_{\mathbf{rad}}$**), the dominant puffing frequency, the flame height (*L~f~*), the fractional heat feedback to the fuel surface (**$\mathbf{\chi}_{\mathbf{s}}$**), and the yields of CO (**$\mathbf{Y}_{\mathbf{CO}}$**) and soot (**$\mathbf{Y}_{\mathbf{s}}$**). The uncertainties in the table represent the standard deviation of the averaged values (no uncertainty is reported in the table if there was only one measurement; a detailed** **discussion of the uncertainty for each of the measurements can be found in the references listed in the companion Table 7.1 (see the Appendix).**
+**Table 1.1 Compilation of mean global pool fire characteristics from the literature, including the measured fuel mass flux ($\dot{m}\prime\prime$), fuel surface temperature ($T_{\rm s}$), radiative fraction ($\chi_{\rm rad}$), the dominant puffing frequency, the flame height ($L_{\rm f}$), the fractional heat feedback to the fuel surface ($\chi_{\rm s}$), and the yields of CO ($y_{\rm CO}$) and soot ($y_{\rm s}$). The uncertainties in the table represent the standard deviation of the averaged values (no uncertainty is reported in the table if there was only one measurement.**
 
-| **ID** | **Fuel** | $$\dot{\mathbf{m}}\mathbf{''}$$ | $\mathbf{T}_{\mathbf{s}}$**^a^** | $$\mathbf{\chi}_{\mathbf{rad}}$$ | $$\mathbf{\chi}_{\mathbf{s}}$$ | $$\mathbf{Y}_{\mathbf{CO}}$$ | $$\mathbf{Y}_{\mathbf{s}}$$ | **Freq** | ***L~f~*** |
+| ID | Fuel | $\dot{m}\prime\prime$ | $T_{\rm s}$[a] | $\chi_{\rm rad}$ | $\chi_{\rm s}$ | $y_{\rm CO}$  | $y_{\rm s}$ | Freq. | $L_{\rm f}$ |
 |:----:|:------:|:------:|:----:|:------:|:-------:|:------:|:------:|:------:|:------:|
-| cm | \- | g/(m^2^-s) | °C | \- | \- | 10^-3^ g/g | 10^-3^ g/g | Hz | m |
+| cm | \- | g/(${\rm m}^2$ s) | °C | \- | \- | 10^-3^ g/g | 10^-3^ g/g | Hz | m |
 | 30.1 | Methanol | 13.1 ± 0.8 | 65 ± 1 | 0.24 ± 0.01 | 0.082 | b | 0 ^c^ | 2.7 ± 0.1 | 0.41 ± 0.06 |
 | 30.1 | Ethanol | 14.6 ± 0.9 | 79 ± 2 | 0.26 | 0.050 | 0.3 ± 0.1 | b | 2.4 | 0.60 |
 | 30.1 | Acetone | 18.8 ± 1.0 | 57 ± 1 | 0.31 | 0.046 | 1.0 ± 0.2 | 0.9 ± 0.3 | 2.5 | 0.84 |
@@ -67,7 +19,7 @@ This directory contains detailed background information on the NIST pool fire da
 | 37 | Propane | 10.0 | 76 | 0.33 | 0.048 ± 0.003 | 3.4 ± 0.3 | 5.6 ± 0.3 | 2.4 | 0.96 |
 | 100.6 | Methanol | 15.3 ± 0.8 | 65 ± 1 | 0.20 ± 0.01 | na | 0.16 ± 0.02 | 0 ^c^ | 1.4 | 1.23 ± 0.13 |
 
-a\. The fuel surface temperature for the liquid pool fires is near the fuel boiling point \[1, 2, 3\]. Measurements at the pool surface \[1, 2\] also show that the temperature of the liquid fuels slowly increases by 2 °C/hr. See discussion below.
+[a] The fuel surface temperature for the liquid pool fires is near the fuel boiling point \[1, 2, 3\]. Measurements at the pool surface \[1, 2\] also show that the temperature of the liquid fuels slowly increases by 2 °C/hr. See discussion below.
 
 b\. below detection limit (\< 10^-4^).
 
@@ -77,15 +29,15 @@ Figures 1.1, 1.2, and 1.3 show sequential images of the steadily burning fires d
 
 $$\ $$
 
-<img src="./images/media/image1.png" style="width:4.72441in;height:8.35039in" />
+<img src="image1.png" style="width:4.72441in;height:8.35039in" />
 
 **Figure 1.1 Sequential photographs during a puffing cycle of the 30 cm pool fires; Methanol, Ethanol, Acetone and Heptane. \[**1**\]**
 
-<img src="./images/media/image2.png" style="width:4.72441in;height:7.70079in" />
+<img src="image2.png" style="width:4.72441in;height:7.70079in" />
 
 **Figure 1.2 Sequential photographs during a puffing cycle of the 37 cm gas burner fires; Propane 20 kW, Propane 34 kW and Propane 50 kW. \[**1**\]**
 
-<img src="./images/media/image3.jpeg" style="width:6.5in;height:2.79921in" />
+<img src="image3.jpeg" style="width:6.5in;height:2.79921in" />
 
 **Figure 1.3 Sequential photographs during a puffing cycle of the 100 cm methanol pool fire. \[**2**\]**
 
@@ -93,7 +45,7 @@ $$\ $$
 
 ## 2.1. Burners
 
-<img src="./images/media/image4.png" style="width:4.61739in;height:2.44038in" />
+<img src="image4.png" style="width:4.61739in;height:2.44038in" />
 
 **Figure 2.1 Schematic drawing of a liquid burner, illustrating the coordinate system.**
 
@@ -288,7 +240,7 @@ The image above is a schematic drawing of the burners, illustrating its features
 
 -   Radiative and total heat flux measurements were made at various locations in the pool fires, mapping the heat flux emitted (1) radially outward away from the fire acquired at various heights above the fuel surface through the side surface of a cylindrical control volume about the fire (with the side surface located a distance r from the burner center) and (2) downwards through the bottom surface of a cylindrical control volume about the fire (with the bottom surface located a distance z above the fuel surface). See Figure 4.1.
 
-<img src="./images/media/image5.png" style="width:7.50094in;height:3.03819in" />
+<img src="image5.png" style="width:7.50094in;height:3.03819in" />
 
 **Figure 4.1 Schematic of the heat flux gauge set-up.**
 
