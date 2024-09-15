@@ -6,28 +6,27 @@ This directory contains detailed background information on the NIST pool fire da
 
 **Table 1.1 Compilation of mean global pool fire characteristics from the literature, including the measured fuel mass flux ($\dot{m}\prime\prime$), fuel surface temperature ($T_{\rm s}$), radiative fraction ($\chi_{\rm rad}$), the dominant puffing frequency, the flame height ($L_{\rm f}$), the fractional heat feedback to the fuel surface ($\chi_{\rm s}$), and the yields of CO ($y_{\rm CO}$) and soot ($y_{\rm s}$). The uncertainties in the table represent the standard deviation of the averaged values (no uncertainty is reported in the table if there was only one measurement.**
 
-| ID | Fuel | $\dot{m}\prime\prime$ | $T_{\rm s}$[a] | $\chi_{\rm rad}$ | $\chi_{\rm s}$ | $y_{\rm CO}$  | $y_{\rm s}$ | Freq. | $L_{\rm f}$ |
+| ID   | Fuel   | $\dot{m}\prime\prime$ | $T_{\rm s}$[a] | $\chi_{\rm rad}$ | $\chi_{\rm s}$ | $y_{\rm CO}$  | $y_{\rm s}$ | Freq. | $L_{\rm f}$ |
 |:----:|:------:|:------:|:----:|:------:|:-------:|:------:|:------:|:------:|:------:|
-| cm | \- | g/(${\rm m}^2$ s) | °C | \- | \- | 10^-3^ g/g | 10^-3^ g/g | Hz | m |
-| 30.1 | Methanol | 13.1 ± 0.8 | 65 ± 1 | 0.24 ± 0.01 | 0.082 | b | 0 ^c^ | 2.7 ± 0.1 | 0.41 ± 0.06 |
-| 30.1 | Ethanol | 14.6 ± 0.9 | 79 ± 2 | 0.26 | 0.050 | 0.3 ± 0.1 | b | 2.4 | 0.60 |
-| 30.1 | Acetone | 18.8 ± 1.0 | 57 ± 1 | 0.31 | 0.046 | 1.0 ± 0.2 | 0.9 ± 0.3 | 2.5 | 0.84 |
-| 30.1 | Heptane | 35.5 ± 1.4 | na | 0.31 ± 0.04 | 0.011 | 10.1 ± 1.3 | 16.9 ± 0.5 | 2.8 | 1.32 ± 0.01 |
-| 37 | Methane | 6.4 | 73 ± 2 | 0.21±0.002 | 0.048 ± 0.023 | 1.2 ± 0.1 | b | 2.5 | 0.74 ± 0.03 |
-| 37 | Propane | 4.2 | 71 | 0.21 ± 0.03 | 0.130 | 4.0 ± 0.4 | 1.9 ± 0.5 | 2.2 | 0.53 |
-| 37 | Propane | 6.9 | 77 | 0.28 ± 0.03 | 0.078 ± 0.002 | 3.6 ± 0.4 | 4.6 ± 0.4 | 2.4 | 0.75 |
-| 37 | Propane | 10.0 | 76 | 0.33 | 0.048 ± 0.003 | 3.4 ± 0.3 | 5.6 ± 0.3 | 2.4 | 0.96 |
-| 100.6 | Methanol | 15.3 ± 0.8 | 65 ± 1 | 0.20 ± 0.01 | na | 0.16 ± 0.02 | 0 ^c^ | 1.4 | 1.23 ± 0.13 |
+| cm   | \-     | g/(${\rm m}^2$ s) | °C | \- | \- |  g/kg |  g/kg | Hz | m |
+| 30.1 | Methanol | 13.1 ± 0.8 | 65 ± 1 | 0.24 ± 0.01 | 0.082 | [b] | 0 [c] | 2.7 ± 0.1 | 0.41 ± 0.06 |
+| 30.1 | Ethanol  | 14.6 ± 0.9 | 79 ± 2 | 0.26 | 0.050 | 0.3 ± 0.1 | [b] | 2.4 | 0.60 |
+| 30.1 | Acetone  | 18.8 ± 1.0 | 57 ± 1 | 0.31 | 0.046 | 1.0 ± 0.2 | 0.9 ± 0.3 | 2.5 | 0.84 |
+| 30.1 | Heptane  | 35.5 ± 1.4 | na | 0.31 ± 0.04 | 0.011 | 10.1 ± 1.3 | 16.9 ± 0.5 | 2.8 | 1.32 ± 0.01 |
+| 37   | Methane  | 6.4 | 73 ± 2 | 0.21±0.002 | 0.048 ± 0.023 | 1.2 ± 0.1 | [b] | 2.5 | 0.74 ± 0.03 |
+| 37   | Propane    | 4.2 | 71 | 0.21 ± 0.03 | 0.130 | 4.0 ± 0.4 | 1.9 ± 0.5 | 2.2 | 0.53 |
+| 37   | Propane    | 6.9 | 77 | 0.28 ± 0.03 | 0.078 ± 0.002 | 3.6 ± 0.4 | 4.6 ± 0.4 | 2.4 | 0.75 |
+| 37   | Propane    | 10.0 | 76 | 0.33 | 0.048 ± 0.003 | 3.4 ± 0.3 | 5.6 ± 0.3 | 2.4 | 0.96 |
+| 100.6 | Methanol| 15.3 ± 0.8 | 65 ± 1 | 0.20 ± 0.01 | na | 0.16 ± 0.02 | [c] | 1.4 | 1.23 ± 0.13 |
 
 [a] The fuel surface temperature for the liquid pool fires is near the fuel boiling point \[1, 2, 3\]. Measurements at the pool surface \[1, 2\] also show that the temperature of the liquid fuels slowly increases by 2 °C/hr. See discussion below.
 
-b\. below detection limit (\< 10^-4^).
+[b] below detection limit (\< 0.0001).
 
-c\. soot was not observed at any fire location.
+[c] soot was not observed at any fire location.
 
 Figures 1.1, 1.2, and 1.3 show sequential images of the steadily burning fires during a single puffing cycle. For the fires to become quasi-steady, a warm-up period of 5 to 10 minutes after ignition was required.
 
-$$\ $$
 
 <img src="image1.png" style="width:4.72441in;height:8.35039in" />
 
