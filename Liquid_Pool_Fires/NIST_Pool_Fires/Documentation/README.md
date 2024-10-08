@@ -1,6 +1,69 @@
 # 1. Overview of NIST Pool Fire Data
 
-The data includes measurements of nine steadily burning liquid and gaseous pool fires on 30 cm, 37 cm, and 100 cm diameter, circular burners. Most of the measurements were conducted at NIST. If measurements by non-NIST authors were identified in the technical literature, those global measurements were included in average values provided here. 
+The data includes measurements of nine steadily burning liquid and gaseous pool fires on 30 cm, 37 cm, and 100 cm diameter, circular burners. Most of the measurements were conducted at NIST. If measurements by non-NIST authors were identified in the technical literature, those global measurements were included in average values provided here. This document is broken into several parts:
+
+---
+
+<ol>  
+1. Overview of NIST Pool Fire Data
+<br><br>   
+
+2\. Description of Burners, Coordinate System and Boundary Conditions
+
+  <ol>
+
+​	2.1. Burners
+
+​	2.2. Fuel Mass Flux
+
+​	2.3. Fuel Surface Temperature
+
+  </ol>
+
+3\. Global Measurements
+
+  <ol>
+
+​	3.1. Heat Release Rate (HRR)
+
+​	3.2. Radiative Fraction
+
+​	3.3. Total Heat Feedback to the Fuel Surface
+
+​	3.4. Soot and CO Yields
+
+​	3.5. Combustion Efficiency
+
+​	3.6. Puffing Frequency
+
+​	3.7. Flame Height
+
+  </ol>
+
+4\. Local Measurements
+
+  <ol>
+
+​	4.1. Gas-Phase Temperature
+
+​	4.2. Gas-Phase Velocity
+
+​	4.3. Gas Species and Soot
+
+​	4.4. Heat Flux
+
+​	4.5. Liquid Fuel Temperature
+
+  </ol>
+
+5\. References
+
+6\. List of Contributors to the Measurements
+
+7\. APPENDIX
+</ol>
+
+---
 
 **Table 1.1** presents a compilation of measurement data taken from NIST publications, and when available from the technical literature, characterizing the global features of the nine pool fires documented here. The nine fires include eight medium-scale pool fires (0.3 m to 0. 4 m) burning a variety of liquid and gaseous fuels, including four 30 cm diameter liquid pool fires burning methanol, ethanol, acetone, and heptane, and four 37 cm diameter gaseous pool fires burning methane (34 kW) and propane (20 kW, 34 kW, and 50 kW). A 100 cm diameter liquid pool fire-burning methanol is also included. The table shows the average values of the pool fires’ mass burning flux, the radiative fraction, the heat feedback to the pool surface, flame height, fractional heat feedback to the fuel from the fire, and the CO and soot yields. A companion table (**Table 7.1)** in the Appendix provides references for each of the measurements used in the compilation. Additional types of data on the 30 cm methanol and acetone pool fires from the University of Waterloo is available on the MaCFP GitHub website: <https://github.com/MaCFP/macfp-db/tree/master/Liquid_Pool_Fires/Waterloo_Methanol>.
 
@@ -8,7 +71,7 @@ The data includes measurements of nine steadily burning liquid and gaseous pool 
 
 | ID   | Fuel   | $\dot{m}\prime\prime$ | $T_{\rm s}$[a] | $\chi_{\rm rad}$ | $\chi_{\rm s}$ | $y_{\rm CO}$  | $y_{\rm s}$ | Freq. | $L_{\rm f}$ |
 |:----:|:------:|:------:|:----:|:------:|:-------:|:------:|:------:|:------:|:------:|
-| cm   | \-     | g/(${\rm m}^2$ s) | °C | \- | \- |  g/kg |  g/kg | Hz | m |
+| cm   | \-     | g/(m<sup>2</sup> s) | °C | \- | \- |  10<sup>-3</sup> g/g |  10<sup>-3</sup> g/g | Hz | m |
 | 30.1 | Methanol | 13.1 ± 0.8 | 65 ± 1 | 0.24 ± 0.01 | 0.082 | [b] | 0 [c] | 2.7 ± 0.1 | 0.41 ± 0.06 |
 | 30.1 | Ethanol  | 14.6 ± 0.9 | 79 ± 2 | 0.26 | 0.050 | 0.3 ± 0.1 | [b] | 2.4 | 0.60 |
 | 30.1 | Acetone  | 18.8 ± 1.0 | 57 ± 1 | 0.31 | 0.046 | 1.0 ± 0.2 | 0.9 ± 0.3 | 2.5 | 0.84 |
@@ -17,26 +80,35 @@ The data includes measurements of nine steadily burning liquid and gaseous pool 
 | 37   | Propane    | 4.2 | 71 | 0.21 ± 0.03 | 0.130 | 4.0 ± 0.4 | 1.9 ± 0.5 | 2.2 | 0.53 |
 | 37   | Propane    | 6.9 | 77 | 0.28 ± 0.03 | 0.078 ± 0.002 | 3.6 ± 0.4 | 4.6 ± 0.4 | 2.4 | 0.75 |
 | 37   | Propane    | 10.0 | 76 | 0.33 | 0.048 ± 0.003 | 3.4 ± 0.3 | 5.6 ± 0.3 | 2.4 | 0.96 |
-| 100.6 | Methanol| 15.3 ± 0.8 | 65 ± 1 | 0.20 ± 0.01 | na | 0.16 ± 0.02 | [c] | 1.4 | 1.23 ± 0.13 |
+| 100.6 | Methanol| 15.9 ± 0.6 | 65 ± 1 | 0.20 ± 0.01 | na | 0.16 ± 0.02 | [c] | 1.4 | 1.23 ± 0.13 |
 
 [a] The fuel surface temperature for the liquid pool fires is near the fuel boiling point \[1, 2, 3\]. Measurements at the pool surface \[1, 2\] also show that the temperature of the liquid fuels slowly increases by 2 °C/hr. See discussion below.
 
-[b] below detection limit (\< 0.0001).
+[b] below detection limit (\< 10<sup>-4</sup>).
 
 [c] soot was not observed at any fire location.
 
+-Parmameters indecated by "na" are not available.
+
+---
+
 Figures 1.1, 1.2, and 1.3 show sequential images of the steadily burning fires during a single puffing cycle. For the fires to become quasi-steady, a warm-up period of 5 to 10 minutes after ignition was required.
 
-
-<img src="image1.png" style="width:4.72441in;height:8.35039in" />
+<p align="center">
+<img src="image1.png" style="width:59%"/>
+</p>
 
 **Figure 1.1 Sequential photographs during a puffing cycle of the 30 cm pool fires; Methanol, Ethanol, Acetone and Heptane. \[**1**\]**
 
-<img src="image2.png" style="width:4.72441in;height:7.70079in" />
+<p align="center">
+<img src="image2.png" style="witdth:100%;" />
+</p>
 
 **Figure 1.2 Sequential photographs during a puffing cycle of the 37 cm gas burner fires; Propane 20 kW, Propane 34 kW and Propane 50 kW. \[**1**\]**
 
-<img src="image3.jpeg" style="width:6.5in;height:2.79921in" />
+<p align="center">
+<img src="image3.jpeg" style="width:90%" />
+</p>
 
 **Figure 1.3 Sequential photographs during a puffing cycle of the 100 cm methanol pool fire. \[**2**\]**
 
@@ -57,7 +129,7 @@ The image above is a schematic drawing of the burners, illustrating its features
 | 30.1 | 5 | 15 | 1.3 | stainless steel | Yes | 2, 4, 5, 6 |
 | 30.1 | 10 | 15 | 1.3 | stainless steel | Yes | 1, 7, 8, 9, 10 |
 | 30.5 | 10 | 6 | 1.5 | stainless steel | no | 11, 12, 14, 15, 27 |
-| 37 | 0 | 8 | NA | porous bronze | Yes | 1, 4, 13, 14 |
+| 37 | 0 | 8 | na | porous bronze | Yes | 1, 4, 13, 14 |
 | 100 | 5 | 15 | 1.7 | steel | Yes | 15 |
 | 100 | 10 | 15 | 1.7 | steel | Yes | 2 |
 
@@ -88,7 +160,7 @@ The image above is a schematic drawing of the burners, illustrating its features
 
 ## 3.1. Heat Release Rate (HRR) 
 
--   **Table 1.1** above shows the measured mass flux and radiative fraction of the pool fires. For convenience, the measured mass flux per unit area of the fuel surface (kg/s/m^2^) and the radiative fraction are provided in the files listed in **Table 3.1** :
+-   **Table 1.1** above shows the measured mass flux and radiative fraction of the pool fires. For convenience, the measured mass flux per unit area of the fuel surface (kg/(m<sup>2</sup> s)) and the radiative fraction are provided in the files listed in **Table 3.1** :
 
 **Table 3.1 Heat release rate and radiative fraction data filenames and description.**
 
@@ -102,7 +174,7 @@ The image above is a schematic drawing of the burners, illustrating its features
 | Propane_37_cm_20_kW_HRR_Sung_2024.csv | Mass flux per unit area of the fuel surface and the radiative flux \[1\] |
 | Propane_37_cm_34_kW_HRR_Sung_2024.csv | Mass flux per unit area of the fuel surface and the radiative flux \[1\] |
 | Propane_37_cm_50_kW_HRR_Sung_2024.csv | Mass flux per unit area of the fuel surface and the radiative flux \[1\] |
-| Methanol_100_cm_HRR_Sung_2021.csv | Mass flux per unit area of the fuel surface and the radiative flux \[2\] |
+| Methanol_100_cm_HRR_Sung_2024.csv | Mass flux per unit area of the fuel surface and the radiative flux \[1\] |
 
 ## 3.2. Radiative Fraction
 
@@ -114,21 +186,21 @@ The image above is a schematic drawing of the burners, illustrating its features
 
 -   The same, identical, three burners (0.30 m, 0.37 m, and 1.0 m diameter) were used in Refs. \[1, 2, 4-10, 13-15, 18\].
 
--   
+  
 
 ## 3.3. Total Heat Feedback to the Fuel Surface
 
--   **Table 3.2** lists the total heat feedback (${\dot{Q}}_{s}$) to the fuel surface.
+-   **Table 3.2** lists ideal heat release rate($\dot{Q}$), total heat feedback ($\dot{Q}\_s$) to the fuel surface, and fractional heat feedback ($\chi\_{s}$) for the nine pool fires.
 
 -   <span class="mark">For the gaseous fuels</span>, the water-cooled burner acted like a calorimeter, and (${\dot{Q}}_{s}$) was determined from the enthalpy change associated with the cooling water (from the measured temperature difference between the water-cooling inlet and outlet on the burner and the flow rate of the water). \[1\]
 
 -   <span class="mark">For the liquid fuels</span> in the 30 cm diameter burner, the total heat feedback incident on the pool surface (${\dot{Q}}_{s}$) was estimated by integrating the measured profile of the local total heat flux just above the fuel surface over the entire pool surface area in the methanol \[9\], acetone \[9\], ethanol fires \[9\] and heptane \[5\] fires.
 
--   The fractional heat feedback incident on the pool surface ($\chi_{s}$) was taken as approximately equal to the total heat feedback to the fuel surface (${\dot{Q}}_{s}$) divided by the idealized fire heat release rate ($\dot{Q}$), defined as $\dot{m}H_{c}$; where $\dot{m}$ is the mass burning rate (g/s).
+-   The fractional heat feedback incident on the pool surface ($\chi\_{s}$) was taken as approximately equal to the total heat feedback to the fuel surface (${\dot{Q}}\_{s}$) divided by the idealized fire heat release rate ($\dot{Q}$), defined as $\dot{m}H\_{c}$; where $\dot{m}$ is the mass burning rate (g/s).
 
-**Table 3.2. The measured fuel mass flux (**$\dot{\mathbf{m'}\mathbf{'}}$**), ideal heat release rate (**$\dot{\mathbf{Q}}$**), total heat feedback to the fuel surface (**${\dot{\mathbf{Q}}}_{\mathbf{s}}$**), and fractional heat feedback onto the pool surface (**$\mathbf{\chi}_{\mathbf{s}}$**) for the nine pool fire studied here. Uncertainty represents a 95 % confidence interval (k=2).   **
+**Table 3.2. The ideal heat release rate ($\dot{Q}$), total heat feedback to the fuel surface ($\dot{Q}\_{s}$), and fractional heat feedback onto the pool surface ($\chi\_{s}$) for the nine pool fire studied here. Uncertainty represents a 95 % confidence interval (k=2).**
 
-| **D (cm)** | **Fuel** | $\dot{\mathbf{Q}}$ **(kW)** | ${\dot{\mathbf{Q}}}_{\mathbf{s}}$ **(kW)** | $\mathbf{\chi}_{\mathbf{s}}$ **(-)** |
+| **D (cm)** | **Fuel** | $\dot{Q}$ **(kW)** | $\dot{Q}\_{s}$ **(kW)** | $\chi\_{s}$ **(-)** |
 |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 | 30.1 | Methanol | 19.2 ± 1.7 | 1.60 ± 0.38 | 0.082 ± 0.020 |
 | 30.1 | Acetone | 31.0 ± 3.4 | 1.60 ± 0.38 | 0.050 ± 0.012 |
@@ -141,7 +213,7 @@ The image above is a schematic drawing of the burners, illustrating its features
 
 ## 3.4. Soot and CO Yields
 
--   **Table 1.1** above lists the mean soot yield ($Y_{s}$) and its standard deviation from multiple measurements made in the exhaust stream using laser transmission at 632 nm. \[8, 19\] The mass specific soot extinction coefficient in all cases was taken as 8.7 m^2^/g \[20\]. **Table 1.1** also lists the mean soot yield ($Y_{s}$) and its standard deviation from multiple measurements made in the exhaust stream using laser transmission at 632 nm. \[8, 19\] The mass specific soot extinction coefficient in all cases was taken as 8.7 m^2^/g \[20\].
+-   **Table 1.1** above lists the mean soot yield ($Y_{s}$) and its standard deviation from multiple measurements made in the exhaust stream using laser transmission at 632 nm. \[8, 19\] The mass specific soot extinction coefficient in all cases was taken as 8.7 m<sup>2</sup>/g \[20\]. **Table 1.1** also lists the mean soot yield ($Y_{s}$) and its standard deviation from multiple measurements made in the exhaust stream using laser transmission at 632 nm. \[8, 19\] The mass specific soot extinction coefficient in all cases was taken as 8.7 m<sup>2</sup>/g \[20\].
 
 -   The CO yield ($Y_{CO}$) shown in **Table 1.1** was determined using extractive sampling of the exhaust stream analyzed by non-dispersive infrared analysis in tandem with temperature and velocity measurements used to determine the exhaust mass flow. \[8, 19\]
 
@@ -237,9 +309,9 @@ The image above is a schematic drawing of the burners, illustrating its features
 
 ## 4.4. Heat Flux
 
--   Radiative and total heat flux measurements were made at various locations in the pool fires, mapping the heat flux emitted (1) radially outward away from the fire acquired at various heights above the fuel surface through the side surface of a cylindrical control volume about the fire (with the side surface located a distance r from the burner center) and (2) downwards through the bottom surface of a cylindrical control volume about the fire (with the bottom surface located a distance z above the fuel surface). See Figure 4.1.
+-   Radiative and total heat flux measurements were made at various locations in the pool fires, mapping the heat flux emitted (1) radially outward away from the fire acquired at various heights above the fuel surface through the side surface of a cylindrical control volume about the fire (with the side surface located a distance r from the burner center) and (2) downwards through the bottom surface of a cylindrical control volume about the fire (with the bottom surface located a distance z above the fuel surface). See **Figure 4.1**.
 
-<img src="image5.png" style="width:7.50094in;height:3.03819in" />
+<img src="image5.png" style="width:100%" />
 
 **Figure 4.1 Schematic of the heat flux gauge set-up.**
 
@@ -295,9 +367,9 @@ The image above is a schematic drawing of the burners, illustrating its features
 
 1.  Sung, K., Falkenstein-Smith, R. and Hamins, A., *Velocity and Temperature Structure of Medium-Scale Pool Fires*, NIST Technical Note 2162, National Institute of Standards and Technology, Gaithersburg, MD, 2021-06-22 2021, <https://10.6028/nist.tn.2162>; see also Sung, K., Falkenstein-Smith, R. and Hamins, A., *The Global and Local Structure of Medium-Scale Pool Fires*, NIST Technical Note 2162, Rev.1, National Institute of Standards and Technology, Gaithersburg, MD, 2024, <https://10.6028/NIST.TN.2162r1>.
 
-2.  Sung, K., Chen, J., Bundy, M., Fernandez, M. and Hamins, A., *The Thermal Character of a 1 m Methanol Pool Fire*, NIST Technical Note 2083, Rev.1, National Institute of Standards and Technology, Gaithersburg, MD, June 2021a, <https://doi.org/10.6028/NIST.TN.2083r1>, also see Sung, K., Chen, J., Bundy, M. and Hamins, A., The Characteristics of a 1 m Methanol Pool Fire, *Fire Safety Journal*, **120**, 103121, (2021b), <https://doi.org/10.1016/j.firesaf.2020.103121>.
+2.  Sung, K., Chen, J., Bundy, M., Fernandez, M. and Hamins, A., *The Thermal Character of a 1 m Methanol Pool Fire*, NIST Technical Note 2083, Rev.1, National Institute of Standards and Technology, Gaithersburg, MD, June 2021a, <https://doi.org/10.6028/NIST.TN.2083r1>, also see Sung, K., Chen, J., Bundy, M. and Hamins, A., The Characteristics of a 1 m Methanol Pool Fire, *Fire Safety Journal*, ***120***, 103121, (2021b), <https://doi.org/10.1016/j.firesaf.2020.103121>.
 
-3.  Donald R. Burgess, J. and Hamins, A., *Heats of Combustion and Related Properties of Pure Substances*, NIST Technical Note 2126, National Institute of Standards and Technology, Gaithersburg, MD, December 5 2023, <https://doi.org/10.6028/NIST.TN.2126>; aslo to appear in the Appendix of the SFPE Handbook of Fire Protection Engineering, 6^th^ Ed.
+3.  Donald R. Burgess, J. and Hamins, A., *Heats of Combustion and Related Properties of Pure Substances*, NIST Technical Note 2126, National Institute of Standards and Technology, Gaithersburg, MD, December 5 2023, <https://doi.org/10.6028/NIST.TN.2126>; aslo to appear in the Appendix of the SFPE Handbook of Fire Protection Engineering, 6<sup>th</sup> Ed.
 
 4.  Buch, R., Hamins, A., Konishi, K., Mattingly, D. and Kashiwagi, T., Radiative Emission Fraction of Pool Fires Burning Silicone Fluids, *Combustion and Flame*, ***108***, 118-126, (1997), <https://doi.org/10.1016/S0010-2180(96)00098-3>.
 
@@ -428,7 +500,7 @@ Anthony Hamins (NIST)
 <td style="text-align: center;"><strong>20.7</strong></td>
 <td style="text-align: center;"><strong>34.4</strong></td>
 <td style="text-align: center;"><strong>50.1</strong></td>
-<td style="text-align: center;"><strong>255</strong></td>
+<td style="text-align: center;"><strong>249</strong></td>
 </tr>
 <tr>
 <td colspan="2" style="text-align: center;"><strong>Measurement</strong></td>
@@ -453,7 +525,7 @@ Anthony Hamins (NIST)
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;">2, 4, 15</td>
+<td style="text-align: center;">2, 4</td>
 </tr>
 <tr>
 <td style="text-align: right;"><strong>Radiative fraction</strong></td>
