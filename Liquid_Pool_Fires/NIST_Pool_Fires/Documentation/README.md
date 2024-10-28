@@ -365,7 +365,7 @@ The image above is a schematic drawing of the burners, illustrating its features
 
 # 5. References
 
-1.  Sung, K., Falkenstein-Smith, R. and Hamins, A., *Velocity and Temperature Structure of Medium-Scale Pool Fires*, NIST Technical Note 2162, National Institute of Standards and Technology, Gaithersburg, MD, 2021-06-22 2021, <https://10.6028/nist.tn.2162>; see also Sung, K., Falkenstein-Smith, R. and Hamins, A., *The Global and Local Structure of Medium-Scale Pool Fires*, NIST Technical Note 2162, Rev.1, National Institute of Standards and Technology, Gaithersburg, MD, 2024, <https://10.6028/NIST.TN.2162r1>.
+1.  Sung, K., Falkenstein-Smith, R. and Hamins, A., *Velocity and Temperature Structure of Medium-Scale Pool Fires*, NIST Technical Note 2162, National Institute of Standards and Technology, Gaithersburg, MD, 2021-06-22 2021, <https://doi.org/10.6028/nist.tn.2162>; see also Sung, K., Falkenstein-Smith, R. and Hamins, A., *The Global and Local Structure of Medium-Scale Pool Fires*, NIST Technical Note 2162, Rev.1, National Institute of Standards and Technology, Gaithersburg, MD, 2024, <https://doi.org/10.6028/NIST.TN.2162r1>.
 
 2.  Sung, K., Chen, J., Bundy, M., Fernandez, M. and Hamins, A., *The Thermal Character of a 1 m Methanol Pool Fire*, NIST Technical Note 2083, Rev.1, National Institute of Standards and Technology, Gaithersburg, MD, June 2021a, <https://doi.org/10.6028/NIST.TN.2083r1>, also see Sung, K., Chen, J., Bundy, M. and Hamins, A., The Characteristics of a 1 m Methanol Pool Fire, *Fire Safety Journal*, ***120***, 103121, (2021b), <https://doi.org/10.1016/j.firesaf.2020.103121>.
 
@@ -383,7 +383,7 @@ The image above is a schematic drawing of the burners, illustrating its features
 
 9.  Kim, S. C., Lee, K. Y. and Hamins, A., Energy Balance in Medium-Scale Methanol, Ethanol, and Acetone Pool Fires, *Fire Safety Journal*, ***107***, 44-53, (2019), <https://doi.org/10.1016/j.firesaf.2019.01.004>.
 
-10. Wang, Z., Tam, W. C., Chen, J., Lee, K. Y. and Hamins, A., Thin Filament Pyrometry Field Measurements in a Medium-Scale Pool Fire, *Fire Technology*, ***56***, 837-861, (2020), <https://10.1007/s10694-019-00906-9>.
+10. Wang, Z., Tam, W. C., Chen, J., Lee, K. Y. and Hamins, A., Thin Filament Pyrometry Field Measurements in a Medium-Scale Pool Fire, *Fire Technology*, ***56***, 837-861, (2020), <https://doi.org/10.1007/s10694-019-00906-9>.
 
 11. Weckman, E. J. (1987). *The Structure of the Flowfield near the Base of a Medium-Scale Pool Fire.* (Ph.D. Thesis). University of Waterloo.
 
@@ -403,9 +403,9 @@ The image above is a schematic drawing of the burners, illustrating its features
 
 19. Bryant, R. A. and Bundy, M. F., *The NIST 20 MW Calorimetry Measurement System for Large-Fire Research*, NIST Technical Note 2077, National Institute of Standards and Technology, Gaithersburg, MD, December 2019, <https://doi.org/10.6028/NIST.TN.2077>.
 
-20. Mulholland, G. W. and Croarkin, C., Specific Extinction Coefficient of Flame Generated Smoke, *Fire and Materials*, ***24***, 227-230, (2000), <http://doi.org/10.1002/1099-1018(200009/10)24:5>\<227::aid-fam742\>3.0.co;2-9.
+20. Mulholland, G. W. and Croarkin, C., Specific Extinction Coefficient of Flame Generated Smoke, *Fire and Materials*, ***24***, 227-230, (2000), <https://doi.org/10.1002/1099-1018(200009/10)24:5%3C227::AID-FAM742%3E3.0.CO;2-9>.
 
-21. Pagni, P. J., Pool Fire Vortex Shedding Frequencies, In: Some Unanswered Questions in Fluid Mechanics, Applied Mechanics Reviews, (1990), <https://10.1115/1.3119167>.
+21. Pagni, P. J., Pool Fire Vortex Shedding Frequencies, In: Some Unanswered Questions in Fluid Mechanics, Applied Mechanics Reviews, (1990), <https://doi.org/10.1115/1.3119167>.
 
 22. Shaddix, C. R., Correcting Thermocouple Measurements for Radiation Loss: A Critical Review, American Society of Mechanical Engineers, New York, NY (US); Sandia National Labs., Livermore, CA (US), 1999.
 
