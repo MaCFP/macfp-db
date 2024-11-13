@@ -27,7 +27,7 @@ FDS2_Name = ['FDS (20 s, 2 cm)','FDS (40 s, 2 cm)','FDS (60 s, 2 cm)','FDS (80 s
 FDS5_Name = ['FDS (20 s, 5 mm)','FDS (40 s, 5 mm)','FDS (60 s, 5 mm)','FDS (80 s, 5 mm)']
 y1 = np.linspace(1,243, num=50, endpoint=True)
 
-color=['green','red','purple','brown']
+color = ['black', 'red', 'green', 'blue']
 
 FDS_row=[10,20,30,40]
 
@@ -38,6 +38,8 @@ for irow in range(0,4):
     f = macfp.plot_to_fig(x_data=x, y_data=y, data_label=Exp_Name[irow],
                           x_min=0,x_max=80,
                           y_min=0,y_max=180,
+                          institute_label='NIST',
+                          revision_label='MaCFP-3, Tsukuba, 2023',
                           x_label='Heat Flux [kW/m²]',
                           y_label='Height [cm]',
                           marker_style='o',

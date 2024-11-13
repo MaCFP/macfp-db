@@ -51,7 +51,7 @@ u_hf_labels = ["u_exp_HF_z20", "u_exp_HF_z50", "u_exp_HF_z75", "u_exp_HF_z100"]
 devc_labels = ["HF_y0_z20", "HF_y0_z50", "HF_y0_z75", "HF_y0_z100"]
 
 # Define plot elements.
-colors = ['green', 'red', 'purple', 'brown']
+colors = ['black', 'red', 'green', 'blue']
 line_styles = ['-', '--', '-.', ':']
 
 
@@ -155,6 +155,8 @@ for sim_id, sim_label in enumerate(list(burner_sims)):
         f = macfp.plot_to_fig(x_data=burner_sims[sim_label]['Fluxes'][time_id],
                               y_data=heights,
                               data_label=ds_label,
+                              institute_label='BUW-FZJ',
+                              revision_label='MaCFP-3, Tsukuba, 2023',
                               x_min=0,x_max=80,
                               y_min=0,y_max=180,
                               x_label='Heat Flux [kW/m²]',

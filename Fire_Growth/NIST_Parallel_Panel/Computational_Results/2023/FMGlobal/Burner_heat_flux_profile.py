@@ -32,7 +32,7 @@ sim25_Name = ['Sim (20s, 25mm)','Sim (40s, 25mm)','Sim (60s, 25mm)','Sim (80s, 2
 sim13_Name = ['Sim (20s, 13mm)','Sim (40s, 13mm)','Sim (60s, 13mm)','Sim (80s, 13mm)']
 sim6_Name = ['Sim (20s, 6mm)','Sim (40s, 6mm)','Sim (60s, 6mm)','Sim (80s, 6mm)']
 
-color=['green','red','purple','brown']
+color = ['black', 'red', 'green', 'blue']
 
 time_rows={}
 for sim, name in zip([M25, M13, M6], ['M25', 'M13', 'M6']):
@@ -47,6 +47,8 @@ for irow in range(0,4):
     f = macfp.plot_to_fig(x_data=x, y_data=y, data_label=Exp_Name[irow],
                           x_min=0,x_max=80,
                           y_min=0,y_max=180,
+                          institute_label='FMGlobal',
+                          revision_label='MaCFP-3, Tsukuba, 2023',
                           x_label='Heat Flux [kW/m²]',
                           y_label='Height [cm]',
                           marker_style='o',
