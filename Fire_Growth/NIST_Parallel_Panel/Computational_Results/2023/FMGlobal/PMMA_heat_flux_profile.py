@@ -51,6 +51,8 @@ for irow in range(len(hrr_label)):
    f = macfp.plot_to_fig(x_data=x, y_data=z, data_label=hrr_label[irow],
                         x_min=0,x_max=150,x_nticks=4,
                         y_min=0,y_max=250,
+                        institute_label='FMGlobal',
+                        revision_label='MaCFP-3, Tsukuba, 2023',
                         x_label='Heat Flux [kW/m²]',
                         y_label='Height [cm]',
                         marker_style='o',

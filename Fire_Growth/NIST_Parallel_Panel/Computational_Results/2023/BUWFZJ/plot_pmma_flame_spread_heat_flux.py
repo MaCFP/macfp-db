@@ -99,6 +99,8 @@ for irow in range(len(hrr_label)):
     f = macfp.plot_to_fig(x_data=x, y_data=z_exp, data_label=hrr_label[irow],
                           x_min=0,x_max=150,x_nticks=4,
                           y_min=0,y_max=250,
+                          institute_label='BUW-FZJ',
+                          revision_label='MaCFP-3, Tsukuba, 2023',
                           x_label='Heat Flux [kW/m²]',
                           y_label='Height [cm]',
                           marker_style='o',
@@ -120,7 +122,7 @@ for irow in range(len(hrr_label)):
         sim_df = pp_sims[sim_label]["DEVC"]
         indices = pp_sims[sim_label]["Indices"]
         cell_size = pp_sim_info[sim_label]["FluidCells"]
-        data_series_label = f"Sim. {cell_size}"
+        data_series_label = f"{cell_size}"
 
         x_vals = sim_df.loc[indices[irow], hf_devc_labels].values[:].astype(float)
 

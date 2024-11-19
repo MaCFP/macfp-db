@@ -205,6 +205,17 @@ for sim_label in burner_sims:
 plt.xlabel("Width [cm]", fontsize=font_size_axis)
 plt.ylabel("Height [cm]", fontsize=font_size_axis)
 
+# Add instituion and revision label
+inst_label_x = 0.025
+default_stamp_fontsize = 10
+institute_label='BUW-FZJ'
+revision_label='MaCFP-3, Tsukuba, 2023'
+# if len(str(ymax))>abs(axis_exponent_max) or len(str(ymin))>abs(axis_exponent_min):
+    # inst_label_x = 0.06 # else the institute label overlays the exponential notation multiplier
+plt.gca().text(inst_label_x,1.01, institute_label, fontsize=default_stamp_fontsize, transform=plt.gca().transAxes)
+plt.gca().text(0.975,       1.01, revision_label, fontsize=default_stamp_fontsize, ha='right', transform=plt.gca().transAxes)
+
+
 plt.xlim(xmin=-30, xmax=30)
 plt.ylim(ymin=0, ymax=140)
 
