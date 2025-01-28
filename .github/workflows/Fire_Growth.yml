@@ -111,14 +111,14 @@ jobs:
       - name: BUWFZJ Preliminary SBI Results
         run: |
           echo $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Corner_Wall/Computational_Results/2023/BUWFZJ
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/BUWFZJ
           python BUWFZJ_SBI_plot_cmp.py
 
       # Step 2: push the plots to the releases page
       - name: Push BUWFZJ Results to release
         if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Corner_Wall/Computational_Results/2023/BUWFZJ
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/BUWFZJ
           cp README.md Plots/.
           zip Plots.zip -r Plots
           mv Plots.zip UMD_SBI_BUWFZJ_Plots.zip
@@ -130,14 +130,14 @@ jobs:
       - name: FSRI Preliminary SBI Results
         run: |
           echo $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Corner_Wall/Computational_Results/2023/FSRI
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/FSRI
           python FSRI_SBI_plot_cmp.py
 
       # Step 2: push the plots to the releases page
       - name: Push FSRI Results to release
         if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Corner_Wall/Computational_Results/2023/FSRI
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/FSRI
           cp README.md Plots/.
           zip Plots.zip -r Plots
           mv Plots.zip UMD_SBI_FSRI_Plots.zip
@@ -149,14 +149,14 @@ jobs:
       - name: FSRI-UMD Preliminary SBI Results
         run: |
           echo $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Corner_Wall/Computational_Results/2023/FSRI-UMD
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/FSRI-UMD
           python FSRI-UMD_SBI_plot_cmp.py
 
       # Step 2: push the plots to the releases page - FSRI-UMD
       - name: Push FSRI-UMD Results to release
         if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Corner_Wall/Computational_Results/2023/FSRI-UMD
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/FSRI-UMD
           cp README.md Plots/.
           zip Plots.zip -r Plots
           mv Plots.zip UMD_SBI_FSRI-UMD_Plots.zip
@@ -168,14 +168,14 @@ jobs:
       - name: UGent UMD_SBI Results
         run: |
           echo $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Corner_Wall/Computational_Results/2023/UGent
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/UGent
           python UGent_UMD_SBI_plot_cmp.py
 
       # Step 2: push the plots to the releases page
       - name: Push UGent Results to release
         if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Corner_Wall/Computational_Results/2023/UGent
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/UGent
           cp README.md Plots/.
           zip Plots.zip -r Plots
           mv Plots.zip UMD_SBI_UGent_Plots.zip
@@ -229,14 +229,14 @@ jobs:
       - name: DBI UMD_SBI Results
         run: |
           echo $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Corner_Wall/Computational_Results/2023/DBI
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/DBI
           python DBI_SBI_plot.py
 
       # Step 2: push the plots to the releases page
       - name: Push DBI Results to release
         if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Corner_Wall/Computational_Results/2023/DBI
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/DBI
           cp README.md Plots/.
           zip Plots.zip -r Plots
           mv Plots.zip UMD_SBI_DBI_Plots.zip
@@ -248,14 +248,14 @@ jobs:
       - name: AALTO SBI Results
         run: |
           echo $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Corner_Wall/Computational_Results/2023/AALTO
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/AALTO
           python AALTO_SBI_plot_cmp.py
 
       # Step 2: push the plots to the releases page - AALTO
       - name: Push AALTO Results to release
         if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Corner_Wall/Computational_Results/2023/AALTO
+          cd $GITHUB_WORKSPACE/Fire_Growth/UMD_SBI/Computational_Results/2023/AALTO
           cp README.md Plots/.
           zip Plots.zip -r Plots
           mv Plots.zip UMD_SBI_AALTO_Plots.zip
