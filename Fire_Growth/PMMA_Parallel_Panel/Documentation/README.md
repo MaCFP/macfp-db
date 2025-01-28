@@ -1,12 +1,10 @@
 ## PMMA Parallel Panel
 
-### Note
+### Disclaimers
 
-A brief description of the experimental setup and measurement procedures is provided here. [NIST Technical Note 2282](https://www.nist.gov/publications/impact-material-composition-ignitability-and-fire-growth-volume-1-full-scale-burning) [1] provides a comprehenseive analysis of experimental results obtained during this test series (including measurements during flame spread over MaCFP PMMA and 17 other combustible solids). Experiments were conducted at NIST, apparatus design based on FM 4910. 
+Experiments conducted at NIST, Apparatus design based on FM 4910. [NIST Technical Note 2282](https://www.nist.gov/publications/impact-material-composition-ignitability-and-fire-growth-volume-1-full-scale-burning) [1] provides a comprehenseive analysis of experimental results obtained during this test series (including measurements during flame spread over MaCFP PMMA and 17 other combustible solids).
 
-Corresponding authors: isaac.leventon@nist.gov
-
-Disclaimer: The identification of any commercial product or trade name does not imply endorsement or recommendation by NIST (or any other contributing institution).
+Note: The identification of any commercial product or trade name does not imply endorsement or recommendation by NIST (or any other contributing institution).
 
 ### Test Overview
 
