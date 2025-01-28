@@ -41,9 +41,9 @@ jobs:
       - run: pip install -r .github/requirements.txt
 
       # Generate new plots
-      - name: Generate Fire_Growth/PMMA_Parallel_Panel/Documentation plots
+      - name: Generate Fire_Growth/NIST_Parallel_Panel/Documentation plots
         run: |
-          cd ./Fire_Growth/PMMA_Parallel_Panel/Documentation
+          cd ./Fire_Growth/NIST_Parallel_Panel/Documentation
           python plot_burner_heat_flux_centerline.py
           python plot_burner_heat_flux_contour.py
           python plot_pmma_hrr_qrad.py
@@ -53,10 +53,10 @@ jobs:
       - name: Upload images to releases
         if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
-          gh release upload SCRIPT_FIGURES ./Fire_Growth/PMMA_Parallel_Panel/Documentation/Burner_heatflux.png --clobber
-          gh release upload SCRIPT_FIGURES ./Fire_Growth/PMMA_Parallel_Panel/Documentation/Burner_heatflux_colormap.png --clobber
-          gh release upload SCRIPT_FIGURES ./Fire_Growth/PMMA_Parallel_Panel/Documentation/PMMA_HRR_q-rad-only.png --clobber
-          gh release upload SCRIPT_FIGURES ./Fire_Growth/PMMA_Parallel_Panel/Documentation/PMMA_flame_spread_heatflux.png --clobber
+          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux.png --clobber
+          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/Burner_heatflux_colormap.png --clobber
+          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/PMMA_HRR_q-rad-only.png --clobber
+          gh release upload SCRIPT_FIGURES ./Fire_Growth/NIST_Parallel_Panel/Documentation/PMMA_flame_spread_heatflux.png --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -66,7 +66,7 @@ jobs:
       - name: NIST Results
         run: |
           echo $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Parallel_Panel/Computational_Results/2023/NIST
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/NIST
           python NIST_Parallel_Panel_plot_cmp.py
           python Burner_heat_flux_contour.py
           python Burner_heat_flux_profile.py
@@ -77,7 +77,7 @@ jobs:
       - name: Push NIST Results to release
         if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Parallel_Panel/Computational_Results/2023/NIST/Preliminary_Results
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/NIST/Preliminary_Results
           zip Plots.zip -r Plots
           mv Plots.zip NIST_Parallel_Panel_NIST_Plots.zip
           gh release upload SCRIPT_FIGURES NIST_Parallel_Panel_NIST_Plots.zip --clobber
@@ -90,7 +90,7 @@ jobs:
       - name: BUWFZJ Results
         run: |
           echo $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Parallel_Panel/Computational_Results/2023/BUWFZJ
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/BUWFZJ
           python NIST_Parallel_Panel_plot_BUWFZJ_cmp.py
           python plot_burner_heat_flux_centerline.py
           python plot_burner_heat_flux_contour.py
@@ -100,7 +100,7 @@ jobs:
       - name: Push BUWFZJ Results to release
         if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Parallel_Panel/Computational_Results/2023/BUWFZJ/Output
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/BUWFZJ/Output
           zip Plots.zip -r Plots
           mv Plots.zip NIST_Parallel_Panel_BUWFZJ_Plots.zip
           gh release upload SCRIPT_FIGURES NIST_Parallel_Panel_BUWFZJ_Plots.zip --clobber
@@ -187,7 +187,7 @@ jobs:
       - name: UGent NIST_Parallel_Panel Results
         run: |
           echo $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Parallel_Panel/Computational_Results/2023/UGent
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/UGent
           python UGent_NIST_Parallel_Panel_plot_cmp.py
           python plot_burner_heat_flux_contour.py
 
@@ -195,7 +195,7 @@ jobs:
       - name: Push UGent Results to release
         if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Parallel_Panel/Computational_Results/2023/UGent
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/UGent
           cp README.md Plots/.
           zip Plots.zip -r Plots
           mv Plots.zip NIST_Parallel_Panel_UGent_Plots.zip
@@ -207,7 +207,7 @@ jobs:
       - name: FMGlobal NIST_Parallel_Panel Results
         run: |
           echo $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Parallel_Panel/Computational_Results/2023/FMGlobal
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/FMGlobal
           python FMGlobal_NIST_Parallel_Panel_plot_cmp.py
           python Burner_heat_flux_contour.py
           python Burner_heat_flux_profile.py
@@ -217,7 +217,7 @@ jobs:
       - name: Push FMGlobal results to release
         if: ( github.event_name == 'push' || github.event_name == 'workflow_dispatch' ) && github.repository_owner == 'MaCFP'
         run: |
-          cd $GITHUB_WORKSPACE/Fire_Growth/PMMA_Parallel_Panel/Computational_Results/2023/FMGlobal
+          cd $GITHUB_WORKSPACE/Fire_Growth/NIST_Parallel_Panel/Computational_Results/2023/FMGlobal
           cp README.md Plots/.
           zip Plots.zip -r Plots
           mv Plots.zip NIST_Parallel_Panel_FMGlobal_Plots.zip
