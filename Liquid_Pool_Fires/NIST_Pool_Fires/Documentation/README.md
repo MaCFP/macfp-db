@@ -299,12 +299,12 @@ The image above is a schematic drawing of the burners, illustrating its features
 
 | **Experimental Data Filename** | **Description** |
 |:----------------------------------:|:----------------------------------:|
-| Acetone_30_cm_species_r=0_Falkenstein-Smith_2022.csv | Mean gas species, soot, and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). \[8\] |
-| Ethanol_30_cm_species_r=0_Falkenstein-Smith_2022.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[8\] |
-| Methanol_30_cm_species_r=0_Falkenstein-Smith_2022.csv | Mean gas species and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). There is no measurable soot in the methanol fire. \[8\] |
-| Methane_37_cm_species_r=0_Falkenstein-Smith_2022.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[8\] |
-| Propane_37_cm_20_kW_species_r=0_Falkenstein-Smith_2023.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[14\] |
-| Propane_37_cm_34_kW_species_r=0_Falkenstein-Smith_2023.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[14\] |
+| Acetone_30_cm_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species, soot, and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). \[8\] |
+| Ethanol_30_cm_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[8\] |
+| Methanol_30_cm_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). There is no measurable soot in the methanol fire. \[8\] |
+| Methane_37_cm_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[8\] |
+| Propane_37_cm_20_kW_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[14\] |
+| Propane_37_cm_34_kW_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[14\] |
 | Propane_37_cm_50_kW_species_r=0_Falkenstein-Smith_2023.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[14\] |
 
 ## 4.4. Heat Flux
