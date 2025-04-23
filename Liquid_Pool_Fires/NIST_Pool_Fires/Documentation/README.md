@@ -299,12 +299,12 @@ The image above is a schematic drawing of the burners, illustrating its features
 
 | **Experimental Data Filename** | **Description** |
 |:----------------------------------:|:----------------------------------:|
-| Acetone_30_cm_species_r=0_Falkenstein-Smith_2022.csv | Mean gas species, soot, and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). \[8\] |
-| Ethanol_30_cm_species_r=0_Falkenstein-Smith_2022.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[8\] |
-| Methanol_30_cm_species_r=0_Falkenstein-Smith_2022.csv | Mean gas species and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). There is no measurable soot in the methanol fire. \[8\] |
-| Methane_37_cm_species_r=0_Falkenstein-Smith_2022.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[8\] |
-| Propane_37_cm_20_kW_species_r=0_Falkenstein-Smith_2023.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[14\] |
-| Propane_37_cm_34_kW_species_r=0_Falkenstein-Smith_2023.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[14\] |
+| Acetone_30_cm_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species, soot, and their uncertainties as a function of distance above the fuel surface along the pool centerline (r=0). \[8\] |
+| Ethanol_30_cm_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[8\] |
+| Methanol_30_cm_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). There is no measurable soot in the methanol fire. \[8\] |
+| Methane_37_cm_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[8\] |
+| Propane_37_cm_20_kW_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[14\] |
+| Propane_37_cm_34_kW_species_r=0_Falkenstein-Smith_2021a.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[14\] |
 | Propane_37_cm_50_kW_species_r=0_Falkenstein-Smith_2023.csv | Mean gas species, soot, and their uncertainties as a function of distance (z) above the fuel surface along the pool centerline (r=0). \[14\] |
 
 ## 4.4. Heat Flux
@@ -365,7 +365,7 @@ The image above is a schematic drawing of the burners, illustrating its features
 
 # 5. References
 
-1.  Sung, K., Falkenstein-Smith, R. and Hamins, A., *Velocity and Temperature Structure of Medium-Scale Pool Fires*, NIST Technical Note 2162, National Institute of Standards and Technology, Gaithersburg, MD, 2021-06-22 2021, <https://doi.org/10.6028/nist.tn.2162>; see also Sung, K., Falkenstein-Smith, R. and Hamins, A., *The Global and Local Structure of Medium-Scale Pool Fires*, NIST Technical Note 2162, Rev.1, National Institute of Standards and Technology, Gaithersburg, MD, 2024, <https://doi.org/10.6028/NIST.TN.2162r1>.
+1.  Sung, K., Falkenstein-Smith, R. and Hamins, A., *The Global and Local Structure of Medium-Scale Pool Fires*, NIST Technical Note 2162, Rev.1, National Institute of Standards and Technology, Gaithersburg, MD, 2024, <https://doi.org/10.6028/NIST.TN.2162r1>.
 
 2.  Sung, K., Chen, J., Bundy, M., Fernandez, M. and Hamins, A., *The Thermal Character of a 1 m Methanol Pool Fire*, NIST Technical Note 2083, Rev.1, National Institute of Standards and Technology, Gaithersburg, MD, June 2021a, <https://doi.org/10.6028/NIST.TN.2083r1>, also see Sung, K., Chen, J., Bundy, M. and Hamins, A., The Characteristics of a 1 m Methanol Pool Fire, *Fire Safety Journal*, ***120***, 103121, (2021b), <https://doi.org/10.1016/j.firesaf.2020.103121>.
 
