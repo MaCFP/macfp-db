@@ -5,8 +5,11 @@ were conducted to obtain the flame morphologies, gas-phase temperature, and heat
 
 #### JIS A 1310 Geometry
 
-<img src="JIS_A_1310_geometry.png" alt="Alt text" width="500"/> <img src="Sun_FAM_2024_TC_tree.png" alt="Alt text" width="350"/>
+<img src="JIS_A_1310_geometry.png" alt="Alt text" height="600"/> <img src="Sun_FAM_2024_TC_tree.png" alt="Alt text" height="600"/>
 
+#### Experimental Data Files
+
+Experimental data are tabulated in [JIS_Facade/Experimental_Data](https://github.com/MaCFP/macfp-db/tree/master/Wall_Fires/JIS_Facade/Experimental_Data)
 
 #### Mean_temperature.csv
 * The file contains the mean temperature measured at different HRR(600kW, 750kW, 900kW).
