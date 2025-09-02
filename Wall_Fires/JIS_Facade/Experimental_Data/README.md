@@ -2,10 +2,10 @@
 
 #### Sun_FAM_2024_mean_temperature.csv
 * The file contains the mean temperature measured at different HRR(600kW, 750kW, 900kW).
-  X, Y and Z indicate the location of thermocouples.
-  X is the distance from the facade surface (m).
-  Y is the distance from the center of the opening parallel to the facade surface (m).
-  Z is the distance from the upper edge of the opening in vertical direction (m).
+  X, Y and Z indicate the location of thermocouples.  
+  X is the distance from the facade surface (m).  
+  Y is the distance from the center of the opening parallel to the facade surface (m).  
+  Z is the distance from the upper edge of the opening in vertical direction (m).  
 
 #### Sun_FAM_2024_mean_heat_flux.csv
 * The file contains the mean heat flux on the facade surface measured at different HRR (600kW, 750kW, 900kW).
