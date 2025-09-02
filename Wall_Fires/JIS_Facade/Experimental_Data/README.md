@@ -19,11 +19,11 @@
 * Some parts of the data presented here in the MaCFP repository have been revised from the published version [Sun, 2024].  Following are clarifications to avoid confusion when comparing with the paper. The experimental data at Y=0.2275 in the reference [Sun, 2024] was mistakenly averaged over the first 3 minutes of each 5-minute period at each gas flow rate. Therefore, in this data set, the experimental data at Y=0.2275 were revised to the average for the last 3 minutes of each 5-minute period at each gas flow rate. As a result, the following differences exist between this data set and the experimental data shown in Figure 8, 9 and 10 of the reference [Sun, 2024].
 
   * Figure 8: The data used for the contour plots of "Middle-right" in section (A) differ from this data set. The larger discrepancies occur at:
-  600kW: X = 0 to 0.2, Y = -0.8 to 1, values are approximately 100°C to 200°C higher than the reference.
-  750kW: X = 0, Y = 0.1 to 0.3, values are approximately 50°C higher than the reference.
-  900kW: X = 0, Y = 0.1 to 1, values are approximately 50°C higher than the reference.
+  600kW: X = 0 to 0.2, Z = -0.8 to 1, values are approximately 100°C to 200°C higher than the reference.
+  750kW: X = 0, Z = 0.1 to 0.3, values are approximately 50°C higher than the reference.
+  900kW: X = 0, Z = 0.1 to 1, values are approximately 50°C higher than the reference.
 
-  * In addition, in all contour plots of Figure 8, the temperatures at the bottom of the opening (X = -0.9, Y = 0.4, 0.8) were assumed to be the same as those at X = -0.9, Y = 0. Since this assumption was made only for visualization purposes, these values are excluded from this data set.
+  * In addition, in all contour plots of Figure 8, the temperatures at the bottom of the opening (Z = -0.9, X = 0.4, 0.8) were assumed to be the same as those at Z = -0.9, X = 0. Since this assumption was made only for visualization purposes, these values are excluded from this data set.
 
   * Figure 9: The data used for the plots (600kW-exp, 750kW-exp, 900kW-exp) in section (B), middle-right, differ from this data set in the same manner as described for Figure 8.
 
