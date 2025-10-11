@@ -53,6 +53,16 @@ The combustion efficiency and limiting oxygen index (LOI) for four (4) fuels (me
 | propane (C3H8)    | 10.3    |
 | ethylene (C2H4)   | 8.2     |
 
+### Velocity Field and Temperature Update (Oct 2025)
+
+In October of 2025, the FM Burner dataset was updated to include the following data at the plane across the flame centerline for three oxygen concentrations:
+
+* Mean vertical and horizontal velocity (2D map)
+* Mean and RMS temperature
+* Temperature PDF at different locations
+
+These data are located in [FM_Burner/Experimental_Data/Dataset_Update_Oct2025/](https://github.com/MaCFP/macfp-db/blob/master/Extinction/FM_Burner/Experimental_Data/Dataset_Update_Oct2025/).
+
 
 #### References
 
@@ -66,3 +76,5 @@ The combustion efficiency and limiting oxygen index (LOI) for four (4) fuels (me
 8. M.Y. Choi, G.W. Mulholland, A. Hamins, T. Kashiwagi, Comparisons of the Soot Volume Fraction Using Gravimetric and Light Extinction Techniques. Combustion and Flame, 102:161-169, 1995.
 9. Zeng, D., Wang, Y., Dependence of Limiting Oxygen Index of Buoyant Turbulent non-premixed Flame on Fuel, in: 26th ICDERS (International Colloquium
 on the Dynamics of Explosions and Reactive Systems), Boston, 2017. [link to pdf](http://www.icders.org/ICDERS2017/abstracts/ICDERS2017-1074.pdf)
+10. G. Xiong, D. Zeng, Y. Wang, Effect of oxygen concentration on the velocity in buoyant turbulent diffusion flames, Fire Saf J 140 (2023) 103903.
+11. G. Xiong, X. Ren, D. Zeng, R. Barlow, Y. Wang, Temperature measurements in sooty buoyant turbulent non-premixed flames under different oxygen concentrations, Fire Saf J 158 (2025) 104555.
