@@ -9,9 +9,9 @@ were conducted to obtain the flame morphologies, gas-phase temperature, and heat
 
 #### Wall materials
 
-Chamber walls: a 50-mm-thick exposed layer of alumina fiber blanket (material properties close to those of the ceramic fiber blanket in Table 2 of the 2023 FAM paper) and a 150-mm-thick back layer of ceramic fiber block (material properties close to those of the ceramic fiber blanket in Table 2 of the 2023 FAM paper).
+Chamber walls: a 50-mm-thick exposed layer of alumina fiber blanket (material properties close to those of the ceramic fiber blanket in Table 2 of the 2024 FAM paper) and a 150-mm-thick back layer of ceramic fiber block (material properties close to those of the ceramic fiber blanket in Table 2 of the 2024 FAM paper).
 
-Façade wall: a 25-mm-thick exposed layer of ceramic fiber blanket (material properties in Table 2 of the 2023 FAM paper) and a 24-mm-thick back layer of calcium silicate board (material properties in Table 2 of the 2023 FAM paper)
+Façade wall: a 25-mm-thick exposed layer of ceramic fiber blanket (material properties in Table 2 of the 2024 FAM paper) and a 24-mm-thick back layer of calcium silicate board (material properties in Table 2 of the 2024 FAM paper)
 
 #### Thermocouple Measurements
 
