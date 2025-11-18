@@ -64,35 +64,78 @@
 %  \includegraphics[width=3in]{../../Figures/MaCFP_Logo.pdf}
 %  \label{Cover_Image}
 %\end{figure}
-{\large || June, 2026   |   La Rochelle, France ||}
+{\large || June 6-7, 2026   |   La Rochelle, France ||}
 \end{center}
+
+\subsection*{Measurement and Computation of Fire Phenomena (MaCFP)} 
+\label{MaCFP}
+\small
+The general objective of the “IAFSS Working Group on Measurement and Computation of Fire Phenomena” (abbreviated as the “MaCFP Working Group”) is to establish a structured effort in the fire research community to make significant and systematic progress in fire modeling, based on a fundamental understanding of fire phenomena. This is to be achieved as a joint effort between experimentalists and modelers, identifying key research topics of interest as well as knowledge gaps, and thereby establishing a common framework for fire modeling research. The MaCFP Working Group is intended as an open, community-wide, international collaboration between fire scientists. It is also intended to be a regular series of workshops. Information on previous MaCFP workshops (2017, 2021 and 2023) can be found on the \href{https://iafss.org/macfp/}{MaCFP website} and the \href{https://github.com/MaCFP}{MaCFP GitHub repository}.
+
+\subsection*{MaCFP-4} 
+\label{MaCFP-4}
+\small
+The fourth MaCFP Workshop (MaCFP-4) will take place in-person, June 6-7, 2026, as a pre-event to the 15th IAFSS Symposium, which will be held in La~Rochelle, France. The workshop will feature activities organized by the Gas Phase Phenomena subgroup, the Condensed Phase Phenomena subgroup, and the Radiative Heat Transfer Phenomena subgroup. This call for participation provides a summary of MaCFP-4 target cases and a schedule of the events leading up to the Workshop (including virtual meetings).\\
+
+\noindent
+Target cases mostly consider experimental measurements; however, some consider reference simulation data. The format of the workshop will consist of presentations of (1) the target cases selected for fire model validation and (2) detailed comparisons of target data and computational results obtained by different fire modeling groups. Substantial time will be reserved for discussion between participants (including a MaCFP Poster Session). While the workshop topics are of direct interest to experimental and computational fire researchers, the workshop is also of broad interest to the fire research community at large. Interested individuals can participate in MaCFP-4 by attending the workshop, submitting experimental measurements to the pyrolysis model calibration exercise (experimentalists), and/or by contributing computational results for comparisons with target data (modelers). Guidance on how to contribute computational results and expected comparisons will soon be provided. One should check the MaCFP website and the MaCFP GitHub repository for regular updates.
 
 \subsection*{Target Cases} 
 \label{Target Cases}
 \small
-The fourth Measurement and Computation of Fire Phenomena Workshop (MaCFP-4) is scheduled to take place prior to the 15th IAFSS Symposium, which will be held June 8-12, 2026 in La~Rochelle, France. This call for participation provides a summary of MaCFP-4 target cases and a preliminary schedule of the events leading up to the Workshop (including virtual meetings).\\
 
-\textbf{Radiation:}
+
+\textbf{Radiative Heat Transfer Phenomena subgroup:}
 \begin{itemize} [noitemsep]
-    \item \underline{Prediction of radiation fields of benchmark combustion systems.} Predictions made by the radiation solvers of fire CFD codes will be compared against experimental heat fluxes and synthetic data (net source term, emission, absorption) obtained from Particle Monte Carlo - Line-by-line (PMC-LBL) calculations of a 30~cm methanol pool flame (HRR~=~19.2~kW) and a 15~cm ethylene diffusion flame (HRR~=~15~kW). 
-\item \underline{Characterization of absorption and emissivity of a charring material.} The Radiation Subgroup will  help to coordinate the Condensed Phase Subgroup's pyrolysis model calibration exercise.
+\item \underline{Sensitivity studies for radiation solvers used in fire models.} Sensitivity studies using a 30~cm methanol pool flame (HRR~=~19.2~kW) and a 13.7~cm ethylene diffusion flame (HRR~=~15~kW) as targets. Guidance for new participants will be provided in an online meeting, Friday December 5, 2026 (contact Fabian B\"rannstr\"om, \href{mailto:braennstroem@uni-wuppertal.de}{braennstroem@uni-wuppertal.de}, to get an invitation).
+    \item \underline{Prediction of radiation fields in benchmark combustion systems.} Predictions made by the radiation solvers of fire CFD codes will be compared against experimental heat fluxes and synthetic data (net source term, emission, absorption) obtained from Particle Monte Carlo - Line-by-line (PMC-LBL) calculations of a 30~cm methanol pool flame (HRR~=~19.2~kW) and a 13.7~cm ethylene diffusion flame (HRR~=~15~kW). 
+\item \underline{Characterization of absorption and emissivity of a charring material.} The Radiative Heat Transfer Phenomena subgroup will help to coordinate the pyrolysis model calibration exercise.
 \end{itemize}
 
 \textbf{Condensed Phase:}
 \begin{itemize} [noitemsep]
     \item \underline{Pyrolysis model calibration of a charring material: pine wood.}
-    No single approach is suggested for model parameterization. In fact, a key objective of this material property determination exercise is to catalog current approaches used to parameterize complex pyrolysis models. \emph{Experimentalists} are asked to perform tests and share their measurement data to be made publicly available on the \href{https://github.com/MaCFP/matl-db/tree/master/Wood}{MaCFP GitHub Repository}. \emph{Modelers} are asked to calibrate material property sets using this data and perform simulations of material response to heating (0D thermal decomposition and 1D gasification). Limited quantities of the test material will be made available directly to participants who can commit to conducting certain experiments. MaCFP-4 pyrolysis modeling targets will include $only$ anaerobic conditions; however, participants are encouraged to develop experimental datasets and corresponding models that will describe oxidation (as will be studied in detail at MaCFP-5).\\
+    No single approach is suggested for model parameterization. In fact, a key objective of this material property determination exercise is to catalog current approaches used to parameterize complex pyrolysis models.
+\begin{itemize} [noitemsep]
+    \item \emph{Experimentalists} are asked to perform tests and share their measurement data to be made publicly available on the \href{https://github.com/MaCFP/matl-db/tree/master/Wood}{MaCFP GitHub Repository}. 
+    \item \emph{Modelers} are asked to calibrate material property sets using this data and perform simulations of material response to heating (0D thermal decomposition and 1D gasification). 
+\end{itemize} 
+    \noindent Limited quantities of the test material will be made available directly to participants who can commit to conducting certain experiments. MaCFP-4 pyrolysis modeling targets will include $only$ anaerobic conditions; however, participants are encouraged to develop experimental datasets and corresponding models that will describe oxidation (as will be studied in detail at MaCFP-5).\\
 \end{itemize}
 
 \textbf{Gas Phase:}
 \begin{itemize} [noitemsep]
 \small
-    \item \underline{\href{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}{FM Burner}.} Study of soot formation/oxidation and thermal radiation transport in turbulent buoyant diffusion flames using existing data; this dataset features different oxidizer conditions and different fuels. The FM Burner configuration was developed and studied at FM.
-    \item \underline{Upward flame spread.} Systematic, constrained modeling study of flame structure/heat flux and fire growth over MaCFP-PMMA. This study considers existing data from two configurations based on:\\
-    (1) the FM~4910 fire test, as studied at NIST (called NIST-data{\_}FM4910-config); and\\
-    (2) the EN 13823 Single Burning Item (SBI) fire test, as studied at UMD (called UMD-data{\_}SBI-config).
-    \item \underline{Compartment/façade fires.} Study of flame structure and heat transfer using existing data [Sun et al.~(2024) Fire and Materials, 48.4:411-425]. The database features 1-MW-scale compartment fires and external flames and spill plumes thermally loading a vertical inert façade. This configuration is based on the JIS~A~1310 fire test, as studied at the Building Research Institute (BRI) of Japan and the University of Tokyo (UoT) (called BRI-UoT-data{\_}JISA1310-config). 
+    \item \underline{\href{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}{FM Burner}.} Controlled co-flow round diffusion flame experiments (13.7-cm diameter diffusion flames featuring different fuels and an oxygen-nitrogen oxidizer). Study of soot formation/oxidation and thermal radiation emissions in turbulent buoyant diffusion flames using a burner configuration developed at
+FM and data also generated at FM. See the FM Burner folder on the MaCFP GitHub repository.
+    \item \underline{\href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth}{Upward flame spread.}} Study of flame structure/heat flux and fire growth over MaCFP-PMMA. Two configurations are considered:\\
+    (1) A parallel panel configuration based on the FM~4910 fire test and studied at the National Institute of Standards and Technology (NIST). See the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/NIST_Parallel_Panel}{parallel panel fire folder} on the MaCFP GitHub repository.\\
+    (2)  A corner wall configuration based on the EN~13823 Single Burning Item (SBI) fire test and studied at the University of Maryland (UMD). See the \href{https://github.com/MaCFP/macfp-db/tree/master/Fire_Growth/UMD_SBI}{corner wall fire folder} on the MaCFP GitHub repository.
+    \item \underline{\href{https://github.com/MaCFP/macfp-db/tree/master/Wall_Fires/JIS_Facade}{Compartment/façade fires.}} 1-MW-scale compartment fires and external flames and spill plumes thermally loading a vertical inert façade. Study of flame structure and heat transfer [Sun et al.~(2024) Fire and Materials, 48.4:411-425] using a configuration based on the JIS~A~1310 fire test and data generated at the Building Research Institute of Japan and the University of Tokyo. See the \href{https://github.com/MaCFP/macfp-db/tree/master/Wall_Fires/JIS_Facade}{façade fire folder} on the MaCFP GitHub repository. 
 %    \item \underline{`Blind' study of flame spread and fire growth over wood.} {\color{red} A configuration based on the FM 4910 fire test and studied at NIST (called NIST{\_}data{\_}FM4910{\_}config{\_}wood{\_}mat).} At MaCFP-4, pine wood will be characterized in micro-scale and bench-scale experiments focusing on pyrolysis (without char oxidation). At MaCFP-5, this material will be characterized in micro-scale and bench-scale experiments including char oxidation, as well as in flame spread and fire growth experiments using a parallel panel configuration; different separation distances between the panels will be considered. 
+\end{itemize}
+
+
+\subsection*{Points of contact}
+\textbf{Gas Phase Phenomena subgroup}
+\begin{itemize} [noitemsep]
+\item Randy McDermott (National Institute of Standards and Technology, USA) (randall.mcdermott@nist.gov)
+\item Bart Merci (Co-Chair) (Ghent University, Belgium) (bart.merci@ugent.be)
+\item Arnaud Trouve (Co-Chair) (University of Maryland, USA) (atrouve@umd.edu)
+\item Yi Wang (FM, USA) (yi.wang@fm.com)
+\end{itemize}
+
+\textbf{Condensed Phase Phenomena subgroup}
+\begin{itemize} [noitemsep]
+\item Morgan Bruns (Virginia Military Institute, USA) (mbruns@stmarytx.edu)
+\item Isaac Leventon (National Institute of Standards and Technology, USA) (isaac.leventon@nist.gov)
+\item Stanislav Stoliarov (University of Maryland, USA) (stolia@umd.edu)
+\end{itemize}
+
+\textbf{Radiation Phenomena subgroup}
+\begin{itemize} [noitemsep]
+\item Fabian Br\"annstr\"om (University of Wuppertal, Germany) (braennstroem@uni-wuppertal.de)
+\item Simo Hostikka (Aalto University, Finland) (simo.hostikka@aalto.fi)
 \end{itemize}
 
 \clearpage
@@ -100,6 +143,7 @@ The fourth Measurement and Computation of Fire Phenomena Workshop (MaCFP-4) is s
 \subsection*{Workshop Timeline (Tentative)} 
 \label{Timeline}
 \small
+\vspace{-0.5cm}
 \begin{table} [h!]
 \begin{tabular}{p{0.16\linewidth} | p{0.84\linewidth}}
 \hline
@@ -124,34 +168,36 @@ Spring 2025  	& Coordinate distribution of material samples for pyrolysis model 
 \\
 %\hline
 %Sept. 5, 2025       	& Deadline to submit modeling results (Gas Phase)\\
-Nov. 2025        	& Deadline to submit measurement data (Pyrolysis Experiments)\\
-				& Call for volunteers [repo management, data analysis, scripting, etc.]\\
+November 2025        	& Deadline to submit measurement data (Pyrolysis Experiments)\\
+\\
+Dec. 5, 2025		& Online meeting of the Radiative Heat Transfer Phenomena subgroup\\
 \\
 \hline 
 % \multicolumn{2}{c}{ Virtual Meeting (`MaCFP-3.5')}\\
 % \hline
 %\textcolor{red}{Oct. 21, 2025}		& \textcolor{red}{Virtual meeting (Radiation/Gas Subgroups; all participants welcome)}\\
 %& \textcolor{red}{Co-chairs of rad-/gas-phase, can we present Case 3?}\\
-\textbf{Jan. 14, 2025}	& \textbf{Virtual Meeting (`MaCFP-3.5')}\\
-& Coordinated by Condensed Phase Subgroup, all participants welcome\\
-& Summary of experimental data submitted to pyrolysis model calibration exercise\\
+\textbf{January 2026}		& \textbf{Virtual Meeting (`MaCFP-3.5')}\\
+						& Call for volunteers [repo management, data analysis, scripting, etc.]\\
+						& Coordinated by Condensed Phase Subgroup, all participants welcome\\
+						& Summary of experimental data submitted to pyrolysis model calibration exercise\\
                        		& Call for participation (modelers) in pyrolysis model calibration exercise\\
                             \\
 % \hline
-Feb. 13, 2026       	& Share final `Guidelines for Participation in MaCFP-4' document\\
+February 2026       	& Share final `Guidelines for Participation in MaCFP-4' document\\
 				& Deadline to submit revisions to experimental datasets (pyrolysis model calibration)\\
 \\
-May 9, 2026       	& Deadline to submit pyrolysis model calibration results (Condensed Phase Subgroup)\\
-                & Deadline to submit radiation modeling results (Radiative Heat Transfer Subgroup)\\
-            & Deadline to submit modeling results (Gas Phase Subgroup, all cases)\\ 
-				& Poster abstract deadline (MaCFP-4 experimental data and modeling submissions) \\
+May 2026       	& Deadline to submit pyrolysis model calibration results (Condensed Phase Subgroup)\\
+                		& Deadline to submit radiation modeling results (Radiative Heat Transfer Subgroup)\\
+		         & Deadline to submit modeling results (Gas Phase Subgroup, all cases)\\ 
+			& Poster abstract deadline (MaCFP-4 experimental data and modeling submissions) \\
 %Spring 2026	        	& Virtual Meeting  (Condensed Phase Subgroup; all participants welcome):\\
 %                    		& Comparisons of derived pyrolysis parameters and parameter sets \\
 % 				& Comparisons of pyrolysis model predictions\\
 \\
 
 \hline
-\textbf{June, 2026}       	& \textbf{MaCFP-4 Workshop: La Rochelle, France} \\
+\textbf{June 6-7, 2026}       	& \textbf{MaCFP-4 Workshop: La Rochelle, France} \\
 \hline
 \end{tabular}
 \end{table}
