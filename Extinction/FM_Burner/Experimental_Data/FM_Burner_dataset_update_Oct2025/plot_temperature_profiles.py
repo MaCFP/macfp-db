@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
 import re
+from collections import defaultdict
 
 # ---------------------------------------------------------------------------
 # Load CSVs (all '--' already removed)
@@ -13,33 +13,64 @@ df_rms  = pd.read_csv("temperature_rms.csv")
 radius = pd.to_numeric(df_mean.iloc[1:, 0], errors="coerce").values
 
 # ---------------------------------------------------------------------------
-# Extract (OC, height, column) from wide-format column names
-#   Mean columns look like:  "15.2% 0.5D", "15.2%  2.0D"
-#   RMS  columns look like:  "15.2% 0.5D RMS", " 15.2%  2.0D RMS"
+# Extract (OC, height, column_rad, column_val) from wide-format column names
+#   Mean columns look like:  r_15.2_0.5D (cm)	T_Mean_15.2_0.5D (K)	T_Std_15.2_0.5D(K)	r_15.2_1.0D (cm)	T_Mean_15.2_1.0D (K)	T_Std_15.2_1.0D(K)
+#   RMS  columns look like:  r_15.2_0.5D (cm)	T_RMS_15.2_0.5D (K)	T_Std_15.2_0.5D(K)	r_15.2_1.0D (cm)	T_RMS_15.2_1.0D (K)	T_Std_15.2_1.0D(K)
 # We:
 #   * strip leading/trailing spaces
 #   * allow any amount of spaces between tokens
 #   * optionally require the "RMS" suffix
 # ---------------------------------------------------------------------------
-def extract_groups(df, is_rms=False):
-    groups = []
+def extract_groups(df,is_rms=False):
+    # temporary storage keyed by (OC, height)
+    temp = defaultdict(dict)
+
+    # matches: _15.2_0.5D
+    pattern = re.compile(r"_(\d+\.\d+)_([\d\.]+)D\b")
+
     for col in df.columns:
         col_clean = col.strip()
-        pattern = r"(\d+\.\d+%)\s+(\d+\.\dD)"
+
+        # exclude STD columns
+        if "_Std_" in col_clean:
+            continue
+
+        m = pattern.search(col_clean)
+        if not m:
+            continue
+
+        OC = float(m.group(1))
+        height = float(m.group(2))
+        key = (OC, height)
+        
         if is_rms:
-            pattern += r"\s+RMS"
-        m = re.match(pattern + r"$", col_clean)
-        if m:
-            OC = float(m.group(1).replace("%", ""))
-            height = float(m.group(2).replace("D", ""))
-            groups.append((OC, height, col))  # keep original col for indexing
+            if col_clean.startswith("r_"):
+                temp[key]["r"] = col
+            elif col_clean.startswith("T_RMS_"):
+                temp[key]["T"] = col
+        else:
+           if col_clean.startswith("r_"):
+               temp[key]["r"] = col
+           elif col_clean.startswith("T_Mean_"):
+               temp[key]["T"] = col
+
+    # build final groups only when both columns exist
+    groups = []
+    for (OC, height), cols in temp.items():
+        if "r" in cols and "T" in cols:
+            groups.append((OC, height, cols["r"], cols["T"]))
+
     return groups
 
-groups_mean = extract_groups(df_mean, is_rms=False)
-groups_rms  = extract_groups(df_rms,  is_rms=True)
 
-OCs     = sorted({OC for OC, _, _ in groups_mean})
-heights = sorted({h  for _, h, _ in groups_mean})
+groups_mean = extract_groups(df_mean,is_rms=False)
+groups_rms  = extract_groups(df_rms,is_rms=True)
+
+OCs     = sorted({OC for OC, _, _, _ in groups_mean})
+heights = sorted({h  for _, h, _, _ in groups_mean})
+
+print(OCs)
+print(heights)
 
 # ---------------------------------------------------------------------------
 # Utility: get numeric y-values for a given column
@@ -56,9 +87,10 @@ for i, OC in enumerate(OCs):
 
     # ----- Mean panel -----
     axm = plt.subplot(len(OCs), 2, 2*i + 1)
-    for OC_i, h, col in groups_mean:
+    for OC_i, h, col_rad, col_val in groups_mean:
         if OC_i == OC:
-            y = get_y(df_mean, col)
+            radius = get_y(df_mean, col_rad)
+            y = get_y(df_mean, col_val)
             axm.plot(radius[:len(y)], y, marker='o', label=f"{h}D")
 
     axm.set_title(f"Mean {OC}% OC")
@@ -71,9 +103,10 @@ for i, OC in enumerate(OCs):
 
     # ----- RMS panel -----
     axr = plt.subplot(len(OCs), 2, 2*i + 2)
-    for OC_i, h, col in groups_rms:
+    for OC_i, h, col_rad, col_val in groups_rms:
         if OC_i == OC:
-            y = get_y(df_rms, col)
+            radius = get_y(df_rms, col_rad)
+            y = get_y(df_rms, col_val)
             axr.plot(radius[:len(y)], y, marker='o', label=f"{h}D")
 
     axr.set_title(f"RMS {OC}% OC")
@@ -94,9 +127,10 @@ compare_heights = [1.0, 3.5]
 fig6, (ax6m, ax6r) = plt.subplots(1, 2, figsize=(12, 5))
 
 # Mean comparison
-for OC, h, col in groups_mean:
+for OC, h, col_rad, col_val in groups_mean:
     if h in compare_heights:
-        y = get_y(df_mean, col)
+        radius = get_y(df_mean, col_rad)
+        y = get_y(df_mean, col_val)
         ax6m.plot(radius[:len(y)], y, marker='o', label=f"{OC}% {h}D")
 
 ax6m.set_title("(a) Mean temperature")
@@ -106,9 +140,10 @@ ax6m.grid(True, linestyle=":")
 ax6m.legend()
 
 # RMS comparison
-for OC, h, col in groups_rms:
+for OC, h, col_rad, col_val in groups_rms:
     if h in compare_heights:
-        y = get_y(df_rms, col)
+        radius = get_y(df_rms, col_rad)
+        y = get_y(df_rms, col_val)
         ax6r.plot(radius[:len(y)], y, marker='o', label=f"{OC}% {h}D")
 
 ax6r.set_title("(b) RMS temperature")
