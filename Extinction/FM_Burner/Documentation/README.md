@@ -61,20 +61,33 @@ In October of 2025, the FM Burner dataset was updated to include the following d
 * Mean and RMS temperature
 * Temperature PDF at different locations
 
-These data are located in [FM_Burner/Experimental_Data/Dataset_Update_Oct2025/](https://github.com/MaCFP/macfp-db/blob/master/Extinction/FM_Burner/Experimental_Data/Dataset_Update_Oct2025/).
+These data are located in [FM_Burner/Experimental_Data/FM_Burner_dataset_update_Oct2025/](https://github.com/MaCFP/macfp-db/blob/master/Extinction/FM_Burner/Experimental_Data/FM_Burner_dataset_update_Oct2025/).
 
 
 #### References
 
-1. Zeng, D., Wang, Y., Effect of oxygen depletion on the radiative characteristics of buoyant turbulent diffusion flames, in: 15th Fire & Materials Conference, 2017.
-2. Zeng, D., Chatterjee, P., Wang, Y., The effect of oxygen depletion on soot and thermal radiation in buoyant turbulent diffusion flames, Proc Combustion Institute 37 (1) (2019) 825-832.
-3. Ren, N., Zeng, D., Meredith, K.V., Wang, Y., and Dorofeev, S.B., Modeling of flame extinction/re-ignition in oxygen-reduced environments. Proceedings of the Combustion Institute, 2019. 37(3): p. 3951-3958.
-4. Ren, X., Zeng, D., Wang, Y., Xiong, G., Agarwal, G., and Gollner, M., Temperature measurement of a turbulent buoyant ethylene diffusion flame using a dual-thermocouple technique. Submitted to IAFSS, 2019.
-5. Xiong, G., Zeng, D., Panda, P.P., and Wang, Y., Laser induced incandescence measurement of soot in ethylene buoyant turbulent diffusion flames under normal and reduced oxygen concentrations. Submitted to Proceedings of Combustion Institute, 2019.
-6. Chatterjee, P., Zeng, D., and Wang, Y., Numerical Modeling of Soot-Radiation in Optically-Thin, Buoyant Diffusion Flames of Varying Oxygen Concentrations. Submitted to Proceedings of Combustion Institute, 2019.
-7. T.C. Williams, C.R. Shaddix, K.A. Jensen, J.M. Suo-Anttil, Measurement of the dimensionless extinction coefficient of soot within laminar diffusion flames. International Journal of Heat and Mass Transfer 50:1616–1630, 2007.
-8. M.Y. Choi, G.W. Mulholland, A. Hamins, T. Kashiwagi, Comparisons of the Soot Volume Fraction Using Gravimetric and Light Extinction Techniques. Combustion and Flame, 102:161-169, 1995.
-9. Zeng, D., Wang, Y., Dependence of Limiting Oxygen Index of Buoyant Turbulent non-premixed Flame on Fuel, in: 26th ICDERS (International Colloquium
-on the Dynamics of Explosions and Reactive Systems), Boston, 2017. [link to pdf](http://www.icders.org/ICDERS2017/abstracts/ICDERS2017-1074.pdf)
-10. G. Xiong, D. Zeng, Y. Wang, Effect of oxygen concentration on the velocity in buoyant turbulent diffusion flames, Fire Saf J 140 (2023) 103903.
-11. G. Xiong, X. Ren, D. Zeng, R. Barlow, Y. Wang, Temperature measurements in sooty buoyant turbulent non-premixed flames under different oxygen concentrations, Fire Saf J 158 (2025) 104555.
+References:
+
+[1] D. Zeng, P. Chatterjee, Y. Wang, The effect of oxygen depletion on soot and thermal radiation in buoyant turbulent diffusion flames, Proc Combust Inst 37 (2019) 825-832. doi: https://doi.org/10.1016/j.proci.2018.05.139.
+
+[2] N. Ren, D. Zeng, K.V. Meredith, Y. Wang, S.B. Dorofeev, Modeling of flame extinction/re-ignition in oxygen-reduced environments, Proc Combust Inst 37 (2019) 3951-3958. doi: https://doi.org/10.1016/j.proci.2018.06.076.
+
+[3] X. Ren, D. Zeng, Y. Wang, G. Xiong, G. Agarwal, M. Gollner, Temperature measurement of a turbulent buoyant ethylene diffusion flame using a dual-thermocouple technique, Fire Saf. J. 120 (2021) 103061. doi: https://doi.org/10.1016/j.firesaf.2020.103061.
+
+[4] G. Xiong, D. Zeng, P.P. Panda, Y. Wang, Laser induced incandescence measurement of soot in ethylene buoyant turbulent diffusion flames under normal and reduced oxygen concentrations, Combust. Flame 230 (2021) 111456. doi: https://doi.org/10.1016/j.combustflame.2021.111456.
+
+[5] P. Chatterjee, D. Zeng, Y. Wang, Numerical modeling of soot radiation in optically-thin, buoyant diffusion flames at varying oxygen concentrations, Proc Combust Inst 38 (2021) 4987-4994. doi: https://doi.org/10.1016/j.proci.2020.08.028.
+
+[6] G. Xiong, D. Zeng, Y. Wang, Effect of oxygen concentration on the velocity in buoyant turbulent diffusion flames, Fire Saf. J. 140 (2023) 103903. doi: https://doi.org/10.1016/j.firesaf.2023.103903.
+
+[7] T.C. Williams, C.R. Shaddix, K.A. Jensen, J.M. Suo-Anttila, Measurement of the dimensionless extinction coefficient of soot within laminar diffusion flames, Int. J. Heat Mass Transfer 50 (2007) 1616-1630. doi: https://doi.org/10.1016/j.ijheatmasstransfer.2006.08.024.
+
+[8] M.Y. Choi, G.W. Mulholland, A. Hamins, T. Kashiwagi, Comparisons of the soot volume fraction using gravimetric and light extinction techniques, Combust. Flame 102 (1995) 161-169. doi: https://doi.org/10.1016/0010-2180(94)00282-W.
+
+[9] D. Zeng, Y. Wang, Dependence of limiting oxygen index of buoyant turbulent non-premixed flame on fuel. In. 26th Int. Colloquium on the Dynamics of Explosions and Reactive Systems, Boston; 2017.
+
+[10] G. Xiong, X. Ren, D. Zeng, R. Barlow, Y. Wang, Temperature measurements in sooty buoyant turbulent non-premixed flames under different oxygen concentrations, Fire Saf. J. 158 (2025) 10.1016/j.firesaf.2025.104555.
+
+[11] G. Xiong, R. Barlow, D. Zeng, Y. Wang, Extinction of buoyant turbulent non-premixed flames under reduced oxygen concentrations, Proc Combust Inst 40 (2024) 105307. doi: https://doi.org/10.1016/j.proci.2024.105307.
+
+[12] G. Xiong, D. Zeng, Y. Wang, Thermal radiation and soot in buoyant turbulent diffusion flames under different oxygen concentrations: Measurements and implications to radiation modeling, Combust. Flame 267 (2024) 113587. doi: https://doi.org/10.1016/j.combustflame.2024.113587.
