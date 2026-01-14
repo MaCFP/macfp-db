@@ -1,4 +1,4 @@
-#!$FIREMODELS/fds/.github/fds_python_env/bin/python
+#!$MACFP/macfp-db/.github/macfp_python_env/bin/python
 
 import subprocess
 import fdsplotlib
