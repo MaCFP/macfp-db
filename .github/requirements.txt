@@ -10,5 +10,4 @@ seaborn
 pygments
 ipython
 
-# FDS python utilities (editable, from GitHub)
--e git+https://github.com/firemodels/fds.git#subdirectory=Utilities/Python
+
