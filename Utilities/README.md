@@ -8,10 +8,10 @@ To keep things simple for users, MaCFP uses a single Python virtual environment 
 
 ## Quick Start (Most Users)
 
-From the root of the MaCFP repository, run:
+From the root of the `macpf-db` repository, run:
 
 ```bash
-source macfp-db/Utilities/setup_python_env.sh
+source ./Utilities/setup_python_env.sh
 ```
 
 If everything is working, you should see:
