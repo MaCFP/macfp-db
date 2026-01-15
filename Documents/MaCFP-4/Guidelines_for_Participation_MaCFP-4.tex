@@ -12,6 +12,14 @@
 \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{textcomp}
+\usepackage[
+  backend=biber,
+  style=numeric,      % or authoryear, etc.
+  sorting=none,
+  backref=true,
+  giveninits=true
+]{biblatex}
+\addbibresource{../MaCFP_References.bib}
 
 \definecolor{lbcolor}{rgb}{0.96,0.96,0.96}
 \lstset{
@@ -19,7 +27,7 @@
     tabsize=4,
     rulecolor=,
     language=Fortran,
-	basicstyle=\footnotesize \ttfamily,	
+    basicstyle=\footnotesize \ttfamily,
         upquote=true,
         aboveskip={\baselineskip},
         belowskip={\baselineskip},
@@ -62,7 +70,6 @@
         citecolor=linkred,     % citation number colors
         linkcolor=linknavy,    % \ref{...} and \pageref{...}
         pdfproducer={pdflatex},
-        pagebackref,
         pdfpagemode=UseNone,
         bookmarksopen=true,
         plainpages=false,
@@ -81,7 +88,6 @@
 
 \begin{document}
 
-\bibliographystyle{unsrt}
 \thispagestyle{empty}
 
 \begin{center}
@@ -175,7 +181,7 @@ Interested modeling groups should inform the Gas Phase and Condensed Phase Pheno
 \item Fabian Bränström, \href{mailto:braennstroem@uni-wuppertal.de}{braennstroem@uni-wuppertal.de} (Co-Chair of the Radiation subgroup) (Radiation Modeling Exercise)
  \item Simo Hostikka, \href{mailto:simo.hostikka@aalto.fi}{simo.hostikka@aalto.fi} (Co-Chair of the Radiation subgroup) (Radiation Modeling Exercise)
   \end{itemize}
- 
+
 
 
 %Users of the experimental measurements and model parameters found in the Condensed Phase Material Database~\cite{MaCFP-cond-db} are encouraged to: (a) cite the repository (see below); (b) to cite related summary publications, if using the analysis results prepared in these documents (e.g., conference proceedings~\cite{brown2018proceedings} or the preliminary summary of experimental measurements document~\cite{MaCFP-2_Prelim_Exp}); and (c) to directly credit the institutions that provided experimental measurements (relevant publications and contributor information) are detailed in the README file associated with each institutional dataset.
@@ -184,19 +190,19 @@ Interested modeling groups should inform the Gas Phase and Condensed Phase Pheno
 \label{sec:MaCFP-4}
 \subsection{Workshop Presentation Topics}
 \label{ssec:MaCFP-4 Target Cases}
-In June 2026, the fourth Measurement and Computation of Fire Phenomena Workshop (MaCFP-4) will be hosted (in-person) as a pre-event to the IAFSS meeting in La Rochelle, France. 
+In June 2026, the fourth Measurement and Computation of Fire Phenomena Workshop (MaCFP-4) will be hosted (in-person) as a pre-event to the IAFSS meeting in La Rochelle, France.
 The MaCFP Github repository provides a summary of \href{https://github.com/MaCFP/macfp-db/blob/master/Documents/FIRE_PHENOMENA.md}{ key fire dynamics phenomena of interest} to the MaCFP Working Group as well as a list of benchmark experiments (i.e., fire modeling target cases) currently in the MaCFP repository that address these phenomena. Target cases selected for study at MaCFP-4 are designed to address these fire phenomena with special emphasis maintained on knowledge gaps and research needs identified at previous MaCFP Workshops. A detailed summary of the learning outcomes, participant feedback, and research needs identified at the MaCFP-3 Workshop is provided in the MaCFP-3 Proceedings~\cite{MaCFP3Proceedings}.\\
 
 \clearpage
 Target cases considered at MaCFP-4 include:
 \begin{enumerate} [noitemsep]
 \item The Radiation Subgroup will coordinate a modeling exercise to predict the radiation fields of benchmark combustion systems (a 30~cm methanol pool flame, HRR~=~19.2~kW, and a 15~cm ethylene diffusion flame, HRR~=~15~kW). The Radiation Subgroup will also help to coordinate the Condensed Phase Subgroup's pyrolysis model calibration exercise (focus: characterization of absorption and emissivity).\\
-\item The Condensed Phase subgroup will coordinate a second pyrolysis modeling exercise, this time focused on a charring material (i.e., pine wood). 
+\item The Condensed Phase subgroup will coordinate a second pyrolysis modeling exercise, this time focused on a charring material (i.e., pine wood).
 \begin{itemize}
-    \item \emph{Experimentalists} are asked to perform tests and share their measurement data to be made publicly available on the \href{https://github.com/MaCFP/matl-db/}{MaCFP GitHub Repository}. 
+    \item \emph{Experimentalists} are asked to perform tests and share their measurement data to be made publicly available on the \href{https://github.com/MaCFP/matl-db/}{MaCFP GitHub Repository}.
     \item \emph{Modelers} are asked to calibrate material property sets using this data and perform simulations of material response to heating (0D thermal decomposition and 1D gasification).
 \end{itemize}
-\item The Gas Phase Subgroup will feature comparisons of experimental data and computational results for three target experiments: 
+\item The Gas Phase Subgroup will feature comparisons of experimental data and computational results for three target experiments:
 \begin{itemize}
 \item Controlled co-flow round diffusion flame experiments (13.7-cm diameter diffusion flames featuring different fuels.
 \item Study of flame structure/heat flux and fire growth over PMMA during upward flame spread in two configurations (parallel panels and corner-wall).
@@ -229,55 +235,55 @@ The MaCFP-4 agenda will be confirmed in the final months leading to the Workshop
 \hline
 \textbf{Date}          & \textbf{Objective} \\
 \hline
-% Feb. 26, 2025 		& Release \href{https://github.com/user-attachments/files/18370197/MaCFP-2_Proceedings_GasPhase.pdf}{MaCFP-2 Proceedings}\\
+% Feb. 26, 2025         & Release \href{https://github.com/user-attachments/files/18370197/MaCFP-2_Proceedings_GasPhase.pdf}{MaCFP-2 Proceedings}\\
 % \\
-March 21, 2025  	& Share `Call for Participation in MaCFP-4' Document\\
+March 21, 2025      & Share `Call for Participation in MaCFP-4' Document\\
     & Share `Guidelines for Participation in MaCFP-4' Document \\
     %& Share MaCFP-3 Proceedings (Final Draft) for public comment\\
     & Call for participation (modelers) in radiation cases\\
     & Call for participation (experimentalists) in pyrolysis model calibration exercise\\
 \\
-%\textcolor{red}{Feb. 4, 2025}         	& \textcolor{red}{Virtual meeting (Radiation/Gas Subgroup; all participants welcome)}\\
-%\textcolor{red}{11:30 AM (EST)}   	& \textcolor{red}{Present details of four target cases; highlight cases \# and \#\# for October Virtual meeting}\\
+%\textcolor{red}{Feb. 4, 2025}          & \textcolor{red}{Virtual meeting (Radiation/Gas Subgroup; all participants welcome)}\\
+%\textcolor{red}{11:30 AM (EST)}    & \textcolor{red}{Present details of four target cases; highlight cases \# and \#\# for October Virtual meeting}\\
 %\\
 March 28, 2025         & Virtual meeting (all participants welcome)\\
-9:00 AM (EST)   	& Present details of pyrolysis model calibration exercise (material information, how to request samples; test data of interest, formatting and submission requirements)\\
+9:00 AM (EST)       & Present details of pyrolysis model calibration exercise (material information, how to request samples; test data of interest, formatting and submission requirements)\\
 & Present details of radiation modeling exercise (prediction of radiation fields of benchmark combustion systems)\\
 \\
-Spring 2025  	& Distribution of material samples for pyrolysis model calibration exercise\\
+Spring 2025     & Distribution of material samples for pyrolysis model calibration exercise\\
 \\
 %\hline
-%Sept. 5, 2025       	& Deadline to submit modeling results (Gas Phase)\\
-Nov. 2025        	& Deadline to submit measurement data (Pyrolysis Experiments)\\
+%Sept. 5, 2025          & Deadline to submit modeling results (Gas Phase)\\
+Nov. 2025           & Deadline to submit measurement data (Pyrolysis Experiments)\\
 \\
-Dec. 5, 2025		& Online meeting of the Radiative Heat Transfer Phenomena subgroup\\
+Dec. 5, 2025        & Online meeting of the Radiative Heat Transfer Phenomena subgroup\\
 \\
-\hline 
+\hline
 % \multicolumn{2}{c}{ Virtual Meeting (`MaCFP-3.5')}\\
 % \hline
-%\textcolor{red}{Oct. 21, 2025}		& \textcolor{red}{Virtual meeting (Radiation/Gas Subgroups; all participants welcome)}\\
+%\textcolor{red}{Oct. 21, 2025}     & \textcolor{red}{Virtual meeting (Radiation/Gas Subgroups; all participants welcome)}\\
 %& \textcolor{red}{Co-chairs of rad-/gas-phase, can we present Case 3?}\\
-\textbf{January 2026}		& \textbf{Virtual Meeting (`MaCFP-3.5')}\\
-						& Call for volunteers [repo management, data analysis, scripting, etc.]\\
-						& Coordinated by Condensed Phase Subgroup, all participants welcome\\
-						& Summary of experimental data submitted to pyrolysis model calibration exercise\\
-                       				& Call for participation (modelers) in pyrolysis model calibration exercise\\
+\textbf{January 2026}       & \textbf{Virtual Meeting (`MaCFP-3.5')}\\
+                        & Call for volunteers [repo management, data analysis, scripting, etc.]\\
+                        & Coordinated by Condensed Phase Subgroup, all participants welcome\\
+                        & Summary of experimental data submitted to pyrolysis model calibration exercise\\
+                                    & Call for participation (modelers) in pyrolysis model calibration exercise\\
                             \\
 % \hline
-February 2026       	& Share final `Guidelines for Participation in MaCFP-4' document\\
-				& Deadline to submit revisions to experimental datasets (pyrolysis model calibration)\\
+February 2026           & Share final `Guidelines for Participation in MaCFP-4' document\\
+                & Deadline to submit revisions to experimental datasets (pyrolysis model calibration)\\
 \\
-May 2026       	& Deadline to submit pyrolysis model calibration results \small{(Condensed Phase Subgroup)}\\
-                		& Deadline to submit radiation modeling results (Radiative Heat Transfer Subgroup)\\
-		         & Deadline to submit modeling results (Gas Phase Subgroup, all cases)\\ 
-			& Poster abstract deadline (MaCFP-4 experimental data and modeling submissions) \\
-%Spring 2026	        	& Virtual Meeting  (Condensed Phase Subgroup; all participants welcome):\\
-%                    		& Comparisons of derived pyrolysis parameters and parameter sets \\
-% 				& Comparisons of pyrolysis model predictions\\
+May 2026        & Deadline to submit pyrolysis model calibration results \small{(Condensed Phase Subgroup)}\\
+                        & Deadline to submit radiation modeling results (Radiative Heat Transfer Subgroup)\\
+                 & Deadline to submit modeling results (Gas Phase Subgroup, all cases)\\
+            & Poster abstract deadline (MaCFP-4 experimental data and modeling submissions) \\
+%Spring 2026                & Virtual Meeting  (Condensed Phase Subgroup; all participants welcome):\\
+%                           & Comparisons of derived pyrolysis parameters and parameter sets \\
+%               & Comparisons of pyrolysis model predictions\\
 \\
 
 \hline
-\textbf{June 6-7, 2026}       	& \textbf{MaCFP-4 Workshop: La Rochelle, France} \\
+\textbf{June 6-7, 2026}         & \textbf{MaCFP-4 Workshop: La Rochelle, France} \\
 \hline
 \end{tabular}
 \end{table}
@@ -287,17 +293,17 @@ May 2026       	& Deadline to submit pyrolysis model calibration results \small{
 \section{Radiation Modeling}
 \label{sec:Radiation}
 \subsection{Benchmark Cases}
-The first two benchmarks are based on the use of synthetic data, obtained from Particle Monte Carlo - Line-by-line (PMC-LBL) calculations of two flames. The goal of the benchmark is to evaluate Radiation Transport Equation (RTE) solvers and gas property models of the existing fire CFD software. Evaluations are based on the comparisons of fields of radiation-related quantities, such as the integrated intensity, radiation loss, radiative emission and absorption, and incident surface heat flux. 
+The first two benchmarks are based on the use of synthetic data, obtained from Particle Monte Carlo - Line-by-line (PMC-LBL) calculations of two flames. The goal of the benchmark is to evaluate Radiation Transport Equation (RTE) solvers and gas property models of the existing fire CFD software. Evaluations are based on the comparisons of fields of radiation-related quantities, such as the integrated intensity, radiation loss, radiative emission and absorption, and incident surface heat flux.
 
 Two flames were selected for the first radiation benchmark:
 \begin{itemize}
-    \item{30 cm {\bf methanol pool} fire, HRR = 19.2 kW.} This pool fire was measured by NIST and the University of Waterloo and presented in earlier MaCFP seminars.   
-    \item{15 cm {\bf ethylene flame}, HRR = 15 kW.} The flame is part of FM burner dataset. 
+    \item{30 cm {\bf methanol pool} fire, HRR = 19.2 kW.} This pool fire was measured by NIST and the University of Waterloo and presented in earlier MaCFP seminars.
+    \item{15 cm {\bf ethylene flame}, HRR = 15 kW.} The flame is part of FM burner dataset.
 \end{itemize}
 
-An essential concept for understanding the current benchmarks structure is \textit{scalar field uncertainty}: The radiation field of each time instance depends on the instantaneous temperature and gas and soot concentrations, as well as the boundary temperatures and properties. Therefore, drawing conclusions from the observed differences between two radiation solutions is only possible if they were based on the exactly same scalar fields and boundary temperatures. For example, if there are any differences in instantaneous temperatures, due to some turbulent effects for instance, it will be difficult to distinguish the model performance from the consequences of different temperatures.  
+An essential concept for understanding the current benchmarks structure is \textit{scalar field uncertainty}: The radiation field of each time instance depends on the instantaneous temperature and gas and soot concentrations, as well as the boundary temperatures and properties. Therefore, drawing conclusions from the observed differences between two radiation solutions is only possible if they were based on the exactly same scalar fields and boundary temperatures. For example, if there are any differences in instantaneous temperatures, due to some turbulent effects for instance, it will be difficult to distinguish the model performance from the consequences of different temperatures.
 
-The benchmark activity consists of three phases: 
+The benchmark activity consists of three phases:
 
 \noindent \textbf{Phase 1: Benchmark data}\\
 In the first phase, the PMC-LBL models were used for generating synthetic benchmark data of both flames. The process started by taking previously validated CFD models and performing transient simulations of some tens of seconds. Multiple instantaneous snapshots from random time points were selected and stored for both flames, containing 3D fields of temperature and species concentrations. PMC-LBL simulations were then carried out for each snapshot, and from the results, integrated radiation quantities were stored for comparison with CFD codes. The first phase was completed in 2024 and its results were reported in Ref.~\cite{paul2024detailed}.
@@ -305,7 +311,7 @@ In the first phase, the PMC-LBL models were used for generating synthetic benchm
 For the methanol pool fire, the snapshots were taken from the OpenFOAM simulation with minimum grid cell size of 0.2 cm. For now, this data set is only available for OpenFOAM evaluations. The simulations of the ethylene flame were made using FDS with 0.5 cm cell size at minimum. The field data from this simulation have been converted into a form readable by both FDS and OpenFOAM.
 
 \noindent \textbf{Phase 2: Radiation simulations without scalar field uncertainty}\\
-In the second phase, the RTE solvers of the fire CFD codes will be used to predict the radiation fields, and the results will be compared against the PMC-LBL results. To avoid the propagation of the scalar field uncertainty into the radiation predictions, CFD codes shall not solve the actual flow and combustion equations, but read in the same scalar snapshots and perform isolated RTE solutions using these 'frozen' fields of temperature and concentrations. To allow for this calculation, a new import feature has been added to FDS and FireFOAM. Instructions for performing the input processes are provided at Github. 
+In the second phase, the RTE solvers of the fire CFD codes will be used to predict the radiation fields, and the results will be compared against the PMC-LBL results. To avoid the propagation of the scalar field uncertainty into the radiation predictions, CFD codes shall not solve the actual flow and combustion equations, but read in the same scalar snapshots and perform isolated RTE solutions using these 'frozen' fields of temperature and concentrations. To allow for this calculation, a new import feature has been added to FDS and FireFOAM. Instructions for performing the input processes are provided at Github.
 
 The process of importing the scalar snapshots, performing instantaneous radiation solutions, and reporting the statistics of radiation outputs is quite complicated. Fire model users who are uncertain if they have necessary skills should start from Phase 3.
 
@@ -314,7 +320,7 @@ In the third phase, participants should perform classical fire simulations of th
 
 \subsection{Radiation Data of Interest}
 
-PMC-LBL data consists of gas-phase and boundary data. 
+PMC-LBL data consists of gas-phase and boundary data.
 \begin{itemize}[noitemsep]
     \item Planck mean absorption coeffients as 3D fields.
     \item Volumetric emission, reabsorption and net-source term as 3D fields, in units [kW/m$^3$]. \item Domain integrals of the emission, reabsorption and net source terms [kW].
@@ -329,17 +335,17 @@ PMC-LBL data consists of gas-phase and boundary data.
 \section{Pyrolysis Modeling}
 \label{sec:Pyrolysis}
 \subsection{Summary of MaCFP-2 and MaCFP-3 Results}
-The experimental and modeling effort of the MaCFP-2 and MaCFP-3 Workshops were designed to enable the fire research community to make significant progress towards establishing a common framework for the selection of experiments (and the methodologies used to analyze these experiments) when developing pyrolysis models. For MaCFP-2, a single reference material --- cast black poly(methyl methacrylate), which is referred to here as `MaCFP-PMMA'\footnote{The specific material of interest is a nominally 6~mm (0.236 inch) thick, black, cast PMMA manufactured by Evonik under the tradename: ACRYLITE® cast black 9H01 GT. Note: the identification of any commercial product or trade name does not imply endorsement or recommendation by the National Institute of Standards and Technology, NIST (or any other contributing institution).} --- was selected for study because of its tendency to maintain its density while burning, insignificant melt flow, simple decomposition kinetics, and low transparency to infrared radiation. In total, 18 institutions located in 11 different countries submitted experimental measurements from 220 unique tests to the MaCFP-2 Workshop. Modelers from 13 different institutions in 8 countries then analyzed these experimental measurements to develop parameter sets that could be used to describe the thermal decomposition behavior of this PMMA. 
+The experimental and modeling effort of the MaCFP-2 and MaCFP-3 Workshops were designed to enable the fire research community to make significant progress towards establishing a common framework for the selection of experiments (and the methodologies used to analyze these experiments) when developing pyrolysis models. For MaCFP-2, a single reference material --- cast black poly(methyl methacrylate), which is referred to here as `MaCFP-PMMA'\footnote{The specific material of interest is a nominally 6~mm (0.236 inch) thick, black, cast PMMA manufactured by Evonik under the tradename: ACRYLITE® cast black 9H01 GT. Note: the identification of any commercial product or trade name does not imply endorsement or recommendation by the National Institute of Standards and Technology, NIST (or any other contributing institution).} --- was selected for study because of its tendency to maintain its density while burning, insignificant melt flow, simple decomposition kinetics, and low transparency to infrared radiation. In total, 18 institutions located in 11 different countries submitted experimental measurements from 220 unique tests to the MaCFP-2 Workshop. Modelers from 13 different institutions in 8 countries then analyzed these experimental measurements to develop parameter sets that could be used to describe the thermal decomposition behavior of this PMMA.
 
-This effort to characterize MaCFP-PMMA was unique from previous experimental \cite{fiola2020comparison,kashiwagi1982study,hirata1985thermal,tewarson1992fire,rhodes1996burning} and computational modeling studies of PMMA flammability \cite{fiola2020comparison,consalvi2008numerical,leventon2015flame,fukumoto2018large}, as it was the first coordinated attempt involving multiple institutions to simultaneously perform a series of pyrolysis experiments across a range of scales, characterize all relevant thermophysical properties of a fully specified material, and to compare the various methodologies for doing so. The coordination of this effort (in particular organizing the MaCFP-2 experimental campaign) has been detailed~\cite{Leventon2022ASTM} and a preliminary summary of experimental measurements is available elsewhere~\cite{PreliminarySummary}. 
+This effort to characterize MaCFP-PMMA was unique from previous experimental \cite{fiola2020comparison,kashiwagi1982study,hirata1985thermal,tewarson1992fire,rhodes1996burning} and computational modeling studies of PMMA flammability \cite{fiola2020comparison,consalvi2008numerical,leventon2015flame,fukumoto2018large}, as it was the first coordinated attempt involving multiple institutions to simultaneously perform a series of pyrolysis experiments across a range of scales, characterize all relevant thermophysical properties of a fully specified material, and to compare the various methodologies for doing so. The coordination of this effort (in particular organizing the MaCFP-2 experimental campaign) has been detailed~\cite{Leventon2022ASTM} and a preliminary summary of experimental measurements is available elsewhere~\cite{PreliminarySummary}.
 
-At MaCFP-3, new measurement data was generated for a pyrolysis model $validation$ exercise~\cite{MaCFP3Proceedings,Leventon2023Gasification}. Participants who submitted pyrolysis models to MaCFP-2 were asked to use their original model parameters\footnote{Mateial property validation at MaCFP-3: If sufficient agreement between model predictions and experimental measurements was not observed, pyrolysis modelers were allowed to adjust and resubmit parameter sets developed at MaCFP-2 to obtain better agreement. However, new property sets (a) required a description of exactly how and why specific parameters were changed (e.g., incorporation new calibration data or changes in assumed boundary conditions of model calibration) and (b) could not simply be recalibrated  to match the new validation dataset.} to predict (without adjustment to material properties) the results of these validation experiments. A material property set was identified that most closely reproduced the selected validation data set. Modelers of coupled condensed/gas phase cases considered at MaCFP-3 (i.e., flame spread and fire growth over MaCFP-PMMA) were encouraged to use this material property set. 
+At MaCFP-3, new measurement data was generated for a pyrolysis model $validation$ exercise~\cite{MaCFP3Proceedings,Leventon2023Gasification}. Participants who submitted pyrolysis models to MaCFP-2 were asked to use their original model parameters\footnote{Mateial property validation at MaCFP-3: If sufficient agreement between model predictions and experimental measurements was not observed, pyrolysis modelers were allowed to adjust and resubmit parameter sets developed at MaCFP-2 to obtain better agreement. However, new property sets (a) required a description of exactly how and why specific parameters were changed (e.g., incorporation new calibration data or changes in assumed boundary conditions of model calibration) and (b) could not simply be recalibrated  to match the new validation dataset.} to predict (without adjustment to material properties) the results of these validation experiments. A material property set was identified that most closely reproduced the selected validation data set. Modelers of coupled condensed/gas phase cases considered at MaCFP-3 (i.e., flame spread and fire growth over MaCFP-PMMA) were encouraged to use this material property set.
 
 MaCFP-2 and MaCFP-3 measurement data (which can be used as targets for pyrolysis model calibration and validation) and calibrated material property sets have been uniformly formatted and well-documented (i.e., saved with corresponding metadata describing sample preparation, test setup, and experimental conditions) to allow for efficient, automated analysis. All measurements (and related analysis tools) are maintained in a digital, version-controlled, and freely-available online repository: \url{https://github.com/MaCFP/matl-db}~\cite{MaCFP-cond-db}.
 
 \subsection{Material Selection for MaCFP-4}
 \label{ssec: Pyrolysis Material Information}
-For MaCFP-4, the Condensed Phase Subgroup will coordinate an $anaerobic$ pyrolysis model calibration exercise (i.e., material property determination) focused on pine wood. This charring material was selected based on feedback from participants of the MaCFP-3 Workshop, a majority of whom suggested (as a critical fire modeling need) studying a new material and/or studying charring/oxidation. This specific wood species was selected because of its widespread use in construction, furnishings, and standard fire testing (e.g., crib fires). 
+For MaCFP-4, the Condensed Phase Subgroup will coordinate an $anaerobic$ pyrolysis model calibration exercise (i.e., material property determination) focused on pine wood. This charring material was selected based on feedback from participants of the MaCFP-3 Workshop, a majority of whom suggested (as a critical fire modeling need) studying a new material and/or studying charring/oxidation. This specific wood species was selected because of its widespread use in construction, furnishings, and standard fire testing (e.g., crib fires).
 
 MaCFP-4 pyrolysis modeling targets will include $only$ anaerobic conditions; however, participants are encouraged to develop experimental datasets and corresponding models that will describe oxidation (as will be studied in detail at MaCFP-5).The intent is that this same wood will be studied in future MaCFP modeling exercises (e.g., oxidative pyrolysis, burning, and fire growth studies).
 
@@ -367,10 +373,10 @@ When submitting measurement data, participants are required to clearly define th
 \item Sample geometry (powdered, whole/chip)
 \item Calibration type, materials used, and frequency
 \item Carrier gas and associated flow rate(s)
-\item Crucible type and volume; 
-\item Crucible lid (yes/no); 
+\item Crucible type and volume;
+\item Crucible lid (yes/no);
 \item Instrument and furnace type
-\end{itemize}  
+\end{itemize}
 
 \noindent Test Outputs
 \begin{itemize}[noitemsep]
@@ -404,20 +410,20 @@ When submitting measurement data, participants are required to clearly define th
 \item Ignition Time
 \item Flame-out Time
 \item Time-resolved Sample Mass [mg]
-\item Time-resolved Sample Back-Surface Temperature [K] 
+\item Time-resolved Sample Back-Surface Temperature [K]
 \end{itemize}
 
 \subsubsection{How to Submit Your Results}
 \label{ssec: Pyrolysis Communicating Results}
 Experimental measurements will be submitted, stored, and made publicly available on the \href{https://github.com/MaCFP/matl-db/tree/master/Wood}{MaCFP GitHub Repository}. Details on how to contribute are available on the \href{https://github.com/MaCFP/macfp-db/wiki/How-to-Contribute}{MaCFP-db wiki}. Results can be submitted directly by creating a pull request on github. Please ensure that your results are formatted as per the guidelines below.
 %%%%%%%%%%%%%%%
-For simplicity, please collect your files in a single folder with your INSTITUTE name. Please save measurement results with a name indicating your INSTITUTE and the experimental apparatus used, for example: “INSITUTE\_TGA\_N2\_10K\_r1.csv” or “Institute\_ConeCalorimeter\_q30\_hor\_r1.csv”. Here, naming convention indicates: Institution name, test type, key test conditions (e.g., incident heat flux, sample orientation, heating rate, or gaseous conditions), and test repetition number. Measurement data from repeated experiments should be saved and submitted as separate files, numbered sequentially. 
+For simplicity, please collect your files in a single folder with your INSTITUTE name. Please save measurement results with a name indicating your INSTITUTE and the experimental apparatus used, for example: “INSITUTE\_TGA\_N2\_10K\_r1.csv” or “Institute\_ConeCalorimeter\_q30\_hor\_r1.csv”. Here, naming convention indicates: Institution name, test type, key test conditions (e.g., incident heat flux, sample orientation, heating rate, or gaseous conditions), and test repetition number. Measurement data from repeated experiments should be saved and submitted as separate files, numbered sequentially.
 
 
 %\textcolor{red}{**@ Morgan Bruns** Include a description of test .json files for each experiment type? To facilitate parsing of data..}\\
 Each dataset must also include a Markdown text file (README.md) that provides:
 \begin{enumerate} [noitemsep]
-\item (For Experimental Measurements): A description of the test conditions of all experiments conducted and submitted (see Section~\ref{ssec: Pyrolysis Measurements} of this document for details on what information should be included in this file). 
+\item (For Experimental Measurements): A description of the test conditions of all experiments conducted and submitted (see Section~\ref{ssec: Pyrolysis Measurements} of this document for details on what information should be included in this file).
 \item (For Model Calibration): A description (written and corresponding governing equations) of the participant’s proposed reaction mechanism as well as the method of determination of associated kinetic parameters and material properties.
 \end{enumerate}
 
@@ -433,7 +439,7 @@ This may seem like a minor issue, but we must compare the results from all group
 \subsubsection{Standard Data Set: Model Parameters of Interest}
 Modelers are not provided limitations or suggestions regarding their pyrolysis model parameterization (i.e., calibration) approach; however, they are required to use either (a) at least one of the milligram-scale datasets (e.g., TGA or DSC) and one gram-scale experiment (e.g., cone calorimetry or controlled atmosphere gasification experiments), or (b) at least two of the gram-scale experiments available in the \href{https://github.com/MaCFP/matl-db/tree/master/Wood/Calibration_Data}{Calibration\_Data section} of the MaCFP repository. Modelers can supplement MaCFP data with any literature data that they deem necessary (please be sure to cite any and all appropriate references, including those for measurement data found on the MaCFP Repo).
 
-Table~\ref{table:properties} lists all pyrolysis model parameters of interest (and their respective units) for this study. Note: degradation kinetics and thermodynamic parameters can be component- or reaction-step-specific. If your model includes multiple reaction steps and/or components, please include all relevant parameters below for each one. Participants should provide a detailed description of the method of determination of each of these parameters as well as a description (written and mathematical) of their proposed decomposition reaction mechanism. 
+Table~\ref{table:properties} lists all pyrolysis model parameters of interest (and their respective units) for this study. Note: degradation kinetics and thermodynamic parameters can be component- or reaction-step-specific. If your model includes multiple reaction steps and/or components, please include all relevant parameters below for each one. Participants should provide a detailed description of the method of determination of each of these parameters as well as a description (written and mathematical) of their proposed decomposition reaction mechanism.
 
 \begin{table}[htb]
 \centering
@@ -477,7 +483,7 @@ $\epsilon$  &[-]        &Emissivity\\
 Here, the term, $r_{ij}$, defines the rate of reaction at the temperature, $T_{\rm s}$, of the $i$th material undergoing its $j$th reaction. $A_{ij}$ and $E_{ij}$ represent the pre-exponential constant and the activation energy; $n_{{\rm s},ij}$ is the reaction order. $\rho_{{\rm s},i}$ is the density of the $i$th material component of the layer, defined as the mass of the $i$th material component divided by the volume of the layer. Thus, $\rho_{{\rm s},i}$ is a quantity that increases if the $i$th material component is produced as a residue of some other reaction, or decreases if the $i$th component decomposes.
 
 
-%The second term on the right of equation (\ref{eqn:rxn rate}) represents the contributions of other materials producing the $i$th material as a residue with a yield of $\nu_{{\rm s},i'j}$. 
+%The second term on the right of equation (\ref{eqn:rxn rate}) represents the contributions of other materials producing the $i$th material as a residue with a yield of $\nu_{{\rm s},i'j}$.
 
 The final term of the reaction rate equation can be used to simulate oxidation reactions. If the heterogeneous reaction order $n_{{\rm O_2},ij}$ is greater than zero, the reaction rate is affected by the local oxygen volume fraction, $X_{\rm O_2}$. Recall: the purpose of the MaCFP-4 pyrolysis model calibration exercise is to develop material property sets that accurately reproduce the $anaerobic$ pyrolysis of a charring material (i.e., pine wood). Terms that characterize oxidation are identified in the equation above for the sake of completeness; the study of oxidative pyrolysis of this wood is planned for future MaCFP modeling exercises.
 
@@ -494,7 +500,7 @@ At the MaCFP-4 workship, comparisons of pyrolysis model predictions will be perf
     \item  Zero-dimensional (0D) Thermogravimetric Analysis (TGA) and Differential Scanning Calorimetry (DSC) experiments conducted at two heating rates; and
     \item Idealized one-dimensional (1D) gasification scenarios conducted at three incident radiant heat fluxes and two sample thicknesses.
 \end{enumerate}
- 
+
 These simulations will be repeated using all complete pyrolysis model parameter sets submitted by workshop participants. These simulations will be employed to compare performance of different models. In the case of the TGA simulations, mass loss rate profiles as a function of temperature will be used for comparison. In the case of the DSC simulations, temperature-resolved heat flow rate and integral heat flow profiles will be used for comparison. In the case of the gasification simulations, mass loss rate and surface temperature profiles will be used for comparison. A summary of pyrolysis model comparison conditions and target outputs is provided in Table~\ref{table:Pyrolsis Model Comparison}.
 
 %%%%%%%%%%
@@ -561,7 +567,7 @@ A thorough description of the apparatus calibration results and a summary of the
 \clearpage
 \section{Gas-Phase Modeling}
 \label{sec:Gas Phase}
-The Gas Phase Subgroup will coordinate comparisons of experimental data and computational results for the following target experiments: 
+The Gas Phase Subgroup will coordinate comparisons of experimental data and computational results for the following target experiments:
 \begin{itemize}
 \item \textbf{FM Burner:} Controlled co-flow round diffusion flame experiments (13.7-cm diameter diffusion flames featuring different fuels -- ethylene as the baseline fuel and also methane, propylene, propane -- and an oxygen-nitrogen oxidizer). Study of soot formation/oxidation and thermal radiation emissions in turbulent buoyant diffusion flames using a burner configuration developed at FM and data also generated at FM. See \url{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}.
 \item \textbf{Upward flame spread:} Study of flame structure/heat flux and fire growth over PMMA. Two configurations are considered:
@@ -666,7 +672,7 @@ Groups are invited to first perform a simulation of the heat transfer induced by
 \item Plots showing the time variations of the total gauge heat flux (measured by a water cooled sensor) on the surface of one of the two Marinite boards, at a central position ($y = 0$), and for different elevations $z$;
 \item Plots showing the spatial variations of the total gauge heat flux (measured by a water cooled sensor) obtained at steady state on the surface of one of the two Marinite boards, for different horizontal positions $y$, and for different elevations $z$.
 \end{itemize}
-	
+
 Groups are invited to then perform a simulation with the PMMA plates. Plots of interest include (all should be submitted for comprehensive comparison between modeling submissions):
 \begin{itemize}[noitemsep]
 \item A plot showing the time variations of the heat release rate;
@@ -694,14 +700,14 @@ The façade fire case is based on JIS A 1310 fire test and was previously studie
 
 Plots of interest include:
 \begin{itemize}
-	\item A plot showing the time variations of the fractions of heat release rate occurring inside and outside of the fire compartment;
-	\item Representative plots showing the instantaneous flame shape (e.g., identified as the 200-kW/m$^3$ iso-contour of the volumetric heat release rate, or using some other method to be specified);
-	\item Plots showing the time variations of the total gauge heat flux (measured by a water-cooled sensor) on the surface of the façade, at a central position $y = 0$ and for different elevations $z$;
-	\item A plot showing the vertical variations of the time-averaged net surface heat flux, (possibly including the convective and radiative components of the net surface heat flux), at a central position $y = 0$;
-	\item Plots showing the time variations of the temperature (measured by a thermocouple) on the surface of the façade, at a central position $y = 0$ and for different elevations $z$;
-	\item A plot showing the vertical variations of the time-averaged temperature on the surface of the façade, at a central position $y = 0$;
-	\item Plots showing the spatial variations of the time-averaged gas temperature (measured by a thermocouple), for different horizontal positions x and elevations z;
-	\item Plots showing the spatial variations along the x-direction normal to the façade of the mean and rms gas temperature, and the mean and rms vertical flow velocity, at different selected façade locations (i.e., at selected values of $y$ and $z$) and at different selected times.
+    \item A plot showing the time variations of the fractions of heat release rate occurring inside and outside of the fire compartment;
+    \item Representative plots showing the instantaneous flame shape (e.g., identified as the 200-kW/m$^3$ iso-contour of the volumetric heat release rate, or using some other method to be specified);
+    \item Plots showing the time variations of the total gauge heat flux (measured by a water-cooled sensor) on the surface of the façade, at a central position $y = 0$ and for different elevations $z$;
+    \item A plot showing the vertical variations of the time-averaged net surface heat flux, (possibly including the convective and radiative components of the net surface heat flux), at a central position $y = 0$;
+    \item Plots showing the time variations of the temperature (measured by a thermocouple) on the surface of the façade, at a central position $y = 0$ and for different elevations $z$;
+    \item A plot showing the vertical variations of the time-averaged temperature on the surface of the façade, at a central position $y = 0$;
+    \item Plots showing the spatial variations of the time-averaged gas temperature (measured by a thermocouple), for different horizontal positions x and elevations z;
+    \item Plots showing the spatial variations along the x-direction normal to the façade of the mean and rms gas temperature, and the mean and rms vertical flow velocity, at different selected façade locations (i.e., at selected values of $y$ and $z$) and at different selected times.
 \end{itemize}
 
 The data required to generate these plots should be provided as ASCII files organized in simple comma-delimited format.
@@ -725,7 +731,7 @@ All of the material properties obtained for the pine wood of interest will be st
 Numerical simulations results should be organized in simple ASCII comma-delimited files (.csv files) with clear header names in a format that matches the experimental measurements on the GitHub Repository. For all submitted results, please confirm that output data is provided using the same file format, data structure (order of data in columns AND data acquisition/output frequency), naming convention (file and data column header names), and reported units as corresponding validation data (see descriptions of available datasets in Sections~\ref{sec:Radiation}, \ref{sec:Pyrolysis}, and \ref{sec:Gas Phase}).
 
 Following these standard processing steps is crucial to the success of the MaCFP effort: standard formatting is necessary to enable the generation and use of scripts for automated processing and comparison of final datasets. This is critical to efficiently analyzing the large number of contributions from participating institutions. Note, some iteration on formatting may be required before the results can be merged into the MaCFP database. If there is ambiguity in the requested file formatting or if you otherwise have questions along these lines, please let us know.
- 
+
 For all modeling cases of interest, researchers must clearly communicate key information regarding how models were setup and run (i.e., descriptions of how results were obtained). This README should be submitted as a markdown file with the information requested \href{https://github.com/MaCFP/macfp-db/blob/master/Utilities/model_questionnaire.md}{on the Modeling Questionnaire} (e.g., contributors, CFD package, submodels \& parameters used, and resolution).
 
 \clearpage
@@ -776,6 +782,6 @@ Façade Fire Case & Xiaoyi Lu (\href{mailto:xiaoyi.lu@fm.com}{xiaoyi.lu@fm.com})
 \end{table}
 
 \clearpage
-\bibliography{../MaCFP_References.bib}
+\printbibliography
 
 \end{document}
