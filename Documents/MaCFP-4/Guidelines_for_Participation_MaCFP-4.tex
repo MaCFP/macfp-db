@@ -74,40 +74,37 @@ MaCFP target experiments correspond to basic configurations (building blocks) an
 MaCFP target cases include: turbulent buoyant plumes, turbulent pool fires (gaseous and liquid fuels), gaseous wall fires (two fuels), solid fuels (mg-scale thermal decomposition, bench-scale anaerobic pyrolysis, full-scale wall flame spread in two configurations), and flame extinction; each case corresponds to openly-available database.  Target cases considered at MaCFP-4 are specifically selected to build upon lessons learned at previous MaCFP workshops and answer open questions. Key advances include consideration of the pyrolysis behavior of a charring solid (i.e., pine wood) and a modeling effort to predict radiation fields of benchmark combustion systems.\\
 
 \subsection{The MaCFP Repository (Github)}
-The MaCFP repository is hosted on GitHub (\url{https://github.com/MaCFP}). Note that the repository is continuously updated, and users are expected to consult the repository regularly for possible additions and/or corrections. This data repository is available to computational groups for fire model calibration and validation. The repository is managed by Randy McDermott and Isaac Leventon of the National Institute of Standards and Technology (NIST). It contains:
+The MaCFP repository is hosted on GitHub (\url{https://github.com/MaCFP}). Note that the repository is continuously updated, and users are expected to consult the repository regularly for possible additions and/or corrections. This data repository is available to computational groups for fire model calibration and validation. The repository contains:
 \begin{itemize}[noitemsep]
  \item A description of selected target experiments, including descriptions of the experimental configuration, measured quantities, and measurement uncertainties (if known);
  \item An electronic copy of experimental data organized in simple comma-delimited ASCII files;
  \item  An electronic copy of computational results submitted to each of the three workshops, organized in simple comma-delimited ASCII files;
-  \item An electronic copy of material property sets (i.e., pyrolysis models) calibrated by the different modeling groups at MaCFP-2, MaCFP-3, and MaCFP-4, organized in simple comma delimited ASCII files;
+  \item An electronic copy of material property sets (i.e., pyrolysis models) calibrated by the different modeling groups, organized in simple comma delimited ASCII files;
  \item Protocols to perform comparisons between experimental data and simulation results based on (provided) post-processing tools.
  \item Copies of presentations (lecture slides and/or audio/video recordings) given at each of the three Workshops
 \end{itemize}
 
-This guidelines document provides a summary of specific modeling targets of interest for each target experiment to be presented at MaCFP-4 and outlines a new pyrolysis modeling exercise (i.e., material property calibration). Participants can submit their contributions by creating a pull request on Github; details on how to do so (including file formatting requirements) are provided in Secs.~\ref{sec:Radiation}-\ref{sec:Com-Results}. Python-based \href{https://github.com/MaCFP/macfp-db/wiki/Plotting-Scripts}{post-processing tools are available} on the repository, thus, contributors need only to submit comma-delimited (*.csv) files with their computational results together with another comma-delimited configuration file listing the plots to be made. Further details on \href{https://github.com/MaCFP/macfp-db/wiki/How-to-Contribute}{how to contribute} and \href{https://github.com/MaCFP/macfp-db/wiki/Submitting-Computational-Results}{how to submit computational results} are available on the MaCFP-db wiki.  %Please contact Randy McDermott (\href{mailto:randall.mcdermott@nist.gov}{randall.mcdermott@nist.gov}) if you have any questions regarding submission of results or post-processing.
+This guidelines document provides a summary of specific modeling targets of interest for each target experiment to be presented at the workshop and outlines the process for material property calibration. Participants submit their contributions by creating a pull request on Github; details on how to do so (including file formatting requirements) are provided in Secs.~\ref{sec:Radiation}-\ref{sec:Com-Results}. Python-based \href{https://github.com/MaCFP/macfp-db/wiki/Plotting-Scripts}{post-processing tools} are available on the repository. Contributors submit comma-delimited (*.csv) files with their computational results together with another comma-delimited configuration file listing the plots to be made and a Python wrapper script for processing the data files and creating plots. Further details on \href{https://github.com/MaCFP/macfp-db/wiki/How-to-Contribute}{how to contribute} and \href{https://github.com/MaCFP/macfp-db/wiki/Submitting-Computational-Results}{how to submit computational results} are available on the MaCFP/macfp-db wiki.
 
 \newpage
-Interested modeling groups should inform the Gas Phase and Condensed Phase Phenomena subgroups of their plans to participate in MaCFP-4 by contacting the following Co-Chairs:
+Interested modelers should inform the relevant subgroup of their plans to participate by contacting the respective subgroup Co-Chairs:
 
 \begin{itemize}[noitemsep]
-\item Morgan Bruns, \href{mailto:mbruns@stmarytx.edu}{mbruns@stmarytx.edu} (Co-Chair of the Condensed Phase Phenomena subgroup) (Pyrolysis Modeling Exercise)
-\item Isaac Leventon, \href{mailto:isaac.leventon@nist.gov}{isaac.leventon@nist.gov} (Co-Chair of the Condensed Phase Phenomena subgroup) (Pyrolysis Modeling Exercise)
-\item Bart Merci, \href{mailto:Bart.Merci@ugent.be}{Bart.Merci@ugent.be} (Co-Chair of the Gas Phase Phenomena subgroup) (Gas-Phase cases)
-\item Arnaud Trouv\'e, \href{mailto:atrouve@umd.edu}{atrouve@umd.edu} (Co-Chair of the Gas Phase Phenomena subgroup) (Gas-Phase cases)
-\item Fabian Bränström, \href{mailto:braennstroem@uni-wuppertal.de}{braennstroem@uni-wuppertal.de} (Co-Chair of the Radiation subgroup) (Radiation Modeling Exercise)
- \item Simo Hostikka, \href{mailto:simo.hostikka@aalto.fi}{simo.hostikka@aalto.fi} (Co-Chair of the Radiation subgroup) (Radiation Modeling Exercise)
-  \end{itemize}
+\item Morgan Bruns, \href{mailto:mbruns@stmarytx.edu}{mbruns@stmarytx.edu} (Pyrolysis)
+\item Isaac Leventon, \href{mailto:isaac.leventon@nist.gov}{isaac.leventon@nist.gov} (Pyrolysis)
+\item Bart Merci, \href{mailto:Bart.Merci@ugent.be}{Bart.Merci@ugent.be} (Gas Phase)
+\item Arnaud Trouv\'e, \href{mailto:atrouve@umd.edu}{atrouve@umd.edu} (Gas Phase)
+\item Fabian Bränström, \href{mailto:braennstroem@uni-wuppertal.de}{braennstroem@uni-wuppertal.de} (Radiation)
+\item Simo Hostikka, \href{mailto:simo.hostikka@aalto.fi}{simo.hostikka@aalto.fi} (Radiation)
+\end{itemize}
 
-
-
-%Users of the experimental measurements and model parameters found in the Condensed Phase Material Database~\cite{MaCFP-cond-db} are encouraged to: (a) cite the repository (see below); (b) to cite related summary publications, if using the analysis results prepared in these documents (e.g., conference proceedings~\cite{brown2018proceedings} or the preliminary summary of experimental measurements document~\cite{MaCFP-2_Prelim_Exp}); and (c) to directly credit the institutions that provided experimental measurements (relevant publications and contributor information) are detailed in the README file associated with each institutional dataset.
 
 \section{MaCFP-4: La Rochelle, France (2026)}
 \label{sec:MaCFP-4}
 \subsection{Workshop Presentation Topics}
 \label{ssec:MaCFP-4 Target Cases}
 In June 2026, the fourth Measurement and Computation of Fire Phenomena Workshop (MaCFP-4) will be hosted (in-person) as a pre-event to the IAFSS meeting in La Rochelle, France.
-The MaCFP Github repository provides a summary of \href{https://github.com/MaCFP/macfp-db/blob/master/Documents/FIRE_PHENOMENA.md}{ key fire dynamics phenomena of interest} to the MaCFP Working Group as well as a list of benchmark experiments (i.e., fire modeling target cases) currently in the MaCFP repository that address these phenomena. Target cases selected for study at MaCFP-4 are designed to address these fire phenomena with special emphasis maintained on knowledge gaps and research needs identified at previous MaCFP Workshops. A detailed summary of the learning outcomes, participant feedback, and research needs identified at the MaCFP-3 Workshop is provided in the MaCFP-3 Proceedings~\cite{MaCFP3Proceedings}.\\
+The MaCFP Github repository provides a summary of  key \href{https://github.com/MaCFP/macfp-db/blob/master/Documents/FIRE_PHENOMENA.md}{fire dynamics phenomena} of interest to the MaCFP Working Group as well as a list of benchmark experiments (fire modeling target cases) currently in the MaCFP repository that address these phenomena. Target cases selected for study at MaCFP-4 are designed to address these fire phenomena with special emphasis maintained on knowledge gaps and research needs identified at previous MaCFP Workshops. A detailed summary of the learning outcomes, participant feedback, and research needs identified at the MaCFP-3 Workshop is provided in the MaCFP-3 Proceedings~\cite{MaCFP3Proceedings}.\\
 
 \clearpage
 Target cases considered at MaCFP-4 include:
@@ -122,11 +119,13 @@ Target cases considered at MaCFP-4 include:
 \begin{itemize}
 \item Controlled co-flow round diffusion flame experiments (13.7-cm diameter diffusion flames featuring different fuels.
 \item Study of flame structure/heat flux and fire growth over PMMA during upward flame spread in two configurations (parallel panels and corner-wall).
-\item 1-MW-scale compartment fires producing external flames and spill plumes over a vertical non-combustible façade.
+\item 1 MW compartment fires producing external flames and spill plumes over a vertical non-combustible façade.
 \end{itemize}
 \end{enumerate}
-\textbf{Workshop Schedule:}\\
-The MaCFP-4 agenda will be confirmed in the final months leading to the Workshop. At the meeting, emphasis will be maintained on providing time for open discussion among active participants of the working group in order to facilitate ongoing and future collaboration in this effort. A poster session will be organized for experimentalists and modelers to discuss current results and possible future target experiments. \\
+
+\subsection{Workshop Schedule}
+
+The MaCFP-4 agenda will be confirmed in the final months leading to the Workshop. At the meeting, emphasis will be maintained on providing time for open discussion among active participants of the working group in order to facilitate ongoing and future collaboration in this effort. A poster session will be organized for experimentalists and modelers to discuss current results and possible future target experiments.
 
 %Discussion topics may include:
 %\begin{itemize}[noitemsep]%,topsep=0pt
@@ -221,18 +220,32 @@ An essential concept for understanding the current benchmarks structure is \text
 
 The benchmark activity consists of three phases:
 
-\noindent \textbf{Phase 1: Benchmark data}\\
+\begin{description}[
+  leftmargin=0pt,
+  labelsep=0pt,
+  font=\bfseries,
+  style=nextline,
+  topsep=0.5\baselineskip,
+  itemsep=0pt
+]
+
+\item[Phase 1: Benchmark data]
+
 In the first phase, the PMC-LBL models were used for generating synthetic benchmark data of both flames. The process started by taking previously validated CFD models and performing transient simulations of some tens of seconds. Multiple instantaneous snapshots from random time points were selected and stored for both flames, containing 3D fields of temperature and species concentrations. PMC-LBL simulations were then carried out for each snapshot, and from the results, integrated radiation quantities were stored for comparison with CFD codes. The first phase was completed in 2024 and its results were reported in Ref.~\cite{paul2024detailed}.
 
 For the methanol pool fire, the snapshots were taken from the OpenFOAM simulation with minimum grid cell size of 0.2 cm. For now, this data set is only available for OpenFOAM evaluations. The simulations of the ethylene flame were made using FDS with 0.5 cm cell size at minimum. The field data from this simulation have been converted into a form readable by both FDS and OpenFOAM.
 
-\noindent \textbf{Phase 2: Radiation simulations without scalar field uncertainty}\\
+\item[Phase 2: Radiation simulations without scalar field uncertainty]
+
 In the second phase, the RTE solvers of the fire CFD codes will be used to predict the radiation fields, and the results will be compared against the PMC-LBL results. To avoid the propagation of the scalar field uncertainty into the radiation predictions, CFD codes shall not solve the actual flow and combustion equations, but read in the same scalar snapshots and perform isolated RTE solutions using these 'frozen' fields of temperature and concentrations. To allow for this calculation, a new import feature has been added to FDS and FireFOAM. Instructions for performing the input processes are provided at Github.
 
 The process of importing the scalar snapshots, performing instantaneous radiation solutions, and reporting the statistics of radiation outputs is quite complicated. Fire model users who are uncertain if they have necessary skills should start from Phase 3.
 
-\noindent \textbf{Phase 3: Radiation simulations with transient CFD}\\
+\item[Phase 3: Radiation simulations with transient CFD]
+
 In the third phase, participants should perform classical fire simulations of the two flames and report the outputs requested for comparison. To minimize the influence of scalar field uncertainty, the simulations should be based on the \textit{original FDS and OpenFOAM} input files. Changes should be limited to the inputs whose influence is being investigated.
+
+\end{description}
 
 \subsection{Radiation Data of Interest}
 
@@ -331,7 +344,7 @@ When submitting measurement data, participants are required to clearly define th
 
 \subsubsection{How to Submit Your Results}
 \label{ssec: Pyrolysis Communicating Results}
-Experimental measurements will be submitted, stored, and made publicly available on the \href{https://github.com/MaCFP/matl-db/tree/master/Wood}{MaCFP GitHub Repository}. Details on how to contribute are available on the \href{https://github.com/MaCFP/macfp-db/wiki/How-to-Contribute}{MaCFP-db wiki}. Results can be submitted directly by creating a pull request on github. Please ensure that your results are formatted as per the guidelines below.
+Experimental measurements will be submitted, stored, and made publicly available on the \href{https://github.com/MaCFP/matl-db/tree/master/Wood}{MaCFP GitHub Repository}. Details on how to contribute are available on the \href{https://github.com/MaCFP/macfp-db/wiki/How-to-Contribute}{MaCFP/macfp-db wiki}. Results can be submitted directly by creating a pull request on github. Please ensure that your results are formatted as per the guidelines below.
 %%%%%%%%%%%%%%%
 For simplicity, please collect your files in a single folder with your INSTITUTE name. Please save measurement results with a name indicating your INSTITUTE and the experimental apparatus used, for example: “INSITUTE\_TGA\_N2\_10K\_r1.csv” or “Institute\_ConeCalorimeter\_q30\_hor\_r1.csv”. Here, naming convention indicates: Institution name, test type, key test conditions (e.g., incident heat flux, sample orientation, heating rate, or gaseous conditions), and test repetition number. Measurement data from repeated experiments should be saved and submitted as separate files, numbered sequentially.
 
@@ -494,11 +507,15 @@ The Gas Phase Subgroup will coordinate comparisons of experimental data and comp
 \item \textbf{Compartment/façade fires:} Study of flame structure and heat transfer using a configuration based on the JIS A 1310 fire test and data generated at the Building Research Institute of Japan and the University of Tokyo. See \url{https://github.com/MaCFP/macfp-db/tree/master/Wall_Fires/JIS_Facade}.
 \end{itemize}
 
-Interested modeling groups should inform the Gas Phase Phenomena subgroups of their plans to participate in MaCFP-4 by contacting the following Co-Chairs:\\
-Bart Merci, Bart.Merci@ugent.be\\
-Arnaud Trouvé, atrouve@umd.edu \\
+Interested modeling groups should inform the Gas Phase Phenomena subgroups of their plans to participate in MaCFP-4 by contacting the following Co-Chairs:
 
-Approximately 8 weeks before the Workshop (i.e., by the end of April 2026), participating modeling groups will be asked to submit an electronic copy of their computational results organized in simple comma-delimited ASCII files. All results will be uploaded on the MaCFP GitHub repository and detailed comparisons between experimental data and computational results will be compiled by the MaCFP organizers in collaboration with experimentalists and modelers.
+\vskip.5\baselineskip
+Bart Merci, Bart.Merci@ugent.be
+
+Arnaud Trouvé, atrouve@umd.edu
+
+\vskip.5\baselineskip
+Participating modeling groups are asked to submit their computational results by \textbf{May 1, 2026}.  Results will be uploaded on the MaCFP GitHub repository and comparisons between experimental data and computational results will be compiled by the MaCFP organizers in collaboration with experimentalists and modelers.
 
 \subsection{General Modeling Requirements}
 Similar to what was done in previous MaCFP workshops, we ask that in MaCFP-4, submitted computational results comply with the following series of requirements:
