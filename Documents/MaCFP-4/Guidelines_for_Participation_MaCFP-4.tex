@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 
-\include{../MaCFP_common_preamble.tex}
+\input{../MaCFP_common_preamble.tex}
 
 \begin{document}
 
@@ -38,7 +38,7 @@
 \end{minipage}
 \begin{small}
 %Document Prepared: Oct. 4, 2024\\
-Version 1.2 | Released: 16 January 2026\\
+Version 1.3 | Released: 19 January 2026\\
 \end{small}
 \newpage
 \thispagestyle{empty}
@@ -529,7 +529,7 @@ We believe that these requirements will improve the quality and depth of the com
 Furthermore, we encourage modeling groups to consider performing fine-grained simulations under the high-resolution conditions that are often the preferred choice made by CFD researchers, and also consider performing coarse-grained simulations under the moderate-to-marginal resolution conditions (sometimes called VLES) that are more representative of the choices made by CFD practitioners.
 
 \subsection{Additional Guidelines for the FM Burner Case}
-The FM burner case corresponds to a 13.7-cm-diameter, controlled co-flow (a mixture of air and nitrogen), round ethylene diffusion flame experiment previously studied at FM (\url{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}). The case includes global measurements at coflow oxygen mole fractions of 20.9%, 19%, 17% and 15%, and local measurements at coflow oxygen mole fraction of 20.9%, 16.8% and 15.2%. Ethylene is the baseline fuel in the data set; some limited data are also available for other fuels: methane, propylene, and propane.
+The FM burner case corresponds to a 13.7-cm-diameter, controlled co-flow (a mixture of air and nitrogen), round ethylene diffusion flame experiment previously studied at FM (\url{https://github.com/MaCFP/macfp-db/tree/master/Extinction/FM_Burner}). The case includes global measurements at coflow oxygen mole fractions of 20.9\%, 19\%, 17\% and 15\%, and local measurements at coflow oxygen mole fraction of 20.9\%, 16.8\% and 15.2\%. Ethylene is the baseline fuel in the data set; some limited data are also available for other fuels: methane, propylene, and propane.
 Groups interested in simulating the FM burner case are invited to predict the changes in flame radiation. Simulations with a prescribed radiant fraction (taken as the measured averaged value) are acceptable as well.
 \vskip.5\baselineskip
 \noindent Suggested grid resolution: $\Delta x$ from 0.5 cm to 2 cm.
