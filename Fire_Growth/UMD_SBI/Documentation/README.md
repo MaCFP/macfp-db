@@ -14,6 +14,8 @@ Panel walls were ignited by a triangular propane sandbox burner (side length = 2
  
 The burner was built exactly in accordance with EN 13823 [2]. The stainless steel plate used for fabricating the burner was approximately 0.2 cm thick. The burner was layered with fine sand (2 to 4 mm diameter sand) on the top such that it created a flat burner surface, without a lip. A welded U-channel, made of steel and width of 4 cm, separated the panel and the burner. The panel mounted on the Marinite I board rested on 0.635 cm thick Kaowool on an 80/20 Aluminum frame. 
 
+Fig. 2 approximately shows how the geometry was near the U-channel. Note that this figrue is not-to-scale. This is a cross-section view, looking from the face of one panel, with simplifcations to illustrate important dimensions around the U-channel. The U-channel near the corner was connected and did not have intersecting edges. Marinite floor refers to the Marinite I base on the sandbox burner frame, which is on the back side of the burner from this view. The base of the Marinite floor was in the same plane as that of the base of the U-channel. The U-channel was 4 cm wide, 1.9 cm tall, and had 0.3 cm thick walls. There were some minor alterations needed from test to test, such as filling some fabrication related gaps with marinate pieces (<0.2 cm on the u-channel edge next to the burner), slight changes in the elevation (<0.5 cm) of panel support frame and the burner support frame for maintaining the exposed panel dimensions and orientations. 
+
 The corner setup was placed inside an exhaust hood, whose bottom edge was 220 cm above the concrete floor. The exhaust hood extracted combustion products at a set volumetric flow rate of 0.56 $\mathrm{m}^3\cdot \mathrm{s}^{-1}$. Fire resistant curtains, extending towards the floor 160 cm below the bottom of the hood, to constrain the volume of the enclosure. The remainder 60 cm between the floor and the bottom of the fire curtains were covered with a fabric mesh on all sides to help homogenize the incoming air flow.
 
 A set of 7 experiments was performed. All sensor data were collected at 10 Hz frequency using a LabVIEW enabled computer. The flame was allowed to spread until the HRR reached 300 kW. Once the HRR exceeded this threshold value, the propane burner was turned off and the flame was extinguished.
@@ -21,6 +23,10 @@ A set of 7 experiments was performed. All sensor data were collected at 10 Hz fr
 <img src="https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/UMD_SBI/Documentation/UMDCornerFireSpreadSetup.jpg" width="1000">
 
 *Figure 1.* Schematic of the experimental setup.
+
+<img src="https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/UMD_SBI/Documentation/IllustrationAroundUChannel.png" width="800">
+
+*Figure 2.* Illustration of the geometry around the U-channel (not to scale). 
 
 ### Measurements
 
@@ -42,11 +48,11 @@ The DSLR camera video acquired at 900 ± 10 nm narrowband filter (setup describe
 
 #### Heat Flux at a Distance
 
-Two additional experiments were performed to measure radiative heat flux away from the flame, at locations shown in Fig. 2. Six water-cooled heat flux gauges and two radiometers were used in these measurements. They were oriented so that their wide angle sensors (150 degree viewing angle) were facing the vertical corner. The total heat flux gauge measurements were found to provide the same readings as the radiometers, when placed at the same location. This means that both measured the radiative heat flux from the flame and hot solid surfaces without any significant addition by convection. These data were processed in exactly the same way as were the total flame heat flux data. The error for these data were also calculated in the same way (two standard deviation of the mean from binned data and additional 3% systematic uncertainty corresponding to gauge calibration). [Data file info for Heat Fluxes at a Distance](#heat-flux-away-from-the-wall)
+Two additional experiments were performed to measure radiative heat flux away from the flame, at locations shown in Fig. 3. Six water-cooled heat flux gauges and two radiometers were used in these measurements. They were oriented so that their wide angle sensors (150 degree viewing angle) were facing the vertical corner. The total heat flux gauge measurements were found to provide the same readings as the radiometers, when placed at the same location. This means that both measured the radiative heat flux from the flame and hot solid surfaces without any significant addition by convection. These data were processed in exactly the same way as were the total flame heat flux data. The error for these data were also calculated in the same way (two standard deviation of the mean from binned data and additional 3% systematic uncertainty corresponding to gauge calibration). [Data file info for Heat Fluxes at a Distance](#heat-flux-away-from-the-wall)
 
 <img src="https://github.com/MaCFP/macfp-db/blob/master/Fire_Growth/UMD_SBI/Documentation/RadFluxAwayFromFireSetup.jpg" width="800">
 
-*Figure 2.* Locations of the heat flux gauges and radiometers for measuring radiative heat flux away from the flame. Locations marked with red circles indicate locations where a radiometer was placed next to the total heat flux gauge to ensure that the total heat flux gauge read radiative heat flux only.
+*Figure 3.* Locations of the heat flux gauges and radiometers for measuring radiative heat flux away from the flame. Locations marked with red circles indicate locations where a radiometer was placed next to the total heat flux gauge to ensure that the total heat flux gauge read radiative heat flux only.
 
 ### Data file information
 
