@@ -6,5 +6,5 @@ python NIST_JIS_Facade_plots.py
 ```
 The script creates a sub-directory called `Plots` containing:
    1. Experimental and simulated temperature contours in three vertical planes normal to the wall (Fig. 8 from Sun et al.)
-   2. Experimental and simulated surface temperature profiles across and above the window (Fig. 8 from Sun et al.)
+   2. Experimental and simulated surface temperature profiles across and above the window (Fig. 9 from Sun et al.)
    3. Experimental and simulated heat flux profiles above the window (Fig. 10, Row C from Sun et al.)
