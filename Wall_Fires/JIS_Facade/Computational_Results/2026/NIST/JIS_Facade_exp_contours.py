@@ -9,22 +9,18 @@ from fdsplotlib import configure_fds_fonts
 configure_fds_fonts(usetex=True)
 
 expdir = '../../../Experimental_Data/'
-outdir = './'
 pltdir = './Plots/'
 
-# Read the CSV file, skipping the first two header rows
-df = pd.read_csv(outdir + 'JIS_facade_2cm_line.csv', skiprows=2, header=None)
+# Read the CSV file, skipping the header row
+df = pd.read_csv(expdir + 'Sun_FAM_2024_mean_temperature.csv', skiprows=1, header=None)
 
-# Remove rows with all NaN values and handle NaN values
-df = df.dropna(how='all')
+# Extract coordinates
+x = df.iloc[:, 0].values
+z = df.iloc[:, 1].values
 
-# Set vector z to column 5 (assuming 1-indexed, so column index 4)
-z = df.iloc[:, 4].dropna().values
-
-# Create vector x to be the distances from the wall
-x = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
-
-X, Z = np.meshgrid(x, z)
+xi = np.linspace(np.min(x), np.max(x), 200)
+zi = np.linspace(np.min(z), np.max(z), 200)
+Xi, Zi = np.meshgrid(xi, zi)
 
 custom_levels = np.linspace(48.0, 1175.0, 9)
 
@@ -32,9 +28,9 @@ custom_levels = np.linspace(48.0, 1175.0, 9)
 for j in range(3):
 
     # Temperatures at the center, center-right and right
-    T1 = df.iloc[:, 5+27*j:14+27*j].dropna().values
-    T2 = df.iloc[:,14+27*j:23+27*j].dropna().values
-    T3 = df.iloc[:,23+27*j:32+27*j].dropna().values
+    T1 = df.iloc[:, 2+3*j].values
+    T2 = df.iloc[:, 3+3*j].values
+    T3 = df.iloc[:, 4+3*j].values
     
     # Create figure with three subplots
     fig, axes = plt.subplots(1, 3, figsize=(4.5, 4.5))
@@ -44,7 +40,10 @@ for j in range(3):
     # Plot contour maps
     contours = []
     for i, (ax, T) in enumerate(zip(axes, [T1, T2, T3])):
-        cs = ax.contourf(X, Z, T, levels=custom_levels, cmap='rainbow', vmin=50, vmax=1100)
+        Ti = griddata((x, z), T, (Xi, Zi), method='cubic')
+        if Ti.ndim == 3:
+            Ti = Ti[..., 0]
+        cs = ax.contourf(Xi, Zi, Ti, levels=custom_levels, cmap='rainbow', vmin=50, vmax=1100)
         contours.append(cs)
         
         # Set equal aspect ratio for same scaling
@@ -71,5 +70,6 @@ for j in range(3):
                        fraction=0.05, pad=0.04)
     cbar.set_label('Temperature (°C)')
     
-    plt.savefig(pltdir + 'JIS_facade_contours_' + str(600+j*150) + '.pdf')
+    plt.savefig(pltdir + 'JIS_facade_exp_contours_' + str(600+j*150) + '.pdf')
+
 
