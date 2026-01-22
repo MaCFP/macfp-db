@@ -25,6 +25,8 @@ Plots_Dir = './Plots/'
 
 # Run dataplot and scatplot scripts
 
+print("JIS_Facade_filter...")     ; safe_run("./JIS_Facade_filter.py")
+
 saved_data, drange = fdsplotlib.dataplot(config_filename=Dataplot_Inputs_File,
                                          expdir=EXP_Dir,
                                          cmpdir=OUT_Dir,
@@ -36,7 +38,8 @@ saved_data, drange = fdsplotlib.dataplot(config_filename=Dataplot_Inputs_File,
 
 print("Python validation scripts completed successfully!")
 
-print("JIS_Facade..."); safe_run("./JIS_Facade_contours.py")
+print("JIS_Facade...")     ; safe_run("./JIS_Facade_contours.py")
+print("JIS_Facade_exp...") ; safe_run("./JIS_Facade_exp_contours.py")
 
 # ------------------------------
 # plot_range usage examples
