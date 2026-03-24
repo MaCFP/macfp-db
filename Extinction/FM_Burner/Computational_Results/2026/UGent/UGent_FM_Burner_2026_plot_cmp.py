@@ -3,7 +3,11 @@
 # March 2026
 
 import sys
-sys.path.append('../../../../../../macfp-db/Utilities/')
+import os
+current_dir = os.path.dirname(os.path.abspath(__file__))
+workspace_root = os.path.normpath(os.path.join(current_dir, '../../../../..'))
+sys.path.append(os.path.join(workspace_root, 'Utilities'))
+os.chdir(current_dir)  # Change to script directory
 
 import macfp
 import importlib
