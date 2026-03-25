@@ -3,8 +3,21 @@
 # March 2026
 
 import sys
+import os
+
+# Change to script directory
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+# Dynamically add Utilities to path
+script_dir = os.path.dirname(os.path.abspath(__file__))
+repo_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(script_dir)))))
+utilities_path = os.path.join(repo_root, 'Utilities')
+sys.path.append(utilities_path)
+
+# Old paths (commented out)
 #sys.path.append('../../../../../../macfp-db/Utilities/')
-sys.path.append('../../../../../../macfp-db-youk/Utilities/')
+#sys.path.append('../../../../../../macfp-db-youk/Utilities/')
+#sys.path.append('../../../../Utilities/')
 
 import macfp
 import importlib
@@ -15,7 +28,7 @@ macfp.dataplot(config_filename='UGent_FM_Burner_2026_cmp_config.csv',
                institute='UGent',
                revision='MaCFP-4, La Rochelle, 2026',
                expdir='../../../Experimental_Data/',
-               cmpdir='./Output/',
+               cmpdir='./Computational_results/',
                pltdir='./Plots/',
                close_figs=True,
                verbose=True,
