@@ -400,6 +400,12 @@ def define_plot_parameters(C,irow):
 
         try:
             Exp_y_Error_Col_Name = C.values[irow,C.columns.get_loc('Exp_y_Error_Col_Name')]
+            if pd.isnull(Exp_y_Error_Col_Name):
+                Exp_y_Error_Col_Name = None
+            elif isinstance(Exp_y_Error_Col_Name, str):
+                Exp_y_Error_Col_Name = Exp_y_Error_Col_Name.strip().strip('"').strip("'")
+                if Exp_y_Error_Col_Name in ['', 'None', 'none']:
+                    Exp_y_Error_Col_Name = None
         except:
             Exp_y_Error_Col_Name = None
 
@@ -797,7 +803,7 @@ def dataplot(config_filename,**kwargs):
             if (pp.Exp_Data_Row-pp.Exp_Header_Row==1):
                 x = E[pp.Exp_x_Col_Name].values[:].astype(float)
                 y = E[pp.Exp_y_Col_Name].values[:].astype(float)
-                if (pp.Exp_y_Error_Col_Name):
+                if pp.Exp_y_Error_Col_Name and pp.Exp_y_Error_Col_Name in E.columns:
                     y_error = E[pp.Exp_y_Error_Col_Name].values[:].astype(float)
                 else:
                     y_error = 0.
@@ -806,7 +812,7 @@ def dataplot(config_filename,**kwargs):
                 # when the header and data rows are separated, then there are usually strings in the df.values
                 x = E[pp.Exp_x_Col_Name].values[pp.Exp_Data_Row-2:].astype(float)
                 y = E[pp.Exp_y_Col_Name].values[pp.Exp_Data_Row-2:].astype(float)
-                if (pp.Exp_y_Error_Col_Name):
+                if pp.Exp_y_Error_Col_Name and pp.Exp_y_Error_Col_Name in E.columns:
                     y_error = E[pp.Exp_y_Error_Col_Name].values[pp.Exp_Data_Row-2:].astype(float)
                 else:
                     y_error = 0.

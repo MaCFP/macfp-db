@@ -5,7 +5,7 @@
 import sys
 import os
 
-'''# Change to script directory
+# Change to script directory
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # Dynamically add Utilities to path
@@ -13,9 +13,9 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 repo_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(script_dir)))))
 utilities_path = os.path.join(repo_root, 'Utilities')
 sys.path.append(utilities_path)
-'''
+
 # Old paths (commented out)
-sys.path.append('../../../../../../macfp-db/Utilities/')
+#sys.path.append('../../../../../../macfp-db/Utilities/')
 #sys.path.append('../../../../../../macfp-db-youk/Utilities/')
 #sys.path.append('../../../../Utilities/')
 

@@ -38,3 +38,6 @@ __pycache__/
 *.egg-info/
 .eggs/
 *.egg
+Liquid_Pool_Fires/NIST_Pool_Fires/Experimental_Data/Methanol_100_cm__radial_profiles.png
+Liquid_Pool_Fires/NIST_Pool_Fires/Experimental_Data/Methanol_100_cm_centerline_temperature.png
+Utilities/macfp.py
