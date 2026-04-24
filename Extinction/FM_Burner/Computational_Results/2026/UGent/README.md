@@ -1,6 +1,6 @@
 ### Contributor
 
-Name: Youk Moorthamers & Alexander Snegirev
+Name: Youk Moorthamers, Alexander Snegirev, Georgios Maragkos, Bart Merci
 
 Institution: Ghent university
 
@@ -46,7 +46,7 @@ Comments: For isotropic angular discretization in fluent, the number of solid an
 
 ### Initial conditions
 
-Comments: Ambient temperature and pressure set to 298 K and 101325 Pa, respectively. Simulations are initialized with the specified oxygen fraction in the domain.
+Comments: Ambient temperature and pressure set to 298 K and 101325 Pa, respectively. Simulations are initialized with the specified oxygen fraction in the domain. Oxygen in the co-flow is always set constant.
 
 ------------------
 
@@ -56,7 +56,7 @@ A fixed oxidizer co-flow velocity (0.041 m/s) and fuel mass flow-rate are applie
 Compartment walls and ceiling are "wall" BCs. A constant extraction flow rate of 0.073 m³/s is specified in the extraction hood.
 Since there is a gap between the extraction pipe and the ceiling, an ambient air pressure inlet is specified at the top.
 
-A 1.5 cm high anchoring zone is applied above the burner to approximate the experimental anchor in case of the finite-rate SCM.
+A 1.5 cm high anchoring zone is applied above the burner to approximate the experimental anchor. 
 
 Comments:
 
@@ -64,9 +64,9 @@ Comments:
 
 ### Models (include parameters)
 
-Turbulence model: Standard Smagorinsky-Lilly sgs model, C_s = 0.1 or Dynamic Smagorinsky if specified
+Turbulence model: Standard Smagorinsky-Lilly sgs model, C_s = 0.1 
 
-Combustion model: Subgrid Combustion Model (SCM) with a single-step reaction using autoignition based temeprature-dependent kinetic parameters [1] or vanilla EDM of Fluent if specified.
+Combustion model: Subgrid Combustion Model (SCM) with a single-step reaction using autoignition based temeprature-dependent kinetic parameters [1] 
 
 Radiation model: Discrete Ordinates, Gray version of Weighted Sum of Gray Gases (WSGG) with the path length calculated as L=3.6V/A.
 
@@ -78,7 +78,7 @@ Soot: Two-equation Moss-Brooks model with a piecewiese polynomial dependency of 
     C_pre = 2.0 for C3H8
     C_pre = 1.0 for CH4 (by definition)
 
-Comments: 
+Comments: C_pre required re-calibration at reduced oxygen
 
 ------------------
 
@@ -121,7 +121,7 @@ Comments: .
 ------------------
 
 ### Special issues/problems
-
+Temperature statistics, RMS and PDF, deviate significantly from the experiment. The reason is likely related to the thermocouple compensation. An appendix has been added to the UGent submission to elaborate this issue.
 ------------------
 
 ### Relevant publications
