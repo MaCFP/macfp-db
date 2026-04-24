@@ -1,0 +1,1111 @@
+\documentclass[12pt]{book}
+
+\usepackage{graphicx}
+\usepackage{subcaption} % Subcaptions
+\newcommand*\degC[1]{{#1}{\,\textdegree}C} % The temperature was \degC{20}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9.0in}
+\setlength{\topmargin}{0.in}
+\setlength{\headheight}{0.in}
+\setlength{\headsep}{0.in}
+\setlength{\parindent}{0.25in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\evensidemargin}{0.0in}
+
+\pagestyle{empty}
+
+\begin{document}
+
+A few notes on the simulations:
+\begin{itemize}
+	\item All simulations included the full hood with the HRR being calculated using the same calorimetry equation as the experimental results.
+	\item Other than grid study plots, all cases run with 1\,cm resolution.
+	\item Other than the angular study plot, all cases run with 400 angles.
+	\item Plots at a time are averaged using a centered 10 s window
+	\item For the Spyro simulations, the ignition temperature was set at \degC{298}.
+	\item For the Spyro sensitivity plots, the 25, 50, and 75 curves represent simply applying the cone burning rate for that cone exposure at ignition. 
+	\item For the Spyro sensitivity plots, the +10 and -10 indicate shifts in ignition temperature.
+	\item For the heat transfer sensitivity plots, h indicates a fixed value for the heat transfer coefficient in W/m/K.	
+\end{itemize}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[height=2.1in]{HRR_no_blowing}
+\caption{\footnotesize UMD kinetics, no blowing}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[height=2.1in]{HRR_blowing} 
+\caption{\footnotesize UMD kinetics, blowing}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[height=2.1in]{HRR_angles} 
+\caption{\footnotesize UMD kinetics, blowing, change angles}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[height=2.1in]{HRR_kinetics}
+\caption{\footnotesize Multiple kinetics, blowing}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[height=2.1in]{HRR_spyro} 
+\caption{\footnotesize Spyro, blowing}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\includegraphics[height=2.1in]{HRR_spyro_sens}
+\caption{\footnotesize Spyro sensitivity using FSRI data, blowing}
+\end{subfigure}
+\caption{Predicted vs measured heat Release rate.}
+\label{SBI_UMD_HRR}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{HRR_Method}
+		\caption{\footnotesize UMD kinetics, blowing}
+	\end{subfigure}
+	\caption{Different methods of determining the HRR.}
+	\label{SBI_Corner_35}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_35}
+		\caption{\footnotesize UMD kinetics, blowing}
+	\end{subfigure}
+	\caption{Predicted vs. measured corner heat flux, 35 s.}
+	\label{SBI_Corner_35}
+\end{figure}
+
+\clearpage
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_105}
+		\caption{\footnotesize UMD kinetics, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_105_angles} 
+		\caption{\footnotesize UMD kinetics, blowing, change angles}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_105_kinetics}
+		\caption{\footnotesize Multiple kinetics, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_105_spyro} 
+		\caption{\footnotesize Spyro, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_105_spyro_sens}
+		\caption{\footnotesize Spyro sensitivity using FSRI data, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_HT_105}
+		\caption{\footnotesize HT sensitivity UMD kinetics, blowing}
+	\end{subfigure}
+	\caption{Predicted vs. measured corner heat flux, 105 s.}
+	\label{SBI_Corner_105}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_145}
+		\caption{\footnotesize UMD kinetics, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_145_angles} 
+		\caption{\footnotesize UMD kinetics, blowing, change angles}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_145_kinetics}
+		\caption{\footnotesize Multiple kinetics, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_145_spyro} 
+		\caption{\footnotesize Spyro, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_145_spyro_sens}
+		\caption{\footnotesize Spyro sensitivity using FSRI data, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_HT_145}
+		\caption{\footnotesize HT sensitivity UMD kinetics, blowing}
+	\end{subfigure}
+	\caption{Predicted vs. measured corner heat flux, 145 s.}
+	\label{SBI_Corner_145}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_185}
+		\caption{\footnotesize UMD kinetics, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_185_angles} 
+		\caption{\footnotesize UMD kinetics, blowing, change angles}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_185_kinetics}
+		\caption{\footnotesize Multiple kinetics, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_185_spyro} 
+		\caption{\footnotesize Spyro, blowing}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Corner_HF_185_spyro_sens}
+		\caption{\footnotesize Spyro sensitivity using FSRI data, blowing}
+	\end{subfigure}
+	\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+	\centering
+	\includegraphics[height=2.1in]{Corner_HF_HT_185}
+	\caption{\footnotesize HT sensitivity UMD kinetics, blowing}
+\end{subfigure}
+	\caption{Predicted vs. measured corner heat flux, 185 s}
+	\label{SBI_Corner_185}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Net_HF_x5_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Net_HF_x22_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+	\centering
+	\includegraphics[height=2.1in]{Net_HF_x5_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Net_HF_x22_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+		\hfill
+		\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Net_HF_x5_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Net_HF_x22_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted net heat flux, UMD kinetics, blowing,. Solid and dashed lines are left and right faces of corner.}
+	\label{NHF_UMD}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_x5_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_x22_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_x5_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_x22_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_x5_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_x22_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted radiative heat flux, UMD kinetics, blowing. Solid and dashed lines are left and right faces of corner.}
+	\label{RHF_UMD}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_x5_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_x22_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_x5_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_x22_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_x5_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_x22_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted convective heat flux, UMD kinetics, blowing. Solid and dashed lines are left and right faces of corner.}
+	\label{CHF_UMD}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{HTC_x5_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{HTC_x22_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{HTC_x5_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{HTC_x22_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{HTC_x5_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{HTC_x22_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted heat transfer coefficient, UMD kinetics, blowing. Solid and dashed lines are left and right faces of corner.}
+	\label{HTC_UMD}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Wall_Temp_x5_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Wall_Temp_x22_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Wall_Temp_x5_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Wall_Temp_x22_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Wall_Temp_x5_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Wall_Temp_x22_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted wall temperature, UMD kinetics, blowing. Solid and dashed lines are left and right faces of corner.}
+	\label{WT_UMD}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Burn_Rate_x5_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Burn_Rate_x22_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Burn_Rate_x5_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Burn_Rate_x22_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Burn_Rate_x5_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Burn_Rate_x22_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted burning rate, UMD kinetics, blowing. Solid and dashed lines are left and right faces of corner.}
+	\label{BR_UMD}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_HT_grid_x5_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_HT_grid_x22_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_HT_grid_x5_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_HT_grid_x22_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_HT_grid_x5_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_HT_grid_x22_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted radiative heat flux, grid and heat transfer sensitivity, UMD kinetics, blowing.}
+	\label{RHF_UMD_HT_Grid}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_HT_grid_x5_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_HT_grid_x22_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_HT_grid_x5_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_HT_grid_x22_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_HT_grid_x5_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_HT_grid_x22_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted convective heat flux, grid and heat transfer sensitivity, UMD kinetics, blowing.}
+	\label{CHF_UMD_HT_Grid}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_HT_x5_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_HT_x22_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_HT_x5_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_HT_x22_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_HT_x5_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Rad_HF_HT_x22_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted radiative heat flux, heat transfer sensitivity, UMD kinetics, blowing.}
+	\label{RHF_UMD_HT}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_HT_x5_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_HT_x22_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_HT_x5_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_HT_x22_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_HT_x5_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Conv_HF_HT_x22_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted convective heat flux, heat transfer sensitivity, UMD kinetics, blowing.}
+	\label{CHF_UMD_HT_Grid}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{GasT_x5_z30_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{GasT_x22_z30_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{GasT_x5_z30_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{GasT_x22_z30_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{GasT_x5_z30_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{GasT_x22_z30_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted gas temperature, z=30 cm, UMD kinetics, blowing.}
+	\label{GT_UMD_z30}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_x5_z30_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_x22_z30_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_x5_z30_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_x22_z30_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_x5_z30_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_x22_z30_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted vertical velocity, z=30 cm, UMD kinetics, blowing.}
+	\label{WV_UMD_z30}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_x5_z30_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_x22_z30_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_x5_z30_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_x22_z30_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_x5_z30_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_x22_z30_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted velocity, z=30 cm, UMD kinetics, blowing.}
+	\label{Vel_UMD_z30}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_x5_z90_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_x22_z90_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_x5_z90_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_x22_z90_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_x5_z90_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_x22_z90_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted vertical velocity, z=90 cm, UMD kinetics, blowing.}
+	\label{WV_UMD_z90}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_x5_z90_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_x22_z90_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_x5_z90_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_x22_z90_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_x5_z90_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_x22_z90_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted velocity, z=90 cm, UMD kinetics, blowing.}
+	\label{Vel_UMD_z90}
+\end{figure}
+
+
+
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{GasT_Spyro_x5_z30_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{GasT_Spyro_x22_z30_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{GasT_Spyro_x5_z30_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{GasT_Spyro_x22_z30_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{GasT_Spyro_x5_z30_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{GasT_Spyro_x22_z30_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted gas temperature, z=30 cm, Spyro FSRI Cone, blowing.}
+	\label{GT_UMD_z30}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_Spyro_x5_z30_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_Spyro_x22_z30_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_Spyro_x5_z30_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_Spyro_x22_z30_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_Spyro_x5_z30_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_Spyro_x22_z30_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted vertical velocity, z=30 cm, Spyro FSRI Cone, blowing.}
+	\label{WV_UMD_z30}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_Spyro_x5_z30_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_Spyro_x22_z30_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_Spyro_x5_z30_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_Spyro_x22_z30_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_Spyro_x5_z30_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_Spyro_x22_z30_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted velocity, z=30 cm, Spyro FSRI Cone, blowing.}
+	\label{Vel_UMD_z30}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_Spyro_x5_z90_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_Spyro_x22_z90_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_Spyro_x5_z90_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_Spyro_x22_z90_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_Spyro_x5_z90_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{W_Spyro_x22_z90_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted vertical velocity, z=90 cm, Spyro FSRI Cone, blowing.}
+	\label{WV_UMD_z90}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_Spyro_x5_z90_105}
+		\caption{\footnotesize x=5 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_Spyro_x22_z90_105}
+		\caption{\footnotesize x=22 cm, 105 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_Spyro_x5_z90_145}
+		\caption{\footnotesize x=5 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_Spyro_x22_z90_145}
+		\caption{\footnotesize x=22 cm, 145 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_Spyro_x5_z90_185}
+		\caption{\footnotesize x=5 cm, 185 s}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[height=2.1in]{Vel_Spyro_x22_z90_185}
+		\caption{\footnotesize x=22 cm, 185 s}
+	\end{subfigure}
+	\caption{Predicted velocity, z=90 cm, Spyro FSRI Cone, blowing.}
+	\label{Vel_UMD_z90}
+\end{figure}
+
+
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{1\textwidth}
+		\centering
+		\includegraphics[height=4in]{t35_contours}
+		\caption{\footnotesize t = 35 s}
+	\end{subfigure}
+	\\
+	\begin{subfigure}[t]{1\textwidth}
+		\centering
+		\includegraphics[height=4in]{t105_contours} 
+		\caption{\footnotesize t = 105 s}
+	\end{subfigure}
+	\caption{Predicted vs Measured Wall Heat Flux, at 35 and 105 s, UMD kinetics, blowing.}
+	\label{GHF_Wall_35_105}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{1\textwidth}
+		\centering
+		\includegraphics[height=4in]{t145_contours}
+		\caption{\footnotesize t = 145 s}
+	\end{subfigure}
+	\\
+	\begin{subfigure}[t]{1\textwidth}
+		\centering
+		\includegraphics[height=4in]{t185_contours} 
+		\caption{\footnotesize t = 185 s}
+	\end{subfigure}
+	\caption{Predicted vs Measured Wall Heat Flux, at 145 and 185 s, UMD kinetics, blowing.}
+	\label{GHF_Wall_145_185}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{1\textwidth}
+		\centering
+		\includegraphics[height=4in]{t105_spyro_contours} 
+		\caption{\footnotesize t = 105 s}
+	\end{subfigure}
+	\\
+	\begin{subfigure}[t]{1\textwidth}
+		\centering
+		\includegraphics[height=4in]{t145_spyro_contours}
+		\caption{\footnotesize t = 145 s}
+	\end{subfigure}
+
+	\caption{Predicted vs Measured Wall Heat Flux, at 105 and 145 s, Spyro FSRI cone, blowing.}
+	\label{GHF_Wall_35_105}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{1\textwidth}
+		\centering
+		\includegraphics[height=4in]{t185_spyro_contours} 
+		\caption{\footnotesize t = 185 s}
+	\end{subfigure}
+	\caption{Predicted vs Measured Wall Heat Flux, at 185 s, Spyro FSRI cone, blowing.}
+	\label{GHF_Wall_145_185}
+\end{figure}
+
+\end{document}
+
