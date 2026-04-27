@@ -6,18 +6,18 @@ import sys
 import os
 
 # Change to script directory to ensure relative paths work correctly
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+#os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # Dynamically add Utilities to path
-script_dir = os.path.dirname(os.path.abspath(__file__))
+'''script_dir = os.path.dirname(os.path.abspath(__file__))
 repo_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(script_dir)))))
 utilities_path = os.path.join(repo_root, 'Utilities')
-sys.path.append(utilities_path)
+sys.path.append(utilities_path)'''
 
 # Old paths (commented out)
-#sys.path.append('../../../../../../macfp-db/Utilities/')
+sys.path.append('../../../../../../macfp-db/Utilities/')
 #sys.path.append('../../../../../../macfp-db-youk/Utilities/')
-#sys.path.append('../../../../Utilities/')
+sys.path.append('../../../../Utilities/')
 
 import macfp
 import importlib
@@ -44,7 +44,7 @@ macfp.dataplot(config_filename='UGent_FM_Burner_2026_cmp_config.csv',
                verbose=True,
                plot_list=['all'])'''
 
-macfp.dataplot(config_filename='UGent_FM_Burner_2026_cmp_config_rms_TC.csv',
+'''macfp.dataplot(config_filename='UGent_FM_Burner_2026_cmp_config_rms_TC.csv',
                institute='UGent',
                revision='MaCFP-4, La Rochelle, 2026',
                expdir='../../../Experimental_Data/',
@@ -52,5 +52,5 @@ macfp.dataplot(config_filename='UGent_FM_Burner_2026_cmp_config_rms_TC.csv',
                pltdir='./Plots/',
                close_figs=True,
                verbose=True,
-               plot_list=['all'])
+               plot_list=['all'])'''
 # plt.show()
