@@ -6,7 +6,7 @@ import sys
 import os
 
 # Change to script directory to ensure relative paths work correctly
-#os.chdir(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # Dynamically add Utilities to path
 '''script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -16,7 +16,6 @@ sys.path.append(utilities_path)'''
 
 # Old paths (commented out)
 sys.path.append('../../../../../../macfp-db/Utilities/')
-#sys.path.append('../../../../../../macfp-db-youk/Utilities/')
 sys.path.append('../../../../Utilities/')
 
 import macfp
