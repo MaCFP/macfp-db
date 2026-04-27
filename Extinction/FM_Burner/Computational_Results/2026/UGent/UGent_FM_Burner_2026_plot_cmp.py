@@ -44,7 +44,7 @@ macfp.dataplot(config_filename='UGent_FM_Burner_2026_cmp_config_transient_plots.
                verbose=True,
                plot_list=['all'])
 
-'''macfp.dataplot(config_filename='UGent_FM_Burner_2026_cmp_config_rms_TC.csv',
+macfp.dataplot(config_filename='UGent_FM_Burner_2026_cmp_config_rms_TC.csv',
                institute='UGent',
                revision='MaCFP-4, La Rochelle, 2026',
                expdir='../../../Experimental_Data/',
@@ -52,5 +52,5 @@ macfp.dataplot(config_filename='UGent_FM_Burner_2026_cmp_config_transient_plots.
                pltdir='./Plots/',
                close_figs=True,
                verbose=True,
-               plot_list=['all'])'''
+               plot_list=['all'])
 # plt.show()

@@ -751,6 +751,9 @@ def dataplot(config_filename,**kwargs):
     if kwargs.get('pltdir'):
         pltdir = kwargs.get('pltdir')
 
+    if kwargs.get('configdir'):
+        configdir = kwargs.get('configdir')
+
     if kwargs.get('close_figs'):
         close_figs = kwargs.get('close_figs')
 
