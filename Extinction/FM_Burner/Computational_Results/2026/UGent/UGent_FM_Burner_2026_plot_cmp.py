@@ -5,7 +5,7 @@
 import sys
 import os
 
-# Change to script directory
+# Change to script directory to ensure relative paths work correctly
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # Dynamically add Utilities to path
@@ -34,7 +34,7 @@ macfp.dataplot(config_filename='UGent_FM_Burner_2026_cmp_config.csv',
                verbose=True,
                plot_list=['all'])
 
-macfp.dataplot(config_filename='UGent_FM_Burner_2026_cmp_config_transient_plots.csv',
+'''macfp.dataplot(config_filename='UGent_FM_Burner_2026_cmp_config_transient_plots.csv',
                institute='UGent',
                revision='MaCFP-4, La Rochelle, 2026',
                expdir='./Computational_results/', #only to plot the theoretical HRR
@@ -42,7 +42,7 @@ macfp.dataplot(config_filename='UGent_FM_Burner_2026_cmp_config_transient_plots.
                pltdir='./Plots/',
                close_figs=True,
                verbose=True,
-               plot_list=['all'])
+               plot_list=['all'])'''
 
 macfp.dataplot(config_filename='UGent_FM_Burner_2026_cmp_config_rms_TC.csv',
                institute='UGent',
