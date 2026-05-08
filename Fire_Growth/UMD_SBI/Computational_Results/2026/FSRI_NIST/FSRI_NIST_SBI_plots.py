@@ -22,6 +22,7 @@ def safe_run(script_path):
 
 print("SBI..."); safe_run("./SBI.py")
 print("FSRI_NIST_SBI_contours..."); safe_run("./FSRI_NIST_SBI_contours.py")
+print("FSRI_NIST_RAD_HRR..."); safe_run("./FSRI_NIST_RAD_HRR.py")
 
 Dataplot_Inputs_File = 'FSRI_NIST_SBI_config.csv'
 EXP_Dir = '../../../Experimental_Data/'
