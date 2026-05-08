@@ -75,7 +75,7 @@ Radiation absorption model: 2-flux model in PMMA solid when an absoprtion coeffi
 
 Material property set: Properties of [cast black PMMA](https://doi.org/10.1016/j.firesaf.2020.103083) i.e. UMD properties (MaCFP_PMMA_UMD.json)
 
-Comments: Simulations at 1 cm run for BUW, UMETT, DBI, and NIST property sets.  Spyro model run for FSRI (1, 2 and 4 cm), NIST (1 cm), and DBI (1 cm) cone data with 308 째C ignition temperature. 1 cm FSRI case also run with +/- 10 째C ignition temperature and as fixed HRRPUA curves using either the 25, 50, or 75 kW/m� cone data.
+Comments: Simulations at 1 cm run for BUW, UMETT, DBI, and NIST property sets.  Spyro model run for FSRI (1, 2 and 4 cm), NIST (1 cm), and DBI (1 cm) cone data with 298 째C ignition temperature. 1 cm FSRI case also run with +/- 10 째C ignition temperature and as fixed HRRPUA curves using either the 25, 50, or 75 kW/m� cone data.
 
 ------------------
 
@@ -129,3 +129,5 @@ Grid independence
 ### Relevant publications
 
 1. FDS Technical Reference Guide
+2. FDS Users Guide
+

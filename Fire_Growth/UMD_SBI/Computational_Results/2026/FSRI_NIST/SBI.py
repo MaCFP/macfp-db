@@ -1,8 +1,5 @@
 """
-FM_Burner.py
-Python translation of FM_Burner.m (McGrattan, 7-30-2018)
-
-Reads and processes FDS output files for FM_Burner cases.
+Reads and processes SBI Experimental Files for Plotting
 """
 
 import os
@@ -57,8 +54,37 @@ rad_processed = pd.concat([pd.Series(hfz,name='z'),
                            pd.Series(hf145[0],name='HF145'),pd.Series(hf145p[0],name='HF145p'),pd.Series(hf145m[0],name='HF145m'),
                            pd.Series(hf185[0],name='HF185'),pd.Series(hf185p[0],name='HF185p'),pd.Series(hf185m[0],name='HF185m')],axis=1)
 
+
 new_rad_file = os.path.join(EXP_Dir, f"Rad_processed.csv")
 rad_processed.to_csv(new_rad_file,index=False)
+
+hrr_avg = np.zeros(len(rad_data['Time']))
+for i in range(len(rad_data['Time'])):
+   if (i>0):
+      tmin = rad_data['Time'][i] - 5
+      tmax = rad_data['Time'][i] + 5
+      mask = (hrr_data['Time']>=tmin) & (hrr_data['Time']<=tmax)
+      hrr_cull = hrr_data.loc[mask]
+      hrr_mean = hrr_cull.mean()
+      hrr_avg[i] = hrr_mean['HRR']
+
+rad_new = rad_data.drop(columns=['Error_y10','Error_y35','Error_y60','Error_y85','Error_y110','Error_y135'])
+rad_new['HRR']=hrr_avg
+rad_new['y10p']=rad_data['HFG_y10']+rad_data['Error_y10']
+rad_new['y35p']=rad_data['HFG_y35']+rad_data['Error_y35']
+rad_new['y60p']=rad_data['HFG_y60']+rad_data['Error_y60']
+rad_new['y85p']=rad_data['HFG_y85']+rad_data['Error_y85']
+rad_new['y110p']=rad_data['HFG_y110']+rad_data['Error_y110']
+rad_new['y10m']=rad_data['HFG_y10']-rad_data['Error_y10']
+rad_new['y35m']=rad_data['HFG_y35']-rad_data['Error_y35']
+rad_new['y60m']=rad_data['HFG_y60']-rad_data['Error_y60']
+rad_new['y85m']=rad_data['HFG_y85']-rad_data['Error_y85']
+rad_new['y110m']=rad_data['HFG_y110']-rad_data['Error_y110']
+rad_new['y135m']=rad_data['HFG_y135']-rad_data['Error_y135']
+rad_new['y135p']=rad_data['HFG_y135']+rad_data['Error_y135']
+
+new_rad_file = os.path.join(EXP_Dir, f"Rad_HRR.csv")
+rad_new.to_csv(new_rad_file,index=False)
 
 y_10_data = pd.read_csv(os.path.join(EXP_Dir, f"Total_HF_binned_y_10cm.csv"),skiprows=[1])
 y_30_data = pd.read_csv(os.path.join(EXP_Dir, f"Total_HF_binned_y_30cm.csv"),skiprows=[1])
@@ -294,3 +320,23 @@ ghf_wall = pd.concat([pd.Series(hfz,name='z'),
 
 new_ghf_file = os.path.join(EXP_Dir, f"GHF_processed.csv")
 ghf_wall.to_csv(new_ghf_file,index=False)
+
+ghf_new = y_30_data.drop(columns=['HFG_x10_y30','HFG_x22_y30','Error_x5_y30','Error_x10_y30','Error_x15_y30','Error_x22_y30'])
+ghf_new['HFG_x5_y30p']= y_30_data['HFG_x5_y30']+y_30_data['Error_x5_y30']
+ghf_new['HFG_x5_y30m']= y_30_data['HFG_x5_y30']-y_30_data['Error_x5_y30']
+ghf_new['HFG_x15_y30p']= y_30_data['HFG_x15_y30']+y_30_data['Error_x15_y30']
+ghf_new['HFG_x15_y30m']= y_30_data['HFG_x15_y30']-y_30_data['Error_x15_y30']
+ghf_new['HFG_x5_y90']= y_90_data['HFG_x5_y90']
+ghf_new['HFG_x15_y90']= y_90_data['HFG_x15_y90']
+ghf_new['HFG_x5_y90p']= y_90_data['HFG_x5_y90']+y_90_data['Error_x5_y90']
+ghf_new['HFG_x5_y90m']= y_90_data['HFG_x5_y90']-y_90_data['Error_x5_y90']
+ghf_new['HFG_x15_y90p']= y_90_data['HFG_x15_y90']+y_90_data['Error_x15_y90']
+ghf_new['HFG_x15_y90m']= y_90_data['HFG_x15_y90']-y_90_data['Error_x15_y90']
+ghf_new['HRR']=hrr_avg
+
+new_ghf_file = os.path.join(EXP_Dir, f"GHF_HRR.csv")
+ghf_new.to_csv(new_ghf_file,index=False)
+
+
+
+
