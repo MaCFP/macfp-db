@@ -7,8 +7,10 @@ Country: USA
 
 ------------------
 
-### Test case
-A symmetric corner geometry with propane burner, similar to the single burning item test.
+### Test cases
+
+A symmetric corner geometry with propane burner and PMMA panels on both corner faces (full SBI case with condensed fuel), similar to the single burning item test.
+
 ------------------
 
 ### CFD package
