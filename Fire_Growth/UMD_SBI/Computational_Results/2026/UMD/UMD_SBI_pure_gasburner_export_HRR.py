@@ -1,19 +1,15 @@
 #!/usr/bin/env python3
-"""Export / plot UMD_SBI full-case hood ``HRR`` (kW) for MaCFP line CSV.
+"""Export hood ``HRR`` (kW) for UMD_SBI pure gas burner — four mesh resolutions.
 
-Reads FDS ``*_devc.csv`` from ``Output/UMD_SBI_with_PMMA/``:
-  - 4 cm, 2 cm, 1 cm, 0.5 cm mesh resolutions
-
-Writes ``Output/UMD_HRR_full_case.csv`` (MaCFP line format like ``UMD_HRR.csv``):
-units row, names row, ``.3E`` data. Time base is the **2 cm** output grid (interpolate other runs);
-values outside each run's time range are blank.
-
-Also writes ``Output/UMD_HRR_full_case_1_2_4cm.csv`` (4 / 2 / 1 cm only) for legacy configs.
+Reads FDS ``*_devc.csv`` from ``Output/UMC_SBI_without_PMMA/`` and writes
+``Output/UMD_HRR.csv`` in MaCFP line format (units row, names row, ``.3E`` data).
+Time base is the 4 cm output grid; other meshes are linearly interpolated with
+blank cells outside each run's time range.
 
 Example::
 
-  python3 UMD_SBI_full_case_export_HRR.py --tmax 200
-  python3 UMD_SBI_full_case_export_HRR.py --tmax 200 --plot Output/UMD_HRR_full_case.png
+  python3 UMD_SBI_pure_gasburner_export_HRR.py
+  python3 UMD_SBI_pure_gasburner_export_HRR.py --tmax 200 --plot Plots/UMD_HRR.png
 """
 
 from __future__ import annotations
@@ -27,20 +23,17 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 HERE = Path(__file__).resolve().parent
-DEFAULT_DATA_DIR = HERE / "Output" / "UMD_SBI_with_PMMA"
+DEFAULT_DATA_DIR = HERE / "Output" / "UMC_SBI_without_PMMA"
 OUTPUT_DIR = HERE / "Output"
 
 COL_HRR = "HRR"
 
-CASES: list[tuple[str, str, str]] = [
-    ("HRR_4cm", "4 cm", "UMD_SBI_full_case_4_cm_devc.csv"),
-    ("HRR_2cm", "2 cm", "UMD_SBI_full_case_2_cm_devc.csv"),
-    ("HRR_1cm", "1 cm", "UMD_SBI_full_case_1_cm_devc.csv"),
-    ("HRR_0p5cm", "0.5 cm", "UMD_SBI_full_case_0p5_cm_devc.csv"),
+CASES: list[tuple[str, str]] = [
+    ("HRR_4cm", "UMD_SBI_4_cm_pure_gasburner_devc.csv"),
+    ("HRR_2cm", "UMD_SBI_2_cm_pure_gasburner_devc.csv"),
+    ("HRR_1cm", "UMD_SBI_1_cm_pure_gasburner_devc.csv"),
+    ("HRR_0p5cm", "UMD_SBI_5_mm_pure_gasburner_devc.csv"),
 ]
-
-MASTER_MESH = "UMD_SBI_full_case_2_cm_devc.csv"
-CASES_1_2_4 = [c for c in CASES if c[0] != "HRR_0p5cm"]
 
 
 def read_hrr(path: Path) -> tuple[np.ndarray, np.ndarray]:
@@ -82,6 +75,18 @@ def interpolate_on_master(t_master: np.ndarray, t: np.ndarray, y: np.ndarray) ->
     return out
 
 
+def load_all(data_dir: Path, tmax: float | None) -> tuple[np.ndarray, list[tuple[str, str, np.ndarray, np.ndarray]]]:
+    master_path = data_dir / CASES[0][1]
+    t_master, _ = read_hrr(master_path)
+    if tmax is not None:
+        t_master = t_master[t_master <= float(tmax) + 1e-9]
+    loaded: list[tuple[str, str, np.ndarray, np.ndarray]] = []
+    for col, fname in CASES:
+        t, h = read_hrr(data_dir / fname)
+        loaded.append((col, fname, t, h))
+    return t_master, loaded
+
+
 def write_macfp_csv(out_path: Path, t_master: np.ndarray, series: list[np.ndarray], col_names: list[str]) -> None:
     units = ["s"] + ["kW"] * len(col_names)
     names = ["t"] + col_names
@@ -97,35 +102,16 @@ def write_macfp_csv(out_path: Path, t_master: np.ndarray, series: list[np.ndarra
             w.writerow(row)
 
 
-def load_all(data_dir: Path, case_list: list[tuple[str, str, str]], tmax: float | None) -> tuple[np.ndarray, list[tuple[str, str, np.ndarray, np.ndarray]]]:
-    master_path = data_dir / MASTER_MESH
-    t_master, _ = read_hrr(master_path)
-    if tmax is not None:
-        t_master = t_master[t_master <= float(tmax) + 1e-9]
-    loaded: list[tuple[str, str, np.ndarray, np.ndarray]] = []
-    for col, label, fname in case_list:
-        t, h = read_hrr(data_dir / fname)
-        loaded.append((col, label, t, h))
-    return t_master, loaded
-
-
-def export_csv(data_dir: Path, csv_out: Path, case_list: list[tuple[str, str, str]], tmax: float | None) -> None:
-    t_master, loaded = load_all(data_dir, case_list, tmax)
-    series = [interpolate_on_master(t_master, t, h) for _col, _lab, t, h in loaded]
-    col_names = [c for c, _l, _f in case_list]
-    write_macfp_csv(csv_out, t_master, series, col_names)
-    print(f"Saved → {csv_out}  ({len(t_master)} times, t = {t_master[0]:g}–{t_master[-1]:g} s)")
-
-
 def plot_figure(data_dir: Path, png_out: Path, tmax: float | None) -> None:
-    _, loaded = load_all(data_dir, CASES, tmax)
+    _, loaded = load_all(data_dir, tmax)
+    labels = ["4 cm", "2 cm", "1 cm", "0.5 cm"]
     fig, ax = plt.subplots(figsize=(9.0, 5.0), constrained_layout=True)
     colors = plt.rcParams["axes.prop_cycle"].by_key()["color"]
-    for i, (_col, label, t, h) in enumerate(loaded):
+    for i, (_col, _fname, t, h) in enumerate(loaded):
         m = np.ones(len(t), dtype=bool)
         if tmax is not None:
             m &= t <= float(tmax)
-        ax.plot(t[m], h[m], lw=1.75, label=label, color=colors[i % len(colors)])
+        ax.plot(t[m], h[m], lw=1.75, label=labels[i], color=colors[i % len(colors)])
     ax.set_xlabel("Time (s)")
     ax.set_ylabel("HRR (kW)")
     ax.set_title("Heat release rate (hood energy balance)")
@@ -134,7 +120,7 @@ def plot_figure(data_dir: Path, png_out: Path, tmax: float | None) -> None:
     if tmax is not None:
         ax.set_xlim(0.0, float(tmax))
     fig.suptitle(
-        "UMD_SBI full case (PMMA) — HRR vs time (4 / 2 / 1 / 0.5 cm)",
+        "UMD_SBI pure gas burner — HRR vs time (4 / 2 / 1 / 0.5 cm)",
         fontsize=12,
         fontweight="bold",
     )
@@ -147,17 +133,19 @@ def plot_figure(data_dir: Path, png_out: Path, tmax: float | None) -> None:
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR)
-    p.add_argument("--tmax", type=float, default=200.0, help="Upper time limit (s); default 200 for figure")
-    p.add_argument("--csv", type=Path, default=OUTPUT_DIR / "UMD_HRR_full_case.csv")
-    p.add_argument("--csv-1-2-4", type=Path, default=OUTPUT_DIR / "UMD_HRR_full_case_1_2_4cm.csv")
+    p.add_argument("--tmax", type=float, default=200.0, help="Upper time limit (s)")
+    p.add_argument("--csv", type=Path, default=OUTPUT_DIR / "UMD_HRR.csv")
     p.add_argument("--plot", type=Path, default=None, help="Optional PNG path")
     p.add_argument("--no-csv", action="store_true")
     args = p.parse_args()
     data_dir = args.data_dir.resolve()
     tmax = args.tmax
     if not args.no_csv:
-        export_csv(data_dir, args.csv.resolve(), CASES, tmax)
-        export_csv(data_dir, args.csv_1_2_4.resolve(), CASES_1_2_4, tmax)
+        t_master, loaded = load_all(data_dir, tmax)
+        series = [interpolate_on_master(t_master, t, h) for _c, _f, t, h in loaded]
+        col_names = [c for c, _f in CASES]
+        write_macfp_csv(args.csv.resolve(), t_master, series, col_names)
+        print(f"Saved → {args.csv.resolve()}  ({len(t_master)} times, t = {t_master[0]:g}–{t_master[-1]:g} s)")
     if args.plot:
         plot_figure(data_dir, args.plot.resolve(), tmax)
 
