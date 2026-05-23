@@ -20,7 +20,7 @@ importlib.reload(macfp)  # use for development (while making changes to macfp.py
 
 os.chdir(HERE)
 macfp.dataplot(
-    config_filename="UMD_SBI_pure_gasburner_cmp_config.csv",
+    config_filename="UMD_SBI_full_case_cmp_config.csv",
     institute="UMD",
     revision="MaCFP-4, La Rochelle, 2026",
     expdir=str(HERE.parents[2] / "Experimental_Data") + "/",
