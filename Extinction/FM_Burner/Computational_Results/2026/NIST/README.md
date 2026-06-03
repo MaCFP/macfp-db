@@ -1,6 +1,6 @@
 
 ### Contributor
-Name: Randy McDermott, Chandan Paul
+Name: Randy McDermott, Chandan Paul, Marcos Vanella
 
 Institution: National Institute of Standards and Technology (NIST)
 
@@ -17,7 +17,7 @@ FM Burner
 ### CFD package
 Code: Fire Dynamics Simulator (FDS)
 
-Version: FDS-6.10.1-2397-g37b82e5-master
+Version: FDS-6.11.0-37-g81faf6d-master
 
 ------------------
 
@@ -26,11 +26,11 @@ Version: FDS-6.10.1-2397-g37b82e5-master
 #### Computational domain discretization (flow solver)
 Domain: 1.2 m by 1.2 m by 1.8 m
 
-Cell size: 2.5 mm, 5 mm, 1 cm, 2 cm
+Cell size: 2.5 mm (see "Output_Files_scaled"), 5 mm, 1 cm, 2 cm
 
 Cell type: Cubes
 
-Total cells: 5 mm case: 4,860,000 (180 mesh); 1 cm case: 2,592,000 (96 mesh); 2 cm case: 324,000 (96 mesh)
+Total cells: 2.5 mm case: 38,880,000 (1440 mesh), 5 mm case: 4,860,000 (180 mesh); 1 cm case: 2,592,000 (96 mesh); 2 cm case: 324,000 (96 mesh)
 
 #### Angular space discretization (radiation solver)
 Number of solid angles: 104
@@ -60,13 +60,19 @@ Radiative fraction: Baseline case is RADCAL with 10 cm path length and *specifie
 
 Soot model: Soot and CO are the products of the first reaction step, then oxidize to carbon dioxide based on availability of O2 model, with prescribed post flame yields of soot and CO.  The table below provides the model parameters used for the different fuel scenarios.
 
-| Fuel  | FUEL_C_TO_CO_FRACTION | CO_YIELD* | SOOT_YIELD  | AIT** (°C)|
-|-------|-----------------------|-----------|-------------|-----------|
-| C2H4  | 0.90                  | 0.013     | 0.022       | 450       |
+| Fuel  | FUEL_C_TO_CO_FRACTION | CO_YIELD* | SOOT_YIELD   | AIT** (°C)|
+|-------|-----------------------|-----------|--------------|-----------|
+| C2H4  | 0.90, 0.60            | 0.013     | 0.022, 0.043 | 450       |
 
 Comments:
 
-The key parameter in this model, FUEL_C_TO_CO_FRACTION, may be interpreted as an in-flame soot yield.  If FUEL_C_TO_CO_FRACTION=1, then no in-flame soot is generated.  If FUEL_C_TO_CO_FRACTION=0, then all the fuel's carbon is first converted to soot before being oxidized to the prescribed post-flame yield.  The value of FUEL_C_TO_CO_FRACTION=0.9 was used to match the reported mean soot profile at 1D for the 21% O2 case.  The post-flame SOOT_YIELD was then tuned to match the soot profile at 3.5D for the 21% O2 case.
+The key parameter in this model, FUEL_C_TO_CO_FRACTION, may be interpreted as an in-flame soot yield.  If FUEL_C_TO_CO_FRACTION=1, then no in-flame soot is generated.  If FUEL_C_TO_CO_FRACTION=0, then all the fuel's carbon is first converted to soot before being oxidized to the prescribed post-flame yield.
+
+Another key issue with this case is the coefficient used in evaluating the soot absorption coefficient.  This year we compared against the reported soot volume fractions (baseline) and also against "scaled" f_v by a factor of 7.6/4.2=1.8 to account for the difference in the C0 value between the FM measurement method and the RADCAL soot properties used in FDS.
+
+For the baseline case, a value of FUEL_C_TO_CO_FRACTION=0.9 was used to match the reported mean soot profile at 1D for the 21% O2 case.  The post-flame SOOT_YIELD was then tuned to match the soot profile at 3.5D for the 21% O2 case.
+
+For the scaled case, a value of FUEL_C_TO_CO_FRACTION=0.6 was used (similar to previous MaCFP submissions) and the soot yields were left at the handbook values, 0.043 for the 21% O2 case.
 
 \*  From Tewarson’s measurements reported in the SFPE Handbook [2]
 
@@ -96,8 +102,10 @@ The timings below are based on the 20.9 % O2 runs for ethylene.
 | 2 cm        | 40           | 4421  (01:13:41)          | 96               | 324000     | 0.033    |
 | 1 cm        | 40           | 43649 (12:07:29)          | 96               | 2592000    | 0.040    |
 | 5 mm        | 40           | 86042 (23:54:02)          | 180              | 4860000    | 0.080    |
+| 2.5 mm **   | 40           | 84637 (23:30:37)          | 1440             | 38880000   | 0.078 ** |
 
 \* CPU cost (Number of CPUs * Wall clock time / Simulation time / Total cells)
+\* On Vista at Texas Advanced Computing Center (TACC)
 
 ------------------
 

@@ -22,8 +22,8 @@ print("FM_Burner..."); safe_run("./FM_Burner.py")
 
 Dataplot_Inputs_File = 'NIST_FM_Burner_config.csv'
 EXP_Dir = '../../../Experimental_Data/'
-OUT_Dir = './Output_Files/'
-Plots_Dir = './Plots/'
+OUT_Dir = './Output_Files_scaled/'
+Plots_Dir = './Plots_scaled/'
 
 # Run dataplot and scatplot scripts
 
