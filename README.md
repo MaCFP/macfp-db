@@ -5,6 +5,12 @@ Welcome to the MaCFP database!
 
 The central objective of the MaCFP working group is to target fundamental progress in fire science and to advance predictive fire modeling.  The purpose of this database is to host high-quality experimental data for the purpose of validating physics-based fire models.  The working group meets before the [IAFSS](http://www.iafss.org/) conference currently held every three years.
 
+Please complete the [MaCFP 4 Feedback Survey](https://forms.gle/o83s8sUkoTsiRuiq7) to:
+1.	Confirm Most Important Fire Phenomena
+2.	Confirm Fuels/Experiments/Modeling Targets of Interest
+3.	Share MaCFP-4 Workshop Feedback
+
+
 
 Please visit our [wiki pages](https://github.com/MaCFP/macfp-db/wiki) for additional details.
 
