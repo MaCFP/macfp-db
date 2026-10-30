@@ -1,4 +1,4 @@
-## NIST Parallel Panel
+## Parallel Panel (a configuration based on the FM 4910 fire test, studied at NIST)
 
 ### Disclaimers
 
